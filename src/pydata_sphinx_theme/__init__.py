@@ -59,7 +59,7 @@ def update_templates(app, pagename, templatename, context, doctree):
             # Add `.html` to templates with no suffix
             for ii, template in enumerate(context.get(section)):
                 if not os.path.splitext(template)[1]:
-                    context[section][ii] = template + ".html"
+                    context[section][ii] = f'{template}.html'
 
 
 def add_toctree_functions(app, pagename, templatename, context, doctree):
@@ -215,9 +215,10 @@ def add_toctree_functions(app, pagename, templatename, context, doctree):
 
     def generate_google_analytics_script(id):
         """Handle the two types of google analytics id."""
-        if id:
-            if "G-" in id:
-                script = f"""
+        if not id:
+            return ""
+        if "G-" in id:
+            script = f"""
                 <script
                     async
                     src='https://www.googletagmanager.com/gtag/js?id={id}'
@@ -229,8 +230,8 @@ def add_toctree_functions(app, pagename, templatename, context, doctree):
                     gtag('config', '{id}');
                 </script>
                 """
-            else:
-                script = f"""
+        else:
+            script = f"""
                     <script
                         async
                         src='https://www.google-analytics.com/analytics.js'
@@ -244,10 +245,7 @@ def add_toctree_functions(app, pagename, templatename, context, doctree):
                         ga('send', 'pageview');
                     </script>
                 """
-            soup = bs(script, "html.parser")
-            return soup
-        else:
-            return ""
+        return bs(script, "html.parser")
 
     context["generate_nav_html"] = generate_nav_html
     context["generate_toc_html"] = generate_toc_html
@@ -322,10 +320,16 @@ def _get_local_toctree_for(
         kwargs["maxdepth"] = int(kwargs["maxdepth"])
     kwargs["collapse"] = collapse
 
-    for toctreenode in doctree.traverse(addnodes.toctree):
-        toctree = self.resolve(docname, builder, toctreenode, prune=True, **kwargs)
-        if toctree:
-            toctrees.append(toctree)
+    toctrees.extend(
+        toctree
+        for toctreenode in doctree.traverse(addnodes.toctree)
+        if (
+            toctree := self.resolve(
+                docname, builder, toctreenode, prune=True, **kwargs
+            )
+        )
+    )
+
     if not toctrees:
         return None
     result = toctrees[0]
@@ -408,17 +412,12 @@ def soup_to_python(soup, only_pages=False):
                 continue
 
             # Converting the docutils attributes into jinja-friendly objects
-            nav = {}
-            nav["title"] = title
-            nav["url"] = url
-            nav["active"] = active
-
+            nav = {'title': title, 'url': url, 'active': active}
             navs_list.append(nav)
 
             # Recursively convert children as well
             nav["children"] = []
-            ul = li.find("ul", recursive=False)
-            if ul:
+            if ul := li.find("ul", recursive=False):
                 extract_level_recursive(ul, nav["children"])
 
     navs = []

@@ -30,12 +30,10 @@ class CacheStaticHandler(web.StaticFileHandler):
 
 def make_app():
     """create and return (but do not start) a tornado app"""
-    app = web.Application(
+    return web.Application(
         [(r"^/(.*)", CacheStaticHandler, dict(path=SETTINGS["static_path"]))],
         **SETTINGS
     )
-
-    return app
 
 
 def main(port, host):

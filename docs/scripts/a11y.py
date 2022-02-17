@@ -51,13 +51,11 @@ def serve():
 
 def audit():
     """run audit, generating a raw JSON report"""
-    audit_rc = subprocess.call(
+    return subprocess.call(
         f"yarn --silent pa11y-ci --json --sitemap {SITEMAP} > {PA11Y_JSON}",
         shell=True,
         cwd=ROOT,
     )
-
-    return audit_rc
 
 
 def report():
@@ -99,8 +97,7 @@ def summary():
     not_roadmap_counts = {}
 
     for code, count in sorted(error_codes.items()):
-        code_on_roadmap = code in pa11y_roadmap
-        if code_on_roadmap:
+        if code_on_roadmap := code in pa11y_roadmap:
             roadmap_counts[code] = count
         else:
             not_roadmap_counts[code] = count
@@ -137,9 +134,7 @@ def main(no_serve=True):
     finally:
         server and server.terminate()
 
-    error_count = summary()
-
-    return error_count
+    return summary()
 
 
 if __name__ == "__main__":
