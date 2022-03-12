@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/user_guide/sections.rst:3
+msgid "Add/Remove items from theme sections"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:5
+msgid ""
+"There are a few major theme sections that you can customize to add/remove"
+" components, or add your own components. Each section is configured with "
+"a list of *html templates* - these are snippets of HTML that are inserted"
+" into the section by Sphinx."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:10
+msgid ""
+"You can choose which templates show up in each section, as well as the "
+"order in which they appear. This page describes the major areas that you "
+"can customize."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:15
+msgid ""
+"When configuring templates in each section, you may omit the ``.html`` "
+"suffix after each template if you wish."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:19
+msgid "The navbar items"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:21
+msgid ""
+"The navbar is at the top of the page, and is broken up into three "
+"sections. Each section is configured in ``conf.py`` with the following "
+"configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:24
+msgid "Left section: ``html_theme_options['navbar_start']``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:25
+msgid "Middle menu: ``html_theme_options['navbar_center']``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:26
+msgid "Right section: ``html_theme_options['navbar_end']``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:28
+msgid "By default, the following configuration is used:"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:41
+msgid "The left sidebar"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:43
+msgid ""
+"The left sidebar is just to the left of a page's main content. "
+"Configuring it is a bit different from configuring the other sections, "
+"because configuring the sidebar is natively supported in Sphinx, via the "
+"``html_sidebars`` configuration variable."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:48
+msgid ""
+"For the left sidebar only, you can configure templates so that they only "
+"show up on certain pages. You do so via a configuration like so in "
+"``conf.py``:"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:57
+msgid ""
+"Any pages that match ``<page_pattern>`` will have their respective "
+"templates inserted. You can also ``*`` to do ``glob``-style matching, and"
+" may use ``**`` to match all pages."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:61
+msgid "By default, it has the following configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:70
+msgid "Left sidebar end sections"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:72
+msgid ""
+"There is a special ``<div>`` within the left sidebar that appears at the "
+"bottom of the page, regardless of the content that is above it."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:75
+msgid ""
+"To control the HTML templates that are within this div, use "
+"``html_theme_options['left_sidebar_end']`` in ``conf.py``."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:78 ../../docs/user_guide/sections.rst:95
+#: ../../docs/user_guide/sections.rst:111
+msgid "By default, it has the following templates:"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:90
+msgid "The right in-page sidebar"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:92
+msgid ""
+"The in-page sidebar is just to the right of a page's main content, and is"
+" configured in ``conf.py`` with "
+"``html_theme_options['page_sidebar_items']``."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:106
+msgid "The footer"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:108
+msgid ""
+"The footer is just below a page's main content, and is configured in "
+"``conf.py`` with ``html_theme_options['footer_items']``."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:122
+msgid "A list of built-in templates you can insert into sections"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:124
+msgid ""
+"Below is a list of build-in templates that you can insert into any "
+"section. Note that some of them may have CSS rules that assume a specific"
+" section (and will be named accordingly)."
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:128
+msgid "``icon-links.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:129
+msgid "``search-field.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:130
+msgid "``copyright.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:131
+msgid "``edit-this-page.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:132
+msgid "``last-updated.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:133
+msgid "``navbar-icon-links.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:134
+msgid "``navbar-logo.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:135
+msgid "``navbar-nav.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:136
+msgid "``page-toc.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:137
+msgid "``sidebar-ethical-ads.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:138
+msgid "``sidebar-nav-bs.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:139
+msgid "``sphinx-version.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:140
+msgid "``version-switcher.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:143
+msgid "Add your own HTML templates to theme sections"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:145
+msgid ""
+"If you'd like to add your own custom template to any of these sections, "
+"you could do so with the following steps:"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:148
+msgid ""
+"Create an HTML file in a folder called ``_templates``. For example, if "
+"you wanted to display the version of your documentation using a Jinja "
+"template, you could create a file: ``_templates/version.html`` and put "
+"the following in it:"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:158
+msgid ""
+"Now add the file to your menu items for one of the sections above. For "
+"example:"
+msgstr ""
+

@@ -111,3 +111,7 @@ node_modules/
 # Editors
 .vscode
 .idea
+
+# sphinx
+output/
+*.mo

@@ -1,0 +1,762 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:4
+msgid "Lists & Tables"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:7
+msgid "Lists"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:10
+msgid "Enumerated Lists"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:12
+msgid "Arabic numerals."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:14
+msgid "lower alpha)"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:16
+msgid "(lower roman)"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:18
+msgid "upper alpha."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:20
+msgid "upper roman)"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:22
+msgid "Lists that don't start at 1:"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:24
+msgid "Three"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:26
+msgid "Four"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:28
+msgid "C"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:30
+msgid "D"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:32
+msgid "iii"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:34
+msgid "iv"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:36
+msgid "List items may also be auto-enumerated."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:39
+msgid "Definition Lists"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:41
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:45
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:48
+msgid "Term"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:42
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:48
+msgid "Definition"
+msgstr ""
+
+msgid "classifier"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:44
+msgid "Definition paragraph 1."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:46
+msgid "Definition paragraph 2."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:50
+msgid ""
+"I have no clue why the definition list below is classified as a different"
+" style of definition list than the one above."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:55
+msgid "Is it the spaces in the term?"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:54
+msgid ""
+"Maybe it was the multiple line paragraph in the line below that caused "
+"this?"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:58
+msgid "Is it the paragraph above the list maybe?"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:58
+msgid "I guess a lot of these lists don't have leading paragraphs?"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:61
+msgid "Is it everything all at once?"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:61
+msgid "Who knows?!"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:64
+msgid "Option Lists"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:66
+msgid "For listing command-line options:"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:68
+msgid "command-line option \"a\""
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:69
+msgid "options can have arguments and long descriptions"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:71
+msgid "options can be long also"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:72
+msgid "long options can also have arguments"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:76
+msgid "The description can also start on the next line."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:78
+msgid ""
+"The description may contain multiple body elements, regardless of where "
+"it starts."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:81
+msgid "Multiple options are an \"option group\"."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:82
+msgid "Commonly-seen: short & long options."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:84
+msgid "Multiple options with arguments."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:85
+msgid "DOS/VMS-style options too"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:87
+msgid "There must be at least two spaces between the option and the description."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:90
+msgid "Field list"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "Author"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:94
+msgid "David Goodger"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "Address"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:95
+msgid "123 Example Street Example, EX  Canada A1B 2C3"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "Contact"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:98
+msgid "docutils-develop@lists.sourceforge.net"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:99
+msgid "Me; Myself; I"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "organization"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:100
+msgid "humankind"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "date"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:101
+msgid "$Date: 2012-01-03 19:23:53 +0000 (Tue, 03 Jan 2012) $"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "status"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:102
+msgid "This is a \"work in progress\""
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "revision"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:103
+msgid "$Revision: 7302 $"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "version"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:104
+msgid "1"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "copyright"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:105
+msgid ""
+"This document has been placed in the public domain. You may do with it as"
+" you wish. You may copy, modify, redistribute, reattribute, sell, buy, "
+"rent, lease, destroy, or improve it, quote it at length, excerpt, "
+"incorporate, collate, fold, staple, or mutilate it, or do anything else "
+"to it that your or anyone else's heart desires."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "field name"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:112
+msgid "This is a generic bibliographic field."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "field name 2"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:114
+msgid "Generic bibliographic fields may contain multiple body elements."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:116
+msgid "Like this."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "Dedication"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:120
+msgid "For Docutils users & co-developers."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst
+msgid "abstract"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:124
+msgid ""
+"This document is a demonstration of the reStructuredText markup language,"
+" containing examples of all basic reStructuredText constructs and many "
+"advanced constructs."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:129
+msgid "Bullet Lists"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:137
+msgid "Simple"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:139
+msgid "A simple list."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:140
+msgid "There are no margins between list items."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:141
+msgid "Simple lists do not contain multiple paragraphs. That's a complex list."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:142
+msgid "In the case of a nested list"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:144
+msgid "There are no margins between elements"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:146
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:148
+msgid "Still no margins"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:151
+msgid "Complex"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:153
+msgid "A bullet list"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:155
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:162
+msgid "Nested bullet list."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:156
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:163
+msgid "Nested item 2."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:158
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:166
+msgid "Item 2."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:160
+msgid "Paragraph 2 of item 2."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:165
+msgid "Third level."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:168
+msgid "Nested item 3."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:170
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:171
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:172
+msgid "``inline literall``"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:173
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:175
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:176
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:178
+msgid "This item has multiple paragraphs."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:182
+msgid "Second list level"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:184
+msgid "here is a list in a second-level section."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:185
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:186
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:188
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:200
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:218
+msgid "`yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:189
+msgid "here is an inner bullet ``oh``"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:191
+msgid "one more ``with an inline literally``. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:193
+msgid "heh heh. child. try to beat this embed:"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:199
+msgid "and another. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:201
+msgid "``hi``"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:202
+msgid "how about an admonition?"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:205
+msgid "This is a note nested in a list."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:207
+msgid "and hehe"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:210
+msgid "But deeper down the rabbit hole"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:212
+msgid ""
+"I kept saying that, \"deeper down the rabbit hole\". `yahoo "
+"<http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:214
+msgid "I cackle at night `yahoo <http://www.yahoo.com>`_."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:215
+msgid "I'm so lonely here in GZ ``guangzhou``"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:216
+msgid "A man of python destiny, hopes and dreams. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:220
+msgid "`yahoo <http://www.yahoo.com>`_ ``hi``"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:221
+msgid "``destiny``"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:224
+msgid "Hlists"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:229
+msgid "First item"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:230
+msgid "Second item"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:231
+msgid "Third item"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:232
+msgid "Forth item"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:233
+msgid "Fifth item"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:234
+msgid "Sixths item"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:237
+msgid "Hlist with images"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:243
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:341
+msgid "This is a short caption for a figure."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:247
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:345
+msgid ""
+"This is a long caption for a figure. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit. Donec porttitor dolor in odio posuere, vitae"
+" ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:251
+msgid "Numbered List"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:253
+msgid "One,"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:254
+msgid "Two."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:255
+msgid ""
+"Three with long text. Lorem ipsum dolor sit amet, consectetur adipiscing "
+"elit. Sed feugiat sagittis neque quis eleifend. Duis rutrum lectus sit "
+"amet mattis suscipit."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:258
+msgid "Using bullets and letters. (A)"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:259
+msgid "Using bullets and letters. (B)"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:260
+msgid "Using bullets and letters. (C)"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:263
+msgid "Tables"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:266
+msgid "Grid Tables"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:268
+msgid "Here's a grid table followed by a simple table:"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:271
+msgid "Header row, column 1 (header rows optional)"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:271
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:301
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:322
+msgid "Header 2"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:271
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:301
+msgid "Header 3"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:271
+msgid "Header 4"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:274
+msgid "body row 1, column 1"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:274
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:303
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:305
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:307
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:309
+msgid "column 2"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:274
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:303
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:305
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:307
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:309
+msgid "column 3"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:274
+msgid "column 4"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:276
+msgid "body row 2"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:276
+msgid "Cells may span columns."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:278
+msgid "body row 3"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:278
+msgid "Cells may span rows."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:278
+msgid "Table cells"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:279
+msgid "contain"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:280
+msgid "body elements."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:280
+msgid "body row 4"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:282
+msgid "body row 5"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:282
+msgid "Cells may also be empty: ``-->``"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:287
+msgid "Inputs"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:287
+msgid "Output"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:289
+msgid "A"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:289
+msgid "B"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:289
+msgid "A or B"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:291
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:292
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:293
+msgid "False"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:292
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:293
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:294
+msgid "True"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:298
+msgid "Giant Tables"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:301
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:321
+msgid "Header 1"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:303
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:305
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:307
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:309
+msgid "body row 1"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:313
+msgid "List Tables"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:315
+msgid "List tables can have captions like this one."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:320
+msgid "List table"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:323
+msgid ""
+"Header 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+"Nam sit amet mauris arcu."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:324
+msgid "Stub Row 1"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:325
+msgid "Row 1"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:326
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:330
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:334
+msgid "Column 2"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:327
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:331
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:335
+msgid ""
+"Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+"Nam sit amet mauris arcu."
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:328
+msgid "Stub Row 2"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:329
+msgid "Row 2"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:332
+msgid "Stub Row 3"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:333
+msgid "Row 3"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/lists-and-tables.rst:337
+msgid "This is a list table with images in it."
+msgstr ""
+

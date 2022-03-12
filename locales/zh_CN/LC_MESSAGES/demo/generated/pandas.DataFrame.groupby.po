@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/demo/generated/pandas.DataFrame.groupby.rst:2
+msgid "pandas.DataFrame.groupby"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:2
+msgid "Group DataFrame using a mapper or by a Series of columns."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:4
+msgid ""
+"A groupby operation involves some combination of splitting the object, "
+"applying a function, and combining the results. This can be used to group"
+" large amounts of data and compute operations on these groups."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby
+msgid "Parameters"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:19
+msgid "**by**"
+msgstr ""
+
+#: of
+msgid "mapping, function, label, or list of labels"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:12
+msgid ""
+"Used to determine the groups for the groupby. If ``by`` is a function, "
+"it's called on each value of the object's index. If a dict or Series is "
+"passed, the Series or dict VALUES will be used to determine the groups "
+"(the Series' values are first aligned; see ``.align()`` method). If an "
+"ndarray is passed, the values are used as-is to determine the groups. A "
+"label or list of labels may be passed to group by the columns in "
+"``self``. Notice that a tuple is interpreted as a (single) key."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:22
+msgid "**axis**"
+msgstr ""
+
+#: of
+msgid "{0 or 'index', 1 or 'columns'}, default 0"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:22
+msgid "Split along rows (0) or columns (1)."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:26
+msgid "**level**"
+msgstr ""
+
+#: of
+msgid "int, level name, or sequence of such, default None"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:25
+msgid ""
+"If the axis is a MultiIndex (hierarchical), group by a particular level "
+"or levels."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:31
+msgid "**as_index**"
+msgstr ""
+
+#: of
+msgid "bool, default True"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:29
+msgid ""
+"For aggregated output, return object with group labels as the index. Only"
+" relevant for DataFrame input. as_index=False is effectively \"SQL-"
+"style\" grouped output."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:36
+msgid "**sort**"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:34
+msgid ""
+"Sort group keys. Get better performance by turning this off. Note this "
+"does not influence the order of observations within each group. Groupby "
+"preserves the order of rows within each group."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:39
+msgid "**group_keys**"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:39
+msgid "When calling apply, add group keys to index to identify pieces."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:45
+msgid "**squeeze**"
+msgstr ""
+
+#: of
+msgid "bool, default False"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:42
+msgid ""
+"Reduce the dimensionality of the return type if possible, otherwise "
+"return a consistent type."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:50
+msgid "**observed**"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:48
+msgid ""
+"This only applies if any of the groupers are Categoricals. If True: only "
+"show observed values for categorical groupers. If False: show all values "
+"for categorical groupers."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:57
+msgid "**dropna**"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:53
+msgid ""
+"If True, and if group keys contain NA values, NA values together with "
+"row/column will be dropped. If False, NA values will also be treated as "
+"the key in groups"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby
+msgid "Returns"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:68
+msgid "DataFrameGroupBy"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:62
+msgid "Returns a groupby object that contains information about the groups."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:73
+msgid ":obj:`resample`"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:74
+msgid "Convenience method for frequency conversion and resampling of time series."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:78
+msgid "Notes"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:79
+msgid ""
+"See the `user guide <https://pandas.pydata.org/pandas-"
+"docs/stable/groupby.html>`_ for more."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:84
+msgid "Examples"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:100
+msgid "**Hierarchical Indexes**"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:102
+msgid ""
+"We can groupby different levels of a hierarchical index using the `level`"
+" parameter:"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.groupby:128
+msgid ""
+"We can also choose to include NA in group keys or not by setting `dropna`"
+" parameter, the default setting is `True`:"
+msgstr ""
+

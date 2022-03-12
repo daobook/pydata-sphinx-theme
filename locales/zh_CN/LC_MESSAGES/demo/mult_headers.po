@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/demo/mult_headers.rst:2
+msgid "Top-level headers and the TOC"
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:4
+msgid ""
+"Your right table of contents will behave slightly differently depending "
+"on whether your page has one top-level header, or multiple top-level "
+"headers. See below for more information."
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:9
+msgid "An example with multiple top-level headers"
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:11
+msgid ""
+"If a page has multiple top-level headers on it, then the in-page Table of"
+" Contents will show each top-level header. **On this page, there are "
+"multiple top-level headers**. As a result, the top-level headers all "
+"appear in the right Table of Contents. Here's an example of a page "
+"structure with multiple top-level headers:"
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:33
+msgid "And here's a second-level header"
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:35
+msgid "Notice how it is nested *underneath* \"Top-level header 2\" in the TOC."
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:39
+msgid "An example with a single top-level header"
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:41
+msgid ""
+"If the page only has a single top-level header, it is assumed to be the "
+"page title, and only the headers **underneath** the top-level header will"
+" be used for the right Table of Contents."
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:45
+msgid ""
+"On most pages in this documentation, only a single top-level header is "
+"used. For example, they have a page structure like:"
+msgstr ""
+
+#: ../../docs/demo/mult_headers.rst:60
+msgid "Examples of multiple headers in pydata-sphinx-theme."
+msgstr ""
+

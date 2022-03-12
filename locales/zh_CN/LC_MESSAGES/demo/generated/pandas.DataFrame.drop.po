@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/demo/generated/pandas.DataFrame.drop.rst:2
+msgid "pandas.DataFrame.drop"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:2
+msgid "Drop specified labels from rows or columns."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:4
+msgid ""
+"Remove rows or columns by specifying label names and corresponding axis, "
+"or by specifying directly index or column names. When using a multi-"
+"index, labels on different levels can be removed by specifying the level."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop
+msgid "Parameters"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:12
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "single label or list-like"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:12
+msgid "Index or column labels to drop."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:16
+msgid "**axis**"
+msgstr ""
+
+#: of
+msgid "{0 or 'index', 1 or 'columns'}, default 0"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:15
+msgid ""
+"Whether to drop labels from the index (0 or 'index') or columns (1 or "
+"'columns')."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:20
+msgid "**index**"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:19
+msgid ""
+"Alternative to specifying axis (``labels, axis=0`` is equivalent to "
+"``index=labels``)."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:24
+msgid "**columns**"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:23
+msgid ""
+"Alternative to specifying axis (``labels, axis=1`` is equivalent to "
+"``columns=labels``)."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:27
+msgid "**level**"
+msgstr ""
+
+#: of
+msgid "int or level name, optional"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:27
+msgid "For MultiIndex, level from which the labels will be removed."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:31
+msgid "**inplace**"
+msgstr ""
+
+#: of
+msgid "bool, default False"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:30
+msgid "If False, return a copy. Otherwise, do operation inplace and return None."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:35
+msgid "**errors**"
+msgstr ""
+
+#: of
+msgid "{'ignore', 'raise'}, default 'raise'"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:34
+msgid "If 'ignore', suppress error and only existing labels are dropped."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop
+msgid "Returns"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:44
+msgid "DataFrame or None"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:40
+msgid ""
+"DataFrame without the removed index or column labels or None if "
+"``inplace=True``."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop
+msgid "Raises"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:51
+msgid "KeyError"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:49
+msgid "If any of the labels is not found in the selected axis."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:56
+msgid ":obj:`DataFrame.loc`"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:57
+msgid "Label-location based indexer for selection by label."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:58
+msgid ":obj:`DataFrame.dropna`"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:59
+msgid ""
+"Return DataFrame with labels on given axis omitted where (all or any) "
+"data are missing."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:60
+msgid ":obj:`DataFrame.drop_duplicates`"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:61
+msgid ""
+"Return DataFrame with duplicate rows removed, optionally only considering"
+" certain columns."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:62
+msgid ":obj:`Series.drop`"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:63
+msgid "Return Series with specified index labels removed."
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:69
+msgid "Examples"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:78
+msgid "Drop columns"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:92
+msgid "Drop a row by index"
+msgstr ""
+
+#: of pandas.core.frame.DataFrame.drop:98
+msgid "Drop columns and/or rows of MultiIndex DataFrame"
+msgstr ""
+

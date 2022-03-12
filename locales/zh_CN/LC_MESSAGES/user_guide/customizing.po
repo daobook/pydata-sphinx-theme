@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/user_guide/customizing.rst:5
+msgid "Customizing the theme"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:7
+msgid ""
+"In addition to the configuration options detailed at "
+":ref:`configuration`, it is also possible to customize the HTML layout "
+"and CSS style of the theme."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:13
+msgid "Custom CSS Stylesheets"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:15
+msgid ""
+"You may customize the theme's CSS by creating a custom stylesheet that "
+"Sphinx uses to build your site. Any rules in this style-sheet will over-"
+"ride the default theme rules."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:18
+msgid "To add a custom stylesheet, follow these steps:"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:20
+msgid ""
+"**Create a CSS stylesheet** in ``_static/css/custom.css``, and add the "
+"CSS rules you wish."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:21
+msgid ""
+"**Attach the stylesheet to your Sphinx build**. Add the following to "
+"``conf.py``"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:31
+msgid ""
+"When you build your documentation, this stylesheet should now be "
+"activated."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:36
+msgid "CSS Theme variables"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:38
+msgid ""
+"This theme defines several `CSS variables <css-variable-help_>`_ that can"
+" be used to quickly control behavior across your documentation."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:41
+msgid ""
+"These are based on top of the basic `Bootstrap CSS variables "
+"<https://getbootstrap.com/docs/4.0/getting-started/theming/#css-"
+"variables>`_ extended with some theme specific variables. An overview of "
+"all variables and every default is defined in `the pydata default CSS "
+"variables file <pydata-css-variables_>`_."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:45
+msgid "In order to change a variable, follow these steps:"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:47
+msgid ""
+":ref:`Add a custom CSS stylesheet <custom-css>`. This is where we'll "
+"configure the variables."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:48
+msgid ""
+"Underneath a ``:root`` section, add the variables you wish to update. For"
+" example, to update the base font size, you might add this to "
+"``custom.css``:"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:59
+msgid ""
+"Note that these are `CSS variables <css-variable-help_>`_ and not `SASS "
+"variables <https://sass-lang.com/documentation/variables>`_. The theme is"
+" defined with CSS variables, not SASS variables!"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:63
+msgid ""
+"For a complete list of the theme variables that you may override, see the"
+" `theme variables defaults CSS file <pydata-css-variables_>`_:"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:71
+msgid "Replacing/Removing Fonts"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:73
+msgid ""
+"The theme includes the `FontAwesome 5 Free "
+"<https://fontawesome.com/icons?m=free>`__ icon font (the ``.fa, .far, "
+".fas`` styles, which are used for :ref:`icon links <icon-links>` and "
+"admonitions). This is the only `vendored` font, and otherwise the theme "
+"by default relies on available system fonts for normal body text and "
+"headers."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:81
+msgid ""
+"Previously-included fonts like `Lato` have been removed, preferring the "
+"most common default system fonts of the reader's computer. This provides "
+"both better performance, and better script/glyph coverage than custom "
+"fonts, and is recommended in most cases."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:86
+msgid "The default body and header fonts can be changed as follows:"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:88
+msgid ""
+"Using :ref:`custom-css`, you can specify which fonts to use for body, "
+"header and monospace text. For example, the following can be added to a "
+"custom css file:"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:100
+msgid ""
+"The ``-system`` variables are available to use as fallback to the default"
+" fonts."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:102
+msgid ""
+"If the font you want to specify in the section above is not generally "
+"available by default, you will additionally need to ensure the font is "
+"loaded. For example, you could download and vendor the font in the "
+"``_static`` directory of your Sphinx site, and then update the base "
+"template to load the font resources:"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:107
+msgid ""
+"Configure the `template_path <https://www.sphinx-"
+"doc.org/en/master/theming.html#templating>`__ in your ``conf.py``"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:109
+msgid ""
+"Create a custom ``layout.html`` Jinja2 template which overloads the "
+"``fonts`` block (example for loading the Lato font that is included in "
+"the ``_static/vendor`` directory):"
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:123
+msgid ""
+"To reduce the `Flash of Unstyled Content`, you may wish to explore "
+"various options for `preloading content <https://developer.mozilla.org"
+"/en-US/docs/Web/HTML/Preloading_content>`__, specifically the binary font"
+" files. This ensure the files will be loaded before waiting for the CSS "
+"to be parsed, but should be used with care."
+msgstr ""
+
+#: ../../docs/user_guide/customizing.rst:131
+msgid "Advanced customization of pydata-sphinx-theme's HTML and CSS."
+msgstr ""
+

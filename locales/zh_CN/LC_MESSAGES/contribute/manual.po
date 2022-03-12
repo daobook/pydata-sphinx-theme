@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/contribute/manual.md:3
+msgid "Set up a manual development environment"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:5
+msgid ""
+"If you prefer not to use automation tools like `nox`, or want to have "
+"more control over the specific version of packages that you'd like like "
+"installed, you may also manually set up a development environment "
+"locally."
+msgstr ""
+
+#: ../../docs/contribute/manual.md:7
+msgid "To do so, follow the instructions on this page."
+msgstr ""
+
+#: ../../docs/contribute/manual.md:9
+msgid "Create a new development environment"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:11
+msgid ""
+"This is optional, but it's best to start with a fresh development "
+"environment so that you've isolated the packages that you're using for "
+"this repository."
+msgstr ""
+
+#: ../../docs/contribute/manual.md:13
+msgid ""
+"To do so, use a tool like [conda](https://docs.conda.io/en/latest/), "
+"[mamba](https://github.com/mamba-org/mamba), or "
+"[virtualenv](https://virtualenv.pypa.io/)."
+msgstr ""
+
+#: ../../docs/contribute/manual.md:15
+msgid "Clone the repository locally"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:17
+msgid ""
+"First clone this repository from the `pydata` organization, or from a "
+"fork that you have created:"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:24
+msgid "Install the `sphinx-theme-builder`"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:26
+msgid ""
+"We use the `sphinx-theme-builder` to install `nodejs` locally and to "
+"compile all CSS and JS assets needed for the theme. Install it like so "
+"(note the `cli` option so that we can run it from the command line):"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:33
+msgid "Install this theme locally"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:35
+msgid ""
+"Next, install this theme locally so that we have the necessary "
+"dependencies to build the documentation and testing suite:"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:41
+msgid ""
+"Note that the `sphinx-theme-builder` will automatically install a local "
+"copy of `nodejs` for building the theme's assets. This will be placed in "
+"a `.nodeenv` folder."
+msgstr ""
+
+#: ../../docs/contribute/manual.md:44
+msgid "Build the documentation"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:46
+msgid "To manually build the documentation, run the following command:"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:52
+msgid "Compile web assets (JS/CSS)"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:54
+msgid ""
+"To compile the javascript and CSS assets for the theme, run the following"
+" command:"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:60
+msgid ""
+"This will compile everything in the `src/pydata_sphinx_theme/assets` "
+"folder and place them in the appropriate places in our theme's folder "
+"structure."
+msgstr ""
+
+#: ../../docs/contribute/manual.md:62
+msgid "Start a live-server to build and serve your documentation"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:64
+msgid ""
+"To manually open a server to watch your documentation for changes, build "
+"them, and display them locally in a browser, run this command:"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:70
+msgid "Run the tests"
+msgstr ""
+
+#: ../../docs/contribute/manual.md:72
+msgid ""
+"To manually run the tests for this theme, first set up your environment "
+"locally, and then run:"
+msgstr ""
+

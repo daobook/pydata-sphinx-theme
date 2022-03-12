@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/index.rst:27
+msgid "Theme Documentation"
+msgstr "主题文档"
+
+#: ../../docs/index.rst:3
+msgid "The PyData Sphinx Theme"
+msgstr "PyData Sphinx 主题"
+
+#: ../../docs/index.rst:5
+msgid ""
+"This is a simple, Bootstrap-based Sphinx theme from the PyData community."
+" This site is a guide for using the theme, and a demo for how it looks "
+"with various elements."
+msgstr ""
+"这是来自 PyData 社区的基于 bootstrap 的简单 Sphinx 主题。"
+"此网站是一个主题使用指南，并演示了它与各种元素的外观。"
+
+#: ../../docs/index.rst:9
+msgid "Other sites that are using this theme:"
+msgstr "其他使用此主题的网站："
+
+#: ../../docs/index.rst:13
+msgid "Binder: https://docs.mybinder.org/"
+msgstr ""
+
+#: ../../docs/index.rst:14
+msgid "Bokeh: https://docs.bokeh.org/en/latest/"
+msgstr ""
+
+#: ../../docs/index.rst:15
+msgid "JupyterLab: https://jupyterlab.readthedocs.io/en/latest/"
+msgstr ""
+
+#: ../../docs/index.rst:16
+msgid "JupyterHub: https://jupyterhub.readthedocs.io/en/latest/"
+msgstr ""
+
+#: ../../docs/index.rst:17
+msgid "Matplotlib: https://matplotlib.org/stable/"
+msgstr ""
+
+#: ../../docs/index.rst:18
+msgid "NetworkX: https://networkx.org/documentation/latest/"
+msgstr ""
+
+#: ../../docs/index.rst:19
+msgid "NumPy: https://numpy.org/doc/stable/"
+msgstr ""
+
+#: ../../docs/index.rst:20
+msgid "Pandas: https://pandas.pydata.org/docs/"
+msgstr ""
+
+#: ../../docs/index.rst:21
+msgid "SciPy: https://scipy.github.io/devdocs/"
+msgstr ""
+
+#: ../../docs/index.rst:22
+msgid ""
+"JupyterHub and Binder: https://docs.mybinder.org/, "
+"http://z2jh.jupyter.org/en/latest/, "
+"https://repo2docker.readthedocs.io/en/latest/, https://jupyterhub-team-"
+"compass.readthedocs.io/en/latest/"
+msgstr ""
+
+#: ../../docs/index.rst:23
+msgid ""
+"Jupyter Book beta version uses an extension of this theme: "
+"https://beta.jupyterbook.org"
+msgstr ""
+
+#: ../../docs/index.rst:24
+msgid "Fairlearn: https://fairlearn.org/main/about/"
+msgstr ""
+
+#: ../../docs/index.rst:41
+msgid ""
+"Top-level documentation for pydata-sphinx theme, with links to the rest "
+"of the site."
+msgstr ""
+

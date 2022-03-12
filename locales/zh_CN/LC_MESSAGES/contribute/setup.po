@@ -1,0 +1,315 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/contribute/setup.md:1
+msgid "Get started with development"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:3
+msgid ""
+"This section covers the simplest way to get started developing this theme"
+" locally so that you can contribute. It uses automation and as few steps "
+"as possible to get things done. If you'd like to do more operations "
+"manually, see [](manual.md)."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:7
+msgid "Clone the repository"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:9
+msgid ""
+"First off you'll need your own copy of the `pydata-sphinx-theme` "
+"codebase. You can clone it for local development like so:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:12
+msgid ""
+"**Fork the repository** so you have your own copy on GitHub. See [the "
+"GitHub forking guide](https://docs.github.com/en/get-"
+"started/quickstart/fork-a-repo) for more information."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:14
+msgid ""
+"**Clone the repository locally** so that you have a local copy to work "
+"from:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:21
+msgid "Install your tools"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:23
+msgid ""
+"Building a Sphinx site uses a combination of Python and Jinja to manage "
+"HTML, SCSS, and Javascript. To simplify this process, we use a few helper"
+" tools:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:26
+msgid ""
+"[The Sphinx Theme Builder](https://sphinx-theme-"
+"builder.readthedocs.io/en/latest/) to automatically perform compilation "
+"of web assets."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:27
+msgid ""
+"[pre-commit](https://pre-commit.com/) for automatically enforcing code "
+"standards and quality checks before commits."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:28
+msgid "[nox](https://nox.thea.codes/), for automating common development tasks."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:30
+msgid ""
+"In particular, `nox` can be used to automatically create isolated local "
+"development environments with all of the correct packages installed to "
+"work on the theme. The rest of this guide focuses on using `nox` to start"
+" with a basic environment."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:1
+msgid ""
+"The information on this page covers the basics to get you started, for "
+"information about manually compiling assets, see [](manual.md)."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:37
+msgid "Setup `nox`"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:39
+msgid "To start, install `nox`:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:45
+msgid ""
+"You can call `nox` from the command line in order to perform common "
+"actions that are needed in building the theme. `nox` operates with "
+"isolated environments, so each action has its own packages installed in a"
+" local directory (`.nox`). For common development actions, you'll simply "
+"need to use `nox` and won't need to set up any other packages."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:49
+msgid "Setup `pre-commit`"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:51
+msgid ""
+"`pre-commit` allows us to run several checks on the codebase every time a"
+" new Git commit is made. This ensures standards and basic quality control"
+" for our code."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:54
+msgid "Install `pre-commit` with the following command:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:60
+msgid "then navigate to this repository's folder and activate it like so:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:66
+msgid ""
+"This will install the necessary dependencies to run `pre-commit` every "
+"time you make a commit with Git."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:1
+msgid ""
+"Your `pre-commit` dependencies will be installed in the environment from "
+"which you're calling `pre-commit`, `nox`, etc. They will not be installed"
+" in the isolated environments used by `nox`."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:73
+msgid "Build the documentation"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:75
+msgid ""
+"Now that you have `nox` installed and cloned the repository, you should "
+"be able to build the documentation locally."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:77
+msgid "To build the documentation with `nox`, run the following command:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:83
+msgid ""
+"This will install the necessary dependencies and build the documentation "
+"located in the `docs/` folder. They will be placed in a "
+"`docs/_build/html` folder. If the docs have already been built, it will "
+"only build new pages that have been updated. You can open one of the HTML"
+" files there to preview the documentation locally."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:88
+msgid ""
+"Alternatively, you can invoke the built-in Python "
+"[http.server](https://docs.python.org/3/library/http.server.html#module-"
+"http.server) with:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:94
+msgid ""
+"This will print a local URL that you can open in a browser to explore the"
+" HTML files."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:96
+msgid "Change content and re-build"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:98
+msgid ""
+"Now that you've built the documentation, edit one of the source files to "
+"see how the documentation updates with new builds."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:100
+msgid ""
+"**Make an edit to a page**. For example, add a word or fix a typo on any "
+"page."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:101
+msgid "**Rebuild the documentation** with `nox -s docs`"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:103
+msgid ""
+"It should go much faster this time, because `nox` is re-using the old "
+"environment, and because Sphinx has cached the pages that you didn't "
+"change."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:105
+msgid "Compile the CSS/JS assets"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:107
+msgid ""
+"The source files for CSS and JS assets are in "
+"`src/pydata_sphinx_theme/assets`. These are then built and bundled with "
+"the theme (e.g., `scss` is turned into `css`)."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:110
+msgid "To compile the CSS/JS assets with `nox`, run the following command:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:116
+msgid ""
+"This will compile all assets and place them in the appropriate folder to "
+"be used with documentation builds."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:1
+msgid ""
+"Compiled assets are **not committed to git**. The `sphinx-theme-builder` "
+"will bundle these assets automatically when we make a new release, but we"
+" do not manually commit these compiled assets to git history."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:123
+msgid "Run a development server"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:125
+msgid ""
+"You can combine the above two actions and run a development server so "
+"that changes to `src/` are automatically bundled with the package, and "
+"the documentation is immediately reloaded in a live preview window."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:127
+msgid "To run the development server with `nox`, run the following command:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:133
+msgid "When working on the theme, saving changes to any of these directories:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:135
+msgid "`src/js/index.js`"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:136
+msgid "`src/scss/index.scss`"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:137
+msgid "`docs/**/*.rst`"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:138
+msgid "`docs/**/*.py`"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:140
+msgid "will cause the development server to do the following:"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:142
+msgid "bundle/copy the CSS, JS, and vendored fonts"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:143
+msgid "regenerate the Jinja2 macros"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:144
+msgid "re-run Sphinx"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:146
+msgid "Run the tests"
+msgstr ""
+
+#: ../../docs/contribute/setup.md:148
+msgid ""
+"This theme uses `pytest` for its testing, with a lightweight fixture "
+"defined in the `test_build.py` script that makes it easy to run a Sphinx "
+"build using this theme and inspect the results."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:152
+msgid ""
+"In addition, we use [pytest-regressions](https://pytest-"
+"regressions.readthedocs.io/en/latest/) to ensure that the HTML generated "
+"by the theme is what we'd expect. This module provides a "
+"`file_regression` fixture that will check the contents of an object "
+"against a reference file on disk. If the structure of the two differs, "
+"then the test will fail. If we _expect_ the structure to differ, then "
+"delete the file on disk and run the test. A new file will be created, and"
+" subsequent tests will pass."
+msgstr ""
+
+#: ../../docs/contribute/setup.md:159
+msgid "To run the tests with `nox`, run the following command:"
+msgstr ""
+

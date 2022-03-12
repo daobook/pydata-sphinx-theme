@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/contribute/index.md:6
+msgid "Contribute"
+msgstr ""
+
+#: ../../docs/contribute/index.md:8
+msgid ""
+"These pages contain information about how you can get up-and-running with"
+" a development version of this theme, and how you can contribute to the "
+"project."
+msgstr ""
+
+#: ../../docs/contribute/index.md:10
+msgid "Workflow for contributing changes"
+msgstr ""
+
+#: ../../docs/contribute/index.md:12
+msgid ""
+"We follow a [typical GitHub "
+"workflow](https://guides.github.com/introduction/flow/) of:"
+msgstr ""
+
+#: ../../docs/contribute/index.md:15
+msgid "create a personal fork of this repo"
+msgstr ""
+
+#: ../../docs/contribute/index.md:16
+msgid "create a branch"
+msgstr ""
+
+#: ../../docs/contribute/index.md:17
+msgid "open a pull request"
+msgstr ""
+
+#: ../../docs/contribute/index.md:18
+msgid "fix findings of various linters and checks"
+msgstr ""
+
+#: ../../docs/contribute/index.md:19
+msgid "work through code review"
+msgstr ""
+
+#: ../../docs/contribute/index.md:21
+msgid ""
+"For each pull request, the demo site is built and deployed to make it "
+"easier to review the changes in the PR. To access this, click on the "
+"\"ReadTheDocs\" preview in the CI/CD jobs."
+msgstr ""
+
+#: ../../docs/contribute/index.md:24
+msgid "Location and structure of documentation"
+msgstr ""
+
+#: ../../docs/contribute/index.md:26
+msgid ""
+"The documentation for this theme is in the `docs/` folder. It is "
+"structured as a [Sphinx documentation site](https://sphinx-doc.org). The "
+"content is written in a combination of reStructuredText and MyST "
+"Markdown."
+msgstr ""
+
+#: ../../docs/contribute/index.md:30
+msgid "Location and structure of CSS/JS assets"
+msgstr ""
+
+#: ../../docs/contribute/index.md:32
+msgid ""
+"The CSS and JS for this theme are built for the browser from "
+"`src/pydata_sphinx_theme/assets/*` with "
+"[webpack](https://webpack.js.org/). The main entrypoints are:"
+msgstr ""
+
+#: ../../docs/contribute/index.md:35
+msgid "CSS: `src/pydata_sphinx_theme/assets/styles/index.scss`"
+msgstr ""
+
+#: ../../docs/contribute/index.md:37
+msgid "the main part of the theme assets"
+msgstr ""
+
+#: ../../docs/contribute/index.md:38
+msgid ""
+"customizes [Bootstrap](https://getbootstrap.com/) with [Sass](https"
+"://sass-lang.com)"
+msgstr ""
+
+#: ../../docs/contribute/index.md:40
+msgid "JS: `src/pydata_sphinx_theme/assets/scripts/index.js`"
+msgstr ""
+
+#: ../../docs/contribute/index.md:42
+msgid ""
+"provides add-on Bootstrap features, as well as some custom navigation "
+"behavior"
+msgstr ""
+
+#: ../../docs/contribute/index.md:44
+msgid "webpack: `webpack.config.js`"
+msgstr ""
+
+#: ../../docs/contribute/index.md:46
+msgid ""
+"captures the techniques for transforming the JS and CSS source files in "
+"`src/pydata_sphinx_theme/assets/*` into the production assets in "
+"`src/theme/pydata_sphinx_theme/static/`"
+msgstr ""
+
+#: ../../docs/contribute/index.md:49
+msgid ""
+"**For more information** about developing this theme, see the sections "
+"below and in the left sidebar."
+msgstr ""
+

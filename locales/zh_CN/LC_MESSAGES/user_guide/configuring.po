@@ -1,0 +1,784 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/user_guide/configuring.rst:5
+msgid "Configuration"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:7
+msgid ""
+"There are a number of options for configuring your site's look and feel. "
+"All configuration options are passed with the ``html_theme_options`` "
+"variable in your ``conf.py`` file. This is a dictionary with ``key: val``"
+" pairs that you can configure in various ways. This page describes the "
+"options available to you."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:13
+msgid "Configure project logo"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:15
+msgid ""
+"To add a logo that's placed at the left of your nav bar, put a logo file "
+"under your doc path's _static folder, and use the following "
+"configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:22
+msgid ""
+"The logo links to ``master_doc`` (usually the first page of your "
+"documentation) by default. If you'd like it to link to another page or "
+"use an external link instead, use the following configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:35
+msgid "Configure icon links"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:37
+msgid ""
+"You can add icon links to show up to the right of your main navigation "
+"bar."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:39
+msgid "These links take the following form:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:59
+msgid "There are two kinds of icons you can use, described below:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:62
+msgid "FontAwesome icons"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:64
+msgid ""
+"`FontAwesome <https://fontawesome.com/>`_ is a collection of icons that "
+"are commonly used in websites. They include both generic shape icons "
+"(e.g., \"arrow-down\"), as well as brand-specific icons (e.g. "
+"\"github\")."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:68
+msgid ""
+"You can use FontAwesome icons by specifying ``\"type\": "
+"\"fontawesome\"``, and specifying a FontAwesome class in the ``icon`` "
+"value. The value of ``icon`` can be any full `FontAwesome 5 Free "
+"<https://fontawesome.com/icons?d=gallery&m=free>`__ icon. In addition to "
+"the main icon class, e.g. ``fa-cat``, the \"style\" class must also be "
+"provided e.g. `fab` for *branding*, or `fas` for *solid*."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:75
+msgid "Here are several examples:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:106
+msgid ""
+"To get custom colors like \"Twitter blue\", use the following in your "
+"CSS, e.g. ``custom.css``:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:115
+msgid "This has already been added for the brands that have *shortcuts*."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:118
+msgid "Local image icons"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:120
+msgid ""
+"If you'd like to display an icon image that is not in the FontAwesome "
+"icons library, you may instead specify a path to a local image that will "
+"be used for the icon. To do so, use ``\"type\": \"local\"``, and add a "
+"path to an image **relative to your documentation root** in the ``icon`` "
+"value. Here is an example:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:143
+msgid ""
+"Use ``.svg`` images for a higher-resolution output that behaves similarly"
+" across screen sizes."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:146
+msgid "Icon Link Shortcuts"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:148
+msgid ""
+"There are a few shortcuts supported to minimize configuration for "
+"commonly-used services. These may be removed in a future release in favor"
+" of ``icon_links``:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:162
+msgid ""
+"Additionally, the screen-reader accessible label for this menu can be "
+"configured:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:174
+msgid "Adding external links to your nav bar"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:176
+msgid ""
+"You can add external links to your navigation bar. These will show up to "
+"the right of your site's main links, and will have a small icon "
+"indicating that they point to an external site. You can add external "
+"links to the nav bar like so:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:190
+msgid "Adding favicons"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:192
+msgid ""
+"``pydata_sphinx_theme`` supports the `standard sphinx favicon "
+"configuration <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_favicon>`_, using"
+" ``html_favicon``."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:196
+msgid ""
+"Additionally, ``pydata_sphinx_theme`` allows you to add any number of "
+"browser- or device-specific favicons of any size. To define arbitrary "
+"favicons, use the ``favicons`` configuration key. The ``href`` value can "
+"be either an absolute URL (beginning with ``http``) or a local path "
+"relative to your ``html_static_path``:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:224
+msgid ""
+"``pydata_sphinx_theme`` will add ``link`` tags to your document's "
+"``head`` section, following this pattern:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:235
+msgid "Configure the sidebar"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:237
+msgid "``pydata_sphinx_theme`` provides two new sidebar items by default:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:239
+msgid "``sidebar-nav-bs.html`` - a bootstrap-friendly navigation section"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:240
+msgid "``search-field.html`` - a bootstrap-friendly search bar"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:242
+msgid ""
+"By default, this theme's sidebar has these two elements in it. If you'd "
+"like to override this behavior and control the sidebar on a per-page "
+"basis, use the `Sphinx html-sidebars configuration value <https://www"
+".sphinx-"
+"doc.org/en/master/usage/configuration.html?highlight=html_sidebars"
+"#confval-html_sidebars>`_."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:249
+msgid "Navigation depth and collapsing the sidebar"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:251
+msgid ""
+"By default, this theme enables to expand/collapse subsections in the left"
+" sidebar navigation (without actually navigating to the page itself), and"
+" this extends up to 4 levels deep:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:259
+msgid "Control how many navigation levels are shown by default"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:261
+msgid ""
+"You can control how many navigation levels are shown when a page is "
+"loaded. By default, this level is 1, and only top-level pages are shown, "
+"with drop-boxes to reveal their children. To make their children show up "
+"by default, you can use the following configuration in ``conf.py``:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:272
+msgid ""
+"This will make the first two navigations show up by default (AKA, top-"
+"level pages and their immediate children)."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:276
+msgid "Collapse entire toctree captions / parts"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:278
+msgid ""
+"If your ``toctree`` elements have captions assigned to them (with "
+"``:caption:``), you may collapse navigation items so that only the "
+"caption is visible. Clicking on the caption will display the items below."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:282
+msgid ""
+"To enable this behavior, set the ``show_nav_level`` value to 0, like "
+"below:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:293
+msgid ""
+"You can only collapse your ``toctree`` items underneath their caption if "
+"a caption is defined for them! If your ``toctree`` does not have a "
+"caption defined, then all of the pages underneath it will be displayed "
+"(the same as the default theme behavior). See `the toctree documentation "
+"<https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/directives.html#directive-"
+"toctree>`_ for more details."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:300
+msgid ""
+"In some Sphinx sites, the top-level ``toctree`` groupings make up "
+"\"parts\" in the documentation, with each page beneath making up a "
+"\"chapter\"."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:306
+msgid "Selectively remove pages from your sidebar"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:310
+msgid ""
+"This and the following sections are useful for sites that have a lot of "
+"pages (such as API documentation with a lot of items). These take much "
+"longer to build and will have large output sizes because of all the "
+"toctree links. These sections help with this problem, ordered from least-"
+"to-most drastic."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:315
+msgid ""
+"You can prevent pages from showing up in the navigation bar using a "
+"Sphinx extension called `sphinx-remove-toctrees "
+"<https://github.com/executablebooks/sphinx-remove-toctrees>`_. This is "
+"useful if your documentation generates lots of \"stub pages\" in a "
+"folder, which is common with API documentation."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:320
+msgid "This lets you add a configuration like so:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:326
+msgid ""
+"and any pages that are inside of ``folder_one/generated/`` will not show "
+"up in the sidebar."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:328
+msgid ""
+"Check out the `sphinx-remove-toctrees documentation "
+"<https://github.com/executablebooks/sphinx-remove-toctrees#install>`_ for"
+" information about how to install and use this extension."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:334
+msgid "Control the number of navigation levels"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:336
+msgid ""
+"In addition, you can also control how many levels of the navigation are "
+"shown in the sidebar (with a default of 4):"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:347
+msgid "Remove reveal buttons for sidebar items"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:349
+msgid ""
+"It is possible to turn off the expandable navigation entirely by setting "
+"the `collapse_navigation` config option to True:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:360
+msgid "Hiding the previous and next buttons"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:362
+msgid ""
+"By default, each page of your site will have \"previous\" and \"next\" "
+"buttons at the bottom. You can hide these buttons with the following "
+"configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:373
+msgid "Add a dropdown to switch between docs versions"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:375
+msgid ""
+"You can add a button to your site that allows users to switch between "
+"versions of your documentation. The links in the version switcher will "
+"differ depending on which page of the docs is being viewed. For example, "
+"on the page ``https://mysite.org/en/v2.0/changelog.html``, the switcher "
+"links will go to ``changelog.html`` in the other versions of your docs. "
+"When clicked, the switcher will check for the existence of that page, and"
+" if it doesn't exist, redirect to the homepage of that docs version "
+"instead."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:383
+msgid "The switcher requires the following configuration steps:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:385
+msgid ""
+"Add a JSON file containing a list of the documentation versions that the "
+"switcher should show on each page."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:388
+msgid ""
+"Add a configuration dictionary called ``switcher`` to the "
+"``html_theme_options`` dict in ``conf.py``. ``switcher`` should have 3 "
+"keys:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:391
+msgid "``json_url``: the persistent location of the JSON file described above."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:392
+msgid ""
+"``version_match``: a string stating the version of the documentation that"
+" is currently being browsed."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:395
+msgid ""
+"Specify where to place the switcher in your page layout. For example, add"
+" the ``\"version-switcher\"`` template to one of the layout lists in "
+"``html_theme_options`` (e.g., ``navbar_end``, ``footer_items``, etc)."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:399
+msgid "Below is a more in-depth description of each of these configuration steps."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:403
+msgid "Add a JSON file to define your switcher's versions"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:405
+msgid ""
+"First, write a JSON file stating which versions of your docs will be "
+"listed in the switcher's dropdown menu. That file should contain a list "
+"of entries that each can have the following fields:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:409
+msgid ""
+"``version``: a version string. This is checked against "
+"``switcher['version_match']`` to provide styling to the switcher."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:411
+msgid "``url``: the URL for this version."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:412
+msgid ""
+"``name``: an optional name to display in the switcher dropdown instead of"
+" the version string (e.g., \"latest\", \"stable\", \"dev\", etc)."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:415
+msgid "Here is an example JSON file:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:439
+msgid ""
+"See the discussion of ``switcher['json_url']`` (below) for options of "
+"where to save the JSON file."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:444
+msgid "Configure ``switcher['json_url']``"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:446
+msgid ""
+"The JSON file needs to be at a stable, persistent, fully-resolved URL "
+"(i.e., not specified as a path relative to the sphinx root of the current"
+" doc build). Each version of your documentation should point to the same "
+"URL, so that as new versions are added to the JSON file all the older "
+"versions of the docs will gain switcher dropdown entries linking to the "
+"new versions. This could be done a few different ways:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:453
+msgid ""
+"The location could be one that is always associated with the most recent "
+"documentation build (i.e., if your docs server aliases \"latest\" to the "
+"most recent version, it could point to a location in the build tree of "
+"version \"latest\"). For example:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:467
+msgid ""
+"In this case the JSON is versioned alongside the rest of the docs pages "
+"but only the most recent version is ever loaded (even by older versions "
+"of the docs)."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:471
+msgid ""
+"The JSON could be saved in a folder that is listed under your site's "
+"``html_static_path`` configuration. See `the Sphinx static path "
+"documentation <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_static_path>`_ "
+"for more information."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:476
+msgid ""
+"The JSON could be stored outside the doc build trees. This probably means"
+" it would be outside the software repo, and would require you to add new "
+"version entries to the JSON file manually as part of your release "
+"process. Example:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:491
+msgid "Configure ``switcher['version_match']``"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:493
+msgid ""
+"This configuration value tells the switcher what docs version is "
+"currently being viewed, and is used to style the switcher (i.e., to "
+"highlight the current docs version in the switcher's dropdown menu, and "
+"to change the text displayed on the switcher button)."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:498
+msgid ""
+"Typically you can re-use one of the sphinx variables ``version`` or "
+"``release`` as the value of ``switcher['version_match']``; which one you "
+"use depends on how granular your docs versioning is. See `the Sphinx "
+"\"project info\" documentation <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#project-information>`__ for "
+"more information). Example:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:517
+msgid "Specify where to display the switcher"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:519
+msgid ""
+"Finally, tell the theme where on your site's pages you want the switcher "
+"to appear. There are many choices here: you can add ``\"version-"
+"switcher\"`` to one of the locations in ``html_theme_options`` (e.g., "
+"``navbar_end``, ``footer_items``, etc). For example:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:532
+msgid ""
+"Alternatively, you could override one of the other templates to include "
+"the version switcher in a sidebar. For example, you could define "
+"``_templates/sidebar-nav-bs.html`` as:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:541
+msgid ""
+"to insert a version switcher at the top of the left sidebar, while still "
+"keeping the default navigation below it. See :doc:`sections` for more "
+"information."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:546
+msgid "Style the switcher buttons"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:548
+msgid ""
+"You may apply styles via CSS to any of the switcher buttons to control "
+"their look and feel. Each button has two `HTML dataset entries "
+"<https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_ "
+"that you can use to apply CSS rules to subsets of buttons. These entries "
+"are:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:557
+msgid ""
+"For example, the link for an entry with ``version=\"0.2\"``, and "
+"``name=\"My version\"`` would have metadata like so:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:564
+msgid "You can create CSS rules that select this metadata like so:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:578
+msgid ""
+"In addition, the parent button of the dropdown list contains similar "
+"metadata about the **current version**. This could be used to style the "
+"entire dropdown a certain color based on the active version."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:582
+msgid ""
+"For example, if you wanted to style the dropdown button orange if it was "
+"a ``dev`` version, you could use the following CSS selector:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:594
+msgid ""
+"See the `MDN documentation on dataset properties "
+"<https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_ "
+"for more information on using and styling with these properties."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:598
+msgid "Add an Edit this Page button"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:600
+msgid ""
+"You can add a button to each page that will allow users to edit the page "
+"text directly and submit a pull request to update the documentation. To "
+"include this button in the right sidebar of each page, add the following "
+"configuration to your ``conf.py`` file in 'html_theme_options':"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:611
+msgid ""
+"A number of providers are available for building *Edit this Page* links, "
+"including GitHub, GitLab, and Bitbucket. For each, the default public "
+"instance URL can be replaced with a self-hosted instance."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:617
+msgid "GitHub"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:631
+msgid "GitLab"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:645
+msgid "Bitbucket"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:659
+msgid "Custom Edit URL"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:661
+msgid ""
+"For a fully-customized *Edit this Page* URL, provide "
+"``edit_page_url_template``, a jinja2 template string which must contain "
+"``{{ file_name }}``, and may reference any other context values."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:675
+msgid "Configure the search bar position"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:677
+msgid ""
+"To modify the position of the search bar, add the ``search-field.html`` "
+"template to your **sidebar**, or to one of the **navbar** positions, "
+"depending on where you want it to be placed."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:681
+msgid ""
+"For example, if you'd like the search field to be in your side-bar, add "
+"it to the sidebar templates like so:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:690
+msgid ""
+"If instead you'd like to put the search bar in the top navbar, use the "
+"following configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:701
+msgid ""
+"By default the search bar is placed in the sidebar. If you wish to move "
+"it to the navbar, explicitly define a list of sidebar templates in "
+"`html_sidebars` and omit the `search-field.html` entry."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:705
+msgid "Configure the search bar text"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:707
+msgid ""
+"To modify the text that is in the search bar before people click on it, "
+"add the following configuration to your ``conf.py`` file:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:718
+msgid "Google Analytics"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:720
+msgid ""
+"If the ``google_analytics_id`` config option is specified (like ``UA-"
+"XXXXXXX``), Google Analytics' javascript is included in the html pages."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:731
+msgid "Changing pages with keyboard presses"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:733
+msgid ""
+"By default, ``pydata-sphinx-theme`` allows users to move to the "
+"previous/next page using the left/right arrow keys on a keyboard. To "
+"disable this behavior, use the following configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:745
+msgid "Show more levels of the in-page TOC by default"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:747
+msgid ""
+"Normally only the 2nd-level headers of a page are show in the right table"
+" of contents, and deeper levels are only shown when they are part of an "
+"active section (when it is scrolled on screen)."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:751
+msgid ""
+"You can show deeper levels by default by using the following "
+"configuration, indicating how many levels should be displayed:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:759
+msgid ""
+"All headings up to and including the level specified will now be shown "
+"regardless of what is displayed on the page."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:764
+msgid "Remove the sidebar from some pages"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:766
+msgid ""
+"If you'd like the left sidebar to be removed from a page, you can use the"
+" following configuration in ``conf.py``:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:775
+msgid "This works for glob-style patterns as well. For example:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:783
+msgid ""
+"If you'd like to remove the left sidebar from **all** pages of your "
+"documentation, use this pattern:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:792
+msgid ""
+"For information about configuring the sidebar's contents, see :ref"
+":`configure-sidebar`."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:796
+msgid "Configure the navbar center alignment"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:798
+msgid ""
+"By default, the navigation bar center area will align with the content on"
+" your page. This equals the following default configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:809
+msgid ""
+"If instead you'd like these items to snap to the left (closer to the "
+"logo), use this configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:820
+msgid ""
+"If you'd like these items to snap to the right of the page, use this "
+"configuration:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:831
+msgid "Adding ethical advertisements to your sidebar in ReadTheDocs"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:833
+msgid ""
+"If you're hosting your documentation on ReadTheDocs, you should consider "
+"adding an explicit placement for their **ethical advertisements**. These "
+"are non-tracking advertisements from ethical companies, and they help "
+"ReadTheDocs sustain themselves and their free service."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:838
+msgid ""
+"Ethical advertisements are added to your sidebar by default. To ensure "
+"they are there if you manually update your sidebar, ensure that the "
+"``sidebar-ethical-ads.html`` template is added to your list. For example:"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:849
+msgid "Configuration options for pydata-sphinx-theme"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:854
+msgid "Improve build speed and performance"
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:856
+msgid ""
+"By default this theme includes all of your documentation links in a "
+"collapsible sidebar. However, this may slow down your documentation "
+"builds considerably if you have a lot of documentation pages. This is "
+"most common with documentation for projects with a large API, which use "
+"the ``.. autosummary::`` directive to generate API documentation."
+msgstr ""
+
+#: ../../docs/user_guide/configuring.rst:862
+msgid ""
+"To improve the performance of your builds in these cases, see :ref"
+":`navigation-depth`."
+msgstr ""
+

@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/user_guide/install.rst:3
+msgid "Installation"
+msgstr ""
+
+#: ../../docs/user_guide/install.rst:5
+msgid ""
+"The theme is available on PyPI and conda-forge, and can thus be installed"
+" with:"
+msgstr ""
+
+#: ../../docs/user_guide/install.rst:15
+msgid ""
+"Then, in the ``conf.py`` of your sphinx docs, you update the "
+"``html_theme`` configuration option:"
+msgstr ""
+
+#: ../../docs/user_guide/install.rst:23
+msgid ""
+"If you want to track the development version of the theme, you can "
+"install it from the git repo:"
+msgstr ""
+
+#: ../../docs/user_guide/install.rst:30
+msgid "or in a conda environment yml file, you can add:"
+msgstr ""
+
+#: ../../docs/user_guide/install.rst:37
+msgid "Detailed instructions for installing pydata-sphinx-theme."
+msgstr ""
+

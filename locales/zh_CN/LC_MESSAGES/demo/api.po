@@ -1,0 +1,872 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/demo/api.rst:3
+msgid "Advanced API documentation and generated content"
+msgstr ""
+
+#: ../../docs/demo/api.rst:5
+msgid ""
+"This page contains general code elements that are common for package "
+"documentation."
+msgstr ""
+
+#: ../../docs/demo/api.rst:9
+msgid "Autosummary table and API stub pages"
+msgstr ""
+
+#: ../../docs/demo/api.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`pandas.DataFrame.drop <pandas.DataFrame.drop>`\\ \\(\\[labels\\,"
+" axis\\, index\\, ...\\]\\)"
+msgstr ""
+
+#: ../../docs/demo/api.rst:16:<autosummary>:1
+msgid "Drop specified labels from rows or columns."
+msgstr ""
+
+#: ../../docs/demo/api.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`pandas.DataFrame.groupby <pandas.DataFrame.groupby>`\\ "
+"\\(\\[by\\, axis\\, level\\, ...\\]\\)"
+msgstr ""
+
+#: ../../docs/demo/api.rst:16:<autosummary>:1
+msgid "Group DataFrame using a mapper or by a Series of columns."
+msgstr ""
+
+#: ../../docs/demo/api.rst:22:<autosummary>:1
+msgid ":py:obj:`pandas.Series.array <pandas.Series.array>`\\"
+msgstr ""
+
+#: ../../docs/demo/api.rst:22:<autosummary>:1
+msgid "The ExtensionArray of the data backing this Series or Index."
+msgstr ""
+
+#: ../../docs/demo/api.rst:24
+msgid "Inline module documentation"
+msgstr ""
+
+#: ../../docs/demo/api.rst:27
+msgid ":mod:`numpy.linalg`"
+msgstr ""
+
+#: numpy.linalg:2 of
+msgid "``numpy.linalg``"
+msgstr ""
+
+#: numpy.linalg:4 of
+msgid ""
+"The NumPy linear algebra functions rely on BLAS and LAPACK to provide "
+"efficient low level implementations of standard linear algebra "
+"algorithms. Those libraries may be provided by NumPy itself using C "
+"versions of a subset of their reference implementations but, when "
+"possible, highly optimized libraries that take advantage of specialized "
+"processor functionality are preferred. Examples of such libraries are "
+"OpenBLAS, MKL (TM), and ATLAS. Because those libraries are multithreaded "
+"and processor dependent, environmental variables and external packages "
+"such as threadpoolctl may be needed to control the number of threads or "
+"specify the processor architecture."
+msgstr ""
+
+#: numpy.linalg:14 of
+msgid "OpenBLAS: https://www.openblas.net/"
+msgstr ""
+
+#: numpy.linalg:15 of
+msgid "threadpoolctl: https://github.com/joblib/threadpoolctl"
+msgstr ""
+
+#: numpy.linalg:17 of
+msgid ""
+"Please note that the most-used linear algebra functions in NumPy are "
+"present in the main ``numpy`` namespace rather than in ``numpy.linalg``."
+"  There are: ``dot``, ``vdot``, ``inner``, ``outer``, ``matmul``, "
+"``tensordot``, ``einsum``, ``einsum_path`` and ``kron``."
+msgstr ""
+
+#: numpy.linalg:22 of
+msgid "Functions present in numpy.linalg are listed below."
+msgstr ""
+
+#: numpy.linalg:26 of
+msgid "Matrix and vector products"
+msgstr ""
+
+#: numpy.linalg:28 of
+msgid "multi_dot matrix_power"
+msgstr ""
+
+#: numpy.linalg:32 of
+msgid "Decompositions"
+msgstr ""
+
+#: numpy.linalg:34 of
+msgid "cholesky qr svd"
+msgstr ""
+
+#: numpy.linalg:39 of
+msgid "Matrix eigenvalues"
+msgstr ""
+
+#: numpy.linalg:41 of
+msgid "eig eigh eigvals eigvalsh"
+msgstr ""
+
+#: numpy.linalg:47 of
+msgid "Norms and other numbers"
+msgstr ""
+
+#: numpy.linalg:49 of
+msgid "norm cond det matrix_rank slogdet"
+msgstr ""
+
+#: numpy.linalg:56 of
+msgid "Solving equations and inverting matrices"
+msgstr ""
+
+#: numpy.linalg:58 of
+msgid "solve tensorsolve lstsq inv pinv tensorinv"
+msgstr ""
+
+#: numpy.linalg:66 of
+msgid "Exceptions"
+msgstr ""
+
+#: numpy.linalg:68 numpy.linalg.eig:34 numpy.linalg.matrix_power:40
+#: numpy.linalg.tensorinv:32 of
+msgid "LinAlgError"
+msgstr ""
+
+#: numpy.linalg.eig:2 of
+msgid "Compute the eigenvalues and right eigenvectors of a square array."
+msgstr ""
+
+#: numpy.linalg.eig numpy.linalg.matrix_power numpy.linalg.norm
+#: numpy.linalg.tensorinv of
+msgid "Parameters"
+msgstr ""
+
+#: numpy.linalg.eig:9 numpy.linalg.matrix_power:14 numpy.linalg.tensorinv:13 of
+msgid "**a**"
+msgstr ""
+
+#: of
+msgid "(..., M, M) array"
+msgstr ""
+
+#: numpy.linalg.eig:8 of
+msgid "Matrices for which the eigenvalues and right eigenvectors will be computed"
+msgstr ""
+
+#: numpy.linalg.eig numpy.linalg.matrix_power numpy.linalg.norm
+#: numpy.linalg.tensorinv of
+msgid "Returns"
+msgstr ""
+
+#: numpy.linalg.eig:19 of
+msgid "**w**"
+msgstr ""
+
+#: of
+msgid "(..., M) array"
+msgstr ""
+
+#: numpy.linalg.eig:14 of
+msgid ""
+"The eigenvalues, each repeated according to its multiplicity. The "
+"eigenvalues are not necessarily ordered. The resulting array will be of "
+"complex type, unless the imaginary part is zero in which case it will be "
+"cast to a real type. When `a` is real the resulting eigenvalues will be "
+"real (0 imaginary part) or occur in conjugate pairs"
+msgstr ""
+
+#: numpy.linalg.eig:27 of
+msgid "**v**"
+msgstr ""
+
+#: numpy.linalg.eig:22 of
+msgid ""
+"The normalized (unit \"length\") eigenvectors, such that the column "
+"``v[:,i]`` is the eigenvector corresponding to the eigenvalue ``w[i]``."
+msgstr ""
+
+#: numpy.linalg.eig numpy.linalg.matrix_power numpy.linalg.tensorinv of
+msgid "Raises"
+msgstr ""
+
+#: numpy.linalg.eig:32 of
+msgid "If the eigenvalue computation does not converge."
+msgstr ""
+
+#: numpy.linalg.eig:39 of
+msgid ":obj:`eigvals`"
+msgstr ""
+
+#: numpy.linalg.eig:40 of
+msgid "eigenvalues of a non-symmetric array."
+msgstr ""
+
+#: numpy.linalg.eig:41 of
+msgid ":obj:`eigh`"
+msgstr ""
+
+#: numpy.linalg.eig:42 of
+msgid ""
+"eigenvalues and eigenvectors of a real symmetric or complex Hermitian "
+"(conjugate symmetric) array."
+msgstr ""
+
+#: numpy.linalg.eig:43 of
+msgid ":obj:`eigvalsh`"
+msgstr ""
+
+#: numpy.linalg.eig:44 of
+msgid ""
+"eigenvalues of a real symmetric or complex Hermitian (conjugate "
+"symmetric) array."
+msgstr ""
+
+#: numpy.linalg.eig:45 of
+msgid ":obj:`scipy.linalg.eig`"
+msgstr ""
+
+#: numpy.linalg.eig:46 of
+msgid ""
+"Similar function in SciPy that also solves the generalized eigenvalue "
+"problem."
+msgstr ""
+
+#: numpy.linalg.eig:47 of
+msgid ":obj:`scipy.linalg.schur`"
+msgstr ""
+
+#: numpy.linalg.eig:48 of
+msgid "Best choice for unitary and other non-Hermitian normal matrices."
+msgstr ""
+
+#: numpy.linalg.eig:52 numpy.linalg.norm:55 of
+msgid "Notes"
+msgstr ""
+
+#: numpy.linalg.eig:55 of
+msgid ""
+"Broadcasting rules apply, see the `numpy.linalg` documentation for "
+"details."
+msgstr ""
+
+#: numpy.linalg.eig:58 of
+msgid ""
+"This is implemented using the ``_geev`` LAPACK routines which compute the"
+" eigenvalues and eigenvectors of general square arrays."
+msgstr ""
+
+#: numpy.linalg.eig:61 of
+msgid ""
+"The number `w` is an eigenvalue of `a` if there exists a vector `v` such "
+"that ``a @ v = w * v``. Thus, the arrays `a`, `w`, and `v` satisfy the "
+"equations ``a @ v[:,i] = w[i] * v[:,i]`` for :math:`i \\in "
+"\\{0,...,M-1\\}`."
+msgstr ""
+
+#: numpy.linalg.eig:66 of
+msgid ""
+"The array `v` of eigenvectors may not be of maximum rank, that is, some "
+"of the columns may be linearly dependent, although round-off error may "
+"obscure that fact. If the eigenvalues are all different, then "
+"theoretically the eigenvectors are linearly independent and `a` can be "
+"diagonalized by a similarity transformation using `v`, i.e, ``inv(v) @ a "
+"@ v`` is diagonal."
+msgstr ""
+
+#: numpy.linalg.eig:72 of
+msgid ""
+"For non-Hermitian normal matrices the SciPy function `scipy.linalg.schur`"
+" is preferred because the matrix `v` is guaranteed to be unitary, which "
+"is not the case when using `eig`. The Schur factorization produces an "
+"upper triangular matrix rather than a diagonal matrix, but for normal "
+"matrices only the diagonal of the upper triangular matrix is needed, the "
+"rest is roundoff error."
+msgstr ""
+
+#: numpy.linalg.eig:79 of
+msgid ""
+"Finally, it is emphasized that `v` consists of the *right* (as in right-"
+"hand side) eigenvectors of `a`.  A vector `y` satisfying ``y.T @ a = z * "
+"y.T`` for some number `z` is called a *left* eigenvector of `a`, and, in "
+"general, the left and right eigenvectors of a matrix are not necessarily "
+"the (perhaps conjugate) transposes of each other."
+msgstr ""
+
+#: numpy.linalg.eig:87 numpy.linalg.norm:88 of
+msgid "References"
+msgstr ""
+
+#: numpy.linalg.eig:88 of
+msgid ""
+"G. Strang, *Linear Algebra and Its Applications*, 2nd Ed., Orlando, FL, "
+"Academic Press, Inc., 1980, Various pp."
+msgstr ""
+
+#: numpy.linalg.eig:96 numpy.linalg.matrix_power:43 numpy.linalg.norm:97
+#: numpy.linalg.tensorinv:43 of
+msgid "Examples"
+msgstr ""
+
+#: numpy.linalg.eig:99 of
+msgid "(Almost) trivial example with real e-values and e-vectors."
+msgstr ""
+
+#: numpy.linalg.eig:108 of
+msgid ""
+"Real matrix possessing complex e-values and e-vectors; note that the "
+"e-values are complex conjugates of each other."
+msgstr ""
+
+#: numpy.linalg.eig:117 of
+msgid ""
+"Complex-valued matrix with real e-values (but complex-valued e-vectors); "
+"note that ``a.conj().T == a``, i.e., `a` is Hermitian."
+msgstr ""
+
+#: numpy.linalg.eig:127 of
+msgid "Be careful about round-off error!"
+msgstr ""
+
+#: numpy.linalg.matrix_power:2 of
+msgid "Raise a square matrix to the (integer) power `n`."
+msgstr ""
+
+#: numpy.linalg.matrix_power:4 of
+msgid ""
+"For positive integers `n`, the power is computed by repeated matrix "
+"squarings and matrix multiplications. If ``n == 0``, the identity matrix "
+"of the same shape as M is returned. If ``n < 0``, the inverse is computed"
+" and then raised to the ``abs(n)``."
+msgstr ""
+
+#: numpy.linalg.matrix_power:9 of
+msgid "Stacks of object matrices are not currently supported."
+msgstr ""
+
+#: of
+msgid "(..., M, M) array_like"
+msgstr ""
+
+#: numpy.linalg.matrix_power:14 of
+msgid "Matrix to be \"powered\"."
+msgstr ""
+
+#: numpy.linalg.matrix_power:18 numpy.linalg.norm:45 of
+msgid "**n**"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: numpy.linalg.matrix_power:17 of
+msgid ""
+"The exponent can be any integer or long integer, positive, negative, or "
+"zero."
+msgstr ""
+
+#: numpy.linalg.matrix_power:29 of
+msgid "**a**n**"
+msgstr ""
+
+#: of
+msgid "(..., M, M) ndarray or matrix object"
+msgstr ""
+
+#: numpy.linalg.matrix_power:23 of
+msgid ""
+"The return value is the same shape and type as `M`; if the exponent is "
+"positive or zero then the type of the elements is the same as those of "
+"`M`. If the exponent is negative the elements are floating-point."
+msgstr ""
+
+#: numpy.linalg.matrix_power:34 of
+msgid ""
+"For matrices that are not square or that (for negative powers) cannot be "
+"inverted numerically."
+msgstr ""
+
+#: numpy.linalg.matrix_power:56 of
+msgid "Somewhat more sophisticated example"
+msgstr ""
+
+#: numpy.linalg.norm:2 of
+msgid "Matrix or vector norm."
+msgstr ""
+
+#: numpy.linalg.norm:4 of
+msgid ""
+"This function is able to return one of eight different matrix norms, or "
+"one of an infinite number of vector norms (described below), depending on"
+" the value of the ``ord`` parameter."
+msgstr ""
+
+#: numpy.linalg.norm:13 of
+msgid "**x**"
+msgstr ""
+
+#: of
+msgid "array_like"
+msgstr ""
+
+#: numpy.linalg.norm:11 of
+msgid ""
+"Input array.  If `axis` is None, `x` must be 1-D or 2-D, unless `ord` is "
+"None. If both `axis` and `ord` are None, the 2-norm of ``x.ravel`` will "
+"be returned."
+msgstr ""
+
+#: numpy.linalg.norm:17 of
+msgid "**ord**"
+msgstr ""
+
+#: of
+msgid "{non-zero int, inf, -inf, 'fro', 'nuc'}, optional"
+msgstr ""
+
+#: numpy.linalg.norm:16 of
+msgid ""
+"Order of the norm (see table under ``Notes``). inf means numpy's `inf` "
+"object. The default is None."
+msgstr ""
+
+#: numpy.linalg.norm:27 of
+msgid "**axis**"
+msgstr ""
+
+#: of
+msgid "{None, int, 2-tuple of ints}, optional."
+msgstr ""
+
+#: numpy.linalg.norm:20 of
+msgid ""
+"If `axis` is an integer, it specifies the axis of `x` along which to "
+"compute the vector norms.  If `axis` is a 2-tuple, it specifies the axes "
+"that hold 2-D matrices, and the matrix norms of these matrices are "
+"computed.  If `axis` is None then either a vector norm (when `x` is 1-D) "
+"or a matrix norm (when `x` is 2-D) is returned. The default is None."
+msgstr ""
+
+#: numpy.linalg.norm:34 of
+msgid "**keepdims**"
+msgstr ""
+
+#: of
+msgid "bool, optional"
+msgstr ""
+
+#: numpy.linalg.norm:30 of
+msgid ""
+"If this is set to True, the axes which are normed over are left in the "
+"result as dimensions with size one.  With this option the result will "
+"broadcast correctly against the original `x`."
+msgstr ""
+
+#: of
+msgid "float or ndarray"
+msgstr ""
+
+#: numpy.linalg.norm:39 of
+msgid "Norm of the matrix or vector(s)."
+msgstr ""
+
+#: numpy.linalg.norm:50 of
+msgid ":obj:`scipy.linalg.norm`"
+msgstr ""
+
+#: numpy.linalg.norm:51 of
+msgid "Similar function in SciPy."
+msgstr ""
+
+#: numpy.linalg.norm:56 of
+msgid ""
+"For values of ``ord < 1``, the result is, strictly speaking, not a "
+"mathematical 'norm', but it may still be useful for various numerical "
+"purposes."
+msgstr ""
+
+#: numpy.linalg.norm:60 of
+msgid "The following norms can be calculated:"
+msgstr ""
+
+#: numpy.linalg.norm:63 of
+msgid "ord"
+msgstr ""
+
+#: numpy.linalg.norm:63 of
+msgid "norm for matrices"
+msgstr ""
+
+#: numpy.linalg.norm:63 of
+msgid "norm for vectors"
+msgstr ""
+
+#: numpy.linalg.norm:65 of
+msgid "None"
+msgstr ""
+
+#: numpy.linalg.norm:65 numpy.linalg.norm:66 of
+msgid "Frobenius norm"
+msgstr ""
+
+#: numpy.linalg.norm:65 of
+msgid "2-norm"
+msgstr ""
+
+#: numpy.linalg.norm:66 of
+msgid "'fro'"
+msgstr ""
+
+#: numpy.linalg.norm:66 numpy.linalg.norm:67 numpy.linalg.norm:70
+#: numpy.linalg.norm:75 of
+msgid "--"
+msgstr ""
+
+#: numpy.linalg.norm:67 of
+msgid "'nuc'"
+msgstr ""
+
+#: numpy.linalg.norm:67 of
+msgid "nuclear norm"
+msgstr ""
+
+#: numpy.linalg.norm:68 of
+msgid "inf"
+msgstr ""
+
+#: numpy.linalg.norm:68 of
+msgid "max(sum(abs(x), axis=1))"
+msgstr ""
+
+#: numpy.linalg.norm:68 of
+msgid "max(abs(x))"
+msgstr ""
+
+#: numpy.linalg.norm:69 of
+msgid "-inf"
+msgstr ""
+
+#: numpy.linalg.norm:69 of
+msgid "min(sum(abs(x), axis=1))"
+msgstr ""
+
+#: numpy.linalg.norm:69 of
+msgid "min(abs(x))"
+msgstr ""
+
+#: numpy.linalg.norm:70 of
+msgid "0"
+msgstr ""
+
+#: numpy.linalg.norm:70 of
+msgid "sum(x != 0)"
+msgstr ""
+
+#: numpy.linalg.norm:71 of
+msgid "1"
+msgstr ""
+
+#: numpy.linalg.norm:71 of
+msgid "max(sum(abs(x), axis=0))"
+msgstr ""
+
+#: numpy.linalg.norm:71 numpy.linalg.norm:72 numpy.linalg.norm:73
+#: numpy.linalg.norm:74 of
+msgid "as below"
+msgstr ""
+
+#: numpy.linalg.norm:72 of
+msgid "-1"
+msgstr ""
+
+#: numpy.linalg.norm:72 of
+msgid "min(sum(abs(x), axis=0))"
+msgstr ""
+
+#: numpy.linalg.norm:73 of
+msgid "2"
+msgstr ""
+
+#: numpy.linalg.norm:73 of
+msgid "2-norm (largest sing. value)"
+msgstr ""
+
+#: numpy.linalg.norm:74 of
+msgid "-2"
+msgstr ""
+
+#: numpy.linalg.norm:74 of
+msgid "smallest singular value"
+msgstr ""
+
+#: numpy.linalg.norm:75 of
+msgid "other"
+msgstr ""
+
+#: numpy.linalg.norm:75 of
+msgid "sum(abs(x)**ord)**(1./ord)"
+msgstr ""
+
+#: numpy.linalg.norm:78 of
+msgid "The Frobenius norm is given by [Rac1c834adb66-1]_:"
+msgstr ""
+
+#: numpy.linalg.norm:80 of
+msgid ":math:`||A||_F = [\\sum_{i,j} abs(a_{i,j})^2]^{1/2}`"
+msgstr ""
+
+#: numpy.linalg.norm:82 of
+msgid "The nuclear norm is the sum of the singular values."
+msgstr ""
+
+#: numpy.linalg.norm:84 of
+msgid ""
+"Both the Frobenius and nuclear norm orders are only defined for matrices "
+"and raise a ValueError when ``x.ndim != 2``."
+msgstr ""
+
+#: numpy.linalg.norm:89 of
+msgid ""
+"G. H. Golub and C. F. Van Loan, *Matrix Computations*, Baltimore, MD, "
+"Johns Hopkins University Press, 1985, pg. 15"
+msgstr ""
+
+#: numpy.linalg.norm:94 of
+msgid "[Rac1c834adb66-1]_"
+msgstr ""
+
+#: numpy.linalg.norm:145 of
+msgid "Using the `axis` argument to compute vector norms:"
+msgstr ""
+
+#: numpy.linalg.norm:156 of
+msgid "Using the `axis` argument to compute matrix norms:"
+msgstr ""
+
+#: numpy.linalg.tensorinv:2 of
+msgid "Compute the 'inverse' of an N-dimensional array."
+msgstr ""
+
+#: numpy.linalg.tensorinv:4 of
+msgid ""
+"The result is an inverse for `a` relative to the tensordot operation "
+"``tensordot(a, b, ind)``, i. e., up to floating-point accuracy, "
+"``tensordot(tensorinv(a), a, ind)`` is the \"identity\" tensor for the "
+"tensordot operation."
+msgstr ""
+
+#: numpy.linalg.tensorinv:12 of
+msgid ""
+"Tensor to 'invert'. Its shape must be 'square', i. e., "
+"``prod(a.shape[:ind]) == prod(a.shape[ind:])``."
+msgstr ""
+
+#: numpy.linalg.tensorinv:17 of
+msgid "**ind**"
+msgstr ""
+
+#: of
+msgid "int, optional"
+msgstr ""
+
+#: numpy.linalg.tensorinv:16 of
+msgid ""
+"Number of first indices that are involved in the inverse sum. Must be a "
+"positive integer, default is 2."
+msgstr ""
+
+#: numpy.linalg.tensorinv:25 of
+msgid "**b**"
+msgstr ""
+
+#: of
+msgid "ndarray"
+msgstr ""
+
+#: numpy.linalg.tensorinv:22 of
+msgid "`a`'s tensordot inverse, shape ``a.shape[ind:] + a.shape[:ind]``."
+msgstr ""
+
+#: numpy.linalg.tensorinv:30 of
+msgid "If `a` is singular or not 'square' (in the above sense)."
+msgstr ""
+
+#: numpy.linalg.tensorinv:37 of
+msgid ":obj:`numpy.tensordot`, :obj:`tensorsolve`"
+msgstr ""
+
+#: ../../docs/demo/api.rst:34
+msgid "C++ API"
+msgstr ""
+
+#: ../../docs/demo/api.rst:38
+msgid "Some type"
+msgstr ""
+
+#: ../../docs/demo/api.rst:42
+msgid "Some function type thing"
+msgstr ""
+
+#: ../../docs/demo/api.rst:46
+msgid "Some cpp class"
+msgstr ""
+
+#: ../../docs/demo/api.rst:50
+msgid "The description of Sphinx::version."
+msgstr ""
+
+#: ../../docs/demo/api.rst:54
+msgid "The description of version."
+msgstr ""
+
+#: ../../docs/demo/api.rst:58
+msgid "The description of List type."
+msgstr ""
+
+#: ../../docs/demo/api.rst:62
+msgid "An unscoped enum."
+msgstr ""
+
+#: ../../docs/demo/api.rst:68
+msgid "A scoped enum."
+msgstr ""
+
+#: ../../docs/demo/api.rst:74
+msgid ""
+"A scoped enum with non-default visibility, and with a specified "
+"underlying type."
+msgstr ""
+
+#: ../../docs/demo/api.rst:80
+msgid "JavaScript API"
+msgstr ""
+
+#: ../../docs/demo/api.rst:86 ../../docs/demo/api.rst:103
+msgid "Link to :js:class:`ModTopLevel`"
+msgstr ""
+
+#: ../../docs/demo/api.rst:90
+msgid "Link to :js:meth:`mod_child_1`"
+msgstr ""
+
+#: ../../docs/demo/api.rst:91
+msgid "Link to :js:meth:`ModTopLevel.mod_child_1`"
+msgstr ""
+
+#: ../../docs/demo/api.rst:95
+msgid "Link to :js:meth:`mod_child_2`"
+msgstr ""
+
+#: ../../docs/demo/api.rst:99
+msgid "Link to :js:meth:`module_a.submodule.ModTopLevel.mod_child_1`"
+msgstr ""
+
+#: ../../docs/demo/api.rst:109
+msgid "Link to :js:meth:`nested_child_2`"
+msgstr ""
+
+#: ../../docs/demo/api.rst:113
+msgid "Link to :js:meth:`nested_child_1`"
+msgstr ""
+
+#: ../../docs/demo/api.rst:117
+msgid "Generated Index"
+msgstr ""
+
+#: ../../docs/demo/api.rst:119
+msgid ""
+"Part of the sphinx build process in generate and index file: "
+":ref:`genindex`."
+msgstr ""
+
+#: ../../docs/demo/api.rst:123
+msgid "Optional parameter args"
+msgstr ""
+
+#: ../../docs/demo/api.rst:125
+msgid ""
+"At this point optional parameters `cannot be generated from code`_. "
+"However, some projects will manually do it, like so:"
+msgstr ""
+
+#: ../../docs/demo/api.rst:128
+msgid "This example comes from `django-payments module docs`_."
+msgstr ""
+
+#: ../../docs/demo/api.rst:132
+msgid ""
+"This backend implements payments using a popular Polish gateway, "
+"`Dotpay.pl <http://www.dotpay.pl>`_."
+msgstr ""
+
+#: ../../docs/demo/api.rst:134
+msgid ""
+"Due to API limitations there is no support for transferring purchased "
+"items."
+msgstr ""
+
+#: ../../docs/demo/api.rst
+msgid "参数"
+msgstr ""
+
+#: ../../docs/demo/api.rst:137
+msgid "Seller ID assigned by Dotpay"
+msgstr ""
+
+#: ../../docs/demo/api.rst:138
+msgid "PIN assigned by Dotpay"
+msgstr ""
+
+#: ../../docs/demo/api.rst:139
+msgid "Default payment channel (consult reference guide)"
+msgstr ""
+
+#: ../../docs/demo/api.rst:140
+msgid "UI language"
+msgstr ""
+
+#: ../../docs/demo/api.rst:141
+msgid "Whether to disable channels other than the default selected above"
+msgstr ""
+
+#: ../../docs/demo/api.rst:148
+msgid "Data"
+msgstr ""
+
+#: ../../docs/demo/api.rst:154
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue "
+"elit eu hendrerit mattis."
+msgstr ""
+
+#: ../../docs/demo/api.rst:156
+msgid "Some data link :data:`Data_item_1`."
+msgstr ""
+
+#: ../../docs/demo/api.rst:159
+msgid "An example of API documentation with pydata-sphinx-theme."
+msgstr ""
+

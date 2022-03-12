@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/demo/theme-elements.md:1
+msgid "Theme-specific elements"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:3
+msgid ""
+"There are a few elements that are unique or particularly important to "
+"this theme. This page is a reference for how these look."
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:6
+msgid "Embedding in admonitions"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:1
+msgid "Here's a note with:"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:3
+msgid "A nested list"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:4
+msgid "List item two"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:6
+msgid "As well as:"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:1
+msgid "A nested warning block to test nested admonitions."
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:21
+msgid "Version changes"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:23
+msgid ""
+"You can write in your documentation when something has been changed, "
+"added or deprecated from one version to another."
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:1
+msgid "Something is new, use it from now."
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:1
+msgid "Something is modified, check your version number."
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:1
+msgid "Something is deprecated, use something else instead."
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:38
+msgid "HTML elements"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:40
+msgid ""
+"There are some libraries in the PyData ecosystem that use HTML and "
+"require their own styling. This section shows a few examples."
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:43
+msgid "Plotly"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:45
+msgid ""
+"The HTML below shouldn't display, but it uses RequireJS to make sure that"
+" all works as expected. If the widgets don't show up, RequireJS may be "
+"broken."
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:60
+msgid "Xarray"
+msgstr ""
+
+#: ../../docs/demo/theme-elements.md:62
+msgid "Here we demonstrate `xarray` to ensure that it shows up properly."
+msgstr ""
+

@@ -1,0 +1,355 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Sphinx Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Sphinx Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docs/demo/kitchen-sink/api.rst:4
+msgid "API documentation"
+msgstr ""
+
+#: ../../docs/demo/kitchen-sink/api.rst:7
+msgid "``asyncio``"
+msgstr ""
+
+#: asyncio:1 of
+msgid "The asyncio package, tracking PEP 3156."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop:2 of
+msgid "Abstract event loop."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.close:2 of
+msgid "Close the loop."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.close:4 of
+msgid "The loop should not be running."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.close:6 of
+msgid "This is idempotent and irreversible."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.close:8 of
+msgid "No other methods should be called after this one."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_read_pipe:2 of
+msgid "Register read pipe in event loop. Set the pipe to non-blocking mode."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_read_pipe:4 of
+msgid ""
+"protocol_factory should instantiate object with Protocol interface. pipe "
+"is a file-like object. Return pair (transport, protocol), where transport"
+" supports the ReadTransport interface."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_write_pipe:2 of
+msgid "Register write pipe in event loop."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_write_pipe:4 of
+msgid ""
+"protocol_factory should instantiate object with BaseProtocol interface. "
+"Pipe is file-like object already switched to nonblocking. Return pair "
+"(transport, protocol), where transport support WriteTransport interface."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:2 of
+msgid "A coroutine which creates a datagram endpoint."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:4 of
+msgid ""
+"This method will try to establish the endpoint in the background. When "
+"successful, the coroutine returns a (transport, protocol) pair."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:7 of
+msgid "protocol_factory must be a callable returning a protocol instance."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:9 of
+msgid ""
+"socket family AF_INET, socket.AF_INET6 or socket.AF_UNIX depending on "
+"host (or family if specified), socket type SOCK_DGRAM."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:12 of
+msgid ""
+"reuse_address tells the kernel to reuse a local socket in TIME_WAIT "
+"state, without waiting for its natural timeout to expire. If not "
+"specified it will automatically be set to True on UNIX."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:17 of
+msgid ""
+"reuse_port tells the kernel to allow this endpoint to be bound to the "
+"same port as other existing endpoints are bound to, so long as they all "
+"set this flag when being created. This option is not supported on Windows"
+" and some UNIX's. If the :py:data:`~socket.SO_REUSEPORT` constant is not "
+"defined then this capability is unsupported."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:24 of
+msgid ""
+"allow_broadcast tells the kernel to allow this endpoint to send messages "
+"to the broadcast address."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_datagram_endpoint:27
+#: asyncio.events.AbstractEventLoop.create_server:18
+#: asyncio.events.AbstractEventLoop.create_unix_server:10 of
+msgid ""
+"sock can optionally be specified in order to use a preexisting socket "
+"object."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:2 of
+msgid "A coroutine which creates a TCP server bound to host and port."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:4 of
+msgid "The return value is a Server object which can be used to stop the service."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:7 of
+msgid ""
+"If host is an empty string or None all interfaces are assumed and a list "
+"of multiple sockets will be returned (most likely one for IPv4 and "
+"another one for IPv6). The host parameter can also be a sequence (e.g. "
+"list) of hosts to bind to."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:12 of
+msgid ""
+"family can be set to either AF_INET or AF_INET6 to force the socket to "
+"use IPv4 or IPv6. If not set it will be determined from host (defaults to"
+" AF_UNSPEC)."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:16 of
+msgid "flags is a bitmask for getaddrinfo()."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:21
+#: asyncio.events.AbstractEventLoop.create_unix_server:13 of
+msgid ""
+"backlog is the maximum number of queued connections passed to listen() "
+"(defaults to 100)."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:24
+#: asyncio.events.AbstractEventLoop.create_unix_server:16 of
+msgid ""
+"ssl can be set to an SSLContext to enable SSL over the accepted "
+"connections."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:27 of
+msgid ""
+"reuse_address tells the kernel to reuse a local socket in TIME_WAIT "
+"state, without waiting for its natural timeout to expire. If not "
+"specified will automatically be set to True on UNIX."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:32 of
+msgid ""
+"reuse_port tells the kernel to allow this endpoint to be bound to the "
+"same port as other existing endpoints are bound to, so long as they all "
+"set this flag when being created. This option is not supported on "
+"Windows."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:37 of
+msgid ""
+"ssl_handshake_timeout is the time in seconds that an SSL server will wait"
+" for completion of the SSL handshake before aborting the connection. "
+"Default is 60s."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_server:41
+#: asyncio.events.AbstractEventLoop.create_unix_server:22 of
+msgid ""
+"start_serving set to True (default) causes the created server to start "
+"accepting connections immediately.  When set to False, the user should "
+"await Server.start_serving() or Server.serve_forever() to make the server"
+" to start accepting connections."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_unix_server:2 of
+msgid "A coroutine which creates a UNIX Domain Socket server."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_unix_server:4 of
+msgid ""
+"The return value is a Server object, which can be used to stop the "
+"service."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_unix_server:7 of
+msgid ""
+"path is a str, representing a file system path to bind the server socket "
+"to."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.create_unix_server:19 of
+msgid ""
+"ssl_handshake_timeout is the time in seconds that an SSL server will wait"
+" for the SSL handshake to complete (defaults to 60s)."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.is_closed:2 of
+msgid "Returns True if the event loop was closed."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.is_running:2 of
+msgid "Return whether the event loop is currently running."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.run_forever:2 of
+msgid "Run the event loop until stop() is called."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.run_until_complete:2 of
+msgid "Run the event loop until a Future is done."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.run_until_complete:4 of
+msgid "Return the Future's result, or raise its exception."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.sendfile:2 of
+msgid "Send a file through a transport."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.sendfile:4 of
+msgid "Return an amount of sent bytes."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.shutdown_asyncgens:2 of
+msgid "Shutdown all active asynchronous generators."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.shutdown_default_executor:2 of
+msgid "Schedule the shutdown of the default executor."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.start_tls:2 of
+msgid "Upgrade a transport to TLS."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.start_tls:4 of
+msgid "Return a new transport that *protocol* should start using immediately."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.stop:2 of
+msgid "Stop the event loop as soon as reasonable."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.stop:4 of
+msgid ""
+"Exactly how soon that is may depend on the implementation, but no more "
+"I/O callbacks should be scheduled."
+msgstr ""
+
+#: asyncio.tasks.gather:2 of
+msgid "Return a future aggregating results from the given coroutines/futures."
+msgstr ""
+
+#: asyncio.tasks.gather:4 of
+msgid ""
+"Coroutines will be wrapped in a future and scheduled in the event loop. "
+"They will not necessarily be scheduled in the same order as passed in."
+msgstr ""
+
+#: asyncio.tasks.gather:8 of
+msgid ""
+"All futures must share the same event loop.  If all the tasks are done "
+"successfully, the returned future's result is the list of results (in the"
+" order of the original sequence, not necessarily the order of results "
+"arrival).  If *return_exceptions* is True, exceptions in the tasks are "
+"treated the same as successful results, and gathered in the result list; "
+"otherwise, the first raised exception will be immediately propagated to "
+"the returned future."
+msgstr ""
+
+#: asyncio.tasks.gather:17 of
+msgid ""
+"Cancellation: if the outer Future is cancelled, all children (that have "
+"not completed yet) are also cancelled.  If any child is cancelled, this "
+"is treated as if it raised CancelledError -- the outer Future is *not* "
+"cancelled in this case.  (This is to prevent the cancellation of one "
+"child to cause other children to be cancelled.)"
+msgstr ""
+
+#: asyncio.tasks.gather:24 of
+msgid ""
+"If *return_exceptions* is False, cancelling gather() after it has been "
+"marked done won't cancel any submitted awaitables. For instance, gather "
+"can be marked done after propagating an exception to the caller, "
+"therefore, calling ``gather.cancel()`` after catching an exception "
+"(raised by one of the awaitables) from gather won't cancel any other "
+"awaitables."
+msgstr ""
+
+#: asyncio.runners.run:2 of
+msgid "Execute the coroutine and return the result."
+msgstr ""
+
+#: asyncio.runners.run:4 of
+msgid ""
+"This function runs the passed coroutine, taking care of managing the "
+"asyncio event loop and finalizing asynchronous generators."
+msgstr ""
+
+#: asyncio.runners.run:8 of
+msgid ""
+"This function cannot be called when another asyncio event loop is running"
+" in the same thread."
+msgstr ""
+
+#: asyncio.runners.run:11 of
+msgid "If debug is True, the event loop will be run in debug mode."
+msgstr ""
+
+#: asyncio.runners.run:13 of
+msgid ""
+"This function always creates a new event loop and closes it at the end. "
+"It should be used as a main entry point for asyncio programs, and should "
+"ideally only be called once."
+msgstr ""
+
+#: asyncio.runners.run:17 of
+msgid "Example:"
+msgstr ""
+
+#: asyncio.runners.run:21 of
+msgid "async def main():"
+msgstr ""
+
+#: asyncio.runners.run:20 of
+msgid "await asyncio.sleep(1) print('hello')"
+msgstr ""
+
+#: asyncio.runners.run:23 of
+msgid "asyncio.run(main())"
+msgstr ""
+
