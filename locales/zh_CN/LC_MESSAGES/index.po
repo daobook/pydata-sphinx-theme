@@ -82,12 +82,18 @@ msgid ""
 "https://repo2docker.readthedocs.io/en/latest/, https://jupyterhub-team-"
 "compass.readthedocs.io/en/latest/"
 msgstr ""
+"JupyterHub 和 Binder: https://docs.mybinder.org/, "
+"http://z2jh.jupyter.org/en/latest/, "
+"https://repo2docker.readthedocs.io/en/latest/, https://jupyterhub-team-"
+"compass.readthedocs.io/en/latest/"
 
 #: ../../docs/index.rst:23
 msgid ""
 "Jupyter Book beta version uses an extension of this theme: "
 "https://beta.jupyterbook.org"
 msgstr ""
+"Jupyter Book beta 版使用了这个主题的扩展: "
+"https://beta.jupyterbook.org"
 
 #: ../../docs/index.rst:24
 msgid "Fairlearn: https://fairlearn.org/main/about/"
@@ -98,4 +104,4 @@ msgid ""
 "Top-level documentation for pydata-sphinx theme, with links to the rest "
 "of the site."
 msgstr ""
-
+"pydata-sphinx 主题的顶级文档，以及指向网站其他部分的链接。"

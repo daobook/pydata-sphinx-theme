@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../docs/user_guide/index.rst:3
 msgid "User Guide"
-msgstr ""
+msgstr "用户指南"
 
 #: ../../docs/user_guide/index.rst:15
 msgid ""
 "Documentation for users who wish to build sphinx sites with pydata-"
 "sphinx-theme."
 msgstr ""
-
+"为希望使用 pydata-sphinx-theme 构建 sphinx 站点的用户提供的文档。"

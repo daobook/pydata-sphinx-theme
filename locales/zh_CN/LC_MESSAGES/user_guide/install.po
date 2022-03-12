@@ -20,31 +20,34 @@ msgstr ""
 
 #: ../../docs/user_guide/install.rst:3
 msgid "Installation"
-msgstr ""
+msgstr "安装"
 
 #: ../../docs/user_guide/install.rst:5
 msgid ""
 "The theme is available on PyPI and conda-forge, and can thus be installed"
 " with:"
 msgstr ""
+"主题在 PyPI 和 conda-forge 上可用，因此可以安装："
 
 #: ../../docs/user_guide/install.rst:15
 msgid ""
 "Then, in the ``conf.py`` of your sphinx docs, you update the "
 "``html_theme`` configuration option:"
 msgstr ""
+"然后，在你的 sphinx 文档的 ``conf.py`` 中，更新 ``html_theme`` 配置选项："
 
 #: ../../docs/user_guide/install.rst:23
 msgid ""
 "If you want to track the development version of the theme, you can "
 "install it from the git repo:"
 msgstr ""
+"如果你想要跟踪主题的开发版本，你可以从 git repo 安装它："
 
 #: ../../docs/user_guide/install.rst:30
 msgid "or in a conda environment yml file, you can add:"
-msgstr ""
+msgstr "或者在 conda 环境的 yml 文件中，你可以添加："
 
 #: ../../docs/user_guide/install.rst:37
 msgid "Detailed instructions for installing pydata-sphinx-theme."
-msgstr ""
+msgstr "安装 pydata-sphinx-theme 的详细说明。"
 
