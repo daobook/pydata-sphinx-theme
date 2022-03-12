@@ -1,6 +1,0 @@
-pandas.Series.real
-==================
-
-.. currentmodule:: pandas
-
-.. autoproperty:: Series.real

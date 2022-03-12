@@ -1,6 +1,0 @@
-pandas.Series.base
-==================
-
-.. currentmodule:: pandas
-
-.. autoproperty:: Series.base

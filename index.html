@@ -1,291 +1,355 @@
 
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>pandas: powerful Python data analysis toolkit &#8212; pandas 0.25.3 documentation</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link rel="stylesheet" href="_static/sphinx-bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link href="_static/css/custom.css" rel="stylesheet">
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting started" href="getting_started/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<meta content="pydata-sphinx 主题的顶级文档，以及指向网站其他部分的链接。" lang="en" name="description" xml:lang="en" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="docsearch:language" content="en">
+    <title>PyData Sphinx 主题 &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/thebelab-helper.js"></script>
+    <script src="_static/translations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="canonical" href="http://127.0.0.1:8000/index.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="用户指南" href="user_guide/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+    
+    <div class="container-fluid" id="banner"></div>
 
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
 <a class="navbar-brand" href="#">
-  <img src="_static/pandas.svg" class="logo" alt="logo">
+<p class="title">PyData Sphinx Theme</p>
 </a>
 
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
+    
+  </div>
 
-<div id="navbar-menu" class="collapse navbar-collapse">
-  <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-    <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-    </li>
-    
-    
-    <li class="nav-item ">
-        <a class="nav-link" href="getting_started/index.html">Getting started</a>
-    </li>
-    
-    <li class="nav-item ">
-        <a class="nav-link" href="user_guide/index.html">User Guide</a>
-    </li>
-    
-    <li class="nav-item ">
-        <a class="nav-link" href="reference/index.html">API Reference</a>
-    </li>
-    
-    <li class="nav-item ">
-        <a class="nav-link" href="development/index.html">Development</a>
-    </li>
-    
-    <li class="nav-item ">
-        <a class="nav-link" href="whatsnew/index.html">Release Notes</a>
-    </li>
-    
-    <li class="nav-item ">
-        <a class="nav-link" href="development/index.html">Development</a>
-    </li>
-    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="user_guide/index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="contribute/index.html">
+  Contribute
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="demo/index.html">
+  Demo site
+ </a>
+</li>
+
     
     <li class="nav-item">
-        <a class="nav-link nav-external" href=""><i class="fas fa-external-link-alt"></i></a>
+        <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
     </li>
     
     <li class="nav-item">
-        <a class="nav-link nav-external" href=""><i class="fas fa-external-link-alt"></i></a>
+        <a class="nav-link nav-external" href="https://pandas.pydata.org/pandas-docs/stable/">Pandas Docs<i class="fas fa-external-link-alt"></i></a>
     </li>
     
-  </ul>
-  <ul class="navbar-nav ml-auto">
-    
-    
-  </ul>
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <div class="dropdown" id="version_switcher">
+    <button type="button" class="btn btn-primary btn-sm navbar-btn dropdown-toggle" id="version_switcher_button" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div id="version_switcher_menu" class="dropdown-menu list-group-flush py-0" aria-labelledby="version_switcher_button">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+
+<!-- NOTE: this JS must live here (not in our global JS file) because it relies
+     on being processed by Jinja before it is run (specifically for replacing
+     variables index and {'json_url': '/_static/switcher.json', 'version_match': 'latest'}.
+-->
+
+<script type="text/javascript">
+// Check if corresponding page path exists in other version of docs
+// and, if so, go there instead of the homepage of the other docs version
+function checkPageExistsAndRedirect(event) {
+    const currentFilePath = "index.html",
+          tryUrl = event.target.getAttribute("href");
+    let otherDocsHomepage = tryUrl.replace(currentFilePath, "");
+    $.ajax({
+        type: 'HEAD',
+        url: tryUrl,
+        // if the page exists, go there
+        success: function() {
+            location.href = tryUrl;
+        }
+    }).fail(function() {
+        location.href = otherDocsHomepage;
+    });
+    // this prevents the browser from following the href of the clicked node
+    // (which is fine because this function takes care of redirecting)
+    return false;
+}
+
+// Populate the version switcher from the JSON config file
+(function () {
+    $.getJSON("/_static/switcher.json", function(data, textStatus, jqXHR) {
+        const currentFilePath = "index.html";
+        // create links to the corresponding page in the other docs versions
+        $.each(data, function(index, entry) {
+            // if no custom name specified (e.g., "latest"), use version string
+            if (!("name" in entry)) {
+                entry.name = entry.version;
+            }
+            // create the node
+            const node = document.createElement("a");
+            node.setAttribute("class", "list-group-item list-group-item-action py-1");
+            node.textContent = `${entry.name}`;
+            node.setAttribute("href", `${entry.url}${currentFilePath}`);
+            // on click, AJAX calls will check if the linked page exists before
+            // trying to redirect, and if not, will redirect to the homepage
+            // for that version of the docs.
+            node.onclick = checkPageExistsAndRedirect;
+            // Add dataset values for the version and name in case people want
+            // to apply CSS styling based on this information.
+            node.dataset["versionName"] = entry.name;
+            node.dataset["version"] = entry.version;
+
+            $("#version_switcher_menu").append(node);
+            // replace dropdown button text with the preferred display name of
+            // this version, rather than using sphinx's  variable.
+            // also highlight the dropdown entry for the currently-viewed
+            // version's entry
+            if (entry.version == "latest") {
+                node.classList.add("active");
+                let btn = document.getElementById("version_switcher_button");
+                btn.innerText = btn.dataset["activeVersionName"] = entry.name;
+                btn.dataset["activeVersion"] = entry.version;
+            }
+        });
+    });
+})();
+</script>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pydata/pydata-sphinx-theme" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/pandas_dev" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pypi.org/project/pydata-sphinx-theme" rel="noopener" target="_blank" title="PyPI"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pandas.pydata.org" rel="noopener" target="_blank" title="Pandas"><img src="_static/pandas-square.svg" class="icon-link-image" alt="Pandas"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
 </div>
     </nav>
+    
 
-    <div class="container-fluid">
-      <div class="row flex-xl-nowrap">
-          <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-
-<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-  
-
-  <ul class="nav bd-sidenav">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </ul>
-
+    
+  </div>
 </nav>
-          </div>
-
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-              
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
+            
+          
 
-          <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pandas-dev/pydata-sphinx-theme/edit/master/docs/index.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
               <div>
                 
-  <span class="target" id="module-pandas"></span><div class="section" id="pandas-powerful-python-data-analysis-toolkit">
-<h1>pandas: powerful Python data analysis toolkit<a class="headerlink" href="#pandas-powerful-python-data-analysis-toolkit" title="Permalink to this headline">¶</a></h1>
-<p><strong>Date</strong>: Dec 20, 2019 <strong>Version</strong>: 0.25.3</p>
-<p><strong>Download documentation</strong>: <a class="reference external" href="pandas.pdf">PDF Version</a> | <a class="reference external" href="pandas.zip">Zipped HTML</a></p>
-<p><strong>Useful links</strong>:
-<a class="reference external" href="https://pypi.org/project/pandas">Binary Installers</a> |
-<a class="reference external" href="https://github.com/pandas-dev/pandas">Source Repository</a> |
-<a class="reference external" href="https://github.com/pandas-dev/pandas/issues">Issues &amp; Ideas</a> |
-<a class="reference external" href="https://stackoverflow.com/questions/tagged/pandas">Q&amp;A Support</a> |
-<a class="reference external" href="https://groups.google.com/forum/#!forum/pydata">Mailing List</a></p>
-<p><a class="reference internal" href="#module-pandas" title="pandas"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pandas</span></code></a> is an open source, BSD-licensed library providing high-performance,
-easy-to-use data structures and data analysis tools for the <a class="reference external" href="https://www.python.org/">Python</a>
-programming language.</p>
-<p>See the <a class="reference internal" href="getting_started/overview.html#overview"><span class="std std-ref">Package overview</span></a> for more detail about what’s in the library.</p>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">An extra caption. This item should be at the end of page nav (and duplicated)</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="development/index.html">Development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="development/contributing.html">Contributing to pandas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development/internals.html">Internals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development/extending.html">Extending Pandas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="development/developer.html">Developer</a></li>
-</ul>
-</li>
-</ul>
-</div>
+  <section id="the-pydata-sphinx-theme">
+<h1>PyData Sphinx 主题<a class="headerlink" href="#the-pydata-sphinx-theme" title="永久链接至标题">#</a></h1>
+<p>这是来自 PyData 社区的基于 bootstrap 的简单 Sphinx 主题。此网站是一个主题使用指南，并演示了它与各种元素的外观。</p>
+<p>其他使用此主题的网站：</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="whatsnew/v0.25.0.html"><span class="doc">What’s New in 0.25.0 (April XX, 2019)</span></a></p></li>
-<li><p><a class="reference external" href="http://www.statsmodels.org/devel/install.html" title="(in statsmodels vv0.11.0dev0 (+710))"><span>Installing statsmodels</span></a></p></li>
-<li><p><a class="reference internal" href="getting_started/index.html"><span class="doc">Getting started</span></a></p>
+<li><p>Binder: <a class="reference external" href="https://docs.mybinder.org/">https://docs.mybinder.org/</a></p></li>
+<li><p>Bokeh: <a class="reference external" href="https://docs.bokeh.org/en/latest/">https://docs.bokeh.org/en/latest/</a></p></li>
+<li><p>JupyterLab: <a class="reference external" href="https://jupyterlab.readthedocs.io/en/latest/">https://jupyterlab.readthedocs.io/en/latest/</a></p></li>
+<li><p>JupyterHub: <a class="reference external" href="https://jupyterhub.readthedocs.io/en/latest/">https://jupyterhub.readthedocs.io/en/latest/</a></p></li>
+<li><p>Matplotlib: <a class="reference external" href="https://matplotlib.org/stable/">https://matplotlib.org/stable/</a></p></li>
+<li><p>NetworkX: <a class="reference external" href="https://networkx.org/documentation/latest/">https://networkx.org/documentation/latest/</a></p></li>
+<li><p>NumPy: <a class="reference external" href="https://numpy.org/doc/stable/">https://numpy.org/doc/stable/</a></p></li>
+<li><p>Pandas: <a class="reference external" href="https://pandas.pydata.org/docs/">https://pandas.pydata.org/docs/</a></p></li>
+<li><p>SciPy: <a class="reference external" href="https://scipy.github.io/devdocs/">https://scipy.github.io/devdocs/</a></p></li>
+<li><p>JupyterHub 和 Binder: <a class="reference external" href="https://docs.mybinder.org/">https://docs.mybinder.org/</a>, <a class="reference external" href="http://z2jh.jupyter.org/en/latest/">http://z2jh.jupyter.org/en/latest/</a>, <a class="reference external" href="https://repo2docker.readthedocs.io/en/latest/">https://repo2docker.readthedocs.io/en/latest/</a>, <a class="reference external" href="https://jupyterhub-team-compass.readthedocs.io/en/latest/">https://jupyterhub-team-compass.readthedocs.io/en/latest/</a></p></li>
+<li><p>Jupyter Book beta 版使用了这个主题的扩展: <a class="reference external" href="https://beta.jupyterbook.org">https://beta.jupyterbook.org</a></p></li>
+<li><p>Fairlearn: <a class="reference external" href="https://fairlearn.org/main/about/">https://fairlearn.org/main/about/</a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">主题文档</span></p>
 <ul>
-<li><p><a class="reference internal" href="getting_started/overview.html"><span class="doc">Package overview</span></a></p></li>
-<li><p><a class="reference internal" href="getting_started/10min.html"><span class="doc">10 Minutes to pandas</span></a></p></li>
-<li><p><a class="reference internal" href="getting_started/basics.html"><span class="doc">Essential Basic Functionality</span></a></p></li>
-<li><p><a class="reference internal" href="getting_started/dsintro.html"><span class="doc">Intro to Data Structures</span></a></p></li>
-<li><p><a class="reference internal" href="getting_started/comparison/index.html"><span class="doc">Comparison with other tools</span></a></p></li>
-<li><p><a class="reference internal" href="getting_started/tutorials.html"><span class="doc">Tutorials</span></a></p></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/index.html">用户指南</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/install.html">安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/configuring.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/sections.html">Add/Remove items from theme sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/customizing.html">Customizing the theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/accessibility.html">Accessibility</a></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="user_guide/index.html"><span class="doc">User Guide</span></a></p>
-<ul>
-<li><p><a class="reference internal" href="user_guide/io.html"><span class="doc">IO Tools (Text, CSV, HDF5, …)</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/indexing.html"><span class="doc">Indexing and Selecting Data</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/advanced.html"><span class="doc">MultiIndex / Advanced Indexing</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/merging.html"><span class="doc">Merge, join, and concatenate</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/reshaping.html"><span class="doc">Reshaping and Pivot Tables</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/text.html"><span class="doc">Working with Text Data</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/missing_data.html"><span class="doc">Working with missing data</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/categorical.html"><span class="doc">Categorical Data</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/integer_na.html"><span class="doc">Nullable Integer Data Type</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/visualization.html"><span class="doc">Visualization</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/computation.html"><span class="doc">Computational tools</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/groupby.html"><span class="doc">Group By: split-apply-combine</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/timeseries.html"><span class="doc">Time Series / Date functionality</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/timedeltas.html"><span class="doc">Time Deltas</span></a></p></li>
-<li><p><span class="xref std std-doc">user_guide/style</span></p></li>
-<li><p><a class="reference internal" href="user_guide/options.html"><span class="doc">Options and Settings</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/enhancingperf.html"><span class="doc">Enhancing Performance</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/sparse.html"><span class="doc">Sparse data structures</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/gotchas.html"><span class="doc">Frequently Asked Questions (FAQ)</span></a></p></li>
-<li><p><a class="reference internal" href="user_guide/cookbook.html"><span class="doc">Cookbook</span></a></p></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/index.html">Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contribute/index.html#workflow-for-contributing-changes">Workflow for contributing changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute/index.html#location-and-structure-of-documentation">Location and structure of documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute/index.html#location-and-structure-of-css-js-assets">Location and structure of CSS/JS assets</a></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="ecosystem.html"><span class="doc">pandas Ecosystem</span></a></p></li>
-<li><p><a class="reference internal" href="reference/index.html"><span class="doc">API Reference</span></a></p>
-<ul>
-<li><p><a class="reference internal" href="reference/io.html"><span class="doc">Input/Output</span></a></p></li>
-<li><p><a class="reference internal" href="reference/general_functions.html"><span class="doc">General functions</span></a></p></li>
-<li><p><span class="xref std std-doc">reference/series</span></p></li>
-<li><p><a class="reference internal" href="reference/frame.html"><span class="doc">DataFrame</span></a></p></li>
-<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/arrays.html" title="(in NumPy v1.17)"><span>Array objects</span></a></p></li>
-<li><p><span class="xref std std-doc">reference/panel</span></p></li>
-<li><p><span class="xref std std-doc">reference/indexing</span></p></li>
-<li><p><span class="xref std std-doc">reference/offset_frequency</span></p></li>
-<li><p><span class="xref std std-doc">reference/window</span></p></li>
-<li><p><span class="xref std std-doc">reference/groupby</span></p></li>
-<li><p><span class="xref std std-doc">reference/resampling</span></p></li>
-<li><p><span class="xref std std-doc">reference/style</span></p></li>
-<li><p><span class="xref std std-doc">reference/plotting</span></p></li>
-<li><p><span class="xref std std-doc">reference/general_utility_functions</span></p></li>
-<li><p><span class="xref std std-doc">reference/extensions</span></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="development/index.html"><span class="doc">Development</span></a></p>
-<ul>
-<li><p><a class="reference internal" href="development/contributing.html"><span class="doc">Contributing to pandas</span></a></p></li>
-<li><p><a class="reference internal" href="development/internals.html"><span class="doc">Internals</span></a></p></li>
-<li><p><a class="reference internal" href="development/extending.html"><span class="doc">Extending Pandas</span></a></p></li>
-<li><p><a class="reference internal" href="development/developer.html"><span class="doc">Developer</span></a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="whatsnew/index.html"><span class="doc">Release Notes</span></a></p></li>
 </ul>
 </div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
 
 
               </div>
               
-              <div class='prev-next-bottom'>
-                
-    <a class='right-next' id="next-link" href="getting_started/index.html" title="next page">Getting started</a>
-
-              </div>
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="user_guide/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">用户指南</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
+          
 
       </div>
-    </div><script>
-    // TOC sidebar - add "active" class to parent list
-    //
-    // Bootstrap's scrollspy adds the active class to the <a> link,
-    // but for the automatic collapsing we need this on the parent list item.
-    //
-    // The event is triggered on "window" (and not the nav item as documented),
-    // see https://github.com/twbs/bootstrap/issues/20086
-    $(window).on("activate.bs.scrollspy", function(){
-    var navLinks = document.querySelectorAll('#bd-toc-nav a');
-    for (var i = 0; i < navLinks.length; i++) {
-        var navLink = navLinks[i];
-        navLink.parentElement.classList.remove('active');
-    }
-    var navLinks = document.querySelectorAll('#bd-toc-nav a.active');
-    for (var i = 0; i < navLinks.length; i++) {
-        var navLink = navLinks[i];
-        navLink.parentElement.classList.add('active');
-    }
-    });
-
-    /**
-     * Use left and right arrow keys to navigate forward and backwards.
-    */
-    const LEFT_ARROW_KEYCODE = 37
-    const RIGHT_ARROW_KEYCODE = 39
-
-    const getPrevUrl = () => document.getElementById('prev-link').href
-    const getNextUrl = () => document.getElementById('next-link').href
-    const initPageNav = (event) => {
-        const keycode = event.which
-
-        if (keycode === LEFT_ARROW_KEYCODE) {
-            window.location.href = getPrevUrl();
-        } else if (keycode === RIGHT_ARROW_KEYCODE) {
-            window.location.href = getNextUrl();
-        }
-    };
-
-    var keyboardListener = false;
-    $( document ).ready(() => {
-        if (keyboardListener === false) {
-            document.addEventListener('keydown', initPageNav)
-            keyboardListener = true;
-        }
-    });
-</script>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright 2008-2014, the pandas development team.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
     </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2019, PyData Community.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
   </body>
 </html>

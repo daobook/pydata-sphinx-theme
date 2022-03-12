@@ -1,6 +1,0 @@
-pandas.DataFrame.is\_copy
-=========================
-
-.. currentmodule:: pandas
-
-.. autoproperty:: DataFrame.is_copy

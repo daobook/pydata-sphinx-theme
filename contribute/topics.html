@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Topic guides and how-tos &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="canonical" href="http://127.0.0.1:8000/contribute/topics.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Set up a manual development environment" href="manual.html" />
+    <link rel="prev" title="Get started with development" href="setup.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">PyData Sphinx Theme</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user_guide/index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Contribute
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../demo/index.html">
+  Demo site
+ </a>
+</li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://pandas.pydata.org/pandas-docs/stable/">Pandas Docs<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <div class="dropdown" id="version_switcher">
+    <button type="button" class="btn btn-primary btn-sm navbar-btn dropdown-toggle" id="version_switcher_button" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div id="version_switcher_menu" class="dropdown-menu list-group-flush py-0" aria-labelledby="version_switcher_button">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+
+<!-- NOTE: this JS must live here (not in our global JS file) because it relies
+     on being processed by Jinja before it is run (specifically for replacing
+     variables contribute/topics and {'json_url': '/_static/switcher.json', 'version_match': 'latest'}.
+-->
+
+<script type="text/javascript">
+// Check if corresponding page path exists in other version of docs
+// and, if so, go there instead of the homepage of the other docs version
+function checkPageExistsAndRedirect(event) {
+    const currentFilePath = "contribute/topics.html",
+          tryUrl = event.target.getAttribute("href");
+    let otherDocsHomepage = tryUrl.replace(currentFilePath, "");
+    $.ajax({
+        type: 'HEAD',
+        url: tryUrl,
+        // if the page exists, go there
+        success: function() {
+            location.href = tryUrl;
+        }
+    }).fail(function() {
+        location.href = otherDocsHomepage;
+    });
+    // this prevents the browser from following the href of the clicked node
+    // (which is fine because this function takes care of redirecting)
+    return false;
+}
+
+// Populate the version switcher from the JSON config file
+(function () {
+    $.getJSON("/_static/switcher.json", function(data, textStatus, jqXHR) {
+        const currentFilePath = "contribute/topics.html";
+        // create links to the corresponding page in the other docs versions
+        $.each(data, function(index, entry) {
+            // if no custom name specified (e.g., "latest"), use version string
+            if (!("name" in entry)) {
+                entry.name = entry.version;
+            }
+            // create the node
+            const node = document.createElement("a");
+            node.setAttribute("class", "list-group-item list-group-item-action py-1");
+            node.textContent = `${entry.name}`;
+            node.setAttribute("href", `${entry.url}${currentFilePath}`);
+            // on click, AJAX calls will check if the linked page exists before
+            // trying to redirect, and if not, will redirect to the homepage
+            // for that version of the docs.
+            node.onclick = checkPageExistsAndRedirect;
+            // Add dataset values for the version and name in case people want
+            // to apply CSS styling based on this information.
+            node.dataset["versionName"] = entry.name;
+            node.dataset["version"] = entry.version;
+
+            $("#version_switcher_menu").append(node);
+            // replace dropdown button text with the preferred display name of
+            // this version, rather than using sphinx's  variable.
+            // also highlight the dropdown entry for the currently-viewed
+            // version's entry
+            if (entry.version == "latest") {
+                node.classList.add("active");
+                let btn = document.getElementById("version_switcher_button");
+                btn.innerText = btn.dataset["activeVersionName"] = entry.name;
+                btn.dataset["activeVersion"] = entry.version;
+            }
+        });
+    });
+})();
+</script>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pydata/pydata-sphinx-theme" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/pandas_dev" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pypi.org/project/pydata-sphinx-theme" rel="noopener" target="_blank" title="PyPI"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pandas.pydata.org" rel="noopener" target="_blank" title="Pandas"><img src="../_static/pandas-square.svg" class="icon-link-image" alt="Pandas"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="setup.html">
+   Get started with development
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Topic guides and how-tos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="manual.html">
+   Set up a manual development environment
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-a-release">
+   Make a release
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#update-javascript-dependencies-and-their-versions">
+   Update JavaScript dependencies and their versions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-nox">
+   Using
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     nox
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#re-install-dependencies">
+     Re-install dependencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-nox-with-your-global-environment">
+     Use
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       nox
+      </span>
+     </code>
+     with your global environment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-pre-commit">
+   Using
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pre-commit
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#skip-the-pre-commit-checks">
+     Skip the pre-commit checks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-pre-commit-on-all-files">
+     Run pre-commit on all files
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#web-assets-css-js-fonts">
+   Web assets (CSS/JS/Fonts)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compile-and-bundle-assets">
+     Compile and bundle assets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#styles-scss-and-scripts-js">
+     Styles (SCSS) and Scripts (JS)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vendored-scripts">
+     Vendored scripts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fontawesome-icons">
+     FontAwesome icons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jinja-macros">
+     Jinja macros
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accessibility-checks">
+   Accessibility checks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#errors-in-ci-cd-and-what-to-do">
+     Errors in CI/CD and what to do
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fix-accessibility-errors">
+     Fix accessibility errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-an-accessibility-audit-locally">
+     Run an accessibility audit locally
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#update-our-kitchen-sink-documents">
+   Update our kitchen sink documents
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pandas-dev/pydata-sphinx-theme/edit/master/docs/contribute/topics.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="topic-guides-and-how-tos">
+<h1>Topic guides and how-tos<a class="headerlink" href="#topic-guides-and-how-tos" title="永久链接至标题">#</a></h1>
+<p>These sections cover common operations and topics that are relevant to developing this theme.</p>
+<section id="make-a-release">
+<h2>Make a release<a class="headerlink" href="#make-a-release" title="永久链接至标题">#</a></h2>
+<p>This theme uses GitHub tags and releases to automatically push new releases to
+PyPI. For information on this process, see <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/wiki/Release-checklist#release-instructions">the release checklist</a>.</p>
+</section>
+<section id="update-javascript-dependencies-and-their-versions">
+<h2>Update JavaScript dependencies and their versions<a class="headerlink" href="#update-javascript-dependencies-and-their-versions" title="永久链接至标题">#</a></h2>
+<p>The javascript dependencies for this package are defined in <code class="docutils literal notranslate"><span class="pre">package.json</span></code>, and broken down into a few categories like <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> and <code class="docutils literal notranslate"><span class="pre">devDependencies</span></code>.</p>
+<p>To update or add JS dependency, modify (or append to) the list of packages that are listed in each of these sections.
+The next time you build the documentation (either with <code class="docutils literal notranslate"><span class="pre">nox</span></code> or with <code class="docutils literal notranslate"><span class="pre">stb</span></code>), these new dependencies will be installed and bundled with the theme.</p>
+</section>
+<section id="using-nox">
+<h2>Using <code class="docutils literal notranslate"><span class="pre">nox</span></code><a class="headerlink" href="#using-nox" title="永久链接至标题">#</a></h2>
+<p>Here are a few extra tips for using <code class="docutils literal notranslate"><span class="pre">nox</span></code>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>The <a class="reference external" href="https://nox.thea.codes/en/stable/usage.html"><code class="docutils literal notranslate"><span class="pre">nox</span></code> command line documentation</a> has a lot of helpful tips for extra functionality you can enable with the CLI.</p>
+</div>
+<section id="re-install-dependencies">
+<h3>Re-install dependencies<a class="headerlink" href="#re-install-dependencies" title="永久链接至标题">#</a></h3>
+<p>To re-execute the installation commands, use this pattern:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s docs -- reinstall
+</pre></div>
+</div>
+<p>Or to completely remove the environment generated by <code class="docutils literal notranslate"><span class="pre">nox</span></code> and start from scratch:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>rm -rf .nox/docs
+</pre></div>
+</div>
+</section>
+<section id="use-nox-with-your-global-environment">
+<h3>Use <code class="docutils literal notranslate"><span class="pre">nox</span></code> with your global environment<a class="headerlink" href="#use-nox-with-your-global-environment" title="永久链接至标题">#</a></h3>
+<p>If you’d like to use <code class="docutils literal notranslate"><span class="pre">nox</span></code> with your <strong>global</strong> environment (the one from which you are calling <code class="docutils literal notranslate"><span class="pre">nox</span></code>), you can do so with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox --force-venv-backend none
+
+<span class="gp"># </span>alternatively:
+<span class="gp">$ </span>nox --no-venv
+</pre></div>
+</div>
+<p>Using <code class="docutils literal notranslate"><span class="pre">none</span></code> will re-use your current global environment.
+See
+<a class="reference external" href="https://nox.thea.codes/en/stable/usage.html#forcing-the-sessions-backend">the nox documentation</a> for more details.</p>
+</section>
+</section>
+<section id="using-pre-commit">
+<h2>Using <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code><a class="headerlink" href="#using-pre-commit" title="永久链接至标题">#</a></h2>
+<p>Here are a few tips for using <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>:</p>
+<section id="skip-the-pre-commit-checks">
+<h3>Skip the pre-commit checks<a class="headerlink" href="#skip-the-pre-commit-checks" title="永久链接至标题">#</a></h3>
+<p>Run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git commit --no-verify
+</pre></div>
+</div>
+</section>
+<section id="run-pre-commit-on-all-files">
+<h3>Run pre-commit on all files<a class="headerlink" href="#run-pre-commit-on-all-files" title="永久链接至标题">#</a></h3>
+<p>By default, <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> will run its checks on files that have been modified in a commit.
+To instead run it on all files, use this command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pre-commit run --all-files
+
+<span class="gp"># </span>Alternatively
+<span class="gp">$ </span>pre-commit run -a
+</pre></div>
+</div>
+</section>
+</section>
+<section id="web-assets-css-js-fonts">
+<h2>Web assets (CSS/JS/Fonts)<a class="headerlink" href="#web-assets-css-js-fonts" title="永久链接至标题">#</a></h2>
+<p>This theme includes several web assets to ease development and design.
+The configuration for our asset compilation is in <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code>.</p>
+<section id="compile-and-bundle-assets">
+<h3>Compile and bundle assets<a class="headerlink" href="#compile-and-bundle-assets" title="永久链接至标题">#</a></h3>
+<p>When assets are compiled, static versions are placed in various places in the theme’s static folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">src</span><span class="o">/</span><span class="n">pydata_sphinx_theme</span><span class="o">/</span><span class="n">theme</span><span class="o">/</span><span class="n">pydata_sphinx_theme</span><span class="o">/</span><span class="n">static</span>
+</pre></div>
+</div>
+<p>For many assets, a <code class="docutils literal notranslate"><span class="pre">&lt;hash&gt;</span></code> is generated and appended to the end of its reference in the HTML templates of the theme.
+This ensures the correct asset versions are served when viewers return to your
+site after upgrading the theme.</p>
+<p>To compile the assets and bundle them with the theme, run this command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s compile
+</pre></div>
+</div>
+</section>
+<section id="styles-scss-and-scripts-js">
+<h3>Styles (SCSS) and Scripts (JS)<a class="headerlink" href="#styles-scss-and-scripts-js" title="永久链接至标题">#</a></h3>
+<p>There are two relevant places for CSS/JS assets:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/styles</span></code> has source files for SCSS assets. These will be compiled to CSS.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/scripts</span></code> has source files for JS assets. These will be compiled to JS and import several vendored libraries (like Bootstrap).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static</span></code> has compiled versions of these assets (e.g. CSS files). This folder is not tracked in <code class="docutils literal notranslate"><span class="pre">.git</span></code> history, but it is bundled with the theme’s distribution.</p></li>
+</ul>
+</section>
+<section id="vendored-scripts">
+<h3>Vendored scripts<a class="headerlink" href="#vendored-scripts" title="永久链接至标题">#</a></h3>
+<p>We vendor several packages in addition to our own CSS and JS.
+For example, Bootstrap, JQuery, and Popper.
+This is configured in the <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code> file, and imported in the respective <code class="docutils literal notranslate"><span class="pre">SCSS</span></code> or <code class="docutils literal notranslate"><span class="pre">JS</span></code> file in our assets folder.</p>
+</section>
+<section id="fontawesome-icons">
+<h3>FontAwesome icons<a class="headerlink" href="#fontawesome-icons" title="永久链接至标题">#</a></h3>
+<p>Three “styles” of the <a class="reference external" href="https://fontawesome.com/icons?m=free">FontAwesome 5 Free</a>
+icon font are used for <a class="reference internal" href="../user_guide/configuring.html#icon-links"><span class="std std-ref">icon links</span></a> and admonitions, and is
+the only <code class="docutils literal notranslate"><span class="pre">vendored</span></code> font.</p>
+<ul class="simple">
+<li><p>It is managed as a dependency in <code class="docutils literal notranslate"><span class="pre">package.json</span></code></p></li>
+<li><p>Copied directly into the site statics at compilation, including licenses</p></li>
+<li><p>Partially preloaded to reduce flicker and artifacts of early icon renders</p></li>
+<li><p>Configured in <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code></p></li>
+</ul>
+</section>
+<section id="jinja-macros">
+<h3>Jinja macros<a class="headerlink" href="#jinja-macros" title="永久链接至标题">#</a></h3>
+<p>Our Webpack build generates a collection of <a class="reference external" href="https://jinja.palletsprojects.com/en/3.0.x/templates/#macros">Jinja macros</a> in the <code class="docutils literal notranslate"><span class="pre">static/webpack-macros.html</span></code> file.</p>
+<p>These macros are imported in the main <code class="docutils literal notranslate"><span class="pre">layout.html</span></code> file, and then inserted at various places in the page to link the static assets.</p>
+<p>Some of the assets <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload">are “preloaded”</a>, meaning that the browser begins requesting these resources before they’re actually needed.
+In particular, our JavaScript assets are preloaded in <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code>, and the scripts are actually loaded at the end of <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code>.</p>
+</section>
+</section>
+<section id="accessibility-checks">
+<h2>Accessibility checks<a class="headerlink" href="#accessibility-checks" title="永久链接至标题">#</a></h2>
+<p>The accessibility checking tools can find a number of common HTML patterns which
+assistive technology can’t help users understand.</p>
+<p>In addition to <a class="reference external" href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>
+in CI, the <code class="docutils literal notranslate"><span class="pre">pa11y</span></code> stack is installed as part of the development environment.</p>
+<p>The key components are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/pa11y/pa11y">pa11y</a> which uses a headless browser to analyze
+an HTML page with a configurable set of rules based on publish standards</p></li>
+<li><p><a class="reference external" href="https://github.com/pa11y/pa11y-ci">Pa11y-CI</a> runs <code class="docutils literal notranslate"><span class="pre">pa11y</span></code> on multiple pages</p></li>
+<li><p><a class="reference external" href="https://github.com/pa11y/pa11y-reporter-html">pa11y-reporter-html</a> generates
+some nice HTML reports, suitable for review</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Presently, the <em>default</em> <code class="docutils literal notranslate"><span class="pre">pa11y</span></code> ruleset, <code class="docutils literal notranslate"><span class="pre">WCAG2AA</span></code> is used, a subset of
+the <a class="reference external" href="https://www.w3.org/TR/WCAG21">Web Content Accessibility Guidelines</a>.
+The <a class="reference external" href="https://www.w3.org/WAI/WCAG21/quickref">Quick Reference</a> may provide
+lighter reading.</p>
+</div>
+<section id="errors-in-ci-cd-and-what-to-do">
+<h3>Errors in CI/CD and what to do<a class="headerlink" href="#errors-in-ci-cd-and-what-to-do" title="永久链接至标题">#</a></h3>
+<p>We have a list of <strong>known accessibility problems</strong> in the file <code class="docutils literal notranslate"><span class="pre">docs/scripts/a11y-roadmap.txt</span></code>.
+This contains a list of errors that we aim to fix in the future, and that <strong>do not cause tests to fail</strong>.</p>
+<p>When a pa11y accessibility audit is run in our CI/CD, it checks for any errors that are <em>not</em> on this list, and if it finds them it will cause the job to error.</p>
+<p>When you see an error in your CI/CD job, look at the logs under the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">accessibility</span> <span class="pre">audit</span></code> job.
+You should see an output that looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">JSON</span><span class="p">:</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">pa11y</span><span class="o">/</span><span class="n">pa11y</span><span class="o">-</span><span class="mi">864</span><span class="o">/</span><span class="n">pa11y</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">results</span><span class="o">.</span><span class="n">json</span>
+<span class="n">Roadmap</span><span class="p">:</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">runner</span><span class="o">/</span><span class="n">work</span><span class="o">/</span><span class="n">pydata</span><span class="o">-</span><span class="n">sphinx</span><span class="o">-</span><span class="n">theme</span><span class="o">/</span><span class="n">pydata</span><span class="o">-</span><span class="n">sphinx</span><span class="o">-</span><span class="n">theme</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">a11y</span><span class="o">-</span><span class="n">roadmap</span><span class="o">.</span><span class="n">txt</span>
+<span class="ow">not</span> <span class="n">on</span> <span class="n">roadmap</span><span class="p">:</span>
+  <span class="n">WCAG2AA</span><span class="o">.</span><span class="n">Principle2</span><span class="o">.</span><span class="n">Guideline2_4</span><span class="mf">.2_4_1</span><span class="o">.</span><span class="n">G1</span><span class="p">,</span><span class="n">G123</span><span class="p">,</span><span class="n">G124</span><span class="o">.</span><span class="n">NoSuchID</span><span class="p">:</span> <span class="mi">4</span>
+<span class="n">on</span> <span class="n">roadmap</span><span class="p">:</span>
+  <span class="n">WCAG2AA</span><span class="o">.</span><span class="n">Principle1</span><span class="o">.</span><span class="n">Guideline1_3</span><span class="mf">.1_3_1</span><span class="o">.</span><span class="n">H39</span><span class="mf">.3</span><span class="o">.</span><span class="n">LayoutTable</span><span class="p">:</span> <span class="mi">1</span>
+  <span class="n">WCAG2AA</span><span class="o">.</span><span class="n">Principle1</span><span class="o">.</span><span class="n">Guideline1_3</span><span class="mf">.1_3_1</span><span class="o">.</span><span class="n">H43</span><span class="p">,</span><span class="n">H63</span><span class="p">:</span> <span class="mi">1</span>
+  <span class="n">WCAG2AA</span><span class="o">.</span><span class="n">Principle1</span><span class="o">.</span><span class="n">Guideline1_3</span><span class="mf">.1_3_1</span><span class="o">.</span><span class="n">H43</span><span class="o">.</span><span class="n">HeadersRequired</span><span class="p">:</span> <span class="mi">1</span>
+  <span class="n">WCAG2AA</span><span class="o">.</span><span class="n">Principle1</span><span class="o">.</span><span class="n">Guideline1_4</span><span class="mf">.1_4_3</span><span class="o">.</span><span class="n">G18</span><span class="o">.</span><span class="n">Fail</span><span class="p">:</span> <span class="mi">1828</span>
+  <span class="n">WCAG2AA</span><span class="o">.</span><span class="n">Principle3</span><span class="o">.</span><span class="n">Guideline3_2</span><span class="mf">.3_2_2</span><span class="o">.</span><span class="n">H32</span><span class="mf">.2</span><span class="p">:</span> <span class="mi">48</span>
+  <span class="n">WCAG2AA</span><span class="o">.</span><span class="n">Principle4</span><span class="o">.</span><span class="n">Guideline4_1</span><span class="mf">.4_1_2</span><span class="o">.</span><span class="n">H91</span><span class="o">.</span><span class="n">A</span><span class="o">.</span><span class="n">EmptyNoId</span><span class="p">:</span> <span class="mi">9</span>
+<span class="n">passed</span><span class="p">:</span> <span class="n">false</span>
+<span class="n">total</span> <span class="n">errors</span><span class="p">:</span> <span class="mi">1892</span>
+</pre></div>
+</div>
+<p>The problems that caused an error are in the <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">on</span> <span class="pre">roadmap</span></code> section.
+Anything that is “not on the roadmap” is an error we have unexpectedly introduced in the PR.
+These should be identified and fixed.</p>
+</section>
+<section id="fix-accessibility-errors">
+<h3>Fix accessibility errors<a class="headerlink" href="#fix-accessibility-errors" title="永久链接至标题">#</a></h3>
+<p>We keep a list of <strong>known accessibility issues</strong> in the <a class="reference download internal" download="" href="../_downloads/fe076d5699c680758d321b2b537608ea/a11y-roadmap.txt"><code class="xref download docutils literal notranslate"><span class="pre">accessibility</span> <span class="pre">roadmap</span></code></a>.
+These are issues which are currently flagged by the toolset, but that have not yet
+been fixed.</p>
+<p>To start working on one of the accessibility roadmap items, comment out one of the
+lines in <code class="docutils literal notranslate"><span class="pre">docs/a11y-roadmap.txt</span></code>, and re-run the audit to establish a baseline.</p>
+<p>Then, fix the issue in either the HTML templates, CSS, or python code, and re-run
+the audit until it is fixed.</p>
+</section>
+<section id="run-an-accessibility-audit-locally">
+<h3>Run an accessibility audit locally<a class="headerlink" href="#run-an-accessibility-audit-locally" title="永久链接至标题">#</a></h3>
+<p>To run the accessibility problem finder locally:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s compile  <span class="c1"># Compile the theme assets</span>
+<span class="gp">$ </span>nox -s docs  <span class="c1"># Build the documentation</span>
+<span class="gp">$ </span>python docs/scripts/a11y.py  <span class="c1"># Run a helper script for an accessibility audit</span>
+</pre></div>
+</div>
+<p>The output of the last command includes:</p>
+<ul class="simple">
+<li><p>a short summary of the current state of the accessibility rules we are trying to maintain</p></li>
+<li><p>local paths to JSON and HTML reports which contain all of the issues found</p></li>
+</ul>
+</section>
+</section>
+<section id="update-our-kitchen-sink-documents">
+<h2>Update our kitchen sink documents<a class="headerlink" href="#update-our-kitchen-sink-documents" title="永久链接至标题">#</a></h2>
+<p>The <a class="reference internal" href="../demo/kitchen-sink/index.html"><span class="doc std std-doc">kitchen sink reference</span></a> is for demonstrating as much syntax and style for Sphinx builds as possible.
+It is copied directly from the <a class="reference external" href="https://sphinx-themes.org/"><code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> documentation</a> so that we use standardized reference docs compared with other communities.
+The source files for these pages are stored <a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/raw/master/sample-docs/kitchen-sink/">in the <code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> repository</a>.</p>
+<p>If you’d like to update our local files with any changes that have been made to the <code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> files, simply copy/paste those changes into our local files and make a commit.</p>
+<p>Here’s a list of our pages and where they come from in <code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../demo/kitchen-sink/index.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">index.rst</span></code></span></a> (<a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/blob/master/sample-docs/kitchen-sink/index.rst">source</a>)</p></li>
+<li><p><a class="reference internal" href="../demo/kitchen-sink/api.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">api.rst</span></code></span></a> (<a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/blob/master/sample-docs/kitchen-sink/api.rst">source</a>)</p></li>
+<li><p><a class="reference internal" href="../demo/kitchen-sink/lists-and-tables.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">lists-and-tables.rst</span></code></span></a> (<a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/blob/master/sample-docs/kitchen-sink/lists-and-tables.rst">source</a>)</p></li>
+<li><p><a class="reference internal" href="../demo/kitchen-sink/paragraph-markup.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">paragraph-markup.rst</span></code></span></a> (<a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/blob/master/sample-docs/kitchen-sink/paragraph-markup.rst">source</a>)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>To demonstrate extra styles and syntax that is not in the Kitchen sink, use the <a class="reference internal" href="../demo/theme-elements.html"><span class="doc std std-doc">Theme Elements reference</span></a>.</p>
+</div>
+</section>
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="setup.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Get started with development</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="manual.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Set up a manual development environment</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2019, PyData Community.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,6 +1,0 @@
-pandas.Series.asobject
-======================
-
-.. currentmodule:: pandas
-
-.. autoproperty:: Series.asobject

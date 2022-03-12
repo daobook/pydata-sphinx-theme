@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<meta content="Advanced customization of pydata-sphinx-theme's HTML and CSS." lang="en" name="description" xml:lang="en" />
+
+    <title>Customizing the theme &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="canonical" href="http://127.0.0.1:8000/user_guide/customizing.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Accessibility" href="accessibility.html" />
+    <link rel="prev" title="Add/Remove items from theme sections" href="sections.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">PyData Sphinx Theme</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../contribute/index.html">
+  Contribute
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../demo/index.html">
+  Demo site
+ </a>
+</li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://pandas.pydata.org/pandas-docs/stable/">Pandas Docs<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <div class="dropdown" id="version_switcher">
+    <button type="button" class="btn btn-primary btn-sm navbar-btn dropdown-toggle" id="version_switcher_button" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div id="version_switcher_menu" class="dropdown-menu list-group-flush py-0" aria-labelledby="version_switcher_button">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+
+<!-- NOTE: this JS must live here (not in our global JS file) because it relies
+     on being processed by Jinja before it is run (specifically for replacing
+     variables user_guide/customizing and {'json_url': '/_static/switcher.json', 'version_match': 'latest'}.
+-->
+
+<script type="text/javascript">
+// Check if corresponding page path exists in other version of docs
+// and, if so, go there instead of the homepage of the other docs version
+function checkPageExistsAndRedirect(event) {
+    const currentFilePath = "user_guide/customizing.html",
+          tryUrl = event.target.getAttribute("href");
+    let otherDocsHomepage = tryUrl.replace(currentFilePath, "");
+    $.ajax({
+        type: 'HEAD',
+        url: tryUrl,
+        // if the page exists, go there
+        success: function() {
+            location.href = tryUrl;
+        }
+    }).fail(function() {
+        location.href = otherDocsHomepage;
+    });
+    // this prevents the browser from following the href of the clicked node
+    // (which is fine because this function takes care of redirecting)
+    return false;
+}
+
+// Populate the version switcher from the JSON config file
+(function () {
+    $.getJSON("/_static/switcher.json", function(data, textStatus, jqXHR) {
+        const currentFilePath = "user_guide/customizing.html";
+        // create links to the corresponding page in the other docs versions
+        $.each(data, function(index, entry) {
+            // if no custom name specified (e.g., "latest"), use version string
+            if (!("name" in entry)) {
+                entry.name = entry.version;
+            }
+            // create the node
+            const node = document.createElement("a");
+            node.setAttribute("class", "list-group-item list-group-item-action py-1");
+            node.textContent = `${entry.name}`;
+            node.setAttribute("href", `${entry.url}${currentFilePath}`);
+            // on click, AJAX calls will check if the linked page exists before
+            // trying to redirect, and if not, will redirect to the homepage
+            // for that version of the docs.
+            node.onclick = checkPageExistsAndRedirect;
+            // Add dataset values for the version and name in case people want
+            // to apply CSS styling based on this information.
+            node.dataset["versionName"] = entry.name;
+            node.dataset["version"] = entry.version;
+
+            $("#version_switcher_menu").append(node);
+            // replace dropdown button text with the preferred display name of
+            // this version, rather than using sphinx's  variable.
+            // also highlight the dropdown entry for the currently-viewed
+            // version's entry
+            if (entry.version == "latest") {
+                node.classList.add("active");
+                let btn = document.getElementById("version_switcher_button");
+                btn.innerText = btn.dataset["activeVersionName"] = entry.name;
+                btn.dataset["activeVersion"] = entry.version;
+            }
+        });
+    });
+})();
+</script>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pydata/pydata-sphinx-theme" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/pandas_dev" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pypi.org/project/pydata-sphinx-theme" rel="noopener" target="_blank" title="PyPI"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pandas.pydata.org" rel="noopener" target="_blank" title="Pandas"><img src="../_static/pandas-square.svg" class="icon-link-image" alt="Pandas"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="install.html">
+   安装
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="configuring.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sections.html">
+   Add/Remove items from theme sections
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Customizing the theme
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="accessibility.html">
+   Accessibility
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#custom-css-stylesheets">
+   Custom CSS Stylesheets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#css-theme-variables">
+   CSS Theme variables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#replacing-removing-fonts">
+   Replacing/Removing Fonts
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pandas-dev/pydata-sphinx-theme/edit/master/docs/user_guide/customizing.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="customizing-the-theme">
+<span id="customizing"></span><h1>Customizing the theme<a class="headerlink" href="#customizing-the-theme" title="永久链接至标题">#</a></h1>
+<p>In addition to the configuration options detailed at <a class="reference internal" href="configuring.html#configuration"><span class="std std-ref">Configuration</span></a>, it
+is also possible to customize the HTML layout and CSS style of the theme.</p>
+<section id="custom-css-stylesheets">
+<span id="custom-css"></span><h2>Custom CSS Stylesheets<a class="headerlink" href="#custom-css-stylesheets" title="永久链接至标题">#</a></h2>
+<p>You may customize the theme’s CSS by creating a custom stylesheet that Sphinx uses to build your site.
+Any rules in this style-sheet will over-ride the default theme rules.</p>
+<p>To add a custom stylesheet, follow these steps:</p>
+<ol class="arabic">
+<li><p><strong>Create a CSS stylesheet</strong> in <code class="docutils literal notranslate"><span class="pre">_static/css/custom.css</span></code>, and add the CSS rules you wish.</p></li>
+<li><p><strong>Attach the stylesheet to your Sphinx build</strong>. Add the following to <code class="docutils literal notranslate"><span class="pre">conf.py</span></code></p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>html_static_path = [&#39;_static&#39;]
+
+html_css_files = [
+    &#39;css/custom.css&#39;,
+]
+</pre></div>
+</div>
+</li>
+</ol>
+<p>When you build your documentation, this stylesheet should now be activated.</p>
+</section>
+<section id="css-theme-variables">
+<span id="css-variables"></span><h2>CSS Theme variables<a class="headerlink" href="#css-theme-variables" title="永久链接至标题">#</a></h2>
+<p>This theme defines several <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS variables</a> that can be
+used to quickly control behavior across your documentation.</p>
+<p>These are based on top of the basic <a class="reference external" href="https://getbootstrap.com/docs/4.0/getting-started/theming/#css-variables">Bootstrap CSS variables</a>
+extended with some theme specific variables. An overview of all variables and
+every default is defined in <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static/styles/theme.css">the pydata default CSS variables file</a>.</p>
+<p>In order to change a variable, follow these steps:</p>
+<ol class="arabic">
+<li><p><a class="reference internal" href="#custom-css"><span class="std std-ref">Add a custom CSS stylesheet</span></a>. This is where we’ll configure the variables.</p></li>
+<li><p>Underneath a <code class="docutils literal notranslate"><span class="pre">:root</span></code> section, add the variables you wish to update. For example, to update
+the base font size, you might add this to <code class="docutils literal notranslate"><span class="pre">custom.css</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>:root {
+    --pst-font-size-base: 17px;
+}
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>Note that these are <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS variables</a> and not
+<a class="reference external" href="https://sass-lang.com/documentation/variables">SASS variables</a>.
+The theme is defined with CSS variables, not SASS variables!</p>
+</div>
+<p>For a complete list of the theme variables that you may override, see the
+<a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static/styles/theme.css">theme variables defaults CSS file</a>:</p>
+<div class="highlight-CSS notranslate"><div class="highlight"><pre><span></span><span class="c">/* Provided by Sphinx&#39;s &#39;basic&#39; theme, and included in the final set of assets */</span><span class="w"></span>
+<span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s2">&quot;../basic.css&quot;</span><span class="p">;</span><span class="w"></span>
+
+<span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c">/*****************************************************************************</span>
+<span class="c">  * Theme config</span>
+<span class="c">  **/</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-header-height</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/*****************************************************************************</span>
+<span class="c">  * Font size</span>
+<span class="c">  **/</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-size-base</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="c">/* base font size - applied at body / html level */</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/* heading font sizes */</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-size-h1</span><span class="p">:</span><span class="w"> </span><span class="mi">36</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-size-h2</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-size-h3</span><span class="p">:</span><span class="w"> </span><span class="mi">26</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-size-h4</span><span class="p">:</span><span class="w"> </span><span class="mi">21</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-size-h5</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-size-h6</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/* smaller then heading font sizes*/</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-size-milli</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="nv">--pst-sidebar-font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.9</span><span class="kt">em</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-sidebar-caption-font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.9</span><span class="kt">em</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/*****************************************************************************</span>
+<span class="c">  * Font family</span>
+<span class="c">  **/</span><span class="w"></span>
+<span class="w">  </span><span class="c">/* These are adapted from https://systemfontstack.com/ */</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-family-base-system</span><span class="p">:</span><span class="w"> </span><span class="o">-</span><span class="n">apple-system</span><span class="p">,</span><span class="w"> </span><span class="n">BlinkMacSystemFont</span><span class="p">,</span><span class="w"> </span><span class="n">Segoe</span><span class="w"> </span><span class="n">UI</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">,</span><span class="w"> </span><span class="n">Apple</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="n">Emoji</span><span class="p">,</span><span class="w"> </span><span class="n">Segoe</span><span class="w"> </span><span class="n">UI</span><span class="w"> </span><span class="n">Emoji</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">Segoe</span><span class="w"> </span><span class="n">UI</span><span class="w"> </span><span class="n">Symbol</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-family-monospace-system</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SFMono-Regular&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Menlo</span><span class="p">,</span><span class="w"> </span><span class="n">Consolas</span><span class="p">,</span><span class="w"> </span><span class="n">Monaco</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">Liberation</span><span class="w"> </span><span class="n">Mono</span><span class="p">,</span><span class="w"> </span><span class="n">Lucida</span><span class="w"> </span><span class="n">Console</span><span class="p">,</span><span class="w"> </span><span class="kc">monospace</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="nv">--pst-font-family-base</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-font-family-base-system</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-family-heading</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-font-family-base</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-font-family-monospace</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-font-family-monospace-system</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/*****************************************************************************</span>
+<span class="c">  * Color</span>
+<span class="c">  *</span>
+<span class="c">  * Colors are defined in rgb string way, &quot;red, green, blue&quot;</span>
+<span class="c">  **/</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-primary</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">84</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-success</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">167</span><span class="p">,</span><span class="w"> </span><span class="mi">69</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-info</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="c">/*23, 162, 184;*/</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-warning</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">193</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-danger</span><span class="p">:</span><span class="w"> </span><span class="mi">220</span><span class="p">,</span><span class="w"> </span><span class="mi">53</span><span class="p">,</span><span class="w"> </span><span class="mi">69</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-text-base</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w"> </span><span class="mi">51</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="nv">--pst-color-h1</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-primary</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-h2</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-primary</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-h3</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-h4</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-h5</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-h6</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-paragraph</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-link</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">91</span><span class="p">,</span><span class="w"> </span><span class="mi">129</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-link-hover</span><span class="p">:</span><span class="w"> </span><span class="mi">227</span><span class="p">,</span><span class="w"> </span><span class="mi">46</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-headerlink</span><span class="p">:</span><span class="w"> </span><span class="mi">198</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-headerlink-hover</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-preformatted-text</span><span class="p">:</span><span class="w"> </span><span class="mi">34</span><span class="p">,</span><span class="w"> </span><span class="mi">34</span><span class="p">,</span><span class="w"> </span><span class="mi">34</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-preformatted-background</span><span class="p">:</span><span class="w"> </span><span class="mi">250</span><span class="p">,</span><span class="w"> </span><span class="mi">250</span><span class="p">,</span><span class="w"> </span><span class="mi">250</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-inline-code</span><span class="p">:</span><span class="w"> </span><span class="mi">232</span><span class="p">,</span><span class="w"> </span><span class="mi">62</span><span class="p">,</span><span class="w"> </span><span class="mi">140</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="nv">--pst-color-active-navigation</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">84</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-navbar-link</span><span class="p">:</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-navbar-link-hover</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-navbar-link-active</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-sidebar-link</span><span class="p">:</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-sidebar-link-hover</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-sidebar-link-active</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-sidebar-expander-background-hover</span><span class="p">:</span><span class="w"> </span><span class="mi">244</span><span class="p">,</span><span class="w"> </span><span class="mi">244</span><span class="p">,</span><span class="w"> </span><span class="mi">244</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-sidebar-caption</span><span class="p">:</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-toc-link</span><span class="p">:</span><span class="w"> </span><span class="mi">119</span><span class="p">,</span><span class="w"> </span><span class="mi">117</span><span class="p">,</span><span class="w"> </span><span class="mi">122</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-toc-link-hover</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-toc-link-active</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/*****************************************************************************</span>
+<span class="c">  * Icon</span>
+<span class="c">  **/</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/* font awesome icons*/</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-check-circle</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f058&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-info-circle</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f05a&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-exclamation-triangle</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f071&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f06a&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-times-circle</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f057&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-lightbulb</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f0eb&quot;</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/*****************************************************************************</span>
+<span class="c">  * Admonitions</span>
+<span class="c">  **/</span><span class="w"></span>
+
+<span class="w">  </span><span class="nv">--pst-color-admonition-default</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-info</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-note</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-info</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-attention</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-warning</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-caution</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-warning</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-warning</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-warning</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-danger</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-danger</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-error</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-danger</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-hint</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-tip</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-admonition-important</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="nv">--pst-icon-admonition-default</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-info-circle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-note</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-info-circle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-attention</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-caution</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-triangle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-warning</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-triangle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-danger</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-triangle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-error</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-times-circle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-hint</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-lightbulb</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-tip</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-lightbulb</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-admonition-important</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c">/*****************************************************************************</span>
+<span class="c">  * versionmodified</span>
+<span class="c">  **/</span><span class="w"></span>
+
+<span class="w">  </span><span class="nv">--pst-color-versionmodified-default</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-info</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-versionmodified-added</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-versionmodified-changed</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-warning</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-color-versionmodified-deprecated</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-danger</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="nv">--pst-icon-versionmodified-default</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-versionmodified-added</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-versionmodified-changed</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nv">--pst-icon-versionmodified-deprecated</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="replacing-removing-fonts">
+<h2>Replacing/Removing Fonts<a class="headerlink" href="#replacing-removing-fonts" title="永久链接至标题">#</a></h2>
+<p>The theme includes the <a class="reference external" href="https://fontawesome.com/icons?m=free">FontAwesome 5 Free</a>
+icon font (the <code class="docutils literal notranslate"><span class="pre">.fa,</span> <span class="pre">.far,</span> <span class="pre">.fas</span></code> styles, which are used for
+<a class="reference internal" href="configuring.html#icon-links"><span class="std std-ref">icon links</span></a> and admonitions).
+This is the only <cite>vendored</cite> font, and otherwise the theme by default relies on
+available system fonts for normal body text and headers.</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>Previously-included fonts like <cite>Lato</cite> have been removed, preferring
+the most common default system fonts of the reader’s computer. This provides
+both better performance, and better script/glyph coverage than custom fonts,
+and is recommended in most cases.</p>
+</div>
+<p>The default body and header fonts can be changed as follows:</p>
+<ul>
+<li><p>Using <a class="reference internal" href="#custom-css"><span class="std std-ref">Custom CSS Stylesheets</span></a>, you can specify which fonts to use for body, header
+and monospace text. For example, the following can be added to a custom
+css file:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>:root {
+    --pst-font-family-base: Verdana, var(--pst-font-family-base-system);
+    --pst-font-family-heading: Cambria, Georgia, Times, var(--pst-font-family-base-system);
+    --pst-font-family-monospace: Courier, var(--pst-font-family-monospace-system);
+}
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">-system</span></code> variables are available to use as fallback to the default fonts.</p>
+</li>
+<li><p>If the font you want to specify in the section above is not generally available
+by default, you will additionally need to ensure the font is loaded.
+For example, you could download and vendor the font in the <code class="docutils literal notranslate"><span class="pre">_static</span></code> directory
+of your Sphinx site, and then update the base template to load the font resources:</p>
+<ul>
+<li><p>Configure the <a class="reference external" href="https://www.sphinx-doc.org/en/master/theming.html#templating">template_path</a>
+in your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code></p></li>
+<li><p>Create a custom <code class="docutils literal notranslate"><span class="pre">layout.html</span></code> Jinja2 template which overloads the <code class="docutils literal notranslate"><span class="pre">fonts</span></code> block
+(example for loading the Lato font that is included in the <code class="docutils literal notranslate"><span class="pre">_static/vendor</span></code> directory):</p>
+<div class="highlight-html+jinja notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;pydata_sphinx_theme/layout.html&quot;</span> <span class="cp">%}</span>
+
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">fonts</span> <span class="cp">%}</span>
+  <span class="cm">&lt;!-- add `style` or `link` tags with your CSS `@font-face` declarations here --&gt;</span>
+  <span class="cm">&lt;!-- ... and optionally preload the `woff2` for snappier page loads --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">pathto</span><span class="o">(</span><span class="s1">&#39;_static/vendor/lato_latin-ext/1.44.1/index.css&#39;</span><span class="o">,</span> <span class="m">1</span><span class="o">)</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="p">&gt;</span>
+
+<span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
+</pre></div>
+</div>
+<p>To reduce the <cite>Flash of Unstyled Content</cite>, you may wish to explore various options for
+<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content">preloading content</a>,
+specifically the binary font files. This ensure the files will be loaded
+before waiting for the CSS to be parsed, but should be used with care.</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="sections.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Add/Remove items from theme sections</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="accessibility.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Accessibility</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2019, PyData Community.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,6 +1,0 @@
-pandas.Series.itemsize
-======================
-
-.. currentmodule:: pandas
-
-.. autoproperty:: Series.itemsize

@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Add/Remove items from theme sections &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="canonical" href="http://127.0.0.1:8000/user_guide/sections.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Customizing the theme" href="customizing.html" />
+    <link rel="prev" title="Configuration" href="configuring.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">PyData Sphinx Theme</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../contribute/index.html">
+  Contribute
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../demo/index.html">
+  Demo site
+ </a>
+</li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://pandas.pydata.org/pandas-docs/stable/">Pandas Docs<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <div class="dropdown" id="version_switcher">
+    <button type="button" class="btn btn-primary btn-sm navbar-btn dropdown-toggle" id="version_switcher_button" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div id="version_switcher_menu" class="dropdown-menu list-group-flush py-0" aria-labelledby="version_switcher_button">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+
+<!-- NOTE: this JS must live here (not in our global JS file) because it relies
+     on being processed by Jinja before it is run (specifically for replacing
+     variables user_guide/sections and {'json_url': '/_static/switcher.json', 'version_match': 'latest'}.
+-->
+
+<script type="text/javascript">
+// Check if corresponding page path exists in other version of docs
+// and, if so, go there instead of the homepage of the other docs version
+function checkPageExistsAndRedirect(event) {
+    const currentFilePath = "user_guide/sections.html",
+          tryUrl = event.target.getAttribute("href");
+    let otherDocsHomepage = tryUrl.replace(currentFilePath, "");
+    $.ajax({
+        type: 'HEAD',
+        url: tryUrl,
+        // if the page exists, go there
+        success: function() {
+            location.href = tryUrl;
+        }
+    }).fail(function() {
+        location.href = otherDocsHomepage;
+    });
+    // this prevents the browser from following the href of the clicked node
+    // (which is fine because this function takes care of redirecting)
+    return false;
+}
+
+// Populate the version switcher from the JSON config file
+(function () {
+    $.getJSON("/_static/switcher.json", function(data, textStatus, jqXHR) {
+        const currentFilePath = "user_guide/sections.html";
+        // create links to the corresponding page in the other docs versions
+        $.each(data, function(index, entry) {
+            // if no custom name specified (e.g., "latest"), use version string
+            if (!("name" in entry)) {
+                entry.name = entry.version;
+            }
+            // create the node
+            const node = document.createElement("a");
+            node.setAttribute("class", "list-group-item list-group-item-action py-1");
+            node.textContent = `${entry.name}`;
+            node.setAttribute("href", `${entry.url}${currentFilePath}`);
+            // on click, AJAX calls will check if the linked page exists before
+            // trying to redirect, and if not, will redirect to the homepage
+            // for that version of the docs.
+            node.onclick = checkPageExistsAndRedirect;
+            // Add dataset values for the version and name in case people want
+            // to apply CSS styling based on this information.
+            node.dataset["versionName"] = entry.name;
+            node.dataset["version"] = entry.version;
+
+            $("#version_switcher_menu").append(node);
+            // replace dropdown button text with the preferred display name of
+            // this version, rather than using sphinx's  variable.
+            // also highlight the dropdown entry for the currently-viewed
+            // version's entry
+            if (entry.version == "latest") {
+                node.classList.add("active");
+                let btn = document.getElementById("version_switcher_button");
+                btn.innerText = btn.dataset["activeVersionName"] = entry.name;
+                btn.dataset["activeVersion"] = entry.version;
+            }
+        });
+    });
+})();
+</script>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pydata/pydata-sphinx-theme" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/pandas_dev" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pypi.org/project/pydata-sphinx-theme" rel="noopener" target="_blank" title="PyPI"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pandas.pydata.org" rel="noopener" target="_blank" title="Pandas"><img src="../_static/pandas-square.svg" class="icon-link-image" alt="Pandas"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="install.html">
+   安装
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="configuring.html">
+   Configuration
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Add/Remove items from theme sections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="customizing.html">
+   Customizing the theme
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="accessibility.html">
+   Accessibility
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-navbar-items">
+   The navbar items
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-left-sidebar">
+   The left sidebar
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#left-sidebar-end-sections">
+   Left sidebar end sections
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-right-in-page-sidebar">
+   The right in-page sidebar
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-footer">
+   The footer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-list-of-built-in-templates-you-can-insert-into-sections">
+   A list of built-in templates you can insert into sections
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-your-own-html-templates-to-theme-sections">
+   Add your own HTML templates to theme sections
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pandas-dev/pydata-sphinx-theme/edit/master/docs/user_guide/sections.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="add-remove-items-from-theme-sections">
+<h1>Add/Remove items from theme sections<a class="headerlink" href="#add-remove-items-from-theme-sections" title="永久链接至标题">#</a></h1>
+<p>There are a few major theme sections that you can customize to add/remove
+components, or add your own components. Each section is configured with a
+list of <em>html templates</em> - these are snippets of HTML that are inserted into
+the section by Sphinx.</p>
+<p>You can choose which templates show up in each section, as well as the order in
+which they appear. This page describes the major areas that you can customize.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>When configuring templates in each section, you may omit the <code class="docutils literal notranslate"><span class="pre">.html</span></code>
+suffix after each template if you wish.</p>
+</div>
+<section id="the-navbar-items">
+<h2>The navbar items<a class="headerlink" href="#the-navbar-items" title="永久链接至标题">#</a></h2>
+<p>The navbar is at the top of the page, and is broken up into three sections.
+Each section is configured in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> with the following configuration:</p>
+<ul class="simple">
+<li><p>Left section: <code class="docutils literal notranslate"><span class="pre">html_theme_options['navbar_start']</span></code></p></li>
+<li><p>Middle menu: <code class="docutils literal notranslate"><span class="pre">html_theme_options['navbar_center']</span></code></p></li>
+<li><p>Right section: <code class="docutils literal notranslate"><span class="pre">html_theme_options['navbar_end']</span></code></p></li>
+</ul>
+<p>By default, the following configuration is used:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+<span class="o">...</span>
+<span class="s2">&quot;navbar_start&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;navbar-logo&quot;</span><span class="p">],</span>
+<span class="s2">&quot;navbar_center&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;navbar-nav&quot;</span><span class="p">],</span>
+<span class="s2">&quot;navbar_end&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;navbar-icon-links&quot;</span><span class="p">]</span>
+<span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="the-left-sidebar">
+<h2>The left sidebar<a class="headerlink" href="#the-left-sidebar" title="永久链接至标题">#</a></h2>
+<p>The left sidebar is just to the left of a page’s main content.
+Configuring it is a bit different from configuring the other sections, because
+configuring the sidebar is natively supported in Sphinx, via the <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code>
+configuration variable.</p>
+<p>For the left sidebar only, you can configure templates so that they only show
+up on certain pages. You do so via a configuration like so in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;&lt;page_pattern&gt;&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;list&quot;</span><span class="p">,</span> <span class="s2">&quot;of&quot;</span><span class="p">,</span> <span class="s2">&quot;templates&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Any pages that match <code class="docutils literal notranslate"><span class="pre">&lt;page_pattern&gt;</span></code> will have their respective templates
+inserted. You can also <code class="docutils literal notranslate"><span class="pre">*</span></code> to do <code class="docutils literal notranslate"><span class="pre">glob</span></code>-style matching, and may use <code class="docutils literal notranslate"><span class="pre">**</span></code>
+to match all pages.</p>
+<p>By default, it has the following configuration:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;**&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;search-field&quot;</span><span class="p">,</span> <span class="s2">&quot;sidebar-nav-bs&quot;</span><span class="p">,</span> <span class="s2">&quot;sidebar-ethical-ads&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="left-sidebar-end-sections">
+<h2>Left sidebar end sections<a class="headerlink" href="#left-sidebar-end-sections" title="永久链接至标题">#</a></h2>
+<p>There is a special <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> within the left sidebar that appears at the
+bottom of the page, regardless of the content that is above it.</p>
+<p>To control the HTML templates that are within this div, use
+<code class="docutils literal notranslate"><span class="pre">html_theme_options['left_sidebar_end']</span></code> in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
+<p>By default, it has the following templates:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="o">...</span>
+  <span class="s2">&quot;left_sidebar_end&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sidebar-ethical-ads&quot;</span><span class="p">],</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="the-right-in-page-sidebar">
+<h2>The right in-page sidebar<a class="headerlink" href="#the-right-in-page-sidebar" title="永久链接至标题">#</a></h2>
+<p>The in-page sidebar is just to the right of a page’s main content, and is
+configured in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> with <code class="docutils literal notranslate"><span class="pre">html_theme_options['page_sidebar_items']</span></code>.</p>
+<p>By default, it has the following templates:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="o">...</span>
+  <span class="s2">&quot;page_sidebar_items&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;page-toc&quot;</span><span class="p">,</span> <span class="s2">&quot;edit-this-page&quot;</span><span class="p">],</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="the-footer">
+<h2>The footer<a class="headerlink" href="#the-footer" title="永久链接至标题">#</a></h2>
+<p>The footer is just below a page’s main content, and is configured in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>
+with <code class="docutils literal notranslate"><span class="pre">html_theme_options['footer_items']</span></code>.</p>
+<p>By default, it has the following templates:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="o">...</span>
+  <span class="s2">&quot;footer_items&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;sphinx-version&quot;</span><span class="p">],</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="a-list-of-built-in-templates-you-can-insert-into-sections">
+<h2>A list of built-in templates you can insert into sections<a class="headerlink" href="#a-list-of-built-in-templates-you-can-insert-into-sections" title="永久链接至标题">#</a></h2>
+<p>Below is a list of build-in templates that you can insert into any section.
+Note that some of them may have CSS rules that assume a specific section (and
+will be named accordingly).</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">icon-links.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">search-field.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">copyright.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">edit-this-page.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">last-updated.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">navbar-icon-links.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">navbar-logo.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">navbar-nav.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">page-toc.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sidebar-ethical-ads.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sidebar-nav-bs.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sphinx-version.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">version-switcher.html</span></code></p></li>
+</ul>
+</section>
+<section id="add-your-own-html-templates-to-theme-sections">
+<h2>Add your own HTML templates to theme sections<a class="headerlink" href="#add-your-own-html-templates-to-theme-sections" title="永久链接至标题">#</a></h2>
+<p>If you’d like to add your own custom template to any of these sections, you
+could do so with the following steps:</p>
+<ol class="arabic">
+<li><p>Create an HTML file in a folder called <code class="docutils literal notranslate"><span class="pre">_templates</span></code>. For example, if
+you wanted to display the version of your documentation using a Jinja
+template, you could create a file: <code class="docutils literal notranslate"><span class="pre">_templates/version.html</span></code> and put the
+following in it:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- This will display the version of the docs --&gt;</span>
+{{ version }}
+</pre></div>
+</div>
+</li>
+<li><p>Now add the file to your menu items for one of the sections above. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+<span class="o">...</span>
+<span class="s2">&quot;navbar_start&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;navbar-logo&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">],</span>
+<span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="configuring.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Configuration</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="customizing.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Customizing the theme</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2019, PyData Community.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

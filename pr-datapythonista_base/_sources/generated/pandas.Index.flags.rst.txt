@@ -1,6 +1,0 @@
-pandas.Index.flags
-==================
-
-.. currentmodule:: pandas
-
-.. autoproperty:: Index.flags

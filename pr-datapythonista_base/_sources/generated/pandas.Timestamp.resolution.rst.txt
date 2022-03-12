@@ -1,6 +1,0 @@
-pandas.Timestamp.resolution
-===========================
-
-.. currentmodule:: pandas
-
-.. autoproperty:: Timestamp.resolution

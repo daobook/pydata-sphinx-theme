@@ -1,6 +1,0 @@
-pandas.api.types.CategoricalDtype.categories
-============================================
-
-.. currentmodule:: pandas.api.types
-
-.. autoproperty:: CategoricalDtype.categories
