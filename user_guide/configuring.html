@@ -40,7 +40,7 @@
     <link rel="canonical" href="http://127.0.0.1:8000/user_guide/configuring.html" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Add/Remove items from theme sections" href="sections.html" />
+    <link rel="next" title="从主题 sections 添加/删除项" href="sections.html" />
     <link rel="prev" title="安装" href="install.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
@@ -239,17 +239,17 @@ function checkPageExistsAndRedirect(event) {
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="sections.html">
-   Add/Remove items from theme sections
+   从主题 sections 添加/删除项
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="customizing.html">
-   Customizing the theme
+   自定义主题
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="accessibility.html">
-   Accessibility
+   可访问性
   </a>
  </li>
 </ul>
@@ -292,51 +292,51 @@ function checkPageExistsAndRedirect(event) {
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#local-image-icons">
-     Local image icons
+     本地图像图标
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#icon-link-shortcuts">
-     Icon Link Shortcuts
+     图标链接快捷键
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#adding-external-links-to-your-nav-bar">
-   Adding external links to your nav bar
+   添加外部链接到你的导航栏
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#adding-favicons">
-   Adding favicons
+   添加 favicon
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#configure-the-sidebar">
-   Configure the sidebar
+   配置侧边栏
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#navigation-depth-and-collapsing-the-sidebar">
-   Navigation depth and collapsing the sidebar
+   导航深度和折叠侧边栏
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#control-how-many-navigation-levels-are-shown-by-default">
-     Control how many navigation levels are shown by default
+     控制默认显示多少个导航级别
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#collapse-entire-toctree-captions-parts">
-       Collapse entire toctree captions / parts
+       折叠整个 toctree captions / parts
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#selectively-remove-pages-from-your-sidebar">
-     Selectively remove pages from your sidebar
+     有选择地从侧边栏删除页面
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -538,16 +538,9 @@ function checkPageExistsAndRedirect(event) {
 <p>有两种图标你可以使用，描述如下：</p>
 <section id="fontawesome-icons">
 <h3>FontAwesome icons<a class="headerlink" href="#fontawesome-icons" title="永久链接至标题">#</a></h3>
-<p><a class="reference external" href="https://fontawesome.com/">FontAwesome</a> is a collection of icons that are
-commonly used in websites. They include both generic shape icons (e.g., “arrow-down”),
-as well as brand-specific icons (e.g. “github”).</p>
-<p>You can use FontAwesome icons by specifying <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;fontawesome&quot;</span></code>, and
-specifying a FontAwesome class in the <code class="docutils literal notranslate"><span class="pre">icon</span></code> value.
-The value of <code class="docutils literal notranslate"><span class="pre">icon</span></code> can be any full
-<a class="reference external" href="https://fontawesome.com/icons?d=gallery&amp;m=free">FontAwesome 5 Free</a> icon.
-In addition to the main icon class, e.g. <code class="docutils literal notranslate"><span class="pre">fa-cat</span></code>, the “style” class must
-also be provided e.g. <cite>fab</cite> for <em>branding</em>, or <cite>fas</cite> for <em>solid</em>.</p>
-<p>Here are several examples:</p>
+<p><a class="reference external" href="https://fontawesome.com/">FontAwesome</a> 是网站中常用的图标集合。它们包括通用形状的图标（例如，“向下箭头”），以及特定 brand 的图标（例如，“github”）。</p>
+<p>你可以通过指定 <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;fontawesome&quot;</span></code> 来使用 FontAwesome 图标，并在 <code class="docutils literal notranslate"><span class="pre">icon</span></code> 值中指定 FontAwesome 类。<code class="docutils literal notranslate"><span class="pre">icon</span></code> 的值可以是任何完整的 <a class="reference external" href="https://fontawesome.com/icons?d=gallery&amp;m=free">FontAwesome 5 Free</a> 图标。除了主要的图标类，例如 <code class="docutils literal notranslate"><span class="pre">fa-cat</span></code>， “style” 类也必须被提供，例如 <em>branding</em> 的 <cite>fas</cite>， <em>solid</em> 的 <cite>fas</cite>。</p>
+<p>这里有几个例子：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;icon_links&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -576,23 +569,18 @@ also be provided e.g. <cite>fab</cite> for <em>branding</em>, or <cite>fas</cite
 </div>
 <div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p>To get custom colors like “Twitter blue”, use the following in your CSS,
-e.g. <code class="docutils literal notranslate"><span class="pre">custom.css</span></code>:</p>
+<p>要获得像 “Twitter blue” 这样的自定义颜色，在你的 CSS 中使用以下方法，例如 <code class="docutils literal notranslate"><span class="pre">custom.css</span></code>：</p>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">i</span><span class="p">.</span><span class="nc">fa-twitter-square</span><span class="p">:</span><span class="nd">before</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">   </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#55acee</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>This has already been added for the brands that have <em>shortcuts</em>.</p>
+<p>这已经被添加到有 <em>shortcuts</em> 的 brand。</p>
 </div>
 </section>
 <section id="local-image-icons">
-<h3>Local image icons<a class="headerlink" href="#local-image-icons" title="永久链接至标题">#</a></h3>
-<p>If you’d like to display an icon image that is not in the FontAwesome icons library,
-you may instead specify a path to a local image that will be used for the icon.
-To do so, use <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;local&quot;</span></code>, and add a path to an image
-<strong>relative to your documentation root</strong> in the <code class="docutils literal notranslate"><span class="pre">icon</span></code> value.
-Here is an example:</p>
+<h3>本地图像图标<a class="headerlink" href="#local-image-icons" title="永久链接至标题">#</a></h3>
+<p>“如果你想显示不在 FontAwesome 图标库中的图标图像，你可以指定用于图标的本地图像的路径。要做到这一点，使用  <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;local&quot;</span></code>，并在 <code class="docutils literal notranslate"><span class="pre">icon</span></code> 值中添加相对于您的 <strong>文档根目录</strong> 的图片路径。下面是一个例子：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;icon_links&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -609,11 +597,11 @@ Here is an example:</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">小技巧</p>
-<p>Use <code class="docutils literal notranslate"><span class="pre">.svg</span></code> images for a higher-resolution output that behaves similarly across screen sizes.</p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">.svg</span></code> 图像实现更高分辨率的输出，在不同屏幕尺寸下的表现也类似。</p>
 </div>
 </section>
 <section id="icon-link-shortcuts">
-<h3>Icon Link Shortcuts<a class="headerlink" href="#icon-link-shortcuts" title="永久链接至标题">#</a></h3>
+<h3>图标链接快捷键<a class="headerlink" href="#icon-link-shortcuts" title="永久链接至标题">#</a></h3>
 <p>There are a few shortcuts supported to minimize configuration for commonly-used services.
 These may be removed in a future release in favor of <code class="docutils literal notranslate"><span class="pre">icon_links</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -637,10 +625,8 @@ These may be removed in a future release in favor of <code class="docutils liter
 </section>
 </section>
 <section id="adding-external-links-to-your-nav-bar">
-<h2>Adding external links to your nav bar<a class="headerlink" href="#adding-external-links-to-your-nav-bar" title="永久链接至标题">#</a></h2>
-<p>You can add external links to your navigation bar. These will show up to the right
-of your site’s main links, and will have a small icon indicating that they point to
-an external site. You can add external links to the nav bar like so:</p>
+<h2>添加外部链接到你的导航栏<a class="headerlink" href="#adding-external-links-to-your-nav-bar" title="永久链接至标题">#</a></h2>
+<p>你可以在导航栏上添加外部链接。这些将显示在你的网站的主要链接的右边，并有一个小图标，表明他们指向一个外部网站。你可以像这样在导航栏上添加外部链接：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
   <span class="s2">&quot;external_links&quot;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;link-one-name&quot;</span><span class="p">,</span> <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://&lt;link-one&gt;&quot;</span><span class="p">},</span>
@@ -651,7 +637,7 @@ an external site. You can add external links to the nav bar like so:</p>
 </div>
 </section>
 <section id="adding-favicons">
-<h2>Adding favicons<a class="headerlink" href="#adding-favicons" title="永久链接至标题">#</a></h2>
+<h2>添加 favicon<a class="headerlink" href="#adding-favicons" title="永久链接至标题">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code> supports the
 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_favicon">standard sphinx favicon configuration</a>,
 using <code class="docutils literal notranslate"><span class="pre">html_favicon</span></code>.</p>
@@ -688,65 +674,48 @@ section, following this pattern:</p>
 </div>
 </section>
 <section id="configure-the-sidebar">
-<span id="configure-sidebar"></span><h2>Configure the sidebar<a class="headerlink" href="#configure-the-sidebar" title="永久链接至标题">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code> provides two new sidebar items by default:</p>
+<span id="configure-sidebar"></span><h2>配置侧边栏<a class="headerlink" href="#configure-the-sidebar" title="永久链接至标题">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code> 默认情况下提供两个新的侧边栏项：</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">sidebar-nav-bs.html</span></code> - a bootstrap-friendly navigation section</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">search-field.html</span></code> - a bootstrap-friendly search bar</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sidebar-nav-bs.html</span></code> —— 对 bootstrap 友好的导航</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">search-field.html</span></code> —— 对 bootstrap 友好的搜索栏</p></li>
 </ul>
-<p>By default, this theme’s sidebar has these two elements in it. If you’d like to
-override this behavior and control the sidebar on a per-page basis, use the
-<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html?highlight=html_sidebars#confval-html_sidebars">Sphinx html-sidebars configuration value</a>.</p>
+<p>默认情况下，这个主题的侧边栏中有这两个元素。如果您想重写此行为并在每个页面的基础上控制侧边栏，请使用 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html?highlight=html_sidebars#confval-html_sidebars">Sphinx 配置值 html-sidebars</a>.</p>
 </section>
 <section id="navigation-depth-and-collapsing-the-sidebar">
-<span id="navigation-depth"></span><h2>Navigation depth and collapsing the sidebar<a class="headerlink" href="#navigation-depth-and-collapsing-the-sidebar" title="永久链接至标题">#</a></h2>
-<p>By default, this theme enables to expand/collapse subsections in the left
-sidebar navigation (without actually navigating to the page itself), and this extends
-up to 4 levels deep:</p>
+<span id="navigation-depth"></span><h2>导航深度和折叠侧边栏<a class="headerlink" href="#navigation-depth-and-collapsing-the-sidebar" title="永久链接至标题">#</a></h2>
+<p>默认情况下，这个主题允许在左侧导航栏中展开/折叠子部分（不需要实际导航到页面本身），这可以扩展到 4 级深度：</p>
 <img alt="../_images/demo-expandable-navigation.gif" src="../_images/demo-expandable-navigation.gif" />
 <section id="control-how-many-navigation-levels-are-shown-by-default">
-<h3>Control how many navigation levels are shown by default<a class="headerlink" href="#control-how-many-navigation-levels-are-shown-by-default" title="永久链接至标题">#</a></h3>
-<p>You can control how many navigation levels are shown when a page is
-loaded. By default, this level is 1, and only top-level pages are shown,
-with drop-boxes to reveal their children. To make their children show up by
-default, you can use the following configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<h3>控制默认显示多少个导航级别<a class="headerlink" href="#control-how-many-navigation-levels-are-shown-by-default" title="永久链接至标题">#</a></h3>
+<p>您可以控制加载页面时显示多少个导航级别。默认情况下，这个级别是 1，只显示顶级页面，以及显示其子页面的下拉框。要在默认情况下显示它们的子节点，可以在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中使用以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
   <span class="s2">&quot;show_nav_level&quot;</span><span class="p">:</span> <span class="mi">2</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>This will make the first two navigations show up by default (AKA, top-level
-pages and their immediate children).</p>
+<p>这将使前两个导航默认显示（AKA，顶级页面及其直接子页面）。</p>
 <section id="collapse-entire-toctree-captions-parts">
-<h4>Collapse entire toctree captions / parts<a class="headerlink" href="#collapse-entire-toctree-captions-parts" title="永久链接至标题">#</a></h4>
-<p>If your <code class="docutils literal notranslate"><span class="pre">toctree</span></code> elements have captions assigned to them (with <code class="docutils literal notranslate"><span class="pre">:caption:</span></code>), you may
-collapse navigation items so that only the caption is visible. Clicking on the
-caption will display the items below.</p>
-<p>To enable this behavior, set the <code class="docutils literal notranslate"><span class="pre">show_nav_level</span></code> value to 0, like below:</p>
+<h4>折叠整个 toctree captions / parts<a class="headerlink" href="#collapse-entire-toctree-captions-parts" title="永久链接至标题">#</a></h4>
+<p>如果你的 <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 元素有 caption 赋值（用 <code class="docutils literal notranslate"><span class="pre">:caption:</span></code>），你可以折叠导航项，使其只显示 caption。点击 caption 将显示下面的项。</p>
+<p>要启用此行为，请将 <code class="docutils literal notranslate"><span class="pre">show_nav_level</span></code> 的值设置为 0，如下所示：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
    <span class="s2">&quot;show_nav_level&quot;</span><span class="p">:</span> <span class="mi">0</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>You can only collapse your <code class="docutils literal notranslate"><span class="pre">toctree</span></code> items underneath their caption if a caption is defined for them!
-If your <code class="docutils literal notranslate"><span class="pre">toctree</span></code> does not have a caption defined, then all of the pages underneath it will be displayed
-(the same as the default theme behavior). See <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree">the toctree documentation</a>
-for more details.</p>
+<p>你只能在 caption 下折叠你的 <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 项，如果 caption 是为它们定义的！如果你的 <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 没有定义 caption，那么它下面的所有页面都会显示出来（与默认的主题行为相同）。</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>In some Sphinx sites, the top-level <code class="docutils literal notranslate"><span class="pre">toctree</span></code> groupings make up “parts” in the documentation, with
-each page beneath making up a “chapter”.</p>
+<p>在一些 Sphinx 网站中，顶层的 <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 分组组成了文档中的 “parts”，下面的每个页面组成了 “chapter”。</p>
 </div>
 </section>
 </section>
 <section id="selectively-remove-pages-from-your-sidebar">
-<span id="remove-toctrees"></span><h3>Selectively remove pages from your sidebar<a class="headerlink" href="#selectively-remove-pages-from-your-sidebar" title="永久链接至标题">#</a></h3>
+<span id="remove-toctrees"></span><h3>有选择地从侧边栏删除页面<a class="headerlink" href="#selectively-remove-pages-from-your-sidebar" title="永久链接至标题">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>This and the following sections are useful for sites that have a lot of pages (such as API
-documentation with a lot of items). These take much longer to build and will have large
-output sizes because of all the toctree links. These sections help with this problem,
-ordered from least-to-most drastic.</p>
+<p>这个和下面的部分对于有很多页面的站点是有用的（比如 API 文档有很多项）。由于所有的 toctree 链接，它们需要更长的时间来构建，并且会有更大的输出大小。这些部分帮助解决这个问题，从最小到最大的顺序。</p>
 </div>
 <p>You can prevent pages from showing up in the navigation bar using a Sphinx
 extension called <a class="reference external" href="https://github.com/executablebooks/sphinx-remove-toctrees">sphinx-remove-toctrees</a>.
@@ -937,7 +906,7 @@ version switcher in a sidebar. For example, you could define
 </pre></div>
 </div>
 <p>to insert a version switcher at the top of the left sidebar, while still
-keeping the default navigation below it. See <a class="reference internal" href="sections.html"><span class="doc">Add/Remove items from theme sections</span></a> for more
+keeping the default navigation below it. See <a class="reference internal" href="sections.html"><span class="doc">从主题 sections 添加/删除项</span></a> for more
 information.</p>
 </section>
 <section id="style-the-switcher-buttons">
@@ -1140,7 +1109,7 @@ use this pattern:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>For information about configuring the sidebar’s contents, see <a class="reference internal" href="#configure-sidebar"><span class="std std-ref">Configure the sidebar</span></a>.</p>
+<p>For information about configuring the sidebar’s contents, see <a class="reference internal" href="#configure-sidebar"><span class="std std-ref">配置侧边栏</span></a>.</p>
 </section>
 <section id="configure-the-navbar-center-alignment">
 <h2>Configure the navbar center alignment<a class="headerlink" href="#configure-the-navbar-center-alignment" title="永久链接至标题">#</a></h2>
@@ -1193,7 +1162,7 @@ However, this may slow down your documentation builds considerably if you have
 a lot of documentation pages. This is most common with documentation for projects
 with a large API, which use the <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">autosummary::</span></code> directive to generate
 API documentation.</p>
-<p>To improve the performance of your builds in these cases, see <a class="reference internal" href="#navigation-depth"><span class="std std-ref">Navigation depth and collapsing the sidebar</span></a>.</p>
+<p>To improve the performance of your builds in these cases, see <a class="reference internal" href="#navigation-depth"><span class="std std-ref">导航深度和折叠侧边栏</span></a>.</p>
 </section>
 </section>
 
@@ -1213,7 +1182,7 @@ API documentation.</p>
     <a class='right-next' id="next-link" href="sections.html" title="下一页 页">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">Add/Remove items from theme sections</p>
+        <p class="prev-next-title">从主题 sections 添加/删除项</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

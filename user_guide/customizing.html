@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <meta content="Advanced customization of pydata-sphinx-theme's HTML and CSS." lang="en" name="description" xml:lang="en" />
 
-    <title>Customizing the theme &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
+    <title>自定义主题 &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -40,8 +40,8 @@
     <link rel="canonical" href="http://127.0.0.1:8000/user_guide/customizing.html" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Accessibility" href="accessibility.html" />
-    <link rel="prev" title="Add/Remove items from theme sections" href="sections.html" />
+    <link rel="next" title="可访问性" href="accessibility.html" />
+    <link rel="prev" title="从主题 sections 添加/删除项" href="sections.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -239,17 +239,17 @@ function checkPageExistsAndRedirect(event) {
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="sections.html">
-   Add/Remove items from theme sections
+   从主题 sections 添加/删除项
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Customizing the theme
+   自定义主题
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="accessibility.html">
-   Accessibility
+   可访问性
   </a>
  </li>
 </ul>
@@ -277,7 +277,7 @@ function checkPageExistsAndRedirect(event) {
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#custom-css-stylesheets">
-   Custom CSS Stylesheets
+   自定义主题样式
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -319,16 +319,14 @@ function checkPageExistsAndRedirect(event) {
               <div>
                 
   <section id="customizing-the-theme">
-<span id="customizing"></span><h1>Customizing the theme<a class="headerlink" href="#customizing-the-theme" title="永久链接至标题">#</a></h1>
-<p>In addition to the configuration options detailed at <a class="reference internal" href="configuring.html#configuration"><span class="std std-ref">配置</span></a>, it
-is also possible to customize the HTML layout and CSS style of the theme.</p>
+<span id="customizing"></span><h1>自定义主题<a class="headerlink" href="#customizing-the-theme" title="永久链接至标题">#</a></h1>
+<p>除了在 <a class="reference internal" href="configuring.html#configuration"><span class="std std-ref">配置</span></a> 中详细介绍的配置选项外，还可以自定义主题的 HTML 布局和 CSS 样式。</p>
 <section id="custom-css-stylesheets">
-<span id="custom-css"></span><h2>Custom CSS Stylesheets<a class="headerlink" href="#custom-css-stylesheets" title="永久链接至标题">#</a></h2>
-<p>You may customize the theme’s CSS by creating a custom stylesheet that Sphinx uses to build your site.
-Any rules in this style-sheet will over-ride the default theme rules.</p>
-<p>To add a custom stylesheet, follow these steps:</p>
+<span id="custom-css"></span><h2>自定义主题样式<a class="headerlink" href="#custom-css-stylesheets" title="永久链接至标题">#</a></h2>
+<p>你可以通过创建定制样式表来定制主题的 CSS, Sphinx 使用它来构建你的网站。这个样式表中的任何规则都将覆盖默认的主题规则。</p>
+<p>按照以下步骤添加自定义样式表：</p>
 <ol class="arabic">
-<li><p><strong>Create a CSS stylesheet</strong> in <code class="docutils literal notranslate"><span class="pre">_static/css/custom.css</span></code>, and add the CSS rules you wish.</p></li>
+<li><p>在 <code class="docutils literal notranslate"><span class="pre">_static/css/custom.css</span></code> 中 <strong>创建 CSS 样式表</strong>，并添加你希望的 CSS 规则。</p></li>
 <li><p><strong>Attach the stylesheet to your Sphinx build</strong>. Add the following to <code class="docutils literal notranslate"><span class="pre">conf.py</span></code></p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>html_static_path = [&#39;_static&#39;]
 
@@ -521,7 +519,7 @@ and is recommended in most cases.</p>
 </div>
 <p>The default body and header fonts can be changed as follows:</p>
 <ul>
-<li><p>Using <a class="reference internal" href="#custom-css"><span class="std std-ref">Custom CSS Stylesheets</span></a>, you can specify which fonts to use for body, header
+<li><p>Using <a class="reference internal" href="#custom-css"><span class="std std-ref">自定义主题样式</span></a>, you can specify which fonts to use for body, header
 and monospace text. For example, the following can be added to a custom
 css file:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>:root {
@@ -573,13 +571,13 @@ before waiting for the CSS to be parsed, but should be used with care.</p>
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">Add/Remove items from theme sections</p>
+            <p class="prev-next-title">从主题 sections 添加/删除项</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="accessibility.html" title="下一页 页">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">Accessibility</p>
+        <p class="prev-next-title">可访问性</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
