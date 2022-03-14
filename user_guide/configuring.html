@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <meta content="Configuration options for pydata-sphinx-theme" lang="en" name="description" xml:lang="en" />
 
-    <title>Configuration &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
+    <title>配置 &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -234,7 +234,7 @@ function checkPageExistsAndRedirect(event) {
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Configuration
+   配置
   </a>
  </li>
  <li class="toctree-l1">
@@ -277,12 +277,12 @@ function checkPageExistsAndRedirect(event) {
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#configure-project-logo">
-   Configure project logo
+   配置项目 logo
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#configure-icon-links">
-   Configure icon links
+   配置 icon 链接
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -499,20 +499,15 @@ function checkPageExistsAndRedirect(event) {
               <div>
                 
   <section id="configuration">
-<span id="id1"></span><h1>Configuration<a class="headerlink" href="#configuration" title="永久链接至标题">#</a></h1>
-<p>There are a number of options for configuring your site’s look and feel.
-All configuration options are passed with the <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> variable
-in your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file. This is a dictionary with <code class="docutils literal notranslate"><span class="pre">key:</span> <span class="pre">val</span></code> pairs that
-you can configure in various ways. This page describes the options available to you.</p>
+<span id="id1"></span><h1>配置<a class="headerlink" href="#configuration" title="永久链接至标题">#</a></h1>
+<p>有很多选项可以配置你的网站的外观和感觉。所有配置选项都通过 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中的 <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> 变量传递。这是带有 <code class="docutils literal notranslate"><span class="pre">key:</span> <span class="pre">val</span></code> 对的字典，你可以用各种方式配置它。本页描述了可供您选择的选项。</p>
 <section id="configure-project-logo">
-<h2>Configure project logo<a class="headerlink" href="#configure-project-logo" title="永久链接至标题">#</a></h2>
-<p>To add a logo that’s placed at the left of your nav bar, put a logo file under your
-doc path’s _static folder, and use the following configuration:</p>
+<h2>配置项目 logo<a class="headerlink" href="#configure-project-logo" title="永久链接至标题">#</a></h2>
+<p>要添加 logo，放在你的导航栏的左边，把 logo 文件放在你的文档路径的 _static 文件夹下，并使用以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;_static/logo.png&quot;</span>
 </pre></div>
 </div>
-<p>The logo links to <code class="docutils literal notranslate"><span class="pre">master_doc</span></code> (usually the first page of your documentation) by default.
-If you’d like it to link to another page or use an external link instead, use the following configuration:</p>
+<p>默认情况下，logo 链接到 <code class="docutils literal notranslate"><span class="pre">master_doc</span></code> (通常是文档的第一页)。如果你想要它链接到另一个页面或使用外部链接，请使用以下配置：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;logo_link&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;other page or external link&gt;&quot;</span>
 <span class="p">}</span>
@@ -520,9 +515,9 @@ If you’d like it to link to another page or use an external link instead, use 
 </div>
 </section>
 <section id="configure-icon-links">
-<span id="icon-links"></span><h2>Configure icon links<a class="headerlink" href="#configure-icon-links" title="永久链接至标题">#</a></h2>
-<p>You can add icon links to show up to the right of your main navigation bar.</p>
-<p>These links take the following form:</p>
+<span id="icon-links"></span><h2>配置 icon 链接<a class="headerlink" href="#configure-icon-links" title="永久链接至标题">#</a></h2>
+<p>你可以添加图标链接显示在主导航栏的右侧。</p>
+<p>这些链接的形式如下：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;icon_links&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -540,7 +535,7 @@ If you’d like it to link to another page or use an external link instead, use 
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>There are two kinds of icons you can use, described below:</p>
+<p>有两种图标你可以使用，描述如下：</p>
 <section id="fontawesome-icons">
 <h3>FontAwesome icons<a class="headerlink" href="#fontawesome-icons" title="永久链接至标题">#</a></h3>
 <p><a class="reference external" href="https://fontawesome.com/">FontAwesome</a> is a collection of icons that are
