@@ -85,6 +85,8 @@ msgid ""
 "(e.g., \"arrow-down\"), as well as brand-specific icons (e.g. "
 "\"github\")."
 msgstr ""
+"`FontAwesome <https://fontawesome.com/>`_ 是网站中常用的图标集合。"
+"它们包括通用形状的图标（例如，“向下箭头”），以及特定 brand 的图标（例如，“github”）。"
 
 #: ../../docs/user_guide/configuring.rst:68
 msgid ""
@@ -95,24 +97,28 @@ msgid ""
 "the main icon class, e.g. ``fa-cat``, the \"style\" class must also be "
 "provided e.g. `fab` for *branding*, or `fas` for *solid*."
 msgstr ""
+"你可以通过指定 ``\"type\": \"fontawesome\"`` 来使用 FontAwesome 图标，并在 ``icon`` 值中指定 FontAwesome 类。"
+"``icon`` 的值可以是任何完整的 `FontAwesome 5 Free <https://fontawesome.com/icons?d=gallery&m=free>`__ 图标。"
+"除了主要的图标类，例如 ``fa-cat``， \"style\" 类也必须被提供，例如 *branding* 的 `fas`， *solid* 的 `fas`。"
 
 #: ../../docs/user_guide/configuring.rst:75
 msgid "Here are several examples:"
-msgstr ""
+msgstr "这里有几个例子："
 
 #: ../../docs/user_guide/configuring.rst:106
 msgid ""
 "To get custom colors like \"Twitter blue\", use the following in your "
 "CSS, e.g. ``custom.css``:"
 msgstr ""
+"要获得像 \"Twitter blue\" 这样的自定义颜色，在你的 CSS 中使用以下方法，例如 ``custom.css``："
 
 #: ../../docs/user_guide/configuring.rst:115
 msgid "This has already been added for the brands that have *shortcuts*."
-msgstr ""
+msgstr "这已经被添加到有 *shortcuts* 的 brand。"
 
 #: ../../docs/user_guide/configuring.rst:118
 msgid "Local image icons"
-msgstr ""
+msgstr "本地图像图标"
 
 #: ../../docs/user_guide/configuring.rst:120
 msgid ""
@@ -122,16 +128,20 @@ msgid ""
 "path to an image **relative to your documentation root** in the ``icon`` "
 "value. Here is an example:"
 msgstr ""
+"“如果你想显示不在 FontAwesome 图标库中的图标图像，你可以指定用于图标的本地图像的路径。"
+"要做到这一点，使用  ``\"type\": \"local\"``，"
+"并在 ``icon`` 值中添加相对于您的 **文档根目录** 的图片路径。下面是一个例子："
 
 #: ../../docs/user_guide/configuring.rst:143
 msgid ""
 "Use ``.svg`` images for a higher-resolution output that behaves similarly"
 " across screen sizes."
 msgstr ""
+"使用 ``.svg`` 图像实现更高分辨率的输出，在不同屏幕尺寸下的表现也类似。"
 
 #: ../../docs/user_guide/configuring.rst:146
 msgid "Icon Link Shortcuts"
-msgstr ""
+msgstr "图标链接快捷键"
 
 #: ../../docs/user_guide/configuring.rst:148
 msgid ""
@@ -148,7 +158,7 @@ msgstr ""
 
 #: ../../docs/user_guide/configuring.rst:174
 msgid "Adding external links to your nav bar"
-msgstr ""
+msgstr "添加外部链接到你的导航栏"
 
 #: ../../docs/user_guide/configuring.rst:176
 msgid ""
@@ -157,10 +167,13 @@ msgid ""
 "indicating that they point to an external site. You can add external "
 "links to the nav bar like so:"
 msgstr ""
+"你可以在导航栏上添加外部链接。"
+"这些将显示在你的网站的主要链接的右边，并有一个小图标，表明他们指向一个外部网站。"
+"你可以像这样在导航栏上添加外部链接："
 
 #: ../../docs/user_guide/configuring.rst:190
 msgid "Adding favicons"
-msgstr ""
+msgstr "添加 favicon"
 
 #: ../../docs/user_guide/configuring.rst:192
 msgid ""
@@ -187,19 +200,19 @@ msgstr ""
 
 #: ../../docs/user_guide/configuring.rst:235
 msgid "Configure the sidebar"
-msgstr ""
+msgstr "配置侧边栏"
 
 #: ../../docs/user_guide/configuring.rst:237
 msgid "``pydata_sphinx_theme`` provides two new sidebar items by default:"
-msgstr ""
+msgstr "``pydata_sphinx_theme`` 默认情况下提供两个新的侧边栏项："
 
 #: ../../docs/user_guide/configuring.rst:239
 msgid "``sidebar-nav-bs.html`` - a bootstrap-friendly navigation section"
-msgstr ""
+msgstr "``sidebar-nav-bs.html`` —— 对 bootstrap 友好的导航"
 
 #: ../../docs/user_guide/configuring.rst:240
 msgid "``search-field.html`` - a bootstrap-friendly search bar"
-msgstr ""
+msgstr "``search-field.html`` —— 对 bootstrap 友好的搜索栏"
 
 #: ../../docs/user_guide/configuring.rst:242
 msgid ""
@@ -210,10 +223,13 @@ msgid ""
 "doc.org/en/master/usage/configuration.html?highlight=html_sidebars"
 "#confval-html_sidebars>`_."
 msgstr ""
+"默认情况下，这个主题的侧边栏中有这两个元素。"
+"如果您想重写此行为并在每个页面的基础上控制侧边栏，请使用 `Sphinx 配置值 html-sidebars <https://www"
+".sphinx-doc.org/en/master/usage/configuration.html?highlight=html_sidebars#confval-html_sidebars>`_."
 
 #: ../../docs/user_guide/configuring.rst:249
 msgid "Navigation depth and collapsing the sidebar"
-msgstr ""
+msgstr "导航深度和折叠侧边栏"
 
 #: ../../docs/user_guide/configuring.rst:251
 msgid ""
@@ -221,10 +237,11 @@ msgid ""
 " sidebar navigation (without actually navigating to the page itself), and"
 " this extends up to 4 levels deep:"
 msgstr ""
+"默认情况下，这个主题允许在左侧导航栏中展开/折叠子部分（不需要实际导航到页面本身），这可以扩展到 4 级深度："
 
 #: ../../docs/user_guide/configuring.rst:259
 msgid "Control how many navigation levels are shown by default"
-msgstr ""
+msgstr "控制默认显示多少个导航级别"
 
 #: ../../docs/user_guide/configuring.rst:261
 msgid ""
@@ -233,16 +250,20 @@ msgid ""
 "with drop-boxes to reveal their children. To make their children show up "
 "by default, you can use the following configuration in ``conf.py``:"
 msgstr ""
+"您可以控制加载页面时显示多少个导航级别。"
+"默认情况下，这个级别是 1，只显示顶级页面，以及显示其子页面的下拉框。"
+"要在默认情况下显示它们的子节点，可以在 ``conf.py`` 中使用以下配置："
 
 #: ../../docs/user_guide/configuring.rst:272
 msgid ""
 "This will make the first two navigations show up by default (AKA, top-"
 "level pages and their immediate children)."
 msgstr ""
+"这将使前两个导航默认显示（AKA，顶级页面及其直接子页面）。"
 
 #: ../../docs/user_guide/configuring.rst:276
 msgid "Collapse entire toctree captions / parts"
-msgstr ""
+msgstr "折叠整个 toctree captions / parts"
 
 #: ../../docs/user_guide/configuring.rst:278
 msgid ""
@@ -250,12 +271,14 @@ msgid ""
 "``:caption:``), you may collapse navigation items so that only the "
 "caption is visible. Clicking on the caption will display the items below."
 msgstr ""
+"如果你的 ``toctree`` 元素有 caption 赋值（用 ``:caption:``），你可以折叠导航项，使其只显示 caption。点击 caption 将显示下面的项。"
 
 #: ../../docs/user_guide/configuring.rst:282
 msgid ""
 "To enable this behavior, set the ``show_nav_level`` value to 0, like "
 "below:"
 msgstr ""
+"要启用此行为，请将 ``show_nav_level`` 的值设置为 0，如下所示："
 
 #: ../../docs/user_guide/configuring.rst:293
 msgid ""
@@ -267,6 +290,8 @@ msgid ""
 "doc.org/en/master/usage/restructuredtext/directives.html#directive-"
 "toctree>`_ for more details."
 msgstr ""
+"你只能在 caption 下折叠你的 ``toctree`` 项，如果 caption 是为它们定义的！"
+"如果你的 ``toctree`` 没有定义 caption，那么它下面的所有页面都会显示出来（与默认的主题行为相同）。"
 
 #: ../../docs/user_guide/configuring.rst:300
 msgid ""
@@ -274,10 +299,11 @@ msgid ""
 "\"parts\" in the documentation, with each page beneath making up a "
 "\"chapter\"."
 msgstr ""
+"在一些 Sphinx 网站中，顶层的 ``toctree`` 分组组成了文档中的 \"parts\"，下面的每个页面组成了 \"chapter\"。"
 
 #: ../../docs/user_guide/configuring.rst:306
 msgid "Selectively remove pages from your sidebar"
-msgstr ""
+msgstr "有选择地从侧边栏删除页面"
 
 #: ../../docs/user_guide/configuring.rst:310
 msgid ""
@@ -287,6 +313,9 @@ msgid ""
 "toctree links. These sections help with this problem, ordered from least-"
 "to-most drastic."
 msgstr ""
+"这个和下面的部分对于有很多页面的站点是有用的（比如 API 文档有很多项）。"
+"由于所有的 toctree 链接，它们需要更长的时间来构建，并且会有更大的输出大小。"
+"这些部分帮助解决这个问题，从最小到最大的顺序。"
 
 #: ../../docs/user_guide/configuring.rst:315
 msgid ""

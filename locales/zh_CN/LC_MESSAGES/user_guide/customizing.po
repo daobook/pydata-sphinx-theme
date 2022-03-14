@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../docs/user_guide/customizing.rst:5
 msgid "Customizing the theme"
-msgstr ""
+msgstr "自定义主题"
 
 #: ../../docs/user_guide/customizing.rst:7
 msgid ""
@@ -28,10 +28,11 @@ msgid ""
 ":ref:`configuration`, it is also possible to customize the HTML layout "
 "and CSS style of the theme."
 msgstr ""
+"除了在 :ref:`configuration` 中详细介绍的配置选项外，还可以自定义主题的 HTML 布局和 CSS 样式。"
 
 #: ../../docs/user_guide/customizing.rst:13
 msgid "Custom CSS Stylesheets"
-msgstr ""
+msgstr "自定义主题样式"
 
 #: ../../docs/user_guide/customizing.rst:15
 msgid ""
@@ -39,16 +40,19 @@ msgid ""
 "Sphinx uses to build your site. Any rules in this style-sheet will over-"
 "ride the default theme rules."
 msgstr ""
+"你可以通过创建定制样式表来定制主题的 CSS, Sphinx 使用它来构建你的网站。"
+"这个样式表中的任何规则都将覆盖默认的主题规则。"
 
 #: ../../docs/user_guide/customizing.rst:18
 msgid "To add a custom stylesheet, follow these steps:"
-msgstr ""
+msgstr "按照以下步骤添加自定义样式表："
 
 #: ../../docs/user_guide/customizing.rst:20
 msgid ""
 "**Create a CSS stylesheet** in ``_static/css/custom.css``, and add the "
 "CSS rules you wish."
 msgstr ""
+"在 ``_static/css/custom.css`` 中 **创建 CSS 样式表**，并添加你希望的 CSS 规则。"
 
 #: ../../docs/user_guide/customizing.rst:21
 msgid ""
