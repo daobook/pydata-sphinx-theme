@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../docs/user_guide/configuring.rst:5
 msgid "Configuration"
-msgstr ""
+msgstr "配置"
 
 #: ../../docs/user_guide/configuring.rst:7
 msgid ""
@@ -30,10 +30,13 @@ msgid ""
 " pairs that you can configure in various ways. This page describes the "
 "options available to you."
 msgstr ""
+"有很多选项可以配置你的网站的外观和感觉。"
+"所有配置选项都通过 ``conf.py`` 文件中的 ``html_theme_options`` 变量传递。"
+"这是带有 ``key: val`` 对的字典，你可以用各种方式配置它。本页描述了可供您选择的选项。"
 
 #: ../../docs/user_guide/configuring.rst:13
 msgid "Configure project logo"
-msgstr ""
+msgstr "配置项目 logo"
 
 #: ../../docs/user_guide/configuring.rst:15
 msgid ""
@@ -41,6 +44,7 @@ msgid ""
 "under your doc path's _static folder, and use the following "
 "configuration:"
 msgstr ""
+"要添加 logo，放在你的导航栏的左边，把 logo 文件放在你的文档路径的 _static 文件夹下，并使用以下配置："
 
 #: ../../docs/user_guide/configuring.rst:22
 msgid ""
@@ -48,24 +52,27 @@ msgid ""
 "documentation) by default. If you'd like it to link to another page or "
 "use an external link instead, use the following configuration:"
 msgstr ""
+"默认情况下，logo 链接到 ``master_doc`` (通常是文档的第一页)。"
+"如果你想要它链接到另一个页面或使用外部链接，请使用以下配置："
 
 #: ../../docs/user_guide/configuring.rst:35
 msgid "Configure icon links"
-msgstr ""
+msgstr "配置 icon 链接"
 
 #: ../../docs/user_guide/configuring.rst:37
 msgid ""
 "You can add icon links to show up to the right of your main navigation "
 "bar."
 msgstr ""
+"你可以添加图标链接显示在主导航栏的右侧。"
 
 #: ../../docs/user_guide/configuring.rst:39
 msgid "These links take the following form:"
-msgstr ""
+msgstr "这些链接的形式如下："
 
 #: ../../docs/user_guide/configuring.rst:59
 msgid "There are two kinds of icons you can use, described below:"
-msgstr ""
+msgstr "有两种图标你可以使用，描述如下："
 
 #: ../../docs/user_guide/configuring.rst:62
 msgid "FontAwesome icons"
