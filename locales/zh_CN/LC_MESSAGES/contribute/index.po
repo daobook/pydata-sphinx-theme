@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../docs/contribute/index.md:6
 msgid "Contribute"
-msgstr ""
+msgstr "贡献"
 
 #: ../../docs/contribute/index.md:8
 msgid ""
@@ -28,36 +28,38 @@ msgid ""
 " a development version of this theme, and how you can contribute to the "
 "project."
 msgstr ""
+"这些页面包含关于如何启动和运行这个主题的开发版本的信息，以及如何为项目做出贡献。"
 
 #: ../../docs/contribute/index.md:10
 msgid "Workflow for contributing changes"
-msgstr ""
+msgstr "贡献变更的工作流"
 
 #: ../../docs/contribute/index.md:12
 msgid ""
 "We follow a [typical GitHub "
 "workflow](https://guides.github.com/introduction/flow/) of:"
 msgstr ""
+"我们遵循 [典型的 GitHub 工作流程](https://guides.github.com/introduction/flow/)："
 
 #: ../../docs/contribute/index.md:15
 msgid "create a personal fork of this repo"
-msgstr ""
+msgstr "创建这个 repo 的个人分叉"
 
 #: ../../docs/contribute/index.md:16
 msgid "create a branch"
-msgstr ""
+msgstr "创建 branch"
 
 #: ../../docs/contribute/index.md:17
 msgid "open a pull request"
-msgstr ""
+msgstr "打开 pull request"
 
 #: ../../docs/contribute/index.md:18
 msgid "fix findings of various linters and checks"
-msgstr ""
+msgstr "修正了各种测试和检查的结果"
 
 #: ../../docs/contribute/index.md:19
 msgid "work through code review"
-msgstr ""
+msgstr "完成代码评审"
 
 #: ../../docs/contribute/index.md:21
 msgid ""
@@ -65,10 +67,12 @@ msgid ""
 "easier to review the changes in the PR. To access this, click on the "
 "\"ReadTheDocs\" preview in the CI/CD jobs."
 msgstr ""
+"对于每个 pull request，演示站点被构建和部署，以使它更容易审查 PR 中的变化。"
+"要访问这个，点击 \"ReadTheDocs\" 预览在 CI/CD 作业。"
 
 #: ../../docs/contribute/index.md:24
 msgid "Location and structure of documentation"
-msgstr ""
+msgstr "文档的位置和结构"
 
 #: ../../docs/contribute/index.md:26
 msgid ""
@@ -77,10 +81,13 @@ msgid ""
 "content is written in a combination of reStructuredText and MyST "
 "Markdown."
 msgstr ""
+"这个主题的文档在 `docs/` 文件夹中。"
+"它的结构是 [Sphinx 文档站点](https://sphinx-doc.org)。"
+"内容是在 reStructuredText 和 MyST Markdown 的组合编写的。"
 
 #: ../../docs/contribute/index.md:30
 msgid "Location and structure of CSS/JS assets"
-msgstr ""
+msgstr "CSS/JS assets 的位置和结构"
 
 #: ../../docs/contribute/index.md:32
 msgid ""
@@ -88,6 +95,7 @@ msgid ""
 "`src/pydata_sphinx_theme/assets/*` with "
 "[webpack](https://webpack.js.org/). The main entrypoints are:"
 msgstr ""
+"这个主题的 CSS 和 JS 是用 [webpack](https://webpack.js.org/) 为浏览器 `src/pydata_sphinx_theme/assets/*` 构建的。主要的切入点是："
 
 #: ../../docs/contribute/index.md:35
 msgid "CSS: `src/pydata_sphinx_theme/assets/styles/index.scss`"
@@ -95,13 +103,14 @@ msgstr ""
 
 #: ../../docs/contribute/index.md:37
 msgid "the main part of the theme assets"
-msgstr ""
+msgstr "主题 assets 的 main 部分"
 
 #: ../../docs/contribute/index.md:38
 msgid ""
 "customizes [Bootstrap](https://getbootstrap.com/) with [Sass](https"
 "://sass-lang.com)"
 msgstr ""
+"使用 [Sass](https://sass-lang.com) 定制 [Bootstrap](https://getbootstrap.com/)"
 
 #: ../../docs/contribute/index.md:40
 msgid "JS: `src/pydata_sphinx_theme/assets/scripts/index.js`"
@@ -112,6 +121,7 @@ msgid ""
 "provides add-on Bootstrap features, as well as some custom navigation "
 "behavior"
 msgstr ""
+"提供附加引导功能，以及一些自定义导航行为"
 
 #: ../../docs/contribute/index.md:44
 msgid "webpack: `webpack.config.js`"
@@ -123,10 +133,11 @@ msgid ""
 "`src/pydata_sphinx_theme/assets/*` into the production assets in "
 "`src/theme/pydata_sphinx_theme/static/`"
 msgstr ""
+"捕获了将 `src/pydata_sphinx_theme/assets/*`  中的 JS 和 CSS 源文件转换为 `src/theme/pydata_sphinx_theme/static/` 中的生产 assets 的技术"
 
 #: ../../docs/contribute/index.md:49
 msgid ""
 "**For more information** about developing this theme, see the sections "
 "below and in the left sidebar."
 msgstr ""
-
+"**有关开发这个主题的更多信息**，请参阅下面和左边栏的部分。"

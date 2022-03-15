@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../docs/contribute/manual.md:3
 msgid "Set up a manual development environment"
-msgstr ""
+msgstr "安装手册开发环境"
 
 #: ../../docs/contribute/manual.md:5
 msgid ""
@@ -29,14 +29,15 @@ msgid ""
 "installed, you may also manually set up a development environment "
 "locally."
 msgstr ""
+"如果你不喜欢使用像 `nox` 这样的自动化工具，或者想要对安装的软件包的特定版本有更多的控制，你也可以手动在本地设置一个开发环境。"
 
 #: ../../docs/contribute/manual.md:7
 msgid "To do so, follow the instructions on this page."
-msgstr ""
+msgstr "要做到这一点，请遵循本页上的说明。"
 
 #: ../../docs/contribute/manual.md:9
 msgid "Create a new development environment"
-msgstr ""
+msgstr "创造新的开发环境"
 
 #: ../../docs/contribute/manual.md:11
 msgid ""
@@ -44,6 +45,7 @@ msgid ""
 "environment so that you've isolated the packages that you're using for "
 "this repository."
 msgstr ""
+"这是可选的，但最好从新的开发环境开始，这样您就可以隔离用于这个存储库的包。"
 
 #: ../../docs/contribute/manual.md:13
 msgid ""

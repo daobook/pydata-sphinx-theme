@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../docs/contribute/setup.md:1
 msgid "Get started with development"
-msgstr ""
+msgstr "开始开发"
 
 #: ../../docs/contribute/setup.md:3
 msgid ""
@@ -29,16 +29,19 @@ msgid ""
 "as possible to get things done. If you'd like to do more operations "
 "manually, see [](manual.md)."
 msgstr ""
+"这一节介绍了开始在本地开发这个主题的最简单的方法，以便您可以做出贡献。"
+"它使用自动化和尽可能少的步骤来完成事情。如果您想手动进行更多操作，请参阅 [](manual.md)。"
 
 #: ../../docs/contribute/setup.md:7
 msgid "Clone the repository"
-msgstr ""
+msgstr "克隆 repo"
 
 #: ../../docs/contribute/setup.md:9
 msgid ""
 "First off you'll need your own copy of the `pydata-sphinx-theme` "
 "codebase. You can clone it for local development like so:"
 msgstr ""
+"首先，您需要自己的 `pydata-sphinx-theme` 代码库的副本。你可以将其复制到本地开发中："
 
 #: ../../docs/contribute/setup.md:12
 msgid ""
@@ -46,16 +49,19 @@ msgid ""
 "GitHub forking guide](https://docs.github.com/en/get-"
 "started/quickstart/fork-a-repo) for more information."
 msgstr ""
+"**Fork 存储库** 所以你在 GitHub 上有自己的副本。"
+"更多信息请参见 [GitHub 分叉 指南](https://docs.github.com/en/get-started/quickstart/fork-a-repo)。"
 
 #: ../../docs/contribute/setup.md:14
 msgid ""
 "**Clone the repository locally** so that you have a local copy to work "
 "from:"
 msgstr ""
+"**在本地克隆存储库**，这样你就有一个本地副本来工作："
 
 #: ../../docs/contribute/setup.md:21
 msgid "Install your tools"
-msgstr ""
+msgstr "安装工具"
 
 #: ../../docs/contribute/setup.md:23
 msgid ""
@@ -63,6 +69,8 @@ msgid ""
 "HTML, SCSS, and Javascript. To simplify this process, we use a few helper"
 " tools:"
 msgstr ""
+"构建 Sphinx 站点使用 Python 和 Jinja 的组合来管理 HTML、SCSS 和 Javascript。"
+"为了简化这个过程，我们使用了一些辅助工具"
 
 #: ../../docs/contribute/setup.md:26
 msgid ""
@@ -70,16 +78,18 @@ msgid ""
 "builder.readthedocs.io/en/latest/) to automatically perform compilation "
 "of web assets."
 msgstr ""
+"[Sphinx 主题构建器](https://sphinx-theme-builder.readthedocs.io/en/latest/) 可以自动执行 web assets 的编译。"
 
 #: ../../docs/contribute/setup.md:27
 msgid ""
 "[pre-commit](https://pre-commit.com/) for automatically enforcing code "
 "standards and quality checks before commits."
 msgstr ""
+"[pre-commit](https://pre-commit.com/) 用于在提交前自动执行代码标准和质量检查。"
 
 #: ../../docs/contribute/setup.md:28
 msgid "[nox](https://nox.thea.codes/), for automating common development tasks."
-msgstr ""
+msgstr "[nox](https://nox.thea.codes/)，用于实现常见开发任务的自动化。"
 
 #: ../../docs/contribute/setup.md:30
 msgid ""
@@ -88,20 +98,23 @@ msgid ""
 "work on the theme. The rest of this guide focuses on using `nox` to start"
 " with a basic environment."
 msgstr ""
+"特别是，`nox` 可以用来自动创建独立的本地开发环境，所有正确的包都安装在主题上。"
+"本指南的其余部分着重于从基本环境开始使用 `nox`。"
 
 #: ../../docs/contribute/setup.md:1
 msgid ""
 "The information on this page covers the basics to get you started, for "
 "information about manually compiling assets, see [](manual.md)."
 msgstr ""
+"这个页面上的信息涵盖了入门的基础知识，有关手动编译资产的信息，请参阅 [](manual.md)。"
 
 #: ../../docs/contribute/setup.md:37
 msgid "Setup `nox`"
-msgstr ""
+msgstr "安装 `nox`"
 
 #: ../../docs/contribute/setup.md:39
 msgid "To start, install `nox`:"
-msgstr ""
+msgstr "首先，安装 `nox`："
 
 #: ../../docs/contribute/setup.md:45
 msgid ""
@@ -111,10 +124,13 @@ msgid ""
 " local directory (`.nox`). For common development actions, you'll simply "
 "need to use `nox` and won't need to set up any other packages."
 msgstr ""
+"您可以从命令行调用 `nox`，以便执行创建主题所需的常见操作。"
+"`nox` 在独立的环境中运行，因此每个操作都有自己的安装在本地目录（`.nox`）中的软件包。"
+"对于常见的开发操作，您只需要使用 `nox`，而不需要设置任何其他包。"
 
 #: ../../docs/contribute/setup.md:49
 msgid "Setup `pre-commit`"
-msgstr ""
+msgstr "设置 `pre-commit`"
 
 #: ../../docs/contribute/setup.md:51
 msgid ""
@@ -122,20 +138,23 @@ msgid ""
 " new Git commit is made. This ensures standards and basic quality control"
 " for our code."
 msgstr ""
+"`pre-commit` 允许我们在每次进行新的 Git 提交时对代码库进行几次检查。"
+"这确保了我们代码的标准和基本质量控制。"
 
 #: ../../docs/contribute/setup.md:54
 msgid "Install `pre-commit` with the following command:"
-msgstr ""
+msgstr "使用以下命令安装 `pre-commit`："
 
 #: ../../docs/contribute/setup.md:60
 msgid "then navigate to this repository's folder and activate it like so:"
-msgstr ""
+msgstr "然后导航到这个存储库的文件夹，像这样激活它："
 
 #: ../../docs/contribute/setup.md:66
 msgid ""
 "This will install the necessary dependencies to run `pre-commit` every "
 "time you make a commit with Git."
 msgstr ""
+"这将安装必要的依赖，以在每次使用 Git 提交时运行 `pre-commit`。"
 
 #: ../../docs/contribute/setup.md:1
 msgid ""
@@ -143,20 +162,23 @@ msgid ""
 "which you're calling `pre-commit`, `nox`, etc. They will not be installed"
 " in the isolated environments used by `nox`."
 msgstr ""
+"你的 `pre-commit` 依赖项会被安装在你调用 `pre-commit`、`nox` 等的环境中。"
+"它们不会安装在 `nox` 所使用的隔离环境中。"
 
 #: ../../docs/contribute/setup.md:73
 msgid "Build the documentation"
-msgstr ""
+msgstr "构建文档"
 
 #: ../../docs/contribute/setup.md:75
 msgid ""
 "Now that you have `nox` installed and cloned the repository, you should "
 "be able to build the documentation locally."
 msgstr ""
+"现在已经安装了 `nox` 并克隆了存储库，您应该能够在本地构建文档。"
 
 #: ../../docs/contribute/setup.md:77
 msgid "To build the documentation with `nox`, run the following command:"
-msgstr ""
+msgstr "使用 `nox` 构建文档："
 
 #: ../../docs/contribute/setup.md:83
 msgid ""
