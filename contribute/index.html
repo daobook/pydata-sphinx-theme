@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <meta content="How to become a contributor to the pydata-sphinx-theme." lang="en" name="description" xml:lang="en" />
 
-    <title>Contribute &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
+    <title>贡献 &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -40,7 +40,7 @@
     <link rel="canonical" href="http://127.0.0.1:8000/contribute/index.html" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Get started with development" href="setup.html" />
+    <link rel="next" title="开始开发" href="setup.html" />
     <link rel="prev" title="可访问性" href="../user_guide/accessibility.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
@@ -84,7 +84,7 @@
 
 <li class="toctree-l1 current active nav-item">
  <a class="current reference internal nav-link" href="#">
-  Contribute
+  贡献
  </a>
 </li>
 
@@ -229,7 +229,7 @@ function checkPageExistsAndRedirect(event) {
     <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="setup.html">
-   Get started with development
+   开始开发
   </a>
  </li>
  <li class="toctree-l1">
@@ -239,7 +239,7 @@ function checkPageExistsAndRedirect(event) {
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="manual.html">
-   Set up a manual development environment
+   安装手册开发环境
   </a>
  </li>
 </ul>
@@ -272,17 +272,17 @@ function checkPageExistsAndRedirect(event) {
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#workflow-for-contributing-changes">
-   Workflow for contributing changes
+   贡献变更的工作流
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#location-and-structure-of-documentation">
-   Location and structure of documentation
+   文档的位置和结构
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#location-and-structure-of-css-js-assets">
-   Location and structure of CSS/JS assets
+   CSS/JS assets 的位置和结构
   </a>
  </li>
 </ul>
@@ -314,58 +314,52 @@ function checkPageExistsAndRedirect(event) {
               <div>
                 
   <section id="contribute">
-<h1>Contribute<a class="headerlink" href="#contribute" title="永久链接至标题">#</a></h1>
-<p>These pages contain information about how you can get up-and-running with a development version of this theme, and how you can contribute to the project.</p>
+<h1>贡献<a class="headerlink" href="#contribute" title="永久链接至标题">#</a></h1>
+<p>这些页面包含关于如何启动和运行这个主题的开发版本的信息，以及如何为项目做出贡献。</p>
 <section id="workflow-for-contributing-changes">
-<h2>Workflow for contributing changes<a class="headerlink" href="#workflow-for-contributing-changes" title="永久链接至标题">#</a></h2>
-<p>We follow a <a class="reference external" href="https://guides.github.com/introduction/flow/">typical GitHub workflow</a>
-of:</p>
+<h2>贡献变更的工作流<a class="headerlink" href="#workflow-for-contributing-changes" title="永久链接至标题">#</a></h2>
+<p>我们遵循 <a class="reference external" href="https://guides.github.com/introduction/flow/">典型的 GitHub 工作流程</a>：</p>
 <ul class="simple">
-<li><p>create a personal fork of this repo</p></li>
-<li><p>create a branch</p></li>
-<li><p>open a pull request</p></li>
-<li><p>fix findings of various linters and checks</p></li>
-<li><p>work through code review</p></li>
+<li><p>创建这个 repo 的个人分叉</p></li>
+<li><p>创建 branch</p></li>
+<li><p>打开 pull request</p></li>
+<li><p>修正了各种测试和检查的结果</p></li>
+<li><p>完成代码评审</p></li>
 </ul>
-<p>For each pull request, the demo site is built and deployed to make it easier to review
-the changes in the PR. To access this, click on the “ReadTheDocs” preview in the CI/CD jobs.</p>
+<p>对于每个 pull request，演示站点被构建和部署，以使它更容易审查 PR 中的变化。要访问这个，点击 “ReadTheDocs” 预览在 CI/CD 作业。</p>
 </section>
 <section id="location-and-structure-of-documentation">
-<h2>Location and structure of documentation<a class="headerlink" href="#location-and-structure-of-documentation" title="永久链接至标题">#</a></h2>
-<p>The documentation for this theme is in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder.
-It is structured as a <a class="reference external" href="https://sphinx-doc.org">Sphinx documentation site</a>.
-The content is written in a combination of reStructuredText and MyST Markdown.</p>
+<h2>文档的位置和结构<a class="headerlink" href="#location-and-structure-of-documentation" title="永久链接至标题">#</a></h2>
+<p>这个主题的文档在 <code class="docutils literal notranslate"><span class="pre">docs/</span></code> 文件夹中。它的结构是 <a class="reference external" href="https://sphinx-doc.org">Sphinx 文档站点</a>。内容是在 reStructuredText 和 MyST Markdown 的组合编写的。</p>
 </section>
 <section id="location-and-structure-of-css-js-assets">
-<h2>Location and structure of CSS/JS assets<a class="headerlink" href="#location-and-structure-of-css-js-assets" title="永久链接至标题">#</a></h2>
-<p>The CSS and JS for this theme are built for the browser from <code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/*</span></code> with
-<a class="reference external" href="https://webpack.js.org/">webpack</a>. The main entrypoints are:</p>
+<h2>CSS/JS assets 的位置和结构<a class="headerlink" href="#location-and-structure-of-css-js-assets" title="永久链接至标题">#</a></h2>
+<p>这个主题的 CSS 和 JS 是用 <a class="reference external" href="https://webpack.js.org/">webpack</a> 为浏览器 <code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/*</span></code> 构建的。主要的切入点是：</p>
 <ul class="simple">
 <li><p>CSS: <code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/styles/index.scss</span></code></p>
 <ul>
-<li><p>the main part of the theme assets</p></li>
-<li><p>customizes <a class="reference external" href="https://getbootstrap.com/">Bootstrap</a> with <a class="reference external" href="https://sass-lang.com">Sass</a></p></li>
+<li><p>主题 assets 的 main 部分</p></li>
+<li><p>使用 <a class="reference external" href="https://sass-lang.com">Sass</a> 定制 <a class="reference external" href="https://getbootstrap.com/">Bootstrap</a></p></li>
 </ul>
 </li>
 <li><p>JS: <code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/scripts/index.js</span></code></p>
 <ul>
-<li><p>provides add-on Bootstrap features, as well as some custom navigation behavior</p></li>
+<li><p>提供附加引导功能，以及一些自定义导航行为</p></li>
 </ul>
 </li>
 <li><p>webpack: <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code></p>
 <ul>
-<li><p>captures the techniques for transforming the JS and CSS source files in
-<code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/*</span></code> into the production assets in <code class="docutils literal notranslate"><span class="pre">src/theme/pydata_sphinx_theme/static/</span></code></p></li>
+<li><p>捕获了将 <code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/*</span></code>  中的 JS 和 CSS 源文件转换为 <code class="docutils literal notranslate"><span class="pre">src/theme/pydata_sphinx_theme/static/</span></code> 中的生产 assets 的技术</p></li>
 </ul>
 </li>
 </ul>
-<p><strong>For more information</strong> about developing this theme, see the sections below and in the left sidebar.</p>
+<p><strong>有关开发这个主题的更多信息</strong>，请参阅下面和左边栏的部分。</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="setup.html">Get started with development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="setup.html#clone-the-repository">Clone the repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="setup.html#install-your-tools">Install your tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="setup.html#build-the-documentation">Build the documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">开始开发</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#clone-the-repository">克隆 repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#install-your-tools">安装工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#build-the-documentation">构建文档</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setup.html#compile-the-css-js-assets">Compile the CSS/JS assets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setup.html#run-a-development-server">Run a development server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setup.html#run-the-tests">Run the tests</a></li>
@@ -381,8 +375,8 @@ The content is written in a combination of reStructuredText and MyST Markdown.</
 <li class="toctree-l2"><a class="reference internal" href="topics.html#update-our-kitchen-sink-documents">Update our kitchen sink documents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="manual.html">Set up a manual development environment</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="manual.html#create-a-new-development-environment">Create a new development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual.html">安装手册开发环境</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual.html#create-a-new-development-environment">创造新的开发环境</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual.html#clone-the-repository-locally">Clone the repository locally</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual.html#install-the-sphinx-theme-builder">Install the <code class="docutils literal notranslate"><span class="pre">sphinx-theme-builder</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual.html#install-this-theme-locally">Install this theme locally</a></li>
@@ -413,7 +407,7 @@ The content is written in a combination of reStructuredText and MyST Markdown.</
     <a class='right-next' id="next-link" href="setup.html" title="下一页 页">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">Get started with development</p>
+        <p class="prev-next-title">开始开发</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

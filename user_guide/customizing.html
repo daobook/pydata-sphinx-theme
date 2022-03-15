@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<meta content="Advanced customization of pydata-sphinx-theme's HTML and CSS." lang="en" name="description" xml:lang="en" />
+<meta content="pydata-sphinx-theme 的 HTML 和 CSS 的高级定制。" lang="en" name="description" xml:lang="en" />
 
     <title>自定义主题 &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
     
@@ -84,7 +84,7 @@
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../contribute/index.html">
-  Contribute
+  贡献
  </a>
 </li>
 
@@ -282,12 +282,12 @@ function checkPageExistsAndRedirect(event) {
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#css-theme-variables">
-   CSS Theme variables
+   CSS 主题变量
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#replacing-removing-fonts">
-   Replacing/Removing Fonts
+   替换/删除字体
   </a>
  </li>
 </ul>
@@ -327,7 +327,7 @@ function checkPageExistsAndRedirect(event) {
 <p>按照以下步骤添加自定义样式表：</p>
 <ol class="arabic">
 <li><p>在 <code class="docutils literal notranslate"><span class="pre">_static/css/custom.css</span></code> 中 <strong>创建 CSS 样式表</strong>，并添加你希望的 CSS 规则。</p></li>
-<li><p><strong>Attach the stylesheet to your Sphinx build</strong>. Add the following to <code class="docutils literal notranslate"><span class="pre">conf.py</span></code></p>
+<li><p><strong>将样式表附加到 Sphinx 构建中</strong>。将以下内容添加到 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>html_static_path = [&#39;_static&#39;]
 
 html_css_files = [
@@ -337,20 +337,16 @@ html_css_files = [
 </div>
 </li>
 </ol>
-<p>When you build your documentation, this stylesheet should now be activated.</p>
+<p>当您构建文档时，这个样式表现在应该被激活。</p>
 </section>
 <section id="css-theme-variables">
-<span id="css-variables"></span><h2>CSS Theme variables<a class="headerlink" href="#css-theme-variables" title="永久链接至标题">#</a></h2>
-<p>This theme defines several <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS variables</a> that can be
-used to quickly control behavior across your documentation.</p>
-<p>These are based on top of the basic <a class="reference external" href="https://getbootstrap.com/docs/4.0/getting-started/theming/#css-variables">Bootstrap CSS variables</a>
-extended with some theme specific variables. An overview of all variables and
-every default is defined in <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static/styles/theme.css">the pydata default CSS variables file</a>.</p>
-<p>In order to change a variable, follow these steps:</p>
+<span id="css-variables"></span><h2>CSS 主题变量<a class="headerlink" href="#css-theme-variables" title="永久链接至标题">#</a></h2>
+<p>这个主题定义了几个 <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 变量</a>，可以用来快速控制整个文档的行为。</p>
+<p>这些是基于基本的 <a class="reference external" href="https://getbootstrap.com/docs/4.0/getting-started/theming/#css-variables">Bootstrap CSS 变量</a> 扩展了一些主题特定的变量。所有变量和每个默认值的概述都定义在 <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static/styles/theme.css">pydata 默认 CSS 变量文件</a>。</p>
+<p>要更改变量，请遵循以下步骤：</p>
 <ol class="arabic">
-<li><p><a class="reference internal" href="#custom-css"><span class="std std-ref">Add a custom CSS stylesheet</span></a>. This is where we’ll configure the variables.</p></li>
-<li><p>Underneath a <code class="docutils literal notranslate"><span class="pre">:root</span></code> section, add the variables you wish to update. For example, to update
-the base font size, you might add this to <code class="docutils literal notranslate"><span class="pre">custom.css</span></code>:</p>
+<li><p><a class="reference internal" href="#custom-css"><span class="std std-ref">添加自定义的 CSS 样式表</span></a> 这就是我们配置变量的地方。</p></li>
+<li><p>在 <code class="docutils literal notranslate"><span class="pre">:root</span></code> 部分下面，添加你想要更新的变量。例如，要更新基本字体大小，你可以把它添加到 <code class="docutils literal notranslate"><span class="pre">custom.css</span></code> 中：</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>:root {
     --pst-font-size-base: 17px;
 }
@@ -360,12 +356,9 @@ the base font size, you might add this to <code class="docutils literal notransl
 </ol>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
-<p>Note that these are <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS variables</a> and not
-<a class="reference external" href="https://sass-lang.com/documentation/variables">SASS variables</a>.
-The theme is defined with CSS variables, not SASS variables!</p>
+<p>注意这些是 <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 变量</a> 而不是 <a class="reference external" href="https://sass-lang.com/documentation/variables">SASS 变量</a>。主题是用 CSS 变量定义的，而不是 SASS 变量！</p>
 </div>
-<p>For a complete list of the theme variables that you may override, see the
-<a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static/styles/theme.css">theme variables defaults CSS file</a>:</p>
+<p>关于你可以覆盖的主题变量的完整列表，请参阅 <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static/styles/theme.css">主题变量默认 CSS 文件</a>：</p>
 <div class="highlight-CSS notranslate"><div class="highlight"><pre><span></span><span class="c">/* Provided by Sphinx&#39;s &#39;basic&#39; theme, and included in the final set of assets */</span><span class="w"></span>
 <span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s2">&quot;../basic.css&quot;</span><span class="p">;</span><span class="w"></span>
 
@@ -504,24 +497,15 @@ The theme is defined with CSS variables, not SASS variables!</p>
 </div>
 </section>
 <section id="replacing-removing-fonts">
-<h2>Replacing/Removing Fonts<a class="headerlink" href="#replacing-removing-fonts" title="永久链接至标题">#</a></h2>
-<p>The theme includes the <a class="reference external" href="https://fontawesome.com/icons?m=free">FontAwesome 5 Free</a>
-icon font (the <code class="docutils literal notranslate"><span class="pre">.fa,</span> <span class="pre">.far,</span> <span class="pre">.fas</span></code> styles, which are used for
-<a class="reference internal" href="configuring.html#icon-links"><span class="std std-ref">icon links</span></a> and admonitions).
-This is the only <cite>vendored</cite> font, and otherwise the theme by default relies on
-available system fonts for normal body text and headers.</p>
+<h2>替换/删除字体<a class="headerlink" href="#replacing-removing-fonts" title="永久链接至标题">#</a></h2>
+<p>主题包括 <a class="reference external" href="https://fontawesome.com/icons?m=free">FontAwesome 5 Free</a> 图标字体（<code class="docutils literal notranslate"><span class="pre">.fa,</span> <span class="pre">.far,</span> <span class="pre">.fas</span></code> 样式，用于 <a class="reference internal" href="configuring.html#icon-links"><span class="std std-ref">icon links</span></a> 和警告)。这是唯一的 <cite>vendored</cite> 字体，否则主题默认依赖于正常的正文文本和标题可用的系统字体。</p>
 <div class="admonition attention">
 <p class="admonition-title">注意</p>
-<p>Previously-included fonts like <cite>Lato</cite> have been removed, preferring
-the most common default system fonts of the reader’s computer. This provides
-both better performance, and better script/glyph coverage than custom fonts,
-and is recommended in most cases.</p>
+<p>以前包括的字体，如 <cite>Lato</cite> 已经被删除，而选择读者计算机最常见的默认系统字体。这比自定义字体提供了更好的性能和更好的脚本/符号覆盖率，在大多数情况下都是推荐的。</p>
 </div>
-<p>The default body and header fonts can be changed as follows:</p>
+<p>默认的正文和标题字体可以更改如下：</p>
 <ul>
-<li><p>Using <a class="reference internal" href="#custom-css"><span class="std std-ref">自定义主题样式</span></a>, you can specify which fonts to use for body, header
-and monospace text. For example, the following can be added to a custom
-css file:</p>
+<li><p>使用 <a class="reference internal" href="#custom-css"><span class="std std-ref">自定义主题样式</span></a>，你可以指定正文、标题和单空格文本使用的字体。例如，以下内容可以添加到自定义 css 文件中：</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>:root {
     --pst-font-family-base: Verdana, var(--pst-font-family-base-system);
     --pst-font-family-heading: Cambria, Georgia, Times, var(--pst-font-family-base-system);
@@ -529,17 +513,12 @@ css file:</p>
 }
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">-system</span></code> variables are available to use as fallback to the default fonts.</p>
+<p><code class="docutils literal notranslate"><span class="pre">-system</span></code> 变量可用于回退到默认字体。</p>
 </li>
-<li><p>If the font you want to specify in the section above is not generally available
-by default, you will additionally need to ensure the font is loaded.
-For example, you could download and vendor the font in the <code class="docutils literal notranslate"><span class="pre">_static</span></code> directory
-of your Sphinx site, and then update the base template to load the font resources:</p>
+<li><p>如果你在上面一节中指定的字体在默认情况下通常是不可用的，你还需要确保字体被加载。例如，你可以在 Sphinx 网站的 <code class="docutils literal notranslate"><span class="pre">_static</span></code> 目录下下载并提供字体，然后更新基本模板来加载字体资源：</p>
 <ul>
-<li><p>Configure the <a class="reference external" href="https://www.sphinx-doc.org/en/master/theming.html#templating">template_path</a>
-in your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code></p></li>
-<li><p>Create a custom <code class="docutils literal notranslate"><span class="pre">layout.html</span></code> Jinja2 template which overloads the <code class="docutils literal notranslate"><span class="pre">fonts</span></code> block
-(example for loading the Lato font that is included in the <code class="docutils literal notranslate"><span class="pre">_static/vendor</span></code> directory):</p>
+<li><p>在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中配置 <a class="reference external" href="https://www.sphinx-doc.org/en/master/theming.html#templating">template_path</a></p></li>
+<li><p>创建自定义的 <code class="docutils literal notranslate"><span class="pre">layout.html</span></code> Jinja2 模板，它会重载 <code class="docutils literal notranslate"><span class="pre">fonts</span></code> 块（例如加载包含在 <code class="docutils literal notranslate"><span class="pre">_static/vendor</span></code> 目录中的 Lato 字体）：</p>
 <div class="highlight-html+jinja notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;pydata_sphinx_theme/layout.html&quot;</span> <span class="cp">%}</span>
 
 <span class="cp">{%</span> <span class="k">block</span> <span class="nv">fonts</span> <span class="cp">%}</span>
@@ -550,10 +529,7 @@ in your <code class="docutils literal notranslate"><span class="pre">conf.py</sp
 <span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
 </pre></div>
 </div>
-<p>To reduce the <cite>Flash of Unstyled Content</cite>, you may wish to explore various options for
-<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content">preloading content</a>,
-specifically the binary font files. This ensure the files will be loaded
-before waiting for the CSS to be parsed, but should be used with care.</p>
+<p>为了减少 <cite>Flash of Unstyled Content</cite>，你可能希望探索各种选项的 <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content">预加载内容</a>，特别是二进制字体文件。这可以确保在 CSS 被解析之前加载文件，但应该小心使用。</p>
 </li>
 </ul>
 </li>
