@@ -149,12 +149,15 @@ msgid ""
 "commonly-used services. These may be removed in a future release in favor"
 " of ``icon_links``:"
 msgstr ""
+"支持一些快捷方式来最小化常用服务的配置。"
+"这些可能会在未来的版本中被移除，以支持 ``icon_links``："
 
 #: ../../docs/user_guide/configuring.rst:162
 msgid ""
 "Additionally, the screen-reader accessible label for this menu can be "
 "configured:"
 msgstr ""
+"此外，这个菜单的屏幕阅读器可访问 label 可以配置："
 
 #: ../../docs/user_guide/configuring.rst:174
 msgid "Adding external links to your nav bar"
@@ -182,6 +185,8 @@ msgid ""
 "doc.org/en/master/usage/configuration.html#confval-html_favicon>`_, using"
 " ``html_favicon``."
 msgstr ""
+"``pydata_sphinx_theme`` 支持 `标准的 sphinx favicon 配置 <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_favicon>`_，使用' html_favicon ' ' "
 
 #: ../../docs/user_guide/configuring.rst:196
 msgid ""
@@ -191,12 +196,16 @@ msgid ""
 "be either an absolute URL (beginning with ``http``) or a local path "
 "relative to your ``html_static_path``:"
 msgstr ""
+"此外，``pydata_sphinx_theme`` 允许您添加任意数量的浏览器或设备特定的任意大小的 favicon。"
+"要定义任意的 favicons，请使用 ``favicons`` 配置键。"
+"``href`` 的值可以是绝对 URL（以 ``http`` 开头），也可以是相对于你的 ``html_static_path`` 的本地路径："
 
 #: ../../docs/user_guide/configuring.rst:224
 msgid ""
 "``pydata_sphinx_theme`` will add ``link`` tags to your document's "
 "``head`` section, following this pattern:"
 msgstr ""
+"``pydata_sphinx_theme`` 将添加 ``link`` tag 到您的文档的 ``head`` 部分，遵循以下模式："
 
 #: ../../docs/user_guide/configuring.rst:235
 msgid "Configure the sidebar"
@@ -271,7 +280,8 @@ msgid ""
 "``:caption:``), you may collapse navigation items so that only the "
 "caption is visible. Clicking on the caption will display the items below."
 msgstr ""
-"如果你的 ``toctree`` 元素有 caption 赋值（用 ``:caption:``），你可以折叠导航项，使其只显示 caption。点击 caption 将显示下面的项。"
+"如果你的 ``toctree`` 元素有 caption 赋值（用 ``:caption:``），你可以折叠导航项，使其只显示 caption。"
+"点击 caption 将显示下面的项。"
 
 #: ../../docs/user_guide/configuring.rst:282
 msgid ""
@@ -325,16 +335,20 @@ msgid ""
 "useful if your documentation generates lots of \"stub pages\" in a "
 "folder, which is common with API documentation."
 msgstr ""
+"你可以使用 Sphinx 插件 `sphinx-remove-toctrees "
+"<https://github.com/executablebooks/sphinx-remove-toctrees>`_ 来阻止页面显示在导航栏上。"
+"如果你的文档在文件夹中产生了很多“存根页面”，这是很有用的，这是 API 文档的常见用法。"
 
 #: ../../docs/user_guide/configuring.rst:320
 msgid "This lets you add a configuration like so:"
-msgstr ""
+msgstr "这可以让你像这样添加配置："
 
 #: ../../docs/user_guide/configuring.rst:326
 msgid ""
 "and any pages that are inside of ``folder_one/generated/`` will not show "
 "up in the sidebar."
 msgstr ""
+"任何位于 ``folder_one/generated/`` 中的页面都不会显示在侧边栏中。"
 
 #: ../../docs/user_guide/configuring.rst:328
 msgid ""
@@ -342,30 +356,34 @@ msgid ""
 "<https://github.com/executablebooks/sphinx-remove-toctrees#install>`_ for"
 " information about how to install and use this extension."
 msgstr ""
+"查看 `sphinx-remove-toctrees 文档 "
+"<https://github.com/executablebooks/sphinx-remove-toctrees#install>`_，了解如何安装和使用这个插件。"
 
 #: ../../docs/user_guide/configuring.rst:334
 msgid "Control the number of navigation levels"
-msgstr ""
+msgstr "控制导航级别的数量"
 
 #: ../../docs/user_guide/configuring.rst:336
 msgid ""
 "In addition, you can also control how many levels of the navigation are "
 "shown in the sidebar (with a default of 4):"
 msgstr ""
+"此外，你还可以控制侧边栏中显示的导航级别（默认为 4 级）："
 
 #: ../../docs/user_guide/configuring.rst:347
 msgid "Remove reveal buttons for sidebar items"
-msgstr ""
+msgstr "删除侧边栏项目的显示按钮"
 
 #: ../../docs/user_guide/configuring.rst:349
 msgid ""
 "It is possible to turn off the expandable navigation entirely by setting "
 "the `collapse_navigation` config option to True:"
 msgstr ""
+"可以通过设置 ``collapse_navigation`` 配置选项为 True 来完全关闭可扩展导航："
 
 #: ../../docs/user_guide/configuring.rst:360
 msgid "Hiding the previous and next buttons"
-msgstr ""
+msgstr "隐藏上一页和下一页按钮"
 
 #: ../../docs/user_guide/configuring.rst:362
 msgid ""
@@ -373,10 +391,11 @@ msgid ""
 "buttons at the bottom. You can hide these buttons with the following "
 "configuration:"
 msgstr ""
+"默认情况下，网站的每个页面底部都有“上一页”和“下一页”按钮。你可以通过以下配置隐藏这些按钮："
 
 #: ../../docs/user_guide/configuring.rst:373
 msgid "Add a dropdown to switch between docs versions"
-msgstr ""
+msgstr "添加下拉菜单来切换文档版本"
 
 #: ../../docs/user_guide/configuring.rst:375
 msgid ""
@@ -389,16 +408,21 @@ msgid ""
 " if it doesn't exist, redirect to the homepage of that docs version "
 "instead."
 msgstr ""
+"你可以在你的网站上添加按钮，允许用户在你的文档版本之间切换。"
+"版本 switcher 中的链接将根据文档的页面而有所不同。"
+"例如，在 ``https://mysite.org/en/v2.0/changelog.html`` 页面上，switcher 链接会跳转到其他版本文档中的 ``changelog.html``。"
+"当点击时，switcher 会检查该页面是否存在，如果不存在，则重定向到那个文档版本的主页。"
 
 #: ../../docs/user_guide/configuring.rst:383
 msgid "The switcher requires the following configuration steps:"
-msgstr ""
+msgstr "switcher 配置步骤如下："
 
 #: ../../docs/user_guide/configuring.rst:385
 msgid ""
 "Add a JSON file containing a list of the documentation versions that the "
 "switcher should show on each page."
 msgstr ""
+"添加 JSON 文件，其中包含 switcher 应该显示在每个页面上的文档版本列表。"
 
 #: ../../docs/user_guide/configuring.rst:388
 msgid ""
@@ -406,16 +430,19 @@ msgid ""
 "``html_theme_options`` dict in ``conf.py``. ``switcher`` should have 3 "
 "keys:"
 msgstr ""
+"将名为 ``switcher`` 的配置字典添加到 ``conf.py`` 中的 ``html_theme_options`` 字典中。"
+"``switcher`` 应该有 3 个键："
 
 #: ../../docs/user_guide/configuring.rst:391
 msgid "``json_url``: the persistent location of the JSON file described above."
-msgstr ""
+msgstr "``json_url``：上面描述的 JSON 文件的持久位置。"
 
 #: ../../docs/user_guide/configuring.rst:392
 msgid ""
 "``version_match``: a string stating the version of the documentation that"
 " is currently being browsed."
 msgstr ""
+"``version_match``：一个字符串，表示当前正在浏览的文档版本。"
 
 #: ../../docs/user_guide/configuring.rst:395
 msgid ""
@@ -423,14 +450,16 @@ msgid ""
 " the ``\"version-switcher\"`` template to one of the layout lists in "
 "``html_theme_options`` (e.g., ``navbar_end``, ``footer_items``, etc)."
 msgstr ""
+"指定在页面布局中放置 switcher 的位置。"
+"例如，添加 ``\"version-switcher\"`` 模板到 ``html_theme_options`` 中的布局列表中（例如 ``navbar_end``， ``footer_items`` 等）。"
 
 #: ../../docs/user_guide/configuring.rst:399
 msgid "Below is a more in-depth description of each of these configuration steps."
-msgstr ""
+msgstr "下面是对每个配置步骤的更深入的描述。"
 
 #: ../../docs/user_guide/configuring.rst:403
 msgid "Add a JSON file to define your switcher's versions"
-msgstr ""
+msgstr "添加 JSON 文件来定义 switcher 的版本"
 
 #: ../../docs/user_guide/configuring.rst:405
 msgid ""
@@ -438,36 +467,42 @@ msgid ""
 "listed in the switcher's dropdown menu. That file should contain a list "
 "of entries that each can have the following fields:"
 msgstr ""
+"首先，编写 JSON 文件，说明你的文档的哪个版本会在 switcher 的下拉菜单中列出。"
+"该文件应该包含条目列表，每个条目都可以有以下字段："
 
 #: ../../docs/user_guide/configuring.rst:409
 msgid ""
 "``version``: a version string. This is checked against "
 "``switcher['version_match']`` to provide styling to the switcher."
 msgstr ""
+"``version``：版本字符串。这是对 ``switcher['version_match']`` 的检查，以提供样式给 switcher。"
 
 #: ../../docs/user_guide/configuring.rst:411
 msgid "``url``: the URL for this version."
-msgstr ""
+msgstr "``url``：此版本的 URL。"
 
 #: ../../docs/user_guide/configuring.rst:412
 msgid ""
 "``name``: an optional name to display in the switcher dropdown instead of"
 " the version string (e.g., \"latest\", \"stable\", \"dev\", etc)."
 msgstr ""
+"``name``：在 switcher 下拉菜单中显示的可选名称，"
+"而不是版本字符串（例如，\"latest\"， \"stable\"， \"dev\" 等）。"
 
 #: ../../docs/user_guide/configuring.rst:415
 msgid "Here is an example JSON file:"
-msgstr ""
+msgstr "下面是一个示例 JSON 文件："
 
 #: ../../docs/user_guide/configuring.rst:439
 msgid ""
 "See the discussion of ``switcher['json_url']`` (below) for options of "
 "where to save the JSON file."
 msgstr ""
+"查看下面关于 ``switcher['json_url']`` 的讨论，了解在哪里保存 JSON 文件的选项。"
 
 #: ../../docs/user_guide/configuring.rst:444
 msgid "Configure ``switcher['json_url']``"
-msgstr ""
+msgstr "配置 ``switcher['json_url']``"
 
 #: ../../docs/user_guide/configuring.rst:446
 msgid ""
@@ -478,6 +513,9 @@ msgid ""
 "versions of the docs will gain switcher dropdown entries linking to the "
 "new versions. This could be done a few different ways:"
 msgstr ""
+"JSON 文件需要处于一个稳定的、持久的、完全解析的 URL（即，不要指定为相对于当前文档构建的 Sphinx 根目录的路径）。"
+"文档的每个版本都应该指向相同的 URL，这样当新版本添加到 JSON 文件时，文档的所有旧版本都将获得链接到新版本的切换下拉条目。"
+"这可以通过几种不同的方式来实现"
 
 #: ../../docs/user_guide/configuring.rst:453
 msgid ""
@@ -486,6 +524,7 @@ msgid ""
 "most recent version, it could point to a location in the build tree of "
 "version \"latest\"). For example:"
 msgstr ""
+"这个位置可以总是与最近的文档构建相关联（也就是说，如果你的文档服务器别名是 \"latest\"，它可以指向 \"latest\" 版本构建树中的位置）。例如"
 
 #: ../../docs/user_guide/configuring.rst:467
 msgid ""
@@ -493,6 +532,7 @@ msgid ""
 "but only the most recent version is ever loaded (even by older versions "
 "of the docs)."
 msgstr ""
+"在这种情况下，JSON 与其他文档页面一起被版本化，但只有最近的版本才会被加载（即使是旧版本的文档）。"
 
 #: ../../docs/user_guide/configuring.rst:471
 msgid ""
@@ -502,6 +542,9 @@ msgid ""
 "doc.org/en/master/usage/configuration.html#confval-html_static_path>`_ "
 "for more information."
 msgstr ""
+"JSON 可以保存在您的站点的 ``html_static_path`` 配置下列出的文件夹中。"
+"有关更多信息，请参阅 `Sphinx 静态路径文档  <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_static_path>`_。"
 
 #: ../../docs/user_guide/configuring.rst:476
 msgid ""
@@ -510,10 +553,11 @@ msgid ""
 "version entries to the JSON file manually as part of your release "
 "process. Example:"
 msgstr ""
+"JSON 可以存储在文档构建树之外。这可能意味着它将在软件 repo 之外，并要求您手动向 JSON 文件添加新版本条目，作为 release 过程的一部分。示例："
 
 #: ../../docs/user_guide/configuring.rst:491
 msgid "Configure ``switcher['version_match']``"
-msgstr ""
+msgstr "配置 ``switcher['version_match']``"
 
 #: ../../docs/user_guide/configuring.rst:493
 msgid ""
@@ -522,6 +566,8 @@ msgid ""
 "highlight the current docs version in the switcher's dropdown menu, and "
 "to change the text displayed on the switcher button)."
 msgstr ""
+"这个配置值告诉 switcher 当前正在查看哪个文档版本，"
+"并用于设置 switcher 的样式（例如，在 switcher 的下拉菜单中高亮显示当前文档版本，并更改显示在 switcher 按钮上的文本）。"
 
 #: ../../docs/user_guide/configuring.rst:498
 msgid ""
@@ -532,10 +578,12 @@ msgid ""
 "doc.org/en/master/usage/configuration.html#project-information>`__ for "
 "more information). Example:"
 msgstr ""
+"通常你可以重用 sphinx 变量 ``version`` 或 ``release`` 中的一个作为 ``switcher['version_match']`` 的值；你使用哪一种取决于你的文档版本控制的粒度。"
+"参见 `Sphinx \"project info\" 文档 <https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information>`__ 获取更多信息）。示例："
 
 #: ../../docs/user_guide/configuring.rst:517
 msgid "Specify where to display the switcher"
-msgstr ""
+msgstr "指定显示 switcher 的位置"
 
 #: ../../docs/user_guide/configuring.rst:519
 msgid ""
@@ -544,6 +592,9 @@ msgid ""
 "switcher\"`` to one of the locations in ``html_theme_options`` (e.g., "
 "``navbar_end``, ``footer_items``, etc). For example:"
 msgstr ""
+"最后，告诉主题，您希望 switcher 出现在站点页面的哪个位置。"
+"这里有很多选择：你可以添加 ``\"version-switcher\"`` 到 ``html_theme_options`` "
+"中的一个位置（例如，``navbar_end``， ``footer_items`` 等）。例如："
 
 #: ../../docs/user_guide/configuring.rst:532
 msgid ""
@@ -551,6 +602,8 @@ msgid ""
 "the version switcher in a sidebar. For example, you could define "
 "``_templates/sidebar-nav-bs.html`` as:"
 msgstr ""
+"或者，您可以覆盖其他模板之一，在侧边栏中包含版本 switcher。"
+"例如，你可以将 ``_templates/sidebar-nav-bs.html`` 定义为："
 
 #: ../../docs/user_guide/configuring.rst:541
 msgid ""
@@ -558,10 +611,12 @@ msgid ""
 "keeping the default navigation below it. See :doc:`sections` for more "
 "information."
 msgstr ""
+"在左边栏的顶部插入版本 switcher，同时在它的下方保持默认导航。"
+"更多信息请参阅 :doc:`sections`。"
 
 #: ../../docs/user_guide/configuring.rst:546
 msgid "Style the switcher buttons"
-msgstr ""
+msgstr "switcher 按钮样式"
 
 #: ../../docs/user_guide/configuring.rst:548
 msgid ""
@@ -571,16 +626,20 @@ msgid ""
 "that you can use to apply CSS rules to subsets of buttons. These entries "
 "are:"
 msgstr ""
+"你可以通过 CSS 应用样式到任何 switcher 按钮，以控制他们的外观和感觉。"
+"每个按钮都有两个 `HTML 数据集条目 <https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_，"
+"可以用来将 CSS 规则应用到按钮的子集。这些条目是："
 
 #: ../../docs/user_guide/configuring.rst:557
 msgid ""
 "For example, the link for an entry with ``version=\"0.2\"``, and "
 "``name=\"My version\"`` would have metadata like so:"
 msgstr ""
+"例如，带有 ``version=\"0.2\"`` 和 ``name=\"My version\"`` 的条目的链接会有这样的元数据："
 
 #: ../../docs/user_guide/configuring.rst:564
 msgid "You can create CSS rules that select this metadata like so:"
-msgstr ""
+msgstr "您可以像这样创建选择该元数据的 CSS 规则："
 
 #: ../../docs/user_guide/configuring.rst:578
 msgid ""
@@ -588,12 +647,14 @@ msgid ""
 "metadata about the **current version**. This could be used to style the "
 "entire dropdown a certain color based on the active version."
 msgstr ""
+"此外，下拉列表的父按钮包含类似的元数据关于 **current version**。这可以用于根据活动版本为整个下拉菜单设置特定的颜色。"
 
 #: ../../docs/user_guide/configuring.rst:582
 msgid ""
 "For example, if you wanted to style the dropdown button orange if it was "
 "a ``dev`` version, you could use the following CSS selector:"
 msgstr ""
+"例如，如果你想让下拉按钮的样式为橙色，如果它是 ``dev`` 版本，你可以使用以下 CSS 选择器："
 
 #: ../../docs/user_guide/configuring.rst:594
 msgid ""
@@ -601,10 +662,11 @@ msgid ""
 "<https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_ "
 "for more information on using and styling with these properties."
 msgstr ""
+"请参阅 `MDN 文档上的 dataset 属性 <https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_ 有关使用和样式化这些属性的更多信息。"
 
 #: ../../docs/user_guide/configuring.rst:598
 msgid "Add an Edit this Page button"
-msgstr ""
+msgstr "添加“编辑此页面”按钮"
 
 #: ../../docs/user_guide/configuring.rst:600
 msgid ""
@@ -613,6 +675,8 @@ msgid ""
 "include this button in the right sidebar of each page, add the following "
 "configuration to your ``conf.py`` file in 'html_theme_options':"
 msgstr ""
+"你可以在每个页面上添加一个按钮，允许用户直接编辑页面文本，并提交 pull request 来更新文档。"
+"要将此按钮包含在每个页面的右侧栏中，请在 'html_theme_options' 中将以下配置添加到 ``conf.py`` 文件中："
 
 #: ../../docs/user_guide/configuring.rst:611
 msgid ""
@@ -620,6 +684,8 @@ msgid ""
 "including GitHub, GitLab, and Bitbucket. For each, the default public "
 "instance URL can be replaced with a self-hosted instance."
 msgstr ""
+"许多 provider 都可以用来构建 *Edit this Page* 链接，包括 GitHub、GitLab 和 Bitbucket。"
+"对于每个实例，默认的公共实例 URL 可以替换为自托管的实例。"
 
 #: ../../docs/user_guide/configuring.rst:617
 msgid "GitHub"
@@ -635,7 +701,7 @@ msgstr ""
 
 #: ../../docs/user_guide/configuring.rst:659
 msgid "Custom Edit URL"
-msgstr ""
+msgstr "自定义编辑URL"
 
 #: ../../docs/user_guide/configuring.rst:661
 msgid ""
@@ -643,10 +709,11 @@ msgid ""
 "``edit_page_url_template``, a jinja2 template string which must contain "
 "``{{ file_name }}``, and may reference any other context values."
 msgstr ""
+"对于完全定制的 *Edit this Page* URL，提供 ``edit_page_url_template``，jinja2 模板字符串，必须包含 ``{{ file_name }}``，并可以引用任何其他上下文值。"
 
 #: ../../docs/user_guide/configuring.rst:675
 msgid "Configure the search bar position"
-msgstr ""
+msgstr "配置搜索栏位置"
 
 #: ../../docs/user_guide/configuring.rst:677
 msgid ""
@@ -654,18 +721,21 @@ msgid ""
 "template to your **sidebar**, or to one of the **navbar** positions, "
 "depending on where you want it to be placed."
 msgstr ""
+"要修改搜索栏的位置，请将 ``search-field.html`` 模板添加到你的 **sidebar** 或 **navbar** 位置，这取决于你希望它被放置的位置。"
 
 #: ../../docs/user_guide/configuring.rst:681
 msgid ""
 "For example, if you'd like the search field to be in your side-bar, add "
 "it to the sidebar templates like so:"
 msgstr ""
+"例如，如果你想把搜索栏放在侧边栏，把它添加到侧边栏模板中，就像这样："
 
 #: ../../docs/user_guide/configuring.rst:690
 msgid ""
 "If instead you'd like to put the search bar in the top navbar, use the "
 "following configuration:"
 msgstr ""
+"如果你想把搜索栏放在顶部导航栏，使用下面的配置："
 
 #: ../../docs/user_guide/configuring.rst:701
 msgid ""
@@ -673,30 +743,33 @@ msgid ""
 "it to the navbar, explicitly define a list of sidebar templates in "
 "`html_sidebars` and omit the `search-field.html` entry."
 msgstr ""
+"默认情况下，搜索栏位于侧边栏。如果你想把它移到导航栏，显式地在 `html_sidebars` 中定义一个侧边栏模板列表，省略 `search-field.html` 条目。"
 
 #: ../../docs/user_guide/configuring.rst:705
 msgid "Configure the search bar text"
-msgstr ""
+msgstr "配置搜索栏文本"
 
 #: ../../docs/user_guide/configuring.rst:707
 msgid ""
 "To modify the text that is in the search bar before people click on it, "
 "add the following configuration to your ``conf.py`` file:"
 msgstr ""
+"要在人们点击搜索栏之前修改它的文本，请在你的 ``conf.py`` 文件中添加以下配置："
 
 #: ../../docs/user_guide/configuring.rst:718
 msgid "Google Analytics"
-msgstr ""
+msgstr "Google 分析"
 
 #: ../../docs/user_guide/configuring.rst:720
 msgid ""
 "If the ``google_analytics_id`` config option is specified (like ``UA-"
 "XXXXXXX``), Google Analytics' javascript is included in the html pages."
 msgstr ""
+"如果 ``google_analytics_id`` 配置选项被指定（像 ``UA-XXXXXXX``），谷歌 Analytics' javascript 包含在 html 页面中。"
 
 #: ../../docs/user_guide/configuring.rst:731
 msgid "Changing pages with keyboard presses"
-msgstr ""
+msgstr "用键盘按键改变页面"
 
 #: ../../docs/user_guide/configuring.rst:733
 msgid ""
@@ -704,10 +777,11 @@ msgid ""
 "previous/next page using the left/right arrow keys on a keyboard. To "
 "disable this behavior, use the following configuration:"
 msgstr ""
+"默认情况下，``pydata-sphinx-theme`` 允许用户使用键盘上的左/右箭头键移动到上/下一页。要禁用此行为，请使用以下配置："
 
 #: ../../docs/user_guide/configuring.rst:745
 msgid "Show more levels of the in-page TOC by default"
-msgstr ""
+msgstr "默认情况下显示页内 TOC 的更多级别"
 
 #: ../../docs/user_guide/configuring.rst:747
 msgid ""
@@ -715,70 +789,79 @@ msgid ""
 " of contents, and deeper levels are only shown when they are part of an "
 "active section (when it is scrolled on screen)."
 msgstr ""
+"通常情况下，只有第二级页眉才会显示在正确的目录中，而更深层的页眉只会显示在活动的部分中（当它在屏幕上滚动时）。"
 
 #: ../../docs/user_guide/configuring.rst:751
 msgid ""
 "You can show deeper levels by default by using the following "
 "configuration, indicating how many levels should be displayed:"
 msgstr ""
+"默认情况下，你可以通过使用以下配置显示更深的级别，表明应该显示多少级别："
 
 #: ../../docs/user_guide/configuring.rst:759
 msgid ""
 "All headings up to and including the level specified will now be shown "
 "regardless of what is displayed on the page."
 msgstr ""
+"所有的标题，包括指定的级别，现在将显示，无论在页面上显示什么。"
 
 #: ../../docs/user_guide/configuring.rst:764
 msgid "Remove the sidebar from some pages"
-msgstr ""
+msgstr "从一些页面中删除侧边栏"
 
 #: ../../docs/user_guide/configuring.rst:766
 msgid ""
 "If you'd like the left sidebar to be removed from a page, you can use the"
 " following configuration in ``conf.py``:"
 msgstr ""
+"如果你想从页面中删除左边栏，你可以在 ``conf.py`` 中使用以下配置："
 
 #: ../../docs/user_guide/configuring.rst:775
 msgid "This works for glob-style patterns as well. For example:"
-msgstr ""
+msgstr "这也适用于 glob-style 的模式。例如："
 
 #: ../../docs/user_guide/configuring.rst:783
 msgid ""
 "If you'd like to remove the left sidebar from **all** pages of your "
 "documentation, use this pattern:"
 msgstr ""
+"如果你想从文档的 **所有** 页中删除左边栏，请使用下面的模式："
 
 #: ../../docs/user_guide/configuring.rst:792
 msgid ""
 "For information about configuring the sidebar's contents, see :ref"
 ":`configure-sidebar`."
 msgstr ""
+"关于配置侧边栏内容的信息，请参见 :ref:`configure-sidebar`。"
 
 #: ../../docs/user_guide/configuring.rst:796
 msgid "Configure the navbar center alignment"
-msgstr ""
+msgstr "配置导航栏居中对齐"
 
 #: ../../docs/user_guide/configuring.rst:798
 msgid ""
 "By default, the navigation bar center area will align with the content on"
 " your page. This equals the following default configuration:"
 msgstr ""
+"默认情况下，导航栏的中心区域将与页面上的内容对齐。这等于下面的默认配置："
 
 #: ../../docs/user_guide/configuring.rst:809
 msgid ""
 "If instead you'd like these items to snap to the left (closer to the "
 "logo), use this configuration:"
 msgstr ""
+"如果你想要这些项目对齐到左边（更靠近 logo），使用这个配置："
 
 #: ../../docs/user_guide/configuring.rst:820
 msgid ""
 "If you'd like these items to snap to the right of the page, use this "
 "configuration:"
 msgstr ""
+"如果你想把这些项目对齐到页面右侧，请使用下面的配置："
 
 #: ../../docs/user_guide/configuring.rst:831
 msgid "Adding ethical advertisements to your sidebar in ReadTheDocs"
-msgstr ""
+msgstr "在 ReadTheDocs 的侧边栏添加 ethical 广告"
 
 #: ../../docs/user_guide/configuring.rst:833
 msgid ""
@@ -787,6 +870,8 @@ msgid ""
 "are non-tracking advertisements from ethical companies, and they help "
 "ReadTheDocs sustain themselves and their free service."
 msgstr ""
+"如果你把你的文档放在 ReadTheDocs 上，你应该考虑为他们的 **ethical advertisements** 添加明确的位置。"
+"这些都是来自有 ethical 的公司的非追踪广告，它们帮助 ReadTheDocs 维持自己和他们的免费服务。"
 
 #: ../../docs/user_guide/configuring.rst:838
 msgid ""
@@ -794,14 +879,16 @@ msgid ""
 "they are there if you manually update your sidebar, ensure that the "
 "``sidebar-ethical-ads.html`` template is added to your list. For example:"
 msgstr ""
+"Ethical 广告会默认添加到你的侧边栏。"
+"如果你手动更新你的侧边栏，为了确保它们存在，请确保 ``sidebar-ethical-ads.html`` 模板已经添加到你的列表中。例如："
 
 #: ../../docs/user_guide/configuring.rst:849
 msgid "Configuration options for pydata-sphinx-theme"
-msgstr ""
+msgstr "pydata-sphinx-theme 的配置选项"
 
 #: ../../docs/user_guide/configuring.rst:854
 msgid "Improve build speed and performance"
-msgstr ""
+msgstr "提高构建速度和性能"
 
 #: ../../docs/user_guide/configuring.rst:856
 msgid ""
@@ -811,10 +898,13 @@ msgid ""
 "most common with documentation for projects with a large API, which use "
 "the ``.. autosummary::`` directive to generate API documentation."
 msgstr ""
+"默认情况下，这个主题在可折叠的侧边栏中包含所有的文档链接。"
+"但是，如果您有很多文档页面，这可能会大大降低您的文档构建速度。"
+"这是最常见的文档项目与大型 API，使用 ``.. autosummary::`` 指令生成 API 文档。"
 
 #: ../../docs/user_guide/configuring.rst:862
 msgid ""
 "To improve the performance of your builds in these cases, see :ref"
 ":`navigation-depth`."
 msgstr ""
-
+"在这些情况下，要提高构建的性能，请参阅 :ref:`navigation-depth`。"

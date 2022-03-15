@@ -59,22 +59,25 @@ msgid ""
 "**Attach the stylesheet to your Sphinx build**. Add the following to "
 "``conf.py``"
 msgstr ""
+"**将样式表附加到 Sphinx 构建中**。将以下内容添加到 ``conf.py`` 中"
 
 #: ../../docs/user_guide/customizing.rst:31
 msgid ""
 "When you build your documentation, this stylesheet should now be "
 "activated."
 msgstr ""
+"当您构建文档时，这个样式表现在应该被激活。"
 
 #: ../../docs/user_guide/customizing.rst:36
 msgid "CSS Theme variables"
-msgstr ""
+msgstr "CSS 主题变量"
 
 #: ../../docs/user_guide/customizing.rst:38
 msgid ""
 "This theme defines several `CSS variables <css-variable-help_>`_ that can"
 " be used to quickly control behavior across your documentation."
 msgstr ""
+"这个主题定义了几个 `CSS 变量 <css-variable-help_>`_，可以用来快速控制整个文档的行为。"
 
 #: ../../docs/user_guide/customizing.rst:41
 msgid ""
@@ -84,16 +87,19 @@ msgid ""
 "all variables and every default is defined in `the pydata default CSS "
 "variables file <pydata-css-variables_>`_."
 msgstr ""
+"这些是基于基本的 `Bootstrap CSS 变量 <https://getbootstrap.com/docs/4.0/getting-started/theming/#css-variables>`_ 扩展了一些主题特定的变量。"
+"所有变量和每个默认值的概述都定义在 `pydata 默认 CSS 变量文件 <pydata-css-variables_>`_。"
 
 #: ../../docs/user_guide/customizing.rst:45
 msgid "In order to change a variable, follow these steps:"
-msgstr ""
+msgstr "要更改变量，请遵循以下步骤："
 
 #: ../../docs/user_guide/customizing.rst:47
 msgid ""
 ":ref:`Add a custom CSS stylesheet <custom-css>`. This is where we'll "
 "configure the variables."
 msgstr ""
+":ref:`添加自定义的 CSS 样式表 <custom-css>` 这就是我们配置变量的地方。"
 
 #: ../../docs/user_guide/customizing.rst:48
 msgid ""
@@ -101,6 +107,8 @@ msgid ""
 " example, to update the base font size, you might add this to "
 "``custom.css``:"
 msgstr ""
+"在 ``:root`` 部分下面，添加你想要更新的变量。"
+"例如，要更新基本字体大小，你可以把它添加到 ``custom.css`` 中："
 
 #: ../../docs/user_guide/customizing.rst:59
 msgid ""
@@ -108,16 +116,19 @@ msgid ""
 "variables <https://sass-lang.com/documentation/variables>`_. The theme is"
 " defined with CSS variables, not SASS variables!"
 msgstr ""
+"注意这些是 `CSS 变量 <css-variable-help_>`_ 而不是 `SASS 变量 <https://sass-lang.com/documentation/variables>`_。"
+"主题是用 CSS 变量定义的，而不是 SASS 变量！"
 
 #: ../../docs/user_guide/customizing.rst:63
 msgid ""
 "For a complete list of the theme variables that you may override, see the"
 " `theme variables defaults CSS file <pydata-css-variables_>`_:"
 msgstr ""
+"关于你可以覆盖的主题变量的完整列表，请参阅 `主题变量默认 CSS 文件 <pydata-css-variables_>`_："
 
 #: ../../docs/user_guide/customizing.rst:71
 msgid "Replacing/Removing Fonts"
-msgstr ""
+msgstr "替换/删除字体"
 
 #: ../../docs/user_guide/customizing.rst:73
 msgid ""
@@ -128,6 +139,9 @@ msgid ""
 "by default relies on available system fonts for normal body text and "
 "headers."
 msgstr ""
+"主题包括 `FontAwesome 5 Free <https://fontawesome.com/icons?m=free>`__ "
+"图标字体（``.fa, .far, .fas`` 样式，用于 :ref:`icon links <icon-links>` 和警告)。"
+"这是唯一的 `vendored` 字体，否则主题默认依赖于正常的正文文本和标题可用的系统字体。"
 
 #: ../../docs/user_guide/customizing.rst:81
 msgid ""
@@ -136,10 +150,12 @@ msgid ""
 "both better performance, and better script/glyph coverage than custom "
 "fonts, and is recommended in most cases."
 msgstr ""
+"以前包括的字体，如 `Lato` 已经被删除，而选择读者计算机最常见的默认系统字体。"
+"这比自定义字体提供了更好的性能和更好的脚本/符号覆盖率，在大多数情况下都是推荐的。"
 
 #: ../../docs/user_guide/customizing.rst:86
 msgid "The default body and header fonts can be changed as follows:"
-msgstr ""
+msgstr "默认的正文和标题字体可以更改如下："
 
 #: ../../docs/user_guide/customizing.rst:88
 msgid ""
@@ -147,12 +163,15 @@ msgid ""
 "header and monospace text. For example, the following can be added to a "
 "custom css file:"
 msgstr ""
+"使用 :ref:`custom-css`，你可以指定正文、标题和单空格文本使用的字体。"
+"例如，以下内容可以添加到自定义 css 文件中："
 
 #: ../../docs/user_guide/customizing.rst:100
 msgid ""
 "The ``-system`` variables are available to use as fallback to the default"
 " fonts."
 msgstr ""
+"``-system`` 变量可用于回退到默认字体。"
 
 #: ../../docs/user_guide/customizing.rst:102
 msgid ""
@@ -162,12 +181,15 @@ msgid ""
 "``_static`` directory of your Sphinx site, and then update the base "
 "template to load the font resources:"
 msgstr ""
+"如果你在上面一节中指定的字体在默认情况下通常是不可用的，你还需要确保字体被加载。"
+"例如，你可以在 Sphinx 网站的 ``_static`` 目录下下载并提供字体，然后更新基本模板来加载字体资源："
 
 #: ../../docs/user_guide/customizing.rst:107
 msgid ""
 "Configure the `template_path <https://www.sphinx-"
 "doc.org/en/master/theming.html#templating>`__ in your ``conf.py``"
 msgstr ""
+"在你的 ``conf.py`` 中配置 `template_path <https://www.sphinx-doc.org/en/master/theming.html#templating>`__"
 
 #: ../../docs/user_guide/customizing.rst:109
 msgid ""
@@ -175,6 +197,7 @@ msgid ""
 "``fonts`` block (example for loading the Lato font that is included in "
 "the ``_static/vendor`` directory):"
 msgstr ""
+"创建自定义的 ``layout.html`` Jinja2 模板，它会重载 ``fonts`` 块（例如加载包含在 ``_static/vendor`` 目录中的 Lato 字体）："
 
 #: ../../docs/user_guide/customizing.rst:123
 msgid ""
@@ -184,8 +207,11 @@ msgid ""
 " files. This ensure the files will be loaded before waiting for the CSS "
 "to be parsed, but should be used with care."
 msgstr ""
+"为了减少 `Flash of Unstyled Content`，"
+"你可能希望探索各种选项的 `预加载内容  <https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content>`__，"
+"特别是二进制字体文件。这可以确保在 CSS 被解析之前加载文件，但应该小心使用。"
 
 #: ../../docs/user_guide/customizing.rst:131
 msgid "Advanced customization of pydata-sphinx-theme's HTML and CSS."
-msgstr ""
+msgstr "pydata-sphinx-theme 的 HTML 和 CSS 的高级定制。"
 
