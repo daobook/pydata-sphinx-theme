@@ -13,7 +13,7 @@ from sphinx.util import logging
 
 from .bootstrap_html_translator import BootstrapHTML5Translator
 
-__version__ = "0.9.0.dev0"
+__version__ = "0.8.1"
 
 logger = logging.getLogger(__name__)
 
@@ -407,7 +407,7 @@ def index_toctree(app, pagename: str, startdepth: int, collapse: bool = True, **
     except IndexError:
         # eg for index.rst, but also special pages such as genindex, py-modindex, search
         # those pages don't have a "current" element in the toctree, so we can
-        # directly return an emtpy string instead of using the default sphinx
+        # directly return an empty string instead of using the default sphinx
         # toctree.get_toctree_for(pagename, app.builder, collapse, **kwargs)
         return ""
 
