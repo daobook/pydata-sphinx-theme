@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>5.3.14. Sub-sub-page 14 &#8212; PyData Sphinx Theme 0.9.0.dev0 文档</title>
+    <title>5.3.14. Sub-sub-page 14 &#8212; PyData Sphinx Theme 0.8.1 文档</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,7 +35,7 @@
     <script src="../../../_static/thebelab-helper.js"></script>
     <script src="../../../_static/translations.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <link rel="canonical" href="http://127.0.0.1:8000/demo/subpages/subsubpages/subsubpage14.html" />
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -112,7 +112,7 @@
       <div class="navbar-end-item">
         <div class="dropdown" id="version_switcher">
     <button type="button" class="btn btn-primary btn-sm navbar-btn dropdown-toggle" id="version_switcher_button" data-toggle="dropdown">
-        latest  <!-- this text may get changed later by javascript -->
+        v0.8.1  <!-- this text may get changed later by javascript -->
         <span class="caret"></span>
     </button>
     <div id="version_switcher_menu" class="dropdown-menu list-group-flush py-0" aria-labelledby="version_switcher_button">
@@ -122,7 +122,7 @@
 
 <!-- NOTE: this JS must live here (not in our global JS file) because it relies
      on being processed by Jinja before it is run (specifically for replacing
-     variables demo/subpages/subsubpages/subsubpage14 and {'json_url': '/_static/switcher.json', 'version_match': 'latest'}.
+     variables demo/subpages/subsubpages/subsubpage14 and {'json_url': 'https://daobook.github.io/pydata-sphinx-theme/_static/switcher.json', 'version_match': 'v0.8.1'}.
 -->
 
 <script type="text/javascript">
@@ -149,7 +149,7 @@ function checkPageExistsAndRedirect(event) {
 
 // Populate the version switcher from the JSON config file
 (function () {
-    $.getJSON("/_static/switcher.json", function(data, textStatus, jqXHR) {
+    $.getJSON("https://daobook.github.io/pydata-sphinx-theme/_static/switcher.json", function(data, textStatus, jqXHR) {
         const currentFilePath = "demo/subpages/subsubpages/subsubpage14.html";
         // create links to the corresponding page in the other docs versions
         $.each(data, function(index, entry) {
@@ -176,7 +176,7 @@ function checkPageExistsAndRedirect(event) {
             // this version, rather than using sphinx's  variable.
             // also highlight the dropdown entry for the currently-viewed
             // version's entry
-            if (entry.version == "latest") {
+            if (entry.version == "v0.8.1") {
                 node.classList.add("active");
                 let btn = document.getElementById("version_switcher_button");
                 btn.innerText = btn.dataset["activeVersionName"] = entry.name;
@@ -548,7 +548,7 @@ Aliquam accumsan feugiat ligula, nec fringilla libero commodo sed. Proin et erat
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
 </p>
     </div>
     
