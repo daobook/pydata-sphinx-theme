@@ -8,10 +8,14 @@
 <meta content="为希望使用 pydata-sphinx-theme 构建 sphinx 站点的用户提供的文档。" lang="en" name="description" xml:lang="en" />
 
     <title>用户指南 &#8212; PyData Sphinx Theme 0.8.1 文档</title>
+    <script>
+      document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+      document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+    </script>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=fb52004a9691e5b75515" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=fb52004a9691e5b75515" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -27,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=fb52004a9691e5b75515">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -49,7 +53,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60" data-default-mode="">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -67,7 +71,7 @@
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="fas fa-bars"></span>
   </button>
 
   
@@ -109,6 +113,14 @@
     </div>
 
     <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
       
       <div class="navbar-end-item">
         <div class="dropdown" id="version_switcher">
@@ -305,6 +317,8 @@ function checkPageExistsAndRedirect(event) {
 <li class="toctree-l1"><a class="reference internal" href="install.html">安装</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuring.html">配置</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="configuring.html#configure-project-logo">配置项目 logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuring.html#configure-default-theme">Configure default theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuring.html#configure-pygment-theme">Configure pygment theme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="configuring.html#configure-icon-links">配置 icon 链接</a></li>
 <li class="toctree-l2"><a class="reference internal" href="configuring.html#adding-external-links-to-your-nav-bar">添加外部链接到你的导航栏</a></li>
 <li class="toctree-l2"><a class="reference internal" href="configuring.html#adding-favicons">添加 favicon</a></li>
@@ -336,6 +350,7 @@ function checkPageExistsAndRedirect(event) {
 </li>
 <li class="toctree-l1"><a class="reference internal" href="customizing.html">自定义主题</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="customizing.html#custom-css-stylesheets">自定义主题样式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="customizing.html#manage-themes">Manage themes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="customizing.html#css-theme-variables">CSS 主题变量</a></li>
 <li class="toctree-l2"><a class="reference internal" href="customizing.html#replacing-removing-fonts">替换/删除字体</a></li>
 </ul>
@@ -380,7 +395,7 @@ function checkPageExistsAndRedirect(event) {
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=fb52004a9691e5b75515"></script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     

@@ -8,10 +8,14 @@
 <meta content="pydata-sphinx-theme 的配置选项" lang="en" name="description" xml:lang="en" />
 
     <title>配置 &#8212; PyData Sphinx Theme 0.8.1 文档</title>
+    <script>
+      document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+      document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+    </script>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=fb52004a9691e5b75515" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=fb52004a9691e5b75515" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -27,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=fb52004a9691e5b75515">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -49,7 +53,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60" data-default-mode="">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -67,7 +71,7 @@
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="fas fa-bars"></span>
   </button>
 
   
@@ -109,6 +113,14 @@
     </div>
 
     <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
       
       <div class="navbar-end-item">
         <div class="dropdown" id="version_switcher">
@@ -281,6 +293,16 @@ function checkPageExistsAndRedirect(event) {
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configure-default-theme">
+   Configure default theme
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configure-pygment-theme">
+   Configure pygment theme
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#configure-icon-links">
    配置 icon 链接
   </a>
@@ -291,8 +313,8 @@ function checkPageExistsAndRedirect(event) {
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#local-image-icons">
-     本地图像图标
+    <a class="reference internal nav-link" href="#image-icons">
+     Image icons
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -514,8 +536,33 @@ function checkPageExistsAndRedirect(event) {
 </pre></div>
 </div>
 </section>
+<section id="configure-default-theme">
+<span id="icon-links"></span><h2>Configure default theme<a class="headerlink" href="#configure-default-theme" title="永久链接至标题">#</a></h2>
+<p>The theme mode can be changed by the user. By default landing on the documentation will switch the mode to <code class="docutils literal notranslate"><span class="pre">auto</span></code>. You can specified this value to be one of <code class="docutils literal notranslate"><span class="pre">auto</span></code>, <code class="docutils literal notranslate"><span class="pre">dark</span></code>, <code class="docutils literal notranslate"><span class="pre">light</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_context</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="o">...</span>
+   <span class="s2">&quot;default_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="configure-pygment-theme">
+<h2>Configure pygment theme<a class="headerlink" href="#configure-pygment-theme" title="永久链接至标题">#</a></h2>
+<p>As the Sphinx theme supports multiple modes, the code highlighting colors can be modified for each one of them by modifying the <cite>pygment_light_style`and `pygment_style_style</cite>. You can check available Pygments colors on this <a class="reference external" href="https://help.farbox.com/pygments.html">page</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_contexts</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="o">...</span>
+   <span class="s2">&quot;pygment_light_style&quot;</span><span class="p">:</span> <span class="s2">&quot;tango&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;pygment_dark_style&quot;</span><span class="p">:</span> <span class="s2">&quot;native&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">危险</p>
+<p>The native Sphinx option <cite>pygments_style</cite> will be overwritten by this theme.</p>
+</div>
+</section>
 <section id="configure-icon-links">
-<span id="icon-links"></span><h2>配置 icon 链接<a class="headerlink" href="#configure-icon-links" title="永久链接至标题">#</a></h2>
+<h2>配置 icon 链接<a class="headerlink" href="#configure-icon-links" title="永久链接至标题">#</a></h2>
 <p>你可以添加图标链接显示在主导航栏的右侧。</p>
 <p>这些链接的形式如下：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -528,8 +575,8 @@ function checkPageExistsAndRedirect(event) {
             <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/&lt;your-org&gt;/&lt;your-repo&gt;&quot;</span><span class="p">,</span>  <span class="c1"># required</span>
             <span class="c1"># Icon class (if &quot;type&quot;: &quot;fontawesome&quot;), or path to local image (if &quot;type&quot;: &quot;local&quot;)</span>
             <span class="s2">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;fab fa-github-square&quot;</span><span class="p">,</span>
-            <span class="c1"># Whether icon should be a FontAwesome class, or a local file</span>
-            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;fontawesome OR local&quot;</span><span class="p">,</span>  <span class="c1"># Default is fontawesome</span>
+            <span class="c1"># The type of image to be used (see below for details)</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;fontawesome&quot;</span><span class="p">,</span>
         <span class="p">}</span>
    <span class="p">]</span>
 <span class="p">}</span>
@@ -578,9 +625,29 @@ function checkPageExistsAndRedirect(event) {
 <p>这已经被添加到有 <em>shortcuts</em> 的 brand。</p>
 </div>
 </section>
-<section id="local-image-icons">
-<h3>本地图像图标<a class="headerlink" href="#local-image-icons" title="永久链接至标题">#</a></h3>
-<p>“如果你想显示不在 FontAwesome 图标库中的图标图像，你可以指定用于图标的本地图像的路径。要做到这一点，使用  <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;local&quot;</span></code>，并在 <code class="docutils literal notranslate"><span class="pre">icon</span></code> 值中添加相对于您的 <strong>文档根目录</strong> 的图片路径。下面是一个例子：</p>
+<section id="image-icons">
+<h3>Image icons<a class="headerlink" href="#image-icons" title="永久链接至标题">#</a></h3>
+<p>If you’d like to display an icon image that is not in the FontAwesome icons library,
+you may instead specify a URL or a path to a local image that will be used for the icon.</p>
+<p><strong>To display an image on the web</strong>, use <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;url&quot;</span></code>, and provide a URL to an image in the <code class="docutils literal notranslate"><span class="pre">icon</span></code> value.
+For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="o">...</span>
+    <span class="s2">&quot;icon_links&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pandas&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://pandas.pydata.org&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/master/docs/_static/pandas-square.svg&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;url&quot;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">],</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>To display a local image from a file path</strong>, use <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;local&quot;</span></code>, and add a path to an image
+relative to your documentation root in the <code class="docutils literal notranslate"><span class="pre">icon</span></code> value.
+For example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;icon_links&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1097,7 +1164,7 @@ function checkPageExistsAndRedirect(event) {
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=fb52004a9691e5b75515"></script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     

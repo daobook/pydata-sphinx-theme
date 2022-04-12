@@ -8,10 +8,14 @@
 <meta content="pydata-sphinx-theme 的 HTML 和 CSS 的高级定制。" lang="en" name="description" xml:lang="en" />
 
     <title>自定义主题 &#8212; PyData Sphinx Theme 0.8.1 文档</title>
+    <script>
+      document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+      document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+    </script>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=fb52004a9691e5b75515" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=fb52004a9691e5b75515" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -27,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=fb52004a9691e5b75515">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -49,7 +53,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60" data-default-mode="">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -67,7 +71,7 @@
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="fas fa-bars"></span>
   </button>
 
   
@@ -109,6 +113,14 @@
     </div>
 
     <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
       
       <div class="navbar-end-item">
         <div class="dropdown" id="version_switcher">
@@ -281,6 +293,11 @@ function checkPageExistsAndRedirect(event) {
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manage-themes">
+   Manage themes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#css-theme-variables">
    CSS 主题变量
   </a>
@@ -321,6 +338,13 @@ function checkPageExistsAndRedirect(event) {
   <section id="customizing-the-theme">
 <span id="customizing"></span><h1>自定义主题<a class="headerlink" href="#customizing-the-theme" title="永久链接至标题">#</a></h1>
 <p>除了在 <a class="reference internal" href="configuring.html#configuration"><span class="std std-ref">配置</span></a> 中详细介绍的配置选项外，还可以自定义主题的 HTML 布局和 CSS 样式。</p>
+<div class="admonition danger">
+<p class="admonition-title">危险</p>
+<p>This theme is still under active development, and we make no promises
+about the stability of any specific HTML structure, CSS variables, etc.
+Make these customizations at your own risk, and pin versions if you’re
+worried about breaking changes!</p>
+</div>
 <section id="custom-css-stylesheets">
 <span id="custom-css"></span><h2>自定义主题样式<a class="headerlink" href="#custom-css-stylesheets" title="永久链接至标题">#</a></h2>
 <p>你可以通过创建定制样式表来定制主题的 CSS, Sphinx 使用它来构建你的网站。这个样式表中的任何规则都将覆盖默认的主题规则。</p>
@@ -339,6 +363,36 @@ html_css_files = [
 </ol>
 <p>当您构建文档时，这个样式表现在应该被激活。</p>
 </section>
+<section id="manage-themes">
+<span id="id1"></span><h2>Manage themes<a class="headerlink" href="#manage-themes" title="永久链接至标题">#</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">危险</p>
+<p>Theming is still a beta feature so the variables related to the theme switch are likely to change in the future. No backward compatibily is guaranteed when customization is done.</p>
+</div>
+<p>Pydata sphinx theme embed 3 different theming mode:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>: the documentation theme will follow the one provided by your computer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dark</span></code>: the documentation is displayed with the dark theme</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">light</span></code>: the documentation is displayed with the light theme</p></li>
+</ul>
+<p>In order to customize the display of any of the theme element you need to encaspulate your modifications in the approriate css rules:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* anything related to the light theme */</span><span class="w"></span>
+<span class="nt">html</span><span class="o">[</span><span class="nt">data-theme</span><span class="o">=</span><span class="s2">&quot;light&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="c">/* whatever you want to change */</span><span class="w"></span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c">/* anything related to the dark theme */</span><span class="w"></span>
+<span class="nt">html</span><span class="o">[</span><span class="nt">data-theme</span><span class="o">=</span><span class="s2">&quot;dark&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="c">/* whatever you want to change */</span><span class="w"></span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">black</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>A complete list of the used colors for this theme can be found in the <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/assets/style/color.scss">pydata default css colors file</a>.</p>
+</section>
 <section id="css-theme-variables">
 <span id="css-variables"></span><h2>CSS 主题变量<a class="headerlink" href="#css-theme-variables" title="永久链接至标题">#</a></h2>
 <p>这个主题定义了几个 <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 变量</a>，可以用来快速控制整个文档的行为。</p>
@@ -356,7 +410,10 @@ html_css_files = [
 </ol>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
-<p>注意这些是 <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 变量</a> 而不是 <a class="reference external" href="https://sass-lang.com/documentation/variables">SASS 变量</a>。主题是用 CSS 变量定义的，而不是 SASS 变量！</p>
+<p>Note that these are <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS variables</a> and not
+<a class="reference external" href="https://sass-lang.com/documentation/variables">SASS variables</a>.
+The theme is defined with CSS variables, not SASS variables! Refer to the previous section if
+you desire a different behavior between the light and dark theme.</p>
 </div>
 <p>关于你可以覆盖的主题变量的完整列表，请参阅 <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static/styles/theme.css">主题变量默认 CSS 文件</a>：</p>
 <div class="highlight-CSS notranslate"><div class="highlight"><pre><span></span><span class="c">/* Provided by Sphinx&#39;s &#39;basic&#39; theme, and included in the final set of assets */</span><span class="w"></span>
@@ -402,46 +459,6 @@ html_css_files = [
 <span class="w">  </span><span class="nv">--pst-font-family-monospace</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-font-family-monospace-system</span><span class="p">);</span><span class="w"></span>
 
 <span class="w">  </span><span class="c">/*****************************************************************************</span>
-<span class="c">  * Color</span>
-<span class="c">  *</span>
-<span class="c">  * Colors are defined in rgb string way, &quot;red, green, blue&quot;</span>
-<span class="c">  **/</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-primary</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">84</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-success</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">167</span><span class="p">,</span><span class="w"> </span><span class="mi">69</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-info</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"> </span><span class="c">/*23, 162, 184;*/</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-warning</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">193</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-danger</span><span class="p">:</span><span class="w"> </span><span class="mi">220</span><span class="p">,</span><span class="w"> </span><span class="mi">53</span><span class="p">,</span><span class="w"> </span><span class="mi">69</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-text-base</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w"> </span><span class="mi">51</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">  </span><span class="nv">--pst-color-h1</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-primary</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-h2</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-primary</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-h3</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-h4</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-h5</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-h6</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-paragraph</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-text-base</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-link</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">91</span><span class="p">,</span><span class="w"> </span><span class="mi">129</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-link-hover</span><span class="p">:</span><span class="w"> </span><span class="mi">227</span><span class="p">,</span><span class="w"> </span><span class="mi">46</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-headerlink</span><span class="p">:</span><span class="w"> </span><span class="mi">198</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-headerlink-hover</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-preformatted-text</span><span class="p">:</span><span class="w"> </span><span class="mi">34</span><span class="p">,</span><span class="w"> </span><span class="mi">34</span><span class="p">,</span><span class="w"> </span><span class="mi">34</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-preformatted-background</span><span class="p">:</span><span class="w"> </span><span class="mi">250</span><span class="p">,</span><span class="w"> </span><span class="mi">250</span><span class="p">,</span><span class="w"> </span><span class="mi">250</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-inline-code</span><span class="p">:</span><span class="w"> </span><span class="mi">232</span><span class="p">,</span><span class="w"> </span><span class="mi">62</span><span class="p">,</span><span class="w"> </span><span class="mi">140</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">  </span><span class="nv">--pst-color-active-navigation</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">84</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-navbar-link</span><span class="p">:</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-navbar-link-hover</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-navbar-link-active</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-sidebar-link</span><span class="p">:</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-sidebar-link-hover</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-sidebar-link-active</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-sidebar-expander-background-hover</span><span class="p">:</span><span class="w"> </span><span class="mi">244</span><span class="p">,</span><span class="w"> </span><span class="mi">244</span><span class="p">,</span><span class="w"> </span><span class="mi">244</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-sidebar-caption</span><span class="p">:</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">,</span><span class="w"> </span><span class="mi">77</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-toc-link</span><span class="p">:</span><span class="w"> </span><span class="mi">119</span><span class="p">,</span><span class="w"> </span><span class="mi">117</span><span class="p">,</span><span class="w"> </span><span class="mi">122</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-toc-link-hover</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-toc-link-active</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-active-navigation</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">  </span><span class="c">/*****************************************************************************</span>
 <span class="c">  * Icon</span>
 <span class="c">  **/</span><span class="w"></span>
 
@@ -457,17 +474,6 @@ html_css_files = [
 <span class="c">  * Admonitions</span>
 <span class="c">  **/</span><span class="w"></span>
 
-<span class="w">  </span><span class="nv">--pst-color-admonition-default</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-info</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-note</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-info</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-attention</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-warning</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-caution</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-warning</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-warning</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-warning</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-danger</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-danger</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-error</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-danger</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-hint</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-tip</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-admonition-important</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">);</span><span class="w"></span>
-
 <span class="w">  </span><span class="nv">--pst-icon-admonition-default</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-info-circle</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="nv">--pst-icon-admonition-note</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-info-circle</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="nv">--pst-icon-admonition-attention</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
@@ -482,11 +488,6 @@ html_css_files = [
 <span class="w">  </span><span class="c">/*****************************************************************************</span>
 <span class="c">  * versionmodified</span>
 <span class="c">  **/</span><span class="w"></span>
-
-<span class="w">  </span><span class="nv">--pst-color-versionmodified-default</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-info</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-versionmodified-added</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-versionmodified-changed</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-warning</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="nv">--pst-color-versionmodified-deprecated</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-danger</span><span class="p">);</span><span class="w"></span>
 
 <span class="w">  </span><span class="nv">--pst-icon-versionmodified-default</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="nv">--pst-icon-versionmodified-added</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-icon-exclamation-circle</span><span class="p">);</span><span class="w"></span>
@@ -566,7 +567,7 @@ html_css_files = [
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=fb52004a9691e5b75515"></script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     
