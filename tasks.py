@@ -1,10 +1,10 @@
-from invoke import Collection, task
-from _docs import docs, write
-
+from invoke import task
+from d2py.tools.write import site
 
 @task
 def init(ctx):
-    ctx.run('pip install .[dev] --use-feature=in-tree-build')
+    ctx.run('pip install .[doc]')
+    ctx.run('pip install --upgrade nbconvert xarray')
 
-
-ns = Collection(docs, write, init)
+namespace = site('docs', target='output/html')
+namespace.add_task(init)

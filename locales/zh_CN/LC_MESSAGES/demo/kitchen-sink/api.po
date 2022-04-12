@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyData Sphinx Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"POT-Creation-Date: 2022-04-13 01:09+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,22 @@ msgstr ""
 
 #: asyncio.events.AbstractEventLoop.close:8 of
 msgid "No other methods should be called after this one."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_accepted_socket:2 of
+msgid "Handle an accepted connection."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_accepted_socket:4 of
+msgid ""
+"This is used by servers that accept connections outside of asyncio, but "
+"use asyncio to handle connections."
+msgstr ""
+
+#: asyncio.events.AbstractEventLoop.connect_accepted_socket:7 of
+msgid ""
+"This method is a coroutine.  When completed, the coroutine returns a "
+"(transport, protocol) pair."
 msgstr ""
 
 #: asyncio.events.AbstractEventLoop.connect_read_pipe:2 of

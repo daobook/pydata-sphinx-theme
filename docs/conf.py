@@ -10,10 +10,17 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+import pydata_sphinx_theme
 import os
+import sys
 
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+if sys.platform == 'win32':
+    import asyncio
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+
+sys.path.extend([os.path.abspath('.'), os.path.abspath('../src')])
+print((sys.path[-1]))
 
 
 # -- Project information -----------------------------------------------------
@@ -21,8 +28,6 @@ import os
 project = "PyData Sphinx Theme"
 copyright = "2019, PyData Community"
 author = "PyData Community"
-
-import pydata_sphinx_theme
 
 
 # -- General configuration ---------------------------------------------------
@@ -42,7 +47,9 @@ extensions = [
 
 # -- Internationalization ------------------------------------------------
 # specifying the natural language populates some key tags
-language = "en"
+language = 'zh_CN'
+gettext_compact = False  # optional.
+locale_dirs = ['../locales/']
 
 # ReadTheDocs has its own way of generating sitemaps, etc.
 if not os.environ.get("READTHEDOCS"):
@@ -56,8 +63,9 @@ if not os.environ.get("READTHEDOCS"):
 autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ["_templates"]
-
+templates_path = ["_templates",
+                  '../src/pydata_sphinx_theme/'
+                  'theme/pydata_sphinx_theme/_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
@@ -165,7 +173,3 @@ html_static_path = ["_static"]
 
 def setup(app):
     app.add_css_file("custom.css")
-
-language = 'zh_CN'
-gettext_compact = False  # optional.
-locale_dirs = ['../locales/']

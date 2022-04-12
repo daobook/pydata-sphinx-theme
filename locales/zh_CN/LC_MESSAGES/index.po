@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyData Sphinx Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"POT-Creation-Date: 2022-04-13 01:09+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../docs/index.rst:27
+#: ../../docs/index.rst:28
 msgid "Theme Documentation"
 msgstr "主题文档"
 
@@ -31,9 +31,7 @@ msgid ""
 "This is a simple, Bootstrap-based Sphinx theme from the PyData community."
 " This site is a guide for using the theme, and a demo for how it looks "
 "with various elements."
-msgstr ""
-"这是来自 PyData 社区的基于 bootstrap 的简单 Sphinx 主题。"
-"此网站是一个主题使用指南，并演示了它与各种元素的外观。"
+msgstr "这是来自 PyData 社区的基于 bootstrap 的简单 Sphinx 主题。此网站是一个主题使用指南，并演示了它与各种元素的外观。"
 
 #: ../../docs/index.rst:9
 msgid "Other sites that are using this theme:"
@@ -91,17 +89,19 @@ msgstr ""
 msgid ""
 "Jupyter Book beta version uses an extension of this theme: "
 "https://beta.jupyterbook.org"
-msgstr ""
-"Jupyter Book beta 版使用了这个主题的扩展: "
-"https://beta.jupyterbook.org"
+msgstr "Jupyter Book beta 版使用了这个主题的扩展: https://beta.jupyterbook.org"
 
 #: ../../docs/index.rst:24
 msgid "Fairlearn: https://fairlearn.org/main/about/"
 msgstr ""
 
-#: ../../docs/index.rst:41
+#: ../../docs/index.rst:25
+msgid "PyVista: https://docs.pyvista.org"
+msgstr ""
+
+#: ../../docs/index.rst:42
 msgid ""
 "Top-level documentation for pydata-sphinx theme, with links to the rest "
 "of the site."
-msgstr ""
-"pydata-sphinx 主题的顶级文档，以及指向网站其他部分的链接。"
+msgstr "pydata-sphinx 主题的顶级文档，以及指向网站其他部分的链接。"
+

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyData Sphinx Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"POT-Creation-Date: 2022-04-13 01:09+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgstr ""
 #: of pandas.core.frame.DataFrame.groupby:79
 msgid ""
 "See the `user guide <https://pandas.pydata.org/pandas-"
-"docs/stable/groupby.html>`_ for more."
+"docs/stable/groupby.html>`__ for more."
 msgstr ""
 
 #: of pandas.core.frame.DataFrame.groupby:84
@@ -201,4 +201,9 @@ msgid ""
 "We can also choose to include NA in group keys or not by setting `dropna`"
 " parameter, the default setting is `True`:"
 msgstr ""
+
+#~ msgid ""
+#~ "See the `user guide <https://pandas.pydata.org"
+#~ "/pandas-docs/stable/groupby.html>`_ for more."
+#~ msgstr ""
 

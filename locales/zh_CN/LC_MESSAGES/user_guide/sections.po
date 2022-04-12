@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyData Sphinx Theme \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-12 15:12+0800\n"
+"POT-Creation-Date: 2022-04-13 01:09+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,23 +29,21 @@ msgid ""
 "a list of *html templates* - these are snippets of HTML that are inserted"
 " into the section by Sphinx."
 msgstr ""
-"有几个主要的主题 section，你可以自定义添加/删除组件，或添加自己的组件。"
-"每个 section 都配置了一组  *html templates* —— 这些是由 Sphinx 插入到该 section 的 HTML 片段。"
+"有几个主要的主题 section，你可以自定义添加/删除组件，或添加自己的组件。每个 section 都配置了一组  *html "
+"templates* —— 这些是由 Sphinx 插入到该 section 的 HTML 片段。"
 
 #: ../../docs/user_guide/sections.rst:10
 msgid ""
 "You can choose which templates show up in each section, as well as the "
 "order in which they appear. This page describes the major areas that you "
 "can customize."
-msgstr ""
-"你可以选择哪些模板出现在每个 section，以及它们出现的顺序。这个页面描述了您可以自定义的主要领域。"
+msgstr "你可以选择哪些模板出现在每个 section，以及它们出现的顺序。这个页面描述了您可以自定义的主要领域。"
 
 #: ../../docs/user_guide/sections.rst:15
 msgid ""
 "When configuring templates in each section, you may omit the ``.html`` "
 "suffix after each template if you wish."
-msgstr ""
-"当在每个 section 配置模板时，如果你愿意，你可以在每个模板后面省略后缀 ``.html``。"
+msgstr "当在每个 section 配置模板时，如果你愿意，你可以在每个模板后面省略后缀 ``.html``。"
 
 #: ../../docs/user_guide/sections.rst:19
 msgid "The navbar items"
@@ -56,8 +54,7 @@ msgid ""
 "The navbar is at the top of the page, and is broken up into three "
 "sections. Each section is configured in ``conf.py`` with the following "
 "configuration:"
-msgstr ""
-"导航条位于页面顶部，分为三个 section。每个 section 在 ``conf.py`` 中配置如下配置："
+msgstr "导航条位于页面顶部，分为三个 section。每个 section 在 ``conf.py`` 中配置如下配置："
 
 #: ../../docs/user_guide/sections.rst:24
 msgid "Left section: ``html_theme_options['navbar_start']``"
@@ -86,16 +83,15 @@ msgid ""
 "because configuring the sidebar is natively supported in Sphinx, via the "
 "``html_sidebars`` configuration variable."
 msgstr ""
-"左边的侧边栏就在页面 main 内容的左边。"
-"它的配置与其他 section 的配置略有不同，因为配置侧边栏在 Sphinx 中是通过 ``html_sidebars`` 配置变量得到本机支持的。"
+"左边的侧边栏就在页面 main 内容的左边。它的配置与其他 section 的配置略有不同，因为配置侧边栏在 Sphinx 中是通过 "
+"``html_sidebars`` 配置变量得到本机支持的。"
 
 #: ../../docs/user_guide/sections.rst:48
 msgid ""
 "For the left sidebar only, you can configure templates so that they only "
 "show up on certain pages. You do so via a configuration like so in "
 "``conf.py``:"
-msgstr ""
-"对于左侧边栏，你可以配置模板，让它们只显示在特定的页面上。你可以在 ``conf.py`` 中这样配置："
+msgstr "对于左侧边栏，你可以配置模板，让它们只显示在特定的页面上。你可以在 ``conf.py`` 中这样配置："
 
 #: ../../docs/user_guide/sections.rst:57
 msgid ""
@@ -103,8 +99,8 @@ msgid ""
 "templates inserted. You can also ``*`` to do ``glob``-style matching, and"
 " may use ``**`` to match all pages."
 msgstr ""
-"任何匹配 ``<page_pattern>`` 的页面将插入各自的模板。"
-"你也可以用 ``*`` 来做 ``glob`` 风格的匹配，也可以用 ``**`` 来匹配所有的页面。"
+"任何匹配 ``<page_pattern>`` 的页面将插入各自的模板。你也可以用 ``*`` 来做 ``glob`` 风格的匹配，也可以用 "
+"``**`` 来匹配所有的页面。"
 
 #: ../../docs/user_guide/sections.rst:61
 msgid "By default, it has the following configuration:"
@@ -118,15 +114,15 @@ msgstr "左侧边栏结束部分"
 msgid ""
 "There is a special ``<div>`` within the left sidebar that appears at the "
 "bottom of the page, regardless of the content that is above it."
-msgstr ""
-"在页面底部的左边栏中有一个特殊的 ``<div>``，而不管它上面的内容是什么。"
+msgstr "在页面底部的左边栏中有一个特殊的 ``<div>``，而不管它上面的内容是什么。"
 
 #: ../../docs/user_guide/sections.rst:75
 msgid ""
 "To control the HTML templates that are within this div, use "
 "``html_theme_options['left_sidebar_end']`` in ``conf.py``."
 msgstr ""
-"要控制这个 div 中的 HTML 模板，请在 ``conf.py`` 中使用 ``html_theme_options['left_sidebar_end']``。"
+"要控制这个 div 中的 HTML 模板，请在 ``conf.py`` 中使用 "
+"``html_theme_options['left_sidebar_end']``。"
 
 #: ../../docs/user_guide/sections.rst:78 ../../docs/user_guide/sections.rst:95
 #: ../../docs/user_guide/sections.rst:111
@@ -143,7 +139,8 @@ msgid ""
 " configured in ``conf.py`` with "
 "``html_theme_options['page_sidebar_items']``."
 msgstr ""
-"页面内的侧边栏就在页面 main 内容的右侧，在 ``conf.py`` 中配置了 ``html_theme_options['page_sidebar_items']``。"
+"页面内的侧边栏就在页面 main 内容的右侧，在 ``conf.py`` 中配置了 "
+"``html_theme_options['page_sidebar_items']``。"
 
 #: ../../docs/user_guide/sections.rst:106
 msgid "The footer"
@@ -154,20 +151,20 @@ msgid ""
 "The footer is just below a page's main content, and is configured in "
 "``conf.py`` with ``html_theme_options['footer_items']``."
 msgstr ""
-"页脚就在页面的 main 内容下面，并在 ``conf.py`` 中配置了 ``html_theme_options['footer_items']``。"
+"页脚就在页面的 main 内容下面，并在 ``conf.py`` 中配置了 "
+"``html_theme_options['footer_items']``。"
 
 #: ../../docs/user_guide/sections.rst:122
 msgid "A list of built-in templates you can insert into sections"
 msgstr "可以插入到 section 中的内置模板列表"
 
 #: ../../docs/user_guide/sections.rst:124
+#, fuzzy
 msgid ""
-"Below is a list of build-in templates that you can insert into any "
+"Below is a list of built-in templates that you can insert into any "
 "section. Note that some of them may have CSS rules that assume a specific"
 " section (and will be named accordingly)."
-msgstr ""
-"下面是内置模板列表，你可以插入到任何部分。"
-"需要注意的是，其中一些 CSS 规则可能会假设一个特定的部分（并将相应地命名）。"
+msgstr "下面是内置模板列表，你可以插入到任何部分。需要注意的是，其中一些 CSS 规则可能会假设一个特定的部分（并将相应地命名）。"
 
 #: ../../docs/user_guide/sections.rst:128
 msgid "``icon-links.html``"
@@ -221,30 +218,33 @@ msgstr ""
 msgid "``version-switcher.html``"
 msgstr ""
 
-#: ../../docs/user_guide/sections.rst:143
+#: ../../docs/user_guide/sections.rst:141
+msgid "``theme-switcher.html``"
+msgstr ""
+
+#: ../../docs/user_guide/sections.rst:144
 msgid "Add your own HTML templates to theme sections"
 msgstr "将您自己的HTML模板添加到主题 section"
 
-#: ../../docs/user_guide/sections.rst:145
+#: ../../docs/user_guide/sections.rst:146
 msgid ""
 "If you'd like to add your own custom template to any of these sections, "
 "you could do so with the following steps:"
-msgstr ""
-"如果你想添加你自己的自定义模板到这些部分的任何一部分，你可以这样做以下步骤："
+msgstr "如果你想添加你自己的自定义模板到这些部分的任何一部分，你可以这样做以下步骤："
 
-#: ../../docs/user_guide/sections.rst:148
+#: ../../docs/user_guide/sections.rst:149
 msgid ""
 "Create an HTML file in a folder called ``_templates``. For example, if "
 "you wanted to display the version of your documentation using a Jinja "
 "template, you could create a file: ``_templates/version.html`` and put "
 "the following in it:"
 msgstr ""
-"在名为 ``_templates`` 的文件夹中创建 HTML 文件。"
-"例如，如果你想使用 Jinja 模板显示文档的版本，你可以创建文件 ``_templates/version.html``，并在其中放入以下内容："
+"在名为 ``_templates`` 的文件夹中创建 HTML 文件。例如，如果你想使用 Jinja 模板显示文档的版本，你可以创建文件 "
+"``_templates/version.html``，并在其中放入以下内容："
 
-#: ../../docs/user_guide/sections.rst:158
+#: ../../docs/user_guide/sections.rst:159
 msgid ""
 "Now add the file to your menu items for one of the sections above. For "
 "example:"
-msgstr ""
-"现在，将该文件添加到您的菜单项上的上述部分之一。例如："
+msgstr "现在，将该文件添加到您的菜单项上的上述部分之一。例如："
+
