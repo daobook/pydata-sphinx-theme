@@ -10,7 +10,7 @@ in your ``conf.py`` file. This is a dictionary with ``key: val`` pairs that
 you can configure in various ways. This page describes the options available to you.
 
 Configure project logo
-==============================
+======================
 
 To add a logo that's placed at the left of your nav bar, put a logo file under your
 doc path's _static folder, and use the following configuration:
@@ -31,6 +31,35 @@ If you'd like it to link to another page or use an external link instead, use th
 
 .. _icon-links:
 
+Configure default theme
+=======================
+
+The theme mode can be changed by the user. By default landing on the documentation will switch the mode to ``auto``. You can specified this value to be one of ``auto``, ``dark``, ``light``.
+
+.. code-block:: python
+
+   html_context = {
+      ...
+      "default_mode": "auto"
+   }
+
+Configure pygment theme
+=======================
+
+As the Sphinx theme supports multiple modes, the code highlighting colors can be modified for each one of them by modifying the `pygment_light_style`and `pygment_style_style`. You can check available Pygments colors on this `page <https://help.farbox.com/pygments.html>`__.
+
+.. code-block:: python
+
+   html_contexts = {
+      ...
+      "pygment_light_style": "tango",
+      "pygment_dark_style": "native"
+   }
+
+.. danger::
+
+   The native Sphinx option `pygments_style` will be overwritten by this theme.
+
 Configure icon links
 ====================
 
@@ -50,8 +79,8 @@ These links take the following form:
                "url": "https://github.com/<your-org>/<your-repo>",  # required
                # Icon class (if "type": "fontawesome"), or path to local image (if "type": "local")
                "icon": "fab fa-github-square",
-               # Whether icon should be a FontAwesome class, or a local file
-               "type": "fontawesome OR local",  # Default is fontawesome
+               # The type of image to be used (see below for details)
+               "type": "fontawesome",
            }
       ]
    }
@@ -114,14 +143,34 @@ Here are several examples:
 
    This has already been added for the brands that have *shortcuts*.
 
-Local image icons
------------------
+Image icons
+-----------
 
 If you'd like to display an icon image that is not in the FontAwesome icons library,
-you may instead specify a path to a local image that will be used for the icon.
-To do so, use ``"type": "local"``, and add a path to an image
-**relative to your documentation root** in the ``icon`` value.
-Here is an example:
+you may instead specify a URL or a path to a local image that will be used for the icon.
+
+**To display an image on the web**, use ``"type": "url"``, and provide a URL to an image in the ``icon`` value.
+For example:
+
+.. code:: python
+
+   html_theme_options = {
+       ...
+       "icon_links": [
+           {
+               "name": "Pandas",
+               "url": "https://pandas.pydata.org",
+               "icon": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/master/docs/_static/pandas-square.svg",
+               "type": "url",
+           },
+       ],
+       ...
+   }
+
+
+**To display a local image from a file path**, use ``"type": "local"``, and add a path to an image
+relative to your documentation root in the ``icon`` value.
+For example:
 
 .. code:: python
 

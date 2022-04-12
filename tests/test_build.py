@@ -119,6 +119,12 @@ def test_icon_links(sphinx_build_factory, file_regression):
                 # Because the type is inccorect, this should output an error `span`
                 "type": "incorrecttype",
             },
+            {
+                "name": "URL",
+                "url": "https://site5.org",
+                "icon": "https://site5.org/image.svg",
+                "type": "url",
+            },
         ]
     }
     confoverrides = {"html_theme_options": html_theme_options_icon_links}
@@ -525,4 +531,14 @@ def test_version_switcher(sphinx_build_factory, file_regression):
     switcher = sphinx_build.html_tree("index.html").select("#version_switcher")[0]
     file_regression.check(
         switcher.prettify(), basename="navbar_switcher", extension=".html"
+    )
+
+
+def test_theme_switcher(sphinx_build_factory, file_regression):
+    """Regression test the theme switcher btn HTML"""
+
+    sphinx_build = sphinx_build_factory("base").build()
+    switcher = sphinx_build.html_tree("index.html").select("#theme-switch")[0]
+    file_regression.check(
+        switcher.prettify(), basename="navbar_theme", extension=".html"
     )
