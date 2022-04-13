@@ -36,6 +36,8 @@ msgid ""
 "Make these customizations at your own risk, and pin versions if you're "
 "worried about breaking changes!"
 msgstr ""
+"这个主题仍在积极开发中，不承诺任何特定的 HTML 结构、CSS 变量等的稳定性。"
+"进行这些自定义的风险由您自己承担，如果您担心破坏变更，请锁定版本！"
 
 #: ../../docs/user_guide/customizing.rst:20
 msgid "Custom CSS Stylesheets"
@@ -72,7 +74,7 @@ msgstr "当您构建文档时，这个样式表现在应该被激活。"
 
 #: ../../docs/user_guide/customizing.rst:43
 msgid "Manage themes"
-msgstr ""
+msgstr "管理主题"
 
 #: ../../docs/user_guide/customizing.rst:47
 msgid ""
@@ -80,37 +82,41 @@ msgid ""
 "switch are likely to change in the future. No backward compatibily is "
 "guaranteed when customization is done."
 msgstr ""
+"主题化仍然是测试功能，所以与主题切换相关的变量可能会在未来发生变化。"
+"当定制完成后，没有向后兼容的保证。"
 
 #: ../../docs/user_guide/customizing.rst:49
 msgid "Pydata sphinx theme embed 3 different theming mode:"
-msgstr ""
+msgstr "Pydata sphinx 主题嵌入 3 种不同的主题模式："
 
 #: ../../docs/user_guide/customizing.rst:51
 msgid ""
 "``auto``: the documentation theme will follow the one provided by your "
 "computer"
 msgstr ""
+"``auto``：文档主题将遵循您的计算机提供的主题"
 
 #: ../../docs/user_guide/customizing.rst:52
 msgid "``dark``: the documentation is displayed with the dark theme"
-msgstr ""
+msgstr "``dark``：文档显示为暗主题"
 
 #: ../../docs/user_guide/customizing.rst:53
 msgid "``light``: the documentation is displayed with the light theme"
-msgstr ""
+msgstr "``light``：文档显示为亮主题"
 
 #: ../../docs/user_guide/customizing.rst:55
 msgid ""
 "In order to customize the display of any of the theme element you need to"
 " encaspulate your modifications in the approriate css rules:"
 msgstr ""
+"为了定制任何主题元素的显示，你需要将你的修改封装在适当的 css 规则中："
 
 #: ../../docs/user_guide/customizing.rst:73
-#, fuzzy
 msgid ""
 "A complete list of the used colors for this theme can be found in the "
 "`pydata default css colors file <pydata-css-colors_>`__."
-msgstr "关于你可以覆盖的主题变量的完整列表，请参阅 `主题变量默认 CSS 文件 <pydata-css-variables_>`_："
+msgstr ""
+"这个主题使用的颜色的完整列表可以在 `pydata 默认 css 颜色文件 <pydata-css-colors_>`__ 中找到。"
 
 #: ../../docs/user_guide/customizing.rst:78
 msgid "CSS Theme variables"
@@ -152,7 +158,6 @@ msgid ""
 msgstr "在 ``:root`` 部分下面，添加你想要更新的变量。例如，要更新基本字体大小，你可以把它添加到 ``custom.css`` 中："
 
 #: ../../docs/user_guide/customizing.rst:101
-#, fuzzy
 msgid ""
 "Note that these are `CSS variables <css-variable-help_>`_ and not `SASS "
 "variables <https://sass-lang.com/documentation/variables>`_. The theme is"
@@ -162,6 +167,7 @@ msgid ""
 msgstr ""
 "注意这些是 `CSS 变量 <css-variable-help_>`_ 而不是 `SASS 变量 <https://sass-"
 "lang.com/documentation/variables>`_。主题是用 CSS 变量定义的，而不是 SASS 变量！"
+"如果你想要在明和暗主题之间获得不同的行为，请参考前面的章节。"
 
 #: ../../docs/user_guide/customizing.rst:106
 msgid ""

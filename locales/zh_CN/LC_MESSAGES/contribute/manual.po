@@ -53,20 +53,23 @@ msgid ""
 "[mamba](https://github.com/mamba-org/mamba), or "
 "[virtualenv](https://virtualenv.pypa.io/)."
 msgstr ""
+"要做到这一点，请使用 [conda](https://docs.conda.io/en/latest/)、[mamba](https://github.com/mamba-org/mamba) "
+"或 [virtualenv](https://virtualenv.pypa.io/) 等工具。"
 
 #: ../../docs/contribute/manual.md:15
 msgid "Clone the repository locally"
-msgstr ""
+msgstr "克隆仓库到本地"
 
 #: ../../docs/contribute/manual.md:17
 msgid ""
 "First clone this repository from the `pydata` organization, or from a "
 "fork that you have created:"
 msgstr ""
+"首先从 ``pydata`` 组织克隆这个存储库，或者从你已经创建的 fork 克隆："
 
 #: ../../docs/contribute/manual.md:24
 msgid "Install the `sphinx-theme-builder`"
-msgstr ""
+msgstr "安装 ``sphinx-theme-builder``"
 
 #: ../../docs/contribute/manual.md:26
 msgid ""
@@ -74,16 +77,19 @@ msgid ""
 "compile all CSS and JS assets needed for the theme. Install it like so "
 "(note the `cli` option so that we can run it from the command line):"
 msgstr ""
+"使用 ``sphinx-theme-builder`` 在本地安装 ``nodejs``，并编译主题所需的所有 CSS 和JS 资产。"
+"像这样安装它（注意 ``cli`` 选项，这样我们就可以从命令行运行它）："
 
 #: ../../docs/contribute/manual.md:33
 msgid "Install this theme locally"
-msgstr ""
+msgstr "在本地安装主题"
 
 #: ../../docs/contribute/manual.md:35
 msgid ""
 "Next, install this theme locally so that we have the necessary "
 "dependencies to build the documentation and testing suite:"
 msgstr ""
+"接下来，在本地安装这个主题，这样我们就有必要的依赖来构建文档和测试套件："
 
 #: ../../docs/contribute/manual.md:41
 msgid ""
@@ -91,24 +97,26 @@ msgid ""
 "copy of `nodejs` for building the theme's assets. This will be placed in "
 "a `.nodeenv` folder."
 msgstr ""
+"请注意 ``sphinx-theme-builder`` 将自动安装 ``nodejs`` 的本地副本来构建主题的 assets。"
+"这将被放置在 ``.nodeenv`` 文件夹中。"
 
 #: ../../docs/contribute/manual.md:44
 msgid "Build the documentation"
-msgstr ""
+msgstr "构建文档"
 
 #: ../../docs/contribute/manual.md:46
 msgid "To manually build the documentation, run the following command:"
-msgstr ""
+msgstr "手动构建文档，运行如下命令："
 
 #: ../../docs/contribute/manual.md:52
 msgid "Compile web assets (JS/CSS)"
-msgstr ""
+msgstr "编译 web 资源(JS/CSS)"
 
 #: ../../docs/contribute/manual.md:54
 msgid ""
 "To compile the javascript and CSS assets for the theme, run the following"
 " command:"
-msgstr ""
+msgstr "编译主题的 javascript 和 CSS 资产，运行以下命令："
 
 #: ../../docs/contribute/manual.md:60
 msgid ""
@@ -116,24 +124,26 @@ msgid ""
 "folder and place them in the appropriate places in our theme's folder "
 "structure."
 msgstr ""
+"这将编译 ``src/pydata_sphinx_theme/assets`` 文件夹中的所有内容，并将它们放在主题文件夹结构中的适当位置。"
 
 #: ../../docs/contribute/manual.md:62
 msgid "Start a live-server to build and serve your documentation"
-msgstr ""
+msgstr "启动实时服务器来构建和服务您的文档"
 
 #: ../../docs/contribute/manual.md:64
 msgid ""
 "To manually open a server to watch your documentation for changes, build "
 "them, and display them locally in a browser, run this command:"
 msgstr ""
+"要手动打开服务器查看文档中的更改，构建它们，并在浏览器中本地显示它们，运行以下命令："
 
 #: ../../docs/contribute/manual.md:70
 msgid "Run the tests"
-msgstr ""
+msgstr "运行测试"
 
 #: ../../docs/contribute/manual.md:72
 msgid ""
 "To manually run the tests for this theme, first set up your environment "
 "locally, and then run:"
 msgstr ""
-
+"若要手动运行此主题的测试，请先在本地设置环境，然后运行："
