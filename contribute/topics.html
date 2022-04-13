@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Topic guides and how-tos &#8212; PyData Sphinx Theme 0.8.1 文档</title>
+    <title>主题指南和操作指南 &#8212; PyData Sphinx Theme 0.8.1 文档</title>
     <script>
       document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
       document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
@@ -245,7 +245,7 @@ function checkPageExistsAndRedirect(event) {
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Topic guides and how-tos
+   主题指南和操作指南
   </a>
  </li>
  <li class="toctree-l1">
@@ -278,17 +278,17 @@ function checkPageExistsAndRedirect(event) {
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#make-a-release">
-   Make a release
+   制作发布版本
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#update-javascript-dependencies-and-their-versions">
-   Update JavaScript dependencies and their versions
+   更新 JavaScript 依赖项及其版本
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#using-nox">
-   Using
+   使用
    <code class="docutils literal notranslate">
     <span class="pre">
      nox
@@ -298,25 +298,24 @@ function checkPageExistsAndRedirect(event) {
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#re-install-dependencies">
-     Re-install dependencies
+     重装依赖
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#use-nox-with-your-global-environment">
-     Use
+     在你的全局环境中使用
      <code class="docutils literal notranslate">
       <span class="pre">
        nox
       </span>
      </code>
-     with your global environment
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#using-pre-commit">
-   Using
+   使用
    <code class="docutils literal notranslate">
     <span class="pre">
      pre-commit
@@ -326,12 +325,12 @@ function checkPageExistsAndRedirect(event) {
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#skip-the-pre-commit-checks">
-     Skip the pre-commit checks
+     跳过预提交检查
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#run-pre-commit-on-all-files">
-     Run pre-commit on all files
+     对所有文件执行预提交
     </a>
    </li>
   </ul>
@@ -343,56 +342,56 @@ function checkPageExistsAndRedirect(event) {
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#compile-and-bundle-assets">
-     Compile and bundle assets
+     编译和绑定 assets
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#styles-scss-and-scripts-js">
-     Styles (SCSS) and Scripts (JS)
+     样式 (SCSS) 和脚本 (JS)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#vendored-scripts">
-     Vendored scripts
+     Vendored 脚本
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#fontawesome-icons">
-     FontAwesome icons
+     FontAwesome 图标
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#jinja-macros">
-     Jinja macros
+     Jinja 宏
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#accessibility-checks">
-   Accessibility checks
+   可访问性检查
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#errors-in-ci-cd-and-what-to-do">
-     Errors in CI/CD and what to do
+     CI/CD 中的错误以及如何处理
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#fix-accessibility-errors">
-     Fix accessibility errors
+     修复可访问性错误
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#run-an-accessibility-audit-locally">
-     Run an accessibility audit locally
+     在本地运行可访问性审计
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#update-our-kitchen-sink-documents">
-   Update our kitchen sink documents
+   更新我们的厨房水槽文档
   </a>
  </li>
 </ul>
@@ -424,65 +423,60 @@ function checkPageExistsAndRedirect(event) {
               <div>
                 
   <section id="topic-guides-and-how-tos">
-<h1>Topic guides and how-tos<a class="headerlink" href="#topic-guides-and-how-tos" title="永久链接至标题">#</a></h1>
-<p>These sections cover common operations and topics that are relevant to developing this theme.</p>
+<h1>主题指南和操作指南<a class="headerlink" href="#topic-guides-and-how-tos" title="永久链接至标题">#</a></h1>
+<p>这些部分涵盖了与开发这个主题相关的常见操作和主题。</p>
 <section id="make-a-release">
-<h2>Make a release<a class="headerlink" href="#make-a-release" title="永久链接至标题">#</a></h2>
-<p>This theme uses GitHub tags and releases to automatically push new releases to
-PyPI. For information on this process, see <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/wiki/Release-checklist#release-instructions">the release checklist</a>.</p>
+<h2>制作发布版本<a class="headerlink" href="#make-a-release" title="永久链接至标题">#</a></h2>
+<p>这个主题使用 GitHub 标签和版本自动将新版本推送到 PyPI。有关此过程的信息，请参阅 <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/wiki/Release-checklist#release-instructions">发布清单</a>。</p>
 </section>
 <section id="update-javascript-dependencies-and-their-versions">
-<h2>Update JavaScript dependencies and their versions<a class="headerlink" href="#update-javascript-dependencies-and-their-versions" title="永久链接至标题">#</a></h2>
-<p>The javascript dependencies for this package are defined in <code class="docutils literal notranslate"><span class="pre">package.json</span></code>, and broken down into a few categories like <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> and <code class="docutils literal notranslate"><span class="pre">devDependencies</span></code>.</p>
-<p>To update or add JS dependency, modify (or append to) the list of packages that are listed in each of these sections.
-The next time you build the documentation (either with <code class="docutils literal notranslate"><span class="pre">nox</span></code> or with <code class="docutils literal notranslate"><span class="pre">stb</span></code>), these new dependencies will be installed and bundled with the theme.</p>
+<h2>更新 JavaScript 依赖项及其版本<a class="headerlink" href="#update-javascript-dependencies-and-their-versions" title="永久链接至标题">#</a></h2>
+<p>这个包的 javascript 依赖定义在 <code class="docutils literal notranslate"><span class="pre">package.json</span></code> 中，并分成几个类别，如 <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> 和 `devDependencies。</p>
+<p>要更新或添加 JS 依赖，修改（或附加）在每个部分中列出的包的列表。下次你构建文档（使用 <code class="docutils literal notranslate"><span class="pre">nox</span></code> 或 <code class="docutils literal notranslate"><span class="pre">stb</span></code>）时，这些新的依赖项将被安装并与主题捆绑在一起。</p>
 </section>
 <section id="using-nox">
-<h2>Using <code class="docutils literal notranslate"><span class="pre">nox</span></code><a class="headerlink" href="#using-nox" title="永久链接至标题">#</a></h2>
-<p>Here are a few extra tips for using <code class="docutils literal notranslate"><span class="pre">nox</span></code>.</p>
+<h2>使用 <code class="docutils literal notranslate"><span class="pre">nox</span></code><a class="headerlink" href="#using-nox" title="永久链接至标题">#</a></h2>
+<p>下面是一些使用 <code class="docutils literal notranslate"><span class="pre">nox</span></code> 的额外提示。</p>
 <div class="admonition seealso">
 <p class="admonition-title">参见</p>
-<p>The <a class="reference external" href="https://nox.thea.codes/en/stable/usage.html"><code class="docutils literal notranslate"><span class="pre">nox</span></code> command line documentation</a> has a lot of helpful tips for extra functionality you can enable with the CLI.</p>
+<p>关于 CLI 可以启用的额外功能，<a class="reference external" href="https://nox.thea.codes/en/stable/usage.html"><code class="docutils literal notranslate"><span class="pre">nox</span></code> 命令行文档</a> 提供了许多有用的提示。</p>
 </div>
 <section id="re-install-dependencies">
-<h3>Re-install dependencies<a class="headerlink" href="#re-install-dependencies" title="永久链接至标题">#</a></h3>
-<p>To re-execute the installation commands, use this pattern:</p>
+<h3>重装依赖<a class="headerlink" href="#re-install-dependencies" title="永久链接至标题">#</a></h3>
+<p>要重新执行安装命令，请使用以下模式：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s docs -- reinstall
 </pre></div>
 </div>
-<p>Or to completely remove the environment generated by <code class="docutils literal notranslate"><span class="pre">nox</span></code> and start from scratch:</p>
+<p>或者完全清除由 <code class="docutils literal notranslate"><span class="pre">nox</span></code> 产生的环境，重新开始：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>rm -rf .nox/docs
 </pre></div>
 </div>
 </section>
 <section id="use-nox-with-your-global-environment">
-<h3>Use <code class="docutils literal notranslate"><span class="pre">nox</span></code> with your global environment<a class="headerlink" href="#use-nox-with-your-global-environment" title="永久链接至标题">#</a></h3>
-<p>If you’d like to use <code class="docutils literal notranslate"><span class="pre">nox</span></code> with your <strong>global</strong> environment (the one from which you are calling <code class="docutils literal notranslate"><span class="pre">nox</span></code>), you can do so with:</p>
+<h3>在你的全局环境中使用 <code class="docutils literal notranslate"><span class="pre">nox</span></code><a class="headerlink" href="#use-nox-with-your-global-environment" title="永久链接至标题">#</a></h3>
+<p>如果你想在你的 <strong>global</strong> 环境（你称之为 <code class="docutils literal notranslate"><span class="pre">nox</span></code> 的环境）中使用 <code class="docutils literal notranslate"><span class="pre">nox</span></code>，你可以这样做：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox --force-venv-backend none
 
 <span class="gp"># </span>alternatively:
 <span class="gp">$ </span>nox --no-venv
 </pre></div>
 </div>
-<p>Using <code class="docutils literal notranslate"><span class="pre">none</span></code> will re-use your current global environment.
-See
-<a class="reference external" href="https://nox.thea.codes/en/stable/usage.html#forcing-the-sessions-backend">the nox documentation</a> for more details.</p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">none</span></code> 将重用您当前的全局环境。详情请参阅<a class="reference external" href="https://nox.thea.codes/en/stable/usage.html#forcing-the-sessions-backend">nox 文档</a>。</p>
 </section>
 </section>
 <section id="using-pre-commit">
-<h2>Using <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code><a class="headerlink" href="#using-pre-commit" title="永久链接至标题">#</a></h2>
-<p>Here are a few tips for using <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>:</p>
+<h2>使用 <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code><a class="headerlink" href="#using-pre-commit" title="永久链接至标题">#</a></h2>
+<p>下面是一些使用 <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> 的技巧：</p>
 <section id="skip-the-pre-commit-checks">
-<h3>Skip the pre-commit checks<a class="headerlink" href="#skip-the-pre-commit-checks" title="永久链接至标题">#</a></h3>
-<p>Run the following command:</p>
+<h3>跳过预提交检查<a class="headerlink" href="#skip-the-pre-commit-checks" title="永久链接至标题">#</a></h3>
+<p>执行如下命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git commit --no-verify
 </pre></div>
 </div>
 </section>
 <section id="run-pre-commit-on-all-files">
-<h3>Run pre-commit on all files<a class="headerlink" href="#run-pre-commit-on-all-files" title="永久链接至标题">#</a></h3>
-<p>By default, <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> will run its checks on files that have been modified in a commit.
-To instead run it on all files, use this command:</p>
+<h3>对所有文件执行预提交<a class="headerlink" href="#run-pre-commit-on-all-files" title="永久链接至标题">#</a></h3>
+<p>默认情况下，<code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> 会对提交中修改过的文件进行检查。要在所有文件上运行它，使用下面的命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pre-commit run --all-files
 
 <span class="gp"># </span>Alternatively
@@ -493,85 +487,68 @@ To instead run it on all files, use this command:</p>
 </section>
 <section id="web-assets-css-js-fonts">
 <h2>Web assets (CSS/JS/Fonts)<a class="headerlink" href="#web-assets-css-js-fonts" title="永久链接至标题">#</a></h2>
-<p>This theme includes several web assets to ease development and design.
-The configuration for our asset compilation is in <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code>.</p>
+<p>这个主题包括几个网页资产，以简化开发和设计。我们的资产编译配置在 <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code> 中。</p>
 <section id="compile-and-bundle-assets">
-<h3>Compile and bundle assets<a class="headerlink" href="#compile-and-bundle-assets" title="永久链接至标题">#</a></h3>
-<p>When assets are compiled, static versions are placed in various places in the theme’s static folder:</p>
+<h3>编译和绑定 assets<a class="headerlink" href="#compile-and-bundle-assets" title="永久链接至标题">#</a></h3>
+<p>当 assets 被编译时，静态版本被放置在主题的静态文件夹的不同位置：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">src</span><span class="o">/</span><span class="n">pydata_sphinx_theme</span><span class="o">/</span><span class="n">theme</span><span class="o">/</span><span class="n">pydata_sphinx_theme</span><span class="o">/</span><span class="n">static</span>
 </pre></div>
 </div>
-<p>For many assets, a <code class="docutils literal notranslate"><span class="pre">&lt;hash&gt;</span></code> is generated and appended to the end of its reference in the HTML templates of the theme.
-This ensures the correct asset versions are served when viewers return to your
-site after upgrading the theme.</p>
-<p>To compile the assets and bundle them with the theme, run this command:</p>
+<p>对于许多 assets，在主题的 HTML 模板中会生成 <code class="docutils literal notranslate"><span class="pre">&lt;hash&gt;</span></code>，并将其添加到引用的末尾。这确保了在主题升级后，当浏览者返回您的站点时，能够提供正确的 asset 版本。</p>
+<p>要编译 assets 并将其与主题绑定，运行以下命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s compile
 </pre></div>
 </div>
 </section>
 <section id="styles-scss-and-scripts-js">
-<h3>Styles (SCSS) and Scripts (JS)<a class="headerlink" href="#styles-scss-and-scripts-js" title="永久链接至标题">#</a></h3>
-<p>There are two relevant places for CSS/JS assets:</p>
+<h3>样式 (SCSS) 和脚本 (JS)<a class="headerlink" href="#styles-scss-and-scripts-js" title="永久链接至标题">#</a></h3>
+<p>CSS/JS assets 有两个相关的地方：</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/styles</span></code> has source files for SCSS assets. These will be compiled to CSS.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/scripts</span></code> has source files for JS assets. These will be compiled to JS and import several vendored libraries (like Bootstrap).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static</span></code> has compiled versions of these assets (e.g. CSS files). This folder is not tracked in <code class="docutils literal notranslate"><span class="pre">.git</span></code> history, but it is bundled with the theme’s distribution.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/styles</span></code> 有 SCSS assets 的源文件。这些将被编译成 CSS。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets/scripts</span></code> 有 JS assets 的源文件。这些将被编译成 JS，并导入几个 vendored 的库（如 Bootstrap）。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static</span></code> 已经编译了这些 assets 的版本（例如 CSS 文件）。没有在 <code class="docutils literal notranslate"><span class="pre">.git</span></code> 中跟踪此文件夹，但它与主题的发行捆绑在一起。</p></li>
 </ul>
 </section>
 <section id="vendored-scripts">
-<h3>Vendored scripts<a class="headerlink" href="#vendored-scripts" title="永久链接至标题">#</a></h3>
-<p>We vendor several packages in addition to our own CSS and JS.
-For example, Bootstrap, JQuery, and Popper.
-This is configured in the <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code> file, and imported in the respective <code class="docutils literal notranslate"><span class="pre">SCSS</span></code> or <code class="docutils literal notranslate"><span class="pre">JS</span></code> file in our assets folder.</p>
+<h3>Vendored 脚本<a class="headerlink" href="#vendored-scripts" title="永久链接至标题">#</a></h3>
+<p>除了我们自己的 CSS 和 JS，我们还提供几个包。例如，Bootstrap, JQuery 和 Popper。这是在 <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code> 文件中配置的，并导入到 assets 文件夹中相应的 <code class="docutils literal notranslate"><span class="pre">SCSS</span></code> 或 <code class="docutils literal notranslate"><span class="pre">JS</span></code> 文件中。</p>
 </section>
 <section id="fontawesome-icons">
-<h3>FontAwesome icons<a class="headerlink" href="#fontawesome-icons" title="永久链接至标题">#</a></h3>
-<p>Three “styles” of the <a class="reference external" href="https://fontawesome.com/icons?m=free">FontAwesome 5 Free</a>
-icon font are used for <a class="reference internal" href="../user_guide/configuring.html#icon-links"><span class="std std-ref">icon links</span></a> and admonitions, and is
-the only <code class="docutils literal notranslate"><span class="pre">vendored</span></code> font.</p>
+<h3>FontAwesome 图标<a class="headerlink" href="#fontawesome-icons" title="永久链接至标题">#</a></h3>
+<p>三种风格的 <a class="reference external" href="https://fontawesome.com/icons?m=free">FontAwesome 5 Free</a> 图标字体用于 <a class="reference internal" href="../user_guide/configuring.html#icon-links"><span class="std std-ref">图标链接</span></a> 和警告，是唯一的 <code class="docutils literal notranslate"><span class="pre">vendored</span></code> 字体。</p>
 <ul class="simple">
-<li><p>It is managed as a dependency in <code class="docutils literal notranslate"><span class="pre">package.json</span></code></p></li>
-<li><p>Copied directly into the site statics at compilation, including licenses</p></li>
-<li><p>Partially preloaded to reduce flicker and artifacts of early icon renders</p></li>
-<li><p>Configured in <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code></p></li>
+<li><p>它在 <code class="docutils literal notranslate"><span class="pre">package.json</span></code> 中作为依赖被管理。</p></li>
+<li><p>直接复制到网站的静态编译，包括许可证</p></li>
+<li><p>部分预加载，以减少早期图标呈现的 flicker 和工件</p></li>
+<li><p>在 <code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code> 中配置</p></li>
 </ul>
 </section>
 <section id="jinja-macros">
-<h3>Jinja macros<a class="headerlink" href="#jinja-macros" title="永久链接至标题">#</a></h3>
-<p>Our Webpack build generates a collection of <a class="reference external" href="https://jinja.palletsprojects.com/en/3.0.x/templates/#macros">Jinja macros</a> in the <code class="docutils literal notranslate"><span class="pre">static/webpack-macros.html</span></code> file.</p>
-<p>These macros are imported in the main <code class="docutils literal notranslate"><span class="pre">layout.html</span></code> file, and then inserted at various places in the page to link the static assets.</p>
-<p>Some of the assets <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload">are “preloaded”</a>, meaning that the browser begins requesting these resources before they’re actually needed.
-In particular, our JavaScript assets are preloaded in <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code>, and the scripts are actually loaded at the end of <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code>.</p>
+<h3>Jinja 宏<a class="headerlink" href="#jinja-macros" title="永久链接至标题">#</a></h3>
+<p>我们的 Webpack 构建会在 <code class="docutils literal notranslate"><span class="pre">static/webpack-macros.html</span></code> 文件中生成一组 <a class="reference external" href="https://jinja.palletsprojects.com/en/3.0.x/templates/#macros">Jinja 宏</a>。</p>
+<p>这些宏被导入到 main <code class="docutils literal notranslate"><span class="pre">layout.html</span></code> 文件中，然后插入到页面的各个位置以链接静态 assets。</p>
+<p>一些 assets <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload">“preloaded”</a>，这意味着浏览器在实际需要这些资源之前就开始请求这些资源。特别是，我们的 JavaScript assets 是在 <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> 中预加载的，而脚本实际上是在 <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> 的末尾加载的。</p>
 </section>
 </section>
 <section id="accessibility-checks">
-<h2>Accessibility checks<a class="headerlink" href="#accessibility-checks" title="永久链接至标题">#</a></h2>
-<p>The accessibility checking tools can find a number of common HTML patterns which
-assistive technology can’t help users understand.</p>
-<p>In addition to <a class="reference external" href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>
-in CI, the <code class="docutils literal notranslate"><span class="pre">pa11y</span></code> stack is installed as part of the development environment.</p>
-<p>The key components are:</p>
+<h2>可访问性检查<a class="headerlink" href="#accessibility-checks" title="永久链接至标题">#</a></h2>
+<p>可访问性检查工具可以找到许多辅助技术无法帮助用户理解的常见 HTML 模式。</p>
+<p>除了 CI 中的 <a class="reference external" href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a> 之外，<code class="docutils literal notranslate"><span class="pre">pa11y</span></code> 堆栈也是作为开发环境的一部分安装的。</p>
+<p>关键组件：</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/pa11y/pa11y">pa11y</a> which uses a headless browser to analyze
-an HTML page with a configurable set of rules based on publish standards</p></li>
-<li><p><a class="reference external" href="https://github.com/pa11y/pa11y-ci">Pa11y-CI</a> runs <code class="docutils literal notranslate"><span class="pre">pa11y</span></code> on multiple pages</p></li>
-<li><p><a class="reference external" href="https://github.com/pa11y/pa11y-reporter-html">pa11y-reporter-html</a> generates
-some nice HTML reports, suitable for review</p></li>
+<li><p><a class="reference external" href="https://github.com/pa11y/pa11y">pa11y</a>使用无头浏览器（headless browser）来分析 HTML 页面，该页面有一组基于发布标准的可配置规则</p></li>
+<li><p><a class="reference external" href="https://github.com/pa11y/pa11y-ci">pa11y-ci</a> 在多个页面上运行 <code class="docutils literal notranslate"><span class="pre">pa11y</span></code></p></li>
+<li><p><a class="reference external" href="https://github.com/pa11y/pa11y-reporter-html">pa11y-reporter-html</a> 生成一些漂亮的 HTML 报告，适合审查</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>Presently, the <em>default</em> <code class="docutils literal notranslate"><span class="pre">pa11y</span></code> ruleset, <code class="docutils literal notranslate"><span class="pre">WCAG2AA</span></code> is used, a subset of
-the <a class="reference external" href="https://www.w3.org/TR/WCAG21">Web Content Accessibility Guidelines</a>.
-The <a class="reference external" href="https://www.w3.org/WAI/WCAG21/quickref">Quick Reference</a> may provide
-lighter reading.</p>
+<p>目前使用的是 <em>默认</em> <code class="docutils literal notranslate"><span class="pre">pa11y</span></code> 规则集 <code class="docutils literal notranslate"><span class="pre">WCAG2AA</span></code>，它是 <a class="reference external" href="https://www.w3.org/TR/WCAG21">Web 内容可访问性指南</a> 的子集。<a class="reference external" href="https://www.w3.org/WAI/WCAG21/quickref">快速参考</a> 可能提供更轻松的阅读。</p>
 </div>
 <section id="errors-in-ci-cd-and-what-to-do">
-<h3>Errors in CI/CD and what to do<a class="headerlink" href="#errors-in-ci-cd-and-what-to-do" title="永久链接至标题">#</a></h3>
-<p>We have a list of <strong>known accessibility problems</strong> in the file <code class="docutils literal notranslate"><span class="pre">docs/scripts/a11y-roadmap.txt</span></code>.
-This contains a list of errors that we aim to fix in the future, and that <strong>do not cause tests to fail</strong>.</p>
-<p>When a pa11y accessibility audit is run in our CI/CD, it checks for any errors that are <em>not</em> on this list, and if it finds them it will cause the job to error.</p>
-<p>When you see an error in your CI/CD job, look at the logs under the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">accessibility</span> <span class="pre">audit</span></code> job.
-You should see an output that looks like this:</p>
+<h3>CI/CD 中的错误以及如何处理<a class="headerlink" href="#errors-in-ci-cd-and-what-to-do" title="永久链接至标题">#</a></h3>
+<p>我们在文件 <code class="docutils literal notranslate"><span class="pre">docs/scripts/a11y-roadmap.txt</span></code> 中有一个已知的可访问性问题列表。这包含了错误列表，我们打算在将来修复这些错误，并且这些错误不会导致测试失败。</p>
+<p>当在我们的 CI/CD 中运行 pa11y 可访问性审计时，它会检查任何不在这个列表中的错误，如果它发现了这些错误，就会导致作业出错。</p>
+<p>当您在 CI/CD 作业中看到错误时，请查看 <code class="docutils literal notranslate"><span class="pre">运行可访问性审计</span></code> 作业下的日志。您应该会看到如下输出：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">JSON</span><span class="p">:</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">pa11y</span><span class="o">/</span><span class="n">pa11y</span><span class="o">-</span><span class="mi">864</span><span class="o">/</span><span class="n">pa11y</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">results</span><span class="o">.</span><span class="n">json</span>
 <span class="n">Roadmap</span><span class="p">:</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">runner</span><span class="o">/</span><span class="n">work</span><span class="o">/</span><span class="n">pydata</span><span class="o">-</span><span class="n">sphinx</span><span class="o">-</span><span class="n">theme</span><span class="o">/</span><span class="n">pydata</span><span class="o">-</span><span class="n">sphinx</span><span class="o">-</span><span class="n">theme</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">a11y</span><span class="o">-</span><span class="n">roadmap</span><span class="o">.</span><span class="n">txt</span>
 <span class="ow">not</span> <span class="n">on</span> <span class="n">roadmap</span><span class="p">:</span>
@@ -587,42 +564,34 @@ You should see an output that looks like this:</p>
 <span class="n">total</span> <span class="n">errors</span><span class="p">:</span> <span class="mi">1892</span>
 </pre></div>
 </div>
-<p>The problems that caused an error are in the <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">on</span> <span class="pre">roadmap</span></code> section.
-Anything that is “not on the roadmap” is an error we have unexpectedly introduced in the PR.
-These should be identified and fixed.</p>
+<p>导致错误的问题在 “不在路线图上” 部分。任何不在路线图上的错误都是我们在 PR 中意外引入的错误。这些错误应该被识别并修复。</p>
 </section>
 <section id="fix-accessibility-errors">
-<h3>Fix accessibility errors<a class="headerlink" href="#fix-accessibility-errors" title="永久链接至标题">#</a></h3>
-<p>We keep a list of <strong>known accessibility issues</strong> in the <a class="reference download internal" download="" href="../_downloads/fe076d5699c680758d321b2b537608ea/a11y-roadmap.txt"><code class="xref download docutils literal notranslate"><span class="pre">accessibility</span> <span class="pre">roadmap</span></code></a>.
-These are issues which are currently flagged by the toolset, but that have not yet
-been fixed.</p>
-<p>To start working on one of the accessibility roadmap items, comment out one of the
-lines in <code class="docutils literal notranslate"><span class="pre">docs/a11y-roadmap.txt</span></code>, and re-run the audit to establish a baseline.</p>
-<p>Then, fix the issue in either the HTML templates, CSS, or python code, and re-run
-the audit until it is fixed.</p>
+<h3>修复可访问性错误<a class="headerlink" href="#fix-accessibility-errors" title="永久链接至标题">#</a></h3>
+<p>我们在可 <a class="reference download internal" download="" href="../_downloads/fe076d5699c680758d321b2b537608ea/a11y-roadmap.txt"><code class="xref download docutils literal notranslate"><span class="pre">访问性路线图</span></code></a> 中保留 <strong>known accessibility issues</strong> 的列表。这些问题目前已经被工具集标记，但是还没有被修复。</p>
+<p>要开始处理可访问性路线图项目之一，注释掉 <code class="docutils literal notranslate"><span class="pre">docs/a11y-roadmap.txt</span></code> 中的一行，并重新运行审计以建立 baseline。</p>
+<p>然后，在 HTML 模板、CSS 或 python 代码中修复问题，并重新运行审计，直到修复为止。</p>
 </section>
 <section id="run-an-accessibility-audit-locally">
-<h3>Run an accessibility audit locally<a class="headerlink" href="#run-an-accessibility-audit-locally" title="永久链接至标题">#</a></h3>
-<p>To run the accessibility problem finder locally:</p>
+<h3>在本地运行可访问性审计<a class="headerlink" href="#run-an-accessibility-audit-locally" title="永久链接至标题">#</a></h3>
+<p>要在本地运行可访问性问题查找程序，请执行以下操作：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s compile  <span class="c1"># Compile the theme assets</span>
 <span class="gp">$ </span>nox -s docs  <span class="c1"># Build the documentation</span>
 <span class="gp">$ </span>python docs/scripts/a11y.py  <span class="c1"># Run a helper script for an accessibility audit</span>
 </pre></div>
 </div>
-<p>The output of the last command includes:</p>
+<p>最后一条命令的输出信息包括：</p>
 <ul class="simple">
-<li><p>a short summary of the current state of the accessibility rules we are trying to maintain</p></li>
-<li><p>local paths to JSON and HTML reports which contain all of the issues found</p></li>
+<li><p>我们试图维护的可访问性规则的当前状态的简短总结</p></li>
+<li><p>JSON 和 HTML 报告的本地路径，其中包含所有发现的问题</p></li>
 </ul>
 </section>
 </section>
 <section id="update-our-kitchen-sink-documents">
-<h2>Update our kitchen sink documents<a class="headerlink" href="#update-our-kitchen-sink-documents" title="永久链接至标题">#</a></h2>
-<p>The <a class="reference internal" href="../demo/kitchen-sink/index.html"><span class="doc std std-doc">kitchen sink reference</span></a> is for demonstrating as much syntax and style for Sphinx builds as possible.
-It is copied directly from the <a class="reference external" href="https://sphinx-themes.org/"><code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> documentation</a> so that we use standardized reference docs compared with other communities.
-The source files for these pages are stored <a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/raw/master/sample-docs/kitchen-sink/">in the <code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> repository</a>.</p>
-<p>If you’d like to update our local files with any changes that have been made to the <code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> files, simply copy/paste those changes into our local files and make a commit.</p>
-<p>Here’s a list of our pages and where they come from in <code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code>:</p>
+<h2>更新我们的厨房水槽文档<a class="headerlink" href="#update-our-kitchen-sink-documents" title="永久链接至标题">#</a></h2>
+<p><a class="reference internal" href="../demo/kitchen-sink/index.html"><span class="doc std std-doc">厨房水槽参考</span></a> 是为了尽可能多地演示 Sphinx 构建的语法和风格。它直接从 <a class="reference external" href="https://sphinx-themes.org/"><code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> 文档</a> 中复制而来，这样就可以使用与其他社区相比标准化的参考文档。这些页面的源文件存储在 <a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/raw/master/sample-docs/kitchen-sink/"><code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> 存储库</a> 中。</p>
+<p>如果你想用 <code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> 文件中的任何更改来更新我们的本地文件，只需将这些更改复制/粘贴到我们的本地文件并提交即可。</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">sphinx-themes.org</span></code> 中，列出了一些页面，以及它们的来源：</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../demo/kitchen-sink/index.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">index.rst</span></code></span></a> (<a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/blob/master/sample-docs/kitchen-sink/index.rst">source</a>)</p></li>
 <li><p><a class="reference internal" href="../demo/kitchen-sink/api.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">api.rst</span></code></span></a> (<a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/blob/master/sample-docs/kitchen-sink/api.rst">source</a>)</p></li>
@@ -631,7 +600,7 @@ The source files for these pages are stored <a class="reference external" href="
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>To demonstrate extra styles and syntax that is not in the Kitchen sink, use the <a class="reference internal" href="../demo/theme-elements.html"><span class="doc std std-doc">Theme Elements reference</span></a>.</p>
+<p>为了演示额外的样式和语法，使用 <a class="reference internal" href="../demo/theme-elements.html"><span class="doc std std-doc">Theme Elements reference</span></a>。</p>
 </div>
 </section>
 </section>

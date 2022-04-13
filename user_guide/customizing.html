@@ -294,7 +294,7 @@ function checkPageExistsAndRedirect(event) {
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#manage-themes">
-   Manage themes
+   管理主题
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -340,10 +340,7 @@ function checkPageExistsAndRedirect(event) {
 <p>除了在 <a class="reference internal" href="configuring.html#configuration"><span class="std std-ref">配置</span></a> 中详细介绍的配置选项外，还可以自定义主题的 HTML 布局和 CSS 样式。</p>
 <div class="admonition danger">
 <p class="admonition-title">危险</p>
-<p>This theme is still under active development, and we make no promises
-about the stability of any specific HTML structure, CSS variables, etc.
-Make these customizations at your own risk, and pin versions if you’re
-worried about breaking changes!</p>
+<p>这个主题仍在积极开发中，不承诺任何特定的 HTML 结构、CSS 变量等的稳定性。进行这些自定义的风险由您自己承担，如果您担心破坏变更，请锁定版本！</p>
 </div>
 <section id="custom-css-stylesheets">
 <span id="custom-css"></span><h2>自定义主题样式<a class="headerlink" href="#custom-css-stylesheets" title="永久链接至标题">#</a></h2>
@@ -364,18 +361,18 @@ html_css_files = [
 <p>当您构建文档时，这个样式表现在应该被激活。</p>
 </section>
 <section id="manage-themes">
-<span id="id1"></span><h2>Manage themes<a class="headerlink" href="#manage-themes" title="永久链接至标题">#</a></h2>
+<span id="id1"></span><h2>管理主题<a class="headerlink" href="#manage-themes" title="永久链接至标题">#</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">危险</p>
-<p>Theming is still a beta feature so the variables related to the theme switch are likely to change in the future. No backward compatibily is guaranteed when customization is done.</p>
+<p>主题化仍然是测试功能，所以与主题切换相关的变量可能会在未来发生变化。当定制完成后，没有向后兼容的保证。</p>
 </div>
-<p>Pydata sphinx theme embed 3 different theming mode:</p>
+<p>Pydata sphinx 主题嵌入 3 种不同的主题模式：</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>: the documentation theme will follow the one provided by your computer</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">dark</span></code>: the documentation is displayed with the dark theme</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">light</span></code>: the documentation is displayed with the light theme</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>：文档主题将遵循您的计算机提供的主题</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dark</span></code>：文档显示为暗主题</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">light</span></code>：文档显示为亮主题</p></li>
 </ul>
-<p>In order to customize the display of any of the theme element you need to encaspulate your modifications in the approriate css rules:</p>
+<p>为了定制任何主题元素的显示，你需要将你的修改封装在适当的 css 规则中：</p>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* anything related to the light theme */</span><span class="w"></span>
 <span class="nt">html</span><span class="o">[</span><span class="nt">data-theme</span><span class="o">=</span><span class="s2">&quot;light&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
@@ -391,7 +388,7 @@ html_css_files = [
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>A complete list of the used colors for this theme can be found in the <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/assets/style/color.scss">pydata default css colors file</a>.</p>
+<p>这个主题使用的颜色的完整列表可以在 <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/assets/style/color.scss">pydata 默认 css 颜色文件</a> 中找到。</p>
 </section>
 <section id="css-theme-variables">
 <span id="css-variables"></span><h2>CSS 主题变量<a class="headerlink" href="#css-theme-variables" title="永久链接至标题">#</a></h2>
@@ -410,10 +407,7 @@ html_css_files = [
 </ol>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
-<p>Note that these are <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS variables</a> and not
-<a class="reference external" href="https://sass-lang.com/documentation/variables">SASS variables</a>.
-The theme is defined with CSS variables, not SASS variables! Refer to the previous section if
-you desire a different behavior between the light and dark theme.</p>
+<p>注意这些是 <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 变量</a> 而不是 <a class="reference external" href="https://sass-lang.com/documentation/variables">SASS 变量</a>。主题是用 CSS 变量定义的，而不是 SASS 变量！如果你想要在明和暗主题之间获得不同的行为，请参考前面的章节。</p>
 </div>
 <p>关于你可以覆盖的主题变量的完整列表，请参阅 <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static/styles/theme.css">主题变量默认 CSS 文件</a>：</p>
 <div class="highlight-CSS notranslate"><div class="highlight"><pre><span></span><span class="c">/* Provided by Sphinx&#39;s &#39;basic&#39; theme, and included in the final set of assets */</span><span class="w"></span>

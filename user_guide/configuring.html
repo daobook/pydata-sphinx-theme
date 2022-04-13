@@ -294,12 +294,12 @@ function checkPageExistsAndRedirect(event) {
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#configure-default-theme">
-   Configure default theme
+   配置默认主题
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#configure-pygment-theme">
-   Configure pygment theme
+   配置 pygment 主题
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -314,7 +314,7 @@ function checkPageExistsAndRedirect(event) {
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#image-icons">
-     Image icons
+     图像图标
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -537,8 +537,8 @@ function checkPageExistsAndRedirect(event) {
 </div>
 </section>
 <section id="configure-default-theme">
-<span id="icon-links"></span><h2>Configure default theme<a class="headerlink" href="#configure-default-theme" title="永久链接至标题">#</a></h2>
-<p>The theme mode can be changed by the user. By default landing on the documentation will switch the mode to <code class="docutils literal notranslate"><span class="pre">auto</span></code>. You can specified this value to be one of <code class="docutils literal notranslate"><span class="pre">auto</span></code>, <code class="docutils literal notranslate"><span class="pre">dark</span></code>, <code class="docutils literal notranslate"><span class="pre">light</span></code>.</p>
+<span id="icon-links"></span><h2>配置默认主题<a class="headerlink" href="#configure-default-theme" title="永久链接至标题">#</a></h2>
+<p>用户可以修改主题模式。默认情况下，登陆文档将切换到自动模式。您可以将此值指定为 <code class="docutils literal notranslate"><span class="pre">auto</span></code>、<code class="docutils literal notranslate"><span class="pre">dark</span></code>、<code class="docutils literal notranslate"><span class="pre">light</span></code> 中的一个。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_context</span> <span class="o">=</span> <span class="p">{</span>
    <span class="o">...</span>
    <span class="s2">&quot;default_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span>
@@ -547,8 +547,8 @@ function checkPageExistsAndRedirect(event) {
 </div>
 </section>
 <section id="configure-pygment-theme">
-<h2>Configure pygment theme<a class="headerlink" href="#configure-pygment-theme" title="永久链接至标题">#</a></h2>
-<p>As the Sphinx theme supports multiple modes, the code highlighting colors can be modified for each one of them by modifying the <cite>pygment_light_style`and `pygment_style_style</cite>. You can check available Pygments colors on this <a class="reference external" href="https://help.farbox.com/pygments.html">page</a>.</p>
+<h2>配置 pygment 主题<a class="headerlink" href="#configure-pygment-theme" title="永久链接至标题">#</a></h2>
+<p>由于 Sphinx 主题支持多种模式，因此可以通过修改 <code class="docutils literal notranslate"><span class="pre">pygment_light_style</span></code> 和 <code class="docutils literal notranslate"><span class="pre">pygment_style_style</span></code> 来修改每一种模式的高亮颜色代码。你可以在这个页面上检查可用的py颜色。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_contexts</span> <span class="o">=</span> <span class="p">{</span>
    <span class="o">...</span>
    <span class="s2">&quot;pygment_light_style&quot;</span><span class="p">:</span> <span class="s2">&quot;tango&quot;</span><span class="p">,</span>
@@ -558,7 +558,7 @@ function checkPageExistsAndRedirect(event) {
 </div>
 <div class="admonition danger">
 <p class="admonition-title">危险</p>
-<p>The native Sphinx option <cite>pygments_style</cite> will be overwritten by this theme.</p>
+<p>本地 Sphinx 选项 <cite>pygments_style</cite> 将被这个主题覆盖。</p>
 </div>
 </section>
 <section id="configure-icon-links">
@@ -626,11 +626,10 @@ function checkPageExistsAndRedirect(event) {
 </div>
 </section>
 <section id="image-icons">
-<h3>Image icons<a class="headerlink" href="#image-icons" title="永久链接至标题">#</a></h3>
+<h3>图像图标<a class="headerlink" href="#image-icons" title="永久链接至标题">#</a></h3>
 <p>If you’d like to display an icon image that is not in the FontAwesome icons library,
 you may instead specify a URL or a path to a local image that will be used for the icon.</p>
-<p><strong>To display an image on the web</strong>, use <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;url&quot;</span></code>, and provide a URL to an image in the <code class="docutils literal notranslate"><span class="pre">icon</span></code> value.
-For example:</p>
+<p><strong>要在 web 上显示图像</strong>，使用 <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;url&quot;</span></code>，并在 <code class="docutils literal notranslate"><span class="pre">icon</span></code> 值中提供图像的 URL。例如：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
     <span class="s2">&quot;icon_links&quot;</span><span class="p">:</span> <span class="p">[</span>
