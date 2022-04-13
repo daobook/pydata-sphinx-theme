@@ -112,7 +112,7 @@ html_theme_options = {
         },
         {"url": "https://pandas.pydata.org/pandas-docs/stable/", "name": "Pandas Docs"},
     ],
-    "github_url": "https://github.com/pydata/pydata-sphinx-theme",
+    "github_url": "https://github.com/daobook/pydata-sphinx-theme",
     "twitter_url": "https://twitter.com/pandas_dev",
     "icon_links": [
         {
