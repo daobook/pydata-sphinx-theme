@@ -47,9 +47,9 @@ extensions = [
 
 # -- Internationalization ------------------------------------------------
 # specifying the natural language populates some key tags
-language = 'zh_CN'
+language = "zh_CN"
 gettext_compact = False  # optional.
-locale_dirs = ['../locales/']
+locale_dirs = ["../locales/"]
 
 # ReadTheDocs has its own way of generating sitemaps, etc.
 if not os.environ.get("READTHEDOCS"):
@@ -64,8 +64,8 @@ autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates",
-                  '../src/pydata_sphinx_theme/'
-                  'theme/pydata_sphinx_theme/_templates']
+                  "../src/pydata_sphinx_theme/"
+                  "theme/pydata_sphinx_theme/_templates"]
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
