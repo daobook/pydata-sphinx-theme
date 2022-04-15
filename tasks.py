@@ -5,7 +5,7 @@ from d2py.tools.write import site
 @task
 def init(ctx):
     ctx.run("pip install .[doc]")
-    ctx.run("pip install --upgrade nbconvert xarray")
+    ctx.run("pip install --upgrade nbconvert")
 
 
 namespace = site("docs", target="output/html")
