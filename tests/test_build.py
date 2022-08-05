@@ -45,7 +45,7 @@ def sphinx_build_factory(make_app, tmp_path):
     def _func(src_folder, **kwargs):
         copytree(path_tests / "sites" / src_folder, tmp_path / src_folder)
         app = make_app(
-            srcdir=sphinx_path(os.path.abspath((tmp_path / src_folder))), **kwargs
+            srcdir=sphinx_path(os.path.abspath(tmp_path / src_folder)), **kwargs
         )
         return SphinxBuild(app, tmp_path / src_folder)
 
@@ -54,6 +54,7 @@ def sphinx_build_factory(make_app, tmp_path):
 
 def test_build_html(sphinx_build_factory, file_regression):
     """Test building the base html template and config."""
+
     sphinx_build = sphinx_build_factory("base")  # type: SphinxBuild
 
     # Basic build with defaults
@@ -67,15 +68,17 @@ def test_build_html(sphinx_build_factory, file_regression):
     navbar = index_html.select("div#navbar-center")[0]
     file_regression.check(navbar.prettify(), basename="navbar_ix", extension=".html")
 
-    # Sidebar structure
-    sidebar = index_html.select(".bd-sidebar")[0]
-    file_regression.check(sidebar.prettify(), basename="sidebar_ix", extension=".html")
-
     # Sidebar subpage
     sidebar = subpage_html.select(".bd-sidebar")[0]
     file_regression.check(
         sidebar.prettify(), basename="sidebar_subpage", extension=".html"
     )
+
+    # Secondary sidebar should not have in-page TOC if it is empty
+    assert not sphinx_build.html_tree("page1.html").select("div.onthispage")
+
+    # Secondary sidebar should not be present if page-level metadata given
+    assert not sphinx_build.html_tree("page2.html").select("div.bd-sidebar-secondary")
 
 
 def test_toc_visibility(sphinx_build_factory):
@@ -125,6 +128,20 @@ def test_icon_links(sphinx_build_factory, file_regression):
                 "icon": "https://site5.org/image.svg",
                 "type": "url",
             },
+            {
+                "name": "FONTAWESOME",
+                "url": "https://site1.org",
+                "icon": "FACLASS",
+                "type": "fontawesome",
+                "attributes": {
+                    # This should over-ride the href above
+                    "href": "https://override.com",
+                    # This should add a new icon link attribute
+                    "foo": "bar",
+                    # CSS classes should be totally overwritten
+                    "class": "overridden classes",
+                },
+            },
         ]
     }
     confoverrides = {"html_theme_options": html_theme_options_icon_links}
@@ -137,24 +154,77 @@ def test_icon_links(sphinx_build_factory, file_regression):
     )
 
 
-def test_logo(sphinx_build_factory):
+def test_logo_basic(sphinx_build_factory):
     """Test that the logo is shown by default, project title if no logo."""
     sphinx_build = sphinx_build_factory("base").build()
 
     # By default logo is shown
     index_html = sphinx_build.html_tree("index.html")
     assert index_html.select(".navbar-brand img")
+    assert "emptylogo" in str(index_html.select(".navbar-brand")[0])
     assert not index_html.select(".navbar-brand")[0].text.strip()
 
 
-def test_logo_name(sphinx_build_factory):
-    """Test that the logo is shown by default, project title if no logo."""
+def test_logo_no_image(sphinx_build_factory):
+    """Test that the text is shown if no image specified."""
     confoverrides = {"html_logo": ""}
     sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides).build()
-
-    # if no logo is specified, use project title instead
     index_html = sphinx_build.html_tree("index.html")
     assert "PyData Tests" in index_html.select(".navbar-brand")[0].text.strip()
+    assert "emptylogo" not in str(index_html.select(".navbar-brand")[0])
+
+
+def test_logo_two_images(sphinx_build_factory):
+    """Test that the logo image / text is correct when both dark / light given."""
+    # Test with a specified title and a dark logo
+    confoverrides = {
+        "html_theme_options": {
+            "logo": {
+                "text": "Foo Title",
+                "image_dark": "emptydarklogo.png",
+            }
+        },
+    }
+    sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides).build()
+    index_html = sphinx_build.html_tree("index.html")
+    index_str = str(index_html.select(".navbar-brand")[0])
+    assert "emptylogo" in index_str
+    assert "emptydarklogo" in index_str
+    assert "Foo Title" in index_str
+
+
+def test_logo_external_link(sphinx_build_factory):
+    """Test that the logo link is correct for external URLs."""
+    # Test with a specified external logo link
+    test_url = "https://secure.example.com"
+    confoverrides = {
+        "html_theme_options": {
+            "logo": {
+                "link": test_url,
+            }
+        },
+    }
+    sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides).build()
+    index_html = sphinx_build.html_tree("index.html")
+    index_str = str(index_html.select(".navbar-brand")[0])
+    assert f'href="{test_url}"' in index_str
+
+
+def test_logo_external_image(sphinx_build_factory):
+    """Test that the logo link is correct for external URLs."""
+    # Test with a specified external logo image source
+    test_url = "https://pydata.org/wp-content/uploads/2019/06/pydata-logo-final.png"
+    confoverrides = {
+        "html_theme_options": {
+            "logo": {
+                "image_dark": test_url,
+            }
+        },
+    }
+    sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides).build()
+    index_html = sphinx_build.html_tree("index.html")
+    index_str = str(index_html.select(".navbar-brand")[0])
+    assert f'src="{test_url}"' in index_str
 
 
 def test_favicons(sphinx_build_factory):
@@ -185,40 +255,26 @@ def test_favicons(sphinx_build_factory):
 
     icon_16 = (
         '<link href="https://secure.example.com/favicon/favicon-16x16.png" '
-        'rel="icon" sizes="16x16"/>'
+        'rel="icon" sizes="16x16" type="image/png">'
     )
-    icon_32 = '<link href="_static/favicon-32x32.png" rel="icon" sizes="32x32"/>'
+    icon_32 = (
+        '<link href="_static/favicon-32x32.png" rel="icon" sizes="32x32" '
+        'type="image/png">'
+    )
     icon_180 = (
         '<link href="_static/apple-touch-icon-180x180.png" '
-        'rel="apple-touch-icon" sizes="180x180"/>'
+        'rel="apple-touch-icon" sizes="180x180" type="image/png">'
     )
-
     assert icon_16 in str(index_html.select("head")[0])
     assert icon_32 in str(index_html.select("head")[0])
     assert icon_180 in str(index_html.select("head")[0])
-
-
-def test_sidebar_default(sphinx_build_factory):
-    """The sidebar is shrunk when no sidebars specified in html_sidebars."""
-    sphinx_build = sphinx_build_factory("base").build()
-
-    index_html = sphinx_build.html_tree("page1.html")
-    assert "col-md-3" in index_html.select(".bd-sidebar")[0].attrs["class"]
-
-
-def test_sidebar_disabled(sphinx_build_factory):
-    """The sidebar is shrunk when no sidebars specified in html_sidebars."""
-    confoverrides = {"html_sidebars.page1": ""}
-    sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides).build()
-    index_html = sphinx_build.html_tree("page1.html")
-    assert "col-md-1" in index_html.select(".bd-sidebar")[0].attrs["class"]
 
 
 def test_navbar_align_default(sphinx_build_factory):
     """The navbar items align with the proper part of the page."""
     sphinx_build = sphinx_build_factory("base").build()
     index_html = sphinx_build.html_tree("index.html")
-    assert "col-lg-9" in index_html.select("div#navbar-collapsible")[0].attrs["class"]
+    assert "col-lg-9" in index_html.select(".navbar-header-items")[0].attrs["class"]
 
 
 def test_navbar_align_right(sphinx_build_factory):
@@ -228,7 +284,7 @@ def test_navbar_align_right(sphinx_build_factory):
 
     # Both the column alignment and the margin should be changed
     index_html = sphinx_build.html_tree("index.html")
-    assert "col-lg-9" not in index_html.select("div#navbar-center")[0].attrs["class"]
+    assert "col-lg-9" not in index_html.select(".navbar-header-items")[0].attrs["class"]
     assert "ml-auto" in index_html.select("div#navbar-center")[0].attrs["class"]
 
 
@@ -239,6 +295,37 @@ def test_navbar_no_in_page_headers(sphinx_build_factory, file_regression):
     index_html = sphinx_build.html_tree("index.html")
     navbar = index_html.select("ul#navbar-main-elements")[0]
     file_regression.check(navbar.prettify(), extension=".html")
+
+
+@pytest.mark.parametrize("n_links", (0, 4, 8))  # 0 = only dropdown, 8 = no dropdown
+def test_navbar_header_dropdown(sphinx_build_factory, file_regression, n_links):
+    """Test whether dropdown appears based on number of header links + config."""
+    extra_links = [{"url": f"https://{ii}.org", "name": ii} for ii in range(3)]
+
+    confoverrides = {
+        "html_theme_options": {
+            "external_links": extra_links,
+            "header_links_before_dropdown": n_links,
+        }
+    }
+    sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides).build()
+    index_html = sphinx_build.html_tree("index.html")
+    navbar = index_html.select("ul#navbar-main-elements")[0]
+    if n_links == 0:
+        # There should be *only* a dropdown and no standalone links
+        assert navbar.select("div.dropdown") and not navbar.select(
+            ".navbar-nav > li.nav-item"
+        )  # noqa
+    if n_links == 4:
+        # There should be at least one standalone link, and a dropdown
+        assert navbar.select(".navbar-nav > li.nav-item") and navbar.select(
+            "div.dropdown"
+        )  # noqa
+    if n_links == 8:
+        # There should be no dropdown and only standalone links
+        assert navbar.select(".navbar-nav > li.nav-item") and not navbar.select(
+            "div.dropdown"
+        )  # noqa
 
 
 def test_sidebars_captions(sphinx_build_factory, file_regression):
@@ -261,22 +348,8 @@ def test_sidebars_nested_page(sphinx_build_factory, file_regression):
     file_regression.check(sidebar.prettify(), extension=".html")
 
 
-def test_sidebars_single(sphinx_build_factory, file_regression):
-    confoverrides = {"templates_path": ["_templates_single_sidebar"]}
-    sphinx_build = sphinx_build_factory("sidebars", confoverrides=confoverrides).build()
-
-    index_html = sphinx_build.html_tree("index.html")
-
-    # No navbar included
-    assert not index_html.select("nav#navbar-main")
-    assert not index_html.select(".navbar-nav")
-
-    # Sidebar structure
-    sidebar = index_html.select("nav#bd-docs-nav")[0]
-    file_regression.check(sidebar.prettify(), extension=".html")
-
-
 def test_sidebars_level2(sphinx_build_factory, file_regression):
+    """Sidebars in a second-level page w/ children"""
     confoverrides = {"templates_path": ["_templates_sidebar_level2"]}
     sphinx_build = sphinx_build_factory("sidebars", confoverrides=confoverrides).build()
 
@@ -470,30 +543,65 @@ def test_edit_page_url(sphinx_build_factory, html_context, edit_url):
     assert edit_link[0].attrs["href"] == edit_url, f"edit link didn't match {edit_link}"
 
 
-def test_new_google_analytics_id(sphinx_build_factory):
-    confoverrides = {"html_theme_options.google_analytics_id": "G-XXXXX"}
+@pytest.mark.parametrize(
+    "provider,tags",
+    [
+        # TODO: Deprecate old-style analytics config >= 0.12
+        # new_google_analytics_id
+        ({"html_theme_options.google_analytics_id": "G-XXXXX"}, ["gtag", "G-XXXXX"]),
+        # old_google_analytics_id
+        ({"html_theme_options.google_analytics_id": "UA-XXXXX"}, ["ga", "UA-XXXXX"]),
+        # google analytics
+        (
+            {"html_theme_options.analytics": {"google_analytics_id": "G-XXXXX"}},
+            ["gtag", "G-XXXXX"],
+        ),
+        # plausible
+        (
+            {
+                "html_theme_options.analytics": {
+                    "plausible_analytics_domain": "toto",
+                    "plausible_analytics_url": "http://.../script.js",
+                }
+            },
+            ["data-domain", "toto"],
+        ),
+        # google and plausible
+        (
+            {
+                "html_theme_options.analytics": {
+                    "google_analytics_id": "G-XXXXX",
+                    "plausible_analytics_domain": "toto",
+                    "plausible_analytics_url": "http://.../script.js",
+                }
+            },
+            ["gtag", "G-XXXXX"],
+        ),
+        # TODO: Deprecate old-style analytics config >= 0.12
+        (
+            {
+                "html_theme_options.analytics": {
+                    "plausible_analytics_domain": "toto",
+                    "plausible_analytics_url": "http://.../script.js",
+                },
+                "html_theme_options.google_analytics_id": "G-XXXXX",
+            },
+            ["gtag", "G-XXXXX"],
+        ),
+    ],
+)
+def test_analytics(sphinx_build_factory, provider, tags):
+    confoverrides = provider
     sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides)
     sphinx_build.build()
     index_html = sphinx_build.html_tree("index.html")
-    # This text makes the assumption that the google analytics will always be
-    # the second last script tag found in the document (last is the theme js).
-    script_tag = index_html.select("script")[-2]
 
-    assert "gtag" in script_tag.string
-    assert "G-XXXXX" in script_tag.string
-
-
-def test_old_google_analytics_id(sphinx_build_factory):
-    confoverrides = {"html_theme_options.google_analytics_id": "UA-XXXXX"}
-    sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides)
-    sphinx_build.build()
-    index_html = sphinx_build.html_tree("index.html")
-    # This text makes the assumption that the google analytics will always be
-    # the second last script tag found in the document (last is the theme js).
-    script_tag = index_html.select("script")[-2]
-
-    assert "ga" in script_tag.string
-    assert "UA-XXXXX" in script_tag.string
+    # Search all the scripts and make sure one of them has the Google tag in there
+    tags_found = False
+    for script in index_html.select("script"):
+        if script.string and tags[0] in script.string and tags[1] in script.string:
+            tags_found = True
+    assert tags_found is True
 
 
 def test_show_nav_level(sphinx_build_factory):
@@ -522,13 +630,16 @@ def test_version_switcher(sphinx_build_factory, file_regression):
             "navbar_end": ["version-switcher"],
             "switcher": {
                 "json_url": "switcher.json",
-                "url_template": "https://foo.readthedocs.io/en/v{version}/",
                 "version_match": "0.7.1",
             },
         }
     }
     sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides).build()
-    switcher = sphinx_build.html_tree("index.html").select("#version_switcher")[0]
+    switcher = sphinx_build.html_tree("index.html").select(
+        ".version-switcher__container"
+    )[
+        0
+    ]  # noqa
     file_regression.check(
         switcher.prettify(), basename="navbar_switcher", extension=".html"
     )
@@ -538,7 +649,7 @@ def test_theme_switcher(sphinx_build_factory, file_regression):
     """Regression test the theme switcher btn HTML"""
 
     sphinx_build = sphinx_build_factory("base").build()
-    switcher = sphinx_build.html_tree("index.html").select("#theme-switch")[0]
+    switcher = sphinx_build.html_tree("index.html").select(".theme-switch-button")[0]
     file_regression.check(
         switcher.prettify(), basename="navbar_theme", extension=".html"
     )

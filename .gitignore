@@ -63,7 +63,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-docs/demo/generated/
+docs/examples/generated/
 
 # PyBuilder
 target/
@@ -112,6 +112,5 @@ node_modules/
 .vscode
 .idea
 
-# sphinx
-output/
-*.mo
+# files from the gallery screenshots
+docs/_static/gallery
