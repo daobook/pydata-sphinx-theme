@@ -1,42 +1,55 @@
+# Configuration file for the Sphinx documentation builder.
+#
+# This file only contains a selection of the most common options. For a full
+# list see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+
 # -- Path setup --------------------------------------------------------------
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+#
+import pydata_sphinx_theme
 import os
 import sys
 
-sys.path.append("scripts")
-from gallery_directive import GalleryDirective
+if sys.platform == 'win32':
+    import asyncio
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+
+sys.path.extend([os.path.abspath('.'), os.path.abspath('../src')])
+print((sys.path[-1]))
+
 
 # -- Project information -----------------------------------------------------
 
-project = "PyData Theme"
+project = "PyData Sphinx Theme"
 copyright = "2019, PyData Community"
 author = "PyData Community"
-
-import pydata_sphinx_theme
 
 
 # -- General configuration ---------------------------------------------------
 
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones.
+
 extensions = [
+    "jupyter_sphinx",
+    "myst_parser",
+    "numpydoc",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
-    "sphinx.ext.todo",
-    "sphinx.ext.viewcode",
     "sphinxext.rediraffe",
-    "sphinx_design",
-    "sphinx_copybutton",
-    # For extension examples and demos
-    "ablog",
-    "jupyter_sphinx",
-    "matplotlib.sphinxext.plot_directive",
-    "myst_nb",
-    # "nbsphinx",  # Uncomment and comment-out MyST-NB for local testing purposes.
-    "numpydoc",
-    "sphinx_togglebutton",
 ]
 
 # -- Internationalization ------------------------------------------------
 # specifying the natural language populates some key tags
-language = "en"
+language = "zh_CN"
+gettext_compact = False  # optional.
+locale_dirs = ["../locales/"]
 
 # ReadTheDocs has its own way of generating sitemaps, etc.
 if not os.environ.get("READTHEDOCS"):
@@ -50,8 +63,9 @@ if not os.environ.get("READTHEDOCS"):
 autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ["_templates"]
-
+templates_path = ["_templates",
+                  "../src/pydata_sphinx_theme/"
+                  "theme/pydata_sphinx_theme/_templates"]
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
@@ -59,8 +73,10 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
 
 # -- Extension options -------------------------------------------------------
 
-# This allows us to use ::: to denote directives, useful for admonitions
-myst_enable_extensions = ["colon_fence", "substitution"]
+myst_enable_extensions = [
+    # This allows us to use ::: to denote directives, useful for admonitions
+    "colon_fence",
+]
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -68,12 +84,10 @@ myst_enable_extensions = ["colon_fence", "substitution"]
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_logo = "_static/logo.svg"
-html_favicon = "_static/logo.svg"
-html_sourcelink_suffix = ""
+# html_logo = "_static/pandas.svg"  # For testing
 
 # Define the json_url for our version switcher.
-json_url = "https://pydata-sphinx-theme.readthedocs.io/en/latest/_static/switcher.json"
+json_url = "https://daobook.github.io/pydata-sphinx-theme/_static/switcher.json"
 
 # Define the version we use for matching in the version switcher.
 version_match = os.environ.get("READTHEDOCS_VERSION")
@@ -82,7 +96,7 @@ version_match = os.environ.get("READTHEDOCS_VERSION")
 if not version_match or version_match.isdigit():
     # For local development, infer the version to match from the package.
     release = pydata_sphinx_theme.__version__
-    if "dev" in release or "rc" in release:
+    if "dev" in release:
         version_match = "latest"
         # We want to keep the relative reference if we are in dev mode
         # but we want the whole url if we are effectively in a released version
@@ -96,22 +110,10 @@ html_theme_options = {
             "url": "https://github.com/pydata/pydata-sphinx-theme/releases",
             "name": "Changelog",
         },
-        {
-            "url": "https://pydata.org",
-            "name": "PyData",
-        },
-        {
-            "url": "https://numfocus.org/",
-            "name": "NumFocus",
-        },
-        {
-            "url": "https://numfocus.org/donate",
-            "name": "Donate to NumFocus",
-        },
+        {"url": "https://pandas.pydata.org/pandas-docs/stable/", "name": "Pandas Docs"},
     ],
-    "github_url": "https://github.com/pydata/pydata-sphinx-theme",
-    "twitter_url": "https://twitter.com/PyData",
-    "header_links_before_dropdown": 4,
+    "github_url": "https://github.com/daobook/pydata-sphinx-theme",
+    "twitter_url": "https://twitter.com/pandas_dev",
     "icon_links": [
         {
             "name": "PyPI",
@@ -119,87 +121,55 @@ html_theme_options = {
             "icon": "fas fa-box",
         },
         {
-            "name": "PyData",
-            "url": "https://pydata.org",
-            "icon": "_static/pydata-logo.png",
+            "name": "Pandas",
+            "url": "https://pandas.pydata.org",
+            "icon": "_static/pandas-square.svg",
             "type": "local",
-            "attributes": {"target": "_blank"},
         },
     ],
-    "logo": {
-        "text": "PyData Theme",
-        "image_dark": "logo-dark.svg",
-    },
     "use_edit_page_button": True,
     "show_toc_level": 1,
-    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
-    "navbar_center": ["version-switcher", "navbar-nav"],
-    "announcement": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html",
-    # "announcement": "Here's a test <a href='https://google.com'>announcement</a>!",
     # "show_nav_level": 2,
-    # "navbar_start": ["navbar-logo"],
-    # "navbar_end": ["theme-switcher", "navbar-icon-links"],  # Just for testing, we should use defaults in our docs
+    # "search_bar_position": "navbar",  # TODO: Deprecated - remove in future version
+    # "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    # "navbar_start": ["navbar-logo", "navbar-version"],
+    # "navbar_center": ["navbar-nav", "navbar-version"],  # Just for testing
+    "navbar_end": ["theme-switcher", "version-switcher", "navbar-icon-links"],
     # "left_sidebar_end": ["custom-template.html", "sidebar-ethical-ads.html"],
-    # "footer_items": ["copyright", "sphinx-version", ""],
-    # "page_sidebar_items": ["page-toc.html"],  # Remove the source buttons
+    # "footer_items": ["copyright", "sphinx-version", ""]
     "switcher": {
         "json_url": json_url,
         "version_match": version_match,
     },
-    # "search_bar_position": "navbar",  # TODO: Deprecated - remove in future version
 }
 
 html_sidebars = {
-    "community/index": [
+    "contribute/index": [
+        "search-field",
         "sidebar-nav-bs",
         "custom-template",
     ],  # This ensures we test for custom sidebars
-    "examples/no-sidebar": [],  # Test what page looks like with no sidebar items
-    "examples/persistent-search-field": ["search-field"],
-    # Blog sidebars
-    # ref: https://ablog.readthedocs.io/manual/ablog-configuration-options/#blog-sidebars
-    "examples/blog/*": [
-        "postcard.html",
-        "recentposts.html",
-        "tagcloud.html",
-        "categories.html",
-        "authors.html",
-        "languages.html",
-        "locations.html",
-        "archives.html",
-    ],
+    "demo/no-sidebar": [],  # Test what page looks like with no sidebar items
 }
 
 myst_heading_anchors = 2
-myst_substitutions = {"rtd": "[Read the Docs](https://readthedocs.org/)"}
 
 html_context = {
-    "github_user": "pydata",
+    "github_user": "pandas-dev",
     "github_repo": "pydata-sphinx-theme",
-    "github_version": "main",
+    "github_version": "master",
     "doc_path": "docs",
 }
 
 rediraffe_redirects = {
-    "contributing.rst": "community/index.rst",
+    "contributing.rst": "contribute/index.rst",
 }
-
-# ABlog configuration
-blog_path = "examples/blog/index"
-blog_authors = {
-    "pydata": ("PyData", "https://pydata.org"),
-    "jupyter": ("Jupyter", "https://jupyter.org"),
-}
-
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
-html_css_files = ["custom.css"]
-todo_include_todos = True
 
 
 def setup(app):
-    # Add the gallery directive
-    app.add_directive("gallery-grid", GalleryDirective)
+    app.add_css_file("custom.css")
