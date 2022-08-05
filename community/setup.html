@@ -1,0 +1,852 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Get started with development &#8212; PyData Theme 0.10.0rc2 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'community/setup';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
+        </script>
+    <link rel="canonical" href="http://127.0.0.1:8000/community/setup.html" />
+    <link rel="shortcut icon" href="../_static/logo.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Structure of this theme" href="structure.html" />
+    <link rel="prev" title="Community Guide" href="index.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh_CN">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div><div class="bd-header-announcement container-fluid" id="header-announcement">
+    
+
+
+<script>
+$.get("https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html", success=(data)=>{
+      $("#header-announcement").html(`<div class="bd-header-announcement__content">${data}</div>`);
+  }).fail(() => {
+  console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html")
+});
+</script>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <img src="../_static/logo.svg" class="logo__image only-light" alt="Logo image">
+    <img src="../_static/logo-dark.svg" class="logo__image only-dark" alt="Logo image">
+  
+  
+    <p class="title logo__title">PyData Theme</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class=" navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user_guide/index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Community Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../examples/index.html">
+  Examples
+ </a>
+</li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                <div class="nav-item dropdown">
+                    <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pydata.org">PyData<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/">NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/donate">Donate to NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                    </div>
+                </div>
+                
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link" rel="noopener" target="_blank"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link" rel="noopener" target="_blank"><img src="../_static/pydata-logo.png" class="icon-link-image" alt="PyData"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container container-xl">
+    <div class="bd-container__inner row">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="导航">
+      Site Navigation
+    </p>
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user_guide/index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Community Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../examples/index.html">
+  Examples
+ </a>
+</li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                <div class="nav-item dropdown">
+                    <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pydata.org">PyData<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/">NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/donate">Donate to NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                    </div>
+                </div>
+                
+</ul>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link" rel="noopener" target="_blank"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link" rel="noopener" target="_blank"><img src="../_static/pydata-logo.png" class="icon-link-image" alt="PyData"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contributor Guide
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Get started with development
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="structure.html">
+   Structure of this theme
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="topics.html">
+   Contribution guides
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="manual.html">
+   Set up a manual development environment
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About the project
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="contributors.html">
+   Contributors to this theme
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="policies.html">
+   Team policies and guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="inspiration.html">
+   Inspiration for design and UX
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+
+      
+      
+      
+        <div class="bd-sidebar-secondary bd-toc">
+          
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#workflow-for-contributing-changes">
+   Workflow for contributing changes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clone-the-repository">
+   Clone the repository
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-your-tools">
+   Install your tools
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup-nox">
+     Setup
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       nox
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup-pre-commit">
+     Setup
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pre-commit
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#build-the-documentation">
+   Build the documentation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#change-content-and-re-build">
+     Change content and re-build
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compile-the-css-js-assets">
+   Compile the CSS/JS assets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-a-development-server">
+   Run a development server
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-the-tests">
+   Run the tests
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pydata/pydata-sphinx-theme/edit/main/docs/community/setup.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../_sources/community/setup.md">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+        </div>
+      
+      
+
+      
+      
+      <div class="bd-content col">
+          
+          <div class="bd-header-article">
+              
+          </div>
+
+          
+          
+          <article class="bd-article" role="main">
+             <section id="get-started-with-development">
+<h1>Get started with development<a class="headerlink" href="#get-started-with-development" title="永久链接至标题">#</a></h1>
+<p>This section covers the simplest way to get started developing this theme locally so that you can contribute.
+It uses automation and as few steps as possible to get things done.
+If you’d like to do more operations manually, see <a class="reference internal" href="manual.html"><span class="doc std std-doc">Set up a manual development environment</span></a>.</p>
+<section id="workflow-for-contributing-changes">
+<h2>Workflow for contributing changes<a class="headerlink" href="#workflow-for-contributing-changes" title="永久链接至标题">#</a></h2>
+<p>We follow a <a class="reference external" href="https://guides.github.com/introduction/flow/">typical GitHub workflow</a>
+of:</p>
+<ul class="simple">
+<li><p>create a personal fork of this repo</p></li>
+<li><p>create a branch</p></li>
+<li><p>open a pull request</p></li>
+<li><p>fix findings of various linters and checks</p></li>
+<li><p>work through code review</p></li>
+</ul>
+<p>For each pull request, the documentation is built and deployed to make it easier to review the changes in the PR.
+To access this, click on the <a class="reference external" href="https://readthedocs.org/">Read the Docs</a> preview in the CI/CD jobs.</p>
+<p>The sections below cover the steps to do this in more detail.</p>
+</section>
+<section id="clone-the-repository">
+<h2>Clone the repository<a class="headerlink" href="#clone-the-repository" title="永久链接至标题">#</a></h2>
+<p>First off you’ll need your own copy of the <code class="docutils literal notranslate"><span class="pre">pydata-sphinx-theme</span></code> codebase.
+You can clone it for local development like so:</p>
+<ol class="arabic">
+<li><p><strong>Fork the repository</strong> so you have your own copy on GitHub.
+See <a class="reference external" href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">the GitHub forking guide</a> for more information.</p></li>
+<li><p><strong>Clone the repository locally</strong> so that you have a local copy to work from:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone https://github.com/<span class="o">{{</span> YOUR USERNAME <span class="o">}}</span>/pydata-sphinx-theme
+<span class="gp">$ </span><span class="nb">cd</span> pydata-sphinx-theme
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="install-your-tools">
+<h2>Install your tools<a class="headerlink" href="#install-your-tools" title="永久链接至标题">#</a></h2>
+<p>Building a Sphinx site uses a combination of Python and Jinja to manage HTML, SCSS, and Javascript.
+To simplify this process, we use a few helper tools:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://sphinx-theme-builder.readthedocs.io/en/latest/">The Sphinx Theme Builder</a> to automatically perform compilation of web assets.</p></li>
+<li><p><a class="reference external" href="https://pre-commit.com/">pre-commit</a> for automatically enforcing code standards and quality checks before commits.</p></li>
+<li><p><a class="reference external" href="https://nox.thea.codes/">nox</a>, for automating common development tasks.</p></li>
+</ul>
+<p>In particular, <code class="docutils literal notranslate"><span class="pre">nox</span></code> can be used to automatically create isolated local development environments with all of the correct packages installed to work on the theme.
+The rest of this guide focuses on using <code class="docutils literal notranslate"><span class="pre">nox</span></code> to start with a basic environment.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>The information on this page covers the basics to get you started, for information about manually compiling assets, see <a class="reference internal" href="manual.html"><span class="doc std std-doc">Set up a manual development environment</span></a>.</p>
+</div>
+<section id="setup-nox">
+<h3>Setup <code class="docutils literal notranslate"><span class="pre">nox</span></code><a class="headerlink" href="#setup-nox" title="永久链接至标题">#</a></h3>
+<p>To start, install <code class="docutils literal notranslate"><span class="pre">nox</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install nox
+</pre></div>
+</div>
+<p>You can call <code class="docutils literal notranslate"><span class="pre">nox</span></code> from the command line in order to perform common actions that are needed in building the theme.
+<code class="docutils literal notranslate"><span class="pre">nox</span></code> operates with isolated environments, so each action has its own packages installed in a local directory (<code class="docutils literal notranslate"><span class="pre">.nox</span></code>).
+For common development actions, you’ll simply need to use <code class="docutils literal notranslate"><span class="pre">nox</span></code> and won’t need to set up any other packages.</p>
+</section>
+<section id="setup-pre-commit">
+<h3>Setup <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code><a class="headerlink" href="#setup-pre-commit" title="永久链接至标题">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> allows us to run several checks on the codebase every time a new Git commit is made.
+This ensures standards and basic quality control for our code.</p>
+<p>Install <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> with the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install pre-commit
+</pre></div>
+</div>
+<p>then navigate to this repository’s folder and activate it like so:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pre-commit install
+</pre></div>
+</div>
+<p>This will install the necessary dependencies to run <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> every time you make a commit with Git.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Your <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> dependencies will be installed in the environment from which you’re calling <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>, <code class="docutils literal notranslate"><span class="pre">nox</span></code>, etc.
+They will not be installed in the isolated environments used by <code class="docutils literal notranslate"><span class="pre">nox</span></code>.</p>
+</div>
+</section>
+</section>
+<section id="build-the-documentation">
+<h2>Build the documentation<a class="headerlink" href="#build-the-documentation" title="永久链接至标题">#</a></h2>
+<p>Now that you have <code class="docutils literal notranslate"><span class="pre">nox</span></code> installed and cloned the repository, you should be able to build the documentation locally.</p>
+<p>To build the documentation with <code class="docutils literal notranslate"><span class="pre">nox</span></code>, run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s docs
+</pre></div>
+</div>
+<p>This will install the necessary dependencies and build the documentation located in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder.
+They will be placed in a <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> folder.
+If the docs have already been built, it will only build new pages that have been updated.
+You can open one of the HTML files there to preview the documentation locally.</p>
+<p>Alternatively, you can invoke the built-in Python <a class="reference external" href="https://docs.python.org/3/library/http.server.html#module-http.server">http.server</a> with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python -m http.server -d docs/_build/html/
+</pre></div>
+</div>
+<p>This will print a local URL that you can open in a browser to explore the HTML files.</p>
+<section id="change-content-and-re-build">
+<h3>Change content and re-build<a class="headerlink" href="#change-content-and-re-build" title="永久链接至标题">#</a></h3>
+<p>Now that you’ve built the documentation, edit one of the source files to see how the documentation updates with new builds.</p>
+<ol class="arabic simple">
+<li><p><strong>Make an edit to a page</strong>. For example, add a word or fix a typo on any page.</p></li>
+<li><p><strong>Rebuild the documentation</strong> with <code class="docutils literal notranslate"><span class="pre">nox</span> <span class="pre">-s</span> <span class="pre">docs</span></code></p></li>
+</ol>
+<p>It should go much faster this time, because <code class="docutils literal notranslate"><span class="pre">nox</span></code> is re-using the old environment, and because Sphinx has cached the pages that you didn’t change.</p>
+</section>
+</section>
+<section id="compile-the-css-js-assets">
+<h2>Compile the CSS/JS assets<a class="headerlink" href="#compile-the-css-js-assets" title="永久链接至标题">#</a></h2>
+<p>The source files for CSS and JS assets are in <code class="docutils literal notranslate"><span class="pre">src/pydata_sphinx_theme/assets</span></code>.
+These are then built and bundled with the theme (e.g., <code class="docutils literal notranslate"><span class="pre">scss</span></code> is turned into <code class="docutils literal notranslate"><span class="pre">css</span></code>).</p>
+<p>To compile the CSS/JS assets with <code class="docutils literal notranslate"><span class="pre">nox</span></code>, run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s compile
+</pre></div>
+</div>
+<p>This will compile all assets and place them in the appropriate folder to be used with documentation builds.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Compiled assets are <strong>not committed to git</strong>.
+The <code class="docutils literal notranslate"><span class="pre">sphinx-theme-builder</span></code> will bundle these assets automatically when we make a new release, but we do not manually commit these compiled assets to git history.</p>
+</div>
+</section>
+<section id="run-a-development-server">
+<h2>Run a development server<a class="headerlink" href="#run-a-development-server" title="永久链接至标题">#</a></h2>
+<p>You can combine the above two actions and run a development server so that changes to <code class="docutils literal notranslate"><span class="pre">src/</span></code> are automatically bundled with the package, and the documentation is immediately reloaded in a live preview window.</p>
+<p>To run the development server with <code class="docutils literal notranslate"><span class="pre">nox</span></code>, run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s docs-live
+</pre></div>
+</div>
+<p>When working on the theme, saving changes to any of these directories:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">src/js/index.js</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/scss/index.scss</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs/**/*.rst</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs/**/*.py</span></code></p></li>
+</ul>
+<p>will cause the development server to do the following:</p>
+<ul class="simple">
+<li><p>bundle/copy the CSS, JS, and vendored fonts</p></li>
+<li><p>regenerate the Jinja2 macros</p></li>
+<li><p>re-run Sphinx</p></li>
+</ul>
+</section>
+<section id="run-the-tests">
+<h2>Run the tests<a class="headerlink" href="#run-the-tests" title="永久链接至标题">#</a></h2>
+<p>This theme uses <code class="docutils literal notranslate"><span class="pre">pytest</span></code> for its testing, with a lightweight fixture defined
+in the <code class="docutils literal notranslate"><span class="pre">test_build.py</span></code> script that makes it easy to run a Sphinx build using
+this theme and inspect the results.</p>
+<p>In addition, we use <a class="reference external" href="https://pytest-regressions.readthedocs.io/en/latest/">pytest-regressions</a>
+to ensure that the HTML generated by the theme is what we’d expect. This module
+provides a <code class="docutils literal notranslate"><span class="pre">file_regression</span></code> fixture that will check the contents of an object
+against a reference file on disk. If the structure of the two differs, then the
+test will fail. If we <em>expect</em> the structure to differ, then delete the file on
+disk and run the test. A new file will be created, and subsequent tests will pass.</p>
+<p>To run the tests with <code class="docutils literal notranslate"><span class="pre">nox</span></code>, run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox -s <span class="nb">test</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+          </article>
+          
+
+          
+          
+          <footer class="bd-footer-article">
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="index.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Community Guide</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="structure.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Structure of this theme</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+          </footer>
+          
+      </div>
+      
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2019, PyData Community.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1605 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<meta content="An example of API documentation with pydata-sphinx-theme." lang="en" name="description" xml:lang="en" />
+
+    <title>Advanced API documentation and generated content &#8212; PyData Theme 0.10.0rc2 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/api';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
+        </script>
+    <link rel="canonical" href="http://127.0.0.1:8000/examples/api.html" />
+    <link rel="shortcut icon" href="../_static/logo.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="pandas.DataFrame.drop" href="generated/pandas.DataFrame.drop.html" />
+    <link rel="prev" title="PyData Library Styles" href="pydata.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh_CN">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div><div class="bd-header-announcement container-fluid" id="header-announcement">
+    
+
+
+<script>
+$.get("https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html", success=(data)=>{
+      $("#header-announcement").html(`<div class="bd-header-announcement__content">${data}</div>`);
+  }).fail(() => {
+  console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html")
+});
+</script>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <img src="../_static/logo.svg" class="logo__image only-light" alt="Logo image">
+    <img src="../_static/logo-dark.svg" class="logo__image only-dark" alt="Logo image">
+  
+  
+    <p class="title logo__title">PyData Theme</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class=" navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user_guide/index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../community/index.html">
+  Community Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Examples
+ </a>
+</li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                <div class="nav-item dropdown">
+                    <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pydata.org">PyData<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/">NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/donate">Donate to NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                    </div>
+                </div>
+                
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link" rel="noopener" target="_blank"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link" rel="noopener" target="_blank"><img src="../_static/pydata-logo.png" class="icon-link-image" alt="PyData"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container container-xl">
+    <div class="bd-container__inner row">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="导航">
+      Site Navigation
+    </p>
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user_guide/index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../community/index.html">
+  Community Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Examples
+ </a>
+</li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                <div class="nav-item dropdown">
+                    <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pydata.org">PyData<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/">NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/donate">Donate to NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                    </div>
+                </div>
+                
+</ul>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link" rel="noopener" target="_blank"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link" rel="noopener" target="_blank"><img src="../_static/pydata-logo.png" class="icon-link-image" alt="PyData"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Real-world examples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="gallery.html">
+   Gallery of sites using this theme
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="example_pandas.html">
+   Indexing and selecting data with Pandas
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Theme-specific styles
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="kitchen-sink/index.html">
+   Kitchen Sink
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/admonitions.html">
+     Admonitions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/api.html">
+     API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/blocks.html">
+     Blocks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/generic.html">
+     Generic items
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/images.html">
+     Images &amp; Figures
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/lists.html">
+     Lists
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/really-long.html">
+     Really Long Page Title because we should test sidebar wrapping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/structure.html">
+     Structural Elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/tables.html">
+     Tables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kitchen-sink/typography.html">
+     Typography
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydata.html">
+   PyData Library Styles
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Advanced API documentation and generated content
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="generated/pandas.DataFrame.drop.html">
+     pandas.DataFrame.drop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="generated/pandas.DataFrame.groupby.html">
+     pandas.DataFrame.groupby
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="generated/pandas.Series.array.html">
+     pandas.Series.array
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference and test section. Mostly meant for developers to check that things look OK.
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="no-sidebar.html">
+   1. Test of no sidebar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="persistent-search-field.html">
+   2. Test of persistent search field
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mult_headers.html">
+   3. Top-level headers and the TOC
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="subpages/index.html">
+   6. Section to show off pages with many sub-pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="subpages/subpage1.html">
+     6.1. Sub-page 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="subpages/subpage2.html">
+     6.2. Sub-page 2
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="subpages/subsubpages/index.html">
+     6.3. Section with sub-sub-pages
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="subpages/subsubpages/subsubpage1.html">
+       6.3.1. Sub-sub-page 1
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="subpages/subsubpages/subsubpage2.html">
+       6.3.2. Sub-sub-page 2
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="subpages/subsubpages/subsubpage3.html">
+       6.3.3. Sub-sub-page 3
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://jupyterbook.org/">
+   Link to an external site
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+
+      
+      
+      
+        <div class="bd-sidebar-secondary bd-toc">
+          
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autosummary-table-and-api-stub-pages">
+   Autosummary table and API stub pages
+  </a>
+  <ul class="nav section-nav flex-column">
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inline-module-documentation">
+   Inline module documentation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-numpy.linalg">
+     <code class="xref py py-mod docutils literal notranslate">
+      <span class="pre">
+       numpy.linalg
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         numpy.linalg
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#matrix-and-vector-products">
+         Matrix and vector products
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#decompositions">
+         Decompositions
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#matrix-eigenvalues">
+         Matrix eigenvalues
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#norms-and-other-numbers">
+         Norms and other numbers
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#solving-equations-and-inverting-matrices">
+         Solving equations and inverting matrices
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#exceptions">
+         Exceptions
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#c-api">
+   C++ API
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#javascript-api">
+   JavaScript API
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generated-index">
+   Generated Index
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional-parameter-args">
+   Optional parameter args
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pydata/pydata-sphinx-theme/edit/main/docs/examples/api.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../_sources/examples/api.rst">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+        </div>
+      
+      
+
+      
+      
+      <div class="bd-content col">
+          
+          <div class="bd-header-article">
+              
+          </div>
+
+          
+          
+          <article class="bd-article" role="main">
+             <section id="advanced-api-documentation-and-generated-content">
+<h1>Advanced API documentation and generated content<a class="headerlink" href="#advanced-api-documentation-and-generated-content" title="永久链接至标题">#</a></h1>
+<p>This page contains general code elements that are common
+for package documentation.</p>
+<section id="autosummary-table-and-api-stub-pages">
+<h2>Autosummary table and API stub pages<a class="headerlink" href="#autosummary-table-and-api-stub-pages" title="永久链接至标题">#</a></h2>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DataFrame.drop</span></code></a>([labels, axis, index, ...])</p></td>
+<td><p>Drop specified labels from rows or columns.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/pandas.DataFrame.groupby.html#pandas.DataFrame.groupby" title="pandas.DataFrame.groupby"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DataFrame.groupby</span></code></a>([by, axis, level, ...])</p></td>
+<td><p>Group DataFrame using a mapper or by a Series of columns.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/pandas.Series.array.html#pandas.Series.array" title="pandas.Series.array"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.Series.array</span></code></a></p></td>
+<td><p>The ExtensionArray of the data backing this Series or Index.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="inline-module-documentation">
+<h2>Inline module documentation<a class="headerlink" href="#inline-module-documentation" title="永久链接至标题">#</a></h2>
+<section id="module-numpy.linalg">
+<span id="numpy-linalg"></span><h3><a class="reference internal" href="#module-numpy.linalg" title="numpy.linalg"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy.linalg</span></code></a><a class="headerlink" href="#module-numpy.linalg" title="永久链接至标题">#</a></h3>
+<section id="id1">
+<h4><code class="docutils literal notranslate"><span class="pre">numpy.linalg</span></code><a class="headerlink" href="#id1" title="永久链接至标题">#</a></h4>
+<p>The NumPy linear algebra functions rely on BLAS and LAPACK to provide efficient
+low level implementations of standard linear algebra algorithms. Those
+libraries may be provided by NumPy itself using C versions of a subset of their
+reference implementations but, when possible, highly optimized libraries that
+take advantage of specialized processor functionality are preferred. Examples
+of such libraries are OpenBLAS, MKL (TM), and ATLAS. Because those libraries
+are multithreaded and processor dependent, environmental variables and external
+packages such as threadpoolctl may be needed to control the number of threads
+or specify the processor architecture.</p>
+<ul class="simple">
+<li><p>OpenBLAS: <a class="reference external" href="https://www.openblas.net/">https://www.openblas.net/</a></p></li>
+<li><p>threadpoolctl: <a class="reference external" href="https://github.com/joblib/threadpoolctl">https://github.com/joblib/threadpoolctl</a></p></li>
+</ul>
+<p>Please note that the most-used linear algebra functions in NumPy are present in
+the main <code class="docutils literal notranslate"><span class="pre">numpy</span></code> namespace rather than in <code class="docutils literal notranslate"><span class="pre">numpy.linalg</span></code>.  There are:
+<code class="docutils literal notranslate"><span class="pre">dot</span></code>, <code class="docutils literal notranslate"><span class="pre">vdot</span></code>, <code class="docutils literal notranslate"><span class="pre">inner</span></code>, <code class="docutils literal notranslate"><span class="pre">outer</span></code>, <code class="docutils literal notranslate"><span class="pre">matmul</span></code>, <code class="docutils literal notranslate"><span class="pre">tensordot</span></code>, <code class="docutils literal notranslate"><span class="pre">einsum</span></code>,
+<code class="docutils literal notranslate"><span class="pre">einsum_path</span></code> and <code class="docutils literal notranslate"><span class="pre">kron</span></code>.</p>
+<p>Functions present in numpy.linalg are listed below.</p>
+<section id="matrix-and-vector-products">
+<h5>Matrix and vector products<a class="headerlink" href="#matrix-and-vector-products" title="永久链接至标题">#</a></h5>
+<blockquote>
+<div><p>multi_dot
+matrix_power</p>
+</div></blockquote>
+</section>
+<section id="decompositions">
+<h5>Decompositions<a class="headerlink" href="#decompositions" title="永久链接至标题">#</a></h5>
+<blockquote>
+<div><p>cholesky
+qr
+svd</p>
+</div></blockquote>
+</section>
+<section id="matrix-eigenvalues">
+<h5>Matrix eigenvalues<a class="headerlink" href="#matrix-eigenvalues" title="永久链接至标题">#</a></h5>
+<blockquote>
+<div><p>eig
+eigh
+eigvals
+eigvalsh</p>
+</div></blockquote>
+</section>
+<section id="norms-and-other-numbers">
+<h5>Norms and other numbers<a class="headerlink" href="#norms-and-other-numbers" title="永久链接至标题">#</a></h5>
+<blockquote>
+<div><p>norm
+cond
+det
+matrix_rank
+slogdet</p>
+</div></blockquote>
+</section>
+<section id="solving-equations-and-inverting-matrices">
+<h5>Solving equations and inverting matrices<a class="headerlink" href="#solving-equations-and-inverting-matrices" title="永久链接至标题">#</a></h5>
+<blockquote>
+<div><p>solve
+tensorsolve
+lstsq
+inv
+pinv
+tensorinv</p>
+</div></blockquote>
+</section>
+<section id="exceptions">
+<h5>Exceptions<a class="headerlink" href="#exceptions" title="永久链接至标题">#</a></h5>
+<blockquote>
+<div><p>LinAlgError</p>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="numpy.linalg.eig">
+<span class="sig-prename descclassname"><span class="pre">numpy.linalg.</span></span><span class="sig-name descname"><span class="pre">eig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#numpy.linalg.eig" title="永久链接至目标">#</a></dt>
+<dd><p>Compute the eigenvalues and right eigenvectors of a square array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>a</strong><span class="classifier">(…, M, M) array</span></dt><dd><p>Matrices for which the eigenvalues and right eigenvectors will
+be computed</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>w</strong><span class="classifier">(…, M) array</span></dt><dd><p>The eigenvalues, each repeated according to its multiplicity.
+The eigenvalues are not necessarily ordered. The resulting
+array will be of complex type, unless the imaginary part is
+zero in which case it will be cast to a real type. When <cite>a</cite>
+is real the resulting eigenvalues will be real (0 imaginary
+part) or occur in conjugate pairs</p>
+</dd>
+<dt><strong>v</strong><span class="classifier">(…, M, M) array</span></dt><dd><p>The normalized (unit “length”) eigenvectors, such that the
+column <code class="docutils literal notranslate"><span class="pre">v[:,i]</span></code> is the eigenvector corresponding to the
+eigenvalue <code class="docutils literal notranslate"><span class="pre">w[i]</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>LinAlgError</dt><dd><p>If the eigenvalue computation does not converge.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">eigvals</span></code></dt><dd><p>eigenvalues of a non-symmetric array.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">eigh</span></code></dt><dd><p>eigenvalues and eigenvectors of a real symmetric or complex Hermitian (conjugate symmetric) array.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">eigvalsh</span></code></dt><dd><p>eigenvalues of a real symmetric or complex Hermitian (conjugate symmetric) array.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">scipy.linalg.eig</span></code></dt><dd><p>Similar function in SciPy that also solves the generalized eigenvalue problem.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">scipy.linalg.schur</span></code></dt><dd><p>Best choice for unitary and other non-Hermitian normal matrices.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.8.0 新版功能.</span></p>
+</div>
+<p>Broadcasting rules apply, see the <cite>numpy.linalg</cite> documentation for
+details.</p>
+<p>This is implemented using the <code class="docutils literal notranslate"><span class="pre">_geev</span></code> LAPACK routines which compute
+the eigenvalues and eigenvectors of general square arrays.</p>
+<p>The number <cite>w</cite> is an eigenvalue of <cite>a</cite> if there exists a vector
+<cite>v</cite> such that <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&#64;</span> <span class="pre">v</span> <span class="pre">=</span> <span class="pre">w</span> <span class="pre">*</span> <span class="pre">v</span></code>. Thus, the arrays <cite>a</cite>, <cite>w</cite>, and
+<cite>v</cite> satisfy the equations <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&#64;</span> <span class="pre">v[:,i]</span> <span class="pre">=</span> <span class="pre">w[i]</span> <span class="pre">*</span> <span class="pre">v[:,i]</span></code>
+for <span class="math notranslate nohighlight">\(i \in \{0,...,M-1\}\)</span>.</p>
+<p>The array <cite>v</cite> of eigenvectors may not be of maximum rank, that is, some
+of the columns may be linearly dependent, although round-off error may
+obscure that fact. If the eigenvalues are all different, then theoretically
+the eigenvectors are linearly independent and <cite>a</cite> can be diagonalized by
+a similarity transformation using <cite>v</cite>, i.e, <code class="docutils literal notranslate"><span class="pre">inv(v)</span> <span class="pre">&#64;</span> <span class="pre">a</span> <span class="pre">&#64;</span> <span class="pre">v</span></code> is diagonal.</p>
+<p>For non-Hermitian normal matrices the SciPy function <cite>scipy.linalg.schur</cite>
+is preferred because the matrix <cite>v</cite> is guaranteed to be unitary, which is
+not the case when using <cite>eig</cite>. The Schur factorization produces an
+upper triangular matrix rather than a diagonal matrix, but for normal
+matrices only the diagonal of the upper triangular matrix is needed, the
+rest is roundoff error.</p>
+<p>Finally, it is emphasized that <cite>v</cite> consists of the <em>right</em> (as in
+right-hand side) eigenvectors of <cite>a</cite>.  A vector <cite>y</cite> satisfying
+<code class="docutils literal notranslate"><span class="pre">y.T</span> <span class="pre">&#64;</span> <span class="pre">a</span> <span class="pre">=</span> <span class="pre">z</span> <span class="pre">*</span> <span class="pre">y.T</span></code> for some number <cite>z</cite> is called a <em>left</em>
+eigenvector of <cite>a</cite>, and, in general, the left and right eigenvectors
+of a matrix are not necessarily the (perhaps conjugate) transposes
+of each other.</p>
+<p class="rubric">References</p>
+<p>G. Strang, <em>Linear Algebra and Its Applications</em>, 2nd Ed., Orlando, FL,
+Academic Press, Inc., 1980, Various pp.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">linalg</span> <span class="k">as</span> <span class="n">LA</span>
+</pre></div>
+</div>
+<p>(Almost) trivial example with real e-values and e-vectors.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">LA</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">;</span> <span class="n">v</span>
+<span class="go">array([1., 2., 3.])</span>
+<span class="go">array([[1., 0., 0.],</span>
+<span class="go">       [0., 1., 0.],</span>
+<span class="go">       [0., 0., 1.]])</span>
+</pre></div>
+</div>
+<p>Real matrix possessing complex e-values and e-vectors; note that the
+e-values are complex conjugates of each other.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">LA</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">;</span> <span class="n">v</span>
+<span class="go">array([1.+1.j, 1.-1.j])</span>
+<span class="go">array([[0.70710678+0.j        , 0.70710678-0.j        ],</span>
+<span class="go">       [0.        -0.70710678j, 0.        +0.70710678j]])</span>
+</pre></div>
+</div>
+<p>Complex-valued matrix with real e-values (but complex-valued e-vectors);
+note that <code class="docutils literal notranslate"><span class="pre">a.conj().T</span> <span class="pre">==</span> <span class="pre">a</span></code>, i.e., <cite>a</cite> is Hermitian.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="n">j</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="n">j</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">LA</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">;</span> <span class="n">v</span>
+<span class="go">array([2.+0.j, 0.+0.j])</span>
+<span class="go">array([[ 0.        +0.70710678j,  0.70710678+0.j        ], # may vary</span>
+<span class="go">       [ 0.70710678+0.j        , -0.        +0.70710678j]])</span>
+</pre></div>
+</div>
+<p>Be careful about round-off error!</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">1e-9</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="mf">1e-9</span><span class="p">]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Theor. e-values are 1 +/- 1e-9</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">LA</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">;</span> <span class="n">v</span>
+<span class="go">array([1., 1.])</span>
+<span class="go">array([[1., 0.],</span>
+<span class="go">       [0., 1.]])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="numpy.linalg.matrix_power">
+<span class="sig-prename descclassname"><span class="pre">numpy.linalg.</span></span><span class="sig-name descname"><span class="pre">matrix_power</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#numpy.linalg.matrix_power" title="永久链接至目标">#</a></dt>
+<dd><p>Raise a square matrix to the (integer) power <cite>n</cite>.</p>
+<p>For positive integers <cite>n</cite>, the power is computed by repeated matrix
+squarings and matrix multiplications. If <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">==</span> <span class="pre">0</span></code>, the identity matrix
+of the same shape as M is returned. If <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&lt;</span> <span class="pre">0</span></code>, the inverse
+is computed and then raised to the <code class="docutils literal notranslate"><span class="pre">abs(n)</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Stacks of object matrices are not currently supported.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>a</strong><span class="classifier">(…, M, M) array_like</span></dt><dd><p>Matrix to be “powered”.</p>
+</dd>
+<dt><strong>n</strong><span class="classifier">int</span></dt><dd><p>The exponent can be any integer or long integer, positive,
+negative, or zero.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>a**n</strong><span class="classifier">(…, M, M) ndarray or matrix object</span></dt><dd><p>The return value is the same shape and type as <cite>M</cite>;
+if the exponent is positive or zero then the type of the
+elements is the same as those of <cite>M</cite>. If the exponent is
+negative the elements are floating-point.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>LinAlgError</dt><dd><p>For matrices that are not square or that (for negative powers) cannot
+be inverted numerically.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="kn">import</span> <span class="n">matrix_power</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span> <span class="c1"># matrix equiv. of the imaginary unit</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">matrix_power</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># should = -i</span>
+<span class="go">array([[ 0, -1],</span>
+<span class="go">       [ 1,  0]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">matrix_power</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">array([[1, 0],</span>
+<span class="go">       [0, 1]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">matrix_power</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># should = 1/(-i) = i, but w/ f.p. elements</span>
+<span class="go">array([[ 0.,  1.],</span>
+<span class="go">       [-1.,  0.]])</span>
+</pre></div>
+</div>
+<p>Somewhat more sophisticated example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">i</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="c1"># one of the three quaternion units not equal to 1</span>
+<span class="go">array([[ 0., -1.,  0.,  0.],</span>
+<span class="go">       [ 1.,  0.,  0.,  0.],</span>
+<span class="go">       [ 0.,  0.,  0.,  1.],</span>
+<span class="go">       [ 0.,  0., -1.,  0.]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">matrix_power</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># = -np.eye(4)</span>
+<span class="go">array([[-1.,  0.,  0.,  0.],</span>
+<span class="go">       [ 0., -1.,  0.,  0.],</span>
+<span class="go">       [ 0.,  0., -1.,  0.],</span>
+<span class="go">       [ 0.,  0.,  0., -1.]])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="numpy.linalg.norm">
+<span class="sig-prename descclassname"><span class="pre">numpy.linalg.</span></span><span class="sig-name descname"><span class="pre">norm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#numpy.linalg.norm" title="永久链接至目标">#</a></dt>
+<dd><p>Matrix or vector norm.</p>
+<p>This function is able to return one of eight different matrix norms,
+or one of an infinite number of vector norms (described below), depending
+on the value of the <code class="docutils literal notranslate"><span class="pre">ord</span></code> parameter.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>x</strong><span class="classifier">array_like</span></dt><dd><p>Input array.  If <cite>axis</cite> is None, <cite>x</cite> must be 1-D or 2-D, unless <cite>ord</cite>
+is None. If both <cite>axis</cite> and <cite>ord</cite> are None, the 2-norm of
+<code class="docutils literal notranslate"><span class="pre">x.ravel</span></code> will be returned.</p>
+</dd>
+<dt><strong>ord</strong><span class="classifier">{non-zero int, inf, -inf, ‘fro’, ‘nuc’}, optional</span></dt><dd><p>Order of the norm (see table under <code class="docutils literal notranslate"><span class="pre">Notes</span></code>). inf means numpy’s
+<cite>inf</cite> object. The default is None.</p>
+</dd>
+<dt><strong>axis</strong><span class="classifier">{None, int, 2-tuple of ints}, optional.</span></dt><dd><p>If <cite>axis</cite> is an integer, it specifies the axis of <cite>x</cite> along which to
+compute the vector norms.  If <cite>axis</cite> is a 2-tuple, it specifies the
+axes that hold 2-D matrices, and the matrix norms of these matrices
+are computed.  If <cite>axis</cite> is None then either a vector norm (when <cite>x</cite>
+is 1-D) or a matrix norm (when <cite>x</cite> is 2-D) is returned. The default
+is None.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.8.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><strong>keepdims</strong><span class="classifier">bool, optional</span></dt><dd><p>If this is set to True, the axes which are normed over are left in the
+result as dimensions with size one.  With this option the result will
+broadcast correctly against the original <cite>x</cite>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.10.0 新版功能.</span></p>
+</div>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>n</strong><span class="classifier">float or ndarray</span></dt><dd><p>Norm of the matrix or vector(s).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">scipy.linalg.norm</span></code></dt><dd><p>Similar function in SciPy.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p>For values of <code class="docutils literal notranslate"><span class="pre">ord</span> <span class="pre">&lt;</span> <span class="pre">1</span></code>, the result is, strictly speaking, not a
+mathematical ‘norm’, but it may still be useful for various numerical
+purposes.</p>
+<p>The following norms can be calculated:</p>
+<table class="table">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 47%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ord</p></th>
+<th class="head"><p>norm for matrices</p></th>
+<th class="head"><p>norm for vectors</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>None</p></td>
+<td><p>Frobenius norm</p></td>
+<td><p>2-norm</p></td>
+</tr>
+<tr class="row-odd"><td><p>‘fro’</p></td>
+<td><p>Frobenius norm</p></td>
+<td><p>–</p></td>
+</tr>
+<tr class="row-even"><td><p>‘nuc’</p></td>
+<td><p>nuclear norm</p></td>
+<td><p>–</p></td>
+</tr>
+<tr class="row-odd"><td><p>inf</p></td>
+<td><p>max(sum(abs(x), axis=1))</p></td>
+<td><p>max(abs(x))</p></td>
+</tr>
+<tr class="row-even"><td><p>-inf</p></td>
+<td><p>min(sum(abs(x), axis=1))</p></td>
+<td><p>min(abs(x))</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>–</p></td>
+<td><p>sum(x != 0)</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>max(sum(abs(x), axis=0))</p></td>
+<td><p>as below</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>min(sum(abs(x), axis=0))</p></td>
+<td><p>as below</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>2-norm (largest sing. value)</p></td>
+<td><p>as below</p></td>
+</tr>
+<tr class="row-odd"><td><p>-2</p></td>
+<td><p>smallest singular value</p></td>
+<td><p>as below</p></td>
+</tr>
+<tr class="row-even"><td><p>other</p></td>
+<td><p>–</p></td>
+<td><p>sum(abs(x)**ord)**(1./ord)</p></td>
+</tr>
+</tbody>
+</table>
+<p>The Frobenius norm is given by <a class="reference internal" href="#rac1c834adb66-1" id="id2">[1]</a>:</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(||A||_F = [\sum_{i,j} abs(a_{i,j})^2]^{1/2}\)</span></p>
+</div></blockquote>
+<p>The nuclear norm is the sum of the singular values.</p>
+<p>Both the Frobenius and nuclear norm orders are only defined for
+matrices and raise a ValueError when <code class="docutils literal notranslate"><span class="pre">x.ndim</span> <span class="pre">!=</span> <span class="pre">2</span></code>.</p>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="rac1c834adb66-1"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>G. H. Golub and C. F. Van Loan, <em>Matrix Computations</em>,
+Baltimore, MD, Johns Hopkins University Press, 1985, pg. 15</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">linalg</span> <span class="k">as</span> <span class="n">LA</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> <span class="o">-</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">array([-4, -3, -2, ...,  2,  3,  4])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span>
+<span class="go">array([[-4, -3, -2],</span>
+<span class="go">       [-1,  0,  1],</span>
+<span class="go">       [ 2,  3,  4]])</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="go">7.745966692414834</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="go">7.745966692414834</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s1">&#39;fro&#39;</span><span class="p">)</span>
+<span class="go">7.745966692414834</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<span class="go">4.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<span class="go">9.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<span class="go">2.0</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">20.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">7.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">-4.6566128774142013e-010</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">6.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">7.745966692414834</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">7.3484692283495345</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">1.8570331885190563e-016 # may vary</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">5.8480354764257312 # may vary</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+<span class="go">0.0</span>
+</pre></div>
+</div>
+<p>Using the <cite>axis</cite> argument to compute vector norms:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="gp">... </span>              <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">array([ 1.41421356,  2.23606798,  5.        ])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">array([ 3.74165739,  4.24264069])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="nb">ord</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">array([ 6.,  6.])</span>
+</pre></div>
+</div>
+<p>Using the <cite>axis</cite> argument to compute matrix norms:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="go">array([  3.74165739,  11.22497216])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]),</span> <span class="n">LA</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
+<span class="go">(3.7416573867739413, 11.224972160321824)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="numpy.linalg.tensorinv">
+<span class="sig-prename descclassname"><span class="pre">numpy.linalg.</span></span><span class="sig-name descname"><span class="pre">tensorinv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#numpy.linalg.tensorinv" title="永久链接至目标">#</a></dt>
+<dd><p>Compute the ‘inverse’ of an N-dimensional array.</p>
+<p>The result is an inverse for <cite>a</cite> relative to the tensordot operation
+<code class="docutils literal notranslate"><span class="pre">tensordot(a,</span> <span class="pre">b,</span> <span class="pre">ind)</span></code>, i. e., up to floating-point accuracy,
+<code class="docutils literal notranslate"><span class="pre">tensordot(tensorinv(a),</span> <span class="pre">a,</span> <span class="pre">ind)</span></code> is the “identity” tensor for the
+tensordot operation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>a</strong><span class="classifier">array_like</span></dt><dd><p>Tensor to ‘invert’. Its shape must be ‘square’, i. e.,
+<code class="docutils literal notranslate"><span class="pre">prod(a.shape[:ind])</span> <span class="pre">==</span> <span class="pre">prod(a.shape[ind:])</span></code>.</p>
+</dd>
+<dt><strong>ind</strong><span class="classifier">int, optional</span></dt><dd><p>Number of first indices that are involved in the inverse sum.
+Must be a positive integer, default is 2.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>b</strong><span class="classifier">ndarray</span></dt><dd><p><cite>a</cite>’s tensordot inverse, shape <code class="docutils literal notranslate"><span class="pre">a.shape[ind:]</span> <span class="pre">+</span> <span class="pre">a.shape[:ind]</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>LinAlgError</dt><dd><p>If <cite>a</cite> is singular or not ‘square’ (in the above sense).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.tensordot</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorsolve</span></code></dt><dd></dd>
+</dl>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ainv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">tensorinv</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">ind</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ainv</span><span class="o">.</span><span class="n">shape</span>
+<span class="go">(8, 3, 4, 6)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">tensordot</span><span class="p">(</span><span class="n">ainv</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">tensorsolve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ainv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">tensorinv</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">ind</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ainv</span><span class="o">.</span><span class="n">shape</span>
+<span class="go">(8, 3, 24)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">tensordot</span><span class="p">(</span><span class="n">ainv</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">tensorsolve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+</section>
+<section id="c-api">
+<h2>C++ API<a class="headerlink" href="#c-api" title="永久链接至标题">#</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv46MyType">
+<span id="_CPPv36MyType"></span><span id="_CPPv26MyType"></span><span id="MyType"></span><span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MyType</span></span></span><a class="headerlink" href="#_CPPv46MyType" title="永久链接至目标">#</a><br /></dt>
+<dd><p>Some type</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv43FooK6MyType">
+<span id="_CPPv33FooK6MyType"></span><span id="_CPPv23FooK6MyType"></span><span id="Foo__MyTypeC"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv46MyType" title="MyType"><span class="n"><span class="pre">MyType</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Foo</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv46MyType" title="MyType"><span class="n"><span class="pre">MyType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">bar</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv43FooK6MyType" title="永久链接至目标">#</a><br /></dt>
+<dd><p>Some function type thing</p>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0_NSt6size_tEENSt5arrayE">
+<span id="_CPPv3I0_NSt6size_tEENSt5arrayE"></span><span id="_CPPv2I0_NSt6size_tEENSt5arrayE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">N</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">array</span></span></span><a class="headerlink" href="#_CPPv4I0_NSt6size_tEENSt5arrayE" title="永久链接至目标">#</a><br /></dt>
+<dd><p>Some cpp class</p>
+</dd></dl>
+
+<dl class="cpp member">
+<dt class="sig sig-object cpp" id="_CPPv4N6Sphinx7versionE">
+<span id="_CPPv3N6Sphinx7versionE"></span><span id="_CPPv2N6Sphinx7versionE"></span><span id="Sphinx::version__float"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">Sphinx</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">version</span></span></span><a class="headerlink" href="#_CPPv4N6Sphinx7versionE" title="永久链接至目标">#</a><br /></dt>
+<dd><p>The description of Sphinx::version.</p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47version">
+<span id="_CPPv37version"></span><span id="_CPPv27version"></span><span id="version__i"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">version</span></span></span><a class="headerlink" href="#_CPPv47version" title="永久链接至目标">#</a><br /></dt>
+<dd><p>The description of version.</p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv44List">
+<span id="_CPPv34List"></span><span id="_CPPv24List"></span><span id="List"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">List</span></span></span><a class="headerlink" href="#_CPPv44List" title="永久链接至目标">#</a><br /></dt>
+<dd><p>The description of List type.</p>
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv46MyEnum">
+<span id="_CPPv36MyEnum"></span><span id="_CPPv26MyEnum"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MyEnum</span></span></span><a class="headerlink" href="#_CPPv46MyEnum" title="永久链接至目标">#</a><br /></dt>
+<dd><p>An unscoped enum.</p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N6MyEnum1AE">
+<span id="_CPPv3N6MyEnum1AE"></span><span id="_CPPv2N6MyEnum1AE"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">A</span></span></span><a class="headerlink" href="#_CPPv4N6MyEnum1AE" title="永久链接至目标">#</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum-class">
+<dt class="sig sig-object cpp" id="_CPPv412MyScopedEnum">
+<span id="_CPPv312MyScopedEnum"></span><span id="_CPPv212MyScopedEnum"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MyScopedEnum</span></span></span><a class="headerlink" href="#_CPPv412MyScopedEnum" title="永久链接至目标">#</a><br /></dt>
+<dd><p>A scoped enum.</p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N12MyScopedEnum1BE">
+<span id="_CPPv3N12MyScopedEnum1BE"></span><span id="_CPPv2N12MyScopedEnum1BE"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">B</span></span></span><a class="headerlink" href="#_CPPv4N12MyScopedEnum1BE" title="永久链接至目标">#</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum-struct">
+<dt class="sig sig-object cpp" id="_CPPv422MyScopedVisibilityEnum">
+<span id="_CPPv322MyScopedVisibilityEnum"></span><span id="_CPPv222MyScopedVisibilityEnum"></span><span class="k"><span class="pre">protected</span></span><span class="w"> </span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MyScopedVisibilityEnum</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">underlying_type</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">MySpecificEnum</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><a class="headerlink" href="#_CPPv422MyScopedVisibilityEnum" title="永久链接至目标">#</a><br /></dt>
+<dd><p>A scoped enum with non-default visibility, and with a specified underlying type.</p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22MyScopedVisibilityEnum1BE">
+<span id="_CPPv3N22MyScopedVisibilityEnum1BE"></span><span id="_CPPv2N22MyScopedVisibilityEnum1BE"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">B</span></span></span><a class="headerlink" href="#_CPPv4N22MyScopedVisibilityEnum1BE" title="永久链接至目标">#</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="javascript-api">
+<h2>JavaScript API<a class="headerlink" href="#javascript-api" title="永久链接至标题">#</a></h2>
+<span class="target" id="module-module_a.submodule"></span><ul class="simple">
+<li><p>Link to <a class="reference internal" href="#module_a.submodule.ModTopLevel" title="module_a.submodule.ModTopLevel"><code class="xref js js-class docutils literal notranslate"><span class="pre">ModTopLevel()</span></code></a></p></li>
+</ul>
+<dl class="js class">
+<dt class="sig sig-object js" id="module_a.submodule.ModTopLevel">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">module_a</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">submodule</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ModTopLevel</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel" title="永久链接至目标">#</a></dt>
+<dd><ul class="simple">
+<li><p>Link to <a class="reference internal" href="#module_a.submodule.ModTopLevel.mod_child_1" title="module_a.submodule.ModTopLevel.mod_child_1"><code class="xref js js-meth docutils literal notranslate"><span class="pre">mod_child_1()</span></code></a></p></li>
+<li><p>Link to <a class="reference internal" href="#module_a.submodule.ModTopLevel.mod_child_1" title="module_a.submodule.ModTopLevel.mod_child_1"><code class="xref js js-meth docutils literal notranslate"><span class="pre">ModTopLevel.mod_child_1()</span></code></a></p></li>
+</ul>
+</dd></dl>
+
+<dl class="js method">
+<dt class="sig sig-object js" id="module_a.submodule.ModTopLevel.mod_child_1">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">ModTopLevel</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">mod_child_1</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel.mod_child_1" title="永久链接至目标">#</a></dt>
+<dd><ul class="simple">
+<li><p>Link to <a class="reference internal" href="#module_a.submodule.ModTopLevel.mod_child_2" title="module_a.submodule.ModTopLevel.mod_child_2"><code class="xref js js-meth docutils literal notranslate"><span class="pre">mod_child_2()</span></code></a></p></li>
+</ul>
+</dd></dl>
+
+<dl class="js method">
+<dt class="sig sig-object js" id="module_a.submodule.ModTopLevel.mod_child_2">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">ModTopLevel</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">mod_child_2</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel.mod_child_2" title="永久链接至目标">#</a></dt>
+<dd><ul class="simple">
+<li><p>Link to <a class="reference internal" href="#module_a.submodule.ModTopLevel.mod_child_1" title="module_a.submodule.ModTopLevel.mod_child_1"><code class="xref js js-meth docutils literal notranslate"><span class="pre">module_a.submodule.ModTopLevel.mod_child_1()</span></code></a></p></li>
+</ul>
+</dd></dl>
+
+<span class="target" id="module-module_b.submodule"></span><ul class="simple">
+<li><p>Link to <code class="xref js js-class docutils literal notranslate"><span class="pre">ModTopLevel()</span></code></p></li>
+</ul>
+<dl class="js class">
+<dt class="sig sig-object js" id="module_b.submodule.ModNested">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="n"><span class="pre">module_b</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">submodule</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ModNested</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested" title="永久链接至目标">#</a></dt>
+<dd><dl class="js method">
+<dt class="sig sig-object js" id="module_b.submodule.ModNested.nested_child_1">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">ModNested</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">nested_child_1</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested.nested_child_1" title="永久链接至目标">#</a></dt>
+<dd><ul class="simple">
+<li><p>Link to <a class="reference internal" href="#module_b.submodule.ModNested.nested_child_2" title="module_b.submodule.ModNested.nested_child_2"><code class="xref js js-meth docutils literal notranslate"><span class="pre">nested_child_2()</span></code></a></p></li>
+</ul>
+</dd></dl>
+
+<dl class="js method">
+<dt class="sig sig-object js" id="module_b.submodule.ModNested.nested_child_2">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">ModNested</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">nested_child_2</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested.nested_child_2" title="永久链接至目标">#</a></dt>
+<dd><ul class="simple">
+<li><p>Link to <a class="reference internal" href="#module_b.submodule.ModNested.nested_child_1" title="module_b.submodule.ModNested.nested_child_1"><code class="xref js js-meth docutils literal notranslate"><span class="pre">nested_child_1()</span></code></a></p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="generated-index">
+<h2>Generated Index<a class="headerlink" href="#generated-index" title="永久链接至标题">#</a></h2>
+<p>Part of the sphinx build process in generate and index file: <a class="reference internal" href="../genindex.html"><span class="std std-ref">索引</span></a>.</p>
+</section>
+<section id="optional-parameter-args">
+<h2>Optional parameter args<a class="headerlink" href="#optional-parameter-args" title="永久链接至标题">#</a></h2>
+<p>At this point optional parameters <a class="reference external" href="https://groups.google.com/forum/#!topic/sphinx-users/_qfsVT5Vxpw">cannot be generated from code</a>.
+However, some projects will manually do it, like so:</p>
+<p>This example comes from <a class="reference external" href="http://django-payments.readthedocs.org/en/latest/modules.html#payments.authorizenet.AuthorizeNetProvide">django-payments module docs</a>.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="numpy.linalg.payments.dotpay.DotpayProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">payments.dotpay.</span></span><span class="sig-name descname"><span class="pre">DotpayProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seller_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">channel=0</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">lock=False</span></span></em><span class="optional">]</span>, <em class="sig-param"><span class="n"><span class="pre">lang='pl'</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#numpy.linalg.payments.dotpay.DotpayProvider" title="永久链接至目标">#</a></dt>
+<dd><p>This backend implements payments using a popular Polish gateway, <a class="reference external" href="http://www.dotpay.pl">Dotpay.pl</a>.</p>
+<p>Due to API limitations there is no support for transferring purchased items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seller_id</strong> – Seller ID assigned by Dotpay</p></li>
+<li><p><strong>pin</strong> – PIN assigned by Dotpay</p></li>
+<li><p><strong>channel</strong> – Default payment channel (consult reference guide)</p></li>
+<li><p><strong>lang</strong> – UI language</p></li>
+<li><p><strong>lock</strong> – Whether to disable channels other than the default selected above</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="永久链接至标题">#</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="numpy.linalg.Data_item_1">
+<span class="sig-prename descclassname"><span class="pre">numpy.linalg.</span></span><span class="sig-name descname"><span class="pre">Data_item_1</span></span><a class="headerlink" href="#numpy.linalg.Data_item_1" title="永久链接至目标">#</a></dt>
+<dt class="sig sig-object py" id="numpy.linalg.Data_item_2">
+<span class="sig-prename descclassname"><span class="pre">numpy.linalg.</span></span><span class="sig-name descname"><span class="pre">Data_item_2</span></span><a class="headerlink" href="#numpy.linalg.Data_item_2" title="永久链接至目标">#</a></dt>
+<dt class="sig sig-object py" id="numpy.linalg.Data_item_3">
+<span class="sig-prename descclassname"><span class="pre">numpy.linalg.</span></span><span class="sig-name descname"><span class="pre">Data_item_3</span></span><a class="headerlink" href="#numpy.linalg.Data_item_3" title="永久链接至目标">#</a></dt>
+<dd><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue elit eu hendrerit mattis.</p>
+</dd></dl>
+
+<p>Some data link <a class="reference internal" href="#numpy.linalg.Data_item_1" title="numpy.linalg.Data_item_1"><code class="xref py py-data docutils literal notranslate"><span class="pre">Data_item_1</span></code></a>.</p>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+          </article>
+          
+
+          
+          
+          <footer class="bd-footer-article">
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="pydata.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">PyData Library Styles</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="generated/pandas.DataFrame.drop.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">pandas.DataFrame.drop</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+          </footer>
+          
+      </div>
+      
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2019, PyData Community.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>

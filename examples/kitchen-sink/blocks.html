@@ -1,0 +1,1109 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Blocks &#8212; PyData Theme 0.10.0rc2 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/kitchen-sink/blocks';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
+        </script>
+    <link rel="canonical" href="http://127.0.0.1:8000/examples/kitchen-sink/blocks.html" />
+    <link rel="shortcut icon" href="../../_static/logo.svg"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Generic items" href="generic.html" />
+    <link rel="prev" title="API documentation" href="api.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh_CN">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div><div class="bd-header-announcement container-fluid" id="header-announcement">
+    
+
+
+<script>
+$.get("https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html", success=(data)=>{
+      $("#header-announcement").html(`<div class="bd-header-announcement__content">${data}</div>`);
+  }).fail(() => {
+  console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html")
+});
+</script>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="Logo image">
+    <img src="../../_static/logo-dark.svg" class="logo__image only-dark" alt="Logo image">
+  
+  
+    <p class="title logo__title">PyData Theme</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class=" navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../user_guide/index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../community/index.html">
+  Community Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Examples
+ </a>
+</li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                <div class="nav-item dropdown">
+                    <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pydata.org">PyData<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/">NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/donate">Donate to NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                    </div>
+                </div>
+                
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link" rel="noopener" target="_blank"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/pydata-logo.png" class="icon-link-image" alt="PyData"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container container-xl">
+    <div class="bd-container__inner row">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="导航">
+      Site Navigation
+    </p>
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../user_guide/index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../community/index.html">
+  Community Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Examples
+ </a>
+</li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                <div class="nav-item dropdown">
+                    <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pydata.org">PyData<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/">NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/donate">Donate to NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                    </div>
+                </div>
+                
+</ul>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link" rel="noopener" target="_blank"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/pydata-logo.png" class="icon-link-image" alt="PyData"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Real-world examples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../gallery.html">
+   Gallery of sites using this theme
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../example_pandas.html">
+   Indexing and selecting data with Pandas
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Theme-specific styles
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Kitchen Sink
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="admonitions.html">
+     Admonitions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api.html">
+     API documentation
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Blocks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="generic.html">
+     Generic items
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="images.html">
+     Images &amp; Figures
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lists.html">
+     Lists
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="really-long.html">
+     Really Long Page Title because we should test sidebar wrapping
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="structure.html">
+     Structural Elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tables.html">
+     Tables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="typography.html">
+     Typography
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydata.html">
+   PyData Library Styles
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../api.html">
+   Advanced API documentation and generated content
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../generated/pandas.DataFrame.drop.html">
+     pandas.DataFrame.drop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../generated/pandas.DataFrame.groupby.html">
+     pandas.DataFrame.groupby
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../generated/pandas.Series.array.html">
+     pandas.Series.array
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference and test section. Mostly meant for developers to check that things look OK.
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../no-sidebar.html">
+   1. Test of no sidebar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../persistent-search-field.html">
+   2. Test of persistent search field
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mult_headers.html">
+   3. Top-level headers and the TOC
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../subpages/index.html">
+   6. Section to show off pages with many sub-pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../subpages/subpage1.html">
+     6.1. Sub-page 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../subpages/subpage2.html">
+     6.2. Sub-page 2
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../subpages/subsubpages/index.html">
+     6.3. Section with sub-sub-pages
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../subpages/subsubpages/subsubpage1.html">
+       6.3.1. Sub-sub-page 1
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../subpages/subsubpages/subsubpage2.html">
+       6.3.2. Sub-sub-page 2
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../subpages/subsubpages/subsubpage3.html">
+       6.3.3. Sub-sub-page 3
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://jupyterbook.org/">
+   Link to an external site
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+
+      
+      
+      
+        <div class="bd-sidebar-secondary bd-toc">
+          
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#block-quotes">
+   Block Quotes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#epigraph">
+     Epigraph
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pull-quotes">
+     Pull quotes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#highlights">
+     Highlights
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#line-blocks">
+   Line Blocks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#monospace-blocks">
+   Monospace Blocks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#production-list">
+     Production List
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#literal-blocks">
+     Literal Blocks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#doctest-blocks">
+     Doctest Blocks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parsed-literals">
+     Parsed Literals
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-block">
+     Code Block
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#with-caption">
+       With caption
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#with-line-numbers">
+       With line numbers
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#with-none-highlighting">
+       With
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         none
+        </span>
+       </code>
+       highlighting
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pydata/pydata-sphinx-theme/edit/main/docs/examples/kitchen-sink/blocks.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../_sources/examples/kitchen-sink/blocks.rst">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+        </div>
+      
+      
+
+      
+      
+      <div class="bd-content col">
+          
+          <div class="bd-header-article">
+              
+          </div>
+
+          
+          
+          <article class="bd-article" role="main">
+             <section id="blocks">
+<h1>Blocks<a class="headerlink" href="#blocks" title="永久链接至标题">#</a></h1>
+<section id="block-quotes">
+<h2>Block Quotes<a class="headerlink" href="#block-quotes" title="永久链接至标题">#</a></h2>
+<p>Block quotes consist of indented body elements:</p>
+<blockquote>
+<div><p>My theory by A. Elk.  Brackets Miss, brackets.  This theory goes
+as follows and begins now.  All brontosauruses are thin at one
+end, much much thicker in the middle and then thin again at the
+far end.  That is my theory, it is mine, and belongs to me and I
+own it, and what it is too.</p>
+<p class="attribution">—Anne Elk (Miss)</p>
+</div></blockquote>
+<section id="epigraph">
+<h3>Epigraph<a class="headerlink" href="#epigraph" title="永久链接至标题">#</a></h3>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#epigraph">https://docutils.sourceforge.io/docs/ref/rst/directives.html#epigraph</a></p>
+<blockquote class="epigraph">
+<div><p>My theory by A. Elk.  Brackets Miss, brackets.  This theory goes
+as follows and begins now.  All brontosauruses are thin at one
+end, much much thicker in the middle and then thin again at the
+far end.  That is my theory, it is mine, and belongs to me and I
+own it, and what it is too.</p>
+<p class="attribution">—Anne Elk (Miss)</p>
+</div></blockquote>
+</section>
+<section id="pull-quotes">
+<h3>Pull quotes<a class="headerlink" href="#pull-quotes" title="永久链接至标题">#</a></h3>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#pull-quote">https://docutils.sourceforge.io/docs/ref/rst/directives.html#pull-quote</a></p>
+<blockquote class="pull-quote">
+<div><p>My theory by A. Elk.  Brackets Miss, brackets.  This theory goes
+as follows and begins now.  All brontosauruses are thin at one
+end, much much thicker in the middle and then thin again at the
+far end.  That is my theory, it is mine, and belongs to me and I
+own it, and what it is too.</p>
+<p class="attribution">—Anne Elk (Miss)</p>
+</div></blockquote>
+</section>
+<section id="highlights">
+<h3>Highlights<a class="headerlink" href="#highlights" title="永久链接至标题">#</a></h3>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#highlights">https://docutils.sourceforge.io/docs/ref/rst/directives.html#highlights</a></p>
+<blockquote class="highlights">
+<div><p>My theory by A. Elk.  Brackets Miss, brackets.  This theory goes
+as follows and begins now.  All brontosauruses are thin at one
+end, much much thicker in the middle and then thin again at the
+far end.  That is my theory, it is mine, and belongs to me and I
+own it, and what it is too.</p>
+<p class="attribution">—Anne Elk (Miss)</p>
+</div></blockquote>
+</section>
+</section>
+<section id="line-blocks">
+<h2>Line Blocks<a class="headerlink" href="#line-blocks" title="永久链接至标题">#</a></h2>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#line-blocks">https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#line-blocks</a></p>
+<p>This is a normal text paragraph.</p>
+<div class="line-block">
+<div class="line">This is a line block.  It ends with a blank line.</div>
+<div class="line-block">
+<div class="line">Each new line begins with a vertical bar (“|”).</div>
+<div class="line">Line breaks and initial indents are preserved.</div>
+</div>
+<div class="line">Continuation lines are wrapped portions of long lines;
+they begin with a space in place of the vertical bar.</div>
+<div class="line-block">
+<div class="line">The left edge of a continuation line need not be aligned with
+the left edge of the text above it.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">This is a second line block.</div>
+<div class="line"><br /></div>
+<div class="line">Blank lines are permitted internally, but they must begin with a “|”.</div>
+</div>
+<p>This is a normal text paragraph again.</p>
+</section>
+<section id="monospace-blocks">
+<h2>Monospace Blocks<a class="headerlink" href="#monospace-blocks" title="永久链接至标题">#</a></h2>
+<p>Sphinx supports many kinds of monospace blocks. This section is meant to
+showcase <em>all</em> of them that as known to the author of this page, at the time of
+writing.</p>
+<section id="production-list">
+<h3>Production List<a class="headerlink" href="#production-list" title="永久链接至标题">#</a></h3>
+<p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-productionlist">https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-productionlist</a></p>
+<blockquote>
+<div><p>This directive is used to enclose a group of productions. Each production is given on a single line and consists of a name, separated by a colon from the following definition.</p>
+</div></blockquote>
+<p>This just shows up as a vanilla <code class="docutils literal notranslate"><span class="pre">&lt;pre&gt;</span></code>, which is… both nice and a bit
+annoying.</p>
+<pre>
+<strong id="grammar-token-try_stmt"><span id="grammar-token-try-stmt"></span>try_stmt </strong> ::=  try1_stmt | try2_stmt
+<strong id="grammar-token-try1_stmt"><span id="grammar-token-try1-stmt"></span>try1_stmt</strong> ::=  &quot;try&quot; &quot;:&quot; <code class="xref docutils literal notranslate"><span class="pre">suite</span></code>
+               (&quot;except&quot; [<code class="xref docutils literal notranslate"><span class="pre">expression</span></code> [&quot;,&quot; <code class="xref docutils literal notranslate"><span class="pre">target</span></code>]] &quot;:&quot; <code class="xref docutils literal notranslate"><span class="pre">suite</span></code>)+
+               [&quot;else&quot; &quot;:&quot; <code class="xref docutils literal notranslate"><span class="pre">suite</span></code>]
+               [&quot;finally&quot; &quot;:&quot; <code class="xref docutils literal notranslate"><span class="pre">suite</span></code>]
+<strong id="grammar-token-try2_stmt"><span id="grammar-token-try2-stmt"></span>try2_stmt</strong> ::=  &quot;try&quot; &quot;:&quot; <code class="xref docutils literal notranslate"><span class="pre">suite</span></code>
+               &quot;finally&quot; &quot;:&quot; <code class="xref docutils literal notranslate"><span class="pre">suite</span></code>
+               &quot;this-is-intentionally-very-stupidly-long-to-make-sure-that-this-has-a-proper-scrollbar&quot;
+</pre>
+</section>
+<section id="literal-blocks">
+<h3>Literal Blocks<a class="headerlink" href="#literal-blocks" title="永久链接至标题">#</a></h3>
+<p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#literal-blocks">https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#literal-blocks</a></p>
+<blockquote>
+<div><p>contains a block of text where line breaks and whitespace are significant and must be preserved</p>
+</div></blockquote>
+<p>This is a normal text paragraph. The next paragraph is a code sample:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">It</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">processed</span> <span class="ow">in</span> <span class="nb">any</span> <span class="n">way</span><span class="p">,</span> <span class="k">except</span>
+<span class="n">that</span> <span class="n">the</span> <span class="n">indentation</span> <span class="ow">is</span> <span class="n">removed</span><span class="o">.</span>
+
+<span class="n">It</span> <span class="n">can</span> <span class="n">span</span> <span class="n">multiple</span> <span class="n">lines</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>This is a normal text paragraph again.</p>
+<p>They can be quoted without indentation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt; Great idea!
+&gt;
+&gt; Why didn&#39;t I think of that?
+</pre></div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Literal includes can also have captions.</span><a class="headerlink" href="#id1" title="永久链接至代码">#</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">sphinx</span> <span class="kn">import</span> <span class="n">addnodes</span>
+<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">sphinx.environment.adapters.toctree</span> <span class="kn">import</span> <span class="n">TocTree</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">sphinx.errors</span> <span class="kn">import</span> <span class="n">ExtensionError</span>
+<span class="linenos"> 4</span><span class="kn">from</span> <span class="nn">sphinx.util</span> <span class="kn">import</span> <span class="n">logging</span>
+<span class="linenos"> 5</span><span class="kn">from</span> <span class="nn">pygments.formatters</span> <span class="kn">import</span> <span class="n">HtmlFormatter</span>
+<span class="linenos"> 6</span><span class="kn">from</span> <span class="nn">pygments.styles</span> <span class="kn">import</span> <span class="n">get_all_styles</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="kn">from</span> <span class="nn">.bootstrap_html_translator</span> <span class="kn">import</span> <span class="n">BootstrapHTML5Translator</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;0.10.0rc2&quot;</span>
+<span class="linenos">11</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="doctest-blocks">
+<h3>Doctest Blocks<a class="headerlink" href="#doctest-blocks" title="永久链接至标题">#</a></h3>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#doctest-blocks">https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#doctest-blocks</a></p>
+<blockquote>
+<div><p>Doctest blocks are interactive Python sessions cut-and-pasted into docstrings. They are meant to illustrate usage by example, and provide an elegant and powerful testing environment via the doctest module in the Python standard library.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This is fine.</p>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Python-specific usage examples; begun with &quot;&gt;&gt;&gt;&quot;&#39;</span><span class="p">)</span>
+<span class="go">Python-specific usage examples; begun with &quot;&gt;&gt;&gt;&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(cut and pasted from interactive Python sessions)&quot;</span><span class="p">)</span>
+<span class="go">(cut and pasted from interactive Python sessions)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is an intentionally very long line because I want to make sure that we are handling scrollable code blocks correctly.&quot;</span><span class="p">)</span>
+<span class="go">This is an intentionally very long line because I want to make sure that we are handling scrollable code blocks correctly.</span>
+</pre></div>
+</div>
+</section>
+<section id="parsed-literals">
+<h3>Parsed Literals<a class="headerlink" href="#parsed-literals" title="永久链接至标题">#</a></h3>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#parsed-literal-block">https://docutils.sourceforge.io/docs/ref/rst/directives.html#parsed-literal-block</a></p>
+<blockquote>
+<div><p>It is equivalent to a line block with different rendering: typically in a typewriter/monospaced typeface, like an ordinary literal block. Parsed literal blocks are useful for adding hyperlinks to code examples.</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># parsed-literal test</span>
+<span class="n">curl</span> <span class="o">-</span><span class="n">O</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">someurl</span><span class="o">/</span><span class="n">release</span><span class="o">-</span><span class="mf">0.1.0</span><span class="o">.</span><span class="n">tar</span><span class="o">-</span><span class="n">gz</span>
+<span class="n">echo</span> <span class="s2">&quot;This is an intentionally very long line because I want to make sure that we are handling scrollable code blocks correctly.&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="code-block">
+<h3>Code Block<a class="headerlink" href="#code-block" title="永久链接至标题">#</a></h3>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#code">https://docutils.sourceforge.io/docs/ref/rst/directives.html#code</a></p>
+<blockquote>
+<div><p>The “code” directive constructs a literal block [containing code].</p>
+</div></blockquote>
+<p>This has an alias of <code class="docutils literal notranslate"><span class="pre">code-block</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Iterator</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="c1"># This is an example</span>
+<span class="linenos"> 4</span><span class="k">class</span> <span class="nc">Math</span><span class="p">:</span>
+<span class="linenos"> 5</span>    <span class="nd">@staticmethod</span>
+<span class="linenos"> 6</span>    <span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Iterator</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+<span class="linenos"> 7</span>        <span class="sd">&quot;&quot;&quot;Fibonacci series up to n&quot;&quot;&quot;</span>
+<span class="linenos"> 8</span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+<span class="linenos"> 9</span>        <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+<span class="linenos">10</span>            <span class="k">yield</span> <span class="n">a</span>
+<span class="linenos">11</span>            <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="n">result</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">Math</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="mi">42</span><span class="p">))</span>
+<span class="linenos">15</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The answer is </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+</pre></div>
+</div>
+<section id="with-caption">
+<h4>With caption<a class="headerlink" href="#with-caption" title="永久链接至标题">#</a></h4>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Code Blocks can have captions, which also adds a link to it.</span><a class="headerlink" href="#id2" title="永久链接至代码">#</a></div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;session_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;shorthands&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;windows&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;panes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo &#39;This is an intentionally very long line because I want to make sure that we are handling scrollable code blocks correctly.&#39;&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">],</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;window_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;long form&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="with-line-numbers">
+<h4>With line numbers<a class="headerlink" href="#with-line-numbers" title="永久链接至标题">#</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
+<span class="linenos">2</span>    <span class="n">interesting</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="hll"><span class="linenos">3</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This line is highlighted.&quot;</span><span class="p">)</span>
+</span><span class="linenos">4</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This one is not...&quot;</span><span class="p">)</span>
+<span class="hll"><span class="linenos">5</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;...but this one is.&quot;</span><span class="p">)</span>
+</span><span class="linenos">6</span>    <span class="nb">print</span><span class="p">(</span>
+<span class="linenos">7</span>        <span class="s2">&quot;This is an intentionally very long line because I want to make sure that we are handling scrollable code blocks correctly.&quot;</span>
+<span class="linenos">8</span>    <span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="with-none-highlighting">
+<h4>With <code class="docutils literal notranslate"><span class="pre">none</span></code> highlighting<a class="headerlink" href="#with-none-highlighting" title="永久链接至标题">#</a></h4>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Taken from https://en.wikipedia.org/wiki/Pseudocode#Example
+algorithm ford-fulkerson is
+    input: Graph G with flow capacity c,
+        source node s,
+        sink node t
+    output: Flow f such that f is maximal from s to t
+
+    (Note that f(u,v) is the flow from node u to node v, and c(u,v) is the flow capacity from node u to node v)
+
+    for each edge (u, v) in GE do
+        f(u, v) ← 0
+        f(v, u) ← 0
+
+    while there exists a path p from s to t in the residual network Gf do
+        let cf be the flow capacity of the residual network Gf
+        cf(p) ← min{cf(u, v) | (u, v) in p}
+        for each edge (u, v) in p do
+            f(u, v) ←  f(u, v) + cf(p)
+            f(v, u) ← −f(u, v)
+
+    return f
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+          </article>
+          
+
+          
+          
+          <footer class="bd-footer-article">
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="api.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">API documentation</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="generic.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Generic items</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+          </footer>
+          
+      </div>
+      
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2019, PyData Community.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>

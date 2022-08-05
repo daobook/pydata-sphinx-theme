@@ -1,0 +1,960 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Version switcher dropdowns &#8212; PyData Theme 0.10.0rc2 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/version-dropdown';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
+        </script>
+    <link rel="canonical" href="http://127.0.0.1:8000/user_guide/version-dropdown.html" />
+    <link rel="shortcut icon" href="../_static/logo.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Search bar / search button" href="search.html" />
+    <link rel="prev" title="Announcement banners" href="announcements.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh_CN">  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div><div class="bd-header-announcement container-fluid" id="header-announcement">
+    
+
+
+<script>
+$.get("https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html", success=(data)=>{
+      $("#header-announcement").html(`<div class="bd-header-announcement__content">${data}</div>`);
+  }).fail(() => {
+  console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html")
+});
+</script>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <img src="../_static/logo.svg" class="logo__image only-light" alt="Logo image">
+    <img src="../_static/logo-dark.svg" class="logo__image only-dark" alt="Logo image">
+  
+  
+    <p class="title logo__title">PyData Theme</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class=" navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../community/index.html">
+  Community Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../examples/index.html">
+  Examples
+ </a>
+</li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                <div class="nav-item dropdown">
+                    <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pydata.org">PyData<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/">NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/donate">Donate to NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                    </div>
+                </div>
+                
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link" rel="noopener" target="_blank"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link" rel="noopener" target="_blank"><img src="../_static/pydata-logo.png" class="icon-link-image" alt="PyData"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container container-xl">
+    <div class="bd-container__inner row">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="导航">
+      Site Navigation
+    </p>
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        latest  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  用户指南
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../community/index.html">
+  Community Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../examples/index.html">
+  Examples
+ </a>
+</li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">Changelog<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                <div class="nav-item dropdown">
+                    <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pydata.org">PyData<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/">NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://numfocus.org/donate">Donate to NumFocus<i class="fas fa-external-link-alt"></i></a>
+                </li>
+                    </div>
+                </div>
+                
+</ul>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link" rel="noopener" target="_blank"><span><i class="fas fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link" rel="noopener" target="_blank"><img src="../_static/pydata-logo.png" class="icon-link-image" alt="PyData"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="install.html">
+   安装
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="layout.html">
+   Theme Structure and Layout
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Navigation and links
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="navigation.html">
+   Navigation depth and collapsing sidebars
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="page-toc.html">
+   Page Table of Contents
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="header-links.html">
+   Header links
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="source-buttons.html">
+   Source Buttons
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  User Interface
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="announcements.html">
+   Announcement banners
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Version switcher dropdowns
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="search.html">
+   Search bar / search button
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="keyboard-shortcuts.html">
+   Keyboard shortcuts
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Content and features
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="theme-elements.html">
+   Theme-specific elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ablog.html">
+   Blogs with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ABlog
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="web-components.html">
+   Sphinx Design Components
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Theming and Style
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="branding.html">
+   Branding and logo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="styling.html">
+   Theme variables and CSS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fonts.html">
+   Fonts and FontAwesome
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="light-dark.html">
+   Light and dark themes
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Miscellaneous
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="accessibility.html">
+   可访问性
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="analytics.html">
+   Analytics and usage services
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="performance.html">
+   Build performance and size
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="readthedocs.html">
+   Read the Docs functionality
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+
+      
+      
+      
+        <div class="bd-sidebar-secondary bd-toc">
+          
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-a-json-file-to-define-your-switcher-s-versions">
+   Add a JSON file to define your switcher’s versions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configure-switcher-json-url">
+   Configure
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     switcher['json_url']
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configure-switcher-version-match">
+   Configure
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     switcher['version_match']
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#specify-where-to-display-the-switcher">
+   Specify where to display the switcher
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#style-the-switcher-buttons">
+   Style the switcher buttons
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pydata/pydata-sphinx-theme/edit/main/docs/user_guide/version-dropdown.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../_sources/user_guide/version-dropdown.rst">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+        </div>
+      
+      
+
+      
+      
+      <div class="bd-content col">
+          
+          <div class="bd-header-article">
+              
+          </div>
+
+          
+          
+          <article class="bd-article" role="main">
+             <section id="version-switcher-dropdowns">
+<h1>Version switcher dropdowns<a class="headerlink" href="#version-switcher-dropdowns" title="永久链接至标题">#</a></h1>
+<p>You can add a button to your site that allows users to
+switch between versions of your documentation. The links in the version
+switcher will differ depending on which page of the docs is being viewed. For
+example, on the page <code class="docutils literal notranslate"><span class="pre">https://mysite.org/en/v2.0/changelog.html</span></code>, the
+switcher links will go to <code class="docutils literal notranslate"><span class="pre">changelog.html</span></code> in the other versions of your
+docs. When clicked, the switcher will check for the existence of that page, and
+if it doesn’t exist, redirect to the homepage of that docs version instead.</p>
+<p>The switcher requires the following configuration steps:</p>
+<ol class="arabic simple">
+<li><p>Add a JSON file containing a list of the documentation versions that the
+switcher should show on each page.</p></li>
+<li><p>Add a configuration dictionary called <code class="docutils literal notranslate"><span class="pre">switcher</span></code> to the
+<code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> dict in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>. <code class="docutils literal notranslate"><span class="pre">switcher</span></code> should have 2 keys:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">json_url</span></code>: the persistent location of the JSON file described above.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">version_match</span></code>: a string stating the version of the documentation that
+is currently being browsed.</p></li>
+</ul>
+</li>
+<li><p>Specify where to place the switcher in your page layout. For example, add
+the <code class="docutils literal notranslate"><span class="pre">&quot;version-switcher&quot;</span></code> template to one of the layout lists in
+<code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">navbar_end</span></code>, <code class="docutils literal notranslate"><span class="pre">footer_items</span></code>, etc).</p></li>
+</ol>
+<p>Below is a more in-depth description of each of these configuration steps.</p>
+<section id="add-a-json-file-to-define-your-switcher-s-versions">
+<h2>Add a JSON file to define your switcher’s versions<a class="headerlink" href="#add-a-json-file-to-define-your-switcher-s-versions" title="永久链接至标题">#</a></h2>
+<p>First, write a JSON file stating which versions of your docs will be listed in
+the switcher’s dropdown menu. That file should contain a list of entries that
+each can have the following fields:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code>: a version string. This is checked against
+<code class="docutils literal notranslate"><span class="pre">switcher['version_match']</span></code> to provide styling to the switcher.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">url</span></code>: the URL for this version.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>: an optional name to display in the switcher dropdown instead of the
+version string (e.g., “latest”, “stable”, “dev”, etc).</p></li>
+</ul>
+<p>Here is an example JSON file:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;v2.1 (stable)&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://mysite.org/en/2.1/index.html&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.1rc1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://mysite.org/en/2.1rc1/index.html&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://mysite.org/en/2.0/index.html&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://mysite.org/en/1.0/index.html&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+<p>See the discussion of <code class="docutils literal notranslate"><span class="pre">switcher['json_url']</span></code> (below) for options of where to
+save the JSON file.</p>
+</section>
+<section id="configure-switcher-json-url">
+<h2>Configure <code class="docutils literal notranslate"><span class="pre">switcher['json_url']</span></code><a class="headerlink" href="#configure-switcher-json-url" title="永久链接至标题">#</a></h2>
+<p>The JSON file needs to be at a stable, persistent, fully-resolved URL (i.e.,
+not specified as a path relative to the sphinx root of the current doc build).
+Each version of your documentation should point to the same URL, so that as new
+versions are added to the JSON file all the older versions of the docs will
+gain switcher dropdown entries linking to the new versions. This could be done
+a few different ways:</p>
+<ul>
+<li><p>The location could be one that is always associated with the most recent
+documentation build (i.e., if your docs server aliases “latest” to the most
+recent version, it could point to a location in the build tree of version
+“latest”). For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="o">...</span><span class="p">,</span>
+    <span class="s2">&quot;switcher&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;json_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://mysite.org/en/latest/_static/switcher.json&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In this case the JSON is versioned alongside the rest of the docs pages but
+only the most recent version is ever loaded (even by older versions of the
+docs).</p>
+</li>
+<li><p>The JSON could be saved in a folder that is listed under your site’s
+<code class="docutils literal notranslate"><span class="pre">html_static_path</span></code> configuration. See <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path">the Sphinx static path documentation</a>
+for more information.</p></li>
+<li><p>The JSON could be stored outside the doc build trees. This probably means it
+would be outside the software repo, and would require you to add new version
+entries to the JSON file manually as part of your release process. Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="o">...</span><span class="p">,</span>
+    <span class="s2">&quot;switcher&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;json_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://mysite.org/switcher.json&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="configure-switcher-version-match">
+<h2>Configure <code class="docutils literal notranslate"><span class="pre">switcher['version_match']</span></code><a class="headerlink" href="#configure-switcher-version-match" title="永久链接至标题">#</a></h2>
+<p>This configuration value tells the switcher what docs version is currently
+being viewed, and is used to style the switcher (i.e., to highlight the current
+docs version in the switcher’s dropdown menu, and to change the text displayed
+on the switcher button).</p>
+<p>Typically you can re-use one of the sphinx variables <code class="docutils literal notranslate"><span class="pre">version</span></code>
+or <code class="docutils literal notranslate"><span class="pre">release</span></code> as the value of <code class="docutils literal notranslate"><span class="pre">switcher['version_match']</span></code>; which one you use
+depends on how granular your docs versioning is. See
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information">the Sphinx “project info” documentation</a>
+for more information). Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">version</span> <span class="o">=</span> <span class="n">my_package_name</span><span class="o">.</span><span class="n">__version__</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;dev0&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># may differ</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="o">...</span><span class="p">,</span>
+    <span class="s2">&quot;switcher&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;version_match&quot;</span><span class="p">:</span> <span class="n">version</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="specify-where-to-display-the-switcher">
+<h2>Specify where to display the switcher<a class="headerlink" href="#specify-where-to-display-the-switcher" title="永久链接至标题">#</a></h2>
+<p>Finally, tell the theme where on your site’s pages you want the switcher to
+appear. There are many choices here: you can add <code class="docutils literal notranslate"><span class="pre">&quot;version-switcher&quot;</span></code> to one
+of the locations in <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">navbar_end</span></code>,
+<code class="docutils literal notranslate"><span class="pre">footer_items</span></code>, etc). For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="o">...</span><span class="p">,</span>
+   <span class="s2">&quot;navbar_start&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;navbar-logo&quot;</span><span class="p">,</span> <span class="s2">&quot;version-switcher&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Alternatively, you could override one of the other templates to include the
+version switcher in a sidebar. For example, you could define
+<code class="docutils literal notranslate"><span class="pre">_templates/sidebar-nav-bs.html</span></code> as:</p>
+<div class="highlight-jinja notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span>- <span class="k">include</span> <span class="s1">&#39;version-switcher.html&#39;</span> -<span class="cp">%}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="nb">super</span><span class="o">()</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+<p>to insert a version switcher at the top of the left sidebar, while still
+keeping the default navigation below it. See <a class="reference internal" href="layout.html"><span class="doc">Theme Structure and Layout</span></a> for more
+information.</p>
+</section>
+<section id="style-the-switcher-buttons">
+<h2>Style the switcher buttons<a class="headerlink" href="#style-the-switcher-buttons" title="永久链接至标题">#</a></h2>
+<p>You may apply styles via CSS to any of the switcher buttons to control their look and feel.
+Each button has two <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset">HTML dataset entries</a>
+that you can use to apply CSS rules to subsets of buttons. These entries are:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">-</span><span class="n">version</span>
+<span class="n">data</span><span class="o">-</span><span class="n">version</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+<p>For example, the link for an entry with <code class="docutils literal notranslate"><span class="pre">version=&quot;0.2&quot;</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">name=&quot;My</span> <span class="pre">version&quot;</span></code> would have metadata like so:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">data-version-name</span><span class="o">=</span><span class="s">&quot;My version&quot;</span> <span class="na">data-version</span><span class="o">=</span><span class="s">&quot;0.2&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;&lt;classes...&gt;&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>You can create CSS rules that select this metadata like so:</p>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="c1">// Style all links with a specific subset of versions</span>
+<span class="nc">.version-switcher__container</span><span class="w"> </span><span class="nt">a</span><span class="o">[</span><span class="nt">data-version</span><span class="o">=</span><span class="s2">&quot;0.2&quot;</span><span class="o">],</span><span class="w"></span>
+<span class="nc">.version-switcher__container</span><span class="w"> </span><span class="nt">a</span><span class="o">[</span><span class="nt">data-version</span><span class="o">=</span><span class="s2">&quot;0.3&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nt">background-color</span><span class="nd">:</span><span class="w"> </span><span class="nt">red</span><span class="o">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="c1">// Style all links with `stable` in the version name</span>
+<span class="nc">.version-switcher__container</span><span class="w"> </span><span class="nt">a</span><span class="o">[</span><span class="nt">data-version-name</span><span class="o">*=</span><span class="s2">&quot;stable&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nt">background-color</span><span class="nd">:</span><span class="w"> </span><span class="nt">green</span><span class="o">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In addition, the parent button of the dropdown list contains similar metadata
+about the <strong>current version</strong>. This could be used to style the entire dropdown
+a certain color based on the active version.</p>
+<p>For example, if you wanted to style the dropdown button to use the theme’s secondary color (PyData orange by default) if it was a <code class="docutils literal notranslate"><span class="pre">dev</span></code>
+version, you could use the following CSS selector:</p>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="c1">// If the active version has the name &quot;dev&quot;, style it orange</span>
+<span class="nc">.version-switcher__button</span><span class="o">[</span><span class="nt">data-active-version-name</span><span class="o">*=</span><span class="s2">&quot;dev&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nt">background-color</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--pst-color-secondary</span><span class="o">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>See the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset">MDN documentation on dataset properties</a>
+for more information on using and styling with these properties.</p>
+</div>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+          </article>
+          
+
+          
+          
+          <footer class="bd-footer-article">
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="announcements.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Announcement banners</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="search.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Search bar / search button</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+          </footer>
+          
+      </div>
+      
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2019, PyData Community.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
