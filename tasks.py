@@ -8,5 +8,5 @@ def init(ctx):
     ctx.run("pip install --upgrade nbconvert")
 
 
-namespace = site("docs", target="docs/_build")
+namespace = site("docs", target="docs/_build/html")
 namespace.add_task(init)

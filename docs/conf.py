@@ -4,6 +4,7 @@ import sys
 
 sys.path.append("scripts")
 from gallery_directive import GalleryDirective
+from zh_conf import *
 
 # -- Project information -----------------------------------------------------
 
@@ -36,7 +37,7 @@ extensions = [
 
 # -- Internationalization ------------------------------------------------
 # specifying the natural language populates some key tags
-language = "en"
+language = "zh_CN"
 
 # ReadTheDocs has its own way of generating sitemaps, etc.
 if not os.environ.get("READTHEDOCS"):
