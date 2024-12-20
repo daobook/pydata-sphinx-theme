@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/gallery.md:1
+msgid "Gallery of sites using this theme"
+msgstr ""
+
+#: ../../examples/gallery.md:3
+msgid ""
+"This is a gallery of documentation sites built with `pydata-sphinx-"
+"theme`. If you'd like to add your documentation to this list, add an "
+"entry (in alphabetical order) to the list at the end of [this "
+"page](https://github.com/pydata/pydata-sphinx-"
+"theme/blob/main/docs/examples/gallery.md) and open a Pull Request to add "
+"it."
+msgstr ""
+
+#: ../../examples/gallery.md:8
+msgid "Featured projects"
+msgstr ""
+
+#: ../../examples/gallery.md:10
+msgid ""
+"These projects are our earliest adopters and/or present some interesting "
+"customization. Check their repositories for more information."
+msgstr ""
+
+#: ../../examples/gallery.md:21
+msgid "ArviZ"
+msgstr ""
+
+#: ../../examples/gallery.md:31
+msgid "Bokeh"
+msgstr ""
+
+#: ../../examples/gallery.md:41
+msgid "Brightway"
+msgstr ""
+
+#: ../../examples/gallery.md:51
+msgid "Jupyter"
+msgstr ""
+
+#: ../../examples/gallery.md:61
+msgid "Jupyter Book"
+msgstr ""
+
+#: ../../examples/gallery.md:71
+msgid "Matplotlib"
+msgstr ""
+
+#: ../../examples/gallery.md:81
+msgid "MNE-Python"
+msgstr ""
+
+#: ../../examples/gallery.md:91
+msgid "NetworkX"
+msgstr ""
+
+#: ../../examples/gallery.md:101
+msgid "NumPy"
+msgstr ""
+
+#: ../../examples/gallery.md:111
+msgid "Pandas"
+msgstr ""
+
+#: ../../examples/gallery.md:121
+msgid "SciPy"
+msgstr ""
+
+#: ../../examples/gallery.md:131
+msgid "scikit-learn"
+msgstr ""
+
+#: ../../examples/gallery.md:141
+msgid "SEPAL"
+msgstr ""
+
+#: ../../examples/gallery.md:17
+msgid "Other projects using this theme"
+msgstr ""
+
+#: ../../examples/gallery.md:19
+msgid ""
+"Here are some other projects using `pydata-sphinx-theme` for their "
+"documentation. Thanks for your support!"
+msgstr ""
+
+#: ../../examples/gallery.md:30
+msgid "Binder"
+msgstr ""
+
+#: ../../examples/gallery.md:40
+msgid "cashocs"
+msgstr ""
+
+#: ../../examples/gallery.md:50
+msgid "CuPy"
+msgstr ""
+
+#: ../../examples/gallery.md:60
+msgid "DecentralChain"
+msgstr ""
+
+#: ../../examples/gallery.md:70
+msgid "Fairlearn"
+msgstr ""
+
+#: ../../examples/gallery.md:80
+msgid "Feature-engine"
+msgstr ""
+
+#: ../../examples/gallery.md:90
+msgid "idtracker.ai"
+msgstr ""
+
+#: ../../examples/gallery.md:100
+msgid "itom measurement and simulation software"
+msgstr ""
+
+#: ../../examples/gallery.md:110
+msgid "MegEngine"
+msgstr ""
+
+#: ../../examples/gallery.md:120
+msgid "Pastas"
+msgstr ""
+
+#: ../../examples/gallery.md:130
+msgid "PhaseFieldX"
+msgstr ""
+
+#: ../../examples/gallery.md:140
+msgid "PyVista"
+msgstr ""
+

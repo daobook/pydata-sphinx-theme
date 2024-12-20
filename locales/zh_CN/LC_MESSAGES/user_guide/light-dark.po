@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/light-dark.rst:5
+msgid "Light and dark themes"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:7
+msgid ""
+"You can change the major background/foreground colors of this theme using"
+" built-in \"dark\" and \"light\" modes. These are controlled by a button "
+"in the navigation header, with the following options:"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:11
+msgid "A ``light`` theme with a bright background and dark text / UI elements"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:12
+msgid "A ``dark`` theme with a dark background and light text / UI elements"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:13
+msgid ""
+"``auto``: the documentation theme will follow the system default that you"
+" have set"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:17
+msgid "Configure default theme mode"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:19
+msgid ""
+"By default, visitors to your documentation will use the theme mode "
+"``auto``. This will choose a theme based on the user's system settings, "
+"and default to ``light`` if no system setting is found."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:23
+msgid ""
+"If you wish to use a different default theme mode, set the "
+"``default_mode`` configuration to one of ``auto``, ``dark``, ``light``. "
+"For example:"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:33
+msgid "For more information, see :ref:`manage-themes`."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:37
+msgid ""
+"To completely remove the theme management, configure ``default_mode`` to "
+"the value you want in your documentation (``light`` or ``dark``) and then"
+" remove the theme-switcher from the ``navbar_end`` section of the header "
+"navbar configuration:"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:48
+msgid "Customize the CSS of light and dark themes"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:52
+msgid ""
+"Theming is still a beta feature, so the variables related to color "
+"theming are likely to change in the future. No backward compatibility is "
+"guaranteed when customization is done."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:55
+msgid ""
+"To customize the CSS of page elements in a theme-dependent manner, use "
+"the ``html[data-theme='<THEME>']`` CSS selector. For example to define a "
+"different background color for both the light and dark themes:"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:74
+msgid ""
+"A complete list of the colors used in this theme can be found in the "
+":doc:`CSS style section <styling>`."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:77
+msgid "Theme-dependent images and content"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:79
+msgid ""
+"It is possible to use different content for light and dark modes so that "
+"the content only shows up when a particular theme is active. This is "
+"useful if your content depends on the theme's style, such as a PNG image "
+"with a light or dark background."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:82
+msgid ""
+"There are **two CSS helper classes** to specify items on the page as "
+"theme-specific. These are:"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:85
+msgid ":code:`only-dark`: Only display an element when the dark theme is active."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:86
+msgid ":code:`only-light` Only display an element when the light theme is active."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:88
+msgid ""
+"For example, the following page content defines two images, each of which"
+" uses a different one of the classes above. Change the theme and a new "
+"image should be displayed."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst
+msgid "rst"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst
+msgid "markdown"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:122
+msgid "Images and content that work in both themes"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:124
+msgid ""
+"When the **dark theme** is activated, images that do not support dark "
+"mode will automatically have a white background added to ensure the image"
+" contents are visible, and their brightness will be reduced by a filter."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:128
+msgid ""
+"If your image is suitable for the dark theme, add the CSS class :code"
+":`only-dark` as noted above. If your image is suitable for both light and"
+" dark themes, add the CSS class :code:`dark-light` to make your image "
+"theme-agnostic."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:133
+msgid ""
+"For example, here's an image without adding this helper class. Change to "
+"the dark theme and a grey background will be present."
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:157
+msgid "Here's the same image with this class added:"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:180
+msgid "Define custom JavaScript to react to theme changes"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:182
+msgid ""
+"You can define a JavaScript event hook that will run your code any time "
+"the theme changes. This is useful if you need to change elements of your "
+"page that cannot be defined by CSS rules. For example, to change an image"
+" source (e.g., logo) whenever the ``data-theme`` changes, a snippet like "
+"this can be used:"
+msgstr ""
+
+#: ../../user_guide/light-dark.rst:227
+msgid ""
+"The JavaScript reacts to ``data-theme`` changes to alter ``img``, and the"
+" ``link`` is used to preload the dark image. See the `MutationObserver "
+"documentation <https://developer.mozilla.org/en-"
+"US/docs/Web/API/MutationObserver>`_ for more information."
+msgstr ""
+

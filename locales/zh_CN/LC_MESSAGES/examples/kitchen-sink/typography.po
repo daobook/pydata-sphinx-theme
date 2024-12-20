@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/kitchen-sink/typography.rst:8
+msgid "Typography"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:10
+msgid ""
+"This is quite important, for a website where the majority of the content "
+"is going to be prose."
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:12
+msgid ""
+"Notice the font family being used for the prose, as well as the font "
+"family being used for the heading. Think about the spacing between the "
+"lines, as well as the spacing between various paragraphs. Also keep the "
+"font weight in mind, and consider if/how you want antialiasing and font-"
+"smoothing to work."
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:14
+msgid ""
+"Multiple paragraphs are a common occurance, because you often need more "
+"than a single paragraph to describe a thing. The rest of this paragraph "
+"is gonna be the famous lorem-ipsum: Lorem ipsum **dolor** sit amet "
+"consectetur adipisicing elit. Accusamus, sunt voluptatum tenetur libero "
+"nulla esse veritatis accusantium earum commodi hic voluptatem officia "
+"culpa optio atque. Quaerat sed quibusdam ratione nam."
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:17
+msgid "Headings"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:19
+msgid ""
+"This next bit will explore how the various headings look. Think about how"
+" the content separation should work, and how the various headings should "
+"interact with the main content."
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:22
+msgid "Heading 3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:25
+msgid "Heading 4"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:28
+msgid "Heading 5"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:31
+msgid "Heading 6"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:34
+msgid "Heading 2 with content"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:36
+#: ../../examples/kitchen-sink/typography.rst:43
+#: ../../examples/kitchen-sink/typography.rst:50
+#: ../../examples/kitchen-sink/typography.rst:57
+#: ../../examples/kitchen-sink/typography.rst:64
+msgid "Lorem ipsum **dolor** sit amet consectetur adipisicing elit."
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:38
+#: ../../examples/kitchen-sink/typography.rst:45
+#: ../../examples/kitchen-sink/typography.rst:52
+#: ../../examples/kitchen-sink/typography.rst:59
+#: ../../examples/kitchen-sink/typography.rst:66
+msgid ""
+"Accusamus, sunt voluptatum tenetur libero nulla esse veritatis "
+"accusantium earum commodi hic voluptatem officia culpa optio atque. "
+"Quaerat sed quibusdam ratione nam."
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:41
+msgid "Heading 3 with content"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:48
+msgid "Heading 4 with content"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:55
+msgid "Heading 5 with content"
+msgstr ""
+
+#: ../../examples/kitchen-sink/typography.rst:62
+msgid "Heading 6 with content"
+msgstr ""
+

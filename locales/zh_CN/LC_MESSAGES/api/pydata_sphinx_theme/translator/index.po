@@ -1,0 +1,113 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:2
+msgid "pydata_sphinx_theme.translator"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:8
+msgid "A custom Sphinx HTML Translator for Bootstrap layout."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:21:<autosummary>:1
+msgid ":py:obj:`logger <pydata_sphinx_theme.translator.logger>`\\"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:23
+msgid "Classes"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`BootstrapHTML5TranslatorMixin "
+"<pydata_sphinx_theme.translator.BootstrapHTML5TranslatorMixin>`\\"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:44
+#: ../../api/pydata_sphinx_theme/translator/index.rst:29:<autosummary>:1
+msgid "Mixin HTML Translator for a Bootstrap-ified Sphinx layout."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:31
+msgid "Functions"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`setup_translators "
+"<pydata_sphinx_theme.translator.setup_translators>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:145
+#: ../../api/pydata_sphinx_theme/translator/index.rst:37:<autosummary>:1
+msgid "Add bootstrap HTML functionality if we are using an HTML translator."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:39
+msgid "Module Contents"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:46
+msgid ""
+"Only a couple of functions have been overridden to produce valid HTML to "
+"be directly styled with Bootstrap, and fulfill acessibility best "
+"practices."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:69
+msgid ""
+"Custom depart_table method to close the scrollable div we add in "
+"visit_table."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:94
+msgid "Perform small modifications to tags."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:96
+msgid "ensure aria-level is set for any tag with heading role"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:119
+msgid "Custom visit table method."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:121
+msgid ""
+"Copy of sphinx source to *not* add 'docutils' and 'align-default' classes"
+" but add 'table' class."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst:147
+msgid ""
+"This re-uses the pre-existing Sphinx translator and adds extra "
+"functionality defined in ``BootstrapHTML5TranslatorMixin``. This way we "
+"can retain the original translator's behavior and configuration, and "
+"_only_ add the extra bootstrap rules. If we don't detect an HTML-based "
+"translator, then we do nothing."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/translator/index.rst
+msgid "参数"
+msgstr ""
+

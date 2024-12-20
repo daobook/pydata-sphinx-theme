@@ -8,4 +8,4 @@ if not hasattr(inspect, 'getargspec'): # 修复
     
 from tao.tools.write import site
 
-namespace = site('docs', target='docs/build/html')
+namespace = site('docs', target='docs/_build/html')

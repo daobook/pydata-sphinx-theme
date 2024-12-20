@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/version-dropdown.rst:4
+msgid "Version switcher dropdowns"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:6
+msgid ""
+"You can add a button to your site that allows users to switch between "
+"versions of your documentation. The links in the version switcher will "
+"differ depending on which page of the docs is being viewed. For example, "
+"on the page ``https://mysite.org/en/v2.0/changelog.html``, the switcher "
+"links will go to ``changelog.html`` in the other versions of your docs. "
+"When clicked, the switcher will check for the existence of that page, and"
+" if it doesn't exist, will redirect to the homepage instead (in the "
+"requested version of the docs)."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:14
+msgid "The switcher requires the following configuration steps:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:16
+msgid ""
+"Add a JSON file containing a list of the documentation versions that the "
+"switcher should show on each page."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:19
+msgid ""
+"Add a configuration dictionary called ``switcher`` to the "
+"``html_theme_options`` dict in ``conf.py``. ``switcher`` should have 2 "
+"keys:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:22
+msgid "``json_url``: the persistent location of the JSON file described above."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:23
+msgid ""
+"``version_match``: a string stating the version of the documentation that"
+" is currently being browsed."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:26
+msgid ""
+"Specify where to place the switcher in your page layout. For example, add"
+" the ``\"version-switcher\"`` template to one of the layout lists in "
+"``html_theme_options`` (e.g., ``navbar_end``, ``footer_start``, etc.)."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:30
+msgid "Below is a more in-depth description of each of these configuration steps."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:33
+msgid ""
+"Modern web browsers do not allow loading data when the request is made "
+"from a page loaded via the ``file:`` protocol. This means that if you "
+"build your documentation locally and then directly open one of its pages "
+"in the browser, **the version switcher will not be allowed to load its "
+"JSON data source** and you'll end up with an empty switcher menu. "
+"Possible work-arounds are:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:35
+msgid ""
+"View the locally-built files through a local webserver (Python provides a"
+" builtin module for this: "
+"https://docs.python.org/3/library/http.server.html)."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:36
+msgid ""
+"Disabling your browser's security settings (either by passing a command-"
+"line flag when launching the browser, or through a browser add-on)."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:40
+msgid "Add a JSON file to define your switcher's versions"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:42
+msgid ""
+"First, write a JSON file stating which versions of your docs will be "
+"listed in the switcher's dropdown menu. That file should contain a list "
+"of entries that each can have the following fields:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:46
+msgid ""
+"``version``: a version string. This is checked against "
+"``switcher['version_match']`` to provide styling to the switcher."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:48
+msgid "``url``: the URL for this version."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:49
+msgid ""
+"``name``: an optional name to display in the switcher dropdown instead of"
+" the version string (e.g., \"latest\", \"stable\", \"dev\", etc.)."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:51
+msgid ""
+"``preferred``: an optional field that *should occur on at most one entry*"
+" in the JSON file. It specifies which version is considered \"latest "
+"stable\", and is used to customize the message used on :ref:`version-"
+"warning-banners` (if they are enabled)."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:54
+msgid "Here is an example JSON file:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:78
+msgid ""
+"See the discussion of ``switcher['json_url']`` (below) for options of "
+"where to save the JSON file."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:83
+msgid "Configure ``switcher['json_url']``"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:85
+msgid ""
+"*The JSON file needs to be at a stable, persistent, fully-resolved URL* "
+"(i.e., not specified as a path relative to the sphinx root of the current"
+" doc build). Each version of your documentation should point to the same "
+"URL, so that as new versions are added to the JSON file all the older "
+"versions of the docs will gain switcher dropdown entries linking to the "
+"new versions. This could be done in a few different ways:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:92
+msgid ""
+"The location could be one that is always associated with the most recent "
+"documentation build (i.e., if your docs server aliases \"latest\" to the "
+"most recent version, it could point to a location in the build tree of "
+"version \"latest\"). For example:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:106
+msgid ""
+"In this case, the JSON is versioned alongside the rest of the docs pages "
+"but only the most recent version is ever loaded (even by older versions "
+"of the docs)."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:110
+msgid ""
+"The JSON could be stored outside the doc build trees. This probably means"
+" it would be outside the software repo, and would require you to add new "
+"version entries to the JSON file manually as part of your release "
+"process. Example:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:123
+msgid ""
+"In theory the JSON could be saved in a folder that is listed under your "
+"site's ``html_static_path`` configuration, **but this is not "
+"recommended**. If you want to do it this way, see `the Sphinx static path"
+" documentation <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_static_path>`_ "
+"for more information but do so knowing that we do not support this use "
+"case."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:129
+msgid ""
+"By default, the theme is testing the :code:`.json` file provided and "
+"outputs warnings in the Sphinx build. If this test breaks the pipeline of"
+" your docs, the test can be disabled by configuring the "
+":code:`check_switcher` parameter in :code:`conf.py`:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:139
+msgid "Configure ``switcher['version_match']``"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:141
+msgid ""
+"This configuration value tells the switcher what docs version is "
+"currently being viewed, and is used to style the switcher (i.e., to "
+"highlight the current docs version in the switcher's dropdown menu, and "
+"to change the text displayed on the switcher button)."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:146
+msgid ""
+"Typically, you can re-use one of the sphinx variables ``version`` or "
+"``release`` as the value of ``switcher['version_match']``; which one you "
+"use depends on how granular your docs versioning is. See `the Sphinx "
+"\"project info\" documentation <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#project-information>`__ for "
+"more information). Example:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:165
+msgid "Specify where to display the switcher"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:167
+msgid ""
+"Finally, tell the theme where on your site's pages you want the switcher "
+"to appear. There are many choices here: you can add ``\"version-"
+"switcher\"`` to one of the locations in ``html_theme_options`` (e.g., "
+"``navbar_end``, ``footer_start``, etc). For example:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:180
+msgid ""
+"Alternatively, you could override one of the other templates to include "
+"the version switcher in a sidebar. For example, you could define "
+"``_templates/sidebar-nav-bs.html`` as:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:189
+msgid ""
+"to insert a version switcher at the top of the primary sidebar, while "
+"still keeping the default navigation below it. See :doc:`layout` for more"
+" information."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:194
+msgid "Style the switcher buttons"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:196
+msgid ""
+"You may apply styles via CSS to any of the switcher buttons to control "
+"their look and feel. Each button has two `HTML dataset entries "
+"<https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_ "
+"that you can use to apply CSS rules to subsets of buttons. These entries "
+"are:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:205
+msgid ""
+"For example, the link for an entry with ``version=\"0.2\"``, and "
+"``name=\"My version\"`` would have metadata like so:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:212
+msgid "You can create CSS rules that select this metadata like so:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:226
+msgid ""
+"In addition, the parent button of the dropdown list contains similar "
+"metadata about the **current version**. This could be used to style the "
+"entire dropdown a certain color based on the active version."
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:230
+msgid ""
+"For example, if you wanted to style the dropdown button to use the "
+"theme's secondary color (PyData orange by default) if it was a ``dev`` "
+"version, you could use the following CSS selector:"
+msgstr ""
+
+#: ../../user_guide/version-dropdown.rst:242
+msgid ""
+"See the `MDN documentation on dataset properties "
+"<https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_ "
+"for more information on using and styling these properties."
+msgstr ""
+

@@ -1,0 +1,35 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/blog/post1.md:11
+msgid "Post one with a long-ish title we can use to compare"
+msgstr ""
+
+#: ../../examples/blog/post1.md:13
+msgid "Here's some text for post 1!"
+msgstr ""
+
+#: ../../examples/blog/post1.md:15
+msgid "Post 1 section"
+msgstr ""
+
+#: ../../examples/blog/post1.md:17
+msgid "Some more text for post 1's section"
+msgstr ""
+

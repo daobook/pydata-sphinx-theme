@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/theme-elements.md:1
+msgid "Theme-specific elements"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:3
+msgid ""
+"There are a few elements that are unique or particularly important to "
+"this theme. Some of these are triggered with configuration or Markdown "
+"syntax that is unique to the theme, and we cover them below."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:6
+msgid "Mathematics"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:8
+msgid ""
+"Most Sphinx sites support math, but it is particularly important for "
+"scientific computing, so we illustrate support here as well."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:10
+msgid ""
+"Here is an inline equation: {math}`X_{0:5} = (X_0, X_1, X_2, X_3, X_4)` "
+"and {math}`another` and {math}`x^2 x^3 x^4` another. And here's one to "
+"test vertical height {math}`\\frac{\\partial^2 f}{\\partial \\phi^2}`. "
+"Here is a block-level equation:"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:13
+msgid ""
+"\\nabla^2 f =\n"
+"\\frac{1}{r^2} \\frac{\\partial}{\\partial r}\n"
+"\\left( r^2 \\frac{\\partial f}{\\partial r} \\right) +\n"
+"\\frac{1}{r^2 \\sin \\theta} \\frac{\\partial f}{\\partial \\theta}\n"
+"\\left( \\sin \\theta \\, \\frac{\\partial f}{\\partial \\theta} \\right)"
+" +\n"
+"\\frac{1}{r^2 \\sin^2\\theta} \\frac{\\partial^2 f}{\\partial \\phi^2}"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:24
+msgid "And here is a really long equation with a label!"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:26
+msgid ""
+"\\nabla^2 f =\n"
+"\\frac{1}{r^2} \\frac{\\partial}{\\partial r}\n"
+"\\left( r^2 \\frac{\\partial f}{\\partial r} \\right) +\n"
+"\\frac{1}{r^2 \\sin \\theta} \\frac{\\partial f}{\\partial \\theta}\n"
+"\\left( \\sin \\theta \\, \\frac{\\partial f}{\\partial \\theta} \\right)"
+" +\n"
+"\\frac{1}{r^2 \\sin^2\\theta} \\frac{\\partial^2 f}{\\partial \\phi^2}\n"
+"\\nabla^2 f =\n"
+"\\frac{1}{r^2} \\frac{\\partial}{\\partial r}\n"
+"\\left( r^2 \\frac{\\partial f}{\\partial r} \\right) +\n"
+"\\frac{1}{r^2 \\sin \\theta} \\frac{\\partial f}{\\partial \\theta}\n"
+"\\left( \\sin \\theta \\, \\frac{\\partial f}{\\partial \\theta} \\right)"
+" +\n"
+"\\frac{1}{r^2 \\sin^2\\theta} \\frac{\\partial^2 f}{\\partial \\phi^2}"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:43
+msgid ""
+"You can add a link to equations like the one above {eq}`My label` and "
+"{eq}`My label 2`."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:45
+msgid "Code blocks"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:47
+msgid ""
+"Code block styling is inspired by [GitHub's code block "
+"style](https://primer.style/components/markdown) and also has support for"
+" Code Block captions/titles. See [the Sphinx documentation on code "
+"blocks](https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/directives.html#directive-code-"
+"block) for more information."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:56
+msgid ""
+"You can also provide captions with code blocks, which will be displayed "
+"right above the code. For example, the following code:"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md
+msgid "rST"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md
+msgid "Markdown"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:79 ../../user_guide/theme-elements.md:116
+msgid "results in:"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:81 ../../user_guide/theme-elements.md:118
+msgid "python.py"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:87
+msgid "You can also display line numbers. For example, the following code:"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:127
+msgid "Inline code"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:129
+msgid ""
+"When used directly, the `code` role just displays the text without syntax"
+" highlighting, as a literal. As mentioned in the [Sphinx "
+"documentation](https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/roles.html#inline-code-"
+"highlighting) you can also enable syntax highlighting by defining a "
+"custom role. It will then use the same highlighter as in the `code-block`"
+" directive."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md
+msgid "rst"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md
+msgid "markdown"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:155
+msgid "In Python you can {python}`import sphinx`."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:157
+msgid "Code execution"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:159
+msgid ""
+"This theme has support for Jupyter execution libraries so that you can "
+"programmatically update your documentation with each build. For examples,"
+" see [](../examples/pydata.ipynb)."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:162
+msgid "Admonition sidebars"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:164
+msgid "A sidebar admonition!"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:166
+msgid "I was made with the `{admonition}` directive and a `sidebar` class."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:169
+msgid "Sidebar title"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:170
+msgid "I was made with the `{sidebar}` directive."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:173
+msgid ""
+"This theme supports a shorthand way of making **admonitions behave like "
+"sidebars**. This can be a helpful way of highlighting content without "
+"interrupting the vertical flow as much."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:176
+msgid ""
+"For example, on the right are an \"admonition sidebar\" and a traditional"
+" Sphinx sidebar."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:178
+msgid ""
+"To make an admonition behave like a sidebar, add the `sidebar` class to "
+"its list of classes. The admonition sidebar in this section was created "
+"with the following Markdown:"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:200
+msgid "Footnotes"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:202
+msgid ""
+"Here's a numeric footnote[^1], another one (preceded by a space) [^2], a "
+"named footnote[^named], and a symbolic one[^*]. All will end up as "
+"numbers in the rendered HTML, but in the source they look like `[^1]`, "
+"`[^2]`, `[^named]` and `[^*]`."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:213
+msgid "Link shortening for git repository services"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:215
+msgid ""
+"Many projects have links back to their issues / PRs hosted on platforms "
+"like **GitHub** or **GitLab**. Instead of displaying these as raw links, "
+"this theme does some lightweight formatting for these platforms "
+"specifically."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:218
+msgid ""
+"In **reStructuredText**, URLs are automatically converted to links, so "
+"this works automatically."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:220
+msgid ""
+"In **MyST Markdown**, by default, you must define a standard Markdown "
+"link and duplicate the URL in the link text. You may skip the need to "
+"manually define the link text by [activating the MyST Linkify "
+"extension](https://myst-"
+"parser.readthedocs.io/en/latest/syntax/optional.html#linkify)."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:223
+msgid "For example:"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:225
+msgid "**reStructuredText**"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:227
+#: ../../user_guide/theme-elements.md:236
+msgid "`https://github.com/pydata/pydata-sphinx-theme/pull/1012`"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:228
+#: ../../user_guide/theme-elements.md:237
+msgid "https://github.com/pydata/pydata-sphinx-theme/pull/1012"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:230
+msgid "**MyST Markdown (default)**"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:232
+msgid ""
+"`[https://github.com/pydata/pydata-sphinx-"
+"theme/pull/1012](https://github.com/pydata/pydata-sphinx-"
+"theme/pull/1012)`"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:233
+msgid ""
+"[https://github.com/pydata/pydata-sphinx-"
+"theme/pull/1012](https://github.com/pydata/pydata-sphinx-theme/pull/1012)"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:235
+msgid ""
+"**MyST Markdown with [MyST Linkify](https://myst-"
+"parser.readthedocs.io/en/latest/syntax/optional.html#linkify)**"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:239
+msgid ""
+"There are a variety of link targets supported, here's a table for "
+"reference:"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:241
+msgid "**GitHub**"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:243
+msgid "`https://github.com`: https://github.com"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:244
+msgid "`https://github.com/pydata`: https://github.com/pydata"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:245
+msgid ""
+"`https://github.com/pydata/pydata-sphinx-theme`: "
+"https://github.com/pydata/pydata-sphinx-theme"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:246
+msgid ""
+"`https://github.com/pydata/pydata-sphinx-theme/pull/1012`: "
+"https://github.com/pydata/pydata-sphinx-theme/pull/1012"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:247
+msgid ""
+"`https://github.com/orgs/pydata/projects/2`: "
+"https://github.com/orgs/pydata/projects/2"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:249
+msgid "**GitLab**"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:251
+msgid "`https://gitlab.com`: https://gitlab.com"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:252
+msgid "`https://gitlab.com/gitlab-org`: https://gitlab.com/gitlab-org"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:253
+msgid ""
+"`https://gitlab.com/gitlab-org/gitlab`: https://gitlab.com/gitlab-"
+"org/gitlab"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:254
+msgid ""
+"`https://gitlab.com/gitlab-org/gitlab/-/issues/375583`: "
+"https://gitlab.com/gitlab-org/gitlab/-/issues/375583"
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:256
+msgid "Links provided with a text body won't be changed."
+msgstr ""
+
+#: ../../user_guide/theme-elements.md:205
+#: ../../user_guide/theme-elements.md:207
+#: ../../user_guide/theme-elements.md:209
+#: ../../user_guide/theme-elements.md:211
+msgid ""
+"Foo bar foo bar. Foo bar foo bar. Foo bar foo bar. Foo bar foo bar. Foo "
+"bar foo bar. Foo bar foo bar. Foo bar foo bar. Foo bar foo bar. Foo bar "
+"foo bar. Foo bar foo bar. Foo bar foo bar. Foo bar foo bar."
+msgstr ""
+

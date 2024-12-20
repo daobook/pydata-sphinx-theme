@@ -1,0 +1,35 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/no-sidebar.md:1
+msgid "Test of no sidebar"
+msgstr ""
+
+#: ../../examples/no-sidebar.md:3
+msgid ""
+"This page shows off what the documentation looks like when you explicitly"
+" tell Sphinx not to include any sidebars via the following configuration:"
+msgstr ""
+
+#: ../../examples/no-sidebar.md:16
+msgid ""
+"Both the primary and secondary sidebars should be entirely gone, and the "
+"main content should expand slightly to make up the extra space."
+msgstr ""
+

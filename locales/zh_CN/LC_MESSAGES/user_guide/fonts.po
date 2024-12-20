@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/fonts.rst:2
+msgid "Fonts and FontAwesome"
+msgstr ""
+
+#: ../../user_guide/fonts.rst:4
+msgid ""
+"The theme includes the `FontAwesome 6 Free "
+"<https://fontawesome.com/icons?m=free>`__ icon font (the ``.fa-solid, "
+".fa-regular, .fa-brands`` styles, which are used for :ref:`icon links "
+"<icon-links>` and admonitions). This is the only *vendored* font, and "
+"otherwise, the theme by default relies on available system fonts for "
+"normal body text and headers."
+msgstr ""
+
+#: ../../user_guide/fonts.rst:10
+msgid ""
+"For more details on the PyData Sphinx Theme typography and text styles, "
+"see the :doc:`../community/design-system` section."
+msgstr ""
+
+#: ../../user_guide/fonts.rst:13
+msgid "The default body and header fonts can be changed as follows:"
+msgstr ""
+
+#: ../../user_guide/fonts.rst:15
+msgid ""
+"Using :ref:`custom-css`, you can specify which fonts to use for the body,"
+" header, and monospaced text. For example, the following can be added to "
+"a custom CSS file:"
+msgstr ""
+
+#: ../../user_guide/fonts.rst:27
+msgid ""
+"The ``*-system`` variables are available to use as a fallback to the "
+"default fonts."
+msgstr ""
+
+#: ../../user_guide/fonts.rst:29
+msgid ""
+"If the font you want to specify in the section above is not generally "
+"available by default, you will additionally need to ensure the font is "
+"loaded. For example, you could download and vendor the font in the "
+"``_static`` directory of your Sphinx site, and then update the base "
+"template to load the font resources:"
+msgstr ""
+
+#: ../../user_guide/fonts.rst:34
+msgid ""
+"Configure the `template_path <https://www.sphinx-"
+"doc.org/en/master/development/theming.html#templating>`__ in your "
+"``conf.py``"
+msgstr ""
+
+#: ../../user_guide/fonts.rst:36
+msgid ""
+"Create a custom ``layout.html`` Jinja2 template which overloads the "
+"``fonts`` block (example for loading the Lato font that is included in "
+"the ``_static/vendor`` directory):"
+msgstr ""
+
+#: ../../user_guide/fonts.rst:50
+msgid ""
+"Your text may quickly show up as \"unstyled\" before the fonts are "
+"loaded. To reduce this, you may wish to explore options for `preloading "
+"content <https://developer.mozilla.org/en-"
+"US/docs/Web/HTML/Preloading_content>`__, specifically the binary font "
+"files. This ensures the files will be loaded before the CSS is parsed, "
+"but should be used with care."
+msgstr ""
+

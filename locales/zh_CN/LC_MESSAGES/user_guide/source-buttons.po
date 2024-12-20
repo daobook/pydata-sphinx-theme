@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/source-buttons.rst:3
+msgid "Source Buttons"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:5
+msgid ""
+"Source buttons are links to the source of your page's content (either on "
+"your site, or on hosting sites like GitHub)."
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:8
+msgid "Add an edit button"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:10
+msgid ""
+"You can add a button to each page that will allow users to edit the page "
+"text directly and submit a pull request to update the documentation. To "
+"include this button in the secondary sidebar of each page, add the "
+"following configuration to your ``conf.py`` file in 'html_theme_options':"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:21
+msgid ""
+"A number of providers are available for building *Edit this Page* links, "
+"including GitHub, GitLab, and Bitbucket. For each, the default public "
+"instance URL can be replaced with a self-hosted instance."
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:27
+msgid "GitHub"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:41
+msgid "GitLab"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:55
+msgid "Bitbucket"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:69
+msgid "Custom Edit URL"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:71
+msgid ""
+"For a fully-customized *Edit this Page* URL, provide "
+"``edit_page_url_template``, a jinja2 template string which must contain "
+"``{{ file_name }}``, and may reference any other context values."
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:83
+msgid ""
+"With the predefined providers, the link text reads \"Edit on "
+"GitHub/GitLab/Bitbucket\". By default, a simple \"Edit\" is used if you "
+"use a custom URL. However, you can set a provider name like this:"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:94
+msgid "This will turn the link into \"Edit on Provider\"."
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:98
+msgid "Custom link text"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:100
+msgid ""
+"You can change the default text by extending the ``edit-this-page.html`` "
+"template. For example, if you have ``templates_path = [\"_templates\"]`` "
+"in your Sphinx configuration, you could put this code in `_templates"
+"/edit-this-page.html`:"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:115
+msgid "View Source link"
+msgstr ""
+
+#: ../../user_guide/source-buttons.rst:117
+msgid ""
+"By default, this theme adds a button link to view the source of a page "
+"(i.e., the underlying ``reStructuredText`` or ``MyST Markdown`` for the "
+"page). To disable it, use the following configuration:"
+msgstr ""
+

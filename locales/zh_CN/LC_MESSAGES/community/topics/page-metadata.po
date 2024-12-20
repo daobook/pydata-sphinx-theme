@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/page-metadata.md:1
+msgid "Page-level configuration"
+msgstr ""
+
+#: ../../community/topics/page-metadata.md:3
+msgid ""
+"In some areas we support page-level configuration to control behavior on "
+"a per-page basis. Try to make this configuration follow the "
+"`html_theme_options` structure of our configuration as much as possibl. "
+"Begin them with `html_theme`, and separate \"nested\" configuration "
+"sections with periods (`.`). This is [similar to how the TOML language "
+"defines nested configuration](https://toml.io/en/v1.0.0#keys)."
+msgstr ""
+
+#: ../../community/topics/page-metadata.md:8
+msgid ""
+"For example, to remove the secondary sidebar, we use a page metadata key "
+"like this:"
+msgstr ""
+
+#: ../../community/topics/page-metadata.md
+msgid "rST"
+msgstr ""
+
+#: ../../community/topics/page-metadata.md
+msgid "Markdown"
+msgstr ""
+
+#: ../../community/topics/page-metadata.md:25
+msgid ""
+"Note how the period naturally separates nested sections, and looks very "
+"similar to what we'd expect if we put this in a Python dictionary in "
+"`conf.py`:"
+msgstr ""
+

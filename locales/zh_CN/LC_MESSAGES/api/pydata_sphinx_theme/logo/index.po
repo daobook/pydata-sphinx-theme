@@ -1,0 +1,90 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:2
+msgid "pydata_sphinx_theme.logo"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:8
+msgid "customize events for logo management."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:10
+msgid ""
+"we use one event to copy over custom logo images to _static and another "
+"even to link them in the html context"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:18
+msgid "Functions"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`copy_logo_images <pydata_sphinx_theme.logo.copy_logo_images>`\\ "
+"\\(app\\[\\, exception\\]\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:32
+#: ../../api/pydata_sphinx_theme/logo/index.rst:25:<autosummary>:1
+msgid "Copy logo image to the _static directory."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`setup_logo_path <pydata_sphinx_theme.logo.setup_logo_path>`\\ "
+"\\(app\\, pagename\\, templatename\\, context\\, ...\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:57
+#: ../../api/pydata_sphinx_theme/logo/index.rst:25:<autosummary>:1
+msgid "Set up relative paths to logos in our HTML templates."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:27
+msgid "Module Contents"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:34
+msgid ""
+"If logo image paths are given, copy them to the `_static` folder. Then we"
+" can link to them directly in an html_page_context event."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst
+msgid "参数"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst
+msgid "返回类型"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:59
+msgid ""
+"In Sphinx, the context[\"logo\"] is a path to the `html_logo` image now "
+"in the output `_static` folder."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/logo/index.rst:62
+msgid ""
+"If logo[\"image_light\"] and logo[\"image_dark\"] are given, we must "
+"modify them to follow the same pattern. They have already been copied to "
+"the output folder in the `update_config` event."
+msgstr ""
+

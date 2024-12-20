@@ -1,0 +1,154 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:2
+msgid "pydata_sphinx_theme.toctree"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:8
+msgid "Methods to build the toctree used in the html pages."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:15
+msgid "Classes"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:21:<autosummary>:1
+msgid ":py:obj:`LinkInfo <pydata_sphinx_theme.toctree.LinkInfo>`\\"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:40
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:21:<autosummary>:1
+msgid "Dataclass to generate toctree data."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`_get_ancestor_pagename "
+"<pydata_sphinx_theme.toctree._get_ancestor_pagename>`\\ \\(app\\, "
+"pagename\\, startdepth\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid ""
+"Get the name of `pagename`'s ancestor that is rooted `startdepth` levels "
+"below the"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`add_collapse_checkboxes "
+"<pydata_sphinx_theme.toctree.add_collapse_checkboxes>`\\ \\(soup\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:103
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid "Add checkboxes to collapse children in a toctree."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`add_inline_math <pydata_sphinx_theme.toctree.add_inline_math>`\\"
+" \\(node\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:126
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid "Render a node with HTML tags that activate MathJax processing."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`add_toctree_functions "
+"<pydata_sphinx_theme.toctree.add_toctree_functions>`\\ \\(app\\, "
+"pagename\\, templatename\\, ...\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:154
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid "Add functions so Jinja templates can add toctree objects."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`get_nonroot_toctree "
+"<pydata_sphinx_theme.toctree.get_nonroot_toctree>`\\ \\(app\\, "
+"pagename\\, ancestorname\\, ...\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:177
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:33:<autosummary>:1
+msgid ""
+"Get the partial TocTree (rooted at `ancestorname`) that dominates "
+"`pagename`."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:35
+msgid "Module Contents"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:79
+msgid ""
+"Get the name of `pagename`'s ancestor that is rooted `startdepth` levels "
+"below the global root."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst
+msgid "参数"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst
+msgid "返回类型"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:128
+msgid ""
+"This is meant for use with rendering section titles with math in them, "
+"because math outputs are ignored by pydata-sphinx-theme's header."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:131
+msgid ""
+"related to the behaviour of a normal math node from: https://github.com"
+"/sphinx-doc/sphinx/blob/master/sphinx/ext/mathjax.py#L28"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:179
+msgid ""
+"Parameters: app : Sphinx app. pagename : Name of the current page (as "
+"Sphinx knows it; i.e., its relative path from the documentation root). "
+"ancestorname : Name of a page that dominates `pagename` and that will "
+"serve as the root of the TocTree fragment. toctree : A Sphinx TocTree "
+"object. Since this is always needed when finding the ancestorname (see "
+"_get_ancestor_pagename), it's more efficient to pass it here to re-use "
+"it. kwargs : passed to the Sphinx `toctree` template function."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/toctree/index.rst:190
+msgid ""
+"This is similar to `context[\"toctree\"](**kwargs)` (AKA "
+"`toctree(**kwargs)` within a Jinja template), or "
+"`TocTree.get_toctree_for()`, which always uses the \"root\" doctree "
+"(i.e., `doctree = self.env.get_doctree(self.env.config.root_doc)`)."
+msgstr ""
+

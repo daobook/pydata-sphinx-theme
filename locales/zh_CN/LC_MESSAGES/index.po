@@ -1,0 +1,137 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../index.md:65
+msgid "Changelog"
+msgstr ""
+
+#: ../../index.md:71 ../../index.md:75
+msgid "API"
+msgstr ""
+
+#: ../../index.md
+msgid ""
+"Top-level documentation for pydata-sphinx theme, with links to the rest\n"
+"of the site..\n"
+msgstr ""
+
+#: ../../index.md:10
+msgid "The PyData Sphinx Theme"
+msgstr ""
+
+#: ../../index.md:12
+msgid ""
+"A clean, Bootstrap-based Sphinx theme by and for [the PyData "
+"community](https://pydata.org)."
+msgstr ""
+
+#: ../../index.md:26
+msgid "{fab}`bootstrap;pst-color-primary` Built with Bootstrap"
+msgstr ""
+
+#: ../../index.md:28
+msgid "Use Bootstrap classes and functionality in your documentation."
+msgstr ""
+
+#: ../../index.md:37
+msgid "{fas}`bolt;pst-color-primary` Responsive Design"
+msgstr ""
+
+#: ../../index.md:39
+msgid "Site sections will change behavior and size at different screen sizes."
+msgstr ""
+
+#: ../../index.md:48
+msgid "{fas}`circle-half-stroke;pst-color-primary` Light / Dark theme"
+msgstr ""
+
+#: ../../index.md:50
+msgid "Users can toggle between light and dark themes interactively."
+msgstr ""
+
+#: ../../index.md:59
+msgid "{fas}`palette;pst-color-primary` Customizable UI and themes"
+msgstr ""
+
+#: ../../index.md:61
+msgid ""
+"Customize colors and branding with CSS variables, and build custom UIs "
+"with [Sphinx Design components](user_guide/web-components)."
+msgstr ""
+
+#: ../../index.md:70
+msgid "{fab}`python;pst-color-primary` Supports PyData and Jupyter"
+msgstr ""
+
+#: ../../index.md:72
+msgid ""
+"CSS and UI support for [Jupyter extensions](examples/execution) and "
+"[PyData execution outputs](examples/pydata.ipynb)."
+msgstr ""
+
+#: ../../index.md:81
+msgid "{fas}`lightbulb;pst-color-primary` Example Gallery"
+msgstr ""
+
+#: ../../index.md:83
+msgid "See [our gallery](examples/gallery.md) of projects that use this theme."
+msgstr ""
+
+#: ../../index.md:32
+msgid ""
+"If you are looking for a Sphinx theme that puts all of its sub-pages in "
+"the sidebar, the [Sphinx Book Theme](https://sphinx-book-"
+"theme.readthedocs.io/) has a similar look and feel, and "
+"[Furo](https://pradyunsg.me/furo/quickstart/) is another excellent "
+"choice. You can also see the [Sphinx Themes Gallery](https://sphinx-"
+"themes.org) for more ideas."
+msgstr ""
+
+#: ../../index.md:35
+msgid "User Guide"
+msgstr ""
+
+#: ../../index.md:37
+msgid "Information about using, configuration, and customizing this theme."
+msgstr ""
+
+#: ../../index.md:45
+msgid "Community and contribution guide"
+msgstr ""
+
+#: ../../index.md:47
+msgid ""
+"Information about the community behind this theme and how you can "
+"contribute."
+msgstr ""
+
+#: ../../index.md:55
+msgid "Examples"
+msgstr ""
+
+#: ../../index.md:57
+msgid ""
+"Several example pages to demonstrate the functionality of this theme when"
+" used alongside other Sphinx extensions."
+msgstr ""
+
+#: ../../index.md:73
+msgid "The content of the exposed `pydata_sphinx_theme` API."
+msgstr ""
+

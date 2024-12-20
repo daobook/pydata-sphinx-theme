@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:2
+msgid "pydata_sphinx_theme.pygments"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:8
+msgid "Handle Pygments css."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:10
+msgid ""
+"inspired by the Furo theme "
+"https://github.com/pradyunsg/furo/blob/main/src/furo/__init__.py"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:18
+msgid "Functions"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`_get_styles <pydata_sphinx_theme.pygments._get_styles>`\\ "
+"\\(formatter\\, prefix\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:33
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:26:<autosummary>:1
+msgid "Get styles out of a formatter, where everything has the correct prefix."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`get_pygments_stylesheet "
+"<pydata_sphinx_theme.pygments.get_pygments_stylesheet>`\\ "
+"\\(light\\_style\\, dark\\_style\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:56
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:26:<autosummary>:1
+msgid "Generate the theme-specific pygments.css."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`overwrite_pygments_css "
+"<pydata_sphinx_theme.pygments.overwrite_pygments_css>`\\ \\(app\\[\\, "
+"exception\\]\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:80
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:26:<autosummary>:1
+msgid "Overwrite pygments.css to allow dynamic light/dark switching."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:28
+msgid "Module Contents"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst
+msgid "参数"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst
+msgid "返回类型"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:58
+msgid "There is no way to tell Sphinx how the theme handles modes."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:82
+msgid ""
+"Sphinx natively supports config variables `pygments_style` and "
+"`pygments_dark_style`. However, quoting from www.sphinx-"
+"doc.org/en/master/development/theming.html#creating-themes"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:86
+msgid ""
+"The pygments_dark_style setting [...is used] when the CSS media query "
+"(prefers-color-scheme: dark) evaluates to true."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:89
+msgid ""
+"This does not allow for dynamic switching by the user, so at build time "
+"we overwrite the pygment.css file so that it embeds 2 versions:"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:92
+msgid "the light theme prefixed with \"[data-theme=\"light\"]\""
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:93
+msgid "the dark theme prefixed with \"[data-theme=\"dark\"]\""
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/pygments/index.rst:95
+msgid ""
+"Fallbacks are defined in this function in case the user-requested (or our"
+" theme-specified) pygments theme is not available."
+msgstr ""
+

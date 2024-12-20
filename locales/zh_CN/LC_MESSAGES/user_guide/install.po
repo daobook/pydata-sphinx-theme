@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/install.rst:-1
+msgid "Detailed instructions for installing pydata-sphinx-theme."
+msgstr ""
+
+#: ../../user_guide/install.rst:3
+msgid "Installation"
+msgstr ""
+
+#: ../../user_guide/install.rst:7
+msgid ""
+"Each pydata-sphinx-theme release has a minimum required Sphinx version, "
+"which should be automatically handled by your package installer. It is "
+"also tested against newer versions of Sphinx that were available prior to"
+" that release of the pydata-sphinx-theme package. If you run into issues "
+"when trying to use a more recent version of Sphinx, please open an issue "
+"here: https://github.com/pydata/pydata-sphinx-theme/issues"
+msgstr ""
+
+#: ../../user_guide/install.rst:14
+msgid ""
+"The theme is available on PyPI and conda-forge, and can thus be installed"
+" with:"
+msgstr ""
+
+#: ../../user_guide/install.rst:24
+msgid ""
+"Then, in the ``conf.py`` of your sphinx docs, you update the "
+"``html_theme`` configuration option:"
+msgstr ""
+
+#: ../../user_guide/install.rst:33
+msgid ""
+"This theme may not work with the latest major versions of Sphinx, "
+"especially if they have only recently been released. Please give us a few"
+" months of time to work out any bugs and changes when new releases are "
+"made."
+msgstr ""
+
+#: ../../user_guide/install.rst:38
+msgid "Development version"
+msgstr ""
+
+#: ../../user_guide/install.rst:40
+msgid ""
+"If you want to track the development version of the theme, you can "
+"install it from the git repo:"
+msgstr ""
+
+#: ../../user_guide/install.rst:47
+msgid "or in a conda environment yml file, you can add:"
+msgstr ""
+

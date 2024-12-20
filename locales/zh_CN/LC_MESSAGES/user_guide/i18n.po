@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/i18n.rst:4
+msgid "Internationalization"
+msgstr ""
+
+#: ../../user_guide/i18n.rst:6
+msgid ""
+"This theme contains localizable (translatable) strings. There are two "
+"kinds of strings in this theme, with different steps to translate each:"
+msgstr ""
+
+#: ../../user_guide/i18n.rst:9
+msgid ""
+"**Built-in strings** are hard-coded in the theme's templates. They will "
+"be translated by volunteers if the language is `supported "
+"<https://github.com/pydata/pydata-sphinx-"
+"theme/tree/main/src/pydata_sphinx_theme/locale>`__. To add another "
+"language, refer to the :ref:`localizing-the-theme` and :ref:`adding-new-"
+"language` sections in the documentation."
+msgstr ""
+
+#: ../../user_guide/i18n.rst:12
+msgid ""
+"**Configurable strings** are user-defined with the ``html_theme_options``"
+" variable in your ``conf.py`` file (see other sections in :doc:`the user "
+"guide <index>` for examples of these configurable strings). To translate "
+"these strings, see the :ref:`translating-configurable-strings` section in"
+" this page."
+msgstr ""
+
+#: ../../user_guide/i18n.rst:19
+msgid "Translating configurable strings"
+msgstr ""
+
+#: ../../user_guide/i18n.rst:21
+msgid ""
+"These instructions are for translating configurable strings (those that "
+"are customizable in ``html_theme_options`` within the ``conf.py`` file)."
+msgstr ""
+
+#: ../../user_guide/i18n.rst:24
+msgid ""
+"These instructions assume that you store your translations in a "
+"``locale`` directory under your documentation directory and that you want"
+" to use ``messages`` as the name of the message catalog for these strings"
+" (you can change this name if needed)."
+msgstr ""
+
+#: ../../user_guide/i18n.rst:28
+msgid ""
+"Note you will also need to install `pybabel "
+"<https://babel.pocoo.org/en/latest/installation.html>`__ to handle your "
+"documentation translations."
+msgstr ""
+
+#: ../../user_guide/i18n.rst:31
+msgid "In your ``conf.py`` file:"
+msgstr ""
+
+#: ../../user_guide/i18n.rst:66
+msgid "Extract the strings to localize:"
+msgstr ""
+
+#: ../../user_guide/i18n.rst:72
+msgid ""
+"Create a message catalog by specifying the `ISO 639-1 code "
+"<https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__ for the new "
+"language (using the ``--locale`` flag):"
+msgstr ""
+
+#: ../../user_guide/i18n.rst:80
+msgid "Translate the message catalog by editing the file."
+msgstr ""
+
+#: ../../user_guide/i18n.rst:82
+msgid "Compile the message catalog:"
+msgstr ""
+
+#: ../../user_guide/i18n.rst:88
+msgid "Done! Your configurable strings are now localized."
+msgstr ""
+

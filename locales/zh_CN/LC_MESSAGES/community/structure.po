@@ -1,0 +1,81 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/structure.md:1
+msgid "Structure of this theme"
+msgstr ""
+
+#: ../../community/structure.md:3
+msgid "Location and structure of documentation"
+msgstr ""
+
+#: ../../community/structure.md:5
+msgid ""
+"The documentation for this theme is in the `docs/` folder. It is "
+"structured as a [Sphinx documentation site](https://www.sphinx-doc.org/)."
+" The content is written in a combination of reStructuredText and MyST "
+"Markdown."
+msgstr ""
+
+#: ../../community/structure.md:9
+msgid "Location and structure of CSS/JS assets"
+msgstr ""
+
+#: ../../community/structure.md:11
+msgid ""
+"The CSS and JS for this theme are built for the browser from "
+"`src/pydata_sphinx_theme/assets/*` with "
+"[webpack](https://webpack.js.org/). The main entry points are:"
+msgstr ""
+
+#: ../../community/structure.md:14
+msgid "CSS: `src/pydata_sphinx_theme/assets/styles/pydata-sphinx-theme.scss`"
+msgstr ""
+
+#: ../../community/structure.md:16
+msgid "the main part of the theme assets"
+msgstr ""
+
+#: ../../community/structure.md:17
+msgid ""
+"customizes [Bootstrap](https://getbootstrap.com/) with [Sass](https"
+"://sass-lang.com)"
+msgstr ""
+
+#: ../../community/structure.md:19
+msgid "JS: `src/pydata_sphinx_theme/assets/scripts/pydata-sphinx-theme.js`"
+msgstr ""
+
+#: ../../community/structure.md:21
+msgid ""
+"provides add-on Bootstrap features, as well as some custom navigation "
+"behavior"
+msgstr ""
+
+#: ../../community/structure.md:23
+msgid "webpack: `webpack.config.js`"
+msgstr ""
+
+#: ../../community/structure.md:25
+msgid ""
+"captures the techniques for transforming the JS and CSS source files in "
+"`src/pydata_sphinx_theme/assets/*` into the production assets in "
+"`src/theme/pydata_sphinx_theme/static/`"
+msgstr ""
+

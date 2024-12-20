@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/branding.rst:3
+msgid "Branding and logo"
+msgstr ""
+
+#: ../../user_guide/branding.rst:6
+msgid "Customize logo and title"
+msgstr ""
+
+#: ../../user_guide/branding.rst:8
+msgid ""
+"By default, the theme will use the value of ``project`` on the left side "
+"of the header navigation bar. This can be replaced by a logo image, and "
+"optionally a custom ``html_title`` as well."
+msgstr ""
+
+#: ../../user_guide/branding.rst:12
+msgid "Single logo for light and dark mode"
+msgstr ""
+
+#: ../../user_guide/branding.rst:14
+msgid ""
+"To use a **local image file**, use ``html_logo`` as specified in the "
+"`Sphinx documentation <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_logo>`__. The "
+"file must be relative to ``conf.py``. For example, if your documentation "
+"had a logo in ``_static/logo.png``:"
+msgstr ""
+
+#: ../../user_guide/branding.rst:22
+msgid ""
+"To use an **external link** to an image, make sure the ``html_logo`` "
+"begins with ``http``. For example:"
+msgstr ""
+
+#: ../../user_guide/branding.rst:30
+msgid "Different logos for light and dark mode"
+msgstr ""
+
+#: ../../user_guide/branding.rst:32
+msgid ""
+"You may specify a different version of your logo image for \"light\" and "
+"\"dark\" modes. This is useful if your logo image is not adapted to a "
+"dark mode (light background, not enough contrast, etc...)."
+msgstr ""
+
+#: ../../user_guide/branding.rst:35
+msgid ""
+"To do so, use the ``logo[\"image_light\"]`` and ``logo[\"image_dark\"]`` "
+"options in ``html_theme_options``. For each, provide a path relative to "
+"``conf.py`` like so:"
+msgstr ""
+
+#: ../../user_guide/branding.rst:50
+msgid ""
+"``image_light`` and ``image_dark`` will override the ``html_logo`` "
+"setting. If you only specify one of the light or dark variants, the un-"
+"specified variant will fall back to the value of ``html_logo``."
+msgstr ""
+
+#: ../../user_guide/branding.rst:54
+msgid "Customize logo link"
+msgstr ""
+
+#: ../../user_guide/branding.rst:56
+msgid ""
+"The logo links to ``root_doc`` (usually the first page of your "
+"documentation) by default. You can instead link to a local document or an"
+" external website. To do so, use the "
+"``html_theme_options[\"logo\"][\"link\"]`` option and provide a new link."
+msgstr ""
+
+#: ../../user_guide/branding.rst:60
+msgid "For example, to reference another local page:"
+msgstr ""
+
+#: ../../user_guide/branding.rst:70
+msgid ""
+"To reference an external website, make sure your link starts with "
+"``http``:"
+msgstr ""
+
+#: ../../user_guide/branding.rst:81
+msgid "Logo title and alternative text"
+msgstr ""
+
+#: ../../user_guide/branding.rst:83
+msgid ""
+"If you provide a logo image, it replaces ``project`` or ``html_title`` in"
+" the header nav bar. If you want to display both your site's logo and "
+"title (or any other text) next to the logo, you provide it with the "
+"``text`` property like so:"
+msgstr ""
+
+#: ../../user_guide/branding.rst:87 ../../user_guide/branding.rst:102
+#: ../../user_guide/branding.rst:118
+msgid "conf.py"
+msgstr ""
+
+#: ../../user_guide/branding.rst:98
+msgid ""
+"But if you only want to display the logo and not the site title, then "
+"it's good practice to provide alt text, which helps blind visitors and "
+"others who rely on screen readers:"
+msgstr ""
+
+#: ../../user_guide/branding.rst:115
+msgid ""
+"In most cases, you will provide either ``text`` or ``alt_text``, not "
+"both, but there are some circumstances in which it may make sense to "
+"provide both:"
+msgstr ""
+
+#: ../../user_guide/branding.rst:133
+msgid ""
+"If you do not provide ``text`` or ``alt_text``, the theme will provide "
+"some default alt text (otherwise, your homepage link would appear to "
+"assistive tech as something like \"Unlabeled image\"). The default alt "
+"text is \"`docstitle <https://www.sphinx-"
+"doc.org/en/master/development/templating.html#docstitle>`_ - Home\", but "
+"if you provide a logo title (``text``) the default alt text will be an "
+"empty string (the assumption is that if you provide a logo title, the "
+"title is probably doing the work of the alt text, and as shown above, you"
+" can override this assumption by supplying both ``text`` and "
+"``alt_text``)."
+msgstr ""
+
+#: ../../user_guide/branding.rst:143
+msgid "Add favicons"
+msgstr ""
+
+#: ../../user_guide/branding.rst:145
+msgid ""
+"``pydata_sphinx_theme`` supports the `standard sphinx favicon "
+"configuration <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_favicon>`_, using"
+" ``html_favicon``. Support for complex and multiple favicons was dropped "
+"in version 0.15.3. Instead, use the `sphinx-favicon <https://sphinx-"
+"favicon.readthedocs.io/en/stable/>`__ extension. It provides the same "
+"functionality using more flexible parameters."
+msgstr ""
+

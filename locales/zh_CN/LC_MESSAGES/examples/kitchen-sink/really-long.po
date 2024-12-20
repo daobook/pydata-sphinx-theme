@@ -1,0 +1,287 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/kitchen-sink/really-long.rst:6
+msgid "Mimicking ReadTheDocs' PR previews"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:9
+msgid "This is simulating how ReadTheDocs puts admonitions on top of previews."
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:13
+msgid "Really Long Page Title because we should test sidebar wrapping"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:15
+msgid "This page basically exists to show-off the cool table of contents sidebar."
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:18
+msgid "Heading 1"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:20
+#: ../../examples/kitchen-sink/really-long.rst:31
+#: ../../examples/kitchen-sink/really-long.rst:36
+#: ../../examples/kitchen-sink/really-long.rst:41
+#: ../../examples/kitchen-sink/really-long.rst:46
+#: ../../examples/kitchen-sink/really-long.rst:51
+#: ../../examples/kitchen-sink/really-long.rst:56
+#: ../../examples/kitchen-sink/really-long.rst:61
+#: ../../examples/kitchen-sink/really-long.rst:66
+#: ../../examples/kitchen-sink/really-long.rst:71
+#: ../../examples/kitchen-sink/really-long.rst:76
+#: ../../examples/kitchen-sink/really-long.rst:81
+#: ../../examples/kitchen-sink/really-long.rst:86
+#: ../../examples/kitchen-sink/really-long.rst:91
+#: ../../examples/kitchen-sink/really-long.rst:96
+#: ../../examples/kitchen-sink/really-long.rst:101
+#: ../../examples/kitchen-sink/really-long.rst:106
+#: ../../examples/kitchen-sink/really-long.rst:111
+#: ../../examples/kitchen-sink/really-long.rst:116
+#: ../../examples/kitchen-sink/really-long.rst:121
+#: ../../examples/kitchen-sink/really-long.rst:126
+#: ../../examples/kitchen-sink/really-long.rst:131
+#: ../../examples/kitchen-sink/really-long.rst:136
+#: ../../examples/kitchen-sink/really-long.rst:141
+#: ../../examples/kitchen-sink/really-long.rst:146
+#: ../../examples/kitchen-sink/really-long.rst:151
+#: ../../examples/kitchen-sink/really-long.rst:156
+#: ../../examples/kitchen-sink/really-long.rst:161
+#: ../../examples/kitchen-sink/really-long.rst:166
+#: ../../examples/kitchen-sink/really-long.rst:171
+#: ../../examples/kitchen-sink/really-long.rst:176
+#: ../../examples/kitchen-sink/really-long.rst:181
+#: ../../examples/kitchen-sink/really-long.rst:186
+#: ../../examples/kitchen-sink/really-long.rst:191
+#: ../../examples/kitchen-sink/really-long.rst:196
+#: ../../examples/kitchen-sink/really-long.rst:201
+#: ../../examples/kitchen-sink/really-long.rst:206
+#: ../../examples/kitchen-sink/really-long.rst:211
+#: ../../examples/kitchen-sink/really-long.rst:216
+#: ../../examples/kitchen-sink/really-long.rst:221
+#: ../../examples/kitchen-sink/really-long.rst:226
+#: ../../examples/kitchen-sink/really-long.rst:231
+#: ../../examples/kitchen-sink/really-long.rst:236
+#: ../../examples/kitchen-sink/really-long.rst:241
+#: ../../examples/kitchen-sink/really-long.rst:246
+#: ../../examples/kitchen-sink/really-long.rst:251
+#: ../../examples/kitchen-sink/really-long.rst:256
+msgid ""
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit "
+"temporibus cupiditate in ducimus illum assumenda dolor, dignissimos "
+"laboriosam voluptate dolorem dolore eum repellendus minima, nisi sequi? "
+"Eveniet, dignissimos asperiores!"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:27
+msgid "Heading 2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:29
+msgid ""
+"Let's make sure multiple permalinks work: :ref:`one <second-heading>`, "
+":ref:`two <second-heading-again>`, :ref:`three <second-heading-yet-"
+"again>`."
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:34
+msgid "Heading 3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:39
+msgid "Heading 4"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:44
+msgid "Heading 5"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:49
+msgid "Heading 6"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:54
+msgid "Heading 7"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:59
+msgid "Heading 7.1"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:64
+msgid "Heading 7.2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:69
+msgid "Heading 7.3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:74
+msgid "Heading 7.4"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:79
+msgid "Heading 8"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:84
+msgid "Heading 9"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:89
+msgid "Heading 10"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:94
+msgid "Heading 11"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:99
+msgid "Heading 12"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:104
+msgid "Heading 13"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:109
+msgid "Heading 14"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:114
+msgid "Heading 15 -- this one is intentionally really long"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:119
+msgid "Heading 16 -- this one is also lots of words that would wrap content"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:124
+msgid "Heading 17"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:129
+msgid "Heading 18"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:134
+msgid "Heading 19"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:139
+msgid "Heading 20"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:144
+msgid "Heading 21"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:149
+msgid "Heading 22"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:154
+msgid "Heading 23"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:159
+msgid "Heading 24"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:164
+msgid "Heading 25"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:169
+msgid "Heading 26"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:174
+msgid "Heading 27"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:179
+msgid "Heading 28"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:184
+msgid "Heading 29"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:189
+msgid "Heading 30"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:194
+msgid "Heading 31"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:199
+msgid "Heading 32"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:204
+msgid "Heading 33"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:209
+msgid "Heading 34"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:214
+msgid "Heading 35"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:219
+msgid "Heading 36"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:224
+msgid "Heading 37"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:229
+msgid "Heading 38"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:234
+msgid "Heading 39"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:239
+msgid "Heading 40"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:244
+msgid "Heading 41"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:249
+msgid "Heading 42"
+msgstr ""
+
+#: ../../examples/kitchen-sink/really-long.rst:254
+msgid "Heading 43"
+msgstr ""
+

@@ -1,0 +1,60 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/pydata.md:1
+msgid "PyData package support"
+msgstr ""
+
+#: ../../community/topics/pydata.md:3
+msgid ""
+"This theme is designed by and for the PyData community, and so there are "
+"a few places where we special-case support for packages in this "
+"community."
+msgstr ""
+
+#: ../../community/topics/pydata.md:5
+msgid ""
+"We define CSS rules that ensure PyData content in Sphinx looks reasonable"
+" on both light and dark themes. If we hear reports from maintainers that "
+"we could change something in this theme that would make their "
+"documentation look better, and if this change is sustainable for us, then"
+" we should do so."
+msgstr ""
+
+#: ../../community/topics/pydata.md:8
+msgid ""
+"We store our PyData-specific SCSS in two relevant files, both in the "
+"`src/pydata_sphinx_theme/assets/styles/` folder:"
+msgstr ""
+
+#: ../../community/topics/pydata.md:10
+msgid ""
+"`extensions/_execution.scss` - styles for Sphinx libraries that execute "
+"and insert code into the documentation. For example, MyST-NB, Jupyter "
+"Sphinx, and the Matplotlib `plot` directive. Most PyData support should "
+"go here via generic improvements that all packages benefit from."
+msgstr ""
+
+#: ../../community/topics/pydata.md:11
+msgid ""
+"`extensions/_pydata.scss` - styles for specific libraries in the PyData "
+"ecosystem. In general we should try to keep this minimal because it is "
+"mostly special-casing single library quirks."
+msgstr ""
+

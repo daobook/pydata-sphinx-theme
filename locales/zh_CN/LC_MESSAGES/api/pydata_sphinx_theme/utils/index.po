@@ -1,0 +1,239 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:2
+msgid "pydata_sphinx_theme.utils"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:8
+msgid "General helpers for the management of config parameters."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:21:<autosummary>:1
+msgid ":py:obj:`SPHINX_LOGGER <pydata_sphinx_theme.utils.SPHINX_LOGGER>`\\"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`_get_matching_sidebar_items "
+"<pydata_sphinx_theme.utils._get_matching_sidebar_items>`\\ \\(pagename\\,"
+" sidebars\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:44
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid "Get the matching sidebar templates to render for the given pagename."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`_has_wildcard <pydata_sphinx_theme.utils._has_wildcard>`\\ "
+"\\(pattern\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:72
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid "Check whether the pattern contains a wildcard."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`_update_and_remove_templates "
+"<pydata_sphinx_theme.utils._update_and_remove_templates>`\\ \\(app\\, "
+"context\\, templates\\, ...\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+"Update templates to include html suffix if needed; remove templates which"
+" render"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`config_provided_by_user "
+"<pydata_sphinx_theme.utils.config_provided_by_user>`\\ \\(app\\, key\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:140
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid "Check if the user has manually provided the config."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`escape_ansi <pydata_sphinx_theme.utils.escape_ansi>`\\ "
+"\\(string\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:163
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid "Helper function to remove ansi coloring from sphinx warnings."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`get_theme_options_dict "
+"<pydata_sphinx_theme.utils.get_theme_options_dict>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:186
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+"Return theme options for the application w/ a fallback if they don't "
+"exist."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`maybe_warn <pydata_sphinx_theme.utils.maybe_warn>`\\ \\(app\\, "
+"msg\\, \\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:214
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid "Wraps the Sphinx logger to allow warning suppression."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`set_secondary_sidebar_items "
+"<pydata_sphinx_theme.utils.set_secondary_sidebar_items>`\\ \\(app\\, "
+"pagename\\, ...\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:237
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid "Set the secondary sidebar items to render for the given pagename."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`traverse_or_findall "
+"<pydata_sphinx_theme.utils.traverse_or_findall>`\\ \\(node\\, "
+"condition\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:260
+#: ../../api/pydata_sphinx_theme/utils/index.rst:37:<autosummary>:1
+msgid "Triage node.traverse (docutils <0.18.1) vs node.findall."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:39
+msgid "Module Contents"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:46
+msgid ""
+"If a page matches more than one pattern, a warning is emitted, and the "
+"templates for the last matching pattern are used."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:49
+msgid ""
+"This function was adapted from "
+"sphinx.builders.html.StandaloneHTMLBuilder.add_sidebars."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst
+msgid "参数"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst
+msgid "返回类型"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:74
+msgid "Taken from sphinx.builders.StandaloneHTMLBuilder.add_sidebars."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:96
+msgid ""
+"Update templates to include html suffix if needed; remove templates which"
+" render empty."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:99
+msgid "Sphinx application passed to the html page context"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:100
+msgid ""
+"The html page context; dictionary of values passed to the templating "
+"engine"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:102
+msgid "A list of template names, or a string of comma separated template names"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:104
+msgid ""
+"Name of the template section where the templates are to be rendered. "
+"Valid section names include any of the ``sphinx`` or "
+"``html_theme_options`` that take templates or lists of templates as "
+"arguments, for example: ``theme_navbar_start``, "
+"``theme_primary_sidebar_end``, ``theme_secondary_sidebar_items``, "
+"``sidebars``, etc. For a complete list of valid section names, see the "
+"source for :py:func:`pydata_sphinx_theme.update_and_remove_templates` and"
+" :py:func:`pydata_sphinx_theme.utils.set_secondary_sidebar_items`, both "
+"of which call this function."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:113
+msgid ""
+"Names of any templates which should never be removed from the list of "
+"filtered templates returned by this function. These templates aren't "
+"checked if they render empty, which can save time if the template is slow"
+" to render."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst
+msgid "返回"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:118
+msgid ""
+"A list of template names (including '.html' suffix) to render into the "
+"section"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:188
+msgid ""
+"The \"top-level\" mapping (the one we should usually check first, and "
+"modify if desired) is ``app.builder.theme_options``. It is created by "
+"Sphinx as a copy of ``app.config.html_theme_options`` (containing user-"
+"configs from their ``conf.py``); sometimes that copy never occurs though "
+"which is why we check both."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/utils/index.rst:262
+msgid ""
+"TODO: This check can be removed when the minimum supported docutils "
+"version for numpydoc is docutils>=0.18.1."
+msgstr ""
+

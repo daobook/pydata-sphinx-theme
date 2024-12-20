@@ -1,0 +1,97 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:2
+msgid "pydata_sphinx_theme.short_link"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:8
+msgid "A custom Transform object to shorten github and gitlab links."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:15
+msgid "Classes"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ShortenLinkTransform "
+"<pydata_sphinx_theme.short_link.ShortenLinkTransform>`\\"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:21:<autosummary>:1
+msgid ""
+"Shorten link when they are coming from github or gitlab and add an extra "
+"class to"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:23
+msgid "Module Contents"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:27
+msgid "Bases: :py:obj:`sphinx.transforms.post_transforms.SphinxPostTransform`"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:31
+msgid ""
+"Shorten link when they are coming from github or gitlab and add an extra "
+"class to the tag for further styling."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:34
+msgid "Before:"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:42
+msgid "After:"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:70
+msgid "Parse the content of the url with respect to the selected platform."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst
+msgid "参数"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:72
+msgid "the link to the platform content"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst
+msgid "返回"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:74
+msgid "the reformated url title"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst
+msgid "返回类型"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:97
+msgid "Run the Transform object."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/short_link/index.rst:123
+msgid "Numerical priority of this transform, 0 through 999 (override)."
+msgstr ""
+

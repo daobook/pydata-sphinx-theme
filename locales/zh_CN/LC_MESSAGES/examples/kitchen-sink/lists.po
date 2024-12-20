@@ -1,0 +1,552 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/kitchen-sink/lists.rst:8
+msgid "Lists"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:11
+msgid "Enumerated Lists"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:13
+msgid "Arabic numerals."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:15
+msgid "lower alpha)"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:17
+msgid "(lower roman)"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:19
+msgid "upper alpha."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:21
+msgid "upper roman)"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:23
+msgid "Lists that don't start at 1:"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:25
+msgid "Three"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:27
+msgid "Four"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:29
+msgid "C"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:31
+msgid "D"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:33
+msgid "iii"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:35
+msgid "iv"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:37
+msgid "List items may also be auto-enumerated."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:40
+msgid "Definition Lists"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:42
+#: ../../examples/kitchen-sink/lists.rst:44
+#: ../../examples/kitchen-sink/lists.rst:48
+msgid "Term"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:43
+#: ../../examples/kitchen-sink/lists.rst:49
+msgid "Definition"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:-1
+msgid "classifier"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:45
+msgid "Definition paragraph 1."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:47
+msgid "Definition paragraph 2."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:51
+msgid ""
+"I have no clue why the definition list below is classified as a different"
+" style of definition list than the one above."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:54
+msgid "Is it the spaces in the term?"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:55
+msgid ""
+"Maybe it was the multiple line paragraph in the line below that caused "
+"this?"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:58
+msgid "Is it the paragraph above the list maybe?"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:59
+msgid "I guess a lot of these lists don't have leading paragraphs?"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:61
+msgid "Is it everything all at once?"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:62
+msgid "Who knows?!"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:65
+msgid "Option Lists"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:67
+msgid "For listing command-line options:"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:69
+msgid "command-line option \"a\""
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:70
+msgid "options can have arguments and long descriptions"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:72
+msgid "options can be long also"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:73
+msgid "long options can also have arguments"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:77
+msgid "The description can also start on the next line."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:79
+msgid ""
+"The description may contain multiple body elements, regardless of where "
+"it starts."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:82
+msgid "Multiple options are an \"option group\"."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:83
+msgid "Commonly-seen: short & long options."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:85
+msgid "Multiple options with arguments."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:86
+msgid "DOS/VMS-style options too"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:88
+msgid "There must be at least two spaces between the option and the description."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:91
+msgid "Field list"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst
+msgid "Address"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:93
+msgid "123 Example Street Example, EX  Canada A1B 2C3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst
+msgid "Organization"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:96
+msgid "humankind"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst
+msgid "Status"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:97
+msgid "This is a \"work in progress\""
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst
+msgid "Version"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:98
+msgid "1"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst
+msgid "Field name"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:99
+msgid "This is a generic bibliographic field."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst
+msgid "Field name 2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:101
+msgid "Generic bibliographic fields may contain multiple body elements."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:103
+msgid "Like this."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:106
+msgid "Glossary"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:108
+msgid "This is a glossary with definition terms for thing like :term:`Writing`:"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:111
+msgid "Documentation"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:113
+msgid "Provides users with the knowledge they need to use something."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:114
+msgid "Reading"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:116
+msgid "The process of taking information into ones mind through the use of eyes."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:117
+msgid "Writing"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:119
+msgid ""
+"The process of putting thoughts into a medium for other people to "
+":term:`read <Reading>`."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:121
+msgid ""
+"Here's another glossary, with more detail. The important bit here is that"
+" the contents of the definition are multi-paragraph."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:124
+msgid "Import Package"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:127
+msgid ""
+"A Python module which can contain other modules or recursively, other "
+"packages."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:129
+msgid ""
+"An import package is more commonly referred to with the single word "
+"“package”, but this guide will use the expanded term when more clarity is"
+" needed to prevent confusion with a Distribution Package which is also "
+"commonly called a “package”."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:130
+msgid "Package Index"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:133
+msgid ""
+"A repository of distributions with a web interface to automate package "
+"discovery and consumption."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:136
+msgid "Bullet Lists"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:144
+msgid "Simple"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:146
+msgid "A simple list."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:147
+msgid "There are no margins between list items."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:148
+msgid "Simple lists do not contain multiple paragraphs. That's a complex list."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:149
+msgid "In the case of a nested list"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:151
+msgid "There are no margins between elements"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:153
+#: ../../examples/kitchen-sink/lists.rst:155
+msgid "Still no margins"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:158
+msgid "Complex"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:160
+msgid "A bullet list"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:162
+#: ../../examples/kitchen-sink/lists.rst:169
+msgid "Nested bullet list."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:163
+#: ../../examples/kitchen-sink/lists.rst:170
+msgid "Nested item 2."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:165
+#: ../../examples/kitchen-sink/lists.rst:173
+msgid "Item 2."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:167
+msgid "Paragraph 2 of item 2."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:172
+msgid "Third level."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:175
+msgid "Nested item 3."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:177
+#: ../../examples/kitchen-sink/lists.rst:178
+#: ../../examples/kitchen-sink/lists.rst:179
+msgid "``inline literall``"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:180
+#: ../../examples/kitchen-sink/lists.rst:182
+#: ../../examples/kitchen-sink/lists.rst:183
+#: ../../examples/kitchen-sink/lists.rst:185
+msgid "This item has multiple paragraphs."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:189
+msgid "Second list level"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:191
+msgid "here is a list in a second-level section."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:192
+#: ../../examples/kitchen-sink/lists.rst:193
+#: ../../examples/kitchen-sink/lists.rst:195
+#: ../../examples/kitchen-sink/lists.rst:208
+#: ../../examples/kitchen-sink/lists.rst:226
+msgid "`yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:196
+msgid "here is an inner bullet ``oh``"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:198
+msgid "one more ``with an inline literally``. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:200
+msgid "heh heh. child. try to beat this embed:"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:207
+msgid "and another. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:209
+msgid "``hi``"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:210
+msgid "how about an admonition?"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:213
+msgid "This is a note nested in a list."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:215
+msgid "and hehe"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:218
+msgid "But deeper down the rabbit hole"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:220
+msgid ""
+"I kept saying that, \"deeper down the rabbit hole\". `yahoo "
+"<http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:222
+msgid "I cackle at night `yahoo <http://www.yahoo.com>`_."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:223
+msgid "I'm so lonely here in GZ ``guangzhou``"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:224
+msgid "A man of python destiny, hopes and dreams. `yahoo <http://www.yahoo.com>`_"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:228
+msgid "`yahoo <http://www.yahoo.com>`_ ``hi``"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:229
+msgid "``destiny``"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:232
+msgid "Hlists"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:237
+msgid "First item"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:238
+msgid "Second item"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:239
+msgid "Third item"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:240
+msgid "Forth item"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:241
+msgid "Fifth item"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:242
+msgid "Sixths item"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:245
+msgid "Hlist with images"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:251
+msgid "This is a short caption for a figure."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:255
+msgid ""
+"This is a long caption for a figure. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit. Donec porttitor dolor in odio posuere, vitae"
+" ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:259
+msgid "Numbered List"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:261
+msgid "One,"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:262
+msgid "Two."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:263
+msgid ""
+"Three with long text. Lorem ipsum dolor sit amet, consectetur adipiscing "
+"elit. Sed feugiat sagittis neque quis eleifend. Duis rutrum lectus sit "
+"amet mattis suscipit."
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:266
+msgid "Using bullets and letters. (A)"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:267
+msgid "Using bullets and letters. (B)"
+msgstr ""
+
+#: ../../examples/kitchen-sink/lists.rst:268
+msgid "Using bullets and letters. (C)"
+msgstr ""
+

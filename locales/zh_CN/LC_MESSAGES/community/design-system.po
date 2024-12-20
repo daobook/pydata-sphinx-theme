@@ -1,0 +1,486 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/design-system.md:1
+msgid "PyData Sphinx Theme Design System"
+msgstr ""
+
+#: ../../community/design-system.md:3
+msgid ""
+"The Pydata Sphinx Theme is committed to maintaining a theme that supports"
+" industry standards; the design system must be included. Whether choosing"
+" how to configure your theme or making changes to the design system "
+"itself, consider the most recent version of the Web Content Accessibility"
+" Guidelines (WCAG) to make sure the community continues to support "
+"documentation access for everyone."
+msgstr ""
+
+#: ../../community/design-system.md:9
+msgid "Guiding Principles"
+msgstr ""
+
+#: ../../community/design-system.md:11
+msgid "Accessibility"
+msgstr ""
+
+#: ../../community/design-system.md:13
+msgid ""
+"Accessibility is at the core of the PyData Sphinx theme. All design "
+"decisions are made with [WCAG 2.1](https://www.w3.org/TR/WCAG21/) "
+"conformance in mind, ensuring that the theme is usable by people of all "
+"abilities. Accessibility is a priority to make the theme inclusive for "
+"all users."
+msgstr ""
+
+#: ../../community/design-system.md:18
+msgid "Open Source Collaboration"
+msgstr ""
+
+#: ../../community/design-system.md:20
+msgid ""
+"As an open-source project, collaboration and transparency are key "
+"principles:"
+msgstr ""
+
+#: ../../community/design-system.md:22
+msgid ""
+"**Clear Guidelines:** All components, color palettes, and typography "
+"rules must be documented."
+msgstr ""
+
+#: ../../community/design-system.md:23
+msgid ""
+"**Open Feedback:** Designers, developers, users and maintainers are "
+"encouraged to give feedback on the theme, helping to improve its "
+"functionality and usability over time. If you’d like to provide feedback,"
+" please open an issue on the [PyData Sphinx Theme GitHub "
+"repository.](https://github.com/pydata/pydata-sphinx-theme)"
+msgstr ""
+
+#: ../../community/design-system.md:27
+msgid ""
+"**Community Driven:** The theme grows and evolves based on the needs and "
+"suggestions of the open-source community."
+msgstr ""
+
+#: ../../community/design-system.md:30
+msgid "Typography"
+msgstr ""
+
+#: ../../community/design-system.md:32
+msgid "Typeface"
+msgstr ""
+
+#: ../../community/design-system.md:34
+msgid "PyData Sphinx uses default system fonts."
+msgstr ""
+
+#: ../../community/design-system.md:36
+msgid "Type Scale"
+msgstr ""
+
+#: ../../community/design-system.md:38
+msgid ""
+"A type scale refers to the multiple by which font sizes increase. You can"
+" find more about typographic scales at [Typographic "
+"Scale](https://designcode.io/typographic-scales). For content-heavy "
+"websites, a medium contrast scale, which provides balanced contrast "
+"between heading sizes without overly large jumps, is ideal, typically "
+"ranging from `1.2x` to `1.33x`."
+msgstr ""
+
+#: ../../community/design-system.md:44
+msgid ""
+"The PST type scale was updated (August 2024) to improve the accessibility"
+" of the overall type system and increase visual contrast between the "
+"headings. The PST type scale uses the Minor Third scale (`1.2x`) with "
+"values rounded to the nearest even whole number. Except for the H4 to H3 "
+"transition, all headings have a minimum of a `1.2x` increase, which is an"
+" improvement over the previous scale."
+msgstr ""
+
+#: ../../community/design-system.md:51
+msgid "Styles"
+msgstr ""
+
+#: ../../community/design-system.md:53
+msgid "Headings"
+msgstr ""
+
+#: ../../community/design-system.md:55
+msgid ""
+"Headings create structure and hierarchy within the content. They range "
+"from `H1` to `H6`, with each level decreasing in size and importance."
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Style"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Size (`px`)"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Size (`rem`)"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Weight"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Use / Notes"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Heading 1"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "42"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "2.625"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "600"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Main page titles (use only once)"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Heading 2"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "34"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "2.125"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Section titles"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Heading 3"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "28"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "1.750"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Subsections within H2"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Heading 4"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "24"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "1.500"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Tertiary level headings"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Heading 5"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "20"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "1.250"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Less prominent headings"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Heading 6"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "16"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "1.000"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Lowest level headings"
+msgstr ""
+
+#: ../../community/design-system.md:67
+msgid ""
+"Always use headings in logical order (`H1`, `H2`, `H3`, etc.) without "
+"skipping levels, to help assistive tech such as screen readers interpret "
+"the structure of the page. Each page should have a single, unique `H1` to"
+" effectively define the page's purpose, improving search engine "
+"optimization (SEO) and accessibility for users who rely on assistive tech"
+" such as screen readers."
+msgstr ""
+
+#: ../../community/design-system.md ../../community/design-system.md:73
+msgid "Body"
+msgstr ""
+
+#: ../../community/design-system.md:75
+msgid ""
+"Body text serves as the standard style for detailed content. It is "
+"primarily used for longer, detailed content such as paragraphs, articles,"
+" and descriptions, but may also apply to other areas such as modals, "
+"admonitions or sections where longer content needs to be displayed "
+"clearly."
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "400"
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Standard text size for readability"
+msgstr ""
+
+#: ../../community/design-system.md:84
+msgid ""
+"While there is no absolute minimum text size, for optimum readability, "
+"body text should be at least `16px`."
+msgstr ""
+
+#: ../../community/design-system.md ../../community/design-system.md:87
+msgid "Links"
+msgstr ""
+
+#: ../../community/design-system.md:89
+msgid ""
+"Links must be styled in a way that makes them visually distinct from "
+"regular text. All links should be underlined in addition to being color-"
+"coded, as [color alone should not be used to convey "
+"meaning](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)."
+msgstr ""
+
+#: ../../community/design-system.md
+msgid "Always underlined and color-coded"
+msgstr ""
+
+#: ../../community/design-system.md:97
+msgid ""
+"Links also have a hover and focus interactive state. Hover and focus "
+"states should always show a change in color and visual design to provide "
+"clear feedback for interactive elements."
+msgstr ""
+
+#: ../../community/design-system.md:101
+msgid ""
+"Links are used to navigate between different pages or sections and to "
+"redirect readers to external sources. They are visually distinct from "
+"buttons, which are used to perform actions within the current page or "
+"context and should not trigger actions like submitting forms or toggling "
+"components."
+msgstr ""
+
+#: ../../community/design-system.md:107
+msgid "Code Text"
+msgstr ""
+
+#: ../../community/design-system.md:109
+msgid ""
+"Code text is used to display inline code snippets or larger blocks of "
+"code. It uses a monospaced font. The theme also includes interactive "
+"states for code text including links."
+msgstr ""
+
+#: ../../community/design-system.md:113
+msgid "Type Color"
+msgstr ""
+
+#: ../../community/design-system.md:115
+msgid ""
+"Text color plays a crucial role in ensuring that content is legible and "
+"accessible. In the PyData Sphinx theme, we use a predefined set of colors"
+" to ensure readability, visual hierarchy, and consistency across "
+"different elements. Each text color is designed to meet accessibility "
+"guidelines, ensuring sufficient contrast between text and background."
+msgstr ""
+
+#: ../../community/design-system.md:121
+msgid ""
+"When using colors in text, ensure that it meets the minimum [WCAG color "
+"contrast accessibility "
+"criterion](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#contrast-"
+"minimum). Color alone should not be used to indicate meaning. For "
+"example, text that is a link should not be indicated solely by color but "
+"also with an underline. This helps ensure that users who have difficulty "
+"distinguishing colors can still identify links. Semantic colors (such as "
+"for success, warning, or error messages) can be used to convey meaning, "
+"but color should not be the only indicator. Pair these colors with icons "
+"or text labels to ensure clarity."
+msgstr ""
+
+#: ../../community/design-system.md:131
+msgid "Color"
+msgstr ""
+
+#: ../../community/design-system.md:133
+msgid ""
+"The PyData Sphinx theme uses a well-defined color palette to ensure "
+"consistency, readability, and accessibility across the entire design "
+"system. This color palette is available for both light and dark themes. "
+"This document explains how to use the theme's color system"
+msgstr ""
+
+#: ../../community/design-system.md:138
+msgid "Base Colors"
+msgstr ""
+
+#: ../../community/design-system.md:140
+msgid ""
+"Base colors form the foundation of the theme and are used across primary "
+"UI elements like buttons, backgrounds, and text. They maintain "
+"consistency throughout the interface."
+msgstr ""
+
+#: ../../community/design-system.md:143
+msgid "**Primary**: The main color for major actions and interactive elements."
+msgstr ""
+
+#: ../../community/design-system.md:144
+msgid "**Secondary**: A supporting color for secondary actions and highlights."
+msgstr ""
+
+#: ../../community/design-system.md:145
+msgid "**Accent**: An emphasis color used sparingly for highlighting content."
+msgstr ""
+
+#: ../../community/design-system.md:146
+msgid "**Gray (Neutral)**: Used for typography, borders, and backgrounds."
+msgstr ""
+
+#: ../../community/design-system.md:147
+msgid ""
+"**Foundation Colors**: Black and white base colors used for backgrounds "
+"and surfaces (for example, cards, containers, modals) in light and dark "
+"modes."
+msgstr ""
+
+#: ../../community/design-system.md:150
+msgid ""
+"Color variables are also documented in the [](../user_guide/styling.rst) "
+"section of the User Guide."
+msgstr ""
+
+#: ../../community/design-system.md:153
+msgid "Semantic Colors"
+msgstr ""
+
+#: ../../community/design-system.md:155
+msgid ""
+"Semantic colors, colors named for what they represent and how they are "
+"used, are provided for success, errors, warnings, and information. Using "
+"these colors as named ensures users can easily understand system feedback"
+" through visual cues."
+msgstr ""
+
+#: ../../community/design-system.md:160
+msgid "Relevant Links"
+msgstr ""
+
+#: ../../community/design-system.md:162
+msgid ""
+"For further reference, you can access the following resources related to "
+"the color and typography in the PyData Sphinx theme:"
+msgstr ""
+
+#: ../../community/design-system.md:165
+msgid ""
+"**GitHub Repository:** The source code for the PyData Sphinx theme is "
+"available on GitHub."
+msgstr ""
+
+#: ../../community/design-system.md:166
+msgid ""
+"You can find the specific file that defines the typography settings, "
+"including font stacks, sizes, and weights in the [`fonts.scss` "
+"file](https://github.com/pydata/pydata-sphinx-"
+"theme/blob/main/src/pydata_sphinx_theme/assets/styles/variables/_fonts.scss)."
+msgstr ""
+
+#: ../../community/design-system.md:169
+msgid ""
+"You can find all the PyData Sphinx theme colors in the [`color.scss` "
+"file](https://github.com/pydata/pydata-sphinx-"
+"theme/blob/main/src/pydata_sphinx_theme/assets/styles/variables/_color.scss)"
+msgstr ""
+
+#: ../../community/design-system.md:171
+msgid ""
+"**Figma Design File:** The Figma file contains the visual design and "
+"specifications for the typography styles, including font sizes, line "
+"heights, and spacing used throughout the theme. It also includes our "
+"color palette and its use cases, as well as details on interactive "
+"components and their states. You can access it [through this link to the "
+"Figma file][figma-library]."
+msgstr ""
+
+#: ../../community/design-system.md:176
+msgid "References"
+msgstr ""
+
+#: ../../community/design-system.md:178
+msgid "[https://carbondesignsystem.com/elements/typography/overview/](https://carbondesignsystem.com/elements/typography/overview/)"
+msgstr ""
+
+#: ../../community/design-system.md:179
+msgid "[https://canvas.workday.com/styles/tokens/type](https://canvas.workday.com/styles/tokens/type)"
+msgstr ""
+
+#: ../../community/design-system.md:180
+msgid ""
+"[https://atlassian.design/foundations/typography-"
+"beta](https://atlassian.design/foundations/typography-beta) refer to the "
+"[Figma Design File](https://www.figma.com/design/BHkBFxg1Qg0h5RApUw1ZrR"
+"/PyData-Design-System---Ongoing?node-id=2-160)."
+msgstr ""
+

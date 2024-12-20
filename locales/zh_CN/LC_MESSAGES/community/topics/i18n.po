@@ -1,0 +1,412 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/i18n.rst:2
+msgid "Internationalization"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:4
+msgid ""
+"This section covers how to internationalize (I18n) and localize (L10n) "
+"the PyData Sphinx Theme. For details on how to localize the configurable "
+"strings in your Sphinx project, see the :ref:`User guide section on "
+"internationalization <user-guide-i18n>`."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:8
+msgid ""
+"The PyData Sphinx Theme I18n/i10n workflows are based on `GNU Gettext "
+"<http://www.gnu.org/software/gettext/>`__ and `pybabel "
+"<https://babel.pocoo.org/en/latest/messages.html>`__ is used to keep the "
+"catalogs up to date. Crowd-sourced localizations are managed on "
+"`Transifex <https://explore.transifex.com/12rambau/pydata-sphinx-"
+"theme/>`__."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:13
+msgid ""
+"**Internationalization** (or I18n) is the process of making a program or "
+"application aware of and able to support multiple languages."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:16
+msgid ""
+"**Localization** (L10n) is the process of translating localized programs "
+"or applications into different languages while ensuring that the "
+"translations are correct for some native language and cultural habits."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:19
+msgid ""
+"The formal description of specific set of cultural habits for some "
+"country, together with all associated translations targeted to the same "
+"native language, is called the *locale* for this language or country. For"
+" more information about localization and internationalization see `GNU "
+"gettext concepts "
+"<https://www.gnu.org/software/gettext/manual/html_node/Concepts.html>`__."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:24
+msgid ""
+"The general process for internationalizing and localizing the theme is as"
+" follows:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:26
+msgid ":ref:`Mark strings in the theme as localizable <adding-localizable-text>`."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:27
+msgid ""
+":ref:`Extract localizable strings <updating-localization-files>` to a "
+"message catalog template ``POT`` (``PO`` template file)."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:28
+msgid ""
+"Generare a ``PO`` file from the ``POT`` file for :ref:`a new language "
+"(locale) you want to localize <adding-new-language>` (or :ref:`update "
+"existing localization files <updating-localization-files>`)."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:30
+msgid ""
+":ref:`Compile the message catalogs <compiling-localization-files>` to "
+"binary ``MO`` files."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:31
+msgid ":ref:`Localize the theme <localizing-the-theme>`."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:34
+msgid "Localization files"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:36
+msgid "There are three types of files used in the localization process:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:38
+msgid ""
+"`PO files <https://www.gnu.org/software/gettext/manual/gettext.html#PO-"
+"Files>`__ ( Portable Object, also known as message catalogs) associate "
+"each original, translatable string (defined in ``msgid``) of a given "
+"program with its translation in a particular target language (defined in "
+"``msgstr`` fields). A single PO file is dedicated to a single target "
+"language."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:41
+msgid "``MO`` (Machine Object) files are a binary version of a PO file."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:42
+msgid ""
+"``POT`` (Portable Object Template) files are similar to PO files, but "
+"with empty translations. They are used as a template for new languages."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:49
+msgid "Marking strings as localizable"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:51
+msgid ""
+"All natural language text in the theme's components and layouts must be "
+"marked as localizable so that they can be later translated (or localized)"
+" into other languages. For example, if you add a button with the text "
+"**Next page**, you will need to mark this text as localizable."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:54
+msgid ""
+"``HTML`` templates (located in the ``src/pydata_sphinx_theme/theme/`` "
+"directory). To do so, you can use the Jinja2 ``trans`` block and/or a "
+"``_()`` function to mark text as localizable in the corresponding"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:57
+msgid ""
+"For example, to mark the text **Next page** as localizable, you would "
+"write:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:65
+msgid ""
+"Any text that is marked in this way will be discoverable by ``pybabel`` "
+"and used to generate the localization files (``PO`` files)."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:68
+msgid ""
+"Once you've marked the text as localizable, complete the steps outlined "
+"in the :ref:`updating-localization-files` section of this documentation."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:71
+msgid ""
+"For more details on marking strings as localizable in jinja templates "
+"visit `the Jinja2 documentation "
+"<https://jinja.palletsprojects.com/en/3.0.x/templates/>`__."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:74
+msgid ""
+"Remember to `manually escape variables "
+"<https://jinja.palletsprojects.com/en/2.11.x/templates/#working-with-"
+"manual-escaping>`__ if needed."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:76
+msgid ""
+"Sometimes, it can help localizers to describe where a string comes from "
+"or whether it refers to a noun or verb, particularly if it can be "
+"difficult to find in the theme, or if the string itself is not very self-"
+"descriptive (for example, very short strings). If you immediately precede"
+" the string with a comment that starts with ``L10n:``, the comment will "
+"be added to the PO file, and visible to localizers. For example:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:91
+msgid "Updating the localization files"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:93
+msgid ""
+"When you add or change natural language text in the theme, you must "
+"update the message catalogs to include the new or updated text. Follow "
+"these steps:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:96
+msgid ""
+"Edit the natural language text and ensure it is :ref:`marked as "
+"localizable <adding-localizable-text>`."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:98
+msgid "Extract the strings and update the localization files (``POT`` file):"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:105
+msgid ""
+"This will update the localization files with new information about the "
+"position and text of the language you have modified."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:107
+msgid ""
+"If you *only* change non-localizable text (like HTML markup), the "
+"``extract`` command will only update the positions (line numbers) of the "
+"localizable strings. Updating positions is optional - the line numbers "
+"are to inform the human translator, not to perform the localization. But "
+"it is best practice to keep the positions up to date."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:112
+msgid ""
+"If you change localizable strings, the above command will extract the new"
+" or updated strings to localization template file (``POT``) and perform a"
+" fuzzy match between the new or updated strings and existing "
+"localizations in the localization files. If there is a fuzzy match, a "
+"comment like ``#, fuzzy`` is added before the matched entry, this means "
+"that the localization needs to be manually reviewed and possibly updated."
+" If after reviewing the localization you decide to keep the existing "
+"localization, you can remove the ``#, fuzzy`` comment from the entry. If "
+"there is no fuzzy match, it will add a new localization entry. You can "
+"learn more about fuzzy entries in the `GNU gettext manual "
+"<https://www.gnu.org/software/gettext/manual/gettext.html#Fuzzy-"
+"Entries>`__."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:125
+msgid "Compiling the localization files"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:127
+msgid ""
+"Gettext doesn't parse any text files, it reads a binary format for faster"
+" performance. To compile the latest PO files in the repository run:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:134
+msgid "You can also run the extract, update and compile commands in one go:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:140
+msgid ""
+"This will update the localization files and compile them into binary "
+"``MO`` files in a single step. However, if there are fuzzy matches "
+"needing review, the compilation will fail, and you will need to review "
+"the localizations manually. Then compile the files again."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:148
+msgid "Adding a new language"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:150
+msgid ""
+"The list of languages with existing (possibly incomplete) localizations "
+"is available in the ``src/pydata_sphinx_theme/locale`` directory."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:153
+msgid "To add a new language, follow these steps:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:155
+msgid ""
+"Identify the `ISO 639-1 code "
+"<https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__ for the new "
+"language."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:157
+msgid "Generate a ``PO`` file based on ``POT`` file for this new language:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:164
+msgid ""
+"Update and compile the localization files as described in the :ref"
+":`updating-localization-files` and :ref:`compiling-localization-files` "
+"sections. Then commit the changes."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:166
+msgid ""
+"Localize the theme's into the newly added language (see :ref:`localizing-"
+"the-theme`)."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:171
+msgid "Localizing the theme"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:173
+msgid ""
+"We manage localizations on the `PyData Sphinx Theme project on Transifex "
+"<https://explore.transifex.com/12rambau/pydata-sphinx-theme/>`__."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:175
+msgid "To contribute localization, follow these steps:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:177
+msgid "Sign up for a `Transifex account <https://www.transifex.com/signup/>`__."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:178
+msgid ""
+"Join the `PyData Sphinx Theme project "
+"<https://explore.transifex.com/12rambau/pydata-sphinx-theme/>`__."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:179
+msgid ""
+"Select the language you want to localize. If the language you are looking"
+" for is not listed, you can `open an issue on GitHub to request it "
+"<https://github.com/pydata/pydata-sphinx-theme/issues>`__. Then you can "
+"open a pull request to add the new language following the steps outlined "
+"in :ref:`adding-new-language`."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:181
+msgid ""
+"Now you are ready to start localizing the theme. If you are new to "
+"Transifex you can visit the `Transifex documentation "
+"<https://help.transifex.com/en/articles/6240403-translating-html-"
+"content>`__ for more information."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:184
+msgid ""
+"Once you have completed your localization, the PyData Sphinx Theme "
+"maintainers will review and approve it."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:187
+msgid "Localization tips"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:190
+msgid "Localize phrases, not words"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:192
+msgid ""
+"Full sentences and clauses must always be a single localizable string. "
+"Otherwise, you can get ``next page`` localizated as ``suivant page`` "
+"instead of as ``page suivante``, etc."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:196
+msgid "Dealing with variables and markup in localizations"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:198
+msgid ""
+"A localizable string can be a combination of a fixed string and a "
+"variable, for example, ``Welcome to the Spanish version of the site`` is "
+"a combination of the fixed parts ``Welcome to the`` and ``version of the "
+"site`` and the variable part ``Spanish``."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:207
+msgid ""
+"Binding the variable as ``language=language`` ensures the string can be "
+"properly localized, especially as the word order may vary across locales."
+" The above string will be extracted as ``Welcome to the %(language) "
+"version of the site``. The translator must use ``%(language)`` verbatim "
+"while localizing the theme."
+msgstr ""
+
+#: ../../community/topics/i18n.rst:212
+msgid ""
+"When a block contains HTML with attributes, those which don't need to be "
+"localized should be passed as arguments. This ensures strings won't need "
+"to be re-localized if those attributes change:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:223
+msgid "References"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:225
+msgid ""
+"I18N and L10N are deep topics. Here, we only cover the bare minimum "
+"needed to fulfill basic technical tasks. You might like:"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:227
+msgid ""
+"`Internationalis(z)ing Code "
+"<https://www.youtube.com/watch?v=0j74jcxSunY>`__ by Computerphile on "
+"YouTube"
+msgstr ""
+
+#: ../../community/topics/i18n.rst:228
+msgid ""
+"`Falsehoods Programmers Believe About Language "
+"<http://garbled.benhamill.com/2017/04/18/falsehoods-programmers-believe-"
+"about-language>`__ by Ben Hamill"
+msgstr ""
+

@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/config.md:1
+msgid "Update Sphinx configuration during the build"
+msgstr ""
+
+#: ../../community/topics/config.md:3
+msgid ""
+"Sometimes you want to update configuration values _during a build_. For "
+"example, if you want to set a default if the user hasn't provided a "
+"value, or if you want to move the value from one keyword to another for a"
+" deprecation."
+msgstr ""
+
+#: ../../community/topics/config.md:6
+msgid "Here are some tips to do this the \"right\" way in Sphinx."
+msgstr ""
+
+#: ../../community/topics/config.md:8
+msgid "Update config: use `app.config`"
+msgstr ""
+
+#: ../../community/topics/config.md:10
+msgid ""
+"For example, `app.config.foo = \"bar\"`. For some reason, when Sphinx "
+"sets things it directly uses `__dict__`, but this doesn't seem to be "
+"different from the pattern described here."
+msgstr ""
+
+#: ../../community/topics/config.md:13
+msgid "Update theme options: use `app.builder.theme_options`"
+msgstr ""
+
+#: ../../community/topics/config.md:15
+msgid "For example, `app.builder.theme_options[\"logo\"] = {\"text\": \"Foo\"}`."
+msgstr ""
+
+#: ../../community/topics/config.md:17
+msgid "Check if a user has provided a default: `app.config._raw_config`"
+msgstr ""
+
+#: ../../community/topics/config.md:19
+msgid ""
+"The `app.config._raw_config` attribute contains all of the **user-"
+"provided values**. Use this if you want to check whether somebody has "
+"manually specified something. For example, `\"somekey\" in "
+"app.config._raw_config` will be `False` if a user has _not_ provided that"
+" option."
+msgstr ""
+
+#: ../../community/topics/config.md:23
+msgid "You can also check `app.config.overrides` for any CLI-provided overrides."
+msgstr ""
+
+#: ../../community/topics/config.md:25
+msgid ""
+"We bundle both checks in a helper function called "
+"`_config_provided_by_user`."
+msgstr ""
+
+#: ../../community/topics/config.md:27
+msgid "Avoid the `config-inited` event"
+msgstr ""
+
+#: ../../community/topics/config.md:29
+msgid ""
+"This theme is activated **after** `config-inited` is triggered, so if you"
+" write an event that depends on it in this theme, then it will never "
+"occur. The earliest event you can use is `builder-inited`."
+msgstr ""
+

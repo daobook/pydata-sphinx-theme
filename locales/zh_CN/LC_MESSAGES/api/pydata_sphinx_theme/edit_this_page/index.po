@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:23+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst:2
+msgid "pydata_sphinx_theme.edit_this_page"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst:8
+msgid ""
+"Create an \"edit this page\" url compatible with bitbucket, gitlab and "
+"github."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst:15
+msgid "Functions"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`setup_edit_url "
+"<pydata_sphinx_theme.edit_this_page.setup_edit_url>`\\ \\(app\\, "
+"pagename\\, templatename\\, context\\, ...\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst:28
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst:21:<autosummary>:1
+msgid "Add a function that jinja can access for returning the edit URL of a page."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst:23
+msgid "Module Contents"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst
+msgid "参数"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/edit_this_page/index.rst
+msgid "返回类型"
+msgstr ""
+

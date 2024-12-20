@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/announcements.rst:2
+msgid "Announcement banners"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:4
+msgid ""
+"You can add an announcement banner that draws extra attention from your "
+"reader. It will be displayed at the top of the screen but will disappear "
+"once they start scrolling."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:7
+msgid ""
+"To add an announcement banner, use the "
+"``html_theme_options[\"announcement\"]`` configuration. There are two "
+"ways to use this."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:11
+msgid "Provide local HTML in your theme"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:13
+msgid ""
+"By default, the value of your ``html_theme_options[\"announcement\"]`` "
+"will be inserted directly into your announcement banner as raw HTML."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:15
+msgid "For example, the following configuration adds a simple announcement."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:17 ../../user_guide/announcements.rst:36
+#: ../../user_guide/announcements.rst:69
+msgid "conf.py"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:26
+msgid "Insert remote HTML with JavaScript"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:28
+msgid ""
+"You can specify an arbitrary URL that will be used as the HTML source for"
+" your announcement. When the page is loaded, JavaScript will attempt to "
+"fetch this HTML and insert it as-is into the announcement banner. This "
+"allows you to define a single HTML announcement that you can pull into "
+"multiple documentation sites or versions."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:32
+msgid ""
+"If the value of ``html_theme_options[\"announcement\"]`` begins with "
+"``http`` it will be treated as a URL to remote HTML."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:34
+msgid ""
+"For example, the following configuration tells the theme to load the "
+"``custom-template.html`` example from this documentation's GitHub "
+"repository:"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:45
+msgid "Update or remove announcement banner"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:47
+msgid ""
+"If you set ``html_theme_options[\"announcement\"]`` to plain text or "
+"HTML, then to update the announcement banner you need to modify this "
+"string and rebuild your documentation pages. To remove the announcement "
+"banner, set this value to an empty string and rebuild your documentation "
+"pages."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:52
+msgid ""
+"If you set ``html_theme_options[\"announcement\"]`` to a URL string "
+"(starts with ``http``), then you can edit the file at that URL to update "
+"the announcement banner. Saving an empty file at that URL will remove the"
+" announcement banner. That's the main advantage of using a URL--you can "
+"change the announcement banner without rebuilding and redeploying all of "
+"your documentation pages. For example, if you point the announcement to "
+"the URL of a file in your repo, as we do on this documentation site (see "
+"previous section), then you can edit, save and push your changes to just "
+"that file (empty file = remove announcement) without rebuilding and "
+"redeploying all your docs."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:65
+msgid "Version warning banners"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:67
+msgid ""
+"In addition to the general-purpose announcement banner, the theme "
+"includes a built-in banner to warn users when they are viewing versions "
+"of your docs other than the latest stable version. To use this feature, "
+"add the following to your ``conf.py``:"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:79
+msgid ""
+"This functionality relies on the :ref:`version switcher <version-"
+"dropdowns>` to determine the version number of the latest stable release."
+" *It will only work* if your version switcher ``.json`` has exactly one "
+"entry with property ``\"preferred\": true`` and your entries have "
+"``version`` properties that are parsable by the `compare-versions node "
+"module <https://www.npmjs.com/package/compare-versions>`__, for example:"
+msgstr ""
+
+#: ../../user_guide/announcements.rst:92
+msgid ""
+"If the active version compares less than the preferred version, the "
+"announcement will inform the user that they are viewing an older version "
+"of the documentation and provide a link to the preferred version. If the "
+"version compares greater than the preferred version (or if the version "
+"match contains the strings `\"dev\"`, `\"rc\"` or `\"pre\"`), the "
+"announcement will say they are viewing an unstable development version "
+"instead."
+msgstr ""
+
+#: ../../user_guide/announcements.rst:97
+msgid ""
+"If you want similar functionality for *older* versions of your docs (i.e."
+" those built before the ``show_version_warning_banner`` configuration "
+"option was available), you can manually add a banner by prepending the "
+"following HTML to all pages (be sure to replace "
+"``URL_OF_STABLE_VERSION_OF_PROJECT`` with a valid URL, and adjust styling"
+" as desired):"
+msgstr ""
+

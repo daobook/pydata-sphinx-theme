@@ -1,0 +1,68 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/execution.rst:2
+msgid "Execution Libraries"
+msgstr ""
+
+#: ../../examples/execution.rst:4
+msgid ""
+"Many execution libraries can be used to display the output of IPyhton "
+"cells. We used ``MySTnb`` to parse and display the outputs presented in "
+":doc:`./pydata`. In this section we'll show alternatives that runs code "
+"for you using a Jupyter like kernel."
+msgstr ""
+
+#: ../../examples/execution.rst:7
+msgid "Jupyterlite"
+msgstr ""
+
+#: ../../examples/execution.rst:10
+msgid ""
+"The jupyterLite lib is not yet providing a handle to switch from light to"
+" dark theme. If you consider using it in your documentation you should "
+"also enforce the light theme to your users. Follow "
+"https://github.com/jupyterlite/jupyterlite-sphinx/issues/69 for more "
+"information."
+msgstr ""
+
+#: ../../examples/execution.rst:13
+msgid ""
+"``jupyterlite-sphinx`` brings the power of `JupyterLite "
+"<https://jupyterlite.readthedocs.io/en/latest/>`__ to your Sphinx "
+"documentation. It makes a full JupyterLite deployment in your docs and "
+"provide some utilities for using that deployment easily."
+msgstr ""
+
+#: ../../examples/execution.rst:15
+msgid ""
+"This section demonstrate how it displays in a **pydata-sphinx-theme** "
+"context:"
+msgstr ""
+
+#: ../../examples/execution.rst:25
+msgid "jupyter-sphinx"
+msgstr ""
+
+#: ../../examples/execution.rst:27
+msgid ""
+"Another common library is ``jupyter-sphinx``. This section demonstrates a"
+" subset of functionality to make sure it behaves as expected."
+msgstr ""
+

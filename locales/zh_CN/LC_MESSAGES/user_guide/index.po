@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/index.md:25
+msgid "Get started"
+msgstr ""
+
+#: ../../user_guide/index.md:32
+msgid "Navigation and links"
+msgstr ""
+
+#: ../../user_guide/index.md:42
+msgid "User Interface"
+msgstr ""
+
+#: ../../user_guide/index.md:54
+msgid "Content and features"
+msgstr ""
+
+#: ../../user_guide/index.md:62
+msgid "Theming and Style"
+msgstr ""
+
+#: ../../user_guide/index.md:71
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../user_guide/index.md
+msgid ""
+"Documentation for users who wish to build sphinx sites with\n"
+"pydata-sphinx-theme.\n"
+msgstr ""
+
+#: ../../user_guide/index.md:9
+msgid "User Guide"
+msgstr ""
+
+#: ../../user_guide/index.md:11
+msgid ""
+"You can configure the behavior, look, and feel of the theme in many ways."
+" The remaining pages in the user guide cover various ways of doing so."
+msgstr ""
+
+#: ../../user_guide/index.md:15
+msgid ""
+"This theme is still under active development, and we make no promises "
+"about the stability of any specific HTML structure, CSS variables, etc. "
+"Make these customizations at your own risk, and pin versions if you're "
+"worried about breaking changes!"
+msgstr ""
+
+#: ../../user_guide/index.md:21
+msgid ""
+"There are a number of options for configuring your site's look and feel. "
+"All configuration options are passed with the `html_theme_options` "
+"variable in your `conf.py` file. This is a dictionary with `key: val` "
+"pairs that you can configure in various ways."
+msgstr ""
+

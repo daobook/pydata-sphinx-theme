@@ -1,0 +1,345 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/web-components.rst:5
+msgid "Sphinx Design Components"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:7
+msgid ""
+"On this page, you will find user interface components such as badges, "
+"buttons, cards, and tabs."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:10
+msgid ""
+"The components on this page are **not provided by PyData Theme**. They "
+"are provided by `Sphinx Design <https://sphinx-design.readthedocs.io/en"
+"/pydata-theme/index.html>`_ (a Sphinx extension). This means that if you "
+"wish to use the components on this page, you must install Sphinx Design "
+"separately and add it to your `conf.py`."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:16
+msgid ""
+"To add the Sphinx Design extension to your Sphinx project, refer to "
+"`Sphinx Design - Getting Started <https://sphinx-design.readthedocs.io/en"
+"/pydata-theme/get_started.html>`_."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:20
+msgid ""
+"Contributors to both projects have worked to ensure compatible styling so"
+" that Sphinx Design components look and feel consistent with the PyData "
+"Theme."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:23
+msgid ""
+"This page shows you how the Sphinx Design components would look on your "
+"site if you were to use them in combination with the PyData Theme. Sphinx"
+" Design also provides a `PyData-themed version of the Sphinx Design site "
+"<https://sphinx-design.readthedocs.io/en/pydata-theme/>`__; however, "
+"their site use an older version of this theme."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:29
+msgid ""
+"Any customizations you make to the theme could affect how these "
+"components appear on your site. So what you see on this page might not "
+"match exactly what you see on your site even if your site uses this "
+"theme."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:36
+msgid "Badges and button-links"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:38
+msgid "Here are some of the available badges:"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:40
+msgid ""
+":bdg-primary:`primary` :bdg-secondary:`secondary` :bdg-success:`success` "
+":bdg-primary-line:`primary outline` :bdg-secondary-line:`secondary "
+"outline` :bdg-success-line:`success outline`"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:47
+msgid ""
+"Here are some of the available button-style links, also using semantic "
+"colors:"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:53
+msgid "Info"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:62
+msgid "Success"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:71
+msgid "Warning"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:80
+msgid "Danger"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:89
+msgid "Muted"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:98
+msgid "Light"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:107
+msgid "Dark"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:116
+msgid "Secondary"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:125
+msgid "Primary"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:134
+msgid ""
+"`Sphinx Design buttons <https://sphinx-"
+"design.readthedocs.io/en/latest/badges_buttons.html>`__ are actually "
+"links, meaning they are rendered in HTML with ``<a>`` tags instead of "
+"``<button>``. Use them if you need a link to look like a button, but try "
+"not to overuse them as they are not considered best practice for "
+"accessibility. (For example, it upsets user interface expectations "
+"because the space bar can be used on ``<button>``-tag buttons but not on "
+"``<a>``-tag links that look like buttons.)"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:143
+msgid ""
+"If in your site's :ref:`custom CSS file <custom-css>` you override the "
+":ref:`CSS custom properties <css-variables>` ``--pst-color-*`` (where "
+"``*`` is one of the semantic color names, such as ``primary``, "
+"``danger``), badges and buttons will automatically use the custom color."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:149
+msgid "Cards"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:153
+msgid "Only heading"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:157
+msgid "Only body."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:159
+msgid "But with multiple text paragraphs."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:161
+msgid "Heading and body"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:163
+msgid "Content of the third card."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:165
+msgid ":bdg-primary:`Sample badge`"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:169
+msgid "A card with a dropdown menu"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid ":fa:`eye me-1` Click to expand dropdown"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:173
+msgid "Hidden content"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:175
+msgid "A clickable card"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:179
+msgid "Don't forget to add the alternative text with ``link-alt``!"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:185
+msgid "panel 1 header"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:187
+msgid "panel 1 content more content"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:190
+msgid "panel 1 footer"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:194
+msgid "panel 2 header"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:196
+msgid "panel 2 content"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:198
+msgid "panel 2 footer"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:201
+msgid "Tabs"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "c++"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "python"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "java"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "julia"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "fortran"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:244
+msgid "Dropdowns"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:246
+msgid ""
+"Dropdowns look similar to admonitions, but they are clickable interactive"
+" elements that can be used to hide content. See `the Sphinx Design "
+"Dropdown documentation <https://sphinx-"
+"design.readthedocs.io/en/latest/dropdowns.html>`__ for more information."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:249
+msgid "An admonition for reference."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:251
+msgid "And some admonition content."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:255
+msgid "And with no title and some content!"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "With a title"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:259
+#: ../../user_guide/web-components.rst:270
+#: ../../user_guide/web-components.rst:276
+msgid "And some content!"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "With a title and icon"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:264
+msgid "And some content and an icon!"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "A primary color dropdown"
+msgstr ""
+
+#: ../../user_guide/web-components.rst
+msgid "A secondary color dropdown"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:279
+msgid "Copybuttons"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:281
+msgid ""
+"`sphinx-copybutton <https://sphinx-"
+"copybutton.readthedocs.io/en/latest/>`__ adds a copy button to each of "
+"your code cells. You can see it in action by hovering over the code cell "
+"below:"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:288
+msgid "nbsphinx"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:290
+msgid ""
+"If your documentation site uses both nbsphinx and Sphinx-copybutton, you "
+"will want to add the following line to your ``conf.py`` file to prevent "
+"the copy button from appearing on top of notebook cell numbers:"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:294
+msgid "conf.py"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:300
+msgid "Toggle buttons"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:302
+msgid ""
+"`sphinx-togglebutton <https://sphinx-"
+"togglebutton.readthedocs.io/en/latest/>`__ allows you to convert "
+"admonitions into toggle-able elements."
+msgstr ""
+
+#: ../../user_guide/web-components.rst:304
+msgid "Click me to toggle!"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:307
+msgid "This will be hidden until a click!"
+msgstr ""
+
+#: ../../user_guide/web-components.rst:311
+msgid "A standalone toggle button!"
+msgstr ""
+

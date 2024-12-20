@@ -1,0 +1,144 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/manual-dev.md:3
+msgid "Set up a manual development environment"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:5
+msgid ""
+"If you prefer not to use automation tools like `tox`, or want to have "
+"more control over the specific version of packages that you'd like "
+"installed, you may set your local development environment manually."
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:8
+msgid "To do so, follow the instructions on this page."
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:10
+msgid "Create a new development environment"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:12
+msgid ""
+"This is optional, but it's best to start with a fresh development "
+"environment so that you've isolated the packages that you're using for "
+"this repository."
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:14
+msgid ""
+"To do so, use a tool like [conda](https://docs.conda.io/en/latest/), "
+"[mamba](https://github.com/mamba-org/mamba), or "
+"[virtualenv](https://virtualenv.pypa.io/)."
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:16
+msgid "Pre-requisites"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:18
+msgid "Before you start, ensure that you have the following installed:"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:20
+msgid "Python >= 3.9"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:21
+msgid ""
+"[Pandoc](https://pandoc.org/): we use `nbsphinx` to support notebook "
+"(`.ipynb`) files in the documentation, which requires [installing "
+"Pandoc](https://pandoc.org/installing.html) at a system level (or within "
+"a Conda environment)."
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:23
+msgid "Clone the repository locally"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:25
+msgid ""
+"First clone this repository from the `pydata` organization, or from a "
+"fork that you have created:"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:32
+msgid "Install this theme locally"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:34
+msgid ""
+"Next, install this theme locally so that we have the necessary "
+"dependencies to build the documentation and testing suite:"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:40
+msgid ""
+"Note that the `sphinx-theme-builder` will automatically install a local "
+"copy of `nodejs` for building the theme's assets. This will be placed in "
+"a `.nodeenv` folder."
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:43
+msgid "Build the documentation"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:45
+msgid "To manually build the documentation, run the following command:"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:51
+msgid "Compile web assets (JS/CSS)"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:53
+msgid ""
+"To compile the JavaScript and CSS assets for the theme, run the following"
+" command:"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:59
+msgid ""
+"This will compile everything in the `src/pydata_sphinx_theme/assets` "
+"folder and place them in the appropriate places in our theme's folder "
+"structure."
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:61
+msgid "Start a live server to build and serve your documentation"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:63
+msgid ""
+"To manually open a server to watch your documentation for changes, build "
+"them, and display them locally in a browser, run this command:"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:69
+msgid "Manually run the tests"
+msgstr ""
+
+#: ../../community/topics/manual-dev.md:71
+msgid ""
+"To manually run the tests for this theme, first set up your environment "
+"locally, and then run:"
+msgstr ""
+

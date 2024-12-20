@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/navigation.rst:4
+msgid "Navigation depth and collapsing sidebars"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:6
+msgid ""
+"By default, this theme allows expanding/collapsing subsections in the "
+"primary sidebar navigation (without actually navigating to the page "
+"itself), and this extends up to 4 levels deep:"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:14
+msgid "Control how many navigation levels are shown by default"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:16
+msgid ""
+"You can control how many navigation levels are shown when a page is "
+"loaded. By default, this level is 1, and only top-level pages are shown, "
+"with drop-boxes to reveal their children. To make their children show up "
+"by default, you can use the following configuration in ``conf.py``:"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:27
+msgid ""
+"This will make the first two navigation levels show up by default (AKA, "
+"top-level pages and their immediate children)."
+msgstr ""
+
+#: ../../user_guide/navigation.rst:31
+msgid "Collapse entire toctree captions/parts"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:33
+msgid ""
+"If your ``toctree`` elements have captions assigned to them (with "
+"``:caption:``), you may collapse navigation items so that only the "
+"caption is visible. Clicking on the caption will display the items below."
+msgstr ""
+
+#: ../../user_guide/navigation.rst:37
+msgid ""
+"To enable this behavior, set the ``show_nav_level`` value to 0, like "
+"below:"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:45
+msgid ""
+"You can only collapse your ``toctree`` items underneath their caption if "
+"a caption is defined for them! If your ``toctree`` does not have a "
+"caption defined, then all the pages underneath it will be displayed (the "
+"same as the default theme behavior). See `the toctree documentation "
+"<https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/directives.html#directive-"
+"toctree>`_ for more details."
+msgstr ""
+
+#: ../../user_guide/navigation.rst:52
+msgid ""
+"In some Sphinx sites, the top-level ``toctree`` groupings make up "
+"\"parts\" in the documentation, with each page beneath making up a "
+"\"chapter\"."
+msgstr ""
+
+#: ../../user_guide/navigation.rst:58
+msgid "Control the number of navigation levels"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:60
+msgid ""
+"In addition, you can also control how many levels of the navigation are "
+"shown in the sidebar (with a default of 4):"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:71
+msgid "Remove reveal buttons for sidebar items"
+msgstr ""
+
+#: ../../user_guide/navigation.rst:73
+msgid ""
+"It is possible to turn off the expandable navigation entirely by setting "
+"the `collapse_navigation` config option to True:"
+msgstr ""
+

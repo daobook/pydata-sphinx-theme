@@ -87,7 +87,9 @@ myst_substitutions = {"rtd": "[Read the Docs](https://readthedocs.org/)"}
 # -- Internationalization ----------------------------------------------------
 
 # specifying the natural language populates some key tags
-language = "en"
+language = "zh_CN"
+locale_dirs = ['../locales/']  # po files will be created in this directory
+gettext_compact = False  # optional: avoid file concatenation in sub directories.
 
 # -- Ablog options -----------------------------------------------------------
 

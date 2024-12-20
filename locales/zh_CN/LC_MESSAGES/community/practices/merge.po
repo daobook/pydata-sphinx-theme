@@ -1,0 +1,169 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/practices/merge.md:1
+msgid "Merge and review policy"
+msgstr ""
+
+#: ../../community/practices/merge.md:3
+msgid ""
+"Our policy for merging and reviewing describes how we review one "
+"another's work, and when we allow others to merge changes into our main "
+"codebase. It tries to balance a few goals:"
+msgstr ""
+
+#: ../../community/practices/merge.md:6
+msgid ""
+"Iterate on PRs and merge them relatively quickly, so that we reduce the "
+"debt associated with long-lasting PRs."
+msgstr ""
+
+#: ../../community/practices/merge.md:7
+msgid ""
+"Give enough time for others to provide their input and guide the PR "
+"itself, and to ensure that we aren't creating a problem with the PR."
+msgstr ""
+
+#: ../../community/practices/merge.md:8
+msgid ""
+"Value iterative improvement over creating the perfect Pull Request, so "
+"that we do not burden contributors with cumbersome discussion and minor "
+"revision requests."
+msgstr ""
+
+#: ../../community/practices/merge.md:9
+msgid ""
+"Recognize that we all have limited time and resources, and so cannot "
+"guarantee a full quality assurance process each time."
+msgstr ""
+
+#: ../../community/practices/merge.md:10
+msgid ""
+"Give general preference to the opinions of maintainers of projects in the"
+" PyData ecosystem, as a key stakeholder community of this theme."
+msgstr ""
+
+#: ../../community/practices/merge.md:12
+msgid "We follow these guidelines to achieve these goals:"
+msgstr ""
+
+#: ../../community/practices/merge.md:14
+msgid ""
+"Assume that all maintainers are acting in good faith and will use their "
+"best judgment to make decisions in the best interests of the repository."
+msgstr ""
+
+#: ../../community/practices/merge.md:15
+msgid ""
+"We can and will make mistakes, so encourage best practices in testing and"
+" documentation to guard against this."
+msgstr ""
+
+#: ../../community/practices/merge.md:16
+msgid ""
+"It's important to share information, so give your best effort at telling "
+"others about the work that you're doing."
+msgstr ""
+
+#: ../../community/practices/merge.md:17
+msgid ""
+"It's best to discuss and agree on important decisions at a high level "
+"before implementation, so give the best effort at providing time and "
+"invitation for others to provide feedback."
+msgstr ""
+
+#: ../../community/practices/merge.md:19
+msgid "Policy for moderate changes"
+msgstr ""
+
+#: ../../community/practices/merge.md:21
+msgid ""
+"These are changes that make modest changes to new or existing "
+"functionality, but that aren't going to significantly change the default "
+"behavior of the theme, user configuration, etc. This is the majority of "
+"changes that we make."
+msgstr ""
+
+#: ../../community/practices/merge.md:24
+msgid "PRs should:"
+msgstr ""
+
+#: ../../community/practices/merge.md:26
+msgid ""
+"Refer to (and ideally close) an issue that describes the problem this "
+"change is solving."
+msgstr ""
+
+#: ../../community/practices/merge.md:27
+msgid "Have relevant testing and documentation coverage."
+msgstr ""
+
+#: ../../community/practices/merge.md:29
+msgid ""
+"They can be merged when the above conditions are met, and one of these "
+"things happens:"
+msgstr ""
+
+#: ../../community/practices/merge.md:31
+msgid ""
+"The PR has at least one approval from a core maintainer that isn't the PR"
+" author"
+msgstr ""
+
+#: ../../community/practices/merge.md:32
+msgid ""
+"The PR author has signaled their intent to merge unless there are "
+"objections, and 48 hours have passed since that comment."
+msgstr ""
+
+#: ../../community/practices/merge.md:34
+msgid "Policy for major new features and breaking changes"
+msgstr ""
+
+#: ../../community/practices/merge.md:36
+msgid ""
+"These are changes that significantly alter the experience of the user, or"
+" that add significant complexity to the codebase."
+msgstr ""
+
+#: ../../community/practices/merge.md:38
+msgid ""
+"All the above, but PRs **must** have approval from at least one other "
+"core maintainer before merging. In addition, the PR author should put "
+"extra effort into ensuring that the relevant stakeholders are notified "
+"about a change, so they can gauge its impact and provide feedback."
+msgstr ""
+
+#: ../../community/practices/merge.md:41
+msgid "Policy For minor changes and bugfixes"
+msgstr ""
+
+#: ../../community/practices/merge.md:43
+msgid ""
+"These are small changes that might be noticeable to the user, but in a "
+"way that is clearly an improvement. They generally shouldn't touch too "
+"many lines of code."
+msgstr ""
+
+#: ../../community/practices/merge.md:46
+msgid ""
+"Update the relevant tests and documentation, but PR authors are welcome "
+"to self-merge whenever they like without PR approval."
+msgstr ""
+

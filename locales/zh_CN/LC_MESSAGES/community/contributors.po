@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/contributors.md:1
+msgid "Contributors to this theme"
+msgstr ""
+
+#: ../../community/contributors.md:3
+msgid ""
+"This theme is supported and developed by various members of [the PyData "
+"community](https://pydata.org)."
+msgstr ""
+
+#: ../../community/contributors.md:5
+msgid "Collaborators on the repository"
+msgstr ""
+
+#: ../../community/contributors.md:7
+msgid ""
+"Here is a grid of collaborators on our GitHub repository. We don't yet "
+"have formal \"team definitions\" so this is mostly a reflection of who "
+"has commit rights to the repository."
+msgstr ""
+
+#: ../../community/contributors.md:24
+msgid "@bollwyvl"
+msgstr ""
+
+#: ../../community/contributors.md:26
+msgid "![image](https://avatars.githubusercontent.com/u/45380)"
+msgstr ""
+
+#: ../../community/contributors.md:26 ../../community/contributors.md:38
+#: ../../community/contributors.md:50 ../../community/contributors.md:62
+#: ../../community/contributors.md:74 ../../community/contributors.md:86
+#: ../../community/contributors.md:98 ../../community/contributors.md:110
+#: ../../community/contributors.md:122
+msgid "image"
+msgstr ""
+
+#: ../../community/contributors.md:36
+msgid "@jarrodmillman"
+msgstr ""
+
+#: ../../community/contributors.md:38
+msgid "![image](https://avatars.githubusercontent.com/u/123428)"
+msgstr ""
+
+#: ../../community/contributors.md:48
+msgid "@hoetmaaiers"
+msgstr ""
+
+#: ../../community/contributors.md:50
+msgid "![image](https://avatars.githubusercontent.com/u/468045)"
+msgstr ""
+
+#: ../../community/contributors.md:60
+msgid "@jorisvandenbossche"
+msgstr ""
+
+#: ../../community/contributors.md:62
+msgid "![image](https://avatars.githubusercontent.com/u/1020496)"
+msgstr ""
+
+#: ../../community/contributors.md:72
+msgid "@damianavila"
+msgstr ""
+
+#: ../../community/contributors.md:74
+msgid "![image](https://avatars.githubusercontent.com/u/1640669)"
+msgstr ""
+
+#: ../../community/contributors.md:84
+msgid "@drammock"
+msgstr ""
+
+#: ../../community/contributors.md:86
+msgid "![image](https://avatars.githubusercontent.com/u/1810515)"
+msgstr ""
+
+#: ../../community/contributors.md:96
+msgid "@choldgraf"
+msgstr ""
+
+#: ../../community/contributors.md:98
+msgid "![image](https://avatars.githubusercontent.com/u/1839645)"
+msgstr ""
+
+#: ../../community/contributors.md:108
+msgid "@12rambau"
+msgstr ""
+
+#: ../../community/contributors.md:110
+msgid "![image](https://avatars.githubusercontent.com/u/12596392)"
+msgstr ""
+
+#: ../../community/contributors.md:120
+msgid "@trallard"
+msgstr ""
+
+#: ../../community/contributors.md:122
+msgid "![image](https://avatars.githubusercontent.com/u/23552331)"
+msgstr ""
+
+#: ../../community/contributors.md:14
+msgid "Financial support"
+msgstr ""
+
+#: ../../community/contributors.md:16
+msgid ""
+"Support and development for this theme has been funded by one [NumFocus "
+"Small Development Grant](https://numfocus.org/programs/small-development-"
+"grants) on behalf of several communities in the PyData ecosystem."
+msgstr ""
+
+#: ../../community/contributors.md:18
+msgid "Theme logo"
+msgstr ""
+
+#: ../../community/contributors.md:20
+msgid ""
+"Thanks to [@drammock](https://github.com/drammock) for the initial design"
+" of the theme logo."
+msgstr ""
+

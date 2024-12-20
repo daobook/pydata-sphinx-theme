@@ -1,0 +1,535 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/kitchen-sink/api.rst:8
+msgid "API documentation"
+msgstr ""
+
+#: ../../examples/kitchen-sink/api.rst:10
+msgid ""
+"Using Sphinx's ``sphinx.ext.autodoc`` plugin, it is possible to auto-"
+"generate documentation of a Python module."
+msgstr ""
+
+#: ../../examples/kitchen-sink/api.rst:13
+msgid ""
+"Avoid having in-function-signature type annotations with autodoc, by "
+"setting the following options:"
+msgstr ""
+
+#: of urllib.parse:1
+msgid "Parse (absolute and relative) URLs."
+msgstr ""
+
+#: of urllib.parse:3
+msgid "urlparse module is based upon the following RFC specifications."
+msgstr ""
+
+#: of urllib.parse:5
+msgid ""
+"RFC 3986 (STD66): \"Uniform Resource Identifiers\" by T. Berners-Lee, R. "
+"Fielding and L.  Masinter, January 2005."
+msgstr ""
+
+#: of urllib.parse:8
+msgid ""
+"RFC 2732 : \"Format for Literal IPv6 Addresses in URL's by R.Hinden, "
+"B.Carpenter and L.Masinter, December 1999."
+msgstr ""
+
+#: of urllib.parse:11
+msgid ""
+"RFC 2396:  \"Uniform Resource Identifiers (URI)\": Generic Syntax by T. "
+"Berners-Lee, R. Fielding, and L. Masinter, August 1998."
+msgstr ""
+
+#: of urllib.parse:14
+msgid ""
+"RFC 2368: \"The mailto URL scheme\", by P.Hoffman , L Masinter, J. "
+"Zawinski, July 1998."
+msgstr ""
+
+#: of urllib.parse:16
+msgid ""
+"RFC 1808: \"Relative Uniform Resource Locators\", by R. Fielding, UC "
+"Irvine, June 1995."
+msgstr ""
+
+#: of urllib.parse:19
+msgid ""
+"RFC 1738: \"Uniform Resource Locators (URL)\" by T. Berners-Lee, L. "
+"Masinter, M. McCahill, December 1994"
+msgstr ""
+
+#: of urllib.parse:22
+msgid ""
+"RFC 3986 is considered the current standard and any future changes to "
+"urlparse module should conform with it.  The urlparse module is currently"
+" not entirely compliant with this RFC due to defacto scenarios for "
+"parsing, and for backward compatibility purposes, some parsing quirks "
+"from older RFCs are retained. The testcases in test_urlparse.py provides "
+"a good indicator of parsing behavior."
+msgstr ""
+
+#: of urllib.parse:29
+msgid ""
+"The WHATWG URL Parser spec should also be considered.  We are not "
+"compliant with it either due to existing user code API behavior "
+"expectations (Hyrum's Law). It serves as a useful guide when making "
+"changes."
+msgstr ""
+
+#: of urllib.parse.DefragResult:7 urllib.parse.DefragResultBytes:7
+#: urllib.parse.ParseResult:20 urllib.parse.ParseResultBytes:20
+#: urllib.parse.SplitResult:20 urllib.parse.SplitResultBytes:20
+msgid "Methods"
+msgstr ""
+
+#: of urllib.parse.DefragResult:14:<autosummary>:1
+msgid ":py:obj:`count <urllib.parse.DefragResult.count>`\\ \\(value\\, \\/\\)"
+msgstr ""
+
+#: of urllib.parse.DefragResult:14:<autosummary>:1
+#: urllib.parse.DefragResultBytes:14:<autosummary>:1
+#: urllib.parse.ParseResult:27:<autosummary>:1
+#: urllib.parse.ParseResultBytes:27:<autosummary>:1
+#: urllib.parse.SplitResult:27:<autosummary>:1
+#: urllib.parse.SplitResultBytes:27:<autosummary>:1
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: of urllib.parse.DefragResult:14:<autosummary>:1
+msgid ""
+":py:obj:`index <urllib.parse.DefragResult.index>`\\ \\(value\\[\\, "
+"start\\, stop\\]\\)"
+msgstr ""
+
+#: of urllib.parse.DefragResult:14:<autosummary>:1
+#: urllib.parse.DefragResultBytes:14:<autosummary>:1
+#: urllib.parse.ParseResult:27:<autosummary>:1
+#: urllib.parse.ParseResultBytes:27:<autosummary>:1
+#: urllib.parse.SplitResult:27:<autosummary>:1
+#: urllib.parse.SplitResultBytes:27:<autosummary>:1
+msgid "Return first index of value."
+msgstr ""
+
+#: of urllib.parse.DefragResult:16 urllib.parse.ParseResult:29
+#: urllib.parse.SplitResult:29
+msgid "**encode**"
+msgstr ""
+
+#: of urllib.parse.DefragResult:17 urllib.parse.DefragResultBytes:17
+#: urllib.parse.ParseResult:30 urllib.parse.ParseResultBytes:30
+#: urllib.parse.SplitResult:30 urllib.parse.SplitResultBytes:30
+msgid "**geturl**"
+msgstr ""
+
+#: of urllib.parse.DefragResultBytes:14:<autosummary>:1
+msgid ""
+":py:obj:`count <urllib.parse.DefragResultBytes.count>`\\ \\(value\\, "
+"\\/\\)"
+msgstr ""
+
+#: of urllib.parse.DefragResultBytes:14:<autosummary>:1
+msgid ""
+":py:obj:`index <urllib.parse.DefragResultBytes.index>`\\ \\(value\\[\\, "
+"start\\, stop\\]\\)"
+msgstr ""
+
+#: of urllib.parse.DefragResultBytes:16 urllib.parse.ParseResultBytes:29
+#: urllib.parse.SplitResultBytes:29
+msgid "**decode**"
+msgstr ""
+
+#: of urllib.parse.ParseResult urllib.parse.ParseResultBytes
+#: urllib.parse.SplitResult urllib.parse.SplitResultBytes
+msgid "Attributes"
+msgstr ""
+
+#: of urllib.parse.ParseResult:7 urllib.parse.ParseResultBytes:7
+#: urllib.parse.SplitResult:7 urllib.parse.SplitResultBytes:7
+msgid "**hostname**"
+msgstr ""
+
+#: of urllib.parse.ParseResult:10 urllib.parse.ParseResultBytes:10
+#: urllib.parse.SplitResult:10 urllib.parse.SplitResultBytes:10
+msgid "**password**"
+msgstr ""
+
+#: of urllib.parse.ParseResult:13 urllib.parse.ParseResultBytes:13
+#: urllib.parse.SplitResult:13 urllib.parse.SplitResultBytes:13
+msgid "**port**"
+msgstr ""
+
+#: of urllib.parse.ParseResult:16 urllib.parse.ParseResultBytes:16
+#: urllib.parse.SplitResult:16 urllib.parse.SplitResultBytes:16
+msgid "**username**"
+msgstr ""
+
+#: of urllib.parse.ParseResult:27:<autosummary>:1
+msgid ":py:obj:`count <urllib.parse.ParseResult.count>`\\ \\(value\\, \\/\\)"
+msgstr ""
+
+#: of urllib.parse.ParseResult:27:<autosummary>:1
+msgid ""
+":py:obj:`index <urllib.parse.ParseResult.index>`\\ \\(value\\[\\, "
+"start\\, stop\\]\\)"
+msgstr ""
+
+#: of urllib.parse.ParseResultBytes:27:<autosummary>:1
+msgid ":py:obj:`count <urllib.parse.ParseResultBytes.count>`\\ \\(value\\, \\/\\)"
+msgstr ""
+
+#: of urllib.parse.ParseResultBytes:27:<autosummary>:1
+msgid ""
+":py:obj:`index <urllib.parse.ParseResultBytes.index>`\\ \\(value\\[\\, "
+"start\\, stop\\]\\)"
+msgstr ""
+
+#: of urllib.parse.SplitResult:27:<autosummary>:1
+msgid ":py:obj:`count <urllib.parse.SplitResult.count>`\\ \\(value\\, \\/\\)"
+msgstr ""
+
+#: of urllib.parse.SplitResult:27:<autosummary>:1
+msgid ""
+":py:obj:`index <urllib.parse.SplitResult.index>`\\ \\(value\\[\\, "
+"start\\, stop\\]\\)"
+msgstr ""
+
+#: of urllib.parse.SplitResultBytes:27:<autosummary>:1
+msgid ":py:obj:`count <urllib.parse.SplitResultBytes.count>`\\ \\(value\\, \\/\\)"
+msgstr ""
+
+#: of urllib.parse.SplitResultBytes:27:<autosummary>:1
+msgid ""
+":py:obj:`index <urllib.parse.SplitResultBytes.index>`\\ \\(value\\[\\, "
+"start\\, stop\\]\\)"
+msgstr ""
+
+#: of urllib.parse.parse_qs:2 urllib.parse.parse_qsl:2
+msgid "Parse a query given as a string argument."
+msgstr ""
+
+#: of urllib.parse.parse_qs:4 urllib.parse.parse_qsl:4
+msgid "Arguments:"
+msgstr ""
+
+#: of urllib.parse.parse_qs:6 urllib.parse.parse_qsl:6
+msgid "qs: percent-encoded query string to be parsed"
+msgstr ""
+
+#: of urllib.parse.parse_qs:8 urllib.parse.parse_qsl:8
+msgid "keep_blank_values: flag indicating whether blank values in"
+msgstr ""
+
+#: of urllib.parse.parse_qs:9
+msgid ""
+"percent-encoded queries should be treated as blank strings. A true value "
+"indicates that blanks should be retained as blank strings.  The default "
+"false value indicates that blank values are to be ignored and treated as "
+"if they were not included."
+msgstr ""
+
+#: of urllib.parse.parse_qs:15
+msgid "strict_parsing: flag indicating what to do with parsing errors."
+msgstr ""
+
+#: of urllib.parse.parse_qs:16
+msgid ""
+"If false (the default), errors are silently ignored. If true, errors "
+"raise a ValueError exception."
+msgstr ""
+
+#: of urllib.parse.parse_qs:19 urllib.parse.parse_qsl:18
+msgid "encoding and errors: specify how to decode percent-encoded sequences"
+msgstr ""
+
+#: of urllib.parse.parse_qs:20 urllib.parse.parse_qsl:19
+msgid "into Unicode characters, as accepted by the bytes.decode() method."
+msgstr ""
+
+#: of urllib.parse.parse_qs:22
+msgid "max_num_fields: int. If set, then throws a ValueError if there"
+msgstr ""
+
+#: of urllib.parse.parse_qs:23
+msgid "are more than n fields read by parse_qsl()."
+msgstr ""
+
+#: of urllib.parse.parse_qs:25 urllib.parse.parse_qsl:24
+msgid "separator: str. The symbol to use for separating the query arguments."
+msgstr ""
+
+#: of urllib.parse.parse_qs:26 urllib.parse.parse_qsl:25
+msgid "Defaults to &."
+msgstr ""
+
+#: of urllib.parse.parse_qs:28
+msgid "Returns a dictionary."
+msgstr ""
+
+#: of urllib.parse.parse_qsl:9
+msgid ""
+"percent-encoded queries should be treated as blank strings. A true value "
+"indicates that blanks should be retained as blank strings.  The default "
+"false value indicates that blank values are to be ignored and treated as "
+"if they were  not included."
+msgstr ""
+
+#: of urllib.parse.parse_qsl:14
+msgid "strict_parsing: flag indicating what to do with parsing errors. If"
+msgstr ""
+
+#: of urllib.parse.parse_qsl:15
+msgid ""
+"false (the default), errors are silently ignored. If true, errors raise a"
+" ValueError exception."
+msgstr ""
+
+#: of urllib.parse.parse_qsl:21
+msgid "max_num_fields: int. If set, then throws a ValueError"
+msgstr ""
+
+#: of urllib.parse.parse_qsl:22
+msgid "if there are more than n fields read by parse_qsl()."
+msgstr ""
+
+#: of urllib.parse.parse_qsl:27
+msgid "Returns a list, as G-d intended."
+msgstr ""
+
+#: of urllib.parse.quote:2
+msgid ""
+"Each part of a URL, e.g. the path info, the query, etc., has a different "
+"set of reserved characters that must be quoted. The quote function offers"
+" a cautious (not minimal) way to quote a string for most of these parts."
+msgstr ""
+
+#: of urllib.parse.quote:7
+msgid ""
+"RFC 3986 Uniform Resource Identifier (URI): Generic Syntax lists the "
+"following (un)reserved characters."
+msgstr ""
+
+#: of urllib.parse.quote:10
+msgid ""
+"unreserved    = ALPHA / DIGIT / \"-\" / \".\" / \"_\" / \"~\" reserved"
+"      = gen-delims / sub-delims gen-delims    = \":\" / \"/\" / \"?\" / "
+"\"#\" / \"[\" / \"]\" / \"@\" sub-delims    = \"!\" / \"$\" / \"&\" / "
+"\"'\" / \"(\" / \")\""
+msgstr ""
+
+#: of urllib.parse.quote:14
+msgid "/ \"*\" / \"+\" / \",\" / \";\" / \"=\""
+msgstr ""
+
+#: of urllib.parse.quote:16
+msgid ""
+"Each of the reserved characters is reserved in some component of a URL, "
+"but not necessarily in all of them."
+msgstr ""
+
+#: of urllib.parse.quote:19
+#, python-format
+msgid ""
+"The quote function %-escapes all characters that are neither in the "
+"unreserved chars (\"always safe\") nor the additional chars set via the "
+"safe arg."
+msgstr ""
+
+#: of urllib.parse.quote:23
+msgid ""
+"The default for the safe arg is '/'. The character is reserved, but in "
+"typical usage the quote function is being called on a path where the "
+"existing slash characters are to be preserved."
+msgstr ""
+
+#: of urllib.parse.quote:27
+msgid ""
+"Python 3.7 updates from using RFC 2396 to RFC 3986 to quote URL strings. "
+"Now, \"~\" is included in the set of unreserved characters."
+msgstr ""
+
+#: of urllib.parse.quote:30
+msgid ""
+"string and safe may be either str or bytes objects. encoding and errors "
+"must not be specified if string is a bytes object."
+msgstr ""
+
+#: of urllib.parse.quote:33
+msgid ""
+"The optional encoding and errors parameters specify how to deal with non-"
+"ASCII characters, as accepted by the str.encode method. By default, "
+"encoding='utf-8' (characters are encoded with UTF-8), and errors='strict'"
+" (unsupported characters raise a UnicodeEncodeError)."
+msgstr ""
+
+#: of urllib.parse.quote_from_bytes:2
+#, python-format
+msgid ""
+"Like quote(), but accepts a bytes object rather than a str, and does not "
+"perform string-to-bytes encoding.  It always returns an ASCII string. "
+"quote_from_bytes(b'abc def?') -> 'abc%20def%3f'"
+msgstr ""
+
+#: of urllib.parse.quote_plus:2
+msgid ""
+"Like quote(), but also replace ' ' with '+', as required for quoting HTML"
+" form values. Plus signs in the original string are escaped unless they "
+"are included in safe. It also does not have safe default to '/'."
+msgstr ""
+
+#: of urllib.parse.unquote:2
+#, python-format
+msgid ""
+"Replace %xx escapes by their single-character equivalent. The optional "
+"encoding and errors parameters specify how to decode percent-encoded "
+"sequences into Unicode characters, as accepted by the bytes.decode() "
+"method. By default, percent-encoded sequences are decoded with UTF-8, and"
+" invalid sequences are replaced by a placeholder character."
+msgstr ""
+
+#: of urllib.parse.unquote:9
+#, python-format
+msgid "unquote('abc%20def') -> 'abc def'."
+msgstr ""
+
+#: of urllib.parse.unquote_plus:2
+msgid ""
+"Like unquote(), but also replace plus signs by spaces, as required for "
+"unquoting HTML form values."
+msgstr ""
+
+#: of urllib.parse.unquote_plus:5
+#, python-format
+msgid "unquote_plus('%7e/abc+def') -> '~/abc def'"
+msgstr ""
+
+#: of urllib.parse.urldefrag:2
+msgid "Removes any existing fragment from URL."
+msgstr ""
+
+#: of urllib.parse.urldefrag:4
+msgid ""
+"Returns a tuple of the defragmented URL and the fragment.  If the URL "
+"contained no fragments, the second element is the empty string."
+msgstr ""
+
+#: of urllib.parse.urlencode:2
+msgid "Encode a dict or sequence of two-element tuples into a URL query string."
+msgstr ""
+
+#: of urllib.parse.urlencode:4
+msgid ""
+"If any values in the query arg are sequences and doseq is true, each "
+"sequence element is converted to a separate parameter."
+msgstr ""
+
+#: of urllib.parse.urlencode:7
+msgid ""
+"If the query arg is a sequence of two-element tuples, the order of the "
+"parameters in the output will match the order of parameters in the input."
+msgstr ""
+
+#: of urllib.parse.urlencode:11
+msgid "The components of a query arg may each be either a string or a bytes type."
+msgstr ""
+
+#: of urllib.parse.urlencode:13
+msgid ""
+"The safe, encoding, and errors parameters are passed down to the function"
+" specified by quote_via (encoding and errors only if a component is a "
+"str)."
+msgstr ""
+
+#: of urllib.parse.urljoin:2
+msgid ""
+"Join a base URL and a possibly relative URL to form an absolute "
+"interpretation of the latter."
+msgstr ""
+
+#: of urllib.parse.urlparse:2
+msgid ""
+"Parse a URL into 6 components: "
+"<scheme>://<netloc>/<path>;<params>?<query>#<fragment>"
+msgstr ""
+
+#: of urllib.parse.urlparse:5
+msgid ""
+"The result is a named 6-tuple with fields corresponding to the above. It "
+"is either a ParseResult or ParseResultBytes object, depending on the type"
+" of the url parameter."
+msgstr ""
+
+#: of urllib.parse.urlparse:9 urllib.parse.urlsplit:9
+msgid ""
+"The username, password, hostname, and port sub-components of netloc can "
+"also be accessed as attributes of the returned object."
+msgstr ""
+
+#: of urllib.parse.urlparse:12 urllib.parse.urlsplit:12
+msgid ""
+"The scheme argument provides the default value of the scheme component "
+"when no scheme is found in url."
+msgstr ""
+
+#: of urllib.parse.urlparse:15 urllib.parse.urlsplit:15
+msgid ""
+"If allow_fragments is False, no attempt is made to separate the fragment "
+"component from the previous component, which can be either path or query."
+msgstr ""
+
+#: of urllib.parse.urlparse:19 urllib.parse.urlsplit:19
+#, python-format
+msgid "Note that % escapes are not expanded."
+msgstr ""
+
+#: of urllib.parse.urlsplit:2
+msgid ""
+"Parse a URL into 5 components: "
+"<scheme>://<netloc>/<path>?<query>#<fragment>"
+msgstr ""
+
+#: of urllib.parse.urlsplit:5
+msgid ""
+"The result is a named 5-tuple with fields corresponding to the above. It "
+"is either a SplitResult or SplitResultBytes object, depending on the type"
+" of the url parameter."
+msgstr ""
+
+#: of urllib.parse.urlunparse:2
+msgid ""
+"Put a parsed URL back together again.  This may result in a slightly "
+"different, but equivalent URL, if the URL that was parsed originally had "
+"redundant delimiters, e.g. a ? with an empty query (the draft states that"
+" these are equivalent)."
+msgstr ""
+
+#: of urllib.parse.urlunsplit:2
+msgid ""
+"Combine the elements of a tuple as returned by urlsplit() into a complete"
+" URL as a string. The data argument can be any five-item iterable. This "
+"may result in a slightly different, but equivalent URL, if the URL that "
+"was parsed originally had unnecessary delimiters (for example, a ? with "
+"an empty query; the RFC states that these are equivalent)."
+msgstr ""
+

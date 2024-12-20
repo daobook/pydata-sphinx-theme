@@ -1,0 +1,597 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/layout.rst:3
+msgid "Theme Structure and Layout"
+msgstr ""
+
+#: ../../user_guide/layout.rst:5
+msgid ""
+"This section describes some basic ways to control the layout and "
+"structure of your documentation. This theme inherits its structure and "
+"section terminology from the `Sphinx Basic NG theme <https://sphinx-"
+"basic-ng.readthedocs.io/en/latest/>`__."
+msgstr ""
+
+#: ../../user_guide/layout.rst:9
+msgid "Overview of theme layout"
+msgstr ""
+
+#: ../../user_guide/layout.rst:11
+msgid ""
+"Below is a brief overview of the major layout of this theme. Take a look "
+"at the diagram to understand what the major sections are called. Where "
+"you can insert component templates in ``html_theme_options``, we include "
+"the variable name ``in inline code``. Click on section titles to learn "
+"more about them and some basic layout configurations. For  complete "
+"reference of the existing option please see :ref:`the last section of "
+"this page <references>`."
+msgstr ""
+
+#: ../../user_guide/layout.rst:47
+msgid "layout-header"
+msgstr ""
+
+#: ../../user_guide/layout.rst:55
+msgid "Logo"
+msgstr ""
+
+#: ../../user_guide/layout.rst:57
+msgid "``navbar_start``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:63
+msgid "Section links"
+msgstr ""
+
+#: ../../user_guide/layout.rst:65
+msgid "``navbar_center``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:71
+msgid "Persistent components"
+msgstr ""
+
+#: ../../user_guide/layout.rst:73
+msgid "``navbar_persistent``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:79
+msgid "Components"
+msgstr ""
+
+#: ../../user_guide/layout.rst:81
+msgid "``navbar_end``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:89
+msgid "Primary Sidebar"
+msgstr ""
+
+#: ../../user_guide/layout.rst:95
+msgid "Links between pages in the active section."
+msgstr ""
+
+#: ../../user_guide/layout.rst:97
+msgid "``sidebars``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:99
+msgid "``primary_sidebar_end``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:114 ../../user_guide/layout.rst:314
+msgid "Article Header"
+msgstr ""
+
+#: ../../user_guide/layout.rst:120
+msgid "``article_header_start`` ``article_header_end``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:123
+msgid "**Article Content**"
+msgstr ""
+
+#: ../../user_guide/layout.rst:125 ../../user_guide/layout.rst:450
+msgid "Article Footer"
+msgstr ""
+
+#: ../../user_guide/layout.rst:131
+msgid "``article_footer_items`` ``prev_next_area``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:140
+msgid "Secondary Sidebar"
+msgstr ""
+
+#: ../../user_guide/layout.rst:146
+msgid "Within-page header links"
+msgstr ""
+
+#: ../../user_guide/layout.rst:148
+msgid "``secondary_sidebar_items``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:160
+msgid "Footer content"
+msgstr ""
+
+#: ../../user_guide/layout.rst:166
+msgid "``content_footer_items``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:174 ../../user_guide/layout.rst:496
+msgid "Footer"
+msgstr ""
+
+#: ../../user_guide/layout.rst:180
+msgid "``footer_start`` ``footer_center`` ``footer_end``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:185
+msgid "Horizontal spacing"
+msgstr ""
+
+#: ../../user_guide/layout.rst:187
+msgid ""
+"By default, the theme's three columns have fixed widths. The ``primary "
+"sidebar`` will snap to the left, the ``secondary sidebar`` will snap to "
+"the right, and the ``article content`` will be centered in between."
+msgstr ""
+
+#: ../../user_guide/layout.rst:190
+msgid ""
+"If one of the sidebars is not present, then the ``article content`` will "
+"be centered between the other sidebar and the side of the page."
+msgstr ""
+
+#: ../../user_guide/layout.rst:191
+msgid ""
+"If neither sidebar is present, the ``article content`` will be in the "
+"middle of the page."
+msgstr ""
+
+#: ../../user_guide/layout.rst:193
+msgid ""
+"If you'd like the ``article content`` to take up more width than its "
+"default, use the ``max-width`` CSS property with the following selectors:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:201
+msgid ""
+"The above rule will set the article content max width to the same width "
+"as the top navigation bar. To truly use *all* of the available page "
+"width, you also need to set the following CSS rule:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:210
+msgid "This will affect both the article content and the top navigation bar."
+msgstr ""
+
+#: ../../user_guide/layout.rst:214
+msgid ""
+"If you use both of the custom CSS rules above, *be sure to keep them as "
+"separate rules* in your CSS file. If you combine them, the result will be"
+" a CSS selector that is *less specific* than the two default rules in the"
+" theme, and your custom CSS will fail to override the theme defaults."
+msgstr ""
+
+#: ../../user_guide/layout.rst:222
+msgid "Templates and components"
+msgstr ""
+
+#: ../../user_guide/layout.rst:224
+msgid ""
+"There are a few major theme sections that you can customize to add/remove"
+" built-in components or add your own components. Each section is "
+"configured with a list of *HTML templates* — these are snippets of HTML "
+"that are inserted into the section by Sphinx."
+msgstr ""
+
+#: ../../user_guide/layout.rst:229
+msgid ""
+"You can choose which templates show up in each section, as well as the "
+"order in which they appear. This page describes the major areas that you "
+"can customize."
+msgstr ""
+
+#: ../../user_guide/layout.rst:234
+msgid ""
+"When configuring templates in each section, you may omit the ``.html`` "
+"suffix after each template if you wish."
+msgstr ""
+
+#: ../../user_guide/layout.rst:241
+msgid "Header / Navigation Bar"
+msgstr ""
+
+#: ../../user_guide/layout.rst:243
+msgid "Located in ``sections/header.html``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:245
+msgid ""
+"The header is at the top of the page above all other content and contains"
+" site-level information."
+msgstr ""
+
+#: ../../user_guide/layout.rst:248
+msgid "Header sections"
+msgstr ""
+
+#: ../../user_guide/layout.rst:250
+msgid ""
+"The header is broken up into three sections. Each section is configured "
+"in ``conf.py`` with the following configuration:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:253
+msgid "Left section: ``html_theme_options['navbar_start']``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:254
+msgid "Middle menu: ``html_theme_options['navbar_center']``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:255
+msgid "Right section: ``html_theme_options['navbar_end']``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:256
+msgid "Persistent right section: ``html_theme_options['navbar_persistent']``"
+msgstr ""
+
+#: ../../user_guide/layout.rst:258
+msgid "By default, the following configuration is used:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:273
+msgid ""
+"The *Persistent right section* is placed next to the ``navbar_end``, but "
+"its elements will remain visible in the header even on small screens when"
+" all other elements are collapsed. It has been design for the ``search-"
+"button`` only and we cannot guarantee its compatibility with other "
+"components."
+msgstr ""
+
+#: ../../user_guide/layout.rst:276
+msgid "Configure the navbar center alignment"
+msgstr ""
+
+#: ../../user_guide/layout.rst:278
+msgid ""
+"By default, the navigation bar center area will align with the content on"
+" your page. This equals the following default configuration:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:289
+msgid ""
+"If instead, you'd like these items to snap to the left (closer to the "
+"logo), use this configuration:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:300
+msgid ""
+"If you'd like these items to snap to the right of the page, use this "
+"configuration:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:316
+msgid "Located in ``sections/header-article.html``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:318
+msgid ""
+"The article header is a narrow bar just above the article's content. "
+"There are two sub-sections that can have component templates added to "
+"them:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:321
+msgid ""
+"``article_header_start`` is aligned to the beginning (left) of the "
+"article header. By default, this section has the ``breadcrumbs.html`` "
+"component which displays links to parent pages of the current page."
+msgstr ""
+
+#: ../../user_guide/layout.rst:323
+msgid ""
+"``article_header_end`` is aligned to the end (right) of the article "
+"header. By default, this section is empty."
+msgstr ""
+
+#: ../../user_guide/layout.rst:329
+msgid "Primary sidebar (left)"
+msgstr ""
+
+#: ../../user_guide/layout.rst:331
+msgid "Located in ``sections/sidebar-primary.html``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:333
+msgid ""
+"The primary sidebar is just to the left of a page's main content. It is "
+"primarily used for between-section navigation. By default, it will show "
+"links to any siblings/children of the current active top-level section "
+"(corresponding to links in your header navigation bar)."
+msgstr ""
+
+#: ../../user_guide/layout.rst:337
+msgid ""
+"Configuring it is a bit different from configuring the other sections "
+"because configuring the sidebar is natively supported in Sphinx, via the "
+"``html_sidebars`` configuration variable."
+msgstr ""
+
+#: ../../user_guide/layout.rst:339
+msgid ""
+"For the primary sidebar only, you can configure templates so that they "
+"only show up on certain pages. You do so via a configuration like so in "
+"``conf.py``:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:348
+msgid ""
+"Any pages that match ``<page_pattern>`` will have their respective "
+"templates inserted. You can also ``*`` to do ``glob``-style matching, and"
+" may use ``**`` to match all pages."
+msgstr ""
+
+#: ../../user_guide/layout.rst:352
+msgid "By default, it has the following configuration:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:360
+msgid "``sidebar-nav-bs.html`` - a bootstrap-friendly navigation section."
+msgstr ""
+
+#: ../../user_guide/layout.rst:362
+msgid ""
+"When there are no pages to show, it will disappear and potentially add "
+"extra space for your page's content."
+msgstr ""
+
+#: ../../user_guide/layout.rst:364
+msgid ""
+"``sidebar-ethical-ads.html`` - a placement for ReadTheDocs's Ethical Ads "
+"(will only show up on ReadTheDocs)."
+msgstr ""
+
+#: ../../user_guide/layout.rst:367
+msgid "Primary sidebar end sections"
+msgstr ""
+
+#: ../../user_guide/layout.rst:369
+msgid ""
+"There is a special ``<div>`` within the primary sidebar that appears at "
+"the bottom of the page, regardless of the content that is above it."
+msgstr ""
+
+#: ../../user_guide/layout.rst:372
+msgid ""
+"To control the HTML templates that are within this div, use "
+"``html_theme_options['primary_sidebar_end']`` in ``conf.py``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:375 ../../user_guide/layout.rst:435
+msgid "By default, it has the following templates:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:386
+msgid "Remove the primary sidebar from pages"
+msgstr ""
+
+#: ../../user_guide/layout.rst:388
+msgid ""
+"If you'd like the primary sidebar to be removed from a page, you can use "
+"the following configuration in ``conf.py``:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:397
+msgid "This works for glob-style patterns as well. For example:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:405
+msgid ""
+"If you'd like to remove the primary sidebar from **all** pages of your "
+"documentation, use this pattern:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:417
+msgid "Footer Content"
+msgstr ""
+
+#: ../../user_guide/layout.rst:419 ../../user_guide/layout.rst:480
+msgid "Located in ``sections/footer-content.html``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:421
+msgid ""
+"The footer content is a narrow bar spanning the article's content and the"
+" secondary sidebar. It does not contain anything immediately viewable to "
+"the reader but is kept as a placeholder in case theme developers wish to "
+"re-use it in the future."
+msgstr ""
+
+#: ../../user_guide/layout.rst:428
+msgid "Secondary Sidebar (right)"
+msgstr ""
+
+#: ../../user_guide/layout.rst:430
+msgid "Located in ``sections/sidebar-secondary.html``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:432
+msgid ""
+"The in-page sidebar is just to the right of a page's article content and "
+"is configured in ``conf.py`` with "
+"``html_theme_options['secondary_sidebar_items']``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:445
+msgid ""
+"To learn how to further customize or remove the secondary sidebar, please"
+" check :doc:`page-toc`."
+msgstr ""
+
+#: ../../user_guide/layout.rst:452
+msgid "Located in ``sections/footer-article.html``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:454
+msgid ""
+"The article footer exists just below your page's article. By default, It "
+"does not contain anything immediately viewable to the reader, but is kept"
+" as a placeholder for custom or built-in templates."
+msgstr ""
+
+#: ../../user_guide/layout.rst:465
+msgid "Hide the previous and next buttons"
+msgstr ""
+
+#: ../../user_guide/layout.rst:467
+msgid ""
+"By default, each page of your site will have \"previous\" and \"next\" "
+"buttons at the bottom displayed in the ``prev_next_area``. You can hide "
+"these buttons with the following configuration:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:478
+msgid "Content Footer"
+msgstr ""
+
+#: ../../user_guide/layout.rst:482
+msgid ""
+"The content footer exists below your page's article and secondary "
+"sidebar. By default it is empty, but you can add templates to it with the"
+" following configuration:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:498
+msgid "Located in ``sections/footer.html``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:500
+msgid ""
+"The footer is just below a page's main content, and is configured in "
+"``conf.py`` with ``html_theme_options['footer_start']``, "
+"``html_theme_options['footer_center']`` and "
+"``html_theme_options['footer_end']``."
+msgstr ""
+
+#: ../../user_guide/layout.rst:503
+msgid ""
+"By default, ``footer_center`` is empty, and ``footer_start`` and "
+"``footer_end`` have the following templates:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:514
+msgid ""
+"Within each subsection, components will stack **vertically**. If you'd "
+"like them to stack **horizontally** use a custom CSS rule like the "
+"following:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:524
+msgid "Built-in components to insert into sections"
+msgstr ""
+
+#: ../../user_guide/layout.rst:526
+msgid ""
+"Below is a list of built-in templates that you can insert into any "
+"section. Note that some of them may have CSS rules that assume a specific"
+" section (and will be named accordingly)."
+msgstr ""
+
+#: ../../user_guide/layout.rst:532
+msgid ""
+"When adding/changing/overwritting a component, the \".html\" suffix is "
+"optional. That's why all of them are displayed without it in the "
+"following list."
+msgstr ""
+
+#: ../../user_guide/layout.rst:539
+msgid "Add your own HTML templates to theme sections"
+msgstr ""
+
+#: ../../user_guide/layout.rst:541
+msgid ""
+"If you'd like to add your own custom template to any of these sections, "
+"you could do so with the following steps:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:544
+msgid ""
+"Create an HTML file in a folder called ``_templates``. For example, if "
+"you wanted to display the version of your documentation using a Jinja "
+"template, you could create a file: ``_templates/version.html`` and put "
+"the following in it:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:554
+msgid ""
+"Now add the file to your menu items for one of the sections above. For "
+"example:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:565
+msgid "Build date"
+msgstr ""
+
+#: ../../user_guide/layout.rst:567
+msgid ""
+"By default this theme does not display the build date even when Sphinx's "
+"`html_last_updated_fmt <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-"
+"html_last_updated_fmt>`__ variable is set. If you want the build date "
+"displayed, the theme includes a :code:`last-updated` template that you "
+"can add to one of the page regions in your ``conf.py``. For example:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:569
+msgid "conf.py"
+msgstr ""
+
+#: ../../user_guide/layout.rst:577
+msgid ""
+"If you do specify ``html_last_updated_fmt`` but don't include the :code"
+":`last-updated` template, the theme will still write the build date into "
+"a ``meta`` tag in the HTML header, which can be inspected by viewing the "
+"page source or extracted with an HTML parser. The tag will look like:"
+msgstr ""
+
+#: ../../user_guide/layout.rst:583
+msgid ""
+"The tag's ``content`` attribute will follow the format specified in the "
+"``html_last_updated_fmt`` configuration variable."
+msgstr ""
+
+#: ../../user_guide/layout.rst:589
+msgid "References"
+msgstr ""
+
+#: ../../user_guide/layout.rst:591
+msgid ""
+"Please find here the full list of keys you can use in the "
+"``html_theme_options`` in ``conf.py``:"
+msgstr ""
+

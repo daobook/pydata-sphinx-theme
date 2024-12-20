@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/pre-commit.md:1
+msgid "Using `pre-commit`"
+msgstr ""
+
+#: ../../community/topics/pre-commit.md:3
+msgid "Here are a few tips for using `pre-commit`:"
+msgstr ""
+
+#: ../../community/topics/pre-commit.md:5
+msgid "Skip the pre-commit checks"
+msgstr ""
+
+#: ../../community/topics/pre-commit.md:7
+msgid "Run the following command:"
+msgstr ""
+
+#: ../../community/topics/pre-commit.md:13
+msgid "Run pre-commit on all files"
+msgstr ""
+
+#: ../../community/topics/pre-commit.md:15
+msgid ""
+"By default, `pre-commit` will run its checks on files that have been "
+"modified in a commit. To instead run it on all files, use this command:"
+msgstr ""
+

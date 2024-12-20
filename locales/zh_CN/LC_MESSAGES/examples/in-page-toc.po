@@ -1,0 +1,81 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/in-page-toc.rst:4
+msgid "Test of in-page TOC with no right sidebar"
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:6
+msgid "This page tests that the local contents directive looks okay."
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:10
+msgid ""
+"We **do not recommend** using this directive on pages that use this theme"
+" because PyData Theme provides an in-page table of contents in the right "
+"sidebar by default."
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:14
+msgid ""
+"If you do choose to use an inline, in-page table of contents, we "
+"recommend that you turn off the right sidebar as follows."
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:19
+msgid "Page contents"
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:22
+msgid "Add a local table of contents (in-page)"
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:24
+msgid ""
+"Add the local table of contents directive near the top of your ``.rst`` "
+"page:"
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:31
+msgid ""
+"This directive will generate a table of contents for the section where "
+"this was added, as shown on this page."
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:36
+msgid "Turn off the right sidebar for a single page"
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:38
+msgid "On the very top line of your ``.rst`` file, insert the following line:"
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:44
+msgid ""
+"This will render the page without the right sidebar, also known as the "
+"secondary sidebar, which contains the table of contents for that page."
+msgstr ""
+
+#: ../../examples/in-page-toc.rst:47
+msgid ""
+"Be aware that if you remove the sidebar you may also remove the \"Edit on"
+" ...\" and \"Show source\" links for that page, since by default those "
+"are configured for the right sidebar."
+msgstr ""
+

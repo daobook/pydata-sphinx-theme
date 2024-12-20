@@ -1,0 +1,88 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/attribution.md:1
+msgid "Ignore formatting commits with `git blame`"
+msgstr ""
+
+#: ../../community/topics/attribution.md:3
+msgid ""
+"Please follow these steps to avoid obscuring file history when making "
+"commits that are strictly formatting/style changes (e.g., after running a"
+" new version of black or running pyupgrade after dropping an old Python "
+"version)."
+msgstr ""
+
+#: ../../community/topics/attribution.md:7
+msgid "Create a new branch."
+msgstr ""
+
+#: ../../community/topics/attribution.md:8
+msgid ""
+"Make any linting and formatting rules needed; either in the `pre-"
+"commit.config.yaml` or in the `pyproject.toml` file."
+msgstr ""
+
+#: ../../community/topics/attribution.md:10
+msgid ""
+"Commit your changes with the `--no-verify` flag to skip the pre-commit "
+"hooks."
+msgstr ""
+
+#: ../../community/topics/attribution.md:11
+msgid ""
+"Run the pre-commit hooks manually with `tox run -e lint` or `pre-commit "
+"run --all-files`."
+msgstr ""
+
+#: ../../community/topics/attribution.md:12
+msgid "Commit the linting and formatting changes."
+msgstr ""
+
+#: ../../community/topics/attribution.md:13
+msgid "Open a PR with these changes."
+msgstr ""
+
+#: ../../community/topics/attribution.md:16
+msgid ""
+"This PR **must** be rebase-merged -- instead of the default squash-merge "
+"we currently follow -- so a repository admin needs to enable this setting"
+" in the repository temporarily."
+msgstr ""
+
+#: ../../community/topics/attribution.md:22
+msgid ""
+"Open a new PR adding the commit hashes of the formatting commits to the "
+"`.git-blame-ignore-revs` file."
+msgstr ""
+
+#: ../../community/topics/attribution.md:24
+msgid "For more details, see:"
+msgstr ""
+
+#: ../../community/topics/attribution.md:26
+msgid ""
+"<https://git-scm.com/docs/git-config#Documentation/git-config.txt-"
+"blameignoreRevsFile>"
+msgstr ""
+
+#: ../../community/topics/attribution.md:27
+msgid "<https://github.com/pydata/pydata-sphinx-theme/pull/713>"
+msgstr ""
+

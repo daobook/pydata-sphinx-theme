@@ -1,0 +1,262 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/kitchen-sink/blocks.rst:8
+msgid "Blocks"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:11
+msgid "Block Quotes"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:13
+msgid "Block quotes consist of indented body elements:"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:15
+#: ../../examples/kitchen-sink/blocks.rst:30
+#: ../../examples/kitchen-sink/blocks.rst:45
+#: ../../examples/kitchen-sink/blocks.rst:60
+msgid ""
+"My theory by A. Elk.  Brackets Miss, brackets.  This theory goes as "
+"follows and begins now.  All brontosauruses are thin at one end, much "
+"much thicker in the middle and then thin again at the far end.  That is "
+"my theory, it is mine, and belongs to me and I own it, and what it is "
+"too."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:21
+#: ../../examples/kitchen-sink/blocks.rst:36
+#: ../../examples/kitchen-sink/blocks.rst:51
+#: ../../examples/kitchen-sink/blocks.rst:66
+msgid "Anne Elk (Miss)"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:24
+msgid "Epigraph"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:26
+msgid "https://docutils.sourceforge.io/docs/ref/rst/directives.html#epigraph"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:39
+msgid "Pull quotes"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:41
+msgid "https://docutils.sourceforge.io/docs/ref/rst/directives.html#pull-quote"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:54
+msgid "Highlights"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:56
+msgid "https://docutils.sourceforge.io/docs/ref/rst/directives.html#highlights"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:69
+msgid "Line Blocks"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:71
+msgid ""
+"https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#line-"
+"blocks"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:73
+msgid "This is a normal text paragraph."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:75
+msgid "This is a line block.  It ends with a blank line."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:76
+msgid "Each new line begins with a vertical bar (\"|\")."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:77
+msgid "Line breaks and initial indents are preserved."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:79
+msgid ""
+"Continuation lines are wrapped portions of long lines; they begin with a "
+"space in place of the vertical bar."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:81
+msgid ""
+"The left edge of a continuation line need not be aligned with the left "
+"edge of the text above it."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:83
+msgid "This is a second line block."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:85
+msgid "Blank lines are permitted internally, but they must begin with a \"|\"."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:87
+#: ../../examples/kitchen-sink/blocks.rst:130
+msgid "This is a normal text paragraph again."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:90
+msgid "Monospace Blocks"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:92
+msgid ""
+"Sphinx supports many kinds of monospace blocks. This section is meant to "
+"showcase *all* of them that as known to the author of this page, at the "
+"time of writing."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:97
+msgid "Production List"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:99
+msgid ""
+"https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/directives.html#directive-"
+"productionlist"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:101
+msgid ""
+"This directive is used to enclose a group of productions. Each production"
+" is given on a single line and consists of a name, separated by a colon "
+"from the following definition."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:103
+msgid ""
+"This just shows up as a vanilla ``<pre>``, which is... both nice and a "
+"bit annoying."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:117
+msgid "Literal Blocks"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:119
+msgid ""
+"https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html"
+"#literal-blocks"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:121
+msgid ""
+"contains a block of text where line breaks and whitespace are significant"
+" and must be preserved"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:123
+msgid "This is a normal text paragraph. The next paragraph is a code sample::"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:132
+msgid "They can be quoted without indentation::"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:138
+msgid "Literal includes can also have captions."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:145
+msgid "Doctest Blocks"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:147
+msgid ""
+"https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html"
+"#doctest-blocks"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:149
+msgid ""
+"Doctest blocks are interactive Python sessions cut-and-pasted into "
+"docstrings. They are meant to illustrate usage by example, and provide an"
+" elegant and powerful testing environment via the doctest module in the "
+"Python standard library."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:153
+msgid "This is fine."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:163
+msgid "Parsed Literals"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:165
+msgid ""
+"https://docutils.sourceforge.io/docs/ref/rst/directives.html#parsed-"
+"literal-block"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:167
+msgid ""
+"It is equivalent to a line block with different rendering: typically in a"
+" typewriter/monospaced typeface, like an ordinary literal block. Parsed "
+"literal blocks are useful for adding hyperlinks to code examples."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:176
+msgid "Code Block"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:178
+msgid "https://docutils.sourceforge.io/docs/ref/rst/directives.html#code"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:180
+msgid "The \"code\" directive constructs a literal block [containing code]."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:182
+msgid "This has an alias of ``code-block``."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:206
+msgid "With caption"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:208
+msgid "Code Blocks can have captions, which also adds a link to it."
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:226
+msgid "With line numbers"
+msgstr ""
+
+#: ../../examples/kitchen-sink/blocks.rst:242
+msgid "Without highlighting"
+msgstr ""
+

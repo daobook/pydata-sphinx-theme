@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/extending.rst:3
+msgid "Extending the theme"
+msgstr ""
+
+#: ../../user_guide/extending.rst:5
+msgid ""
+"There are many extensions available for Sphinx that can enhance your site"
+" or provide powerful customization abilities. Here we describe a few "
+"customizations that are popular with ``pydata-sphinx-theme`` users."
+msgstr ""
+
+#: ../../user_guide/extending.rst:8
+msgid "Collapsible admonitions"
+msgstr ""
+
+#: ../../user_guide/extending.rst:10
+msgid ""
+"The `sphinx-togglebutton <https://sphinx-"
+"togglebutton.readthedocs.io/en/latest/>`__ extension provides optional "
+"show/hide behavior for admonitions. Follow their installation "
+"instructions, then add it to the ``extentions`` list in your ``conf.py``:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:19
+msgid ""
+"Then add the ``dropdown`` class to any admonition directive (shown here "
+"on a ``note`` admonition):"
+msgstr ""
+
+#: ../../user_guide/extending.rst:25 ../../user_guide/extending.rst:63
+#: ../../user_guide/extending.rst:98 ../../user_guide/extending.rst:134
+#: ../../user_guide/extending.rst:178
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr ""
+
+#: ../../user_guide/extending.rst
+msgid "rst"
+msgstr ""
+
+#: ../../user_guide/extending.rst
+msgid "markdown"
+msgstr ""
+
+#: ../../user_guide/extending.rst:50
+msgid "Custom admonition styles"
+msgstr ""
+
+#: ../../user_guide/extending.rst:52
+msgid ""
+"A `limited set "
+"<https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>`__"
+" of admonitions are built-in to docutils (the ``rST`` → ``HTML`` engine "
+"that underlies Sphinx). However, it is possible to create custom "
+"admonitions with their own default colors, icons, and titles."
+msgstr ""
+
+#: ../../user_guide/extending.rst:56
+msgid "Customizing the title"
+msgstr ""
+
+#: ../../user_guide/extending.rst:58
+msgid ""
+"Although most admonitions have a default title like ``note`` or "
+"``warning``, a generic ``admonition`` directive is built-in to "
+"docutils/Sphinx. In this theme, its color defaults to the same color as "
+"``note`` admonitions, and it has a bell icon:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:61
+msgid "Custom title!"
+msgstr ""
+
+#: ../../user_guide/extending.rst:66
+msgid ""
+"The title is specified on the same line as the ``.. admonition::`` "
+"directive:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:88
+msgid "Styling with semantic color names"
+msgstr ""
+
+#: ../../user_guide/extending.rst:90
+msgid ""
+"You can re-style any admonition to match any of the built-in admonition "
+"types using any of the :ref:`theme's semantic color names <color-"
+"variables>` as a class (this is most useful for custom-titled "
+"admonitions):"
+msgstr ""
+
+#: ../../user_guide/extending.rst:95
+msgid "Custom title with \"warning\" style"
+msgstr ""
+
+#: ../../user_guide/extending.rst:101
+msgid ""
+"Note that it updates both the color and the icon. See :doc:`./styling` "
+"for a list of all semantic color names."
+msgstr ""
+
+#: ../../user_guide/extending.rst:123
+msgid ""
+"This theme defines classes for `the standard docutils admonition types "
+"<https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>`__"
+" (``attention``, ``caution``, etc) and additionally supports ``seealso`` "
+"and ``todo`` admonitions (see :doc:`../examples/kitchen-sink/admonitions`"
+" for a demo of all built-in admonition styles)."
+msgstr ""
+
+#: ../../user_guide/extending.rst:126
+msgid "Customizing the color"
+msgstr ""
+
+#: ../../user_guide/extending.rst:128
+msgid ""
+"Besides the pre-defined semantic color classes (see previous section) you"
+" can also add a bespoke color to any admonition by defining your own CSS "
+"class. Example:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:131
+msgid "Admonition with custom \"olive\" color"
+msgstr ""
+
+#: ../../user_guide/extending.rst:137
+msgid ""
+"To do this, you will need to add a class to your `custom.css <https://www"
+".sphinx-doc.org/en/master/usage/configuration.html#confval-"
+"html_css_files>`__ file, as in the example below. Be sure to use the same"
+" color for ``border-color`` and ``color`` and a different shade for "
+"``background-color``:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:160
+msgid "And add the following to your ``custom.css`` file:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:170
+msgid "Using a custom icon"
+msgstr ""
+
+#: ../../user_guide/extending.rst:172
+msgid ""
+"Customizing the icon uses a similar process to customizing the color: "
+"create a new CSS class in your `custom.css <https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_css_files>`__ "
+"file. The theme supports `fontawesome v6 icons "
+"<https://fontawesome.com/v6/search?o=r&m=free&f=brands>`__ (\"free\" and "
+"\"brands\" sets). To use an icon, copy its unicode value into your custom"
+" class as shown in the CSS tab below:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:175
+msgid "Check out my custom icon"
+msgstr ""
+
+#: ../../user_guide/extending.rst:201
+msgid "And add the following css to your ``custom.css`` file:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:211
+msgid "Combining all three customizations"
+msgstr ""
+
+#: ../../user_guide/extending.rst:213
+msgid ""
+"Here we demonstrate an admonition with a custom icon, color, and title "
+"(and also make it collapsible). Note that the multiple admonition class "
+"names are space-separated:"
+msgstr ""
+
+#: ../../user_guide/extending.rst:216
+msgid "YouTube"
+msgstr ""
+
+#: ../../user_guide/extending.rst:244
+msgid "And add the following css to your custom.css file:"
+msgstr ""
+

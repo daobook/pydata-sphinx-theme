@@ -1,0 +1,76 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/galleries.md:1
+msgid "Galleries and the `gallery-grid` directive"
+msgstr ""
+
+#: ../../community/topics/galleries.md:3
+msgid ""
+"There are a few places where we use `sphinx-design` to generate "
+"\"galleries\" of grids with structured text and images. We've created a "
+"little Sphinx directive to make it easier to repeat this process in our "
+"documentation and to avoid repeating ourselves too much. It is located in"
+" the `docs/scripts/` folder in a dedicated module, and re-used throughout"
+" our documentation."
+msgstr ""
+
+#: ../../community/topics/galleries.md:7
+msgid "The example gallery"
+msgstr ""
+
+#: ../../community/topics/galleries.md:9
+msgid ""
+"This theme's documentation contains a gallery of sites that use this "
+"theme for their documentation. The images are automatically generated "
+"during ReadTheDocs builds, but are **not** automatically generated on "
+"local or test builds (to save time)."
+msgstr ""
+
+#: ../../community/topics/galleries.md:12
+msgid ""
+"If you build the documentation locally without first generating these "
+"images you may get Sphinx warnings or errors, but this should be fine as "
+"long as the images build on ReadTheDocs tests."
+msgstr ""
+
+#: ../../community/topics/galleries.md:14
+msgid "Download gallery images locally"
+msgstr ""
+
+#: ../../community/topics/galleries.md:16
+msgid ""
+"If you'd like to build these images locally to preview in the theme, "
+"follow these steps:"
+msgstr ""
+
+#: ../../community/topics/galleries.md:18
+msgid ""
+"Install [playwright](https://playwright.dev/python/) and the Chromium "
+"browser add-on:"
+msgstr ""
+
+#: ../../community/topics/galleries.md:25
+msgid "Execute the gallery generation script from the repository root:"
+msgstr ""
+
+#: ../../community/topics/galleries.md:32
+msgid "The newly generated images will be pushed to the distant repository."
+msgstr ""
+

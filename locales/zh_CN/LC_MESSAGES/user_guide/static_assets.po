@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_guide/static_assets.md:1
+msgid "Add custom CSS and JS assets"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:3
+msgid ""
+"If you'd like to modify this theme or sections on the page, you'll need "
+"to add custom CSS or JavaScript to your theme. Since this is a common "
+"operation we cover a few ways to do this here."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:6
+msgid "Sample site structure"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:7
+msgid "In all examples below, assume we have a site structure like this:"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:18
+msgid "First: define your `html_static_path`"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:20
+msgid ""
+"Any folders that are listed in `html_static_path` will be treated as "
+"containing static assets for your build. All files within these folders "
+"will be copied to your build's `_static` folder at build time. For "
+"example, with an HTML builder, files will be copied to "
+"`_build/html/_static`."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:24
+msgid ""
+"These files are _flattened_ when they are copied, so any folder "
+"hierarchies will be lost."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:26
+msgid ""
+"Listing folders with your static assets must be done before any of the "
+"methods described below. When you define asset names in the methods "
+"described below, they generally assume paths that are _relative to this "
+"`_static` output folder_."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:29
+msgid "Define a list of assets in `conf.py`"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:31
+msgid ""
+"The simplest way to add JS and CSS assets is to use "
+"[`html_css_files`](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_css_files) and "
+"[`html_js_files`](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_js_files) in your"
+" `conf.py` file. Each can be a list of paths, _relative to your "
+"`html_static_path`_. They will be added to the end of the `<head>` of "
+"your site."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:35 ../../user_guide/static_assets.md:91
+msgid "For example:"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:37 ../../user_guide/static_assets.md:63
+#: ../../user_guide/static_assets.md:93
+msgid "`conf.py`"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:47
+msgid "This will cause each to be linked in your `<head>`."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:49
+msgid "Add assets to your setup function"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:51
+msgid ""
+"Additionally, you may add assets manually, to do so, use the `app` object"
+" in [the Sphinx `setup()` function](https://www.sphinx-"
+"doc.org/en/master/extdev/appapi.html#extension-setup). The `app` object "
+"has two relevant methods here:"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:54
+msgid ""
+"[**`app.add_css_file`**](https://www.sphinx-"
+"doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_css_file)"
+" allows you to add CSS files directly."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:56
+msgid ""
+"[**`app.add_js_file`**](https://www.sphinx-"
+"doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_js_file)"
+" allows you to add JS files directly."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:58
+msgid ""
+"Both of them expect you to add files **relative to the "
+"`html_static_path`**."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:60
+msgid ""
+"In addition, `app.add_js_file` allows you to add _raw JavaScript_ in "
+"addition to linking files (see example below). For example:"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:82
+msgid "Use an event to add it to specific pages"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:84
+msgid ""
+"If you'd like to use logic to only add a script to certain pages or to "
+"trigger different behavior depending on the page, use [a Sphinx event "
+"hook](https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx-"
+"core-events). This involves defining a function that runs when a "
+"particular event is emitted in the Sphinx build, and using "
+"[`app.connect()`](https://www.sphinx-"
+"doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.connect) "
+"to connect it to your build."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:87
+msgid ""
+"The event you'll likely want to use is [`html-page-context`](https://www"
+".sphinx-doc.org/en/master/extdev/appapi.html#event-html-page-context). "
+"This is triggered just before the HTML for an _individual page_ is "
+"created. If you run `app.add_js_file` or `app.add_css_file`, it will "
+"_only be added for that page_."
+msgstr ""
+
+#: ../../user_guide/static_assets.md:109
+msgid "Add it directly to the page content"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:111
+msgid ""
+"Finally, you can add CSS or JS directly to a page's content. If you're "
+"using reStructuredText you can use the `.. raw::` directive; if you're "
+"using MyST Markdown you can simply include the HTML content in-line with "
+"your Markdown-formatted content."
+msgstr ""
+
+#: ../../user_guide/static_assets.md
+msgid "rST"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:116
+msgid "some_page_in_my_site.rst"
+msgstr ""
+
+#: ../../user_guide/static_assets.md
+msgid "Markdown"
+msgstr ""
+
+#: ../../user_guide/static_assets.md:139
+msgid "some_page_in_my_site.md"
+msgstr ""
+

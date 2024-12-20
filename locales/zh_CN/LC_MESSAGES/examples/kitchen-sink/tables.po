@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, PyData Community
+# This file is distributed under the same license as the PyData Theme
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyData Theme \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../examples/kitchen-sink/tables.rst:8
+msgid "Tables"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:11
+msgid "Grid Tables"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:13
+msgid "Here's a grid table followed by a simple table:"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:16
+msgid "Header row, column 1 (header rows optional)"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:16
+#: ../../examples/kitchen-sink/tables.rst:46
+#: ../../examples/kitchen-sink/tables.rst:83
+msgid "Header 2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:16
+#: ../../examples/kitchen-sink/tables.rst:46
+msgid "Header 3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:16
+msgid "Header 4"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:19
+msgid "body row 1, column 1"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:19
+#: ../../examples/kitchen-sink/tables.rst:48
+#: ../../examples/kitchen-sink/tables.rst:50
+#: ../../examples/kitchen-sink/tables.rst:52
+#: ../../examples/kitchen-sink/tables.rst:54
+msgid "column 2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:19
+#: ../../examples/kitchen-sink/tables.rst:48
+#: ../../examples/kitchen-sink/tables.rst:50
+#: ../../examples/kitchen-sink/tables.rst:52
+#: ../../examples/kitchen-sink/tables.rst:54
+msgid "column 3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:19
+msgid "column 4"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:21
+msgid "body row 2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:21
+msgid "Cells may span columns."
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:23
+msgid "body row 3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:23
+msgid "Cells may span rows."
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:23
+msgid "Table cells"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:24
+msgid "contain"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:25
+msgid "body elements."
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:25
+msgid "body row 4"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:27
+msgid "body row 5"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:27
+msgid "Cells may also be empty: ``-->``"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:32
+msgid "Inputs"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:32
+msgid "Output"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:34
+msgid "A"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:34
+msgid "B"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:34
+msgid "A or B"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:36
+#: ../../examples/kitchen-sink/tables.rst:37
+#: ../../examples/kitchen-sink/tables.rst:38
+msgid "False"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:37
+#: ../../examples/kitchen-sink/tables.rst:38
+#: ../../examples/kitchen-sink/tables.rst:39
+msgid "True"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:43
+msgid "Giant Tables"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:46
+#: ../../examples/kitchen-sink/tables.rst:82
+msgid "Header 1"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:48
+#: ../../examples/kitchen-sink/tables.rst:50
+#: ../../examples/kitchen-sink/tables.rst:52
+#: ../../examples/kitchen-sink/tables.rst:54
+msgid "body row 1"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:58
+msgid "Table containing code"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:61
+msgid "Version"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:61
+msgid "Installing"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:63
+msgid "Pradyun's pip fork and installer"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:67
+msgid "PyPI"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:74
+msgid "List Tables"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:76
+msgid "List tables can have captions like this one."
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:81
+msgid "List table"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:84
+msgid ""
+"Header 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+"Nam sit amet mauris arcu."
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:85
+msgid "Stub Row 1"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:86
+msgid "Row 1"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:87
+#: ../../examples/kitchen-sink/tables.rst:91
+#: ../../examples/kitchen-sink/tables.rst:95
+msgid "Column 2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:88
+#: ../../examples/kitchen-sink/tables.rst:92
+#: ../../examples/kitchen-sink/tables.rst:96
+msgid ""
+"Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+"Nam sit amet mauris arcu."
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:89
+msgid "Stub Row 2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:90
+msgid "Row 2"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:93
+msgid "Stub Row 3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:94
+msgid "Row 3"
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:98
+msgid "This is a list table with images in it."
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:102
+msgid "This is a short caption for a figure."
+msgstr ""
+
+#: ../../examples/kitchen-sink/tables.rst:106
+msgid ""
+"This is a long caption for a figure. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit. Donec porttitor dolor in odio posuere, vitae"
+" ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non."
+msgstr ""
+

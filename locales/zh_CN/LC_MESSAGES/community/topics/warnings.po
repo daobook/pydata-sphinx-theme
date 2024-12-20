@@ -1,0 +1,40 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/warnings.md:1
+msgid "Expected build warnings"
+msgstr ""
+
+#: ../../community/topics/warnings.md:3
+msgid ""
+"In our CI workflow, we use a script to check for any warnings raised by "
+"Sphinx to assert that the only warnings are _expected_ ones. The list of "
+"expected warnings can be found in :code:`tests/warning_list.txt`. To add "
+"a new entry, copy/paste the warning message (the message beginning with "
+":code:`WARNING:`) to the bottom of the file."
+msgstr ""
+
+#: ../../community/topics/warnings.md:5
+msgid "For example if you get:"
+msgstr ""
+
+#: ../../community/topics/warnings.md:11
+msgid "Add the following to the txt file:"
+msgstr ""
+

@@ -1,0 +1,111 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../api/pydata_sphinx_theme/index.rst:2
+msgid "pydata_sphinx_theme"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:9
+msgid "Bootstrap-based sphinx theme from the PyData community."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:31
+msgid "Submodules"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:46
+msgid "Attributes"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:52:<autosummary>:1
+msgid ":py:obj:`__version__ <pydata_sphinx_theme.__version__>`\\"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:54
+msgid "Functions"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`_fix_canonical_url <pydata_sphinx_theme._fix_canonical_url>`\\ "
+"\\(app\\, pagename\\, templatename\\, ...\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:70
+#: ../../api/pydata_sphinx_theme/index.rst:63:<autosummary>:1
+msgid "Fix the canonical URL when using the dirhtml builder."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:63:<autosummary>:1
+msgid ":py:obj:`setup <pydata_sphinx_theme.setup>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:99
+#: ../../api/pydata_sphinx_theme/index.rst:63:<autosummary>:1
+msgid "Setup the Sphinx application."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`update_and_remove_templates "
+"<pydata_sphinx_theme.update_and_remove_templates>`\\ \\(app\\, "
+"pagename\\, ...\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:122
+#: ../../api/pydata_sphinx_theme/index.rst:63:<autosummary>:1
+msgid "Update template names and assets for page build."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:63:<autosummary>:1
+msgid ":py:obj:`update_config <pydata_sphinx_theme.update_config>`\\ \\(app\\)"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:145
+#: ../../api/pydata_sphinx_theme/index.rst:63:<autosummary>:1
+msgid "Update config with new default values and handle deprecated keys."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:65
+msgid "Package Contents"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:72
+msgid ""
+"Sphinx builds a canonical URL if ``html_baseurl`` config is set. However,"
+" it builds a URL ending with \".html\" when using the dirhtml builder, "
+"which is incorrect. Detect this and generate the correct URL for each "
+"page."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst:76
+msgid ""
+"Workaround for https://github.com/sphinx-doc/sphinx/issues/9730; can be "
+"removed when that is fixed, released, and available in our minimum "
+"supported Sphinx version."
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst
+msgid "参数"
+msgstr ""
+
+#: ../../api/pydata_sphinx_theme/index.rst
+msgid "返回类型"
+msgstr ""
+

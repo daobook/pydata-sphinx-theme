@@ -1,0 +1,42 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 16:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../community/topics/kitchen-sink.md:1
+msgid "Update our kitchen sink"
+msgstr ""
+
+#: ../../community/topics/kitchen-sink.md:3
+msgid ""
+"The [kitchen sink reference](../../examples/kitchen-sink/index.rst) is "
+"for demonstrating as much syntax and style for Sphinx builds as possible."
+" It is copied directly from the [`sphinx-themes.org` documentation](https"
+"://sphinx-themes.org/) so that we use standardized reference docs "
+"compared with other communities. The source files for these pages are "
+"stored [in the `sphinx-themes.org` repository](https://github.com/sphinx-"
+"themes/sphinx-themes.org/raw/master/sample-docs/kitchen-sink/)."
+msgstr ""
+
+#: ../../community/topics/kitchen-sink.md:7
+msgid ""
+"To update the kitchen sink source files, there is a helper Python script "
+"that will loop through the known kitchen sink files and copy over the "
+"latest text. To use it, run the following from the root of the "
+"repository:"
+msgstr ""
+
