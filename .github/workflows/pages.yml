@@ -72,7 +72,7 @@ jobs:
         uses: actions/upload-pages-artifact@main
         with:
           # Upload entire repository
-          path: 'docs/build/html/'
+          path: 'docs/_build/html/'
       - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main

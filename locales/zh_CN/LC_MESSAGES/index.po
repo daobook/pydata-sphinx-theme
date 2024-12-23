@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../index.md:65
 msgid "Changelog"
-msgstr ""
+msgstr "变更日志"
 
 #: ../../index.md:71 ../../index.md:75
 msgid "API"
@@ -30,68 +30,72 @@ msgid ""
 "Top-level documentation for pydata-sphinx theme, with links to the rest\n"
 "of the site..\n"
 msgstr ""
+"pydata-sphinx 主题的顶级文档，包含指向网站其他部分的链接。"
 
 #: ../../index.md:10
 msgid "The PyData Sphinx Theme"
-msgstr ""
+msgstr "PyData Sphinx 主题"
 
 #: ../../index.md:12
 msgid ""
 "A clean, Bootstrap-based Sphinx theme by and for [the PyData "
 "community](https://pydata.org)."
 msgstr ""
+"由 [PyData 社区](https://pydata.org) 开发和维护的干净、基于 Bootstrap 的 Sphinx 主题。"
 
 #: ../../index.md:26
 msgid "{fab}`bootstrap;pst-color-primary` Built with Bootstrap"
-msgstr ""
+msgstr "{fab}`bootstrap;pst-color-primary` 使用 Bootstrap 构建"
 
 #: ../../index.md:28
 msgid "Use Bootstrap classes and functionality in your documentation."
-msgstr ""
+msgstr "使用 Bootstrap 的类和功能编写文档。"
 
 #: ../../index.md:37
 msgid "{fas}`bolt;pst-color-primary` Responsive Design"
-msgstr ""
+msgstr "{fas}`bolt;pst-color-primary` 响应式设计"
 
 #: ../../index.md:39
 msgid "Site sections will change behavior and size at different screen sizes."
-msgstr ""
+msgstr "网站的各个部分在不同屏幕尺寸下会改变行为和大小。"
 
 #: ../../index.md:48
 msgid "{fas}`circle-half-stroke;pst-color-primary` Light / Dark theme"
-msgstr ""
+msgstr "{fas}`circle-half-stroke;pst-color-primary` 明亮/暗黑主题"
 
 #: ../../index.md:50
 msgid "Users can toggle between light and dark themes interactively."
-msgstr ""
+msgstr "用户可以通过交互方式切换明亮和暗黑主题。"
 
 #: ../../index.md:59
 msgid "{fas}`palette;pst-color-primary` Customizable UI and themes"
-msgstr ""
+msgstr "{fas}`palette;pst-color-primary` 可定制的 UI 和主题"
 
 #: ../../index.md:61
 msgid ""
 "Customize colors and branding with CSS variables, and build custom UIs "
 "with [Sphinx Design components](user_guide/web-components)."
 msgstr ""
+"使用 CSS 变量自定义颜色和品牌，并使用 [Sphinx Design 组件](user_guide/web-components) 构建自定义 UI。"
 
 #: ../../index.md:70
 msgid "{fab}`python;pst-color-primary` Supports PyData and Jupyter"
-msgstr ""
+msgstr "{fab}`python;pst-color-primary` 支持 PyData 和 Jupyter"
 
 #: ../../index.md:72
 msgid ""
 "CSS and UI support for [Jupyter extensions](examples/execution) and "
 "[PyData execution outputs](examples/pydata.ipynb)."
 msgstr ""
+"支持 [Jupyter 扩展](examples/execution) 和 [PyData 执行输出](examples/pydata.ipynb) 的 CSS 和 UI。"
 
 #: ../../index.md:81
 msgid "{fas}`lightbulb;pst-color-primary` Example Gallery"
-msgstr ""
+msgstr "{fas}`lightbulb;pst-color-primary` 示例库"
 
 #: ../../index.md:83
 msgid "See [our gallery](examples/gallery.md) of projects that use this theme."
-msgstr ""
+msgstr "查看我们的 [示例库](examples/gallery.md)，了解这个主题的使用示例。"
 
 #: ../../index.md:32
 msgid ""
@@ -102,36 +106,42 @@ msgid ""
 "choice. You can also see the [Sphinx Themes Gallery](https://sphinx-"
 "themes.org) for more ideas."
 msgstr ""
+"如果你正在寻找一个将所有子页面放在侧边栏的 Sphinx 主题，[Sphinx Book "
+"Theme](https://sphinx-book-theme.readthedocs.io/) 有类似的外观和感觉，"
+"[Furo](https://pradyunsg.me/furo/quickstart/) 是另一个很好的选择。你还可以查看 [Sphinx "
+"Themes Gallery](https://sphinx-themes.org) 获取更多想法。"
 
 #: ../../index.md:35
 msgid "User Guide"
-msgstr ""
+msgstr "用户指南"
 
 #: ../../index.md:37
 msgid "Information about using, configuration, and customizing this theme."
-msgstr ""
+msgstr "关于使用、配置和自定义这个主题的信息。"
 
 #: ../../index.md:45
 msgid "Community and contribution guide"
-msgstr ""
+msgstr "社区和贡献指南"
 
 #: ../../index.md:47
 msgid ""
 "Information about the community behind this theme and how you can "
 "contribute."
 msgstr ""
+"关于这个主题背后的社区以及你如何贡献的信息。"
 
 #: ../../index.md:55
 msgid "Examples"
-msgstr ""
+msgstr "示例"
 
 #: ../../index.md:57
 msgid ""
 "Several example pages to demonstrate the functionality of this theme when"
 " used alongside other Sphinx extensions."
 msgstr ""
+"几个示例页面，演示了在与其他 Sphinx 扩展一起使用时，这个主题的功能。"
 
 #: ../../index.md:73
 msgid "The content of the exposed `pydata_sphinx_theme` API."
 msgstr ""
-
+"暴露的 `pydata_sphinx_theme` API 的内容。"
