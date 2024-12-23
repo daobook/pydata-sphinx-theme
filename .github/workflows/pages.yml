@@ -54,6 +54,16 @@ jobs:
             mathastext microtype physics preview ragged2e relsize rsfs setspace standalone \
             wasy wasysym
 
+    - name: "Install pandoc 📝"
+      uses: r-lib/actions/setup-pandoc@v2
+      with:
+        pandoc-version: "latest"
+      if: ${{ inputs.pandoc }} == true
+
+    - name: "Install Graphviz"
+      uses: ts-graphviz/setup-graphviz@v2
+      if: ${{ inputs.graphviz }} == true
+
       - name: 🔧 Build HTML
         run: |
           sudo apt-get install graphviz
