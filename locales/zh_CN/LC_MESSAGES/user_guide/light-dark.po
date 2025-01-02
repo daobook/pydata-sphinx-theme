@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../user_guide/light-dark.rst:122
 msgid "Images and content that work in both themes"
-msgstr ""
+msgstr "适用于两种主题的图片和内容"
 
 #: ../../user_guide/light-dark.rst:124
 msgid ""
