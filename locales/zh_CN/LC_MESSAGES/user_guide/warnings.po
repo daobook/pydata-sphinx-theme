@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/warnings.rst:3
 msgid "Theme changes, deprecations, and warnings"
-msgstr ""
+msgstr "主题更改、弃用和警告"
 
 #: ../../user_guide/warnings.rst:5
 msgid ""
@@ -34,6 +34,8 @@ msgid ""
 "default config values. If you prefer *not* to receive such warnings, "
 "there is a config value to suppress them:"
 msgstr ""
+"一般来说，有关主题更改的最佳信息来源是发布变更日志。我们尽量避免在主题代码中引发警告，这意味着有时主题会（可能显著）更改，而不会发出弃用警告或其他警报。"
+"尽管如此，我们偶尔会警告（即将发生的）主题默认配置值的更改。如果您 *不* 希望收到此类警告，可以使用配置值来抑制它们："
 
 #: ../../user_guide/warnings.rst:10
 msgid "conf.py"

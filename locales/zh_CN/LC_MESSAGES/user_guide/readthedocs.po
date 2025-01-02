@@ -22,17 +22,18 @@ msgstr ""
 
 #: ../../user_guide/readthedocs.md:1
 msgid "Read the Docs functionality"
-msgstr ""
+msgstr "Read the Docs 功能"
 
 #: ../../user_guide/readthedocs.md:3
 msgid ""
 "This theme comes with support for {{ rtd }}, a popular service for "
 "hosting documentation in the scientific Python community."
 msgstr ""
+"此主题支持 {{ rtd }}，这是在科学 Python 社区中流行的文档托管服务。"
 
 #: ../../user_guide/readthedocs.md:5
 msgid "Version switcher"
-msgstr ""
+msgstr "版本切换器"
 
 #: ../../user_guide/readthedocs.md:7
 msgid ""
@@ -40,12 +41,14 @@ msgid ""
 "of a [flyout menu](https://docs.readthedocs.io/en/stable/flyout-"
 "menu.html) that can be disabled."
 msgstr ""
+"Read the Docs 默认情况下为项目提供版本切换器，作为可以禁用的 [弹出菜单](https://docs.readthedocs.io/en/stable/flyout-menu.html) 的一部分。"
 
 #: ../../user_guide/readthedocs.md:11
 msgid ""
 "This means that you have one of three options if you are hosting a PyData"
 " Sphinx Theme-enabled site on Read the Docs:"
 msgstr ""
+"这意味着如果您在 Read the Docs 上托管启用 PyData Sphinx 主题的站点，您有以下三种选择："
 
 #: ../../user_guide/readthedocs.md:14
 msgid ""
@@ -53,6 +56,7 @@ msgid ""
 "[version switcher that this theme provides](version-dropdown.rst) if you "
 "previously enabled it."
 msgstr ""
+"仅使用 Read the Docs 版本切换器。如果您之前启用了[此主题提供的版本切换器](version-dropdown.rst)，则必须禁用它。"
 
 #: ../../user_guide/readthedocs.md:17
 msgid ""
@@ -61,10 +65,12 @@ msgid ""
 "dashboard](https://app.readthedocs.org/dashboard/). Then go to `Settings "
 "> Addons > Flyout menu` and uncheck the \"Flyout enabled\" box."
 msgstr ""
+"仅使用此主题的版本切换器。您必须通过访问项目的 [Read the Docs 仪表板](https://app.readthedocs.org/dashboard/) "
+"来禁用 Read the Docs 版本切换器。然后转到 `设置 > 附加组件 > 弹出菜单` 并取消选中“启用弹出菜单”框。"
 
 #: ../../user_guide/readthedocs.md:21
 msgid "Not recommended: use both version switchers."
-msgstr ""
+msgstr "不推荐：同时使用两个版本切换器。"
 
 #: ../../user_guide/readthedocs.md:23
 msgid ""
@@ -74,10 +80,12 @@ msgid ""
 "switcher is not styled to match the look and feel of this theme. And "
 "there are other differences."
 msgstr ""
+"请注意，这两个版本切换器在功能上并不等同。"
+"例如，Read the Docs 弹出菜单除了版本切换器外还提供翻译切换器。另一方面，Read the Docs 切换器的样式与此主题的外观和感觉不匹配。还有其他差异。"
 
 #: ../../user_guide/readthedocs.md:28
 msgid "Add ethical advertisements to your sidebar"
-msgstr ""
+msgstr "在侧边栏中添加 ethical 广告"
 
 #: ../../user_guide/readthedocs.md:30
 msgid ""
@@ -86,6 +94,7 @@ msgid ""
 "are non-tracking advertisements from ethical companies, and they help "
 "ReadTheDocs sustain themselves and their free service."
 msgstr ""
+"如果您在 ReadTheDocs 上托管您的文档，您应该考虑为他们的 **ethical 广告** 添加明确的位置。这些是来自 ethical 公司的非跟踪广告，它们帮助 ReadTheDocs 维持自身及其免费服务。"
 
 #: ../../user_guide/readthedocs.md:35
 msgid ""
@@ -93,4 +102,4 @@ msgid ""
 "they are there if you manually update your sidebar, ensure that the "
 "`sidebar-ethical-ads.html` template is added to your list. For example:"
 msgstr ""
-
+"Ethical 广告默认添加到您的侧边栏中。如果您手动更新侧边栏，请确保将 `sidebar-ethical-ads.html` 模板添加到您的列表中。例如："

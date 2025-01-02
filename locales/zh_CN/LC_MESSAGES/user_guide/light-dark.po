@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/light-dark.rst:5
 msgid "Light and dark themes"
-msgstr ""
+msgstr "浅色和深色主题"
 
 #: ../../user_guide/light-dark.rst:7
 msgid ""
@@ -30,24 +30,26 @@ msgid ""
 " built-in \"dark\" and \"light\" modes. These are controlled by a button "
 "in the navigation header, with the following options:"
 msgstr ""
+"您可以使用内置的“深色”和“浅色”模式更改此主题的主要背景/前景颜色。这些由导航标题中的按钮控制，具有以下选项："
 
 #: ../../user_guide/light-dark.rst:11
 msgid "A ``light`` theme with a bright background and dark text / UI elements"
-msgstr ""
+msgstr "具有明亮背景和深色文本/UI 元素的 ``light`` 主题"
 
 #: ../../user_guide/light-dark.rst:12
 msgid "A ``dark`` theme with a dark background and light text / UI elements"
-msgstr ""
+msgstr "具有深色背景和浅色文本/UI 元素的 ``dark`` 主题"
 
 #: ../../user_guide/light-dark.rst:13
 msgid ""
 "``auto``: the documentation theme will follow the system default that you"
 " have set"
 msgstr ""
+"``auto``：文档主题将遵循您设置的系统默认值"
 
 #: ../../user_guide/light-dark.rst:17
 msgid "Configure default theme mode"
-msgstr ""
+msgstr "配置默认主题模式"
 
 #: ../../user_guide/light-dark.rst:19
 msgid ""
@@ -55,6 +57,7 @@ msgid ""
 "``auto``. This will choose a theme based on the user's system settings, "
 "and default to ``light`` if no system setting is found."
 msgstr ""
+"默认情况下，访问您的文档的用户将使用主题模式 ``auto``。这将根据用户的系统设置选择主题，如果未找到系统设置，则默认为 ``light``。"
 
 #: ../../user_guide/light-dark.rst:23
 msgid ""
@@ -62,10 +65,11 @@ msgid ""
 "``default_mode`` configuration to one of ``auto``, ``dark``, ``light``. "
 "For example:"
 msgstr ""
+"如果您希望使用不同的默认主题模式，请将 ``default_mode`` 配置设置为 ``auto``、``dark``、``light`` 之一。例如："
 
 #: ../../user_guide/light-dark.rst:33
 msgid "For more information, see :ref:`manage-themes`."
-msgstr ""
+msgstr "有关更多信息，请参阅 :ref:`manage-themes`。"
 
 #: ../../user_guide/light-dark.rst:37
 msgid ""
@@ -74,10 +78,11 @@ msgid ""
 " remove the theme-switcher from the ``navbar_end`` section of the header "
 "navbar configuration:"
 msgstr ""
+"要完全移除主题管理，请将 ``default_mode`` 配置为您在文档中想要的值（``light`` 或 ``dark``），然后从标题导航栏配置的 ``navbar_end`` 部分移除主题切换器："
 
 #: ../../user_guide/light-dark.rst:48
 msgid "Customize the CSS of light and dark themes"
-msgstr ""
+msgstr "自定义浅色和深色主题的 CSS"
 
 #: ../../user_guide/light-dark.rst:52
 msgid ""
@@ -85,6 +90,7 @@ msgid ""
 "theming are likely to change in the future. No backward compatibility is "
 "guaranteed when customization is done."
 msgstr ""
+"主题化仍处于测试阶段，因此与颜色主题化相关的变量将来可能会发生变化。进行自定义时，不保证向后兼容性。"
 
 #: ../../user_guide/light-dark.rst:55
 msgid ""
@@ -92,16 +98,18 @@ msgid ""
 "the ``html[data-theme='<THEME>']`` CSS selector. For example to define a "
 "different background color for both the light and dark themes:"
 msgstr ""
+"要以依赖于主题的方式自定义页面元素的 CSS，请使用 ``html[data-theme='<THEME>']`` CSS 选择器。例如，为浅色和深色主题定义不同的背景颜色："
 
 #: ../../user_guide/light-dark.rst:74
 msgid ""
 "A complete list of the colors used in this theme can be found in the "
 ":doc:`CSS style section <styling>`."
 msgstr ""
+"此主题中使用的颜色的完整列表可在 :doc:`CSS 样式部分 <styling>` 中找到。"
 
 #: ../../user_guide/light-dark.rst:77
 msgid "Theme-dependent images and content"
-msgstr ""
+msgstr "依赖于主题的图像和内容"
 
 #: ../../user_guide/light-dark.rst:79
 msgid ""
@@ -110,20 +118,22 @@ msgid ""
 "useful if your content depends on the theme's style, such as a PNG image "
 "with a light or dark background."
 msgstr ""
+"可以为浅色和深色模式使用不同的内容，以便内容仅在特定主题激活时显示。如果您的内容依赖于主题的样式（例如具有浅色或深色背景的 PNG 图像），这将非常有用。"
 
 #: ../../user_guide/light-dark.rst:82
 msgid ""
 "There are **two CSS helper classes** to specify items on the page as "
 "theme-specific. These are:"
 msgstr ""
+"有 **两个 CSS 辅助类** 可以将页面上的项目指定为特定于主题的。它们是："
 
 #: ../../user_guide/light-dark.rst:85
 msgid ":code:`only-dark`: Only display an element when the dark theme is active."
-msgstr ""
+msgstr ":code:`only-dark`：仅在深色主题激活时显示元素。"
 
 #: ../../user_guide/light-dark.rst:86
 msgid ":code:`only-light` Only display an element when the light theme is active."
-msgstr ""
+msgstr ":code:`only-light`：仅在浅色主题激活时显示元素。"
 
 #: ../../user_guide/light-dark.rst:88
 msgid ""
@@ -131,6 +141,7 @@ msgid ""
 " uses a different one of the classes above. Change the theme and a new "
 "image should be displayed."
 msgstr ""
+"例如，以下页面内容定义了两个图像，每个图像都使用上述类之一。更改主题后，应显示新图像。"
 
 #: ../../user_guide/light-dark.rst
 msgid "rst"
@@ -150,6 +161,7 @@ msgid ""
 "mode will automatically have a white background added to ensure the image"
 " contents are visible, and their brightness will be reduced by a filter."
 msgstr ""
+"当 **深色主题** 激活时，不支持深色模式的图像将自动添加白色背景以确保图像内容可见，并且它们的亮度将通过滤镜降低。"
 
 #: ../../user_guide/light-dark.rst:128
 msgid ""
@@ -158,20 +170,22 @@ msgid ""
 " dark themes, add the CSS class :code:`dark-light` to make your image "
 "theme-agnostic."
 msgstr ""
+"如果您的图像适合深色主题，请如上所述添加 CSS 类 :code:`only-dark`。如果您的图像适合浅色和深色主题，请添加 CSS 类 :code:`dark-light` 以使您的图像与主题无关。"
 
 #: ../../user_guide/light-dark.rst:133
 msgid ""
 "For example, here's an image without adding this helper class. Change to "
 "the dark theme and a grey background will be present."
 msgstr ""
+"例如，这是未添加此辅助类的图像。切换到深色主题时，将出现灰色背景。"
 
 #: ../../user_guide/light-dark.rst:157
 msgid "Here's the same image with this class added:"
-msgstr ""
+msgstr "这是添加了此类的相同图像："
 
 #: ../../user_guide/light-dark.rst:180
 msgid "Define custom JavaScript to react to theme changes"
-msgstr ""
+msgstr "定义自定义 JavaScript 以响应主题更改"
 
 #: ../../user_guide/light-dark.rst:182
 msgid ""
@@ -181,6 +195,8 @@ msgid ""
 " source (e.g., logo) whenever the ``data-theme`` changes, a snippet like "
 "this can be used:"
 msgstr ""
+"您可以定义 JavaScript 事件钩子，该钩子将在主题更改时运行您的代码。"
+"如果您需要更改无法通过 CSS 规则定义的页面元素，这将非常有用。例如，要在 ``data-theme`` 更改时更改图像源（例如徽标），可以使用如下代码片段："
 
 #: ../../user_guide/light-dark.rst:227
 msgid ""
@@ -189,4 +205,5 @@ msgid ""
 "documentation <https://developer.mozilla.org/en-"
 "US/docs/Web/API/MutationObserver>`_ for more information."
 msgstr ""
-
+"JavaScript 响应 ``data-theme`` 更改以更改 ``img``，并且 ``link`` 用于预加载深色图像。"
+"有关更多信息，请参阅 `MutationObserver 文档 <https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver>`_。"

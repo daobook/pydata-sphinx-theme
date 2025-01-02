@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/announcements.rst:2
 msgid "Announcement banners"
-msgstr ""
+msgstr "公告横幅"
 
 #: ../../user_guide/announcements.rst:4
 msgid ""
@@ -30,6 +30,7 @@ msgid ""
 "reader. It will be displayed at the top of the screen but will disappear "
 "once they start scrolling."
 msgstr ""
+"您可以添加公告横幅，以吸引读者的额外关注。它将会显示在屏幕顶部，但当读者开始滚动页面时，横幅会消失。"
 
 #: ../../user_guide/announcements.rst:7
 msgid ""
@@ -37,20 +38,22 @@ msgid ""
 "``html_theme_options[\"announcement\"]`` configuration. There are two "
 "ways to use this."
 msgstr ""
+"要添加公告横幅，请使用 ``html_theme_options[\"announcement\"]`` 配置。有两种方式可以使用此功能。"
 
 #: ../../user_guide/announcements.rst:11
 msgid "Provide local HTML in your theme"
-msgstr ""
+msgstr "在您的主题中提供本地 HTML 内容"
 
 #: ../../user_guide/announcements.rst:13
 msgid ""
 "By default, the value of your ``html_theme_options[\"announcement\"]`` "
 "will be inserted directly into your announcement banner as raw HTML."
 msgstr ""
+"默认情况下，``html_theme_options[\"announcement\"]`` 的值将作为原始 HTML 直接插入到您的公告横幅中。"
 
 #: ../../user_guide/announcements.rst:15
 msgid "For example, the following configuration adds a simple announcement."
-msgstr ""
+msgstr "例如，以下配置添加了简单的公告。"
 
 #: ../../user_guide/announcements.rst:17 ../../user_guide/announcements.rst:36
 #: ../../user_guide/announcements.rst:69
@@ -59,7 +62,7 @@ msgstr ""
 
 #: ../../user_guide/announcements.rst:26
 msgid "Insert remote HTML with JavaScript"
-msgstr ""
+msgstr "使用 JavaScript 插入远程 HTML"
 
 #: ../../user_guide/announcements.rst:28
 msgid ""
@@ -69,12 +72,15 @@ msgid ""
 "allows you to define a single HTML announcement that you can pull into "
 "multiple documentation sites or versions."
 msgstr ""
+"您可以指定任意 URL，该 URL 将用作公告的 HTML 源。"
+"当页面加载时，JavaScript 将尝试获取此 HTML 并将其原样插入到公告横幅中。这使您可以定义 HTML 公告，并将其拉取到多个文档站点或版本中。"
 
 #: ../../user_guide/announcements.rst:32
 msgid ""
 "If the value of ``html_theme_options[\"announcement\"]`` begins with "
 "``http`` it will be treated as a URL to remote HTML."
 msgstr ""
+"如果 ``html_theme_options[\"announcement\"]`` 的值以 ``http`` 开头，它将被视为远程 HTML 的 URL。"
 
 #: ../../user_guide/announcements.rst:34
 msgid ""
@@ -82,10 +88,11 @@ msgid ""
 "``custom-template.html`` example from this documentation's GitHub "
 "repository:"
 msgstr ""
+"例如，以下配置指示主题从此文档的 GitHub 仓库加载 ``custom-template.html`` 示例："
 
 #: ../../user_guide/announcements.rst:45
 msgid "Update or remove announcement banner"
-msgstr ""
+msgstr "更新或移除公告横幅"
 
 #: ../../user_guide/announcements.rst:47
 msgid ""
@@ -95,6 +102,8 @@ msgid ""
 "banner, set this value to an empty string and rebuild your documentation "
 "pages."
 msgstr ""
+"如果您将 ``html_theme_options[\"announcement\"]`` 设置为纯文本或 HTML，"
+"那么要更新公告横幅，您需要修改此字符串并重新构建文档页面。要移除公告横幅，请将此值设置为空字符串并重新构建文档页面。"
 
 #: ../../user_guide/announcements.rst:52
 msgid ""
@@ -109,10 +118,13 @@ msgid ""
 "that file (empty file = remove announcement) without rebuilding and "
 "redeploying all your docs."
 msgstr ""
+"如果您将 ``html_theme_options[\"announcement\"]`` 设置为 URL 字符串（以 ``http`` 开头），那么您可以编辑该 URL 处的文件来更新公告横幅。"
+"在该 URL 处保存空文件将移除公告横幅。这是使用 URL 的主要优势——您可以在不重新构建和重新部署所有文档页面的情况下更改公告横幅。例如，如果您将公告指向您仓库中的某个文件的 URL，"
+"就像我们在此文档站点上所做的那样（参见上一节），那么您可以编辑、保存并仅推送对该文件的更改（空文件 = 移除公告），而无需重新构建和重新部署所有文档。"
 
 #: ../../user_guide/announcements.rst:65
 msgid "Version warning banners"
-msgstr ""
+msgstr "版本警告横幅"
 
 #: ../../user_guide/announcements.rst:67
 msgid ""
@@ -121,6 +133,7 @@ msgid ""
 "of your docs other than the latest stable version. To use this feature, "
 "add the following to your ``conf.py``:"
 msgstr ""
+"除了通用的公告横幅外，该主题还内置了一个横幅，用于在用户查看非最新稳定版本的文档时发出警告。要使用此功能，请将以下内容添加到您的 ``conf.py`` 中："
 
 #: ../../user_guide/announcements.rst:79
 msgid ""
@@ -131,6 +144,9 @@ msgid ""
 "``version`` properties that are parsable by the `compare-versions node "
 "module <https://www.npmjs.com/package/compare-versions>`__, for example:"
 msgstr ""
+"此功能依赖于 :ref:`版本切换器 <version-dropdowns>` 来确定最新稳定版本的版本号。*它仅在以下情况下有效*："
+"如果您的版本切换器 ``.json`` 文件中只有一个条目具有 ``\"preferred\": true`` 属性，"
+"并且您的条目具有 `compare-versions node 模块 <https://www.npmjs.com/package/compare-versions>`__ 可解析的 ``version`` 属性，例如："
 
 #: ../../user_guide/announcements.rst:92
 msgid ""
@@ -142,6 +158,8 @@ msgid ""
 "announcement will say they are viewing an unstable development version "
 "instead."
 msgstr ""
+"如果当前活动版本低于首选版本，公告将通知用户他们正在查看旧版本文档，并提供指向首选版本的链接。"
+"如果版本高于首选版本（或者版本匹配包含字符串 `\"dev\"`、`\"rc\"` 或 `\"pre\"`），公告将提示他们正在查看不稳定的开发版本。"
 
 #: ../../user_guide/announcements.rst:97
 msgid ""
@@ -152,4 +170,5 @@ msgid ""
 "``URL_OF_STABLE_VERSION_OF_PROJECT`` with a valid URL, and adjust styling"
 " as desired):"
 msgstr ""
-
+"如果您希望为 *旧版* 文档（即在 ``show_version_warning_banner`` 配置选项可用之前构建的文档）提供类似的功能，"
+"您可以通过在所有页面前添加以下 HTML 来手动添加横幅（请确保将 ``URL_OF_STABLE_VERSION_OF_PROJECT`` 替换为有效的 URL，并根据需要调整样式）："

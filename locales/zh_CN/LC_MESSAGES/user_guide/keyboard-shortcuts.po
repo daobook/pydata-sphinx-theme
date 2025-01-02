@@ -22,15 +22,15 @@ msgstr ""
 
 #: ../../user_guide/keyboard-shortcuts.md:1
 msgid "Keyboard shortcuts"
-msgstr ""
+msgstr "键盘快捷键"
 
 #: ../../user_guide/keyboard-shortcuts.md:3
 msgid "Trigger the search bar"
-msgstr ""
+msgstr "触发搜索栏"
 
 #: ../../user_guide/keyboard-shortcuts.md:5
 msgid ""
 "You can trigger the search bar pop-up with {kbd}`Ctrl`/{kbd}`⌘` + "
 "{kbd}`K`."
 msgstr ""
-
+"您可以使用 {kbd}`Ctrl`/{kbd}`⌘` + {kbd}`K` 触发搜索栏弹出窗口。"

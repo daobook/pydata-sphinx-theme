@@ -22,13 +22,14 @@ msgstr ""
 
 #: ../../user_guide/i18n.rst:4
 msgid "Internationalization"
-msgstr ""
+msgstr "国际化"
 
 #: ../../user_guide/i18n.rst:6
 msgid ""
 "This theme contains localizable (translatable) strings. There are two "
 "kinds of strings in this theme, with different steps to translate each:"
 msgstr ""
+"此主题包含可本地化（可翻译）的字符串。主题中有两种类型的字符串，每种字符串的翻译步骤不同："
 
 #: ../../user_guide/i18n.rst:9
 msgid ""
@@ -39,6 +40,8 @@ msgid ""
 "language, refer to the :ref:`localizing-the-theme` and :ref:`adding-new-"
 "language` sections in the documentation."
 msgstr ""
+"**内置字符串** 是硬编码在主题模板中的。如果语言 `受支持 <https://github.com/pydata/pydata-sphinx-theme/tree/main/src/pydata_sphinx_theme/locale>`__，它们将由志愿者翻译。"
+"要添加另一种语言，请参阅文档中的 :ref:`localizing-the-theme` 和 :ref:`adding-new-language` 部分。"
 
 #: ../../user_guide/i18n.rst:12
 msgid ""
@@ -48,16 +51,19 @@ msgid ""
 "these strings, see the :ref:`translating-configurable-strings` section in"
 " this page."
 msgstr ""
+"**可配置字符串** 是用户通过 ``conf.py`` 文件中的 ``html_theme_options`` 变量定义的（有关这些可配置字符串的示例，请参阅 :doc:`用户指南 <index>` 中的其他部分）。"
+"要翻译这些字符串，请参阅本页中的 :ref:`translating-configurable-strings` 部分。"
 
 #: ../../user_guide/i18n.rst:19
 msgid "Translating configurable strings"
-msgstr ""
+msgstr "翻译可配置字符串"
 
 #: ../../user_guide/i18n.rst:21
 msgid ""
 "These instructions are for translating configurable strings (those that "
 "are customizable in ``html_theme_options`` within the ``conf.py`` file)."
 msgstr ""
+"这些说明适用于翻译可配置字符串（即在 ``conf.py`` 文件中的 ``html_theme_options`` 内可自定义的字符串）。"
 
 #: ../../user_guide/i18n.rst:24
 msgid ""
@@ -66,6 +72,7 @@ msgid ""
 " to use ``messages`` as the name of the message catalog for these strings"
 " (you can change this name if needed)."
 msgstr ""
+"这些说明假设您将翻译存储在文档目录下的 ``locale`` 目录中，并且您希望使用 ``messages`` 作为这些字符串的消息目录名称（如果需要，您可以更改此名称）。"
 
 #: ../../user_guide/i18n.rst:28
 msgid ""
@@ -73,14 +80,15 @@ msgid ""
 "<https://babel.pocoo.org/en/latest/installation.html>`__ to handle your "
 "documentation translations."
 msgstr ""
+"请注意，您还需要安装 `pybabel <https://babel.pocoo.org/en/latest/installation.html>`__ 来处理文档翻译。"
 
 #: ../../user_guide/i18n.rst:31
 msgid "In your ``conf.py`` file:"
-msgstr ""
+msgstr "在 ``conf.py`` 文件中："
 
 #: ../../user_guide/i18n.rst:66
 msgid "Extract the strings to localize:"
-msgstr ""
+msgstr "提取要本地化的字符串："
 
 #: ../../user_guide/i18n.rst:72
 msgid ""
@@ -88,16 +96,17 @@ msgid ""
 "<https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__ for the new "
 "language (using the ``--locale`` flag):"
 msgstr ""
+"通过指定新语言的 `ISO 639-1 代码 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__ （使用 ``--locale`` 标志）创建消息目录："
 
 #: ../../user_guide/i18n.rst:80
 msgid "Translate the message catalog by editing the file."
-msgstr ""
+msgstr "通过编辑文件翻译消息目录。"
 
 #: ../../user_guide/i18n.rst:82
 msgid "Compile the message catalog:"
-msgstr ""
+msgstr "编译消息目录："
 
 #: ../../user_guide/i18n.rst:88
 msgid "Done! Your configurable strings are now localized."
-msgstr ""
+msgstr "完成！您的可配置字符串现已本地化。"
 

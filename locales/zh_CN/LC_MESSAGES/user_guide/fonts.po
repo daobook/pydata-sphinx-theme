@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/fonts.rst:2
 msgid "Fonts and FontAwesome"
-msgstr ""
+msgstr "字体和 FontAwesome"
 
 #: ../../user_guide/fonts.rst:4
 msgid ""
@@ -33,16 +33,20 @@ msgid ""
 "otherwise, the theme by default relies on available system fonts for "
 "normal body text and headers."
 msgstr ""
+"该主题包含 `FontAwesome 6 Free <https://fontawesome.com/icons?m=free>`__ "
+"图标字体（``.fa-solid, .fa-regular, .fa-brands`` 样式，用于 :ref:`图标链接 <icon-links>` 和警告框）。"
+"这是唯一的 *自带* 字体，除此之外，该主题默认依赖于可用的系统字体来显示正文和标题。"
 
 #: ../../user_guide/fonts.rst:10
 msgid ""
 "For more details on the PyData Sphinx Theme typography and text styles, "
 "see the :doc:`../community/design-system` section."
 msgstr ""
+"有关 PyData Sphinx Theme 排版和文本样式的更多详细信息，请参阅 :doc:`../community/design-system` 部分。"
 
 #: ../../user_guide/fonts.rst:13
 msgid "The default body and header fonts can be changed as follows:"
-msgstr ""
+msgstr "默认的正文和标题字体可以按如下方式更改："
 
 #: ../../user_guide/fonts.rst:15
 msgid ""
@@ -50,12 +54,14 @@ msgid ""
 " header, and monospaced text. For example, the following can be added to "
 "a custom CSS file:"
 msgstr ""
+"使用 :ref:`custom-css`，您可以指定用于正文、标题和等宽文本的字体。例如，以下内容可以添加到自定义 CSS 文件中："
 
 #: ../../user_guide/fonts.rst:27
 msgid ""
 "The ``*-system`` variables are available to use as a fallback to the "
 "default fonts."
 msgstr ""
+"``*-system`` 变量可用作默认字体的后备。"
 
 #: ../../user_guide/fonts.rst:29
 msgid ""
@@ -65,6 +71,7 @@ msgid ""
 "``_static`` directory of your Sphinx site, and then update the base "
 "template to load the font resources:"
 msgstr ""
+"如果您在上述部分中想要指定的字体通常不是默认可用的，您还需要确保加载了该字体。例如，您可以下载并将字体放置在 Sphinx 站点的 ``_static`` 目录中，然后更新基本模板以加载字体资源："
 
 #: ../../user_guide/fonts.rst:34
 msgid ""
@@ -72,6 +79,7 @@ msgid ""
 "doc.org/en/master/development/theming.html#templating>`__ in your "
 "``conf.py``"
 msgstr ""
+"在您的 ``conf.py`` 中配置 `template_path <https://www.sphinx-doc.org/en/master/development/theming.html#templating>`__"
 
 #: ../../user_guide/fonts.rst:36
 msgid ""
@@ -79,6 +87,7 @@ msgid ""
 "``fonts`` block (example for loading the Lato font that is included in "
 "the ``_static/vendor`` directory):"
 msgstr ""
+"创建自定义的 ``layout.html`` Jinja2 模板，重载 ``fonts`` 块（示例用于加载包含在 ``_static/vendor`` 目录中的 Lato 字体）："
 
 #: ../../user_guide/fonts.rst:50
 msgid ""
@@ -89,4 +98,5 @@ msgid ""
 "files. This ensures the files will be loaded before the CSS is parsed, "
 "but should be used with care."
 msgstr ""
-
+"在字体加载之前，您的文本可能会很快显示为“未样式化”。为了减少这种情况，您可能需要探索 `预加载内容 <https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content>`__ "
+"的选项，特别是二进制字体文件。这确保文件将在 CSS 解析之前加载，但应谨慎使用。"

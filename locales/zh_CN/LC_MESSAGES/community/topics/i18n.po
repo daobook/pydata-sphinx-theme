@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/i18n.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "国际化"
 
 #: ../../community/topics/i18n.rst:4
 msgid ""
@@ -28,6 +28,7 @@ msgid ""
 "strings in your Sphinx project, see the :ref:`User guide section on "
 "internationalization <user-guide-i18n>`."
 msgstr ""
+"本节介绍如何对 PyData Sphinx 主题进行国际化（I18n）和本地化（L10n）。有关如何本地化 Sphinx 项目中的可配置字符串的详细信息，请参阅 :ref:`用户指南中的国际化部分 <user-guide-i18n>`。"
 
 #: ../../community/topics/i18n.rst:8
 msgid ""
@@ -38,12 +39,15 @@ msgid ""
 "`Transifex <https://explore.transifex.com/12rambau/pydata-sphinx-"
 "theme/>`__."
 msgstr ""
+"PyData Sphinx 主题的I18n/i10n 工作流程基于 `GNU Gettext <http://www.gnu.org/software/gettext/>`__，并使用 `pybabel <https://babel.pocoo.org/en/latest/messages.html>`__ 来保持目录的最新状态。"
+"众包本地化在 `Transifex <https://explore.transifex.com/12rambau/pydata-sphinx-theme/>`__ 上管理。"
 
 #: ../../community/topics/i18n.rst:13
 msgid ""
 "**Internationalization** (or I18n) is the process of making a program or "
 "application aware of and able to support multiple languages."
 msgstr ""
+"**国际化** （或I18n）是使程序或应用程序能够识别并支持多种语言的过程。"
 
 #: ../../community/topics/i18n.rst:16
 msgid ""
@@ -51,6 +55,7 @@ msgid ""
 "or applications into different languages while ensuring that the "
 "translations are correct for some native language and cultural habits."
 msgstr ""
+"**本地化** （L10n）是将本地化程序或应用程序翻译成不同语言的过程，同时确保翻译符合某些母语和文化习惯。"
 
 #: ../../community/topics/i18n.rst:19
 msgid ""
@@ -61,22 +66,25 @@ msgid ""
 "gettext concepts "
 "<https://www.gnu.org/software/gettext/manual/html_node/Concepts.html>`__."
 msgstr ""
+"特定国家文化习惯的正式描述，以及所有针对同一母语的翻译，称为该语言或国家的 *区域设置*。有关本地化和国际化的更多信息，请参阅 `GNU gettext 概念 <https://www.gnu.org/software/gettext/manual/html_node/Concepts.html>`__。"
 
 #: ../../community/topics/i18n.rst:24
 msgid ""
 "The general process for internationalizing and localizing the theme is as"
 " follows:"
 msgstr ""
+"主题国际化和本地化的一般过程如下："
 
 #: ../../community/topics/i18n.rst:26
 msgid ":ref:`Mark strings in the theme as localizable <adding-localizable-text>`."
-msgstr ""
+msgstr ":ref:`将主题中的字符串标记为可本地化 <adding-localizable-text>`。"
 
 #: ../../community/topics/i18n.rst:27
 msgid ""
 ":ref:`Extract localizable strings <updating-localization-files>` to a "
 "message catalog template ``POT`` (``PO`` template file)."
 msgstr ""
+":ref:`提取可本地化字符串 <updating-localization-files>` 到消息目录模板 ``POT`` （``PO``模板文件）。"
 
 #: ../../community/topics/i18n.rst:28
 msgid ""

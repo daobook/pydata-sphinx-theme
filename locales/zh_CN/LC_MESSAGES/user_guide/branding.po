@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../user_guide/branding.rst:3
 msgid "Branding and logo"
-msgstr ""
+msgstr "品牌标识与徽标"
 
 #: ../../user_guide/branding.rst:6
 msgid "Customize logo and title"
-msgstr ""
+msgstr "自定义徽标和标题"
 
 #: ../../user_guide/branding.rst:8
 msgid ""
@@ -34,10 +34,11 @@ msgid ""
 "of the header navigation bar. This can be replaced by a logo image, and "
 "optionally a custom ``html_title`` as well."
 msgstr ""
+"默认情况下，主题将在标题导航栏的左侧使用 ``project`` 的值。这可以用徽标图像替换，并且还可以选择自定义 ``html_title``。"
 
 #: ../../user_guide/branding.rst:12
 msgid "Single logo for light and dark mode"
-msgstr ""
+msgstr "适用于浅色和深色模式的单一徽标"
 
 #: ../../user_guide/branding.rst:14
 msgid ""
@@ -47,16 +48,19 @@ msgid ""
 "file must be relative to ``conf.py``. For example, if your documentation "
 "had a logo in ``_static/logo.png``:"
 msgstr ""
+"要使用 **本地图像文件**，请按照 `Sphinx 文档 <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_logo>`__ 中的说明使用 ``html_logo``。"
+"文件必须相对于 ``conf.py``。例如，如果您的文档在 ``_static/logo.png`` 中有徽标："
 
 #: ../../user_guide/branding.rst:22
 msgid ""
 "To use an **external link** to an image, make sure the ``html_logo`` "
 "begins with ``http``. For example:"
 msgstr ""
+"要使用指向图像的 **外部链接**，请确保 ``html_logo`` 以 ``http`` 开头。例如："
 
 #: ../../user_guide/branding.rst:30
 msgid "Different logos for light and dark mode"
-msgstr ""
+msgstr "浅色和深色模式的不同徽标"
 
 #: ../../user_guide/branding.rst:32
 msgid ""
@@ -64,6 +68,7 @@ msgid ""
 "\"dark\" modes. This is useful if your logo image is not adapted to a "
 "dark mode (light background, not enough contrast, etc...)."
 msgstr ""
+"您可以为“浅色”和“深色”模式指定不同版本的徽标图像。如果您的徽标图像不适合深色模式（背景过亮、对比度不足等），这将非常有用。"
 
 #: ../../user_guide/branding.rst:35
 msgid ""
@@ -71,6 +76,7 @@ msgid ""
 "options in ``html_theme_options``. For each, provide a path relative to "
 "``conf.py`` like so:"
 msgstr ""
+"为此，请在 ``html_theme_options`` 中使用 ``logo[\"image_light\"]`` 和 ``logo[\"image_dark\"]`` 选项。对于每个选项，提供相对于 ``conf.py`` 的路径，如下所示："
 
 #: ../../user_guide/branding.rst:50
 msgid ""
@@ -78,10 +84,11 @@ msgid ""
 "setting. If you only specify one of the light or dark variants, the un-"
 "specified variant will fall back to the value of ``html_logo``."
 msgstr ""
+"``image_light`` 和 ``image_dark`` 将覆盖 ``html_logo`` 设置。如果您仅指定了浅色或深色变体之一，未指定的变体将回退到 ``html_logo`` 的值。"
 
 #: ../../user_guide/branding.rst:54
 msgid "Customize logo link"
-msgstr ""
+msgstr "自定义徽标链接"
 
 #: ../../user_guide/branding.rst:56
 msgid ""
@@ -90,20 +97,22 @@ msgid ""
 " external website. To do so, use the "
 "``html_theme_options[\"logo\"][\"link\"]`` option and provide a new link."
 msgstr ""
+"默认情况下，徽标链接到 ``root_doc`` （通常是您的文档的第一页）。您可以改为链接到本地文档或外部网站。为此，请使用 ``html_theme_options[\"logo\"][\"link\"]`` 选项并提供新链接。"
 
 #: ../../user_guide/branding.rst:60
 msgid "For example, to reference another local page:"
-msgstr ""
+msgstr "例如，要引用另一个本地页面："
 
 #: ../../user_guide/branding.rst:70
 msgid ""
 "To reference an external website, make sure your link starts with "
 "``http``:"
 msgstr ""
+"要引用外部网站，请确保您的链接以 ``http`` 开头："
 
 #: ../../user_guide/branding.rst:81
 msgid "Logo title and alternative text"
-msgstr ""
+msgstr "徽标标题和替代文本"
 
 #: ../../user_guide/branding.rst:83
 msgid ""
@@ -112,6 +121,7 @@ msgid ""
 "title (or any other text) next to the logo, you provide it with the "
 "``text`` property like so:"
 msgstr ""
+"如果您提供了徽标图像，它将替换标题导航栏中的 ``project`` 或 ``html_title``。如果您希望在徽标旁边同时显示网站徽标和标题（或任何其他文本），您可以使用 ``text`` 属性，如下所示："
 
 #: ../../user_guide/branding.rst:87 ../../user_guide/branding.rst:102
 #: ../../user_guide/branding.rst:118
@@ -124,6 +134,7 @@ msgid ""
 "it's good practice to provide alt text, which helps blind visitors and "
 "others who rely on screen readers:"
 msgstr ""
+"但如果您只想显示徽标而不显示网站标题，那么最好提供替代文本，这有助于盲人访客和其他依赖屏幕阅读器的用户："
 
 #: ../../user_guide/branding.rst:115
 msgid ""
@@ -131,6 +142,7 @@ msgid ""
 "both, but there are some circumstances in which it may make sense to "
 "provide both:"
 msgstr ""
+"在大多数情况下，您会提供 ``text`` 或 ``alt_text``，而不是两者都提供，但在某些情况下，同时提供两者可能是有意义的："
 
 #: ../../user_guide/branding.rst:133
 msgid ""
@@ -145,10 +157,14 @@ msgid ""
 " can override this assumption by supplying both ``text`` and "
 "``alt_text``)."
 msgstr ""
+"如果您不提供 ``text`` 或 ``alt_text``，主题将提供一些默认的替代文本（否则，您的主页链接在辅助技术中可能会显示为“未标记的图像”）。"
+"默认的替代文本是 \"`docstitle <https://www.sphinx-doc.org/en/master/development/templating.html#docstitle>`_ - 主页\"，"
+"但如果您提供了徽标标题（``text``），默认的替代文本将为空字符串（假设是，如果您提供了徽标标题，标题可能正在替代文本的工作，"
+"如上所示，您可以通过同时提供 ``text`` 和 ``alt_text`` 来覆盖此假设）。"
 
 #: ../../user_guide/branding.rst:143
 msgid "Add favicons"
-msgstr ""
+msgstr "添加网站图标"
 
 #: ../../user_guide/branding.rst:145
 msgid ""
@@ -160,4 +176,6 @@ msgid ""
 "favicon.readthedocs.io/en/stable/>`__ extension. It provides the same "
 "functionality using more flexible parameters."
 msgstr ""
-
+"``pydata_sphinx_theme`` 支持 `标准 sphinx 网站图标配置 <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_favicon>`_，"
+"使用 ``html_favicon``。在 0.15.3 版本中，对复杂和多个网站图标的支持已被弃用。"
+"相反，请使用 `sphinx-favicon <https://sphinx-favicon.readthedocs.io/en/stable/>`__ 扩展。它使用更灵活的参数提供相同的功能。"

@@ -22,17 +22,18 @@ msgstr ""
 
 #: ../../user_guide/source-buttons.rst:3
 msgid "Source Buttons"
-msgstr ""
+msgstr "源代码按钮"
 
 #: ../../user_guide/source-buttons.rst:5
 msgid ""
 "Source buttons are links to the source of your page's content (either on "
 "your site, or on hosting sites like GitHub)."
 msgstr ""
+"源代码按钮是指向页面内容来源的链接（无论是在您的站点上，还是在 GitHub 等托管站点上）。"
 
 #: ../../user_guide/source-buttons.rst:8
 msgid "Add an edit button"
-msgstr ""
+msgstr "添加编辑按钮"
 
 #: ../../user_guide/source-buttons.rst:10
 msgid ""
@@ -41,6 +42,8 @@ msgid ""
 "include this button in the secondary sidebar of each page, add the "
 "following configuration to your ``conf.py`` file in 'html_theme_options':"
 msgstr ""
+"您可以在每个页面上添加一个按钮，允许用户直接编辑页面文本并提交拉取请求以更新文档。"
+"要将此按钮包含在每个页面的次要侧边栏中，请将以下配置添加到 ``conf.py`` 文件中的 'html_theme_options'："
 
 #: ../../user_guide/source-buttons.rst:21
 msgid ""
@@ -48,6 +51,7 @@ msgid ""
 "including GitHub, GitLab, and Bitbucket. For each, the default public "
 "instance URL can be replaced with a self-hosted instance."
 msgstr ""
+"有许多提供商可用于构建 *编辑此页面* 链接，包括 GitHub、GitLab 和 Bitbucket。对于每个提供商，默认的公共实例 URL 可以替换为自托管实例。"
 
 #: ../../user_guide/source-buttons.rst:27
 msgid "GitHub"
@@ -63,7 +67,7 @@ msgstr ""
 
 #: ../../user_guide/source-buttons.rst:69
 msgid "Custom Edit URL"
-msgstr ""
+msgstr "定制编辑 URL"
 
 #: ../../user_guide/source-buttons.rst:71
 msgid ""
@@ -71,6 +75,7 @@ msgid ""
 "``edit_page_url_template``, a jinja2 template string which must contain "
 "``{{ file_name }}``, and may reference any other context values."
 msgstr ""
+"对于完全自定义的 *编辑此页面* URL，请提供 ``edit_page_url_template``，这是 jinja2 模板字符串，必须包含 ``{{ file_name }}``，并且可以引用任何其他上下文值。"
 
 #: ../../user_guide/source-buttons.rst:83
 msgid ""
@@ -78,14 +83,15 @@ msgid ""
 "GitHub/GitLab/Bitbucket\". By default, a simple \"Edit\" is used if you "
 "use a custom URL. However, you can set a provider name like this:"
 msgstr ""
+"使用预定义的提供商时，链接文本显示为“在 GitHub/GitLab/Bitbucket 上编辑”。默认情况下，如果您使用自定义 URL，则使用简单的“编辑”。但是，您可以像这样设置提供商名称："
 
 #: ../../user_guide/source-buttons.rst:94
 msgid "This will turn the link into \"Edit on Provider\"."
-msgstr ""
+msgstr "这将把链接变成“在 Provider 上编辑”。"
 
 #: ../../user_guide/source-buttons.rst:98
 msgid "Custom link text"
-msgstr ""
+msgstr "定制链接文本"
 
 #: ../../user_guide/source-buttons.rst:100
 msgid ""
@@ -94,10 +100,12 @@ msgid ""
 "in your Sphinx configuration, you could put this code in `_templates"
 "/edit-this-page.html`:"
 msgstr ""
+"您可以通过扩展 ``edit-this-page.html`` 模板来更改默认文本。"
+"例如，如果您的 Sphinx 配置中有 ``templates_path = [\"_templates\"]``，您可以将此代码放入 `_templates/edit-this-page.html` 中："
 
 #: ../../user_guide/source-buttons.rst:115
 msgid "View Source link"
-msgstr ""
+msgstr "查看源代码链接"
 
 #: ../../user_guide/source-buttons.rst:117
 msgid ""
@@ -105,4 +113,4 @@ msgid ""
 "(i.e., the underlying ``reStructuredText`` or ``MyST Markdown`` for the "
 "page). To disable it, use the following configuration:"
 msgstr ""
-
+"默认情况下，此主题添加了按钮链接以查看页面的源代码（即页面的底层 ``reStructuredText`` 或 ``MyST Markdown``）。要禁用它，请使用以下配置："

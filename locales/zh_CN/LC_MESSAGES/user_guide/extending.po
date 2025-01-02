@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/extending.rst:3
 msgid "Extending the theme"
-msgstr ""
+msgstr "扩展主题"
 
 #: ../../user_guide/extending.rst:5
 msgid ""
@@ -30,10 +30,11 @@ msgid ""
 " or provide powerful customization abilities. Here we describe a few "
 "customizations that are popular with ``pydata-sphinx-theme`` users."
 msgstr ""
+"有许多可用于 Sphinx 的扩展可以增强您的网站或提供强大的自定义功能。在这里，描述了一些 ``pydata-sphinx-theme`` 用户常用的自定义功能。"
 
 #: ../../user_guide/extending.rst:8
 msgid "Collapsible admonitions"
-msgstr ""
+msgstr "可折叠的警告框"
 
 #: ../../user_guide/extending.rst:10
 msgid ""
@@ -42,12 +43,15 @@ msgid ""
 "show/hide behavior for admonitions. Follow their installation "
 "instructions, then add it to the ``extentions`` list in your ``conf.py``:"
 msgstr ""
+"`sphinx-togglebutton <https://sphinx-togglebutton.readthedocs.io/en/latest/>`__ 插件为警告框提供了可选的显示/隐藏行为。"
+"按照他们的安装说明，然后将其添加到 ``conf.py`` 中的 ``extensions`` 列表中："
 
 #: ../../user_guide/extending.rst:19
 msgid ""
 "Then add the ``dropdown`` class to any admonition directive (shown here "
 "on a ``note`` admonition):"
 msgstr ""
+"然后将 ``dropdown`` 类添加到任何警告框指令中（此处以 ``note`` 警告框为例）："
 
 #: ../../user_guide/extending.rst:25 ../../user_guide/extending.rst:63
 #: ../../user_guide/extending.rst:98 ../../user_guide/extending.rst:134
@@ -65,7 +69,7 @@ msgstr ""
 
 #: ../../user_guide/extending.rst:50
 msgid "Custom admonition styles"
-msgstr ""
+msgstr "自定义警告框样式"
 
 #: ../../user_guide/extending.rst:52
 msgid ""
@@ -75,10 +79,12 @@ msgid ""
 "that underlies Sphinx). However, it is possible to create custom "
 "admonitions with their own default colors, icons, and titles."
 msgstr ""
+"docutils（Sphinx 底层的 ``rST`` → ``HTML`` 引擎）内置了 `有限的警告框集合 <https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>`__。"
+"然而，可以创建具有自定义默认颜色、图标和标题的警告框。"
 
 #: ../../user_guide/extending.rst:56
 msgid "Customizing the title"
-msgstr ""
+msgstr "定制标题"
 
 #: ../../user_guide/extending.rst:58
 msgid ""
@@ -87,6 +93,8 @@ msgid ""
 "docutils/Sphinx. In this theme, its color defaults to the same color as "
 "``note`` admonitions, and it has a bell icon:"
 msgstr ""
+"尽管大多数警告框都有默认标题，如 ``note`` 或 ``warning``，但 docutils/Sphinx 内置了通用的 ``admonition`` 指令。"
+"在此主题中，其颜色默认与 ``note`` 警告框相同，并且有铃铛图标："
 
 #: ../../user_guide/extending.rst:61
 msgid "Custom title!"
@@ -97,10 +105,11 @@ msgid ""
 "The title is specified on the same line as the ``.. admonition::`` "
 "directive:"
 msgstr ""
+"标题与 ``.. admonition::`` 指令在同一行指定："
 
 #: ../../user_guide/extending.rst:88
 msgid "Styling with semantic color names"
-msgstr ""
+msgstr "使用语义颜色名称进行样式设置"
 
 #: ../../user_guide/extending.rst:90
 msgid ""
@@ -109,6 +118,7 @@ msgid ""
 "variables>` as a class (this is most useful for custom-titled "
 "admonitions):"
 msgstr ""
+"您可以使用 :ref:`主题的语义颜色名称 <color-variables>` 作为类，重新设置任何警告框的样式以匹配任何内置警告框类型（这对于自定义标题的警告框最有用）："
 
 #: ../../user_guide/extending.rst:95
 msgid "Custom title with \"warning\" style"
@@ -119,6 +129,7 @@ msgid ""
 "Note that it updates both the color and the icon. See :doc:`./styling` "
 "for a list of all semantic color names."
 msgstr ""
+"请注意，它会同时更新颜色和图标。有关所有语义颜色名称的列表，请参阅 :doc:`./styling`。"
 
 #: ../../user_guide/extending.rst:123
 msgid ""
@@ -128,10 +139,12 @@ msgid ""
 "and ``todo`` admonitions (see :doc:`../examples/kitchen-sink/admonitions`"
 " for a demo of all built-in admonition styles)."
 msgstr ""
+"该主题为 `标准 docutils 警告框类型 <https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>`__ （``attention``、``caution`` 等）定义了类，"
+"并且还支持 ``seealso`` 和 ``todo`` 警告框（有关所有内置警告框样式的演示，请参阅 :doc:`../examples/kitchen-sink/admonitions`）。"
 
 #: ../../user_guide/extending.rst:126
 msgid "Customizing the color"
-msgstr ""
+msgstr "自定义颜色"
 
 #: ../../user_guide/extending.rst:128
 msgid ""
@@ -139,6 +152,7 @@ msgid ""
 " can also add a bespoke color to any admonition by defining your own CSS "
 "class. Example:"
 msgstr ""
+"除了预定义的语义颜色类（参见上一节），您还可以通过定义自己的 CSS 类为任何警告框添加自定义颜色。示例："
 
 #: ../../user_guide/extending.rst:131
 msgid "Admonition with custom \"olive\" color"
@@ -152,14 +166,16 @@ msgid ""
 " color for ``border-color`` and ``color`` and a different shade for "
 "``background-color``:"
 msgstr ""
+"为此，您需要将类添加到 `custom.css <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_css_files>`__ 文件中，如下例所示。"
+"确保对 ``border-color`` 和 ``color`` 使用相同的颜色，并对 ``background-color`` 使用不同的色调："
 
 #: ../../user_guide/extending.rst:160
 msgid "And add the following to your ``custom.css`` file:"
-msgstr ""
+msgstr "并将以下内容添加到您的 ``custom.css`` 文件中："
 
 #: ../../user_guide/extending.rst:170
 msgid "Using a custom icon"
-msgstr ""
+msgstr "使用自定义图标"
 
 #: ../../user_guide/extending.rst:172
 msgid ""
@@ -171,6 +187,9 @@ msgid ""
 "\"brands\" sets). To use an icon, copy its unicode value into your custom"
 " class as shown in the CSS tab below:"
 msgstr ""
+"自定义图标的过程与自定义颜色类似：在您的 `custom.css <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_css_files>`__ "
+"文件中创建新的 CSS 类。该主题支持 `fontawesome v6 图标 <https://fontawesome.com/v6/search?o=r&m=free&f=brands>`__ "
+"（“免费”和“品牌”集）。要使用图标，请将其 Unicode 值复制到您的自定义类中，如下面的 CSS 选项卡所示："
 
 #: ../../user_guide/extending.rst:175
 msgid "Check out my custom icon"
@@ -178,11 +197,11 @@ msgstr ""
 
 #: ../../user_guide/extending.rst:201
 msgid "And add the following css to your ``custom.css`` file:"
-msgstr ""
+msgstr "并将以下 CSS 添加到您的 ``custom.css`` 文件中："
 
 #: ../../user_guide/extending.rst:211
 msgid "Combining all three customizations"
-msgstr ""
+msgstr "结合所有三种自定义"
 
 #: ../../user_guide/extending.rst:213
 msgid ""
@@ -190,6 +209,7 @@ msgid ""
 "(and also make it collapsible). Note that the multiple admonition class "
 "names are space-separated:"
 msgstr ""
+"在这里，演示了具有自定义图标、颜色和标题的警告框（并且使其可折叠）。请注意，多个警告框类名之间用空格分隔："
 
 #: ../../user_guide/extending.rst:216
 msgid "YouTube"
@@ -197,5 +217,5 @@ msgstr ""
 
 #: ../../user_guide/extending.rst:244
 msgid "And add the following css to your custom.css file:"
-msgstr ""
+msgstr "并将以下 CSS 添加到您的 custom.css 文件中："
 

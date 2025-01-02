@@ -22,13 +22,14 @@ msgstr ""
 
 #: ../../user_guide/web-components.rst:5
 msgid "Sphinx Design Components"
-msgstr ""
+msgstr "Sphinx Design 组件"
 
 #: ../../user_guide/web-components.rst:7
 msgid ""
 "On this page, you will find user interface components such as badges, "
 "buttons, cards, and tabs."
 msgstr ""
+"在本页中，您将找到用户界面组件，例如徽章、按钮、卡片和选项卡。"
 
 #: ../../user_guide/web-components.rst:10
 msgid ""
@@ -38,6 +39,8 @@ msgid ""
 "wish to use the components on this page, you must install Sphinx Design "
 "separately and add it to your `conf.py`."
 msgstr ""
+"本页中的组件**并非由 PyData 主题提供**。它们由 `Sphinx Design <https://sphinx-design.readthedocs.io/en/pydata-theme/index.html>`_  "
+"（ Sphinx 插件）提供。这意味着如果您希望使用本页中的组件，您必须单独安装 Sphinx Design 并将其添加到您的 `conf.py` 中。"
 
 #: ../../user_guide/web-components.rst:16
 msgid ""
@@ -45,6 +48,7 @@ msgid ""
 "`Sphinx Design - Getting Started <https://sphinx-design.readthedocs.io/en"
 "/pydata-theme/get_started.html>`_."
 msgstr ""
+"要将 Sphinx Design 插件添加到您的 Sphinx 项目中，请参阅 `Sphinx Design - 入门 <https://sphinx-design.readthedocs.io/en/pydata-theme/get_started.html>`_。"
 
 #: ../../user_guide/web-components.rst:20
 msgid ""

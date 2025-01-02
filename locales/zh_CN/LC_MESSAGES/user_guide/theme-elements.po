@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/theme-elements.md:1
 msgid "Theme-specific elements"
-msgstr ""
+msgstr "主题特定元素"
 
 #: ../../user_guide/theme-elements.md:3
 msgid ""
@@ -30,16 +30,18 @@ msgid ""
 "this theme. Some of these are triggered with configuration or Markdown "
 "syntax that is unique to the theme, and we cover them below."
 msgstr ""
+"有一些元素是该主题独特或特别重要的。其中一些是通过该主题独有的配置或 Markdown 语法触发的，将在下面详细介绍它们。"
 
 #: ../../user_guide/theme-elements.md:6
 msgid "Mathematics"
-msgstr ""
+msgstr "数学"
 
 #: ../../user_guide/theme-elements.md:8
 msgid ""
 "Most Sphinx sites support math, but it is particularly important for "
 "scientific computing, so we illustrate support here as well."
 msgstr ""
+"大多数 Sphinx 网站都支持数学公式，但对于科学计算来说尤为重要，因此在这里也展示了对其的支持。"
 
 #: ../../user_guide/theme-elements.md:10
 msgid ""
@@ -48,6 +50,8 @@ msgid ""
 "test vertical height {math}`\\frac{\\partial^2 f}{\\partial \\phi^2}`. "
 "Here is a block-level equation:"
 msgstr ""
+"这是行内公式：{math}`X_{0:5} = (X_0, X_1, X_2, X_3, X_4)` 和 {math}`another` 以及 {math}`x^2 x^3 x^4` 另一个。"
+"这是测试垂直高度的公式：{math}`\\frac{\\partial^2 f}{\\partial \\phi^2}`。这是块级公式："
 
 #: ../../user_guide/theme-elements.md:13
 msgid ""
@@ -62,7 +66,7 @@ msgstr ""
 
 #: ../../user_guide/theme-elements.md:24
 msgid "And here is a really long equation with a label!"
-msgstr ""
+msgstr "这是带有标签的非常长的公式！"
 
 #: ../../user_guide/theme-elements.md:26
 msgid ""
@@ -87,10 +91,11 @@ msgid ""
 "You can add a link to equations like the one above {eq}`My label` and "
 "{eq}`My label 2`."
 msgstr ""
+"您可以像上面的公式 {eq}`My label` 和 {eq}`My label 2` 一样为公式添加链接。"
 
 #: ../../user_guide/theme-elements.md:45
 msgid "Code blocks"
-msgstr ""
+msgstr "代码块"
 
 #: ../../user_guide/theme-elements.md:47
 msgid ""
@@ -101,12 +106,15 @@ msgid ""
 "doc.org/en/master/usage/restructuredtext/directives.html#directive-code-"
 "block) for more information."
 msgstr ""
+"代码块的样式灵感来自 [GitHub 的代码块样式](https://primer.style/components/markdown)，并且还支持代码块标题/说明。"
+"更多信息请参阅 [Sphinx 关于代码块的文档](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block)。"
 
 #: ../../user_guide/theme-elements.md:56
 msgid ""
 "You can also provide captions with code blocks, which will be displayed "
 "right above the code. For example, the following code:"
 msgstr ""
+"您还可以为代码块提供标题，标题将显示在代码的正上方。例如，以下代码："
 
 #: ../../user_guide/theme-elements.md
 msgid "rST"
@@ -118,7 +126,7 @@ msgstr ""
 
 #: ../../user_guide/theme-elements.md:79 ../../user_guide/theme-elements.md:116
 msgid "results in:"
-msgstr ""
+msgstr "结果是："
 
 #: ../../user_guide/theme-elements.md:81 ../../user_guide/theme-elements.md:118
 msgid "python.py"
@@ -126,11 +134,11 @@ msgstr ""
 
 #: ../../user_guide/theme-elements.md:87
 msgid "You can also display line numbers. For example, the following code:"
-msgstr ""
+msgstr "您还可以显示行号。例如，以下代码："
 
 #: ../../user_guide/theme-elements.md:127
 msgid "Inline code"
-msgstr ""
+msgstr "内联代码"
 
 #: ../../user_guide/theme-elements.md:129
 msgid ""
@@ -142,6 +150,9 @@ msgid ""
 "custom role. It will then use the same highlighter as in the `code-block`"
 " directive."
 msgstr ""
+"直接使用时，`code` 角色仅显示文本，而不进行语法高亮，作为字面量。"
+"如 [Sphinx 文档](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#inline-code-highlighting) "
+"中所述，您还可以通过定义自定义角色来启用语法高亮。然后它将使用与 `code-block` 指令相同的高亮器。"
 
 #: ../../user_guide/theme-elements.md
 msgid "rst"
@@ -153,11 +164,11 @@ msgstr ""
 
 #: ../../user_guide/theme-elements.md:155
 msgid "In Python you can {python}`import sphinx`."
-msgstr ""
+msgstr "在 Python 中，您可以 {python}`import sphinx`。"
 
 #: ../../user_guide/theme-elements.md:157
 msgid "Code execution"
-msgstr ""
+msgstr "代码执行"
 
 #: ../../user_guide/theme-elements.md:159
 msgid ""
@@ -165,10 +176,11 @@ msgid ""
 "programmatically update your documentation with each build. For examples,"
 " see [](../examples/pydata.ipynb)."
 msgstr ""
+"该主题支持 Jupyter 执行库，因此您可以在每次构建时以编程方式更新您的文档。有关示例，请参阅 [](../examples/pydata.ipynb)。"
 
 #: ../../user_guide/theme-elements.md:162
 msgid "Admonition sidebars"
-msgstr ""
+msgstr "警告侧边栏"
 
 #: ../../user_guide/theme-elements.md:164
 msgid "A sidebar admonition!"
@@ -192,12 +204,14 @@ msgid ""
 "sidebars**. This can be a helpful way of highlighting content without "
 "interrupting the vertical flow as much."
 msgstr ""
+"该主题支持一种简写方式，使 **警告框表现得像侧边栏**。这可以成为一种突出显示内容的有用方式，而不会过多地中断垂直流。"
 
 #: ../../user_guide/theme-elements.md:176
 msgid ""
 "For example, on the right are an \"admonition sidebar\" and a traditional"
 " Sphinx sidebar."
 msgstr ""
+"例如，右侧是“警告侧边栏”和传统的 Sphinx 侧边栏。"
 
 #: ../../user_guide/theme-elements.md:178
 msgid ""
@@ -205,10 +219,11 @@ msgid ""
 "its list of classes. The admonition sidebar in this section was created "
 "with the following Markdown:"
 msgstr ""
+"要使警告框表现得像侧边栏，请将 `sidebar` 类添加到其类列表中。本节中的警告侧边栏是使用以下 Markdown 创建的："
 
 #: ../../user_guide/theme-elements.md:200
 msgid "Footnotes"
-msgstr ""
+msgstr "脚注"
 
 #: ../../user_guide/theme-elements.md:202
 msgid ""
@@ -217,10 +232,12 @@ msgid ""
 "numbers in the rendered HTML, but in the source they look like `[^1]`, "
 "`[^2]`, `[^named]` and `[^*]`."
 msgstr ""
+"这是数字脚注[^1]，另一个（前面有空格）[^2]，命名脚注[^named]，以及符号脚注[^*]。"
+"在渲染的 HTML 中，它们最终都会显示为数字，但在源代码中它们看起来像 `[^1]`、`[^2]`、`[^named]` 和 `[^*]`。"
 
 #: ../../user_guide/theme-elements.md:213
 msgid "Link shortening for git repository services"
-msgstr ""
+msgstr "Git 仓库服务的链接缩短"
 
 #: ../../user_guide/theme-elements.md:215
 msgid ""
@@ -229,12 +246,14 @@ msgid ""
 "this theme does some lightweight formatting for these platforms "
 "specifically."
 msgstr ""
+"许多项目都有指向托管在 **GitHub** 或 **GitLab** 等平台上的问题/PR 的链接。该主题不是将这些链接显示为原始链接，而是对这些平台进行了一些轻量级的格式化。"
 
 #: ../../user_guide/theme-elements.md:218
 msgid ""
 "In **reStructuredText**, URLs are automatically converted to links, so "
 "this works automatically."
 msgstr ""
+"在 **reStructuredText** 中，URL 会自动转换为链接，因此这会自动生效。"
 
 #: ../../user_guide/theme-elements.md:220
 msgid ""
@@ -244,10 +263,12 @@ msgid ""
 "extension](https://myst-"
 "parser.readthedocs.io/en/latest/syntax/optional.html#linkify)."
 msgstr ""
+"在 **MyST Markdown** 中，默认情况下，您必须定义标准的 Markdown 链接并在链接文本中重复 URL。"
+"您可以通过[激活 MyST Linkify 扩展](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#linkify)来跳过手动定义链接文本的需要。"
 
 #: ../../user_guide/theme-elements.md:223
 msgid "For example:"
-msgstr ""
+msgstr "例如："
 
 #: ../../user_guide/theme-elements.md:225
 msgid "**reStructuredText**"

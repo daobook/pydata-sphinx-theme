@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/performance.rst:3
 msgid "Build performance and size"
-msgstr ""
+msgstr "构建性能和大小"
 
 #: ../../user_guide/performance.rst:5
 msgid ""
@@ -32,6 +32,8 @@ msgid ""
 "most common with documentation for projects with a large API, which use "
 "the ``.. autosummary::`` directive to generate API documentation."
 msgstr ""
+"默认情况下，此主题在可折叠侧边栏中包含所有文档链接。"
+"但是，如果您有大量文档页面，这可能会显著减慢文档构建速度。这在具有大型 API 的项目文档中最为常见，这些项目使用 ``.. autosummary::`` 指令生成 API 文档。"
 
 #: ../../user_guide/performance.rst:9
 msgid ""
@@ -39,10 +41,11 @@ msgid ""
 "modifying the navigation depth in the sidebar (see :ref:`navigation-"
 "depth`). If that doesn't work, try the fix in the section below."
 msgstr ""
+"在这些情况下，为了提高构建性能，首先尝试修改侧边栏中的导航深度（参见 :ref:`navigation-depth`）。如果这不起作用，请尝试下面部分中的修复。"
 
 #: ../../user_guide/performance.rst:15
 msgid "Selectively remove pages from your sidebar"
-msgstr ""
+msgstr "从侧边栏中选择性地移除页面"
 
 #: ../../user_guide/performance.rst:17
 msgid ""
@@ -52,16 +55,19 @@ msgid ""
 "useful if your documentation generates lots of \"stub pages\" in a "
 "folder, which is common with API documentation."
 msgstr ""
+"您可以使用名为 `sphinx-remove-toctrees <https://github.com/executablebooks/sphinx-remove-toctrees>`_ 的 Sphinx 插件来防止页面出现在导航栏中。"
+"如果您的文档在文件夹中生成了大量“存根页面”，这很有用，这在 API 文档中很常见。"
 
 #: ../../user_guide/performance.rst:22
 msgid "This lets you add a configuration like so:"
-msgstr ""
+msgstr "这允许您添加如下配置："
 
 #: ../../user_guide/performance.rst:28
 msgid ""
 "and any pages that are inside of ``folder_one/generated/`` will not show "
 "up in the sidebar."
 msgstr ""
+"并且 ``folder_one/generated/`` 中的任何页面都不会出现在侧边栏中。"
 
 #: ../../user_guide/performance.rst:30
 msgid ""
@@ -69,4 +75,4 @@ msgid ""
 "<https://github.com/executablebooks/sphinx-remove-toctrees#install>`_ for"
 " information about how to install and use this extension."
 msgstr ""
-
+"查看 `sphinx-remove-toctrees 文档 <https://github.com/executablebooks/sphinx-remove-toctrees#install>`_ 了解如何安装和使用此扩展。"

@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/search.rst:3
 msgid "Search bar / search button"
-msgstr ""
+msgstr "搜索栏 / 搜索按钮"
 
 #: ../../user_guide/search.rst:5
 msgid ""
@@ -32,6 +32,8 @@ msgid ""
 "shortcut for focusing the search input field are all shown. The keyboard "
 "shortcut is:"
 msgstr ""
+"在窄视口上，用户可以通过点击 :ref:`layout-header` 中的放大镜图标 (:fas:`search`) 来访问搜索。"
+"在宽视口上，放大镜图标、搜索输入字段和聚焦搜索输入字段的键盘快捷键都会显示。键盘快捷键是："
 
 #: ../../user_guide/search.rst:10
 msgid ":kbd:`Ctrl` + :kbd:`K` (Linux, Windows)"
@@ -46,10 +48,11 @@ msgid ""
 "You can also configure some aspects of the search button and search "
 "field, described below."
 msgstr ""
+"您还可以配置搜索按钮和搜索字段的某些方面，如下所述。"
 
 #: ../../user_guide/search.rst:16
 msgid "Configure the search field position"
-msgstr ""
+msgstr "配置搜索字段位置"
 
 #: ../../user_guide/search.rst:18
 msgid ""
@@ -61,18 +64,23 @@ msgid ""
 "field.html`` to one of the configuration variables (e.g., "
 "``html_sidebars``, ``html_theme_options[\"footer_start\"]``, etc.)."
 msgstr ""
+"搜索 *按钮* 的位置由 ``search-button`` 控制，默认情况下包含在 ``html_theme_options[\"navbar_persistent\"]`` 中；"
+"您可以根据站点布局将其移动到其他位置，或将其移除。您还可以通过将 ``search-field.html`` "
+"添加到某个配置变量（例如 ``html_sidebars``、``html_theme_options[\"footer_start\"]`` 等）中，在站点的某些/所有页面上添加一个始终可见的搜索字段。"
 
 #: ../../user_guide/search.rst:25
 msgid ""
 "For example, if you'd like the search field to be in your sidebar, add it"
 " to the sidebar templates like so:"
 msgstr ""
+"例如，如果您希望搜索字段位于侧边栏中，请将其添加到侧边栏模板中，如下所示："
 
 #: ../../user_guide/search.rst:34
 msgid ""
 "If instead, you'd like to put the search field in the top navbar, use the"
 " following configuration:"
 msgstr ""
+"如果您希望将搜索字段放在顶部导航栏中，请使用以下配置："
 
 #: ../../user_guide/search.rst:45
 msgid ""
@@ -86,14 +94,17 @@ msgid ""
 "hidden/overlaid field that comes with it, *or* use a persistent search "
 "field in a place that makes sense for your layout."
 msgstr ""
+"如果页面同时包含搜索按钮和始终可见的搜索字段，键盘快捷键将聚焦在始终可见的字段上，而隐藏的搜索字段覆盖层将不会显示。"
+"*这可能不是您想要的：*在小型屏幕（即移动设备）上，侧边栏可能会隐藏在抽屉中，如果持久搜索字段在那里，它可能会获得焦点而实际上并未显示。"
+"**强烈建议** 您使用搜索按钮及其附带的隐藏/覆盖字段，*或者*在布局中有意义的位置使用持久搜索字段。"
 
 #: ../../user_guide/search.rst:56
 msgid "Configure the search bar text"
-msgstr ""
+msgstr "配置搜索栏文本"
 
 #: ../../user_guide/search.rst:58
 msgid ""
 "To modify the text that is in the search bar before people click on it, "
 "add the following configuration to your ``conf.py`` file:"
 msgstr ""
-
+"要修改人们在点击搜索栏之前的文本，请将以下配置添加到您的 ``conf.py`` 文件中："

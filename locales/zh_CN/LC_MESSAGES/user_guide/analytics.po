@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/analytics.rst:3
 msgid "Analytics and usage services"
-msgstr ""
+msgstr "分析与使用服务"
 
 #: ../../user_guide/analytics.rst:5
 msgid ""
@@ -31,6 +31,7 @@ msgid ""
 "sections below for relevant options depending on the analytics provider "
 "that you want to use."
 msgstr ""
+"该主题通过 ``analytics`` 选项支持多种网络分析服务。它通过传递带有选项的字典进行配置。根据您想要使用的分析提供商，请参阅以下部分以获取相关选项。"
 
 #: ../../user_guide/analytics.rst:16
 msgid ""
@@ -40,10 +41,12 @@ msgid ""
 "host a Plausible server <https://www.elvisduru.com/blog/how-to-self-host-"
 "plausible-analytics>`__."
 msgstr ""
+"一般来说，建议使用 Plausible 而不是 Google Analytics，因为它在用户安全和隐私方面有更好的表现。此外，它更加开源和透明。"
+"事实上，`您可以自托管Plausible服务器 <https://www.elvisduru.com/blog/how-to-self-host-plausible-analytics>`__。"
 
 #: ../../user_guide/analytics.rst:21
 msgid "Get a self-hosted Plausible server at ``scientific-python.org``"
-msgstr ""
+msgstr "在 ``scientific-python.org`` 上获取一个自托管的 Plausible 服务器"
 
 #: ../../user_guide/analytics.rst:24
 msgid ""
@@ -53,10 +56,12 @@ msgid ""
 "this, contact them on the social media platform of your choice and learn "
 "more at `scientific-python.org <https://scientific-python.org>`__."
 msgstr ""
+"如果您的文档属于 SciPy / PyData 生态系统中的某个包，他们或许可以在 ``https://views.scientific-python.org/<您的包名>`` 为您托管 Plausible 服务器。"
+"如需了解详情，请通过您选择的社交媒体平台与他们联系，并访问 `scientific-python.org <https://scientific-python.org>`__ 获取更多信息。"
 
 #: ../../user_guide/analytics.rst:31
 msgid "Plausible Analytics"
-msgstr ""
+msgstr "Plausible 分析"
 
 #: ../../user_guide/analytics.rst:33
 msgid ""
@@ -64,16 +69,18 @@ msgid ""
 "privacy-friendly analytics for the site. To configure, you will need to "
 "provide two things:"
 msgstr ""
+"`plausible.io <https://plausible.io>`__ 可用于为网站收集简单且注重隐私的分析数据。要进行配置，您需要提供以下两项内容："
 
 #: ../../user_guide/analytics.rst:36
 msgid ""
 "A URL pointing to the JavaScript analytics script that is served by your "
 "Plausible server"
 msgstr ""
+"指向由您的 Plausible 服务器提供的 JavaScript 分析脚本的 URL"
 
 #: ../../user_guide/analytics.rst:37
 msgid "A domain that reflects where your documentation lives"
-msgstr ""
+msgstr "反映您文档所在位置的域名"
 
 #: ../../user_guide/analytics.rst:39
 msgid ""
@@ -81,12 +88,14 @@ msgid ""
 "metrics. The dashboard with analytics results will be accessible at "
 "``https://<plausible-url>/<my-domain>``."
 msgstr ""
+"Plausible 的 JavaScript 将被包含在所有 HTML 页面中以收集指标。分析结果的仪表板可通过 ``https://<plausible-url>/<my-domain>`` 访问。"
 
 #: ../../user_guide/analytics.rst:53
 msgid ""
 "See the `Plausible Documentation <https://plausible.io/docs/plausible-"
 "script>`__ for more information about this script."
 msgstr ""
+"有关此脚本的更多信息，请参阅 `Plausible 文档 <https://plausible.io/docs/plausible-script>`__。"
 
 #: ../../user_guide/analytics.rst:56
 msgid "Google Analytics"
@@ -98,4 +107,4 @@ msgid ""
 "``G-XXXXXXXXXX``), Google Analytics' JavaScript is included in the HTML "
 "pages."
 msgstr ""
-
+"如果指定了 ``google_analytics_id`` 配置选项（例如 ``G-XXXXXXXXXX``），则 Google Analytics 的 JavaScript 将被包含在 HTML 页面中。"

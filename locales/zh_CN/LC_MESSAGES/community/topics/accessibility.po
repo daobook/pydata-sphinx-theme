@@ -77,6 +77,7 @@ msgid ""
 "We would love contributions that add more accessibility checks to our "
 "test suite."
 msgstr ""
+"“非常欢迎为测试套件添加更多可访问性检查的贡献。"
 
 #: ../../community/topics/accessibility.md:41
 msgid ""
@@ -84,18 +85,19 @@ msgid ""
 " so they are run in the cloud before we merge in new changes to the "
 "theme. We use the following tools:"
 msgstr ""
+"还将这些测试作为持续集成流程的一部分，因此在将新更改合并到主题之前，它们会在云端运行。使用以下工具："
 
 #: ../../community/topics/accessibility.md:45
 msgid "GitHub Actions to provision machines in the cloud"
-msgstr ""
+msgstr "GitHub Actions 用于在云端配置机器"
 
 #: ../../community/topics/accessibility.md:46
 msgid "`tox` to install the needed dependencies on those machines"
-msgstr ""
+msgstr "`tox`用于在这些机器上安装所需的依赖项"
 
 #: ../../community/topics/accessibility.md:47
 msgid "`Pytest` with the Playwright plug-in to run the tests."
-msgstr ""
+msgstr "`Pytest` 与Playwright插件一起运行测试。"
 
 #: ../../community/topics/accessibility.md:49
 msgid ""

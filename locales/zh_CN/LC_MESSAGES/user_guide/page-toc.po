@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../user_guide/page-toc.rst:2
 msgid "Page Table of Contents"
-msgstr ""
+msgstr "页面目录"
 
 #: ../../user_guide/page-toc.rst:5
 msgid "Show more levels of the in-page TOC by default"
-msgstr ""
+msgstr "默认显示更多级别的页面内目录"
 
 #: ../../user_guide/page-toc.rst:7
 msgid ""
@@ -34,22 +34,25 @@ msgid ""
 "table of contents and deeper levels are only shown when they are part of "
 "an active section (when it is scrolled on screen)."
 msgstr ""
+"通常，页面的二级标题会显示在右侧目录中，更深级别的标题只有在它们是活动部分的一部分时才会显示（当它在屏幕上滚动时）。"
 
 #: ../../user_guide/page-toc.rst:11
 msgid ""
 "You can show deeper levels by default by using the following "
 "configuration, indicating how many levels should be displayed:"
 msgstr ""
+"您可以使用以下配置默认显示更深级别的标题，指示应显示多少级别："
 
 #: ../../user_guide/page-toc.rst:19
 msgid ""
 "All headings up to and including the level specified will now be shown "
 "regardless of what is displayed on the page."
 msgstr ""
+"现在将显示指定级别及以下的所有标题，无论页面上显示什么。"
 
 #: ../../user_guide/page-toc.rst:23
 msgid "Remove the Table of Contents"
-msgstr ""
+msgstr "移除目录"
 
 #: ../../user_guide/page-toc.rst:25
 msgid ""
@@ -59,22 +62,26 @@ msgid ""
 "lists.html#file-wide-metadata>`_ at the top of a page. This will remove "
 "the Table of Contents from that page only."
 msgstr ""
+"要移除目录，请将 ``:html_theme.sidebar_secondary.remove:`` 添加到页面顶部的 "
+"`文件范围元数据 <https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html#file-wide-metadata>`_ 中。这将仅从该页面移除目录。"
 
 #: ../../user_guide/page-toc.rst:29
 msgid "Per-page secondary-sidebar content"
-msgstr ""
+msgstr "每页的侧边栏内容"
 
 #: ../../user_guide/page-toc.rst:31
 msgid ""
 "``html_theme_options['secondary_sidebar_items']`` accepts either a "
 "``list`` of secondary sidebar templates to render on every page:"
 msgstr ""
+"``html_theme_options['secondary_sidebar_items']`` 接受要在每页上渲染的侧边栏模板的 ``list``："
 
 #: ../../user_guide/page-toc.rst:40
 msgid ""
 "or a ``dict`` which maps page names to ``list`` of secondary sidebar "
 "templates:"
 msgstr ""
+"或 ``dict``，将页面名称映射到侧边栏模板的 ``list``："
 
 #: ../../user_guide/page-toc.rst:51
 msgid ""
@@ -86,4 +93,6 @@ msgid ""
 "see `the Sphinx documentation <https://www.sphinx-"
 "doc.org/en/master/usage/configuration.html#confval-html_sidebars>`__."
 msgstr ""
-
+"如果指定了 ``dict``，键可以包含通配符样式的模式；匹配模式的页面名称将包含指定的侧边栏模板。"
+"这紧密遵循 Sphinx 本身的 ``html_sidebars`` 选项的行为，只是它操作的是次要侧边栏而不是主要侧边栏。"
+"有关更多信息，请参阅 `Sphinx 文档 <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars>`__。"

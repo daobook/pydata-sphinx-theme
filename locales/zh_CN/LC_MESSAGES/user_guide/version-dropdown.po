@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/version-dropdown.rst:4
 msgid "Version switcher dropdowns"
-msgstr ""
+msgstr "版本切换器下拉菜单"
 
 #: ../../user_guide/version-dropdown.rst:6
 msgid ""
@@ -35,16 +35,21 @@ msgid ""
 " if it doesn't exist, will redirect to the homepage instead (in the "
 "requested version of the docs)."
 msgstr ""
+"您可以在您的站点上添加按钮，允许用户在文档的不同版本之间切换。"
+"版本切换器中的链接会根据所查看的文档页面而有所不同。"
+"例如，在页面 ``https://mysite.org/en/v2.0/changelog.html`` 上，切换器链接将指向其他版本文档中的 ``changelog.html``。"
+"当点击时，切换器将检查该页面是否存在，如果不存在，则将重定向到主页（在请求的文档版本中）。"
 
 #: ../../user_guide/version-dropdown.rst:14
 msgid "The switcher requires the following configuration steps:"
-msgstr ""
+msgstr "切换器需要以下配置步骤："
 
 #: ../../user_guide/version-dropdown.rst:16
 msgid ""
 "Add a JSON file containing a list of the documentation versions that the "
 "switcher should show on each page."
 msgstr ""
+"添加 JSON 文件，其中包含切换器应在每个页面上显示的文档版本列表。"
 
 #: ../../user_guide/version-dropdown.rst:19
 msgid ""
@@ -52,16 +57,18 @@ msgid ""
 "``html_theme_options`` dict in ``conf.py``. ``switcher`` should have 2 "
 "keys:"
 msgstr ""
+"在 ``conf.py`` 中的 ``html_theme_options`` 字典中添加名为 ``switcher`` 的配置字典。``switcher`` 应包含 2 个键："
 
 #: ../../user_guide/version-dropdown.rst:22
 msgid "``json_url``: the persistent location of the JSON file described above."
-msgstr ""
+msgstr "``json_url``：上述 JSON 文件的持久位置。"
 
 #: ../../user_guide/version-dropdown.rst:23
 msgid ""
 "``version_match``: a string stating the version of the documentation that"
 " is currently being browsed."
 msgstr ""
+"``version_match``：字符串，表示当前正在浏览的文档版本。"
 
 #: ../../user_guide/version-dropdown.rst:26
 msgid ""
@@ -69,10 +76,11 @@ msgid ""
 " the ``\"version-switcher\"`` template to one of the layout lists in "
 "``html_theme_options`` (e.g., ``navbar_end``, ``footer_start``, etc.)."
 msgstr ""
+"指定切换器在页面布局中的位置。例如，将 ``\"version-switcher\"`` 模板添加到 ``html_theme_options`` 中的某个布局列表中（例如 ``navbar_end``、``footer_start`` 等）。"
 
 #: ../../user_guide/version-dropdown.rst:30
 msgid "Below is a more in-depth description of each of these configuration steps."
-msgstr ""
+msgstr "以下是这些配置步骤的更详细说明。"
 
 #: ../../user_guide/version-dropdown.rst:33
 msgid ""
@@ -83,6 +91,8 @@ msgid ""
 "JSON data source** and you'll end up with an empty switcher menu. "
 "Possible work-arounds are:"
 msgstr ""
+"现代网络浏览器不允许在通过 ``file:`` 协议加载的页面发出请求时加载数据。"
+"这意味着如果您在本地构建文档并直接在浏览器中打开其中一个页面，**版本切换器将无法加载其 JSON 数据源**，最终您将得到空的切换器菜单。可能的解决方法包括："
 
 #: ../../user_guide/version-dropdown.rst:35
 msgid ""
@@ -90,16 +100,18 @@ msgid ""
 " builtin module for this: "
 "https://docs.python.org/3/library/http.server.html)."
 msgstr ""
+"通过本地 Web 服务器查看本地构建的文件（Python 为此提供了内置模块：https://docs.python.org/3/library/http.server.html）。"
 
 #: ../../user_guide/version-dropdown.rst:36
 msgid ""
 "Disabling your browser's security settings (either by passing a command-"
 "line flag when launching the browser, or through a browser add-on)."
 msgstr ""
+"禁用浏览器的安全设置（通过在启动浏览器时传递命令行标志，或通过浏览器插件）。"
 
 #: ../../user_guide/version-dropdown.rst:40
 msgid "Add a JSON file to define your switcher's versions"
-msgstr ""
+msgstr "添加 JSON 文件来定义切换器的版本"
 
 #: ../../user_guide/version-dropdown.rst:42
 msgid ""
@@ -107,22 +119,25 @@ msgid ""
 "listed in the switcher's dropdown menu. That file should contain a list "
 "of entries that each can have the following fields:"
 msgstr ""
+"首先，编写 JSON 文件，说明切换器的下拉菜单中将列出哪些版本的文档。该文件应包含条目列表，每个条目可以包含以下字段："
 
 #: ../../user_guide/version-dropdown.rst:46
 msgid ""
 "``version``: a version string. This is checked against "
 "``switcher['version_match']`` to provide styling to the switcher."
 msgstr ""
+"``version``：版本字符串。这将与 ``switcher['version_match']`` 进行比对，以提供切换器的样式。"
 
 #: ../../user_guide/version-dropdown.rst:48
 msgid "``url``: the URL for this version."
-msgstr ""
+msgstr "``url``：此版本的 URL。"
 
 #: ../../user_guide/version-dropdown.rst:49
 msgid ""
 "``name``: an optional name to display in the switcher dropdown instead of"
 " the version string (e.g., \"latest\", \"stable\", \"dev\", etc.)."
 msgstr ""
+"``name``：可选名称，用于在切换器下拉菜单中显示，而不是版本字符串（例如，“latest”、“stable”、“dev”等）。"
 
 #: ../../user_guide/version-dropdown.rst:51
 msgid ""
@@ -131,20 +146,23 @@ msgid ""
 "stable\", and is used to customize the message used on :ref:`version-"
 "warning-banners` (if they are enabled)."
 msgstr ""
+"``preferred``：可选字段，*在 JSON 文件中最多应出现一次*。"
+"它指定哪个版本被视为“最新稳定版”，并用于自定义 :ref:`version-warning-banners` 上使用的消息（如果启用）。"
 
 #: ../../user_guide/version-dropdown.rst:54
 msgid "Here is an example JSON file:"
-msgstr ""
+msgstr "以下是示例 JSON 文件："
 
 #: ../../user_guide/version-dropdown.rst:78
 msgid ""
 "See the discussion of ``switcher['json_url']`` (below) for options of "
 "where to save the JSON file."
 msgstr ""
+"有关保存 JSON 文件的位置选项，请参阅 ``switcher['json_url']`` 的讨论（如下）。"
 
 #: ../../user_guide/version-dropdown.rst:83
 msgid "Configure ``switcher['json_url']``"
-msgstr ""
+msgstr "配置 ``switcher['json_url']``"
 
 #: ../../user_guide/version-dropdown.rst:85
 msgid ""
@@ -155,6 +173,8 @@ msgid ""
 "versions of the docs will gain switcher dropdown entries linking to the "
 "new versions. This could be done in a few different ways:"
 msgstr ""
+"*JSON 文件需要位于稳定、持久、完全解析的 URL* （即，不能指定为相对于当前文档构建的 sphinx 根目录的路径）。"
+"每个版本的文档都应指向相同的 URL，以便在将新版本添加到 JSON 文件时，所有旧版本文档都将获得指向新版本的切换器下拉菜单条目。这可以通过几种不同的方式完成："
 
 #: ../../user_guide/version-dropdown.rst:92
 msgid ""
@@ -163,6 +183,7 @@ msgid ""
 "most recent version, it could point to a location in the build tree of "
 "version \"latest\"). For example:"
 msgstr ""
+"该位置可以始终与最新文档构建相关联（即，如果您的文档服务器将“latest”别名为最新版本，它可以指向版本“latest”的构建树中的某个位置）。例如："
 
 #: ../../user_guide/version-dropdown.rst:106
 msgid ""
@@ -170,6 +191,7 @@ msgid ""
 "but only the most recent version is ever loaded (even by older versions "
 "of the docs)."
 msgstr ""
+"在这种情况下，JSON 与其余文档页面一起进行版本控制，但只有最新版本会被加载（即使由旧版本文档加载）。"
 
 #: ../../user_guide/version-dropdown.rst:110
 msgid ""
@@ -178,6 +200,7 @@ msgid ""
 "version entries to the JSON file manually as part of your release "
 "process. Example:"
 msgstr ""
+"JSON 可以存储在文档构建树之外。这可能意味着它将在软件仓库之外，并且需要您在发布过程中手动将新版本条目添加到 JSON 文件中。示例："
 
 #: ../../user_guide/version-dropdown.rst:123
 msgid ""
@@ -189,6 +212,8 @@ msgid ""
 "for more information but do so knowing that we do not support this use "
 "case."
 msgstr ""
+"理论上，JSON 可以保存在您站点的 ``html_static_path`` 配置下列出的文件夹中，**但不推荐这样做**。如果您想以这种方式进行，"
+"请参阅 `Sphinx 静态路径文档 <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path>`_ 了解更多信息，但请注意我们不支持此用例。"
 
 #: ../../user_guide/version-dropdown.rst:129
 msgid ""
@@ -197,10 +222,12 @@ msgid ""
 " your docs, the test can be disabled by configuring the "
 ":code:`check_switcher` parameter in :code:`conf.py`:"
 msgstr ""
+"默认情况下，主题正在测试提供的 :code:`.json` 文件并在 Sphinx 构建中输出警告。"
+"如果此测试破坏了您的文档管道，可以通过在 :code:`conf.py` 中配置 :code:`check_switcher` 参数来禁用该测试："
 
 #: ../../user_guide/version-dropdown.rst:139
 msgid "Configure ``switcher['version_match']``"
-msgstr ""
+msgstr "配置 ``switcher['version_match']``"
 
 #: ../../user_guide/version-dropdown.rst:141
 msgid ""
@@ -209,6 +236,7 @@ msgid ""
 "highlight the current docs version in the switcher's dropdown menu, and "
 "to change the text displayed on the switcher button)."
 msgstr ""
+"此配置值告诉切换器当前正在查看的文档版本，并用于设置切换器的样式（即，在切换器的下拉菜单中突出显示当前文档版本，并更改切换器按钮上显示的文本）。"
 
 #: ../../user_guide/version-dropdown.rst:146
 msgid ""
@@ -219,10 +247,12 @@ msgid ""
 "doc.org/en/master/usage/configuration.html#project-information>`__ for "
 "more information). Example:"
 msgstr ""
+"通常，您可以重用 sphinx 变量 ``version`` 或 ``release`` 之一作为 ``switcher['version_match']`` 的值；使用哪一个取决于您的文档版本控制的粒度。"
+"有关更多信息，请参阅 `Sphinx \"项目信息\" 文档 <https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information>`__。示例："
 
 #: ../../user_guide/version-dropdown.rst:165
 msgid "Specify where to display the switcher"
-msgstr ""
+msgstr "指定切换器的显示位置"
 
 #: ../../user_guide/version-dropdown.rst:167
 msgid ""
@@ -231,6 +261,8 @@ msgid ""
 "switcher\"`` to one of the locations in ``html_theme_options`` (e.g., "
 "``navbar_end``, ``footer_start``, etc). For example:"
 msgstr ""
+"最后，告诉主题您希望切换器在站点页面上的哪个位置显示。"
+"这里有很多选择：您可以将 ``\"version-switcher\"`` 添加到 ``html_theme_options`` 中的某个位置（例如 ``navbar_end``、``footer_start`` 等）。例如："
 
 #: ../../user_guide/version-dropdown.rst:180
 msgid ""
@@ -238,6 +270,7 @@ msgid ""
 "the version switcher in a sidebar. For example, you could define "
 "``_templates/sidebar-nav-bs.html`` as:"
 msgstr ""
+"或者，您可以覆盖其他模板之一，将版本切换器包含在侧边栏中。例如，您可以定义 ``_templates/sidebar-nav-bs.html`` 为："
 
 #: ../../user_guide/version-dropdown.rst:189
 msgid ""
@@ -245,10 +278,11 @@ msgid ""
 "still keeping the default navigation below it. See :doc:`layout` for more"
 " information."
 msgstr ""
+"将版本切换器插入到主要侧边栏的顶部，同时仍保留其下方的默认导航。有关更多信息，请参阅 :doc:`layout`。"
 
 #: ../../user_guide/version-dropdown.rst:194
 msgid "Style the switcher buttons"
-msgstr ""
+msgstr "设置切换器按钮的样式"
 
 #: ../../user_guide/version-dropdown.rst:196
 msgid ""
@@ -258,16 +292,19 @@ msgid ""
 "that you can use to apply CSS rules to subsets of buttons. These entries "
 "are:"
 msgstr ""
+"您可以通过 CSS 将样式应用于任何切换器按钮以控制其外观和感觉。"
+"每个按钮都有两个 `HTML 数据集条目 <https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_，您可以使用它们将 CSS 规则应用于按钮的子集。这些条目是："
 
 #: ../../user_guide/version-dropdown.rst:205
 msgid ""
 "For example, the link for an entry with ``version=\"0.2\"``, and "
 "``name=\"My version\"`` would have metadata like so:"
 msgstr ""
+"例如，具有 ``version=\"0.2\"`` 和 ``name=\"My version\"`` 的条目的链接将具有如下元数据："
 
 #: ../../user_guide/version-dropdown.rst:212
 msgid "You can create CSS rules that select this metadata like so:"
-msgstr ""
+msgstr "您可以创建选择此元数据的 CSS 规则，如下所示："
 
 #: ../../user_guide/version-dropdown.rst:226
 msgid ""
@@ -275,6 +312,7 @@ msgid ""
 "metadata about the **current version**. This could be used to style the "
 "entire dropdown a certain color based on the active version."
 msgstr ""
+"此外，下拉列表的父按钮包含有关 **当前版本** 的类似元数据。这可以用于根据活动版本为整个下拉列表设置特定颜色。"
 
 #: ../../user_guide/version-dropdown.rst:230
 msgid ""
@@ -282,6 +320,7 @@ msgid ""
 "theme's secondary color (PyData orange by default) if it was a ``dev`` "
 "version, you could use the following CSS selector:"
 msgstr ""
+"例如，如果您希望在下拉按钮是 ``dev`` 版本时使用主题的次要颜色（默认为 PyData 橙色）设置其样式，您可以使用以下 CSS 选择器："
 
 #: ../../user_guide/version-dropdown.rst:242
 msgid ""
@@ -289,4 +328,4 @@ msgid ""
 "<https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_ "
 "for more information on using and styling these properties."
 msgstr ""
-
+"有关使用和设置这些属性的更多信息，请参阅 `MDN 数据集属性文档 <https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset>`_。"

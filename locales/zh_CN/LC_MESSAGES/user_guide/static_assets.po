@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/static_assets.md:1
 msgid "Add custom CSS and JS assets"
-msgstr ""
+msgstr "添加自定义 CSS 和 JS 资源"
 
 #: ../../user_guide/static_assets.md:3
 msgid ""
@@ -30,18 +30,19 @@ msgid ""
 "to add custom CSS or JavaScript to your theme. Since this is a common "
 "operation we cover a few ways to do this here."
 msgstr ""
+"如果您想修改此主题或页面上的部分内容，您需要向主题添加自定义 CSS 或 JavaScript。由于这是常见操作，在这里介绍几种方法。"
 
 #: ../../user_guide/static_assets.md:6
 msgid "Sample site structure"
-msgstr ""
+msgstr "示例站点结构"
 
 #: ../../user_guide/static_assets.md:7
 msgid "In all examples below, assume we have a site structure like this:"
-msgstr ""
+msgstr "在以下所有示例中，假设有如下所示的站点结构："
 
 #: ../../user_guide/static_assets.md:18
 msgid "First: define your `html_static_path`"
-msgstr ""
+msgstr "首先：定义您的 `html_static_path`"
 
 #: ../../user_guide/static_assets.md:20
 msgid ""
@@ -51,12 +52,15 @@ msgid ""
 "example, with an HTML builder, files will be copied to "
 "`_build/html/_static`."
 msgstr ""
+"`html_static_path` 中列出的任何文件夹都将被视为包含构建的静态资源。"
+"这些文件夹中的所有文件都将在构建时复制到构建的 `_static` 文件夹中。例如，使用 HTML 构建器时，文件将复制到 `_build/html/_static` 中。"
 
 #: ../../user_guide/static_assets.md:24
 msgid ""
 "These files are _flattened_ when they are copied, so any folder "
 "hierarchies will be lost."
 msgstr ""
+"这些文件在复制时会被 *扁平化*，因此任何文件夹层次结构都会丢失。"
 
 #: ../../user_guide/static_assets.md:26
 msgid ""
@@ -65,10 +69,11 @@ msgid ""
 "described below, they generally assume paths that are _relative to this "
 "`_static` output folder_."
 msgstr ""
+"列出包含静态资源的文件夹必须在以下任何方法之前完成。当您在以下方法中定义资源名称时，它们通常假定路径是 *相对于此 `_static` 输出文件夹* 的。"
 
 #: ../../user_guide/static_assets.md:29
 msgid "Define a list of assets in `conf.py`"
-msgstr ""
+msgstr "在 `conf.py` 中定义资源列表"
 
 #: ../../user_guide/static_assets.md:31
 msgid ""
@@ -81,10 +86,12 @@ msgid ""
 "`html_static_path`_. They will be added to the end of the `<head>` of "
 "your site."
 msgstr ""
+"添加 JS 和 CSS 资源的最简单方法是在 `conf.py` 文件中使用 [`html_css_files`](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_css_files) 和 [`html_js_files`](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_js_files)。"
+"每个都可以是路径列表，*相对于您的 `html_static_path`*。它们将添加到站点 `<head>` 的末尾。"
 
 #: ../../user_guide/static_assets.md:35 ../../user_guide/static_assets.md:91
 msgid "For example:"
-msgstr ""
+msgstr "示例："
 
 #: ../../user_guide/static_assets.md:37 ../../user_guide/static_assets.md:63
 #: ../../user_guide/static_assets.md:93
@@ -93,11 +100,11 @@ msgstr ""
 
 #: ../../user_guide/static_assets.md:47
 msgid "This will cause each to be linked in your `<head>`."
-msgstr ""
+msgstr "这将导致每个文件在您的 `<head>` 中被链接。"
 
 #: ../../user_guide/static_assets.md:49
 msgid "Add assets to your setup function"
-msgstr ""
+msgstr "将资源添加到您的 setup 函数中"
 
 #: ../../user_guide/static_assets.md:51
 msgid ""
@@ -106,6 +113,8 @@ msgid ""
 "doc.org/en/master/extdev/appapi.html#extension-setup). The `app` object "
 "has two relevant methods here:"
 msgstr ""
+"此外，您可以手动添加资源，为此，"
+"请使用 [Sphinx `setup()` 函数](https://www.sphinx-doc.org/en/master/extdev/appapi.html#extension-setup) 中的 `app` 对象。`app` 对象在这里有两个相关方法："
 
 #: ../../user_guide/static_assets.md:54
 msgid ""
@@ -113,6 +122,7 @@ msgid ""
 "doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_css_file)"
 " allows you to add CSS files directly."
 msgstr ""
+"[**`app.add_css_file`**](https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_css_file) 允许您直接添加 CSS 文件。"
 
 #: ../../user_guide/static_assets.md:56
 msgid ""
@@ -120,6 +130,7 @@ msgid ""
 "doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_js_file)"
 " allows you to add JS files directly."
 msgstr ""
+"[**`app.add_js_file`**](https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_js_file) 允许您直接添加 JS 文件。"
 
 #: ../../user_guide/static_assets.md:58
 msgid ""
@@ -132,10 +143,11 @@ msgid ""
 "In addition, `app.add_js_file` allows you to add _raw JavaScript_ in "
 "addition to linking files (see example below). For example:"
 msgstr ""
+"两者都希望您添加 **相对于 `html_static_path`** 的文件。"
 
 #: ../../user_guide/static_assets.md:82
 msgid "Use an event to add it to specific pages"
-msgstr ""
+msgstr "使用事件将其添加到特定页面"
 
 #: ../../user_guide/static_assets.md:84
 msgid ""
@@ -148,6 +160,9 @@ msgid ""
 "doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.connect) "
 "to connect it to your build."
 msgstr ""
+"如果您想使用逻辑仅将脚本添加到某些页面或根据页面触发不同的行为，请使用 [Sphinx 事件钩子](https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx-core-events)。"
+"这涉及定义在 Sphinx 构建中发出特定事件时运行的函数，"
+"并使用 [`app.connect()`](https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.connect) 将其连接到您的构建。"
 
 #: ../../user_guide/static_assets.md:87
 msgid ""
@@ -157,10 +172,12 @@ msgid ""
 "created. If you run `app.add_js_file` or `app.add_css_file`, it will "
 "_only be added for that page_."
 msgstr ""
+"您可能想要使用的事件是 [`html-page-context`](https://www.sphinx-doc.org/en/master/extdev/appapi.html#event-html-page-context)。"
+"这是在为 *单个页面* 创建 HTML 之前触发的。如果您运行 `app.add_js_file` 或 `app.add_css_file`，它将 *仅添加到该页面*。"
 
 #: ../../user_guide/static_assets.md:109
 msgid "Add it directly to the page content"
-msgstr ""
+msgstr "直接将其添加到页面内容中"
 
 #: ../../user_guide/static_assets.md:111
 msgid ""
@@ -169,6 +186,8 @@ msgid ""
 "using MyST Markdown you can simply include the HTML content in-line with "
 "your Markdown-formatted content."
 msgstr ""
+"最后，您可以直接将 CSS 或 JS 添加到页面内容中。"
+"如果您使用 reStructuredText，可以使用 `.. raw::` 指令；如果您使用 MyST Markdown，可以简单地将 HTML 内容内联到 Markdown 格式的内容中。"
 
 #: ../../user_guide/static_assets.md
 msgid "rST"

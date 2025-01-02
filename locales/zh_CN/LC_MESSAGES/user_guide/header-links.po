@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/header-links.rst:3
 msgid "Header links"
-msgstr ""
+msgstr "页眉链接"
 
 #: ../../user_guide/header-links.rst:5
 msgid ""
@@ -31,10 +31,11 @@ msgid ""
 "links and components that you can add. These sections cover a few things "
 "you can control with the Header Navigation Bar."
 msgstr ""
+"页眉导航栏位于每个页面的顶部，包含文档中页面的顶级导航，以及您可以添加的额外链接和组件。这些部分涵盖了您可以通过页眉导航栏控制的几项内容。"
 
 #: ../../user_guide/header-links.rst:9
 msgid "Navigation Bar External links"
-msgstr ""
+msgstr "导航栏外部链接"
 
 #: ../../user_guide/header-links.rst:11
 msgid ""
@@ -43,10 +44,11 @@ msgid ""
 " that they point to an external site. You can add external links to the "
 "nav bar like so:"
 msgstr ""
+"您可以向导航栏添加外部链接。这些链接将显示在网站主要链接的右侧，并带有小图标，表示它们指向外部站点。您可以像这样向导航栏添加外部链接："
 
 #: ../../user_guide/header-links.rst:26
 msgid "Navigation bar dropdown links"
-msgstr ""
+msgstr "导航栏下拉链接"
 
 #: ../../user_guide/header-links.rst:28
 msgid ""
@@ -56,6 +58,8 @@ msgid ""
 "\"More\". This prevents the header links from taking up so much space "
 "that they crowd out the UI components or spill off-screen."
 msgstr ""
+"默认情况下，此主题将在标题中显示前 **五个** 导航链接（包括顶级链接和外部链接）。"
+"它将剩余的标题链接放入名为“更多”的 **下拉菜单** 中。这可以防止标题链接占用过多空间，以至于挤占 UI 组件或溢出屏幕。"
 
 #: ../../user_guide/header-links.rst:32
 msgid ""
@@ -64,10 +68,11 @@ msgid ""
 "variable. For example, to change the number of displayed header links to "
 "be ``4`` instead of ``5``:"
 msgstr ""
+"要控制在放入下拉菜单之前显示的标题链接数量，请使用 ``header_links_before_dropdown`` 主题配置变量。例如，将显示的标题链接数量更改为 ``4`` 而不是 ``5``："
 
 #: ../../user_guide/header-links.rst:44
 msgid "Icon links"
-msgstr ""
+msgstr "图标链接"
 
 #: ../../user_guide/header-links.rst:46
 msgid ""
@@ -75,24 +80,26 @@ msgid ""
 "or external site. They are helpful if you wish to display social media "
 "icons, GitHub badges, or project logos."
 msgstr ""
+"图标链接是一组图片和图标的集合，每个图标都链接到页面或外部网站。如果你想展示社交媒体图标、GitHub徽章或项目标志，它们会非常有用。"
 
 #: ../../user_guide/header-links.rst:49
 msgid "These links take the following form:"
-msgstr ""
+msgstr "这些链接的形式如下："
 
 #: ../../user_guide/header-links.rst:70
 msgid ""
 "Additionally, the screen-reader accessible label for this menu can be "
 "configured:"
 msgstr ""
+"此外，可以为这个菜单配置屏幕阅读器可访问的标签："
 
 #: ../../user_guide/header-links.rst:80
 msgid "There are two kinds of icons you can use, described below:"
-msgstr ""
+msgstr "您可以使用的图标有两种类型，具体描述如下："
 
 #: ../../user_guide/header-links.rst:83
 msgid "FontAwesome icons"
-msgstr ""
+msgstr "FontAwesome 图标"
 
 #: ../../user_guide/header-links.rst:85
 msgid ""
@@ -100,6 +107,7 @@ msgid ""
 "are commonly used in websites. They include both generic shape icons "
 "(e.g., \"arrow-down\"), and brand-specific icons (e.g. \"GitHub\")."
 msgstr ""
+"`FontAwesome <https://fontawesome.com/>`_ 是常用于网站中的图标集合。它包含通用形状图标（例如“arrow-down”），以及特定品牌的图标（例如“GitHub”）。"
 
 #: ../../user_guide/header-links.rst:89
 msgid ""
@@ -110,26 +118,31 @@ msgid ""
 "main icon class, e.g. ``fa-cat``, the \"style\" class must also be "
 "provided e.g. `fa-brands` for *branding*, or `fa-solid` for *solid*."
 msgstr ""
+"您可以通过指定 ``\"type\": \"fontawesome\"`` 来使用 FontAwesome 图标，并在 ``icon`` 值中指定 FontAwesome 类。"
+"``icon`` 的值可以是任何完整的 `FontAwesome 6 Free <https://fontawesome.com/search?o=r&m=free>`__ 图标。"
+"除了主图标类（例如 ``fa-cat``），还必须提供“样式”类，例如用于 *品牌* 图标的 `fa-brands`，或用于 *实心* 图标的 `fa-solid`。"
 
 #: ../../user_guide/header-links.rst:96
 msgid "Here are several examples:"
-msgstr ""
+msgstr "有结果例子："
 
 #: ../../user_guide/header-links.rst:132
 msgid ""
 "To get custom colors like \"Twitter blue\", use the following in your "
 "CSS, e.g. ``custom.css``:"
 msgstr ""
+"要获得像“Twitter 蓝色”这样的自定义颜色，请在你的 CSS 文件（例如 ``custom.css``）中使用以下代码："
 
 #: ../../user_guide/header-links.rst:141
 msgid ""
 "This has already been added for the brands that have *shortcuts* "
 "(:ref:`see below <icon-link-shortcuts>`)."
 msgstr ""
+"这已经为具有 *快捷方式* 的品牌添加完毕（:ref:`参见下文 <icon-link-shortcuts>`）。"
 
 #: ../../user_guide/header-links.rst:144
 msgid "Image icons"
-msgstr ""
+msgstr "图片图标"
 
 #: ../../user_guide/header-links.rst:146
 msgid ""
@@ -138,16 +151,18 @@ msgid ""
 "that will be used for the icon. You may also use ``.svg`` images as if "
 "they were FontAwesome with a little additional setup."
 msgstr ""
+"如果您希望显示的图标图像不在 FontAwesome 图标库中，您可以指定 URL 或本地图像的路径来作为图标。您还可以通过一些额外的设置，将 ``.svg`` 图像像 FontAwesome 图标一样使用。"
 
 #: ../../user_guide/header-links.rst:151
 msgid "Bitmap image icons"
-msgstr ""
+msgstr "位图图像图标"
 
 #: ../../user_guide/header-links.rst:153
 msgid ""
 "For all bitmap image icons such as ``.png``, ``.jpg``, etc., you must "
 "specify ``type`` as local."
 msgstr ""
+"对于所有位图图像图标，例如 ``.png``、``.jpg`` 等，您必须将 ``type`` 指定为 local。"
 
 #: ../../user_guide/header-links.rst:157
 msgid ""
@@ -155,12 +170,14 @@ msgid ""
 "document using ``<img>`` tags. If you need features specific to objects "
 "in the ``svg`` class please see :ref:`svg image icons <svg-image-icons>`"
 msgstr ""
+"所有带有 ``\"type\": \"local\"`` 的图标图像都会使用 ``<img>`` 标签插入到文档中。如果您需要 ``svg`` 类对象特有的功能，请参阅 :ref:`svg 图像图标 <svg-image-icons>`。"
 
 #: ../../user_guide/header-links.rst:160
 msgid ""
 "**To display an image on the web**, use ``\"type\": \"url\"``, and "
 "provide a URL to an image in the ``icon`` value. For example:"
 msgstr ""
+"**要在网页上显示图像**，请使用 ``\"type\": \"url\"``，并在 ``icon`` 值中提供图像的 URL。例如："
 
 #: ../../user_guide/header-links.rst:179
 msgid ""
@@ -168,16 +185,18 @@ msgid ""
 "\"local\"``, and add a path to an image relative to your documentation "
 "root in the ``icon`` value. For example:"
 msgstr ""
+"**要从文件路径显示本地图像**，请使用 ``\"type\": \"local\"``，并在 ``icon`` 值中添加相对于文档根目录的图像路径。例如："
 
 #: ../../user_guide/header-links.rst:200
 msgid ""
 "Use ``.svg`` images for a higher-resolution output that behaves similarly"
 " across screen sizes."
 msgstr ""
+"使用 ``.svg`` 图像可以获得更高分辨率的输出，并且在不同的屏幕尺寸上表现一致。"
 
 #: ../../user_guide/header-links.rst:205
 msgid "SVG image icons"
-msgstr ""
+msgstr "SVG 图像图标"
 
 #: ../../user_guide/header-links.rst:207
 msgid ""
@@ -185,6 +204,7 @@ msgid ""
 "by HTML you will need to set up the ``.svg`` to be used as a FontAwesome "
 "type icon. This is a fairly straightforward process:"
 msgstr ""
+"为了充分利用 HTML 提供的 ``.svg`` 图像的全部功能集，您需要将 ``.svg`` 设置为用作 FontAwesome 类型的图标。这是相当简单的过程："
 
 #: ../../user_guide/header-links.rst:210
 msgid ""
@@ -193,32 +213,34 @@ msgid ""
 "(typically ``source/js``) and rename the file however you like. "
 "Highlighted below are the lines which must be modified"
 msgstr ""
+"将位于 ``docs`` 目录树中的 ``custom-icon.js`` 文件内容复制到您的文档源代码的适当目录中（通常是 ``source/js``），并随意重命名该文件。下面突出显示了必须修改的行："
 
 #: ../../user_guide/header-links.rst:226
 msgid "Update the following file contents:"
-msgstr ""
+msgstr "更新以下文件内容："
 
 #: ../../user_guide/header-links.rst:228
 msgid "``iconName``  to be one of our choosing"
-msgstr ""
+msgstr "将 ``iconName`` 更改为我们选择的名称"
 
 #: ../../user_guide/header-links.rst:229
 msgid "Change the viewbox height and width to match that of your icon"
-msgstr ""
+msgstr "调整 viewbox 的高度和宽度以匹配您的图标尺寸"
 
 #: ../../user_guide/header-links.rst:230
 msgid "Replace the SVG path string with the path which defines your custom icon"
-msgstr ""
+msgstr "将 SVG 路径字符串替换为定义您自定义图标的路径"
 
 #: ../../user_guide/header-links.rst:232
 msgid ""
 "Add the relative path from your source directory to the custom javascript"
 " file to your ``conf.py``:"
 msgstr ""
+"将自定义 JavaScript 文件相对于源目录的路径添加到您的 ``conf.py`` 中："
 
 #: ../../user_guide/header-links.rst:242
 msgid "Set up the icon link in the ``html_theme_options`` as a FontAwesome icon:"
-msgstr ""
+msgstr "在 ``html_theme_options`` 中将图标链接设置为 FontAwesome 图标："
 
 #: ../../user_guide/header-links.rst:259
 msgid ""
@@ -226,10 +248,11 @@ msgid ""
 "``<img>``! You can reference your custom FontAwesome icon in CSS using "
 "``fa-<custom-name>``."
 msgstr ""
+"就这样，您的图标现在将通过 ``<svg>`` 标签插入，而不是 ``<img>``！您可以在 CSS 中使用 ``fa-<自定义名称>`` 来引用您的自定义 FontAwesome 图标。"
 
 #: ../../user_guide/header-links.rst:264
 msgid "Icon Link Shortcuts"
-msgstr ""
+msgstr "图标链接快捷方式"
 
 #: ../../user_guide/header-links.rst:266
 msgid ""
@@ -237,10 +260,11 @@ msgid ""
 "commonly-used services. These may be removed in a future release in favor"
 " of ``icon_links``:"
 msgstr ""
+"为了简化常用服务的配置，支持一些快捷方式。这些快捷方式可能会在未来的版本中被移除，转而支持 ``icon_links``："
 
 #: ../../user_guide/header-links.rst:282
 msgid "Add custom attributes to icon links"
-msgstr ""
+msgstr "为图标链接添加自定义属性"
 
 #: ../../user_guide/header-links.rst:284
 msgid ""
@@ -249,16 +273,19 @@ msgid ""
 " use the pattern ``\"attributes\": {\"attribute1\": \"value1\"}`` in a "
 "given icon link entry."
 msgstr ""
+"您可以为图标链接的链接元素（``<a>``）添加自定义属性。"
+"如果您需要自定义链接行为，这将非常有用。为此，请在给定的图标链接条目中使用模式 ``\"attributes\": {\"attribute1\": \"value1\"}``。"
 
 #: ../../user_guide/header-links.rst:288
 msgid ""
 "For example, to specify a custom ``target`` and ``rel`` attribute, and to"
 " define your custom link classes:"
 msgstr ""
+"例如，要指定自定义的 ``target`` 和 ``rel`` 属性，并定义您的自定义链接类："
 
 #: ../../user_guide/header-links.rst:313
 msgid ""
 "This might make your icon links behave unexpectedly and might override "
 "the default behavior, so make sure you know what you're doing!"
 msgstr ""
-
+"这可能会使您的图标链接行为异常，并可能覆盖默认行为，因此请确保您知道自己在做什么！"

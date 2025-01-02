@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/ablog.md:1
 msgid "Blogs with `ABlog`"
-msgstr ""
+msgstr "使用 `ABlog` 的博客"
 
 #: ../../user_guide/ablog.md:3
 msgid ""
@@ -31,28 +31,30 @@ msgid ""
 "for your blog. It also has several sidebar templates to show off "
 "collections of your posts."
 msgstr ""
+"[ABlog 插件](https://ablog.readthedocs.io/) 允许您将页面标记为 **博客文章**，并将它们包含在博客的 landing 页中。它还具有多个侧边栏模板，用于展示您的文章集合。"
 
 #: ../../user_guide/ablog.md:6
 msgid "Minimum version ABlog v0.11.0"
-msgstr ""
+msgstr "最低版本 ABlog v0.11.0"
 
 #: ../../user_guide/ablog.md:7
 msgid "Make sure you have `ABlog>=0.11.0rc2` in your dependencies."
-msgstr ""
+msgstr "请确保您的依赖项中包含`ABlog>=0.11.0rc2`。"
 
 #: ../../user_guide/ablog.md:10
 msgid ""
 "This theme has styling support for ABlog and demonstrates some of its "
 "functionality here."
 msgstr ""
+"此主题支持 ABlog 的样式，并在此展示其部分功能。"
 
 #: ../../user_guide/ablog.md:12
 msgid "Example blog"
-msgstr ""
+msgstr "示例博客"
 
 #: ../../user_guide/ablog.md:14
 msgid "Click below to go to the blog"
-msgstr ""
+msgstr "点击下方进入博客"
 
 #: ../../user_guide/ablog.md:16
 msgid "Go to the blog"
@@ -60,5 +62,5 @@ msgstr ""
 
 #: ../../user_guide/ablog.md:21
 msgid "Example post list"
-msgstr ""
+msgstr "示例文章列表"
 

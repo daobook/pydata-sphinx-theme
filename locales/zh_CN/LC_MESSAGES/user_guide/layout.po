@@ -233,7 +233,7 @@ msgid ""
 "When configuring templates in each section, you may omit the ``.html`` "
 "suffix after each template if you wish."
 msgstr ""
-"在配置每个部分的模板时，如果您愿意，可以省略每个模板后的``.html``后缀。"
+"在配置每个部分的模板时，如果您愿意，可以省略每个模板后的 ``.html`` 后缀。"
 
 #: ../../user_guide/layout.rst:241
 msgid "Header / Navigation Bar"
@@ -632,7 +632,7 @@ msgid ""
 "a ``meta`` tag in the HTML header, which can be inspected by viewing the "
 "page source or extracted with an HTML parser. The tag will look like:"
 msgstr ""
-"“如果您确实指定了 ``html_last_updated_fmt`` 但未包含 :code:`last-updated` 模板，主题仍会将构建日期写入 HTML 头部的 ``meta`` 标签中，"
+"如果您确实指定了 ``html_last_updated_fmt`` 但未包含 :code:`last-updated` 模板，主题仍会将构建日期写入 HTML 头部的 ``meta`` 标签中，"
 "可以通过查看页面源代码或使用 HTML 解析器提取。该标签将如下所示："
 
 #: ../../user_guide/layout.rst:583

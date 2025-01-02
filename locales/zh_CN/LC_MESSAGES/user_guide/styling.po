@@ -22,17 +22,18 @@ msgstr ""
 
 #: ../../user_guide/styling.rst:3
 msgid "Theme variables and CSS"
-msgstr ""
+msgstr "主题变量和 CSS"
 
 #: ../../user_guide/styling.rst:8
 msgid ""
 "This section covers a few ways that you can control the look and feel of "
 "your theme via your own CSS and theme variables."
 msgstr ""
+"本节介绍了几种通过您自己的 CSS 和主题变量控制主题外观的方法。"
 
 #: ../../user_guide/styling.rst:13
 msgid "Custom CSS Stylesheets"
-msgstr ""
+msgstr "定制 CSS 样式表"
 
 #: ../../user_guide/styling.rst:15
 msgid ""
@@ -40,38 +41,43 @@ msgid ""
 "stylesheet will be used by Sphinx while building your site. Any rules in "
 "this style sheet will override the default theme rules."
 msgstr ""
+"你可以通过创建自定义样式表来定制主题的 CSS。Sphinx 在构建你的网站时将使用这个样式表。该样式表中的任何规则都将覆盖默认主题的规则。"
 
 #: ../../user_guide/styling.rst:20
 msgid ""
 "For a more in-depth guide in linking static CSS and JS assets in your "
 "site, see :doc:`static_assets`."
 msgstr ""
+"有关在您的站点中链接静态 CSS 和 JS 资源的更深入指南，请参阅 :doc:`static_assets`。"
 
 #: ../../user_guide/styling.rst:23
 msgid "To add a custom stylesheet, follow these steps:"
-msgstr ""
+msgstr "要添加自定义样式表，请按照以下步骤操作："
 
 #: ../../user_guide/styling.rst:25
 msgid ""
 "**Create a CSS stylesheet** in ``_static/css/custom.css``, and update the"
 " CSS rules as desired."
 msgstr ""
+"**创建 CSS 样式表** 在 ``_static/css/custom.css`` 中，并根据需要更新CSS规则。"
 
 #: ../../user_guide/styling.rst:26
 msgid ""
 "**Attach the stylesheet to your Sphinx build**. Add the following to "
 "``conf.py``:"
 msgstr ""
+"**将样式表附加到您的 Sphinx 构建中**。将以下内容添加到 ``conf.py`` 文件中："
 
 #: ../../user_guide/styling.rst:36
 msgid ""
 "When you build your documentation, this stylesheet should now be "
 "activated."
 msgstr ""
+"当您构建文档时，此样式表现在应该已被激活。"
 
 #: ../../user_guide/styling.rst:41
 msgid "CSS theme variables"
-msgstr ""
+msgstr "CSS 主题变量"
 
 #: ../../user_guide/styling.rst:43
 msgid ""
@@ -79,6 +85,7 @@ msgid ""
 " be used to quickly control behavior and display across your "
 "documentation."
 msgstr ""
+"该主题定义了多个 `CSS 变量 <css-variable-help_>`_，可用于快速控制整个文档的行为和显示。"
 
 #: ../../user_guide/styling.rst:46
 msgid ""
@@ -86,20 +93,22 @@ msgid ""
 "<https://getbootstrap.com/docs/4.0/getting-started/theming/#css-"
 "variables>`_ extended with some theme-specific variables."
 msgstr ""
+"这些变量基于基本的 `Bootstrap CSS 变量 <https://getbootstrap.com/docs/4.0/getting-started/theming/#css-variables>`_，并扩展了一些主题特定的变量。"
 
 #: ../../user_guide/styling.rst:50
 msgid "Base variables"
-msgstr ""
+msgstr "基本变量"
 
 #: ../../user_guide/styling.rst:52
 msgid "Follow these steps to update the base variables:"
-msgstr ""
+msgstr "请按照以下步骤更新基础变量："
 
 #: ../../user_guide/styling.rst:54
 msgid ""
 ":ref:`Add a custom CSS stylesheet <custom-css>`. This is where we'll "
 "configure the variables."
 msgstr ""
+":ref:`添加自定义 CSS 样式表 <custom-css>`。将在此处配置变量。"
 
 #: ../../user_guide/styling.rst:55
 msgid ""
@@ -107,6 +116,7 @@ msgid ""
 "example, to change the base font size you would add the following to your"
 " ``custom.css`` file :"
 msgstr ""
+"在 ``html`` 部分下，添加您希望更新的变量。例如，要更改基础字体大小，您可以在 ``custom.css`` 文件中添加以下内容："
 
 #: ../../user_guide/styling.rst:65
 msgid ""
@@ -114,6 +124,7 @@ msgid ""
 " and **not** `SASS variables <https://sass-"
 "lang.com/documentation/variables>`_."
 msgstr ""
+"请注意，该主题是使用 `CSS变量 <css-variable-help_>`_ 定义的，而 **不是** `SASS变量 <https://sass-lang.com/documentation/variables>`_。"
 
 #: ../../user_guide/styling.rst:68
 msgid ""
@@ -121,16 +132,18 @@ msgid ""
 "themes>` if you desire a different behavior between the light and dark "
 "theme."
 msgstr ""
+"如果您希望在浅色主题和深色主题之间实现不同的效果，请参考 :ref:`本文档中的管理主题部分 <manage-themes>`。"
 
 #: ../../user_guide/styling.rst:71
 msgid ""
 "For a complete list of the theme variables that you may override, see the"
 " `theme variables defaults CSS file <pydata-css-variables_>`_:"
 msgstr ""
+"有关您可以覆盖的主题变量的完整列表，请参阅 `主题变量默认CSS文件 <pydata-css-variables_>`_："
 
 #: ../../user_guide/styling.rst:92
 msgid "Color variables"
-msgstr ""
+msgstr "颜色变量"
 
 #: ../../user_guide/styling.rst:94
 msgid ""
@@ -141,6 +154,8 @@ msgid ""
 "another. There are also several other color variables that control the "
 "color for admonitions, links, menu items, etc."
 msgstr ""
+"该主题为 **主色** 和 **辅色** 分别指定了颜色变量（``--pst-color-primary`` 和 ``--pst-color-secondary``）。"
+"这些颜色旨在整个主题中视觉上相互补充，如果您修改这些颜色，请选择彼此搭配良好的颜色。此外，还有其他多个颜色变量用于控制警告、链接、菜单项等的颜色。"
 
 #: ../../user_guide/styling.rst:98
 msgid ""
@@ -148,18 +163,21 @@ msgid ""
 "and one for the \"dark\" theme. These are used throughout many of the "
 "theme elements to define text color, background color, etc."
 msgstr ""
+"每个颜色变量都有两个值，一个对应‘浅色’主题，另一个对应‘深色’主题。这些值在整个主题的许多元素中被用于定义文本颜色、背景颜色等。"
 
 #: ../../user_guide/styling.rst:101
 msgid ""
 "Here is an overview of the colors available in the theme (change theme "
 "mode to switch from light to dark versions)."
 msgstr ""
+"以下是主题中可用颜色的概览（切换主题模式以查看浅色和深色版本）。"
 
 #: ../../user_guide/styling.rst:137
 msgid ""
 "**To modify the colors for these variables** for light and dark themes, "
 ":ref:`add a custom CSS stylesheet <custom-css>` with a structure like so:"
 msgstr ""
+"**要为浅色和深色主题修改这些变量的颜色**，请 :ref:`添加自定义CSS样式表 <custom-css>`，并采用如下结构："
 
 #: ../../user_guide/styling.rst:149
 msgid ""
@@ -167,16 +185,18 @@ msgid ""
 "opacity in the dark one. It defines 4 color variables that help build "
 "overlays in your documentation."
 msgstr ""
+"该主题在浅色主题模式下使用阴影来表现层次感，而在深色主题模式下则使用透明度。它定义了4个颜色变量，用于在文档中构建叠加效果。"
 
 #: ../../user_guide/styling.rst:152
 msgid ":code:`background`: color of the back-most surface of the documentation"
-msgstr ""
+msgstr ":code:`background`：文档最底层表面的颜色。"
 
 #: ../../user_guide/styling.rst:153
 msgid ""
 ":code:`on-background` elements that are set on top of this background "
 "(e.g. the header navbar on dark mode)."
 msgstr ""
+":code:`on-background`：位于此背景之上的元素（例如深色模式下的顶部导航栏）。"
 
 #: ../../user_guide/styling.rst:154
 msgid ""
@@ -184,16 +204,18 @@ msgid ""
 " the light theme mode. This color has been kept in the dark theme (e.g. "
 "code-block directives)."
 msgstr ""
+":code:`surface`：在浅色主题模式下，位于背景上并带有浅灰色的元素。此颜色在深色主题中保持不变（例如代码块指令）。"
 
 #: ../../user_guide/styling.rst:155
 msgid ""
 ":code:`on-surface` elements that are on top of :code:`surface` elements "
 "(e.g. sidebar directives)."
 msgstr ""
+":code:`on-surface`：位于 :code:`surface` 元素之上的元素（例如侧边栏指令）。"
 
 #: ../../user_guide/styling.rst:157
 msgid "The following image should help you understand these overlays:"
-msgstr ""
+msgstr "以下图片将帮助您理解这些叠加层："
 
 #: ../../user_guide/styling.rst:193
 msgid ""
@@ -201,10 +223,11 @@ msgid ""
 ":download:`PyData theme CSS colors stylesheet "
 "<../../src/pydata_sphinx_theme/assets/styles/variables/_color.scss>`."
 msgstr ""
+"有关您可以覆盖的主题颜色的完整列表，请参阅 :download:`PyData主题CSS颜色样式表 <../../src/pydata_sphinx_theme/assets/styles/variables/_color.scss>`。"
 
 #: ../../user_guide/styling.rst:196
 msgid "Configure pygments theme"
-msgstr ""
+msgstr "配置 Pygments 主题"
 
 #: ../../user_guide/styling.rst:198
 msgid ""
@@ -214,6 +237,8 @@ msgid ""
 "available Pygments colors on this `pygments demo page "
 "<https://pygments.org/styles/>`__."
 msgstr ""
+"由于Sphinx主题支持多种模式，可以通过修改 ``pygments_light_style`` 和 ``pygments_dark_style`` 来分别为每种模式调整代码高亮颜色。"
+"您可以在此 `Pygments演示页面 <https://pygments.org/styles/>`__ 上查看可用的Pygments颜色。"
 
 #: ../../user_guide/styling.rst:209
 msgid ""
@@ -227,10 +252,14 @@ msgid ""
 "`accessible pygments demo page <https://quansight-labs.github.io"
 "/accessible-pygments/>`__."
 msgstr ""
+"请注意，PyData Sphinx 主题默认使用 `accessible pygments 样式 <https://github.com/Quansight-Labs/accessible-pygments>`__ 进行语法高亮显示。"
+"这些 accessible pygments 主题旨在满足 `WCAG AA或AAA标准的颜色对比度要求 <https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html>`__，"
+"其中一些主题还适合色盲用户或低光环境使用。"
+"您可以在 `accessible pygments演示页面 <https://quansight-labs.github.io/accessible-pygments/>`__ 上查看所有可用的样式。"
 
 #: ../../user_guide/styling.rst:216
 msgid ""
 "The native Sphinx option ``pygments_style`` will be overwritten by this "
 "theme."
 msgstr ""
-
+"Sphinx的原生选项 ``pygments_style`` 将被此主题覆盖。"

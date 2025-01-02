@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/navigation.rst:4
 msgid "Navigation depth and collapsing sidebars"
-msgstr ""
+msgstr "导航深度和折叠侧边栏"
 
 #: ../../user_guide/navigation.rst:6
 msgid ""
@@ -30,10 +30,11 @@ msgid ""
 "primary sidebar navigation (without actually navigating to the page "
 "itself), and this extends up to 4 levels deep:"
 msgstr ""
+"默认情况下，此主题允许在主要侧边栏导航中展开/折叠子部分（而无需实际导航到页面本身），并且这最多可扩展到 4 级深度："
 
 #: ../../user_guide/navigation.rst:14
 msgid "Control how many navigation levels are shown by default"
-msgstr ""
+msgstr "控制默认显示的导航层级数量"
 
 #: ../../user_guide/navigation.rst:16
 msgid ""
@@ -42,16 +43,18 @@ msgid ""
 "with drop-boxes to reveal their children. To make their children show up "
 "by default, you can use the following configuration in ``conf.py``:"
 msgstr ""
+"您可以控制页面加载时显示的导航层级数量。默认情况下，此层级为 1，仅显示顶级页面，并带有下拉框以显示其子页面。要使它们的子页面默认显示，您可以在 ``conf.py`` 中使用以下配置："
 
 #: ../../user_guide/navigation.rst:27
 msgid ""
 "This will make the first two navigation levels show up by default (AKA, "
 "top-level pages and their immediate children)."
 msgstr ""
+"这将使前两个导航层级默认显示（即顶级页面及其直接子页面）。"
 
 #: ../../user_guide/navigation.rst:31
 msgid "Collapse entire toctree captions/parts"
-msgstr ""
+msgstr "折叠整个 toctree 标题/部分"
 
 #: ../../user_guide/navigation.rst:33
 msgid ""
@@ -59,12 +62,14 @@ msgid ""
 "``:caption:``), you may collapse navigation items so that only the "
 "caption is visible. Clicking on the caption will display the items below."
 msgstr ""
+"如果您的 ``toctree`` 元素分配了标题（使用 ``:caption:``），您可以折叠导航项，以便仅显示标题。单击标题将显示下面的项目。"
 
 #: ../../user_guide/navigation.rst:37
 msgid ""
 "To enable this behavior, set the ``show_nav_level`` value to 0, like "
 "below:"
 msgstr ""
+"要启用此行为，请将 ``show_nav_level`` 值设置为 0，如下所示："
 
 #: ../../user_guide/navigation.rst:45
 msgid ""
@@ -76,6 +81,8 @@ msgid ""
 "doc.org/en/master/usage/restructuredtext/directives.html#directive-"
 "toctree>`_ for more details."
 msgstr ""
+"只有在为 ``toctree`` 项定义了标题时，才能将其折叠在标题下方！如果您的 ``toctree`` 未定义标题，则其下的所有页面都将显示（与默认主题行为相同）。"
+"有关更多详细信息，请参阅 `toctree 文档 <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_。"
 
 #: ../../user_guide/navigation.rst:52
 msgid ""
@@ -83,24 +90,26 @@ msgid ""
 "\"parts\" in the documentation, with each page beneath making up a "
 "\"chapter\"."
 msgstr ""
+"在某些 Sphinx 站点中，顶级 ``toctree`` 分组构成文档中的“部分”，其下的每个页面构成“章节”。"
 
 #: ../../user_guide/navigation.rst:58
 msgid "Control the number of navigation levels"
-msgstr ""
+msgstr "控制导航层级的数量"
 
 #: ../../user_guide/navigation.rst:60
 msgid ""
 "In addition, you can also control how many levels of the navigation are "
 "shown in the sidebar (with a default of 4):"
 msgstr ""
+"此外，您还可以控制侧边栏中显示的导航层级数量（默认值为 4）："
 
 #: ../../user_guide/navigation.rst:71
 msgid "Remove reveal buttons for sidebar items"
-msgstr ""
+msgstr "移除侧边栏项的展开按钮"
 
 #: ../../user_guide/navigation.rst:73
 msgid ""
 "It is possible to turn off the expandable navigation entirely by setting "
 "the `collapse_navigation` config option to True:"
 msgstr ""
-
+"可以通过将 `collapse_navigation` 配置选项设置为 True 来完全关闭可扩展导航："

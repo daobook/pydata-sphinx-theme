@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/indices.rst:3
 msgid "Sphinx indices"
-msgstr ""
+msgstr "Sphinx 索引"
 
 #: ../../user_guide/indices.rst:5
 msgid ""
