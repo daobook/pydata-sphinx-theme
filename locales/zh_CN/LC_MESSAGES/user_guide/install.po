@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../user_guide/install.rst:-1
 msgid "Detailed instructions for installing pydata-sphinx-theme."
-msgstr ""
+msgstr "安装 pydata-sphinx-theme 的详细说明。"
 
 #: ../../user_guide/install.rst:3
 msgid "Installation"
-msgstr ""
+msgstr "安装"
 
 #: ../../user_guide/install.rst:7
 msgid ""
@@ -37,18 +37,23 @@ msgid ""
 "when trying to use a more recent version of Sphinx, please open an issue "
 "here: https://github.com/pydata/pydata-sphinx-theme/issues"
 msgstr ""
+"每个 pydata-sphinx-theme 版本都有最低要求的 Sphinx 版本，这通常由您的包安装工具自动处理。"
+"它也在发布前针对当时可用的较新 Sphinx 版本进行了测试。"
+"如果您在尝试使用更新的 Sphinx 版本时遇到问题，请在此处提交问题：https://github.com/pydata/pydata-sphinx-theme/issues"
 
 #: ../../user_guide/install.rst:14
 msgid ""
 "The theme is available on PyPI and conda-forge, and can thus be installed"
 " with:"
 msgstr ""
+"该主题可在 PyPI 和 conda-forge 上获取，因此可以通过以下方式安装："
 
 #: ../../user_guide/install.rst:24
 msgid ""
 "Then, in the ``conf.py`` of your sphinx docs, you update the "
 "``html_theme`` configuration option:"
 msgstr ""
+"然后，在你的 Sphinx 文档的 ``conf.py`` 中，更新 ``html_theme`` 配置选项："
 
 #: ../../user_guide/install.rst:33
 msgid ""
@@ -57,18 +62,20 @@ msgid ""
 " months of time to work out any bugs and changes when new releases are "
 "made."
 msgstr ""
+"此主题可能与 Sphinx 的最新主要版本不兼容，尤其是在这些版本刚刚发布不久的情况下。请给我们几个月的时间来修复任何错误，并在新版本发布时进行相应的调整。"
 
 #: ../../user_guide/install.rst:38
 msgid "Development version"
-msgstr ""
+msgstr "开发版本"
 
 #: ../../user_guide/install.rst:40
 msgid ""
 "If you want to track the development version of the theme, you can "
 "install it from the git repo:"
 msgstr ""
+"若您希望追踪该主题的开发版本，您可以通过 git 仓库进行安装："
 
 #: ../../user_guide/install.rst:47
 msgid "or in a conda environment yml file, you can add:"
-msgstr ""
+msgstr "或者，在 conda 环境的 yml 文件中，您可以添加："
 

@@ -32,10 +32,12 @@ msgid ""
 "doc.org/en/master/usage/restructuredtext/directives.html#directive-"
 "index>`__."
 msgstr ""
+"Sphinx 在构建文档时会生成名为 `genindex`、`modindex` 和 `py-modindex` 的索引。"
+"有关它们的更多信息可以在 `Sphinx 索引文档 <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-index>`__ 中找到。"
 
 #: ../../user_guide/indices.rst:8
 msgid "Add indices links"
-msgstr ""
+msgstr "添加索引链接"
 
 #: ../../user_guide/indices.rst:10
 msgid ""
@@ -45,6 +47,7 @@ msgid ""
 "``html_theme_options`` and the available indices will be display at the "
 "bottom."
 msgstr ""
+"根据设计，使用此主题生成的文档中未链接索引页面。要将它们包含在每个页面的主侧边栏中，请将以下配置添加到 ``conf.py`` 文件中的 ``html_theme_options`` 中，可用的索引将显示在底部。"
 
 #: ../../user_guide/indices.rst:22
 msgid ""
@@ -52,4 +55,4 @@ msgid ""
 " you are serving your documentation using `ReadTheDocs "
 "<https://about.readthedocs.com/>`__."
 msgstr ""
-
+"如果您使用 `ReadTheDocs <https://about.readthedocs.com/>`__ 托管文档，请不要忘记添加回 ``\"sidebar-ethical-ads.html\"`` 模板。"

@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../user_guide/layout.rst:63
 msgid "Section links"
-msgstr ""
+msgstr "章节链接"
 
 #: ../../user_guide/layout.rst:65
 msgid "``navbar_center``"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../user_guide/layout.rst:71
 msgid "Persistent components"
-msgstr ""
+msgstr "持久化组件"
 
 #: ../../user_guide/layout.rst:73
 msgid "``navbar_persistent``"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../user_guide/layout.rst:79
 msgid "Components"
-msgstr ""
+msgstr "组件"
 
 #: ../../user_guide/layout.rst:81
 msgid "``navbar_end``"
@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../user_guide/layout.rst:95
 msgid "Links between pages in the active section."
-msgstr ""
+msgstr "活动章节中页面之间的链接。"
 
 #: ../../user_guide/layout.rst:97
 msgid "``sidebars``"
@@ -114,7 +114,7 @@ msgstr ""
 
 #: ../../user_guide/layout.rst:123
 msgid "**Article Content**"
-msgstr ""
+msgstr "**文章内容**"
 
 #: ../../user_guide/layout.rst:125 ../../user_guide/layout.rst:450
 msgid "Article Footer"
@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../user_guide/layout.rst:146
 msgid "Within-page header links"
-msgstr ""
+msgstr "页面内标题链接"
 
 #: ../../user_guide/layout.rst:148
 msgid "``secondary_sidebar_items``"
@@ -169,18 +169,21 @@ msgid ""
 "If one of the sidebars is not present, then the ``article content`` will "
 "be centered between the other sidebar and the side of the page."
 msgstr ""
+"如果其中一个侧边栏不存在，那么 ``文章内容`` 将会在另一个侧边栏和页面边缘之间居中显示。"
 
 #: ../../user_guide/layout.rst:191
 msgid ""
 "If neither sidebar is present, the ``article content`` will be in the "
 "middle of the page."
 msgstr ""
+"如果两个侧边栏都不存在，‘文章内容’将会在页面中间显示。"
 
 #: ../../user_guide/layout.rst:193
 msgid ""
 "If you'd like the ``article content`` to take up more width than its "
 "default, use the ``max-width`` CSS property with the following selectors:"
 msgstr ""
+"如果您希望 ``文章内容`` 占据比默认值更大的宽度，可以使用以下选择器并设置 ``max-width`` CSS属性："
 
 #: ../../user_guide/layout.rst:201
 msgid ""
@@ -188,10 +191,11 @@ msgid ""
 "as the top navigation bar. To truly use *all* of the available page "
 "width, you also need to set the following CSS rule:"
 msgstr ""
+"上述规则会将文章内容的最大宽度设置为与顶部导航栏相同的宽度。若想真正利用页面的 *全部* 可用宽度，您还需要设置以下 CSS 规则："
 
 #: ../../user_guide/layout.rst:210
 msgid "This will affect both the article content and the top navigation bar."
-msgstr ""
+msgstr "这将同时影响文章内容和顶部导航栏。"
 
 #: ../../user_guide/layout.rst:214
 msgid ""
@@ -200,10 +204,12 @@ msgid ""
 " a CSS selector that is *less specific* than the two default rules in the"
 " theme, and your custom CSS will fail to override the theme defaults."
 msgstr ""
+"如果您同时使用了上述两条自定义 CSS 规则，*请确保在 CSS 文件中将它们保持为独立的规则*。"
+"如果将它们合并，结果将生成 *特异性低于* 主题中两条默认规则的 CSS 选择器，导致您的自定义 CSS 无法覆盖主题的默认设置。"
 
 #: ../../user_guide/layout.rst:222
 msgid "Templates and components"
-msgstr ""
+msgstr "模板与组件"
 
 #: ../../user_guide/layout.rst:224
 msgid ""
@@ -212,6 +218,7 @@ msgid ""
 "configured with a list of *HTML templates* — these are snippets of HTML "
 "that are inserted into the section by Sphinx."
 msgstr ""
+"有几个主要的主题部分可供您自定义，以添加/移除内置组件或添加您自己的组件。每个部分都通过一系列 *HTML模板* 进行配置——这些是由Sphinx插入到该部分的HTML代码片段。"
 
 #: ../../user_guide/layout.rst:229
 msgid ""
@@ -219,56 +226,60 @@ msgid ""
 "order in which they appear. This page describes the major areas that you "
 "can customize."
 msgstr ""
+"您可以选择在每个部分中显示哪些模板，以及它们的显示顺序。本页描述了您可以自定义的主要区域。"
 
 #: ../../user_guide/layout.rst:234
 msgid ""
 "When configuring templates in each section, you may omit the ``.html`` "
 "suffix after each template if you wish."
 msgstr ""
+"在配置每个部分的模板时，如果您愿意，可以省略每个模板后的``.html``后缀。"
 
 #: ../../user_guide/layout.rst:241
 msgid "Header / Navigation Bar"
-msgstr ""
+msgstr "页眉 / 导航栏"
 
 #: ../../user_guide/layout.rst:243
 msgid "Located in ``sections/header.html``."
-msgstr ""
+msgstr "位于 ``sections/header.html`` 中。"
 
 #: ../../user_guide/layout.rst:245
 msgid ""
 "The header is at the top of the page above all other content and contains"
 " site-level information."
 msgstr ""
+"页眉位于页面顶部，所有其他内容之上，包含网站级别的信息。"
 
 #: ../../user_guide/layout.rst:248
 msgid "Header sections"
-msgstr ""
+msgstr "页眉部分"
 
 #: ../../user_guide/layout.rst:250
 msgid ""
 "The header is broken up into three sections. Each section is configured "
 "in ``conf.py`` with the following configuration:"
 msgstr ""
+"页眉分为三个部分。每个部分在 ``conf.py`` 中通过以下配置进行设置："
 
 #: ../../user_guide/layout.rst:253
 msgid "Left section: ``html_theme_options['navbar_start']``"
-msgstr ""
+msgstr "左侧部分： ``html_theme_options['navbar_start']``"
 
 #: ../../user_guide/layout.rst:254
 msgid "Middle menu: ``html_theme_options['navbar_center']``"
-msgstr ""
+msgstr "中间菜单： ``html_theme_options['navbar_center']``"
 
 #: ../../user_guide/layout.rst:255
 msgid "Right section: ``html_theme_options['navbar_end']``"
-msgstr ""
+msgstr "右侧部分： ``html_theme_options['navbar_end']``"
 
 #: ../../user_guide/layout.rst:256
 msgid "Persistent right section: ``html_theme_options['navbar_persistent']``"
-msgstr ""
+msgstr "持久化右侧部分：``html_theme_options['navbar_persistent']``"
 
 #: ../../user_guide/layout.rst:258
 msgid "By default, the following configuration is used:"
-msgstr ""
+msgstr "默认情况下，使用以下配置："
 
 #: ../../user_guide/layout.rst:273
 msgid ""
@@ -278,32 +289,37 @@ msgid ""
 "button`` only and we cannot guarantee its compatibility with other "
 "components."
 msgstr ""
+"*持久化右侧部分* 位于 ``navbar_end`` 旁边，但其元素即使在小型屏幕上，当所有其他元素折叠时，仍会在页眉中保持可见。"
+"它专为 ``search-button`` 设计，无法保证其与其他组件的兼容性。"
 
 #: ../../user_guide/layout.rst:276
 msgid "Configure the navbar center alignment"
-msgstr ""
+msgstr "配置导航栏居中对齐"
 
 #: ../../user_guide/layout.rst:278
 msgid ""
 "By default, the navigation bar center area will align with the content on"
 " your page. This equals the following default configuration:"
 msgstr ""
+"默认情况下，导航栏的中间区域将与页面内容对齐。这等同于以下默认配置："
 
 #: ../../user_guide/layout.rst:289
 msgid ""
 "If instead, you'd like these items to snap to the left (closer to the "
 "logo), use this configuration:"
 msgstr ""
+"如果您希望这些项目靠左对齐（更靠近标志），请使用以下配置："
 
 #: ../../user_guide/layout.rst:300
 msgid ""
 "If you'd like these items to snap to the right of the page, use this "
 "configuration:"
 msgstr ""
+"如果您希望这些项目靠右对齐，请使用以下配置："
 
 #: ../../user_guide/layout.rst:316
 msgid "Located in ``sections/header-article.html``."
-msgstr ""
+msgstr "位于 ``sections/header-article.html`` 中。"
 
 #: ../../user_guide/layout.rst:318
 msgid ""
@@ -311,6 +327,7 @@ msgid ""
 "There are two sub-sections that can have component templates added to "
 "them:"
 msgstr ""
+"文章页面是位于文章内容正上方的窄栏。它有两个子部分，可以向其中添加组件模板："
 
 #: ../../user_guide/layout.rst:321
 msgid ""
@@ -318,20 +335,22 @@ msgid ""
 "article header. By default, this section has the ``breadcrumbs.html`` "
 "component which displays links to parent pages of the current page."
 msgstr ""
+"``article_header_start`` 对齐文章页眉的开头（左侧）。默认情况下，该部分包含 ``breadcrumbs.html`` 组件，用于显示当前页面的父页面链接。"
 
 #: ../../user_guide/layout.rst:323
 msgid ""
 "``article_header_end`` is aligned to the end (right) of the article "
 "header. By default, this section is empty."
 msgstr ""
+"``article_header_end`` 对齐文章页眉的末尾（右侧）。默认情况下，该部分为空。"
 
 #: ../../user_guide/layout.rst:329
 msgid "Primary sidebar (left)"
-msgstr ""
+msgstr "主侧边栏（左侧）"
 
 #: ../../user_guide/layout.rst:331
 msgid "Located in ``sections/sidebar-primary.html``."
-msgstr ""
+msgstr "位于 ``sections/sidebar-primary.html`` 中。"
 
 #: ../../user_guide/layout.rst:333
 msgid ""
@@ -340,6 +359,7 @@ msgid ""
 "links to any siblings/children of the current active top-level section "
 "(corresponding to links in your header navigation bar)."
 msgstr ""
+"主侧边栏位于页面 main 内容的左侧，主要用于章节之间的导航。默认情况下，它会显示当前活动顶级章节的兄弟页面或子页面链接（与页眉导航栏中的链接相对应）。"
 
 #: ../../user_guide/layout.rst:337
 msgid ""
@@ -347,6 +367,7 @@ msgid ""
 "because configuring the sidebar is natively supported in Sphinx, via the "
 "``html_sidebars`` configuration variable."
 msgstr ""
+"它的配置与其他部分略有不同，因为侧边栏的配置在 Sphinx 中原生支持，通过 ``html_sidebars`` 配置变量实现。"
 
 #: ../../user_guide/layout.rst:339
 msgid ""
@@ -354,6 +375,7 @@ msgid ""
 "only show up on certain pages. You do so via a configuration like so in "
 "``conf.py``:"
 msgstr ""
+"仅针对主侧边栏，您可以配置模板，使其仅在某些页面上显示。您可以通过在 ``conf.py`` 中添加如下配置来实现："
 
 #: ../../user_guide/layout.rst:348
 msgid ""
@@ -361,74 +383,81 @@ msgid ""
 "templates inserted. You can also ``*`` to do ``glob``-style matching, and"
 " may use ``**`` to match all pages."
 msgstr ""
+"任何匹配 ``<page_pattern>`` 的页面都会插入相应的模板。您还可以使用 ``*`` 进行 ``glob`` 风格的匹配，或者使用 ``**`` 匹配所有页面。"
 
 #: ../../user_guide/layout.rst:352
 msgid "By default, it has the following configuration:"
-msgstr ""
+msgstr "默认情况下，它具有以下配置："
 
 #: ../../user_guide/layout.rst:360
 msgid "``sidebar-nav-bs.html`` - a bootstrap-friendly navigation section."
-msgstr ""
+msgstr "``sidebar-nav-bs.html`` - 兼容 Bootstrap 的导航部分。”"
 
 #: ../../user_guide/layout.rst:362
 msgid ""
 "When there are no pages to show, it will disappear and potentially add "
 "extra space for your page's content."
 msgstr ""
+"当没有页面可显示时，它会消失，并可能为页面内容腾出额外空间。"
 
 #: ../../user_guide/layout.rst:364
 msgid ""
 "``sidebar-ethical-ads.html`` - a placement for ReadTheDocs's Ethical Ads "
 "(will only show up on ReadTheDocs)."
 msgstr ""
+"``sidebar-ethical-ads.html`` - ReadTheDocs 的 Ethical Ads 展示位置（仅在 ReadTheDocs 上显示）。"
 
 #: ../../user_guide/layout.rst:367
 msgid "Primary sidebar end sections"
-msgstr ""
+msgstr "主侧边栏末尾部分"
 
 #: ../../user_guide/layout.rst:369
 msgid ""
 "There is a special ``<div>`` within the primary sidebar that appears at "
 "the bottom of the page, regardless of the content that is above it."
 msgstr ""
+"主侧边栏内有特殊的 ``<div>``，它位于页面底部，无论其上方的内容如何。"
 
 #: ../../user_guide/layout.rst:372
 msgid ""
 "To control the HTML templates that are within this div, use "
 "``html_theme_options['primary_sidebar_end']`` in ``conf.py``."
 msgstr ""
+"要控制此 div 内的 HTML 模板，请在 ``conf.py`` 中使用 ``html_theme_options['primary_sidebar_end']``。"
 
 #: ../../user_guide/layout.rst:375 ../../user_guide/layout.rst:435
 msgid "By default, it has the following templates:"
-msgstr ""
+msgstr "默认情况下，它具有以下模板："
 
 #: ../../user_guide/layout.rst:386
 msgid "Remove the primary sidebar from pages"
-msgstr ""
+msgstr "从页面中移除主侧边栏"
 
 #: ../../user_guide/layout.rst:388
 msgid ""
 "If you'd like the primary sidebar to be removed from a page, you can use "
 "the following configuration in ``conf.py``:"
 msgstr ""
+"如果您希望从页面中移除主侧边栏，可以在 ``conf.py`` 中使用以下配置："
 
 #: ../../user_guide/layout.rst:397
 msgid "This works for glob-style patterns as well. For example:"
-msgstr ""
+msgstr "也适用于glob风格的匹配模式。例如："
 
 #: ../../user_guide/layout.rst:405
 msgid ""
 "If you'd like to remove the primary sidebar from **all** pages of your "
 "documentation, use this pattern:"
 msgstr ""
+"如果您希望从文档的 **所有** 页面中移除主侧边栏，请使用以下模式："
 
 #: ../../user_guide/layout.rst:417
 msgid "Footer Content"
-msgstr ""
+msgstr "页脚内容"
 
 #: ../../user_guide/layout.rst:419 ../../user_guide/layout.rst:480
 msgid "Located in ``sections/footer-content.html``."
-msgstr ""
+msgstr "位于 ``sections/footer-content.html``。"
 
 #: ../../user_guide/layout.rst:421
 msgid ""
@@ -437,14 +466,15 @@ msgid ""
 "the reader but is kept as a placeholder in case theme developers wish to "
 "re-use it in the future."
 msgstr ""
+"页脚内容是横跨文章内容和次级侧边栏的窄栏。它不包含读者可直接查看的内容，但作为占位符保留，以备主题开发者未来希望重新使用它。"
 
 #: ../../user_guide/layout.rst:428
 msgid "Secondary Sidebar (right)"
-msgstr ""
+msgstr "次侧边栏（右侧）"
 
 #: ../../user_guide/layout.rst:430
 msgid "Located in ``sections/sidebar-secondary.html``."
-msgstr ""
+msgstr "位于 ``sections/sidebar-secondary.html``。"
 
 #: ../../user_guide/layout.rst:432
 msgid ""
@@ -452,16 +482,18 @@ msgid ""
 "is configured in ``conf.py`` with "
 "``html_theme_options['secondary_sidebar_items']``."
 msgstr ""
+"页面内侧边栏位于页面文章内容的右侧，并通过 ``html_theme_options['secondary_sidebar_items']`` 在 ``conf.py`` 中进行配置。"
 
 #: ../../user_guide/layout.rst:445
 msgid ""
 "To learn how to further customize or remove the secondary sidebar, please"
 " check :doc:`page-toc`."
 msgstr ""
+"要了解如何进一步自定义或移除次级侧边栏，请查看 :doc:`page-toc`。"
 
 #: ../../user_guide/layout.rst:452
 msgid "Located in ``sections/footer-article.html``."
-msgstr ""
+msgstr "位于 ``sections/footer-article.html`` 。"
 
 #: ../../user_guide/layout.rst:454
 msgid ""
@@ -469,10 +501,11 @@ msgid ""
 "does not contain anything immediately viewable to the reader, but is kept"
 " as a placeholder for custom or built-in templates."
 msgstr ""
+"文章页脚位于页面文章的正下方。默认情况下，它不包含读者可直接查看的内容，但作为占位符保留，用于自定义或内置模板。"
 
 #: ../../user_guide/layout.rst:465
 msgid "Hide the previous and next buttons"
-msgstr ""
+msgstr "隐藏‘上一页’和‘下一页’按钮"
 
 #: ../../user_guide/layout.rst:467
 msgid ""
@@ -480,10 +513,11 @@ msgid ""
 "buttons at the bottom displayed in the ``prev_next_area``. You can hide "
 "these buttons with the following configuration:"
 msgstr ""
+"默认情况下，您网站的每个页面底部都会显示‘上一页’和‘下一页’按钮，位于 ``prev_next_area`` 中。您可以通过以下配置隐藏这些按钮："
 
 #: ../../user_guide/layout.rst:478
 msgid "Content Footer"
-msgstr ""
+msgstr "内容页脚"
 
 #: ../../user_guide/layout.rst:482
 msgid ""
@@ -491,10 +525,11 @@ msgid ""
 "sidebar. By default it is empty, but you can add templates to it with the"
 " following configuration:"
 msgstr ""
+"内容页脚位于页面文章和次级侧边栏的下方。默认情况下它是空的，但您可以通过以下配置向其添加模板："
 
 #: ../../user_guide/layout.rst:498
 msgid "Located in ``sections/footer.html``."
-msgstr ""
+msgstr "位于 ``sections/footer.html``。"
 
 #: ../../user_guide/layout.rst:500
 msgid ""
@@ -503,12 +538,15 @@ msgid ""
 "``html_theme_options['footer_center']`` and "
 "``html_theme_options['footer_end']``."
 msgstr ""
+"页脚位于页面主要内容的下方，并通过 ``html_theme_options['footer_start']``、"
+"``html_theme_options['footer_center']`` 和 ``html_theme_options['footer_end']`` 在 ``conf.py`` 中进行配置。"
 
 #: ../../user_guide/layout.rst:503
 msgid ""
 "By default, ``footer_center`` is empty, and ``footer_start`` and "
 "``footer_end`` have the following templates:"
 msgstr ""
+"默认情况下，``footer_center`` 为空，而 ``footer_start`` 和 ``footer_end`` 具有以下模板："
 
 #: ../../user_guide/layout.rst:514
 msgid ""
@@ -516,10 +554,11 @@ msgid ""
 "like them to stack **horizontally** use a custom CSS rule like the "
 "following:"
 msgstr ""
+"在每个子部分中，组件将 **垂直** 堆叠。如果您希望它们 **水平** 堆叠，请使用如下自定义 CSS 规则："
 
 #: ../../user_guide/layout.rst:524
 msgid "Built-in components to insert into sections"
-msgstr ""
+msgstr "可插入章节的内置组件"
 
 #: ../../user_guide/layout.rst:526
 msgid ""
@@ -527,6 +566,7 @@ msgid ""
 "section. Note that some of them may have CSS rules that assume a specific"
 " section (and will be named accordingly)."
 msgstr ""
+"以下是可以插入任何章节的内置模板列表。请注意，其中一些模板可能具有假设特定部分的 CSS 规则（并会相应地命名）。"
 
 #: ../../user_guide/layout.rst:532
 msgid ""
@@ -534,16 +574,18 @@ msgid ""
 "optional. That's why all of them are displayed without it in the "
 "following list."
 msgstr ""
+"在添加/更改/覆盖组件时，\".html\" 后缀是可选的。这就是为什么在以下列表中所有组件都未显示后缀的原因。"
 
 #: ../../user_guide/layout.rst:539
 msgid "Add your own HTML templates to theme sections"
-msgstr ""
+msgstr "将自己的 HTML 模板添加到主题章节"
 
 #: ../../user_guide/layout.rst:541
 msgid ""
 "If you'd like to add your own custom template to any of these sections, "
 "you could do so with the following steps:"
 msgstr ""
+"如果您希望将自定义模板添加到这些章节中的任何一个，可以按照以下步骤操作："
 
 #: ../../user_guide/layout.rst:544
 msgid ""
@@ -552,16 +594,19 @@ msgid ""
 "template, you could create a file: ``_templates/version.html`` and put "
 "the following in it:"
 msgstr ""
+"在名为 ``_templates`` 的文件夹中创建 HTML 文件。"
+"例如，如果您希望使用 Jinja 模板显示文档的版本，可以创建文件： ``_templates/version.html``，并在其中放入以下内容："
 
 #: ../../user_guide/layout.rst:554
 msgid ""
 "Now add the file to your menu items for one of the sections above. For "
 "example:"
 msgstr ""
+"现在将该文件添加到上述部分之一的菜单项中。例如："
 
 #: ../../user_guide/layout.rst:565
 msgid "Build date"
-msgstr ""
+msgstr "构建日期"
 
 #: ../../user_guide/layout.rst:567
 msgid ""
@@ -572,6 +617,9 @@ msgid ""
 "displayed, the theme includes a :code:`last-updated` template that you "
 "can add to one of the page regions in your ``conf.py``. For example:"
 msgstr ""
+"默认情况下，即使设置了 Sphinx 的 `html_last_updated_fmt <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_last_updated_fmt>`__ 变量，"
+"此主题也不会显示构建日期。"
+"如果您希望显示构建日期，主题包含 :code:`last-updated` 模板，您可以将其添加到 ``conf.py`` 中的某个页面区域。例如："
 
 #: ../../user_guide/layout.rst:569
 msgid "conf.py"
@@ -584,20 +632,23 @@ msgid ""
 "a ``meta`` tag in the HTML header, which can be inspected by viewing the "
 "page source or extracted with an HTML parser. The tag will look like:"
 msgstr ""
+"“如果您确实指定了 ``html_last_updated_fmt`` 但未包含 :code:`last-updated` 模板，主题仍会将构建日期写入 HTML 头部的 ``meta`` 标签中，"
+"可以通过查看页面源代码或使用 HTML 解析器提取。该标签将如下所示："
 
 #: ../../user_guide/layout.rst:583
 msgid ""
 "The tag's ``content`` attribute will follow the format specified in the "
 "``html_last_updated_fmt`` configuration variable."
 msgstr ""
+"标签的 ``content`` 属性将遵循 ``html_last_updated_fmt`` 配置变量中指定的格式。"
 
 #: ../../user_guide/layout.rst:589
 msgid "References"
-msgstr ""
+msgstr "引用"
 
 #: ../../user_guide/layout.rst:591
 msgid ""
 "Please find here the full list of keys you can use in the "
 "``html_theme_options`` in ``conf.py``:"
 msgstr ""
-
+"请在此处查看您可以在 ``conf.py`` 中的 ``html_theme_options`` 中使用的完整键列表："
