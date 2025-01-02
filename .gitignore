@@ -126,3 +126,6 @@ src/pydata_sphinx_theme/locale/*/*/*.mo
 
 # jupyterlite db
 .jupyterlite.doit.db
+
+# gettext files
+*.mo
