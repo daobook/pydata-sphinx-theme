@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../community/structure.md:1
 msgid "Structure of this theme"
-msgstr ""
+msgstr "主题的结构"
 
 #: ../../community/structure.md:3
 msgid "Location and structure of documentation"
-msgstr ""
+msgstr "文档的位置与结构"
 
 #: ../../community/structure.md:5
 msgid ""

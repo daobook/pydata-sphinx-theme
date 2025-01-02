@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/inspiration.md:1
 msgid "Inspiration for design and UX"
-msgstr ""
+msgstr "设计与用户体验的灵感"
 
 #: ../../community/inspiration.md:3
 msgid ""
@@ -28,6 +28,8 @@ msgid ""
 "about design and UI/UX, we often consult these themes to see what they're"
 " doing."
 msgstr ""
+"为了构建这一主题，我们从网络上其他优秀的项目中汲取了灵感，并在此向它们致以诚挚的感谢。"
+"每当我们在设计和用户界面/用户体验方面需要做出新的决策时，我们常常会参考这些主题，以了解它们的实践与创新。"
 
 #: ../../community/inspiration.md:14
 msgid "GitBook"

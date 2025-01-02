@@ -19,23 +19,23 @@ msgstr ""
 
 #: ../../community/index.md:11
 msgid "Contributor guide"
-msgstr ""
+msgstr "贡献者指南"
 
 #: ../../community/index.md:20
 msgid "Team practices"
-msgstr ""
+msgstr "团队实践"
 
 #: ../../community/index.md:26
 msgid "About the project"
-msgstr ""
+msgstr "关于项目"
 
 #: ../../community/index.md
 msgid "How to become a contributor to the pydata-sphinx-theme."
-msgstr ""
+msgstr "如何成为 pydata-sphinx-theme 的贡献者。"
 
 #: ../../community/index.md:7
 msgid "Contributor Guide"
-msgstr ""
+msgstr "贡献者指南"
 
 #: ../../community/index.md:9
 msgid ""
@@ -43,4 +43,4 @@ msgid ""
 " and develops this theme, including how you can contribute to the "
 "project."
 msgstr ""
-
+"这些页面包含了关于领导、支持并开发此主题的社区信息，其中也介绍了您如何为该项目做出贡献。"

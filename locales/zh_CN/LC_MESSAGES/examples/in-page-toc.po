@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../examples/in-page-toc.rst:4
 msgid "Test of in-page TOC with no right sidebar"
-msgstr ""
+msgstr "无右侧边栏的页面内目录测试"
 
 #: ../../examples/in-page-toc.rst:6
 msgid "This page tests that the local contents directive looks okay."

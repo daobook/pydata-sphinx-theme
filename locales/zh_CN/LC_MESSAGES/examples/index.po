@@ -19,27 +19,29 @@ msgstr ""
 
 #: ../../examples/index.rst:14
 msgid "Theme-specific styles"
-msgstr ""
+msgstr "主题特定样式"
 
 #: ../../examples/index.rst:26
 msgid "Link to an external site"
-msgstr ""
+msgstr "链接到外部网站"
 
 #: ../../examples/index.rst:26
 msgid ""
 "Reference and test section. Mostly meant for developers to check that "
 "things look OK."
 msgstr ""
+"参考与测试部分。主要供开发者用于检查各项内容是否显示正常。"
 
 #: ../../examples/index.rst:-1
 msgid ""
 "A collection of pages demonstrating the features of the pydata-sphinx-"
 "theme."
 msgstr ""
+"一系列展示 pydata-sphinx-theme 功能的页面集合。"
 
 #: ../../examples/index.rst:3
 msgid "Examples"
-msgstr ""
+msgstr "示例"
 
 #: ../../examples/index.rst:5
 msgid ""
@@ -47,4 +49,4 @@ msgid ""
 "should help you understand how this theme behaves and how others are "
 "using it. See the sections in the primary sidebar and below to explore."
 msgstr ""
-
+"这些部分展示了该主题的各种功能和样式。它们将帮助您理解该主题的表现方式以及其他用户是如何使用它的。请浏览主侧边栏及下方的部分以进行探索。"

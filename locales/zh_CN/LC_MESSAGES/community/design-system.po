@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../community/design-system.md:1
 msgid "PyData Sphinx Theme Design System"
-msgstr ""
+msgstr "PyData Sphinx 主题设计系统"
 
 #: ../../community/design-system.md:3
 msgid ""
@@ -33,14 +33,16 @@ msgid ""
 " Guidelines (WCAG) to make sure the community continues to support "
 "documentation access for everyone."
 msgstr ""
+"PyData Sphinx 主题致力于维护符合行业标准的主题；设计系统是其中不可或缺的一部分。"
+"无论是选择如何配置您的主题，还是对设计系统本身进行更改，请参考最新版本的《网页内容可访问性指南》（WCAG），以确保社区继续支持为所有人提供文档访问的目标。"
 
 #: ../../community/design-system.md:9
 msgid "Guiding Principles"
-msgstr ""
+msgstr "指导原则"
 
 #: ../../community/design-system.md:11
 msgid "Accessibility"
-msgstr ""
+msgstr "可访问性"
 
 #: ../../community/design-system.md:13
 msgid ""
@@ -50,22 +52,26 @@ msgid ""
 "abilities. Accessibility is a priority to make the theme inclusive for "
 "all users."
 msgstr ""
+"可访问性是 PyData Sphinx 主题的核心。所有的设计决策都以符合 [WCAG 2.1](https://www.w3.org/TR/WCAG21/) 标准为考量，确保主题能够被所有能力水平的用户使用。"
+"可访问性是我们优先考虑的事项，以使主题对所有用户都具有包容性。"
 
 #: ../../community/design-system.md:18
 msgid "Open Source Collaboration"
-msgstr ""
+msgstr "开源协作"
 
 #: ../../community/design-system.md:20
 msgid ""
 "As an open-source project, collaboration and transparency are key "
 "principles:"
 msgstr ""
+"作为开源项目，协作与透明是关键原则："
 
 #: ../../community/design-system.md:22
 msgid ""
 "**Clear Guidelines:** All components, color palettes, and typography "
 "rules must be documented."
 msgstr ""
+"**清晰的指南**： 所有组件、配色方案和排版规则都必须有详细的文档说明。"
 
 #: ../../community/design-system.md:23
 msgid ""
@@ -75,28 +81,31 @@ msgid ""
 " please open an issue on the [PyData Sphinx Theme GitHub "
 "repository.](https://github.com/pydata/pydata-sphinx-theme)"
 msgstr ""
+"**开放的反馈** ：鼓励设计师、开发者、用户和维护者对主题提出反馈，以帮助其功能和可用性不断改进。"
+"如果您希望提供反馈，请在 [PyData Sphinx 主题 GitHub 仓库](https://github.com/pydata/pydata-sphinx-theme) 中提交问题。"
 
 #: ../../community/design-system.md:27
 msgid ""
 "**Community Driven:** The theme grows and evolves based on the needs and "
 "suggestions of the open-source community."
 msgstr ""
+"**社区驱动** ：主题根据开源社区的需求和建议不断发展和演变。"
 
 #: ../../community/design-system.md:30
 msgid "Typography"
-msgstr ""
+msgstr "排版"
 
 #: ../../community/design-system.md:32
 msgid "Typeface"
-msgstr ""
+msgstr "字体”"
 
 #: ../../community/design-system.md:34
 msgid "PyData Sphinx uses default system fonts."
-msgstr ""
+msgstr "PyData Sphinx 使用默认的系统字体。"
 
 #: ../../community/design-system.md:36
 msgid "Type Scale"
-msgstr ""
+msgstr "字体比例"
 
 #: ../../community/design-system.md:38
 msgid ""
@@ -107,6 +116,8 @@ msgid ""
 "between heading sizes without overly large jumps, is ideal, typically "
 "ranging from `1.2x` to `1.33x`."
 msgstr ""
+"字体比例指的是字体大小增加的倍数。您可以在 [字体比例](https://designcode.io/typographic-scales) 了解更多关于排版比例的信息。"
+"对于内容丰富的网站，中等对比度的比例是最理想的，它能在标题大小之间提供平衡的对比，而不会出现过大的跳跃，通常范围在 `1.2x` 到 `1.33x` 之间。"
 
 #: ../../community/design-system.md:44
 msgid ""
@@ -117,20 +128,23 @@ msgid ""
 "transition, all headings have a minimum of a `1.2x` increase, which is an"
 " improvement over the previous scale."
 msgstr ""
+"PST 字体比例已于 2024 年 8 月更新，以提升整体字体系统的可访问性，并增加标题之间的视觉对比度。"
+"PST 字体比例采用小三分之一比例（`1.2x`），并将数值四舍五入至最接近的偶数。除了 H4 到 H3 的过渡外，所有标题的最小增加比例为 `1.2x`，这较之前的比例有所改进。"
 
 #: ../../community/design-system.md:51
 msgid "Styles"
-msgstr ""
+msgstr "风格"
 
 #: ../../community/design-system.md:53
 msgid "Headings"
-msgstr ""
+msgstr "标题"
 
 #: ../../community/design-system.md:55
 msgid ""
 "Headings create structure and hierarchy within the content. They range "
 "from `H1` to `H6`, with each level decreasing in size and importance."
 msgstr ""
+"标题为内容创建结构和层次。标题范围从 `H1` 到 `H6`，每一级的字体大小和重要性依次递减。"
 
 #: ../../community/design-system.md
 msgid "Style"

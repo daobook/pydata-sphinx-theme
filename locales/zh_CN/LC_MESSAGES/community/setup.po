@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/setup.md:1
 msgid "Get started with development"
-msgstr ""
+msgstr "开始开发之旅"
 
 #: ../../community/setup.md:3
 msgid ""

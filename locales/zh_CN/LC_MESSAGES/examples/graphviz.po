@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../examples/graphviz.rst:6
 msgid "Inheritance Diagram"
-msgstr ""
+msgstr "继承关系图"
 
 #: ../../examples/graphviz.rst:8
 msgid ""
@@ -32,12 +32,14 @@ msgid ""
 "diagrams in SVG format, they will automatically adapt to this theme's "
 "light or dark mode."
 msgstr ""
+"如果您使用 :mod:`sphinx.ext.inheritance_diagram` 和 :mod:`sphinx.ext.graphviz` 生成继承关系图，并以 SVG 格式输出，这些图表将自动适应此主题的浅色或深色模式。"
 
 #: ../../examples/graphviz.rst:12
 msgid ""
 "To have the inheritance-diagram render to SVG, inside ``conf.py``, you "
 "need the following option."
 msgstr ""
+"要使继承关系图渲染为 SVG 格式，在 ``conf.py`` 中，您需要设置以下选项。"
 
 #: ../../examples/graphviz.rst:22
 msgid ""
@@ -45,8 +47,9 @@ msgid ""
 "``matplotlib.figure.Figure``. Try toggling light/dark mode to see it "
 "adapt!"
 msgstr ""
+"以下是 ``matplotlib.figure.Figure`` 的继承关系图示例。尝试切换浅色/深色模式以查看其自适应效果！"
 
 #: ../../examples/graphviz.rst:27
 msgid "See the sphinx inheritance-diagram `documentation`_ for more information."
-msgstr ""
+msgstr "有关更多信息，请参阅 sphinx 继承关系图的 `documentation`_。"
 

@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../examples/gallery.md:1
 msgid "Gallery of sites using this theme"
-msgstr ""
+msgstr "使用此主题的网站展示"
 
 #: ../../examples/gallery.md:3
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../examples/execution.rst:2
 msgid "Execution Libraries"
-msgstr ""
+msgstr "执行库"
 
 #: ../../examples/execution.rst:4
 msgid ""
@@ -28,6 +28,8 @@ msgid ""
 ":doc:`./pydata`. In this section we'll show alternatives that runs code "
 "for you using a Jupyter like kernel."
 msgstr ""
+"许多执行库可用于显示 IPython 单元格的输出。"
+"使用 ``MySTnb`` 来解析并展示在 :doc:`./pydata` 中呈现的输出内容。在本节中，将展示一些替代方案，它们使用类似 Jupyter 的内核来为您运行代码。"
 
 #: ../../examples/execution.rst:7
 msgid "Jupyterlite"
@@ -41,6 +43,8 @@ msgid ""
 "https://github.com/jupyterlite/jupyterlite-sphinx/issues/69 for more "
 "information."
 msgstr ""
+"目前，jupyterLite 库尚未提供从浅色主题切换到深色主题的功能。"
+"如果您考虑在文档中使用它，您还应该强制用户使用浅色主题。请关注 https://github.com/jupyterlite/jupyterlite-sphinx/issues/69 以获取更多信息。"
 
 #: ../../examples/execution.rst:13
 msgid ""
@@ -49,12 +53,15 @@ msgid ""
 "documentation. It makes a full JupyterLite deployment in your docs and "
 "provide some utilities for using that deployment easily."
 msgstr ""
+"``jupyterlite-sphinx`` 将 `JupyterLite <https://jupyterlite.readthedocs.io/en/latest/>`__ 的强大功能引入到您的 Sphinx 文档中。"
+"它在您的文档中实现了完整的 JupyterLite 部署，并提供了一些实用工具，以便轻松使用该部署。"
 
 #: ../../examples/execution.rst:15
 msgid ""
 "This section demonstrate how it displays in a **pydata-sphinx-theme** "
 "context:"
 msgstr ""
+"本节展示了它在 **pydata-sphinx-theme** 环境中的显示效果："
 
 #: ../../examples/execution.rst:25
 msgid "jupyter-sphinx"
@@ -65,4 +72,4 @@ msgid ""
 "Another common library is ``jupyter-sphinx``. This section demonstrates a"
 " subset of functionality to make sure it behaves as expected."
 msgstr ""
-
+"另一个常见的库是 ``jupyter-sphinx``。本节展示了其部分功能，以确保其行为符合预期。"
