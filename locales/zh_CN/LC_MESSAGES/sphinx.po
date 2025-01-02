@@ -20,9 +20,9 @@ msgstr ""
 #: ../../_templates/edit-this-page.html:9
 #, python-format
 msgid "Edit on %(provider)s"
-msgstr ""
+msgstr "在 %(provider)s 上编辑"
 
 #: ../../_templates/edit-this-page.html:11
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 

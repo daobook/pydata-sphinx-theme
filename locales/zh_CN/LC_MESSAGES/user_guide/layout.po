@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../user_guide/layout.rst:3
 msgid "Theme Structure and Layout"
-msgstr ""
+msgstr "主题结构与布局"
 
 #: ../../user_guide/layout.rst:5
 msgid ""
@@ -31,10 +31,12 @@ msgid ""
 "section terminology from the `Sphinx Basic NG theme <https://sphinx-"
 "basic-ng.readthedocs.io/en/latest/>`__."
 msgstr ""
+"本节介绍了一些控制文档布局和结构的基本方法。"
+"该主题继承了 `Sphinx Basic NG 主题 <https://sphinx-basic-ng.readthedocs.io/en/latest/>`__ 的结构和部分术语。"
 
 #: ../../user_guide/layout.rst:9
 msgid "Overview of theme layout"
-msgstr ""
+msgstr "主题布局概览"
 
 #: ../../user_guide/layout.rst:11
 msgid ""
@@ -46,6 +48,9 @@ msgid ""
 "reference of the existing option please see :ref:`the last section of "
 "this page <references>`."
 msgstr ""
+"以下是对该主题主要布局的简要概述。请查看图表以了解主要部分的名称。"
+"在 ``html_theme_options`` 中可以插入组件模板的位置，包含了变量名称 ``in inline code``。"
+"点击部分标题以了解更多信息以及一些基本布局配置。如需完整参考现有选项，请参阅 :ref:`本页最后一节 <references>`。"
 
 #: ../../user_guide/layout.rst:47
 msgid "layout-header"
@@ -149,7 +154,7 @@ msgstr ""
 
 #: ../../user_guide/layout.rst:185
 msgid "Horizontal spacing"
-msgstr ""
+msgstr "水平间距"
 
 #: ../../user_guide/layout.rst:187
 msgid ""
@@ -157,6 +162,7 @@ msgid ""
 "sidebar`` will snap to the left, the ``secondary sidebar`` will snap to "
 "the right, and the ``article content`` will be centered in between."
 msgstr ""
+"默认情况下，主题的三列具有固定宽度。``主侧边栏`` 将靠左对齐，``次侧边栏`` 将靠右对齐，而 ``文章内容`` 将居中显示在两者之间。"
 
 #: ../../user_guide/layout.rst:190
 msgid ""

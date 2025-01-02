@@ -22,43 +22,45 @@ msgstr ""
 
 #: ../../user_guide/index.md:25
 msgid "Get started"
-msgstr ""
+msgstr "快速入门"
 
 #: ../../user_guide/index.md:32
 msgid "Navigation and links"
-msgstr ""
+msgstr "导航与链接"
 
 #: ../../user_guide/index.md:42
 msgid "User Interface"
-msgstr ""
+msgstr "用户接口"
 
 #: ../../user_guide/index.md:54
 msgid "Content and features"
-msgstr ""
+msgstr "内容与功能"
 
 #: ../../user_guide/index.md:62
 msgid "Theming and Style"
-msgstr ""
+msgstr "主题与样式"
 
 #: ../../user_guide/index.md:71
 msgid "Miscellaneous"
-msgstr ""
+msgstr "杂项"
 
 #: ../../user_guide/index.md
 msgid ""
 "Documentation for users who wish to build sphinx sites with\n"
 "pydata-sphinx-theme.\n"
 msgstr ""
+"为希望使用 pydata-sphinx-theme 构建 Sphinx 站点的用户提供的文档。\n"
 
 #: ../../user_guide/index.md:9
 msgid "User Guide"
-msgstr ""
+msgstr "用户指南"
 
 #: ../../user_guide/index.md:11
 msgid ""
 "You can configure the behavior, look, and feel of the theme in many ways."
 " The remaining pages in the user guide cover various ways of doing so."
 msgstr ""
+"您可以通过多种方式配置主题的行为、外观和风格。用户指南的其余页面涵盖了实现这一目标的各种方法。"
 
 #: ../../user_guide/index.md:15
 msgid ""
@@ -67,6 +69,8 @@ msgid ""
 "Make these customizations at your own risk, and pin versions if you're "
 "worried about breaking changes!"
 msgstr ""
+"该主题仍在积极开发中，不保证任何特定 HTML 结构、CSS 变量等的稳定性。"
+"请自行承担风险进行这些自定义，如果您担心破坏性更改，请固定版本！"
 
 #: ../../user_guide/index.md:21
 msgid ""
@@ -75,4 +79,5 @@ msgid ""
 "variable in your `conf.py` file. This is a dictionary with `key: val` "
 "pairs that you can configure in various ways."
 msgstr ""
-
+"有多种选项可以配置您网站的外观和感觉。"  
+"所有配置选项都通过 `conf.py` 文件中的 `html_theme_options` 变量传递。这是包含 `key: val` 对的字典，您可以通过多种方式进行配置。"
