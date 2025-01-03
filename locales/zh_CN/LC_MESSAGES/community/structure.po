@@ -32,10 +32,11 @@ msgid ""
 " The content is written in a combination of reStructuredText and MyST "
 "Markdown."
 msgstr ""
+"此主题的文档位于 `docs/` 文件夹中。它被构建为 [Sphinx 文档站点](https://www.sphinx-doc.org/)。内容以 reStructuredText 和 MyST Markdown 组合编写。"
 
 #: ../../community/structure.md:9
 msgid "Location and structure of CSS/JS assets"
-msgstr ""
+msgstr "CSS/JS 资源的位置和结构"
 
 #: ../../community/structure.md:11
 msgid ""
@@ -43,6 +44,7 @@ msgid ""
 "`src/pydata_sphinx_theme/assets/*` with "
 "[webpack](https://webpack.js.org/). The main entry points are:"
 msgstr ""
+"此主题的 CSS 和 JS 是为浏览器从 `src/pydata_sphinx_theme/assets/*` 使用 [webpack](https://webpack.js.org/) 构建的。主要入口点是："
 
 #: ../../community/structure.md:14
 msgid "CSS: `src/pydata_sphinx_theme/assets/styles/pydata-sphinx-theme.scss`"
@@ -50,7 +52,7 @@ msgstr ""
 
 #: ../../community/structure.md:16
 msgid "the main part of the theme assets"
-msgstr ""
+msgstr "主题资源的主要部分"
 
 #: ../../community/structure.md:17
 msgid ""
@@ -67,6 +69,7 @@ msgid ""
 "provides add-on Bootstrap features, as well as some custom navigation "
 "behavior"
 msgstr ""
+"提供附加的 Bootstrap 功能以及一些自定义导航行为"
 
 #: ../../community/structure.md:23
 msgid "webpack: `webpack.config.js`"
@@ -78,4 +81,4 @@ msgid ""
 "`src/pydata_sphinx_theme/assets/*` into the production assets in "
 "`src/theme/pydata_sphinx_theme/static/`"
 msgstr ""
-
+"捕获将 `src/pydata_sphinx_theme/assets/*` 中的 JS 和 CSS 源文件转换为 `src/theme/pydata_sphinx_theme/static/` 中的生产资源的技术"

@@ -29,10 +29,11 @@ msgid ""
 "This theme is supported and developed by various members of [the PyData "
 "community](https://pydata.org)."
 msgstr ""
+"此主题由 [PyData 社区](https://pydata.org) 的各个成员支持和开发。"
 
 #: ../../community/contributors.md:5
 msgid "Collaborators on the repository"
-msgstr ""
+msgstr "仓库的协作者"
 
 #: ../../community/contributors.md:7
 msgid ""
@@ -40,6 +41,7 @@ msgid ""
 "have formal \"team definitions\" so this is mostly a reflection of who "
 "has commit rights to the repository."
 msgstr ""
+"以下是我们 GitHub 仓库的协作者网格。我们还没有正式的“团队定义”，因此这主要反映了谁拥有仓库的提交权限。"
 
 #: ../../community/contributors.md:24
 msgid "@bollwyvl"
@@ -123,7 +125,7 @@ msgstr ""
 
 #: ../../community/contributors.md:14
 msgid "Financial support"
-msgstr ""
+msgstr "财务支持"
 
 #: ../../community/contributors.md:16
 msgid ""
@@ -131,14 +133,15 @@ msgid ""
 "Small Development Grant](https://numfocus.org/programs/small-development-"
 "grants) on behalf of several communities in the PyData ecosystem."
 msgstr ""
+"此主题的支持和开发已通过 [NumFocus 小型开发资助](https://numfocus.org/programs/small-development-grants) 代表 PyData 生态系统中的多个社区获得资助。"
 
 #: ../../community/contributors.md:18
 msgid "Theme logo"
-msgstr ""
+msgstr "主题 logo"
 
 #: ../../community/contributors.md:20
 msgid ""
 "Thanks to [@drammock](https://github.com/drammock) for the initial design"
 " of the theme logo."
 msgstr ""
-
+"感谢 [@drammock](https://github.com/drammock) 设计了主题徽标的初始版本。"

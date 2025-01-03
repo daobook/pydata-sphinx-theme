@@ -27,16 +27,18 @@ msgid ""
 " locally so that you can contribute. It uses automation and as few steps "
 "as possible to get things done."
 msgstr ""
+"本节介绍了开始本地开发此主题的最简单方法，以便您可以做出贡献。它使用自动化并以尽可能少的步骤完成任务。"
 
 #: ../../community/setup.md:6
 msgid ""
 "If you are comfortable with and prefer a more manual setup refer to the "
 "[](topics/manual-dev.md) section."
 msgstr ""
+"如果您熟悉并更喜欢更手动的设置，请参阅 [](topics/manual-dev.md) 部分。"
 
 #: ../../community/setup.md:8
 msgid "Testing pre-release and nightly"
-msgstr ""
+msgstr "测试预发布版和 nightly 版本"
 
 #: ../../community/setup.md:10
 msgid ""
