@@ -97,7 +97,7 @@ msgstr "排版"
 
 #: ../../community/design-system.md:32
 msgid "Typeface"
-msgstr "字体”"
+msgstr "字体"
 
 #: ../../community/design-system.md:34
 msgid "PyData Sphinx uses default system fonts."

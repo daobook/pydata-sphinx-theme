@@ -19,23 +19,26 @@ msgstr ""
 
 #: ../../community/topics/assets.md:1
 msgid "Web assets (CSS/JS/Fonts)"
-msgstr ""
+msgstr "网络资源（CSS/JS/字体）"
 
 #: ../../community/topics/assets.md:3
 msgid ""
 "This theme includes several web assets to ease development and design. "
 "The configuration for our asset compilation is in `webpack.config.js`."
 msgstr ""
+"这个主题包含多个网络资源，以简化开发和设计。"  
+"我们资源编译的配置在 `webpack.config.js` 文件中。"
 
 #: ../../community/topics/assets.md:6
 msgid "Compile and bundle assets"
-msgstr ""
+msgstr "编译并打包资源"
 
 #: ../../community/topics/assets.md:8
 msgid ""
 "When assets are compiled, static versions are placed in various places in"
 " the theme's static folder:"
 msgstr ""
+"当资源被编译后，静态版本会被放置在主题的静态文件夹中的各个位置："
 
 #: ../../community/topics/assets.md:14
 msgid ""
@@ -44,24 +47,26 @@ msgid ""
 "asset versions are served when viewers return to your site after "
 "upgrading the theme."
 msgstr ""
+"对于许多资源，系统会生成 `<hash>` 并将其附加到主题HTML模板中资源引用的末尾。这样可以确保在用户升级主题后再次访问您的网站时，能够提供正确的资源版本。"
 
 #: ../../community/topics/assets.md:18
 msgid "To compile the assets and bundle them with the theme, run this command:"
-msgstr ""
+msgstr "要编译资源并将其与主题打包，请运行以下命令："
 
 #: ../../community/topics/assets.md:24
 msgid "Styles (SCSS) and Scripts (JS)"
-msgstr ""
+msgstr "样式（SCSS）和脚本（JS）"
 
 #: ../../community/topics/assets.md:26
 msgid "There are two relevant places for CSS/JS assets:"
-msgstr ""
+msgstr "CSS/JS 资源有两个相关的位置："
 
 #: ../../community/topics/assets.md:28
 msgid ""
 "`src/pydata_sphinx_theme/assets/styles` has source files for SCSS assets."
 " These will be compiled to CSS."
 msgstr ""
+"`src/pydata_sphinx_theme/assets/styles` 包含 SCSS 资源的源文件。这些文件将被编译为 CSS。"
 
 #: ../../community/topics/assets.md:29
 msgid ""
@@ -69,6 +74,7 @@ msgid ""
 "These will be compiled to JS and import several vendored libraries (like "
 "Bootstrap)."
 msgstr ""
+"`src/pydata_sphinx_theme/assets/scripts` 包含 JS 资源的源文件。这些文件将被编译为 JS，并导入一些第三方库（如 Bootstrap）。"
 
 #: ../../community/topics/assets.md:30
 msgid ""
@@ -76,10 +82,11 @@ msgid ""
 "versions of these assets (e.g. CSS files). This folder is not tracked in "
 "`.git` history, but it is bundled with the theme's distribution."
 msgstr ""
+"`src/pydata_sphinx_theme/theme/pydata_sphinx_theme/static` 包含这些资源的编译版本（例如 CSS 文件）。此文件夹未在 `.git` 历史记录中跟踪，但它会与主题的发行版一起打包。"
 
 #: ../../community/topics/assets.md:32
 msgid "Vendored scripts"
-msgstr ""
+msgstr "第三方脚本"
 
 #: ../../community/topics/assets.md:34
 msgid ""
@@ -88,10 +95,12 @@ msgid ""
 "`webpack.config.js` file, and imported in the respective `SCSS` or `JS` "
 "file in our assets folder."
 msgstr ""
+"除了我们自己的 CSS 和 JS 外，我们还引入了一些第三方包。"
+"例如，Bootstrap、JQuery 和 Popper。这些配置在 `webpack.config.js` 文件中，并在我们资源文件夹中相应的 `SCSS` 或 `JS` 文件中导入。"
 
 #: ../../community/topics/assets.md:38
 msgid "FontAwesome icons"
-msgstr ""
+msgstr "FontAwesome 图标"
 
 #: ../../community/topics/assets.md:40
 msgid ""
@@ -100,26 +109,27 @@ msgid ""
 "{ref}`icon links <icon-links>` and admonitions and is the only `vendored`"
 " font."
 msgstr ""
+"使用了 [FontAwesome 6 Free](https://fontawesome.com/icons?m=free) 图标字体的三种“样式”来支持 {ref}`图标链接 <icon-links>` 和注释，这是唯一引入的第三方字体。"
 
 #: ../../community/topics/assets.md:44
 msgid "It is managed as a dependency in `package.json`"
-msgstr ""
+msgstr "它作为依赖项在 `package.json` 中进行管理。"
 
 #: ../../community/topics/assets.md:45
 msgid "Copied directly into the site statics at compilation, including licenses"
-msgstr ""
+msgstr "在编译时直接复制到网站的静态文件中，包括许可证。"
 
 #: ../../community/topics/assets.md:46
 msgid "Partially preloaded to reduce flicker and artifacts of early icon renders"
-msgstr ""
+msgstr "部分预加载以减少早期图标渲染时的闪烁和伪影。"
 
 #: ../../community/topics/assets.md:47
 msgid "Configured in `webpack.config.js`"
-msgstr ""
+msgstr "在 `webpack.config.js` 中配置。"
 
 #: ../../community/topics/assets.md:49
 msgid "Jinja macros"
-msgstr ""
+msgstr "Jinja 宏"
 
 #: ../../community/topics/assets.md:51
 msgid ""
@@ -127,12 +137,14 @@ msgid ""
 "macros](https://jinja.palletsprojects.com/en/3.0.x/templates/#macros) in "
 "the `static/webpack-macros.html` file."
 msgstr ""
+"Webpack 构建会在 `static/webpack-macros.html` 文件中生成一组 [Jinja 宏](https://jinja.palletsprojects.com/en/3.0.x/templates/#macros)。"
 
 #: ../../community/topics/assets.md:53
 msgid ""
 "These macros are imported in the main `layout.html` file, and then "
 "inserted at various places on the page to link the static assets."
 msgstr ""
+"这些宏被导入到主 `layout.html` 文件中，然后插入到页面的各个位置以链接静态资源。"
 
 #: ../../community/topics/assets.md:55
 msgid ""
@@ -142,4 +154,5 @@ msgid ""
 "JavaScript assets are preloaded in `<head>`, and the scripts are loaded "
 "at the end of `<body>`."
 msgstr ""
-
+"一些资源[被“预加载”](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload)，这意味着浏览器在需要这些资源之前就开始请求它们。"
+"特别是，我们的 JavaScript 资源在 `<head>` 中被预加载，而脚本在 `<body>` 的末尾加载。"

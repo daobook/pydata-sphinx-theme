@@ -66,7 +66,8 @@ msgid ""
 "gettext concepts "
 "<https://www.gnu.org/software/gettext/manual/html_node/Concepts.html>`__."
 msgstr ""
-"特定国家文化习惯的正式描述，以及所有针对同一母语的翻译，称为该语言或国家的 *区域设置*。有关本地化和国际化的更多信息，请参阅 `GNU gettext 概念 <https://www.gnu.org/software/gettext/manual/html_node/Concepts.html>`__。"
+"特定国家文化习惯的正式描述，以及所有针对同一母语的翻译，称为该语言或国家的 *区域设置*。"
+"有关本地化和国际化的更多信息，请参阅 `GNU gettext 概念 <https://www.gnu.org/software/gettext/manual/html_node/Concepts.html>`__。"
 
 #: ../../community/topics/i18n.rst:24
 msgid ""
@@ -92,24 +93,27 @@ msgid ""
 "(locale) you want to localize <adding-new-language>` (or :ref:`update "
 "existing localization files <updating-localization-files>`)."
 msgstr ""
+"从 ``POT`` 文件生成 ``PO`` 文件，用于 :ref:`您想要本地化的新语言（区域设置）<adding-new-language>` "
+"（或 :ref:`更新现有的本地化文件 <updating-localization-files>`）。"
 
 #: ../../community/topics/i18n.rst:30
 msgid ""
 ":ref:`Compile the message catalogs <compiling-localization-files>` to "
 "binary ``MO`` files."
 msgstr ""
+":ref:`将消息目录编译 <compiling-localization-files>` 为二进制 ``MO`` 文件。"
 
 #: ../../community/topics/i18n.rst:31
 msgid ":ref:`Localize the theme <localizing-the-theme>`."
-msgstr ""
+msgstr ":ref:`本地化主题 <localizing-the-theme>`."
 
 #: ../../community/topics/i18n.rst:34
 msgid "Localization files"
-msgstr ""
+msgstr "本地化文件"
 
 #: ../../community/topics/i18n.rst:36
 msgid "There are three types of files used in the localization process:"
-msgstr ""
+msgstr "在本地化过程中使用三种类型的文件："
 
 #: ../../community/topics/i18n.rst:38
 msgid ""
@@ -120,20 +124,24 @@ msgid ""
 "``msgstr`` fields). A single PO file is dedicated to a single target "
 "language."
 msgstr ""
+"`PO 文件 <https://www.gnu.org/software/gettext/manual/gettext.html#PO-Files>`__ "
+"（便携对象，也称为消息目录）将给定程序的每个原始可翻译字符串（在 ``msgid`` 中定义）"
+"与其在特定目标语言中的翻译（在 ``msgstr`` 字段中定义）关联。一个 PO 文件专用于一个目标语言。"
 
 #: ../../community/topics/i18n.rst:41
 msgid "``MO`` (Machine Object) files are a binary version of a PO file."
-msgstr ""
+msgstr "``MO`` （机器对象）文件是 PO 文件的二进制版本。"
 
 #: ../../community/topics/i18n.rst:42
 msgid ""
 "``POT`` (Portable Object Template) files are similar to PO files, but "
 "with empty translations. They are used as a template for new languages."
 msgstr ""
+"``POT`` （便携对象模板）文件类似于 PO 文件，但翻译为空。它们用作新语言的模板。"
 
 #: ../../community/topics/i18n.rst:49
 msgid "Marking strings as localizable"
-msgstr ""
+msgstr "将字符串标记为可本地化"
 
 #: ../../community/topics/i18n.rst:51
 msgid ""
@@ -142,6 +150,8 @@ msgid ""
 " into other languages. For example, if you add a button with the text "
 "**Next page**, you will need to mark this text as localizable."
 msgstr ""
+"主题组件和布局中的所有自然语言文本都必须标记为可本地化，以便以后可以将其翻译（或本地化）为其他语言。"
+"例如，如果您添加了一个带有文本 **下一页** 的按钮，则需要将此文本标记为可本地化。"
 
 #: ../../community/topics/i18n.rst:54
 msgid ""
@@ -149,24 +159,28 @@ msgid ""
 "directory). To do so, you can use the Jinja2 ``trans`` block and/or a "
 "``_()`` function to mark text as localizable in the corresponding"
 msgstr ""
+"``HTML`` 模板（位于 ``src/pydata_sphinx_theme/theme/`` 目录中）。为此，您可以使用 Jinja2 ``trans`` 块和/或 ``_()`` 函数将文本标记为可本地化。"
 
 #: ../../community/topics/i18n.rst:57
 msgid ""
 "For example, to mark the text **Next page** as localizable, you would "
 "write:"
 msgstr ""
+"例如，要将文本 **Next page** 标记为可本地化，您可以编写："
 
 #: ../../community/topics/i18n.rst:65
 msgid ""
 "Any text that is marked in this way will be discoverable by ``pybabel`` "
 "and used to generate the localization files (``PO`` files)."
 msgstr ""
+"任何以这种方式标记的文本都可以被 ``pybabel`` 发现，并用于生成本地化文件（``PO`` 文件）。"
 
 #: ../../community/topics/i18n.rst:68
 msgid ""
 "Once you've marked the text as localizable, complete the steps outlined "
 "in the :ref:`updating-localization-files` section of this documentation."
 msgstr ""
+"一旦您将文本标记为可本地化，请完成本文档 :ref:`updating-localization-files` 部分中概述的步骤。"
 
 #: ../../community/topics/i18n.rst:71
 msgid ""
@@ -174,6 +188,7 @@ msgid ""
 "visit `the Jinja2 documentation "
 "<https://jinja.palletsprojects.com/en/3.0.x/templates/>`__."
 msgstr ""
+"有关在 jinja 模板中将字符串标记为可本地化的更多详细信息，请访问 `Jinja2 文档 <https://jinja.palletsprojects.com/en/3.0.x/templates/>`__。"
 
 #: ../../community/topics/i18n.rst:74
 msgid ""
@@ -181,6 +196,7 @@ msgid ""
 "<https://jinja.palletsprojects.com/en/2.11.x/templates/#working-with-"
 "manual-escaping>`__ if needed."
 msgstr ""
+"如果需要，请记住 `手动转义变量 <https://jinja.palletsprojects.com/en/2.11.x/templates/#working-with-manual-escaping>`__。"
 
 #: ../../community/topics/i18n.rst:76
 msgid ""
@@ -191,10 +207,12 @@ msgid ""
 " the string with a comment that starts with ``L10n:``, the comment will "
 "be added to the PO file, and visible to localizers. For example:"
 msgstr ""
+"有时，向本地化人员描述字符串的来源或它是指名词还是动词可能会有所帮助，特别是如果该字符串在主题中难以找到，或者字符串本身不太具有自描述性（例如，非常短的字符串）。"
+"如果您在字符串之前立即添加以 ``L10n:`` 开头的注释，该注释将被添加到 PO 文件中，并对本地化人员可见。例如："
 
 #: ../../community/topics/i18n.rst:91
 msgid "Updating the localization files"
-msgstr ""
+msgstr "更新本地化文件"
 
 #: ../../community/topics/i18n.rst:93
 msgid ""
@@ -202,22 +220,25 @@ msgid ""
 "update the message catalogs to include the new or updated text. Follow "
 "these steps:"
 msgstr ""
+"当您在主题中添加或更改自然语言文本时，必须更新消息目录以包含新的或更新的文本。请按照以下步骤操作："
 
 #: ../../community/topics/i18n.rst:96
 msgid ""
 "Edit the natural language text and ensure it is :ref:`marked as "
 "localizable <adding-localizable-text>`."
 msgstr ""
+"编辑自然语言文本并确保其 :ref:`标记为可本地化 <adding-localizable-text>`。"
 
 #: ../../community/topics/i18n.rst:98
 msgid "Extract the strings and update the localization files (``POT`` file):"
-msgstr ""
+msgstr "提取字符串并更新本地化文件（``POT`` 文件）："
 
 #: ../../community/topics/i18n.rst:105
 msgid ""
 "This will update the localization files with new information about the "
 "position and text of the language you have modified."
 msgstr ""
+"这将使用有关您修改的语言的位置和文本的新信息更新本地化文件。"
 
 #: ../../community/topics/i18n.rst:107
 msgid ""
@@ -227,6 +248,8 @@ msgid ""
 "are to inform the human translator, not to perform the localization. But "
 "it is best practice to keep the positions up to date."
 msgstr ""
+"如果您 *仅* 更改非本地化文本（如 HTML 标记），``extract`` 命令将仅更新可本地化字符串的位置（行号）。"
+"更新位置是可选的 —— 行号是为了通知人工翻译人员，而不是为了执行本地化。但保持位置最新是最佳实践。"
 
 #: ../../community/topics/i18n.rst:112
 msgid ""
@@ -243,20 +266,25 @@ msgid ""
 "<https://www.gnu.org/software/gettext/manual/gettext.html#Fuzzy-"
 "Entries>`__."
 msgstr ""
+"如果您更改了可本地化字符串，上述命令将提取新的或更新的字符串到本地化模板文件（``POT``）中，并在新的或更新的字符串与本地化文件中的现有本地化之间执行模糊匹配。"
+"如果有模糊匹配，则在匹配条目之前添加类似 ``#, fuzzy`` 的注释，这意味着需要手动审查并可能更新本地化。"
+"如果在审查本地化后您决定保留现有本地化，可以从条目中删除 ``#, fuzzy`` 注释。如果没有模糊匹配，它将添加新的本地化条目。"
+"您可以在 `GNU gettext 手册 <https://www.gnu.org/software/gettext/manual/gettext.html#Fuzzy-Entries>`__ 中了解更多关于模糊条目的信息。"
 
 #: ../../community/topics/i18n.rst:125
 msgid "Compiling the localization files"
-msgstr ""
+msgstr "编译本地化文件"
 
 #: ../../community/topics/i18n.rst:127
 msgid ""
 "Gettext doesn't parse any text files, it reads a binary format for faster"
 " performance. To compile the latest PO files in the repository run:"
 msgstr ""
+"Gettext 不解析任何文本文件，它读取二进制格式以提高性能。要编译仓库中的最新 PO 文件，请运行："
 
 #: ../../community/topics/i18n.rst:134
 msgid "You can also run the extract, update and compile commands in one go:"
-msgstr ""
+msgstr "您还可以一次性运行提取、更新和编译命令："
 
 #: ../../community/topics/i18n.rst:140
 msgid ""
@@ -265,20 +293,22 @@ msgid ""
 "needing review, the compilation will fail, and you will need to review "
 "the localizations manually. Then compile the files again."
 msgstr ""
+"这将更新本地化文件并将其编译为二进制 ``MO`` 文件，一步完成。但是，如果有需要审查的模糊匹配，编译将失败，您需要手动审查本地化。然后再次编译文件。"
 
 #: ../../community/topics/i18n.rst:148
 msgid "Adding a new language"
-msgstr ""
+msgstr "添加新语言"
 
 #: ../../community/topics/i18n.rst:150
 msgid ""
 "The list of languages with existing (possibly incomplete) localizations "
 "is available in the ``src/pydata_sphinx_theme/locale`` directory."
 msgstr ""
+"具有现有（可能不完整）本地化的语言列表可在 ``src/pydata_sphinx_theme/locale`` 目录中找到。"
 
 #: ../../community/topics/i18n.rst:153
 msgid "To add a new language, follow these steps:"
-msgstr ""
+msgstr "要添加新语言，请按照以下步骤操作："
 
 #: ../../community/topics/i18n.rst:155
 msgid ""
@@ -286,10 +316,11 @@ msgid ""
 "<https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__ for the new "
 "language."
 msgstr ""
+"确定新语言的 `ISO 639-1 代码 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__。"
 
 #: ../../community/topics/i18n.rst:157
 msgid "Generate a ``PO`` file based on ``POT`` file for this new language:"
-msgstr ""
+msgstr "基于 ``POT`` 文件为此新语言生成 ``PO`` 文件："
 
 #: ../../community/topics/i18n.rst:164
 msgid ""
@@ -297,36 +328,40 @@ msgid ""
 ":`updating-localization-files` and :ref:`compiling-localization-files` "
 "sections. Then commit the changes."
 msgstr ""
+"按照 :ref:`updating-localization-files` 和 :ref:`compiling-localization-files` 部分中的描述更新并编译本地化文件。然后提交更改。"
 
 #: ../../community/topics/i18n.rst:166
 msgid ""
 "Localize the theme's into the newly added language (see :ref:`localizing-"
 "the-theme`)."
 msgstr ""
+"将主题本地化为新添加的语言（参见 :ref:`localizing-the-theme`）。"
 
 #: ../../community/topics/i18n.rst:171
 msgid "Localizing the theme"
-msgstr ""
+msgstr "本地化主题"
 
 #: ../../community/topics/i18n.rst:173
 msgid ""
 "We manage localizations on the `PyData Sphinx Theme project on Transifex "
 "<https://explore.transifex.com/12rambau/pydata-sphinx-theme/>`__."
 msgstr ""
+"我们在 `Transifex 上的 PyData Sphinx 主题项目 <https://explore.transifex.com/12rambau/pydata-sphinx-theme/>`__ 中管理本地化。"
 
 #: ../../community/topics/i18n.rst:175
 msgid "To contribute localization, follow these steps:"
-msgstr ""
+msgstr "要贡献本地化，请按照以下步骤操作："
 
 #: ../../community/topics/i18n.rst:177
 msgid "Sign up for a `Transifex account <https://www.transifex.com/signup/>`__."
-msgstr ""
+msgstr "注册 `Transifex 账户 <https://www.transifex.com/signup/>`__。"
 
 #: ../../community/topics/i18n.rst:178
 msgid ""
 "Join the `PyData Sphinx Theme project "
 "<https://explore.transifex.com/12rambau/pydata-sphinx-theme/>`__."
 msgstr ""
+"加入 `PyData Sphinx 主题项目 <https://explore.transifex.com/12rambau/pydata-sphinx-theme/>`__。"
 
 #: ../../community/topics/i18n.rst:179
 msgid ""
@@ -336,6 +371,8 @@ msgid ""
 "open a pull request to add the new language following the steps outlined "
 "in :ref:`adding-new-language`."
 msgstr ""
+"选择您想要本地化的语言。如果您要找的语言未列出，您可以 `在 GitHub 上提出问题以请求它 <https://github.com/pydata/pydata-sphinx-theme/issues>`__。"
+"然后您可以按照 :ref:`adding-new-language` 中概述的步骤打开拉取请求以添加新语言。"
 
 #: ../../community/topics/i18n.rst:181
 msgid ""
@@ -344,20 +381,23 @@ msgid ""
 "<https://help.transifex.com/en/articles/6240403-translating-html-"
 "content>`__ for more information."
 msgstr ""
+"现在您可以开始本地化主题了。"
+"如果您是 Transifex 的新手，可以访问 `Transifex 文档 <https://help.transifex.com/en/articles/6240403-translating-html-content>`__ 了解更多信息。"
 
 #: ../../community/topics/i18n.rst:184
 msgid ""
 "Once you have completed your localization, the PyData Sphinx Theme "
 "maintainers will review and approve it."
 msgstr ""
+"一旦您完成本地化，PyData Sphinx 主题维护者将审查并批准它。"
 
 #: ../../community/topics/i18n.rst:187
 msgid "Localization tips"
-msgstr ""
+msgstr "本地化技巧"
 
 #: ../../community/topics/i18n.rst:190
 msgid "Localize phrases, not words"
-msgstr ""
+msgstr "本地化短语，而不是单词"
 
 #: ../../community/topics/i18n.rst:192
 msgid ""
@@ -365,10 +405,11 @@ msgid ""
 "Otherwise, you can get ``next page`` localizated as ``suivant page`` "
 "instead of as ``page suivante``, etc."
 msgstr ""
+"完整的句子和从句必须始终是可本地化的字符串。否则，您可能会得到 ``next page`` 被本地化为 ``suivant page`` 而不是 ``page suivante`` 等。"
 
 #: ../../community/topics/i18n.rst:196
 msgid "Dealing with variables and markup in localizations"
-msgstr ""
+msgstr "处理本地化中的变量和标记"
 
 #: ../../community/topics/i18n.rst:198
 msgid ""
@@ -377,6 +418,8 @@ msgid ""
 "a combination of the fixed parts ``Welcome to the`` and ``version of the "
 "site`` and the variable part ``Spanish``."
 msgstr ""
+"可本地化字符串可以是固定字符串和变量的组合，例如，``Welcome to the Spanish version of the site`` "
+"是固定部分 ``Welcome to the`` 和 ``version of the site`` 与变量部分 ``Spanish`` 的组合。"
 
 #: ../../community/topics/i18n.rst:207
 msgid ""
@@ -386,6 +429,8 @@ msgid ""
 "version of the site``. The translator must use ``%(language)`` verbatim "
 "while localizing the theme."
 msgstr ""
+"将变量绑定为 ``language=language`` 可确保字符串能够正确本地化，特别是因为词序可能因区域设置而异。"
+"上述字符串将被提取为 ``Welcome to the %(language) version of the site``。翻译人员在本地化主题时必须逐字使用 ``%(language)``。"
 
 #: ../../community/topics/i18n.rst:212
 msgid ""
@@ -393,16 +438,18 @@ msgid ""
 "localized should be passed as arguments. This ensures strings won't need "
 "to be re-localized if those attributes change:"
 msgstr ""
+"当块包含带有属性的 HTML 时，不需要本地化的属性应作为参数传递。这确保如果这些属性更改，字符串不需要重新本地化："
 
 #: ../../community/topics/i18n.rst:223
 msgid "References"
-msgstr ""
+msgstr "参考"
 
 #: ../../community/topics/i18n.rst:225
 msgid ""
 "I18N and L10N are deep topics. Here, we only cover the bare minimum "
 "needed to fulfill basic technical tasks. You might like:"
 msgstr ""
+"I18N 和 L10N 是深奥的主题。在这里，仅涵盖完成基本技术任务所需的最低限度。您可能会喜欢："
 
 #: ../../community/topics/i18n.rst:227
 msgid ""

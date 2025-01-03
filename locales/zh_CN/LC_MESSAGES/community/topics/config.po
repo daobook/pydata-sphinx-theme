@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../community/topics/config.md:1
 msgid "Update Sphinx configuration during the build"
-msgstr ""
+msgstr "在构建过程中更新 Sphinx 配置"
 
 #: ../../community/topics/config.md:3
 msgid ""
@@ -31,14 +31,15 @@ msgid ""
 "value, or if you want to move the value from one keyword to another for a"
 " deprecation."
 msgstr ""
+"有时您可能希望在构建过程中更新配置值。例如，如果用户未提供某个值，您可能希望设置默认值，或者为了弃用某个功能，您可能希望将值从一个关键字移动到另一个关键字。"
 
 #: ../../community/topics/config.md:6
 msgid "Here are some tips to do this the \"right\" way in Sphinx."
-msgstr ""
+msgstr "以下是一些在 Sphinx 中以“正确”方式实现此操作的技巧。"
 
 #: ../../community/topics/config.md:8
 msgid "Update config: use `app.config`"
-msgstr ""
+msgstr "更新配置：使用 `app.config`"
 
 #: ../../community/topics/config.md:10
 msgid ""
@@ -46,18 +47,19 @@ msgid ""
 "sets things it directly uses `__dict__`, but this doesn't seem to be "
 "different from the pattern described here."
 msgstr ""
+"例如，`app.config.foo = \"bar\"`。出于某种原因，当 Sphinx 设置某些值时，它会直接使用 `__dict__`，但这似乎与这里描述的模式没有区别。"
 
 #: ../../community/topics/config.md:13
 msgid "Update theme options: use `app.builder.theme_options`"
-msgstr ""
+msgstr "更新主题选项：使用 `app.builder.theme_options`"
 
 #: ../../community/topics/config.md:15
 msgid "For example, `app.builder.theme_options[\"logo\"] = {\"text\": \"Foo\"}`."
-msgstr ""
+msgstr "例如，`app.builder.theme_options[\"logo\"] = {\"text\": \"Foo\"}`。"
 
 #: ../../community/topics/config.md:17
 msgid "Check if a user has provided a default: `app.config._raw_config`"
-msgstr ""
+msgstr "检查用户是否提供了默认值：`app.config._raw_config`"
 
 #: ../../community/topics/config.md:19
 msgid ""
@@ -67,20 +69,23 @@ msgid ""
 "app.config._raw_config` will be `False` if a user has _not_ provided that"
 " option."
 msgstr ""
+"`app.config._raw_config` 属性包含所有 **用户提供的值**。"
+"如果您想检查是否有人手动指定了某个值，请使用此属性。例如，如果用户 _未_ 提供该选项，`\"somekey\" in app.config._raw_config` 将为 `False`。"
 
 #: ../../community/topics/config.md:23
 msgid "You can also check `app.config.overrides` for any CLI-provided overrides."
-msgstr ""
+msgstr "您还可以检查 `app.config.overrides` 以查看是否有任何通过命令行提供的覆盖值。"
 
 #: ../../community/topics/config.md:25
 msgid ""
 "We bundle both checks in a helper function called "
 "`_config_provided_by_user`."
 msgstr ""
+"将这两个检查捆绑在名为 `_config_provided_by_user` 的辅助函数中。"
 
 #: ../../community/topics/config.md:27
 msgid "Avoid the `config-inited` event"
-msgstr ""
+msgstr "避免使用 `config-inited` 事件"
 
 #: ../../community/topics/config.md:29
 msgid ""
@@ -88,4 +93,4 @@ msgid ""
 " write an event that depends on it in this theme, then it will never "
 "occur. The earliest event you can use is `builder-inited`."
 msgstr ""
-
+"此主题在 `config-inited` 触发 **之后** 激活，因此如果您在此主题中编写依赖于它的事件，则该事件将永远不会发生。您可以使用的最早事件是 `builder-inited`。"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/manual-dev.md:3
 msgid "Set up a manual development environment"
-msgstr ""
+msgstr "设置手动开发环境"
 
 #: ../../community/topics/manual-dev.md:5
 msgid ""
@@ -27,14 +27,15 @@ msgid ""
 "more control over the specific version of packages that you'd like "
 "installed, you may set your local development environment manually."
 msgstr ""
+"如果您不想使用像 `tox` 这样的自动化工具，或者希望对要安装的软件包的特定版本有更多控制，您可以手动设置本地开发环境。"
 
 #: ../../community/topics/manual-dev.md:8
 msgid "To do so, follow the instructions on this page."
-msgstr ""
+msgstr "为此，请按照本页上的说明进行操作。"
 
 #: ../../community/topics/manual-dev.md:10
 msgid "Create a new development environment"
-msgstr ""
+msgstr "创建新的开发环境"
 
 #: ../../community/topics/manual-dev.md:12
 msgid ""
@@ -42,6 +43,7 @@ msgid ""
 "environment so that you've isolated the packages that you're using for "
 "this repository."
 msgstr ""
+"这是可选的，但最好从新的开发环境开始，以便隔离您为此仓库使用的软件包。"
 
 #: ../../community/topics/manual-dev.md:14
 msgid ""
@@ -49,14 +51,15 @@ msgid ""
 "[mamba](https://github.com/mamba-org/mamba), or "
 "[virtualenv](https://virtualenv.pypa.io/)."
 msgstr ""
+"为此，请使用 [conda](https://docs.conda.io/en/latest/)、[mamba](https://github.com/mamba-org/mamba) 或 [virtualenv](https://virtualenv.pypa.io/) 等工具。"
 
 #: ../../community/topics/manual-dev.md:16
 msgid "Pre-requisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../community/topics/manual-dev.md:18
 msgid "Before you start, ensure that you have the following installed:"
-msgstr ""
+msgstr "在开始之前，请确保已安装以下内容："
 
 #: ../../community/topics/manual-dev.md:20
 msgid "Python >= 3.9"
@@ -69,26 +72,30 @@ msgid ""
 "Pandoc](https://pandoc.org/installing.html) at a system level (or within "
 "a Conda environment)."
 msgstr ""
+"[Pandoc](https://pandoc.org/)：使用 `nbsphinx` 来支持文档中的笔记本（`.ipynb`）文件，"
+"这需要在系统级别（或在 Conda 环境中）[安装 Pandoc](https://pandoc.org/installing.html)。"
 
 #: ../../community/topics/manual-dev.md:23
 msgid "Clone the repository locally"
-msgstr ""
+msgstr "在本地克隆仓库"
 
 #: ../../community/topics/manual-dev.md:25
 msgid ""
 "First clone this repository from the `pydata` organization, or from a "
 "fork that you have created:"
 msgstr ""
+"首先从 `pydata` 组织或您创建的分支克隆此仓库："
 
 #: ../../community/topics/manual-dev.md:32
 msgid "Install this theme locally"
-msgstr ""
+msgstr "在本地安装此主题"
 
 #: ../../community/topics/manual-dev.md:34
 msgid ""
 "Next, install this theme locally so that we have the necessary "
 "dependencies to build the documentation and testing suite:"
 msgstr ""
+"接下来，在本地安装此主题，以便我们拥有构建文档和测试套件所需的依赖项："
 
 #: ../../community/topics/manual-dev.md:40
 msgid ""
@@ -96,24 +103,26 @@ msgid ""
 "copy of `nodejs` for building the theme's assets. This will be placed in "
 "a `.nodeenv` folder."
 msgstr ""
+"请注意，`sphinx-theme-builder` 将自动安装本地 `nodejs` 副本以构建主题资源。这将放置在 `.nodeenv` 文件夹中。"
 
 #: ../../community/topics/manual-dev.md:43
 msgid "Build the documentation"
-msgstr ""
+msgstr "构建文档"
 
 #: ../../community/topics/manual-dev.md:45
 msgid "To manually build the documentation, run the following command:"
-msgstr ""
+msgstr "要手动构建文档，请运行以下命令："
 
 #: ../../community/topics/manual-dev.md:51
 msgid "Compile web assets (JS/CSS)"
-msgstr ""
+msgstr "编译 Web 资源（JS/CSS）"
 
 #: ../../community/topics/manual-dev.md:53
 msgid ""
 "To compile the JavaScript and CSS assets for the theme, run the following"
 " command:"
 msgstr ""
+"要为主题编译 JavaScript 和 CSS 资源，请运行以下命令："
 
 #: ../../community/topics/manual-dev.md:59
 msgid ""
@@ -121,24 +130,27 @@ msgid ""
 "folder and place them in the appropriate places in our theme's folder "
 "structure."
 msgstr ""
+"这将编译 `src/pydata_sphinx_theme/assets` 文件夹中的所有内容，并将它们放置在我们主题文件夹结构中的适当位置。"
 
 #: ../../community/topics/manual-dev.md:61
 msgid "Start a live server to build and serve your documentation"
-msgstr ""
+msgstr "启动实时服务器以构建并提供您的文档"
 
 #: ../../community/topics/manual-dev.md:63
 msgid ""
 "To manually open a server to watch your documentation for changes, build "
 "them, and display them locally in a browser, run this command:"
 msgstr ""
+"要手动打开服务器以监视文档的更改、构建它们并在本地浏览器中显示它们，请运行以下命令："
 
 #: ../../community/topics/manual-dev.md:69
 msgid "Manually run the tests"
-msgstr ""
+msgstr "手动运行测试"
 
 #: ../../community/topics/manual-dev.md:71
 msgid ""
 "To manually run the tests for this theme, first set up your environment "
 "locally, and then run:"
 msgstr ""
+"要手动运行此主题的测试，请首先在本地设置您的环境，然后运行："
 

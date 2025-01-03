@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/accessibility.md:1
 msgid "Accessibility checks and manual auditing"
-msgstr ""
+msgstr "无障碍检查与手动审核"
 
 #: ../../community/topics/accessibility.md:3
 msgid ""
@@ -27,6 +27,7 @@ msgid ""
 "automated checks against all the pages under [](../../examples/kitchen-"
 "sink/index.rst)."
 msgstr ""
+"作为我们致力于使该主题具备无障碍访问性的承诺的一部分，我们对 [](../../examples/kitchen-sink/index.rst) 下的所有页面运行了自动化检查。"
 
 #: ../../community/topics/accessibility.md:6
 msgid ""
@@ -34,20 +35,22 @@ msgid ""
 "on GitHub. We forbid merging a pull request into the codebase if it "
 "breaks this check."
 msgstr ""
+"每次在 GitHub 上创建拉取请求时，都会运行无障碍检查。如果拉取请求未通过此检查，我们将禁止将其合并到代码库中。"
 
 #: ../../community/topics/accessibility.md:10
 msgid "Running the checks locally"
-msgstr ""
+msgstr "在本地运行检查"
 
 #: ../../community/topics/accessibility.md:12
 msgid ""
 "If you are [developing the theme locally](../setup.md), the simplest way "
 "to run the accessibility checks on your computer is:"
 msgstr ""
+"如果您正在[本地开发主题](../setup.md)，在您的计算机上运行无障碍检查的最简单方法是："
 
 #: ../../community/topics/accessibility.md:19
 msgid "Technical details"
-msgstr ""
+msgstr "技术细节"
 
 #: ../../community/topics/accessibility.md:21
 msgid ""
@@ -55,6 +58,7 @@ msgid ""
 "are [Playwright for Python](https://playwright.dev/python/) and [axe-"
 "core](https://github.com/dequelabs/axe-core)."
 msgstr ""
+"用于编写和运行无障碍检查的两种主要技术是 [Playwright for Python](https://playwright.dev/python/) 和 [axe-core](https://github.com/dequelabs/axe-core)。"
 
 #: ../../community/topics/accessibility.md:25
 msgid ""
@@ -71,6 +75,11 @@ msgid ""
 " file called [test_a11y.py](https://github.com/pydata/pydata-sphinx-"
 "theme/blob/main/tests/test_a11y.py)."
 msgstr ""
+"Playwright 是类似库 Puppeteer 的继任者。它提供了一种以编程方式控制网页浏览器打开、操作、检查和测试网页的方法。Axe-core 是一套以 JavaScript 程序编写的无障碍检查工具。"
+"该程序旨在注入到网页中。一旦注入，它会检查页面是否存在常见的无障碍问题，例如低对比度文本。"
+"无障碍测试套件使用 Playwright 将 Axe-core 注入到 Kitchen Sink 页面以及本文档中的其他几个关键页面中。"
+"还编写了一些其他 Playwright 脚本来确保某些主题组件可以仅通过键盘访问。"
+"所有的测试目前都存放在名为 [test_a11y.py](https://github.com/pydata/pydata-sphinx-theme/blob/main/tests/test_a11y.py) 的文件中。"
 
 #: ../../community/topics/accessibility.md:37
 msgid ""
@@ -93,11 +102,11 @@ msgstr "GitHub Actions 用于在云端配置机器"
 
 #: ../../community/topics/accessibility.md:46
 msgid "`tox` to install the needed dependencies on those machines"
-msgstr "`tox`用于在这些机器上安装所需的依赖项"
+msgstr "`tox` 用于在这些机器上安装所需的依赖项"
 
 #: ../../community/topics/accessibility.md:47
 msgid "`Pytest` with the Playwright plug-in to run the tests."
-msgstr "`Pytest` 与Playwright插件一起运行测试。"
+msgstr "`Pytest` 与 Playwright 插件一起运行测试。"
 
 #: ../../community/topics/accessibility.md:49
 msgid ""
@@ -106,10 +115,11 @@ msgid ""
 "theme/blob/main/.github/workflows/CI.yml) to find how we have configured "
 "GitHub Actions."
 msgstr ""
+"在文件 [CI.yml](https://github.com/pydata/pydata-sphinx-theme/blob/main/.github/workflows/CI.yml) 中搜索字符串 \"accessibility\"，以了解我们如何配置 GitHub Actions。"
 
 #: ../../community/topics/accessibility.md:53
 msgid "Known limitations and manual auditing"
-msgstr ""
+msgstr "已知限制与手动审核"
 
 #: ../../community/topics/accessibility.md:55
 msgid ""
@@ -120,6 +130,8 @@ msgid ""
 "findings](https://github.com/Quansight-Labs/czi-scientific-python-"
 "mgmt/issues/72)"
 msgstr ""
+"深知自动化检查远不能替代全面的无障碍审核和测试，因此还对主题文档中的三个页面进行了无障碍审核。"
+"将这些发现汇总在 GitHub 上的一个议题中，[2024 年 5 月 PyData 主题审核结果](https://github.com/Quansight-Labs/czi-scientific-python-mgmt/issues/72)。"
 
 #: ../../community/topics/accessibility.md:61
 msgid ""
@@ -128,4 +140,5 @@ msgid ""
 "please [create a GitHub issue](https://github.com/pydata/pydata-sphinx-"
 "theme/issues/new) if you find something inaccessible."
 msgstr ""
-
+"几乎所有问题都已修复，但当然，某些内容可能会出现问题 / 已经出现问题，并且有些问题可能从未被发现，"
+"因此如果您发现任何无法访问的内容，请[创建 GitHub 议题](https://github.com/pydata/pydata-sphinx-theme/issues/new)。"

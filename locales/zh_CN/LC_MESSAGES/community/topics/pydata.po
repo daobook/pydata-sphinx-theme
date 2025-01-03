@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/pydata.md:1
 msgid "PyData package support"
-msgstr ""
+msgstr "PyData 包支持"
 
 #: ../../community/topics/pydata.md:3
 msgid ""
@@ -27,6 +27,7 @@ msgid ""
 "a few places where we special-case support for packages in this "
 "community."
 msgstr ""
+"此主题由 PyData 社区设计并为该社区服务，因此在一些地方对此社区中的包提供了特殊支持。"
 
 #: ../../community/topics/pydata.md:5
 msgid ""
@@ -36,12 +37,15 @@ msgid ""
 "documentation look better, and if this change is sustainable for us, then"
 " we should do so."
 msgstr ""
+"我们定义了 CSS 规则，以确保 Sphinx 中的 PyData 内容在浅色和深色主题下看起来都合理。"
+"如果我们收到维护者的报告，表示我们可以在此主题中更改某些内容以使他们的文档看起来更好，并且如果此更改对我们来说是可持续的，那么我们应该这样做。"
 
 #: ../../community/topics/pydata.md:8
 msgid ""
 "We store our PyData-specific SCSS in two relevant files, both in the "
 "`src/pydata_sphinx_theme/assets/styles/` folder:"
 msgstr ""
+"将特定于 PyData 的 SCSS 存储在两个相关文件中，这两个文件都位于 `src/pydata_sphinx_theme/assets/styles/` 文件夹中："
 
 #: ../../community/topics/pydata.md:10
 msgid ""
@@ -50,6 +54,8 @@ msgid ""
 "Sphinx, and the Matplotlib `plot` directive. Most PyData support should "
 "go here via generic improvements that all packages benefit from."
 msgstr ""
+"`extensions/_execution.scss` - 用于执行并将代码插入文档的 Sphinx 库的样式。"
+"例如，MyST-NB、Jupyter Sphinx 和 Matplotlib `plot` 指令。大多数 PyData 支持应通过所有包都能受益的通用改进放在这里。"
 
 #: ../../community/topics/pydata.md:11
 msgid ""
@@ -57,4 +63,4 @@ msgid ""
 "ecosystem. In general we should try to keep this minimal because it is "
 "mostly special-casing single library quirks."
 msgstr ""
-
+"`extensions/_pydata.scss` - 用于 PyData 生态系统中特定库的样式。通常我们应尽量保持其最小化，因为它主要是针对单个库的特殊情况。"

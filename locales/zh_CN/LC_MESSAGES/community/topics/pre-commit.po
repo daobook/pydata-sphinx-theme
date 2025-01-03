@@ -22,27 +22,27 @@ msgstr ""
 
 #: ../../community/topics/pre-commit.md:1
 msgid "Using `pre-commit`"
-msgstr ""
+msgstr "使用 `pre-commit`"
 
 #: ../../community/topics/pre-commit.md:3
 msgid "Here are a few tips for using `pre-commit`:"
-msgstr ""
+msgstr "以下是使用 `pre-commit` 的一些技巧："
 
 #: ../../community/topics/pre-commit.md:5
 msgid "Skip the pre-commit checks"
-msgstr ""
+msgstr "跳过预提交检查"
 
 #: ../../community/topics/pre-commit.md:7
 msgid "Run the following command:"
-msgstr ""
+msgstr "运行以下命令："
 
 #: ../../community/topics/pre-commit.md:13
 msgid "Run pre-commit on all files"
-msgstr ""
+msgstr "对所有文件运行预提交"
 
 #: ../../community/topics/pre-commit.md:15
 msgid ""
 "By default, `pre-commit` will run its checks on files that have been "
 "modified in a commit. To instead run it on all files, use this command:"
 msgstr ""
-
+"默认情况下，`pre-commit` 会对提交中已修改的文件运行其检查。要对所有文件运行它，请使用以下命令："

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/bootstrap.rst:2
 msgid "Upgrade to bootstrap 5"
-msgstr ""
+msgstr "升级到 Bootstrap 5"
 
 #: ../../community/topics/bootstrap.rst:4
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/warnings.md:1
 msgid "Expected build warnings"
-msgstr ""
+msgstr "预期的构建警告"
 
 #: ../../community/topics/warnings.md:3
 msgid ""
@@ -29,12 +29,14 @@ msgid ""
 "a new entry, copy/paste the warning message (the message beginning with "
 ":code:`WARNING:`) to the bottom of the file."
 msgstr ""
+"在我们的 CI 工作流中，我们使用脚本来检查 Sphinx 引发的任何警告，以确保只有_预期的_警告。"
+"预期的警告列表可以在 :code:`tests/warning_list.txt` 中找到。要添加新条目，请将警告消息（以 :code:`WARNING:` 开头的消息）复制/粘贴到文件底部。"
 
 #: ../../community/topics/warnings.md:5
 msgid "For example if you get:"
-msgstr ""
+msgstr "例如，如果您收到："
 
 #: ../../community/topics/warnings.md:11
 msgid "Add the following to the txt file:"
-msgstr ""
+msgstr "将以下内容添加到 txt 文件中："
 

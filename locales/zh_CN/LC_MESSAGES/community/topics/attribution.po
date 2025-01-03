@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/attribution.md:1
 msgid "Ignore formatting commits with `git blame`"
-msgstr ""
+msgstr "使用 `git blame` 忽略格式化提交"
 
 #: ../../community/topics/attribution.md:3
 msgid ""
@@ -28,36 +28,40 @@ msgid ""
 " new version of black or running pyupgrade after dropping an old Python "
 "version)."
 msgstr ""
+"请按照以下步骤进行操作，以避免在进行严格的格式化/样式更改提交时（例如，在运行新版本的 black 或删除旧版 Python 后运行 pyupgrade）模糊文件历史记录。"
 
 #: ../../community/topics/attribution.md:7
 msgid "Create a new branch."
-msgstr ""
+msgstr "创建新分支。"
 
 #: ../../community/topics/attribution.md:8
 msgid ""
 "Make any linting and formatting rules needed; either in the `pre-"
 "commit.config.yaml` or in the `pyproject.toml` file."
 msgstr ""
+"在 `pre-commit.config.yaml` 或 `pyproject.toml` 文件中进行所需的任何代码规范和格式化规则调整。"
 
 #: ../../community/topics/attribution.md:10
 msgid ""
 "Commit your changes with the `--no-verify` flag to skip the pre-commit "
 "hooks."
 msgstr ""
+"使用 `--no-verify` 标志提交您的更改，以跳过预提交钩子。"
 
 #: ../../community/topics/attribution.md:11
 msgid ""
 "Run the pre-commit hooks manually with `tox run -e lint` or `pre-commit "
 "run --all-files`."
 msgstr ""
+"使用 `tox run -e lint` 或 `pre-commit run --all-files` 手动运行预提交钩子。"
 
 #: ../../community/topics/attribution.md:12
 msgid "Commit the linting and formatting changes."
-msgstr ""
+msgstr "提交代码规范和格式化的更改。"
 
 #: ../../community/topics/attribution.md:13
 msgid "Open a PR with these changes."
-msgstr ""
+msgstr "使用这些更改打开 PR。"
 
 #: ../../community/topics/attribution.md:16
 msgid ""
@@ -65,16 +69,18 @@ msgid ""
 "we currently follow -- so a repository admin needs to enable this setting"
 " in the repository temporarily."
 msgstr ""
+"此 PR **必须** 使用 rebase-merge 合并 —— 而不是我们目前遵循的默认 squash-merge —— 因此仓库管理员需要暂时在仓库中启用此设置。"
 
 #: ../../community/topics/attribution.md:22
 msgid ""
 "Open a new PR adding the commit hashes of the formatting commits to the "
 "`.git-blame-ignore-revs` file."
 msgstr ""
+"打开新的 PR，将格式化提交的提交哈希添加到 `.git-blame-ignore-revs` 文件中。"
 
 #: ../../community/topics/attribution.md:24
 msgid "For more details, see:"
-msgstr ""
+msgstr "更多信息，请参见："
 
 #: ../../community/topics/attribution.md:26
 msgid ""

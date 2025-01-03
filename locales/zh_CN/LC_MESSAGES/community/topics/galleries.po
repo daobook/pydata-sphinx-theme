@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/galleries.md:1
 msgid "Galleries and the `gallery-grid` directive"
-msgstr ""
+msgstr "图库和 `gallery-grid` 指令"
 
 #: ../../community/topics/galleries.md:3
 msgid ""
@@ -30,10 +30,12 @@ msgid ""
 " the `docs/scripts/` folder in a dedicated module, and re-used throughout"
 " our documentation."
 msgstr ""
+"有几个地方使用 `sphinx-design` 来生成带有结构化文本和图像的网格“图库”。"
+"创建了一个小的 Sphinx 指令，以便在文档中更容易重复此过程，并避免过多重复。它位于 `docs/scripts/` 文件夹中的专用模块中，并在我们的文档中重复使用。"
 
 #: ../../community/topics/galleries.md:7
 msgid "The example gallery"
-msgstr ""
+msgstr "示例图库"
 
 #: ../../community/topics/galleries.md:9
 msgid ""
@@ -42,6 +44,7 @@ msgid ""
 "during ReadTheDocs builds, but are **not** automatically generated on "
 "local or test builds (to save time)."
 msgstr ""
+"此主题的文档包含使用此主题的站点图库。这些图像在 ReadTheDocs 构建期间自动生成，但在本地或测试构建中**不会**自动生成（以节省时间）。"
 
 #: ../../community/topics/galleries.md:12
 msgid ""
@@ -49,28 +52,31 @@ msgid ""
 "images you may get Sphinx warnings or errors, but this should be fine as "
 "long as the images build on ReadTheDocs tests."
 msgstr ""
+"如果您在本地构建文档时没有首先生成这些图像，可能会收到 Sphinx 警告或错误，但只要图像在 ReadTheDocs 测试中构建成功，这应该没问题。"
 
 #: ../../community/topics/galleries.md:14
 msgid "Download gallery images locally"
-msgstr ""
+msgstr "在本地下载图库图像"
 
 #: ../../community/topics/galleries.md:16
 msgid ""
 "If you'd like to build these images locally to preview in the theme, "
 "follow these steps:"
 msgstr ""
+"如果您想在本地构建这些图像以在主题中预览，请按照以下步骤操作："
 
 #: ../../community/topics/galleries.md:18
 msgid ""
 "Install [playwright](https://playwright.dev/python/) and the Chromium "
 "browser add-on:"
 msgstr ""
+"安装 [playwright](https://playwright.dev/python/) 和 Chromium 浏览器插件："
 
 #: ../../community/topics/galleries.md:25
 msgid "Execute the gallery generation script from the repository root:"
-msgstr ""
+msgstr "从仓库根目录执行图库生成脚本："
 
 #: ../../community/topics/galleries.md:32
 msgid "The newly generated images will be pushed to the distant repository."
-msgstr ""
+msgstr "新生成的图像将被推送到远程仓库。"
 

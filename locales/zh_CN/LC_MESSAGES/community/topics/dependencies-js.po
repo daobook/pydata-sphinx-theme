@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../community/topics/dependencies-js.md:1
 msgid "Update JavaScript dependencies and their versions"
-msgstr ""
+msgstr "更新 JavaScript 依赖项及其版本"
 
 #: ../../community/topics/dependencies-js.md:3
 msgid "There are two kinds of dependency definitions in this theme:"
-msgstr ""
+msgstr "此主题中有两种依赖项定义："
 
 #: ../../community/topics/dependencies-js.md:5
 msgid ""
@@ -34,6 +34,7 @@ msgid ""
 "are broken down into a few categories like `dependencies` and "
 "`devDependencies`. It is edited by the maintainers."
 msgstr ""
+"`package.json` 包含此主题的 **基础依赖项**。它们被分为几类，例如 `dependencies` 和 `devDependencies`。它由维护者编辑。"
 
 #: ../../community/topics/dependencies-js.md:6
 msgid ""
@@ -41,14 +42,15 @@ msgid ""
 " this theme, including all sub-dependencies of our base dependencies. It "
 "is automatically generated."
 msgstr ""
+"`package-lock.json` 包含此主题的完整 **冻结依赖链**，包括我们基础依赖项的所有子依赖项。它是自动生成的。"
 
 #: ../../community/topics/dependencies-js.md:8
 msgid "To update or add a JS dependency, follow these steps:"
-msgstr ""
+msgstr "要更新或添加 JS 依赖项，请按照以下步骤操作："
 
 #: ../../community/topics/dependencies-js.md:10
 msgid "**Edit `package.json`** by adding or modifying a dependency."
-msgstr ""
+msgstr "**编辑 `package.json`**，添加或修改依赖项。"
 
 #: ../../community/topics/dependencies-js.md:11
 msgid ""
@@ -57,6 +59,8 @@ msgid ""
 "from the [Sphinx Theme Builder](https://sphinx-theme-"
 "builder.readthedocs.io/en/latest/)."
 msgstr ""
+"**重新生成 `package-lock.json`**，以便为主题创建一组新的冻结依赖项。"
+"为此，请从 [Sphinx Theme Builder](https://sphinx-theme-builder.readthedocs.io/en/latest/) 运行以下命令。"
 
 #: ../../community/topics/dependencies-js.md:17
 msgid ""
@@ -64,4 +68,4 @@ msgid ""
 "latest commits, their `npm` environment will automatically update "
 "according to the new lockfile."
 msgstr ""
-
+"**提交这两个文件** 到仓库。当其他人拉取最新提交时，他们的 `npm` 环境将根据新的锁定文件自动更新。"

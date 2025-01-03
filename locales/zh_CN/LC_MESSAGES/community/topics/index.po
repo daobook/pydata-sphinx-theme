@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../community/topics/index.md:1
 msgid "Topic guides"
-msgstr ""
+msgstr "话题指南"
 
 #: ../../community/topics/index.md:3
 msgid ""
 "These guides cover specific topics that are relevant to contributing to "
 "this theme."
 msgstr ""
-
+"这些话题涵盖了与为此主题做出贡献相关的特定主题。"

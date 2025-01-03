@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../community/topics/kitchen-sink.md:1
 msgid "Update our kitchen sink"
-msgstr ""
+msgstr "更新我们的综合示例"
 
 #: ../../community/topics/kitchen-sink.md:3
 msgid ""
@@ -31,6 +31,9 @@ msgid ""
 "stored [in the `sphinx-themes.org` repository](https://github.com/sphinx-"
 "themes/sphinx-themes.org/raw/master/sample-docs/kitchen-sink/)."
 msgstr ""
+"[综合示例参考](../../examples/kitchen-sink/index.rst) 用于展示尽可能多的 Sphinx 构建语法和样式。"
+"它直接从 [`sphinx-themes.org` 文档](https://sphinx-themes.org/) 复制而来，以便我们使用与其他社区相比的标准参考文档。"
+"这些页面的源文件存储在 [sphinx-themes.org 仓库](https://github.com/sphinx-themes/sphinx-themes.org/raw/master/sample-docs/kitchen-sink/) 中。"
 
 #: ../../community/topics/kitchen-sink.md:7
 msgid ""
@@ -39,4 +42,4 @@ msgid ""
 "latest text. To use it, run the following from the root of the "
 "repository:"
 msgstr ""
-
+"要更新综合示例源文件，有一个辅助 Python 脚本可以循环遍历已知的综合示例文件并复制最新的文本。要使用它，请从仓库根目录运行以下命令："
