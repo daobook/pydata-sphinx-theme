@@ -73,8 +73,7 @@ jobs:
           pip install taolib invoke mystx
           pip install -e .[doc] --upgrade
           conda install -c conda-forge pandoc compilers cppyy
-          conda install -c conda-forge ffmpeg manim
-          pip install manim
+          conda install -c conda-forge ffmpeg
           invoke doc
       - name: Setup Pages
         uses: actions/configure-pages@main
