@@ -128,47 +128,26 @@ html_favicon = "_static/logo.svg"
 html_sourcelink_suffix = ""
 html_last_updated_fmt = ""  # to reveal the build date in the pages meta
 
-# Define the json_url for our version switcher and version match
-def configure_version_switcher(
-    release: str = pydata_sphinx_theme.__version__,
-    default_json_url: str = "https://pydata-sphinx-theme.readthedocs.io/en/latest/_static/switcher.json",
-    dev_json_url: str = "_static/switcher.json"
-) -> Tuple[str, str]:
-    """Configure the version switcher settings based on the environment and release version.
-    
-    Args:
-        release: The current release version string
-        default_json_url: Default URL for the version switcher JSON file
-        dev_json_url: URL to use for development versions
-        
-    Returns:
-        A tuple containing (json_url, version_match)
-        
-    Raises:
-        ValueError: If the release string is empty
-    """
-    if not release:
-        raise ValueError("Release version cannot be empty")
-    
-    # Get the version from the environment or default to None
-    version_match = os.environ.get("READTHEDOCS_VERSION")
-    json_url = default_json_url
-    
-    # Determine which version to use based on environment or release string
-    if not version_match or version_match.isdigit() or version_match == "latest":
-        # For local development, infer the version from the package
-        if any(marker in release for marker in ("dev", "rc")):
-            version_match = "dev"
-            json_url = dev_json_url
-        else:
-            version_match = f"v{release}"
-    elif version_match == "stable":
-        version_match = f"v{release}"
-    
-    return json_url, version_match
+# Define the json_url for our version switcher.
+json_url = "https://pydata-sphinx-theme.readthedocs.io/en/latest/_static/switcher.json"
 
-# Call the function to set the version switcher configuration
-json_url, version_match = configure_version_switcher()
+# Define the version we use for matching in the version switcher.
+version_match = os.environ.get("READTHEDOCS_VERSION")
+release = pydata_sphinx_theme.__version__
+# If READTHEDOCS_VERSION doesn't exist, we're not on RTD
+# If it is an integer, we're in a PR build and the version isn't correct.
+# If it's "latest" → change to "dev" (that's what we want the switcher to call it)
+if not version_match or version_match.isdigit() or version_match == "latest":
+    # For local development, infer the version to match from the package.
+    if "dev" in release or "rc" in release:
+        version_match = "dev"
+        # We want to keep the relative reference if we are in dev mode
+        # but we want the whole url if we are effectively in a released version
+        json_url = "_static/switcher.json"
+    else:
+        version_match = f"v{release}"
+elif version_match == "stable":
+    version_match = f"v{release}"
 
 html_theme_options = {
     "external_links": [
